@@ -1,0 +1,9 @@
+---
+version: 1.0
+
+# Shell script to run when pushing the source code to the scratch orgs.
+# It's a great place to automate tasks like permission set assignments or data loading.
+push_script: |
+  sfdx force:source:push -f --loglevel fatal 1>/dev/null
+
+# julian test1
