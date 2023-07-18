@@ -4,4 +4,4 @@ version: 1.0
 # Shell script to run when pushing the source code to the scratch orgs.
 # It's a great place to automate tasks like permission set assignments or data loading.
 push_script: |
-  sf data import tree --files Contact.json
+  sfdx force:data:tree:import -f Contact.json
