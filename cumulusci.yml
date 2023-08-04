@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.76.0'
+project:
+    name: git-together
+    package:
+        name: git-together
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/git-together/tests
+            options:
+                outputdir: robot/git-together/results
+
+    robot_testdoc:
+        options:
+            path: robot/git-together/tests
+            output: robot/git-together/doc/git-together_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
