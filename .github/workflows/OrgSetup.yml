@@ -35,7 +35,7 @@ on:
 
 env:
   CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
-  CUMULUSCI_SERVICE_github: ${{ secrets.CUMULUSCI_SERVICE_github }}
+  CUMULUSCI_SERVICE_github: '{"username": "julain88tex", "email": "julian88tex@gmail.com", "token": "${{ secrets.CUMULUSCI_SERVICE_github }}"}'
 
 jobs:
   org_setup:
