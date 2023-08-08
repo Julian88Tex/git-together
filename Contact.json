@@ -17,6 +17,15 @@
             "FirstName": "Michelle",
             "LastName": "Holcey",
             "Phone": "987654321"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Julian89"
+            },
+            "FirstName": "Julian89",
+            "LastName": "Joseph89",
+            "Phone": "987654321"
         }
     ]
 }
