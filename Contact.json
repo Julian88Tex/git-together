@@ -18,5 +18,15 @@
             "LastName": "Holcey",
             "Phone": "987654321"
         }
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "KennyLin"
+            },
+            "FirstName": "Kenny",
+            "LastName": "Lin",
+            "Phone": "334567890"
+        }
+        
     ]
 }
