@@ -26,6 +26,15 @@
             "FirstName": "Julian89",
             "LastName": "Joseph89",
             "Phone": "987654321"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Sung"
+            },
+            "FirstName": "Sung",
+            "LastName": "Song",
+            "Phone": "6549873213"
         }
     ]
 }
