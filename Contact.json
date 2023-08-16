@@ -17,7 +17,7 @@
             "FirstName": "Michelle",
             "LastName": "Holcey",
             "Phone": "987654321"
-        }
+        },
         {
             "attributes": {
                 "type": "Contact",
@@ -27,6 +27,15 @@
             "LastName": "Lin",
             "Phone": "334567890"
         },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Emma"
+            },
+            "FirstName": "Emma",
+            "LastName": "April",
+            "Phone": "123456678"
+        }
         
     ]
 }
