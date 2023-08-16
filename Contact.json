@@ -35,6 +35,15 @@
             "FirstName": "Sung",
             "LastName": "Song",
             "Phone": "6549873213"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Paul"
+            },
+            "FirstName": "Paul",
+            "LastName": "Park",
+            "Phone": "1234567893"
         }
     ]
 }
