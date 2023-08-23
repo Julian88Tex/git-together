@@ -12,6 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Install sfdx with npm
+      run: |
+        npm install sfdx-cli --global
+
     - name: Store SFDX Auth URL In File
       run: |
         echo ${{ secrets.PLAYGROUND_FORCE_URL }} > sfdxauth.txt
@@ -22,5 +26,3 @@ jobs:
 
     - name: Run Apex Unit Tests
       run: sfdx force:apex:test:run --resultformat human --codecoverage --wait 10 -u org
-
-
