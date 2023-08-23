@@ -4,6 +4,10 @@ on:
   push:
     # branches: [ main ]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,8 +26,6 @@ jobs:
         rm gh.deb
 
     - name: Create GitHub Issue
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo $GH_TOKEN | gh auth login --with-token
+        echo $GITHUB_TOKEN | gh auth login --with-token
         gh issue create --title "Your Custom Issue Title" --body "This issue was created by GitHub Actions."
