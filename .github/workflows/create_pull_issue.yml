@@ -2,7 +2,7 @@ name: Hello World
 
 on:
   push:
-    # branches: [ main ]
+    branches: [ turn_off ]
 
 env:
   GITHUB_TOKEN_CCI: ${{ secrets.GITHUB_TOKEN }}

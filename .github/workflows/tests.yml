@@ -1,0 +1,26 @@
+name: Run Apex Unit Tests
+
+on:
+  push:
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Store SFDX Auth URL In File
+      run: |
+        echo ${{ secrets.PLAYGROUND_FORCE_URL }} > sfdxauth.txt
+
+    - name: Add SFDX Org
+      run: |
+        sfdx force:auth:sfdxurl:store -f sfdxauth.txt -a org
+
+    - name: Run Apex Unit Tests
+      run: sfdx force:apex:test:run --resultformat human --codecoverage --wait 10 -u org
+
+
