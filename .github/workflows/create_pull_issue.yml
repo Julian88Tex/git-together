@@ -17,10 +17,9 @@ jobs:
 
     - name: Install GitHub CLI
       run: |
-        curl -fsSL https://cli.github.com/packages/github-cli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/github-cli-archive-keyring.gpg
-        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/github-cli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-        sudo apt update
-        sudo apt install gh
+        curl -L https://github.com/cli/cli/releases/download/v2.2.0/gh_2.2.0_linux_amd64.deb -o gh.deb
+        sudo dpkg -i gh.deb
+        rm gh.deb
 
     - name: Create GitHub Issue
       env:
