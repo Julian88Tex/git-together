@@ -12,7 +12,7 @@ jobs:
         name: Create PR to develop
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-        #   branch_prefix: hotfix
+          branch_prefix: julian
           base_branch: main
         #   labels: hotfix,develop
         #   assignees: quangvo09
