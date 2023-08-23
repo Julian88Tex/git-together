@@ -44,7 +44,15 @@
             "FirstName": "Emma",
             "LastName": "April",
             "Phone": "123456678"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "J"
+            },
+            "FirstName": "Johnny",
+            "LastName": "Nguyen",
+            "Phone": "111111111"
         }
-        
     ]
 }
