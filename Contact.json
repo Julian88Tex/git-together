@@ -30,6 +30,24 @@
         {
             "attributes": {
                 "type": "Contact",
+                "referenceId": "KennyLin"
+            },
+            "FirstName": "Kenny",
+            "LastName": "Lin",
+            "Phone": "334567890"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Emma"
+            },
+            "FirstName": "Emma",
+            "LastName": "April",
+            "Phone": "123456678"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
                 "referenceId": "J"
             },
             "FirstName": "Johnny",
