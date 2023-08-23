@@ -5,7 +5,7 @@ on:
     # branches: [ main ]
 
 env:
-  GITHUB_TOKEN_CCI: ${{ secrets.CUMULUSCI_SERVICE_GITHUB }}
+  GITHUB_TOKEN_CCI: ${{ secrets.GITHUB_TOKEN }}
 
 
 jobs:
