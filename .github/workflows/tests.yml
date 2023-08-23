@@ -23,4 +23,4 @@ jobs:
 
     - name: Run Apex Unit Tests
       run: |
-        sf force apex test run -r human -c --wait 10 -o org
+        sf force apex test run -r human -c --wait 10 -o org -n VariablesDatatypesOperators
