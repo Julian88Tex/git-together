@@ -53,6 +53,16 @@
             "FirstName": "Johnny",
             "LastName": "Nguyen",
             "Phone": "111111111"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Otto"
+            },
+            "FirstName": "Otto",
+            "LastName": "Hightower",
+            "Phone": "123456789"
+
         }
     ]
 }
