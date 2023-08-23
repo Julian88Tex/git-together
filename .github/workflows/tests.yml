@@ -9,12 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
     - name: Install sfdx with npm
       run: |
-        npm install sfdx-cli --global
+        npm i @salesforce/cli --global
 
     - name: Store SFDX Auth URL In File
       run: |
@@ -25,4 +22,5 @@ jobs:
         sf force auth sfdxurl store -f sfdxauth.txt -a org
 
     - name: Run Apex Unit Tests
-      run: sf force apex test run -r human -c --wait 10 -o org
+      run: |
+        sf force apex test run -r human -c --wait 10 -o org
