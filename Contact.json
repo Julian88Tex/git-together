@@ -26,6 +26,15 @@
             "FirstName": "Wutang",
             "LastName": "Dizle",
             "Phone": "111111111"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "V"
+            },
+            "FirstName": "Johnny",
+            "LastName": "Nguyen",
+            "Phone": "111111111"
         }
     ]
 }
