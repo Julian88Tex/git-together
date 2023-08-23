@@ -22,7 +22,7 @@ jobs:
 
     - name: Add SFDX Org
       run: |
-        sfdx force:auth:sfdxurl:store -f sfdxauth.txt -a org
+        sf force auth sfdxurl store -f sfdxauth.txt -a org
 
     - name: Run Apex Unit Tests
-      run: sfdx force:apex:test:run --resultformat human --codecoverage --wait 10 -u org
+      run: sf force apex test run -r human -c --wait 10 -o org
