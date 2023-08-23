@@ -29,3 +29,4 @@ jobs:
       run: |
         echo $GITHUB_TOKEN_CCI | gh auth login --with-token
         gh issue create --title "Your Custom Issue Title" --body "This issue was created by GitHub Actions."
+        
