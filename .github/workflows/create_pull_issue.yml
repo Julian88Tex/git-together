@@ -5,7 +5,7 @@ on:
     # branches: [ main ]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.CUMULUSCI_SERVICE_GITHUB }}
+  GITHUB_TOKEN_CCI: ${{ secrets.CUMULUSCI_SERVICE_GITHUB }}
 
 
 jobs:
@@ -27,5 +27,5 @@ jobs:
 
     - name: Create GitHub Issue
       run: |
-        echo $GITHUB_TOKEN | gh auth login --with-token
+        echo $GITHUB_TOKEN_CCI | gh auth login --with-token
         gh issue create --title "Your Custom Issue Title" --body "This issue was created by GitHub Actions."
