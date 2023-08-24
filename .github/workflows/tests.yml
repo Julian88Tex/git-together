@@ -21,6 +21,10 @@ jobs:
       run: |
         sf force auth sfdxurl store -f sfdxauth.txt -a org
 
+    - name: Add SFDX Org
+      run: |
+        sf force source deploy -u sfdevopsdemo@gmail.com -p force-app/main/default/classes/
+
     - name: Run Apex Unit Tests
       run: |
         sf apex run test -r human -c --wait 10 -o org -n VariablesDatatypesOperatorsTest
