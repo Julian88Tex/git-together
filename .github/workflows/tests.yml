@@ -23,7 +23,7 @@ jobs:
 
     - name: Add SFDX Org
       run: |
-        sf force source deploy -u sfdevopsdemo@gmail.com -p force-app/main/default/classes/
+        sf force source deploy -u org -p force-app/main/default/classes/
 
     - name: Run Apex Unit Tests
       run: |
