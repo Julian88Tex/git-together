@@ -23,7 +23,7 @@ public class VariablesDatatypesOperatorsTest {
 
     @IsTest
     static void testSubtraction() {
-        Integer result = VariablesDatatypesOperators.subtraction(10, 4);
+        Integer result = VariablesDatatypesOperators.subtraction(10, 3);
         Assert.areEqual(5, result, 'Incorrect subtraction result');
 
         result = VariablesDatatypesOperators.subtraction(-5, -10);
