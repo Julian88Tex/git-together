@@ -3,7 +3,7 @@ name: Print My Name
 on: [push]
 
 jobs:
-  print_name:
+    print_name:
     runs-on: ubuntu-latest
     
     steps:
