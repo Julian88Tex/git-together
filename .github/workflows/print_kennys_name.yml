@@ -1,0 +1,17 @@
+name: Say My Name
+
+on:
+  push:
+#    branches:
+#      - main  # Replace with your main branch name
+
+jobs:
+  say_name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Say My Name
+        run: echo "Kenny Lin"
