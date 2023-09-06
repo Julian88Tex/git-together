@@ -3,7 +3,7 @@ name: Say My Name
 on:
   push:
    branches:
-     - test*
+     - "*test*"
 
 jobs:
   say_name:
