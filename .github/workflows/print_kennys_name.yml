@@ -2,8 +2,8 @@ name: Say My Name
 
 on:
   push:
-#    branches:
-#      - main  # Replace with your main branch name
+   branches:
+     - main  # Replace with your main branch name
 
 jobs:
   say_name:
