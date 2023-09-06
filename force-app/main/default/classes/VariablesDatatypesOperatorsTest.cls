@@ -9,7 +9,7 @@
 public class VariablesDatatypesOperatorsTest {
     @IsTest
     static void testAddition() {
-        Integer result = VariablesDatatypesOperators.addition(2, 3);
+        Integer result = VariablesDatatypesOperators.addition(2, 4);
         Assert.areEqual(5, result, 'Incorrect addition result');
         result = VariablesDatatypesOperators.addition(-5, 10);
         Assert.areEqual(5, result, 'Incorrect negative addition result');
