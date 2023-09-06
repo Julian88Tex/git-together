@@ -1,11 +1,11 @@
 on: [push, pull_request]
-jobs:
-  build:
-    runs-on: ubuntu-latest
 
+jobs:
+  notify:
+    runs-on: ubuntu-latest
     steps:
-      - name: Microsoft Teams Webhook Message Bot
-        uses: myusufcse/microsoft-teams-message-bot@v1.1
+      - name: 📣 Send teams notification
+        uses: simbo/msteams-message-card-action@latest
         with:
           webhook: https://tclo365.webhook.office.com/webhookb2/c48cae5d-3a82-4b82-bf7e-d716799e2741@7390d437-5814-40f5-b88b-1e58649838de/IncomingWebhook/ee933b6b0b654e5faa6e636d51f554f1/1a1e0cf0-085f-4df6-adaf-6c61b628ee5f
-          message: There's new updates!!! Come check it!
+          message: Hello world!
