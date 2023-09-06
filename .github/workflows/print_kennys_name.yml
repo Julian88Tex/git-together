@@ -3,7 +3,7 @@ name: Say My Name
 on:
   push:
    branches:
-     - test1  # Replace with your main branch name 
+     - test*
 
 jobs:
   say_name:
