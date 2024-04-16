@@ -5,3 +5,11 @@ version: 1.0
 # It's a great place to automate tasks like permission set assignments or data loading.
 push_script: |
   sfdx force:data:tree:import -f Contact.json
+
+custom_scripts: 
+  scratch_org: 
+    "Import Data": 
+      description: "Import data using SFDMU" 
+      run: | 
+        echo y | sf plugins install sfdmu 
+        sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
