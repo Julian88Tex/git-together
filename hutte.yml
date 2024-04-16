@@ -13,3 +13,8 @@ custom_scripts:
       run: | 
         echo y | sf plugins install sfdmu 
         sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
+    "Import Data2": 
+      description: "Import data using SFDMU" 
+      run: | 
+        echo y | sf plugins install sfdmu 
+        sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
