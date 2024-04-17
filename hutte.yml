@@ -11,8 +11,8 @@ custom_scripts:
     "Import Data1":
       description: "Import data using SFDMU"
       run: |
-        echo y | sf plugins install sfdmu
-        sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
+        # echo y | sf plugins install sfdmu
+        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
         apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
         pip install wheel
         pip install --no-build-isolation cumulusci
