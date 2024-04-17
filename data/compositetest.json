@@ -6,7 +6,7 @@
         "url": "/services/data/v50.0/sobjects/Contact",
         "referenceId": "refContact1",
         "body": {
-          "LastName": "Doe"
+          "LastName": "PLACEHOLDER_LAST_NAME"
         }
       }
     ]
