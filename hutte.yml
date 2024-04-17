@@ -13,6 +13,7 @@ custom_scripts:
       run: |
         echo y | sf plugins install sfdmu
         sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        python3 -m pip install -U pip
-        pip install cumulusc
+        apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
+        pip install wheel
+        pip install --no-build-isolation cumulusci
         cci org list
