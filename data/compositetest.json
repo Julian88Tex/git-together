@@ -1,0 +1,13 @@
+{
+    "allOrNone": true,
+    "compositeRequest": [
+      {
+        "method": "POST",
+        "url": "/services/data/v50.0/sobjects/Contact",
+        "referenceId": "refContact1",
+        "body": {
+          "LastName": "Doe"
+        }
+      }
+    ]
+}

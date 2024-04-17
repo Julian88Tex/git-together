@@ -20,3 +20,4 @@ custom_scripts:
         pip install wheel
         pip install --no-build-isolation cumulusci
         cci org list
+        cci task run composite_request --org "${SF_TARGET_ORG}" --data_files data/compositetest.json
