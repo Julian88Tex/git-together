@@ -42,7 +42,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate2":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -59,7 +59,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate3":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -76,7 +76,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate4":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -93,7 +93,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate5":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -110,7 +110,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate6":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -127,7 +127,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate7":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -144,7 +144,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate8":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -161,7 +161,7 @@ custom_scripts:
         ./data/replace_composite.sh
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
 
-    "Create Test Loan Corporate":
+    "Create Test Loan Corporate9":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
