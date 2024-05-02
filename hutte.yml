@@ -11,7 +11,7 @@ push_script: |
   pip install --no-build-isolation cumulusci
   cci org list
   cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-  cci flow run dependencies --org dev
+  cci flow run dependencies --org ${SALESFORCE_USERNAME}
 
 custom_scripts:
   scratch_org:
