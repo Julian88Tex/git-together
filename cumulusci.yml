@@ -7,6 +7,86 @@ project:
     git:
         default_branch: 'main'
     source_format: sfdx
+    dependencies:
+      - namespace: nDESIGN
+        version: '2.52'
+      - namespace: nFORCE
+        version: '2.2553'
+      - namespace: LLC_BI
+        version: '2.3233'
+      - namespace: NDOC
+        version: '2.871'
+      - namespace: nFUSE
+        version: '2.545'
+      - namespace: nCino
+        version: '1.777'
+      - namespace: nFORMS
+        version: '2.397'
+      - namespace: nXBI
+        version: '2.37'
+      - namespace: EFPIO
+        version: '1.128'
+      - namespace: MTRNS
+        version: '2.111'
+      # - namespace: nSBA
+      #   version: '2.51'
+      #   password_env_name: INSTALL_KEY
+      # - namespace: FinServ
+      #   version: '248.0'
+      # - namespace: SFDOC
+      #   version: '1.69'
+      #   password_env_name: INSTALL_KEY
+      # - namespace: CLUS
+      #   version: '1.106'
+      - namespace: CRMC_PP
+        version: '3.64'
+      - namespace: DNBConnect
+        version: '1.730'
+      - namespace: DNBoptimizer
+        version: '1.6084.3'
+      - namespace: ELOQUA
+        version: '1.3'
+      # - namespace: Intel_U4SFnCino
+      #   version: '0.3'
+      - namespace: Intellective2
+        version: '2.5'
+      - namespace: Ipreo_BDSF_1_10
+        version: '170.7'
+      # - namespace: LEXMAGICMOVER
+      #   version: '4.15'
+      - namespace: LID
+        version: '3.23'
+      - namespace: LLCLP
+        version: '2.27'
+      - namespace: LLC_HI
+        version: '1.6'
+      - namespace: SCOC
+        version: '1.30'
+      - namespace: SDMOC
+        version: '1.39'
+      - namespace: SIOC
+        version: '1.174'
+      - namespace: SBSS7
+        version: '1.72'
+      - namespace: WM4SF3
+        version: '2.84'
+      - namespace: iSell
+        version: '2.3.3'
+      - namespace: nBIDC
+        version: '1.6'
+      - namespace: nBIDCA
+        version: '1.20'
+      - namespace: nCRED
+        version: '1.2336'
+      - namespace: nCSA_FRAME
+        version: '1.21'
+      - namespace: nMONITOR
+        version: '1.7'
+      - namespace: nRetail
+        version: '1.932'
+      - namespace: vPb
+        version: '1.23'
+
 
 tasks:
     robot:

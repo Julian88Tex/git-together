@@ -5,10 +5,17 @@ version: 1.0
 # It's a great place to automate tasks like permission set assignments or data loading.
 push_script: |
   sfdx force:data:tree:import -f Contact.json
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  python3 get-pip.py
+  pip install wheel
+  pip install --no-build-isolation cumulusci
+  cci org list
+  cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+  cci flow run dependencies --org dev
 
-custom_scripts: 
-  scratch_org: 
-    "Create Test Contact":
+custom_scripts:
+  scratch_org:
+    "Import Data1":
       description: "Import data using SFDMU"
       run: |
         # echo y | sf plugins install sfdmu
@@ -22,158 +29,5 @@ custom_scripts:
         cci org list
         cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
         chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Commercial":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate2":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate3":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate4":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate5":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate6":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate7":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate8":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
-        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
-
-    "Create Test Loan Corporate9":
-      description: "Import data using SFDMU"
-      run: |
-        # echo y | sf plugins install sfdmu
-        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
-        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
-        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
-        pip install wheel
-        pip install --no-build-isolation cumulusci
-        cci org list
-        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-        chmod +x data/replace_composite.sh
-        ./data/replace_composite.sh
+        ./data/replace_composite.sh PLACEHOLDER_LAST_NAME ${HUTTE_GIT_USER_NAME}
         cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
