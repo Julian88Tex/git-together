@@ -75,9 +75,9 @@ project:
     #   - namespace: LLCLP
     #     version: '2.27'
     #     password_env_name: LLCLP_INSTALL_KEY
-
-      - namespace: LLC_HI
-        version: '1.6'
+    #   - namespace: LLC_HI
+    #     version: '1.6'
+    #     password_env_name: LLC_HI_INSTALL_KEY
       - namespace: SCOC
         version: '1.30'
       - namespace: SDMOC
