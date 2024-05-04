@@ -16,13 +16,13 @@ push_script: |
   export MTRNS_INSTALL_KEY=${MTRNS_INSTALL_KEY}
   export nSBA_INSTALL_KEY=${nSBA_INSTALL_KEY}
   echo $nDESIGN_INSTALL_KEY
-  # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-  # python3 get-pip.py
-  # pip install wheel
-  # pip install --no-build-isolation cumulusci
-  # cci org list
-  # cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-  # cci flow run dependencies --org ${SALESFORCE_USERNAME}
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  python3 get-pip.py
+  pip install wheel
+  pip install --no-build-isolation cumulusci
+  cci org list
+  cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+  cci flow run dependencies --org ${SALESFORCE_USERNAME}
 
 custom_scripts:
   scratch_org:
