@@ -29,7 +29,7 @@ project:
     #   - namespace: MTRNS
     #     version: '2.111'
       - version_id: 04t6T000001tu5qQAA #nDESIGN
-        password_env_name: ${nDESIGN_INSTALL_KEY}
+        password_env_name: nDESIGN_INSTALL_KEY
       - version_id: 04t6S000001EAmTQAW #nFORCE
         password_env_name: $nFORCE_INSTALL_KEY
       - version_id: 04t4U000000t717QAA #LLC_BI
