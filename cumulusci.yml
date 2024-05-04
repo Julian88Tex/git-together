@@ -63,8 +63,9 @@ project:
     #     password_env_name: ELOQUA_INSTALL_KEY
       # - namespace: 'Intel_U4SFnCino'
       #   version: '0.3'
-      - namespace: Intellective2
-        version: '2.5'
+    #   - namespace: Intellective2
+    #     version: '2.5'
+    #     password_env_name: Intellective2_INSTALL_KEY
       - namespace: Ipreo_BDSF_1_10
         version: '170.7'
       - namespace: LEXMAGICMOVER
