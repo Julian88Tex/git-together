@@ -4,7 +4,17 @@ version: 1.0
 # Shell script to run when pushing the source code to the scratch orgs.
 # It's a great place to automate tasks like permission set assignments or data loading.
 push_script: |
-  sfdx force:data:tree:import -f Contact.json
+  export nDESIGN_INSTALL_KEY=${nDESIGN_INSTALL_KEY}
+  export nFORCE_INSTALL_KEY=${nFORCE_INSTALL_KEY}
+  export LLC_BI_INSTALL_KEY=${LLC_BI_INSTALL_KEY}
+  export NDOC_INSTALL_KEY=${NDOC_INSTALL_KEY}
+  export nFUSE_INSTALL_KEY=${nFUSE_INSTALL_KEY}
+  export nCino_INSTALL_KEY=${nCino_INSTALL_KEY}
+  export nFORMS_INSTALL_KEY=${nFORMS_INSTALL_KEY}
+  export nXBI_INSTALL_KEY=${nXBI_INSTALL_KEY}
+  export EFPIO_INSTALL_KEY=${EFPIO_INSTALL_KEY}
+  export MTRNS_INSTALL_KEY=${MTRNS_INSTALL_KEY}
+  export nSBA_INSTALL_KEY=${nSBA_INSTALL_KEY}
   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
   python3 get-pip.py
   pip install wheel
