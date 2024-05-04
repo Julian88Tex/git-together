@@ -72,8 +72,10 @@ project:
         version: '4.15'
       - namespace: LID
         version: '3.23'
-      - namespace: LLCLP
-        version: '2.27'
+    #   - namespace: LLCLP
+    #     version: '2.27'
+    #     password_env_name: LLCLP_INSTALL_KEY
+
       - namespace: LLC_HI
         version: '1.6'
       - namespace: SCOC
