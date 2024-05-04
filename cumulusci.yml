@@ -31,25 +31,25 @@ project:
       - version_id: 04t6T000001tu5qQAA #nDESIGN
         password_env_name: nDESIGN_INSTALL_KEY
       - version_id: 04t6S000001EAmTQAW #nFORCE
-        password_env_name: $nFORCE_INSTALL_KEY
+        password_env_name: nFORCE_INSTALL_KEY
       - version_id: 04t4U000000t717QAA #LLC_BI
-        password_env_name: $LLC_BI_INSTALL_KEY
+        password_env_name: LLC_BI_INSTALL_KEY
       - version_id: 04t6S00000161AyQAI #NDOC
-        password_env_name: $NDOC_INSTALL_KEY
+        password_env_name: NDOC_INSTALL_KEY
       - version_id: 04t1R000001E5hDQAS #nFUSE
-        password_env_name: $nFUSE_INSTALL_KEY
+        password_env_name: nFUSE_INSTALL_KEY
       - version_id: 04t2M000002mgs1QAA #nCino
-        password_env_name: $nCino_INSTALL_KEY
+        password_env_name: nCino_INSTALL_KEY
       - version_id: 04t3m000000H0pdAAC #nFORMS
-        password_env_name: $nFORMS_INSTALL_KEY
+        password_env_name: nFORMS_INSTALL_KEY
       - version_id: 04t4R000001VUH4QAO #nXBI
-        password_env_name: $nXBI_INSTALL_KEY
+        password_env_name: nXBI_INSTALL_KEY
       - version_id: 04t4o000001smMjAAI #EFPIO
-        password_env_name: $EFPIO_INSTALL_KEY
+        password_env_name: EFPIO_INSTALL_KEY
       - version_id: 04t3h000004sqeyAAA #MTRNS
-        password_env_name: $MTRNS_INSTALL_KEY
+        password_env_name: MTRNS_INSTALL_KEY
       - version_id: 04t4M000000U1YgQAK #nSBA
-        password_env_name: $nSBA_INSTALL_KEY
+        password_env_name: nSBA_INSTALL_KEY
       - namespace: FinServ
         version: '248.0'
       - namespace: CRMC_PP
