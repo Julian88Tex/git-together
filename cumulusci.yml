@@ -8,36 +8,50 @@ project:
         default_branch: 'main'
     source_format: sfdx
     dependencies:
-      - namespace: nDESIGN
-        version: '2.52'
-      - namespace: nFORCE
-        version: '2.2553'
-      - namespace: LLC_BI
-        version: '2.3233'
-      - namespace: NDOC
-        version: '2.871'
-      - namespace: nFUSE
-        version: '2.545'
-      - namespace: nCino
-        version: '1.777'
-      - namespace: nFORMS
-        version: '2.397'
-      - namespace: nXBI
-        version: '2.37'
-      - namespace: EFPIO
-        version: '1.128'
-      - namespace: MTRNS
-        version: '2.111'
-      # - namespace: nSBA
-      #   version: '2.51'
-      #   password_env_name: INSTALL_KEY
-      # - namespace: FinServ
-      #   version: '248.0'
-      # - namespace: SFDOC
-      #   version: '1.69'
-      #   password_env_name: INSTALL_KEY
-      # - namespace: CLUS
-      #   version: '1.106'
+    #   - namespace: nDESIGN
+    #     version: '2.52'
+    #   - namespace: nFORCE
+    #     version: '2.2553'
+    #   - namespace: LLC_BI
+    #     version: '2.3233'
+    #   - namespace: NDOC
+    #     version: '2.871'
+    #   - namespace: nFUSE
+    #     version: '2.545'
+    #   - namespace: nCino
+    #     version: '1.777'
+    #   - namespace: nFORMS
+    #     version: '2.397'
+    #   - namespace: nXBI
+    #     version: '2.37'
+    #   - namespace: EFPIO
+    #     version: '1.128'
+    #   - namespace: MTRNS
+    #     version: '2.111'
+      - version_id: 04t6T000001tu5qQAA #nDESIGN
+        password_env_name: ${nDESIGN_INSTALL_KEY}
+      - version_id: 04t6S000001EAmTQAW #nFORCE
+        password_env_name: $nFORCE_INSTALL_KEY
+      - version_id: 04t4U000000t717QAA #LLC_BI
+        password_env_name: $LLC_BI_INSTALL_KEY
+      - version_id: 04t6S00000161AyQAI #NDOC
+        password_env_name: $NDOC_INSTALL_KEY
+      - version_id: 04t1R000001E5hDQAS #nFUSE
+        password_env_name: $nFUSE_INSTALL_KEY
+      - version_id: 04t2M000002mgs1QAA #nCino
+        password_env_name: $nCino_INSTALL_KEY
+      - version_id: 04t3m000000H0pdAAC #nFORMS
+        password_env_name: $nFORMS_INSTALL_KEY
+      - version_id: 04t4R000001VUH4QAO #nXBI
+        password_env_name: $nXBI_INSTALL_KEY
+      - version_id: 04t4o000001smMjAAI #EFPIO
+        password_env_name: $EFPIO_INSTALL_KEY
+      - version_id: 04t3h000004sqeyAAA #MTRNS
+        password_env_name: $MTRNS_INSTALL_KEY
+      - version_id: 04t4M000000U1YgQAK #nSBA
+        password_env_name: $nSBA_INSTALL_KEY
+      - namespace: FinServ
+        version: '248.0'
       - namespace: CRMC_PP
         version: '3.64'
       - namespace: DNBConnect
@@ -46,14 +60,14 @@ project:
         version: '1.6084.3'
       - namespace: ELOQUA
         version: '1.3'
-      # - namespace: Intel_U4SFnCino
+      # - namespace: 'Intel_U4SFnCino'
       #   version: '0.3'
       - namespace: Intellective2
         version: '2.5'
       - namespace: Ipreo_BDSF_1_10
         version: '170.7'
-      # - namespace: LEXMAGICMOVER
-      #   version: '4.15'
+      - namespace: LEXMAGICMOVER
+        version: '4.15'
       - namespace: LID
         version: '3.23'
       - namespace: LLCLP
@@ -86,7 +100,6 @@ project:
         version: '1.932'
       - namespace: vPb
         version: '1.23'
-
 
 tasks:
     robot:

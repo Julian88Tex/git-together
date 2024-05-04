@@ -1,6 +1,6 @@
 {
   "orgName": "salesforce-fsc - Dev Org",
-  "edition": "Developer",
+  "edition": "Enterprise",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
@@ -15,14 +15,15 @@
       "enableAdminLoginAsAnyUser": true,
       "sessionSettings": {
         "forceRelogin": false
-      }
+      },
+      "enableAuditFieldsInactiveOwner": true
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
     },
     "communitiesSettings": {
       "enableNetworksEnabled": true
-  }
+    }
   },
   "features": ["Communities",
     "ContactsToMultipleAccounts",
@@ -35,7 +36,14 @@
     "FlowSites"],
   "objectSettings": {
     "account": {
-       "defaultRecordType": "PersonAccount"
+       "defaultRecordType": "PersonAccount",
+       "sharingModel": "read"
+    },
+    "opportunity": {
+      "sharingModel": "private"
+    },
+    "case": {
+      "sharingModel": "private"
     }
   }
 }
