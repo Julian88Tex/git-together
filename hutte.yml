@@ -4,14 +4,15 @@ version: 1.0
 # Shell script to run when pushing the source code to the scratch orgs.
 # It's a great place to automate tasks like permission set assignments or data loading.
 push_script: |
-  sfdx force:data:tree:import -f Contact.json
-  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-  python3 get-pip.py
-  pip install wheel
-  pip install --no-build-isolation cumulusci
-  cci org list
-  cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
-  cci flow run dependencies --org ${SALESFORCE_USERNAME}
+  # sfdx force:data:tree:import -f Contact.json
+  # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  # python3 get-pip.py
+  # pip install wheel
+  # pip install --no-build-isolation cumulusci
+  # cci org list
+  # cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+  # cci flow run dependencies --org ${SALESFORCE_USERNAME}
+  echo ${nDESIGN_INSTALL_KEY}
 
 custom_scripts:
   scratch_org:
