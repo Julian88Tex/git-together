@@ -1,0 +1,15 @@
+salesforce.WorkflowFieldUpdate Opportunity_npsp__Opportunity_AcknowledgmentStatus_Update@vuuuu {
+  fullName = "Opportunity.npsp__Opportunity_AcknowledgmentStatus_Update"
+  description = "Sets the Acknowledgment Status to \"Acknowledged\""
+  field = salesforce.Opportunity.field.npsp__Acknowledgment_Status__c
+  literalValue = "Acknowledged"
+  name = "Opportunity Acknowledgment Status Update"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity_AcknowledgmentStatus_Update"
+}

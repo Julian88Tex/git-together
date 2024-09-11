@@ -1,0 +1,4 @@
+salesforce.CommerceSettings {
+  fullName = "Commerce"
+  _alias = "Commerce"
+}

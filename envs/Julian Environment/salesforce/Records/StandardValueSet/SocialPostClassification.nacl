@@ -1,0 +1,5 @@
+salesforce.StandardValueSet SocialPostClassification {
+  fullName = "SocialPostClassification"
+  sorted = false
+  _alias = "SocialPostClassification"
+}

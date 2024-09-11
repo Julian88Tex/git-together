@@ -1,0 +1,223 @@
+type salesforce.GuestUserAnomalyEventStore {
+  salesforce.DateTime EventDate {
+    apiName = "GuestUserAnomalyEventStore.EventDate"
+    _required = true
+    label = "Event Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EventIdentifier {
+    apiName = "GuestUserAnomalyEventStore.EventIdentifier"
+    length = 80
+    _required = true
+    label = "Event ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea RequestedEntities {
+    apiName = "GuestUserAnomalyEventStore.RequestedEntities"
+    length = 131000
+    label = "Requested Entities"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Score {
+    apiName = "GuestUserAnomalyEventStore.Score"
+    label = "Score"
+    precision = 12
+    scale = 6
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SoqlCommands {
+    apiName = "GuestUserAnomalyEventStore.SoqlCommands"
+    length = 131000
+    label = "SOQL Commands"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SourceIp {
+    apiName = "GuestUserAnomalyEventStore.SourceIp"
+    length = 255
+    label = "Source IP Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Summary {
+    apiName = "GuestUserAnomalyEventStore.Summary"
+    length = 1000
+    label = "Summary"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TotalControllerEvents {
+    apiName = "GuestUserAnomalyEventStore.TotalControllerEvents"
+    label = "Total Controller Events"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text UserAgent {
+    apiName = "GuestUserAnomalyEventStore.UserAgent"
+    length = 1000
+    label = "Current User Agent"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "GuestUserAnomalyEventStore.UserId"
+    relationshipName = "User"
+    label = "User ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text UserType {
+    apiName = "GuestUserAnomalyEventStore.UserType"
+    length = 255
+    label = "Current User Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "GuestUserAnomalyEventStore.Id"
+    label = "Guest User Anomaly Event Store ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber GuestUserAnomalyEventNumber {
+    apiName = "GuestUserAnomalyEventStore.GuestUserAnomalyEventNumber"
+    label = "Event Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GuestUserAnomalyEventStore.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GuestUserAnomalyEventStore.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GuestUserAnomalyEventStore.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Username {
+    apiName = "GuestUserAnomalyEventStore.Username"
+    length = 255
+    label = "Username"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SessionKey {
+    apiName = "GuestUserAnomalyEventStore.SessionKey"
+    length = 24
+    label = "Session Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LoginKey {
+    apiName = "GuestUserAnomalyEventStore.LoginKey"
+    length = 24
+    label = "Login Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PolicyId {
+    apiName = "GuestUserAnomalyEventStore.PolicyId"
+    relationshipName = "Policy"
+    label = "Transaction Security Policy ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PolicyOutcome {
+    apiName = "GuestUserAnomalyEventStore.PolicyOutcome"
+    restricted = true
+    label = "Policy Outcome"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number EvaluationTime {
+    apiName = "GuestUserAnomalyEventStore.EvaluationTime"
+    label = "Evaluation Time"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SecurityEventData {
+    apiName = "GuestUserAnomalyEventStore.SecurityEventData"
+    length = 131000
+    label = "Security Event Data"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

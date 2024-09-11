@@ -1,0 +1,96 @@
+salesforce.ApexPage leadConvertPage {
+  apiVersion = 29
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "This Visualforce page allows you to display a custom Lead Convert page for your Salesforce users."
+  label = "leadConvertPage"
+  packageVersions = [
+    {
+      majorNumber = 3
+      minorNumber = 1
+      namespace = "npe01"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 2
+      namespace = "npe03"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 0
+      namespace = "npe4"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 0
+      namespace = "npe5"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 1
+      namespace = "npo02"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 65
+      namespace = "npsp"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 10
+      namespace = "sf_chttr_apps"
+    },
+    {
+      majorNumber = 5
+      minorNumber = 0
+      namespace = "stayclassy"
+    },
+  ]
+  fullName = "leadConvertPage"
+  content = file("salesforce/Records/ApexPage/leadConvertPage.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Activity.field.Primary_Resource__c
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertCoreComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskDescComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskInfoComponentController
+    },
+    {
+      reference = salesforce.ApexComponent.instance.leadConvertCoreComponent
+    },
+    {
+      reference = salesforce.ApexComponent.instance.leadConvertPageHeaderTextComponent
+    },
+    {
+      reference = salesforce.ApexComponent.instance.leadConvertTaskDescriptionComponent
+    },
+    {
+      reference = salesforce.ApexComponent.instance.leadConvertTaskInfoComponent
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertPage"
+}

@@ -1,0 +1,4 @@
+salesforce.RetailExecutionSettings {
+  fullName = "RetailExecution"
+  _alias = "RetailExecution"
+}

@@ -1,0 +1,17 @@
+salesforce.ListView Quote_mine {
+  fullName = "Quote.mine"
+  columns = [
+    "QUOTE.NAME",
+    "OPPORTUNITY.NAME",
+    "QUOTE.ISSYNCING",
+    "QUOTE.EXPIRATIONDATE",
+    "QUOTE.SUBTOTAL",
+    "QUOTE.TOTALPRICE",
+  ]
+  filterScope = "Mine"
+  label = "My Quotes"
+  _parent = [
+    salesforce.Quote,
+  ]
+  _alias = "My Quotes"
+}

@@ -1,0 +1,19 @@
+salesforce.ApexComponent leadConvertTaskInfoComponent {
+  apiVersion = 29
+  description = "This custom Component contains elements related to creating a new Task as part of the Lead Convert process"
+  label = "leadConvertTaskInfoComponent"
+  fullName = "leadConvertTaskInfoComponent"
+  content = file("salesforce/Records/ApexComponent/leadConvertTaskInfoComponent.component")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Activity.field.Primary_Resource__c
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskInfoComponentController
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertTaskInfoComponent"
+}

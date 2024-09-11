@@ -1,0 +1,36 @@
+type salesforce.Candidate__c {
+  salesforce.Picklist Prospect_Rating__c {
+    apiName = "Candidate__c.Prospect_Rating__c"
+    description = "Indicates how closely a candidate fits the position applied to."
+    inlineHelpText = "How well does this candidate fit the job description?"
+    label = "Prospect Rating"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Hot"
+        default = false
+        label = "Hot"
+      },
+      {
+        fullName = "Warm"
+        default = false
+        label = "Warm"
+      },
+      {
+        fullName = "Cool"
+        default = false
+        label = "Cool"
+      },
+      {
+        fullName = "Manager Favorite"
+        default = false
+        label = "Manager Favorite"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,1294 @@
+type salesforce.User {
+  salesforce.LongTextArea AboutMe {
+    apiName = "User.AboutMe"
+    length = 1000
+    label = "About Me"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address Address {
+    apiName = "User.Address"
+    label = "Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Alias {
+    apiName = "User.Alias"
+    length = 8
+    _required = true
+    label = "Alias"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup CallCenterId {
+    apiName = "User.CallCenterId"
+    label = "Call Center ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CommunityNickname {
+    apiName = "User.CommunityNickname"
+    length = 40
+    _required = true
+    label = "Nickname"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text CompanyName {
+    apiName = "User.CompanyName"
+    length = 80
+    label = "Company Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "User.ContactId"
+    relationshipName = "Contact"
+    label = "Contact ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DefaultGroupNotificationFrequency {
+    apiName = "User.DefaultGroupNotificationFrequency"
+    restricted = true
+    _required = true
+    label = "Default Notification Frequency when Joining Groups"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DelegatedApproverId {
+    apiName = "User.DelegatedApproverId"
+    label = "Delegated Approver ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Department {
+    apiName = "User.Department"
+    length = 80
+    label = "Department"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist DigestFrequency {
+    apiName = "User.DigestFrequency"
+    restricted = true
+    _required = true
+    label = "Chatter Email Highlights Frequency"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Division {
+    apiName = "User.Division"
+    length = 80
+    label = "Division"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Email Email {
+    apiName = "User.Email"
+    _required = true
+    label = "Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist EmailEncodingKey {
+    apiName = "User.EmailEncodingKey"
+    restricted = true
+    _required = true
+    label = "Email Encoding"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text EmployeeNumber {
+    apiName = "User.EmployeeNumber"
+    length = 20
+    label = "Employee Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Phone Extension {
+    apiName = "User.Extension"
+    label = "Extension"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone Fax {
+    apiName = "User.Fax"
+    label = "Fax"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text FederationIdentifier {
+    apiName = "User.FederationIdentifier"
+    length = 512
+    label = "SAML Federation ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox ForecastEnabled {
+    apiName = "User.ForecastEnabled"
+    defaultValue = false
+    label = "Allow Forecasting"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup IndividualId {
+    apiName = "User.IndividualId"
+    relationshipName = "Individual"
+    label = "Individual ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "User.IsActive"
+    defaultValue = false
+    label = "Active"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown IsSystemControlled {
+    apiName = "User.IsSystemControlled"
+    _hidden_value = true
+  }
+  salesforce.Number JigsawImportLimitOverride {
+    apiName = "User.JigsawImportLimitOverride"
+    label = "Data.com Monthly Addition Limit"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist LanguageLocaleKey {
+    apiName = "User.LanguageLocaleKey"
+    restricted = true
+    _required = true
+    label = "Language"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist LocaleSidKey {
+    apiName = "User.LocaleSidKey"
+    restricted = true
+    _required = true
+    label = "Locale"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Hierarchy ManagerId {
+    apiName = "User.ManagerId"
+    relationshipName = "Manager"
+    label = "Manager ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone MobilePhone {
+    apiName = "User.MobilePhone"
+    label = "Mobile"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Name2 Name {
+    apiName = "User.Name"
+    _required = true
+    label = "Full Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone Phone {
+    apiName = "User.Phone"
+    label = "Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PortalRole {
+    apiName = "User.PortalRole"
+    restricted = true
+    label = "Portal Role Level"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProfileId {
+    apiName = "User.ProfileId"
+    relationshipName = "Profile"
+    _required = true
+    label = "Profile ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox ReceivesAdminInfoEmails {
+    apiName = "User.ReceivesAdminInfoEmails"
+    defaultValue = false
+    label = "Admin Info Emails"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox ReceivesInfoEmails {
+    apiName = "User.ReceivesInfoEmails"
+    defaultValue = false
+    label = "Info Emails"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email SenderEmail {
+    apiName = "User.SenderEmail"
+    label = "Email Sender Address"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Text SenderName {
+    apiName = "User.SenderName"
+    length = 80
+    label = "Email Sender Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea Signature {
+    apiName = "User.Signature"
+    length = 1333
+    label = "Email Signature"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text StayInTouchNote {
+    apiName = "User.StayInTouchNote"
+    length = 512
+    label = "Stay-in-Touch Email Note"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea StayInTouchSignature {
+    apiName = "User.StayInTouchSignature"
+    length = 512
+    label = "Stay-in-Touch Email Signature"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text StayInTouchSubject {
+    apiName = "User.StayInTouchSubject"
+    length = 80
+    label = "Stay-in-Touch Email Subject"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist TimeZoneSidKey {
+    apiName = "User.TimeZoneSidKey"
+    restricted = true
+    _required = true
+    label = "Time Zone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "User.Title"
+    length = 80
+    label = "Title"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup UserRoleId {
+    apiName = "User.UserRoleId"
+    relationshipName = "UserRole"
+    label = "Role ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown UserSubtype {
+    apiName = "User.UserSubtype"
+    _hidden_value = true
+  }
+  salesforce.Text Username {
+    apiName = "User.Username"
+    length = 80
+    _required = true
+    label = "Username"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup WorkspaceId {
+    apiName = "User.WorkspaceId"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "User.Id"
+    label = "User ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox EmailPreferencesAutoBcc {
+    apiName = "User.EmailPreferencesAutoBcc"
+    label = "AutoBcc"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox EmailPreferencesAutoBccStayInTouch {
+    apiName = "User.EmailPreferencesAutoBccStayInTouch"
+    label = "AutoBccStayInTouch"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox EmailPreferencesStayInTouchReminder {
+    apiName = "User.EmailPreferencesStayInTouchReminder"
+    label = "StayInTouchReminder"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text BadgeText {
+    apiName = "User.BadgeText"
+    length = 80
+    label = "User Photo badge text overlay"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist UserType {
+    apiName = "User.UserType"
+    restricted = true
+    label = "User Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastLoginDate {
+    apiName = "User.LastLoginDate"
+    label = "Last Login"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastPasswordChangeDate {
+    apiName = "User.LastPasswordChangeDate"
+    label = "Last Password Change or Reset"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "User.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "User.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "User.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "User.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "User.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number NumberOfFailedLogins {
+    apiName = "User.NumberOfFailedLogins"
+    label = "Failed Login Attempts"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime OfflineTrialExpirationDate {
+    apiName = "User.OfflineTrialExpirationDate"
+    label = "Offline Edition Trial Expiration Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime OfflinePdaTrialExpirationDate {
+    apiName = "User.OfflinePdaTrialExpirationDate"
+    label = "Sales Anywhere Trial Expiration Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox UserPermissionsMarketingUser {
+    apiName = "User.UserPermissionsMarketingUser"
+    label = "Marketing User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsOfflineUser {
+    apiName = "User.UserPermissionsOfflineUser"
+    label = "Offline User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsCallCenterAutoLogin {
+    apiName = "User.UserPermissionsCallCenterAutoLogin"
+    label = "Auto-login To Call Center"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsSFContentUser {
+    apiName = "User.UserPermissionsSFContentUser"
+    label = "Salesforce CRM Content User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsKnowledgeUser {
+    apiName = "User.UserPermissionsKnowledgeUser"
+    label = "Knowledge User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsInteractionUser {
+    apiName = "User.UserPermissionsInteractionUser"
+    label = "Flow User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsSupportUser {
+    apiName = "User.UserPermissionsSupportUser"
+    label = "Service Cloud User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsJigsawProspectingUser {
+    apiName = "User.UserPermissionsJigsawProspectingUser"
+    label = "Data.com User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsSiteforceContributorUser {
+    apiName = "User.UserPermissionsSiteforceContributorUser"
+    label = "Site.com Contributor User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsSiteforcePublisherUser {
+    apiName = "User.UserPermissionsSiteforcePublisherUser"
+    label = "Site.com Publisher User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsChatterAnswersUser {
+    apiName = "User.UserPermissionsChatterAnswersUser"
+    label = "Chatter Answers User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPermissionsWorkDotComUserFeature {
+    apiName = "User.UserPermissionsWorkDotComUserFeature"
+    label = "WDC User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesActivityRemindersPopup {
+    apiName = "User.UserPreferencesActivityRemindersPopup"
+    label = "ActivityRemindersPopup"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesEventRemindersCheckboxDefault {
+    apiName = "User.UserPreferencesEventRemindersCheckboxDefault"
+    label = "EventRemindersCheckboxDefault"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesTaskRemindersCheckboxDefault {
+    apiName = "User.UserPreferencesTaskRemindersCheckboxDefault"
+    label = "TaskRemindersCheckboxDefault"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesReminderSoundOff {
+    apiName = "User.UserPreferencesReminderSoundOff"
+    label = "ReminderSoundOff"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableAllFeedsEmail {
+    apiName = "User.UserPreferencesDisableAllFeedsEmail"
+    label = "DisableAllFeedsEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableFollowersEmail {
+    apiName = "User.UserPreferencesDisableFollowersEmail"
+    label = "DisableFollowersEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableProfilePostEmail {
+    apiName = "User.UserPreferencesDisableProfilePostEmail"
+    label = "DisableProfilePostEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableChangeCommentEmail {
+    apiName = "User.UserPreferencesDisableChangeCommentEmail"
+    label = "DisableChangeCommentEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableLaterCommentEmail {
+    apiName = "User.UserPreferencesDisableLaterCommentEmail"
+    label = "DisableLaterCommentEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisProfPostCommentEmail {
+    apiName = "User.UserPreferencesDisProfPostCommentEmail"
+    label = "DisProfPostCommentEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesContentNoEmail {
+    apiName = "User.UserPreferencesContentNoEmail"
+    label = "ContentNoEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesContentEmailAsAndWhen {
+    apiName = "User.UserPreferencesContentEmailAsAndWhen"
+    label = "ContentEmailAsAndWhen"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesApexPagesDeveloperMode {
+    apiName = "User.UserPreferencesApexPagesDeveloperMode"
+    label = "ApexPagesDeveloperMode"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesReceiveNoNotificationsAsApprover {
+    apiName = "User.UserPreferencesReceiveNoNotificationsAsApprover"
+    label = "ReceiveNoNotificationsAsApprover"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesReceiveNotificationsAsDelegatedApprover {
+    apiName = "User.UserPreferencesReceiveNotificationsAsDelegatedApprover"
+    label = "ReceiveNotificationsAsDelegatedApprover"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideCSNGetChatterMobileTask {
+    apiName = "User.UserPreferencesHideCSNGetChatterMobileTask"
+    label = "HideCSNGetChatterMobileTask"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableMentionsPostEmail {
+    apiName = "User.UserPreferencesDisableMentionsPostEmail"
+    label = "DisableMentionsPostEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisMentionsCommentEmail {
+    apiName = "User.UserPreferencesDisMentionsCommentEmail"
+    label = "DisMentionsCommentEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideCSNDesktopTask {
+    apiName = "User.UserPreferencesHideCSNDesktopTask"
+    label = "HideCSNDesktopTask"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideChatterOnboardingSplash {
+    apiName = "User.UserPreferencesHideChatterOnboardingSplash"
+    label = "HideChatterOnboardingSplash"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideSecondChatterOnboardingSplash {
+    apiName = "User.UserPreferencesHideSecondChatterOnboardingSplash"
+    label = "HideSecondChatterOnboardingSplash"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisCommentAfterLikeEmail {
+    apiName = "User.UserPreferencesDisCommentAfterLikeEmail"
+    label = "DisCommentAfterLikeEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableLikeEmail {
+    apiName = "User.UserPreferencesDisableLikeEmail"
+    label = "DisableLikeEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesSortFeedByComment {
+    apiName = "User.UserPreferencesSortFeedByComment"
+    label = "SortFeedByComment"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableMessageEmail {
+    apiName = "User.UserPreferencesDisableMessageEmail"
+    label = "DisableMessageEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesJigsawListUser {
+    apiName = "User.UserPreferencesJigsawListUser"
+    label = "JigsawListUser"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableBookmarkEmail {
+    apiName = "User.UserPreferencesDisableBookmarkEmail"
+    label = "DisableBookmarkEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableSharePostEmail {
+    apiName = "User.UserPreferencesDisableSharePostEmail"
+    label = "DisableSharePostEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesEnableAutoSubForFeeds {
+    apiName = "User.UserPreferencesEnableAutoSubForFeeds"
+    label = "EnableAutoSubForFeeds"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableFileShareNotificationsForApi {
+    apiName = "User.UserPreferencesDisableFileShareNotificationsForApi"
+    label = "DisableFileShareNotificationsForApi"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowTitleToExternalUsers {
+    apiName = "User.UserPreferencesShowTitleToExternalUsers"
+    label = "ShowTitleToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowManagerToExternalUsers {
+    apiName = "User.UserPreferencesShowManagerToExternalUsers"
+    label = "ShowManagerToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowEmailToExternalUsers {
+    apiName = "User.UserPreferencesShowEmailToExternalUsers"
+    label = "ShowEmailToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowWorkPhoneToExternalUsers {
+    apiName = "User.UserPreferencesShowWorkPhoneToExternalUsers"
+    label = "ShowWorkPhoneToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowMobilePhoneToExternalUsers {
+    apiName = "User.UserPreferencesShowMobilePhoneToExternalUsers"
+    label = "ShowMobilePhoneToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowFaxToExternalUsers {
+    apiName = "User.UserPreferencesShowFaxToExternalUsers"
+    label = "ShowFaxToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowStreetAddressToExternalUsers {
+    apiName = "User.UserPreferencesShowStreetAddressToExternalUsers"
+    label = "ShowStreetAddressToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowCityToExternalUsers {
+    apiName = "User.UserPreferencesShowCityToExternalUsers"
+    label = "ShowCityToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowStateToExternalUsers {
+    apiName = "User.UserPreferencesShowStateToExternalUsers"
+    label = "ShowStateToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowPostalCodeToExternalUsers {
+    apiName = "User.UserPreferencesShowPostalCodeToExternalUsers"
+    label = "ShowPostalCodeToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowCountryToExternalUsers {
+    apiName = "User.UserPreferencesShowCountryToExternalUsers"
+    label = "ShowCountryToExternalUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowProfilePicToGuestUsers {
+    apiName = "User.UserPreferencesShowProfilePicToGuestUsers"
+    label = "ShowProfilePicToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowTitleToGuestUsers {
+    apiName = "User.UserPreferencesShowTitleToGuestUsers"
+    label = "ShowTitleToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowCityToGuestUsers {
+    apiName = "User.UserPreferencesShowCityToGuestUsers"
+    label = "ShowCityToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowStateToGuestUsers {
+    apiName = "User.UserPreferencesShowStateToGuestUsers"
+    label = "ShowStateToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowPostalCodeToGuestUsers {
+    apiName = "User.UserPreferencesShowPostalCodeToGuestUsers"
+    label = "ShowPostalCodeToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowCountryToGuestUsers {
+    apiName = "User.UserPreferencesShowCountryToGuestUsers"
+    label = "ShowCountryToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowForecastingChangeSignals {
+    apiName = "User.UserPreferencesShowForecastingChangeSignals"
+    label = "ShowForecastingChangeSignals"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesLiveAgentMiawSetupDeflection {
+    apiName = "User.UserPreferencesLiveAgentMiawSetupDeflection"
+    label = "LiveAgentMiawSetupDeflection"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideS1BrowserUI {
+    apiName = "User.UserPreferencesHideS1BrowserUI"
+    label = "HideS1BrowserUI"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesDisableEndorsementEmail {
+    apiName = "User.UserPreferencesDisableEndorsementEmail"
+    label = "DisableEndorsementEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesPathAssistantCollapsed {
+    apiName = "User.UserPreferencesPathAssistantCollapsed"
+    label = "PathAssistantCollapsed"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesCacheDiagnostics {
+    apiName = "User.UserPreferencesCacheDiagnostics"
+    label = "CacheDiagnostics"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowEmailToGuestUsers {
+    apiName = "User.UserPreferencesShowEmailToGuestUsers"
+    label = "ShowEmailToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowManagerToGuestUsers {
+    apiName = "User.UserPreferencesShowManagerToGuestUsers"
+    label = "ShowManagerToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowWorkPhoneToGuestUsers {
+    apiName = "User.UserPreferencesShowWorkPhoneToGuestUsers"
+    label = "ShowWorkPhoneToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowMobilePhoneToGuestUsers {
+    apiName = "User.UserPreferencesShowMobilePhoneToGuestUsers"
+    label = "ShowMobilePhoneToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowFaxToGuestUsers {
+    apiName = "User.UserPreferencesShowFaxToGuestUsers"
+    label = "ShowFaxToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowStreetAddressToGuestUsers {
+    apiName = "User.UserPreferencesShowStreetAddressToGuestUsers"
+    label = "ShowStreetAddressToGuestUsers"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesLightningExperiencePreferred {
+    apiName = "User.UserPreferencesLightningExperiencePreferred"
+    label = "LightningExperiencePreferred"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesPreviewLightning {
+    apiName = "User.UserPreferencesPreviewLightning"
+    label = "PreviewLightning"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideEndUserOnboardingAssistantModal {
+    apiName = "User.UserPreferencesHideEndUserOnboardingAssistantModal"
+    label = "HideEndUserOnboardingAssistantModal"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideLightningMigrationModal {
+    apiName = "User.UserPreferencesHideLightningMigrationModal"
+    label = "HideLightningMigrationModal"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideSfxWelcomeMat {
+    apiName = "User.UserPreferencesHideSfxWelcomeMat"
+    label = "HideSfxWelcomeMat"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHideBiggerPhotoCallout {
+    apiName = "User.UserPreferencesHideBiggerPhotoCallout"
+    label = "HideBiggerPhotoCallout"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesGlobalNavBarWTShown {
+    apiName = "User.UserPreferencesGlobalNavBarWTShown"
+    label = "GlobalNavBarWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesGlobalNavGridMenuWTShown {
+    apiName = "User.UserPreferencesGlobalNavGridMenuWTShown"
+    label = "GlobalNavGridMenuWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesCreateLEXAppsWTShown {
+    apiName = "User.UserPreferencesCreateLEXAppsWTShown"
+    label = "CreateLEXAppsWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesFavoritesWTShown {
+    apiName = "User.UserPreferencesFavoritesWTShown"
+    label = "FavoritesWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesRecordHomeSectionCollapseWTShown {
+    apiName = "User.UserPreferencesRecordHomeSectionCollapseWTShown"
+    label = "RecordHomeSectionCollapseWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesRecordHomeReservedWTShown {
+    apiName = "User.UserPreferencesRecordHomeReservedWTShown"
+    label = "RecordHomeReservedWTShown"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesFavoritesShowTopFavorites {
+    apiName = "User.UserPreferencesFavoritesShowTopFavorites"
+    label = "FavoritesShowTopFavorites"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesExcludeMailAppAttachments {
+    apiName = "User.UserPreferencesExcludeMailAppAttachments"
+    label = "ExcludeMailAppAttachments"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesSuppressTaskSFXReminders {
+    apiName = "User.UserPreferencesSuppressTaskSFXReminders"
+    label = "SuppressTaskSFXReminders"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesSuppressEventSFXReminders {
+    apiName = "User.UserPreferencesSuppressEventSFXReminders"
+    label = "SuppressEventSFXReminders"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesPreviewCustomTheme {
+    apiName = "User.UserPreferencesPreviewCustomTheme"
+    label = "PreviewCustomTheme"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHasCelebrationBadge {
+    apiName = "User.UserPreferencesHasCelebrationBadge"
+    label = "HasCelebrationBadge"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesUserDebugModePref {
+    apiName = "User.UserPreferencesUserDebugModePref"
+    label = "UserDebugModePref"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesSRHOverrideActivities {
+    apiName = "User.UserPreferencesSRHOverrideActivities"
+    label = "SRHOverrideActivities"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesNewLightningReportRunPageEnabled {
+    apiName = "User.UserPreferencesNewLightningReportRunPageEnabled"
+    label = "NewLightningReportRunPageEnabled"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesReverseOpenActivitiesView {
+    apiName = "User.UserPreferencesReverseOpenActivitiesView"
+    label = "ReverseOpenActivitiesView"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHasSentWarningEmail {
+    apiName = "User.UserPreferencesHasSentWarningEmail"
+    label = "HasSentWarningEmail"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHasSentWarningEmail238 {
+    apiName = "User.UserPreferencesHasSentWarningEmail238"
+    label = "HasSentWarningEmail238"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesHasSentWarningEmail240 {
+    apiName = "User.UserPreferencesHasSentWarningEmail240"
+    label = "HasSentWarningEmail240"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesNativeEmailClient {
+    apiName = "User.UserPreferencesNativeEmailClient"
+    label = "NativeEmailClient"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesShowForecastingRoundedAmounts {
+    apiName = "User.UserPreferencesShowForecastingRoundedAmounts"
+    label = "ShowForecastingRoundedAmounts"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "User.AccountId"
+    relationshipName = "Account"
+    label = "Account ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPortalEnabled {
+    apiName = "User.IsPortalEnabled"
+    defaultValue = false
+    label = "Is Portal Enabled"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url FullPhotoUrl {
+    apiName = "User.FullPhotoUrl"
+    label = "Url for full-sized Photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url SmallPhotoUrl {
+    apiName = "User.SmallPhotoUrl"
+    label = "Photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsExtIndicatorVisible {
+    apiName = "User.IsExtIndicatorVisible"
+    defaultValue = false
+    label = "Show external indicator"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OutOfOfficeMessage {
+    apiName = "User.OutOfOfficeMessage"
+    length = 40
+    label = "Out of office message"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url MediumPhotoUrl {
+    apiName = "User.MediumPhotoUrl"
+    label = "Url for medium profile photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url BannerPhotoUrl {
+    apiName = "User.BannerPhotoUrl"
+    label = "Url for banner photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url SmallBannerPhotoUrl {
+    apiName = "User.SmallBannerPhotoUrl"
+    label = "Url for IOS banner photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url MediumBannerPhotoUrl {
+    apiName = "User.MediumBannerPhotoUrl"
+    label = "Url for Android banner photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsProfilePhotoActive {
+    apiName = "User.IsProfilePhotoActive"
+    defaultValue = false
+    label = "Has Profile Photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

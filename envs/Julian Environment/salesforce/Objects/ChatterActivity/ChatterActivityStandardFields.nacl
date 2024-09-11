@@ -1,0 +1,92 @@
+type salesforce.ChatterActivity {
+  serviceid Id {
+    apiName = "ChatterActivity.Id"
+    label = "Chatter Activity ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "ChatterActivity.NetworkId"
+    label = "Network ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "ChatterActivity.ParentId"
+    label = "Parent ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number PostCount {
+    apiName = "ChatterActivity.PostCount"
+    _required = true
+    label = "Post Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number CommentCount {
+    apiName = "ChatterActivity.CommentCount"
+    _required = true
+    label = "Comment Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number CommentReceivedCount {
+    apiName = "ChatterActivity.CommentReceivedCount"
+    _required = true
+    label = "Comment Received Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number LikeReceivedCount {
+    apiName = "ChatterActivity.LikeReceivedCount"
+    _required = true
+    label = "Like Received Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number InfluenceRawRank {
+    apiName = "ChatterActivity.InfluenceRawRank"
+    _required = true
+    label = "Influence Raw Rank"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ChatterActivity.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

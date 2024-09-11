@@ -1,0 +1,9 @@
+salesforce.ListView Fundraiser__c_All {
+  fullName = "Fundraiser__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Fundraiser__c,
+  ]
+  _alias = "All"
+}

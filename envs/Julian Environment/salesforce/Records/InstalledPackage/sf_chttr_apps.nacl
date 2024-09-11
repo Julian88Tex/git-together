@@ -1,0 +1,5 @@
+salesforce.InstalledPackage sf_chttr_apps {
+  versionNumber = "1.2"
+  fullName = "sf_chttr_apps"
+  _alias = "sf_chttr_apps"
+}

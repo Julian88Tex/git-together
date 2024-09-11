@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__ContactAlternateEmailUpdate@vuu {
+  fullName = "Contact.npe01__ContactAlternateEmailUpdate"
+  field = salesforce.Contact.field.npe01__AlternateEmail__c
+  formula = "Email"
+  name = "Contact.AlternateEmail.Update"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__ContactAlternateEmailUpdate"
+}

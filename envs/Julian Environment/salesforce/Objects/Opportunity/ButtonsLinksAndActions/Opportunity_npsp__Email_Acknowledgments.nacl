@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_npsp__Email_Acknowledgments {
+  fullName = "Opportunity.npsp__Email_Acknowledgments"
+  availability = "online"
+  displayType = "massActionButton"
+  height = 600
+  linkType = "page"
+  masterLabel = "Email Acknowledgments"
+  openType = "sidebar"
+  page = "npsp__OPP_SendAcknowledgmentBTN"
+  protected = false
+  requireRowSelection = true
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Email_Acknowledgments"
+}

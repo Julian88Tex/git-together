@@ -1,0 +1,4 @@
+salesforce.SharingRules CalendarView {
+  fullName = "CalendarView"
+  _alias = "CalendarView"
+}

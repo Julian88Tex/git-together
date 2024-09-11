@@ -1,0 +1,33 @@
+salesforce.DuplicateRule Contact_Standard_Rule@vu {
+  fullName = "Contact.Standard_Rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "You're creating a duplicate record. We recommend you use an existing record instead."
+  duplicateRuleFilter = {
+    duplicateRuleFilterItems = {
+      field = salesforce.User.field.Username
+      operation = "notEqual"
+      value = "classyforsalesforce@classy.org"
+      sortOrder = 1
+      table = salesforce.User
+    }
+  }
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = salesforce.Contact
+      matchingRule = "First_Name_Same"
+    },
+  ]
+  isActive = true
+  masterLabel = "Standard Rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  securityOption = "BypassSharingRules"
+  sortOrder = 1
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.Standard_Rule"
+}

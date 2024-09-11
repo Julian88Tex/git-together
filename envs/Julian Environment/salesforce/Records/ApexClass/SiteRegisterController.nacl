@@ -1,0 +1,15 @@
+salesforce.ApexClass SiteRegisterController {
+  apiVersion = 37
+  status = "Active"
+  fullName = "SiteRegisterController"
+  content = file("salesforce/Records/ApexClass/SiteRegisterController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.SiteRegisterConfirm
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+  _alias = "SiteRegisterController"
+}

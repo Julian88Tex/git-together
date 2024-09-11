@@ -1,0 +1,4 @@
+salesforce.SharingRules CleanLeadBackup {
+  fullName = "CleanLeadBackup"
+  _alias = "CleanLeadBackup"
+}

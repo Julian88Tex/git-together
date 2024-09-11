@@ -1,0 +1,7 @@
+salesforce.SharingRules AuthorizationFormDataUse {
+  fullName = "AuthorizationFormDataUse"
+  _parent = [
+    salesforce.AuthorizationFormDataUse,
+  ]
+  _alias = "AuthorizationFormDataUse"
+}

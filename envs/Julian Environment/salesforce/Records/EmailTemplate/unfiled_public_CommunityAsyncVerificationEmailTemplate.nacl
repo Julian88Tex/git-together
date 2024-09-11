@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_CommunityAsyncVerificationEmailTemplate@zcd {
+  available = true
+  description = "Email message a user receives when asynchronous email verification is invoked."
+  encodingKey = "UTF-8"
+  name = "Communities: User Verification Email"
+  style = "none"
+  subject = "Verify your identity in {!Community.Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/CommunityAsyncVerificationEmailTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/CommunityAsyncVerificationEmailTemplate/CommunityAsyncVerificationEmailTemplate.email")
+  _alias = "unfiled$public/CommunityAsyncVerificationEmailTemplate"
+}

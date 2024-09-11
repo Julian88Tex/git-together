@@ -1,0 +1,4 @@
+salesforce.DiscoverySettings {
+  fullName = "Discovery"
+  _alias = "Discovery"
+}

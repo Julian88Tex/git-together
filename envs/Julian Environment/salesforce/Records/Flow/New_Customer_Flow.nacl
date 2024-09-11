@@ -1,0 +1,200 @@
+salesforce.Flow New_Customer_Flow {
+  fullName = "New_Customer_Flow"
+  apiVersion = 49
+  environments = "Default"
+  interviewLabel = "New Customer Flow {!$Flow.CurrentDateTime}"
+  label = "New Customer Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "FREE_FORM_CANVAS"
+      }
+    },
+  ]
+  processType = "Flow"
+  recordCreates = [
+    {
+      name = "Create_Account"
+      label = "Create Account"
+      locationX = 414
+      locationY = 213
+      assignRecordIdToReference = "NewAccountID"
+      connector = {
+        targetReference = "Create_Contact"
+      }
+      inputAssignments = [
+        {
+          field = salesforce.Account.field.Name
+          value = {
+            elementReference = "Company_Name"
+          }
+        },
+      ]
+      object = salesforce.Account
+    },
+    {
+      name = "Create_Contact"
+      label = "Create Contact"
+      locationX = 401
+      locationY = 318
+      assignRecordIdToReference = "NewContactID"
+      connector = {
+        targetReference = "Create_Opportunity"
+      }
+      inputAssignments = [
+        {
+          field = salesforce.Contact.field.AccountId
+          value = {
+            elementReference = "NewAccountID"
+          }
+        },
+        {
+          field = "FirstName"
+          value = {
+            elementReference = "First_Name"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            elementReference = "Last_Name"
+          }
+        },
+      ]
+      object = salesforce.Contact
+    },
+    {
+      name = "Create_Opportunity"
+      label = "Create Opportunity"
+      locationX = 399
+      locationY = 435
+      inputAssignments = [
+        {
+          field = salesforce.Opportunity.field.AccountId
+          value = {
+            elementReference = "NewAccountID"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.Amount
+          value = {
+            elementReference = "Opportunity_Amount"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.CloseDate
+          value = {
+            dateValue = "2017-08-30"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.Name
+          value = {
+            stringValue = "{!Company_Name} - {!Last_Name}"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.StageName
+          value = {
+            elementReference = "Opportunity_Stage"
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+    },
+  ]
+  screens = {
+    name = "New_Customer_Flow"
+    label = "New Customer Flow"
+    locationX = 423
+    locationY = 107
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    connector = {
+      targetReference = "Create_Account"
+    }
+    fields = [
+      {
+        name = "First_Name"
+        dataType = "String"
+        fieldText = "First Name"
+        fieldType = "InputField"
+        isRequired = false
+      },
+      {
+        name = "Last_Name"
+        dataType = "String"
+        fieldText = "Last Name"
+        fieldType = "InputField"
+        isRequired = false
+      },
+      {
+        name = "Company_Name"
+        dataType = "String"
+        fieldText = "Company Name"
+        fieldType = "InputField"
+        isRequired = false
+      },
+      {
+        name = "Opportunity_Amount"
+        dataType = "Currency"
+        fieldText = "Opportunity Amount"
+        fieldType = "InputField"
+        isRequired = false
+        scale = 0
+      },
+      {
+        name = "Opportunity_Stage"
+        dataType = "String"
+        defaultValue = {
+          stringValue = "Prospecting"
+        }
+        fieldText = "Opportunity Stage"
+        fieldType = "InputField"
+        isRequired = true
+      },
+    ]
+    showFooter = true
+    showHeader = true
+  }
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "New_Customer_Flow"
+    }
+  }
+  status = "Draft"
+  variables = [
+    {
+      name = "AccountID"
+      dataType = "String"
+      isCollection = false
+      isInput = false
+      isOutput = false
+    },
+    {
+      name = "NewAccountID"
+      dataType = "String"
+      isCollection = false
+      isInput = false
+      isOutput = false
+    },
+    {
+      name = "NewContactID"
+      dataType = "String"
+      isCollection = false
+      isInput = false
+      isOutput = false
+    },
+  ]
+  _alias = "New Customer Flow"
+}

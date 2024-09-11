@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__SetPrefEmailtoWork@vuu {
+  fullName = "Contact.npe01__SetPrefEmailtoWork"
+  field = salesforce.Contact.field.npe01__Preferred_Email__c
+  literalValue = "Work"
+  name = "Set Pref Email to Work"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__SetPrefEmailtoWork"
+}

@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_npsp__Email_Acknowledgment {
+  fullName = "Opportunity.npsp__Email_Acknowledgment"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Email Acknowledgment"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/{!$Setup.npsp__Package_Settings__c.npsp__Namespace_Prefix__c}OPP_SendAcknowledgmentBTN?OppId={!Opportunity.Id}"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Email_Acknowledgment"
+}

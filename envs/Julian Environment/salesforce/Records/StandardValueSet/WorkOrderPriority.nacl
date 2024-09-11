@@ -1,0 +1,5 @@
+salesforce.StandardValueSet WorkOrderPriority {
+  fullName = "WorkOrderPriority"
+  sorted = false
+  _alias = "WorkOrderPriority"
+}

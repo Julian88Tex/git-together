@@ -1,0 +1,12 @@
+salesforce.ApexClass MicrobatchSelfRegControllerTest {
+  apiVersion = 54
+  status = "Active"
+  fullName = "MicrobatchSelfRegControllerTest"
+  content = file("salesforce/Records/ApexClass/MicrobatchSelfRegControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MicrobatchSelfRegController
+    },
+  ]
+  _alias = "MicrobatchSelfRegControllerTest"
+}

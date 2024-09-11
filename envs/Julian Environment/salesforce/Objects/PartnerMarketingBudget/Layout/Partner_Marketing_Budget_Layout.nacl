@@ -1,0 +1,125 @@
+salesforce.Layout PartnerMarketingBudget_Partner_Marketing_Budget_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerMarketingBudget.field.Title
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerMarketingBudget.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerMarketingBudget.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerMarketingBudget.field.Amount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerMarketingBudget.field.StartDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerMarketingBudget.field.EndDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Budget Usage"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.TotalAllocatedAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.TotalApprovedFrs
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.TotalApprovedFcs
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.TotalReimbursedFcs
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerMarketingBudget.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerMarketingBudget.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PartnerMarketingBudget-Partner Marketing Budget Layout"
+  _parent = [
+    salesforce.PartnerMarketingBudget,
+  ]
+  _alias = "PartnerMarketingBudget-Partner Marketing Budget Layout"
+}

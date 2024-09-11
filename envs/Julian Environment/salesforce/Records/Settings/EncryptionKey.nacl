@@ -1,0 +1,7 @@
+salesforce.EncryptionKeySettings {
+  fullName = "EncryptionKey"
+  canOptOutOfDerivationWithBYOK = false
+  dataCloudEncryption = "false"
+  tenantLevelEncryption = "false"
+  _alias = "EncryptionKey"
+}

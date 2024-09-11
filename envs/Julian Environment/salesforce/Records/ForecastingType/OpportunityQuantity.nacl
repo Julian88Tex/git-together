@@ -1,0 +1,13 @@
+salesforce.ForecastingType OpportunityQuantity {
+  fullName = "OpportunityQuantity"
+  active = false
+  amount = false
+  dateType = "0"
+  developerName = "OpportunityQuantity"
+  hasCustomGroup = false
+  hasProductFamily = false
+  masterLabel = "Opportunity Quantity"
+  quantity = true
+  roleType = "R"
+  _alias = "OpportunityQuantity"
+}

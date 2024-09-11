@@ -1,0 +1,28 @@
+type salesforce.Event {
+  salesforce.Text Primary_Resource__c {
+    apiName = "Event.Primary_Resource__c"
+    length = 255
+    label = "Primary Resource"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaText DB_Activity_Type__c {
+    apiName = "Event.DB_Activity_Type__c"
+    formula = "IF(CONTAINS( Subject , \"Email\"), \"Email\", IF(CONTAINS( Subject , \"Cold Call\"), \"Cold Call\", IF(CONTAINS( Subject , \"Call\"), \"Call\", IF(CONTAINS( Subject , \"Meeting\"), \"Meeting\", IF(CONTAINS( Subject , \"On Site Visit\"), \"Site Visit\", IF(CONTAINS( Subject , \"Quote\"), \"Send Letter/Quote\", \"Other\"))))))"
+    label = "DB Activity Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Event.field.Subject
+      },
+    ]
+  }
+}

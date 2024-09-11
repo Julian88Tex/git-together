@@ -1,0 +1,183 @@
+type salesforce.DataKitDeploymentLog {
+  salesforce.Text BundleName {
+    apiName = "DataKitDeploymentLog.BundleName"
+    length = 40
+    label = "Bundle Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ComponentName {
+    apiName = "DataKitDeploymentLog.ComponentName"
+    length = 40
+    label = "Component Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ComponentType {
+    apiName = "DataKitDeploymentLog.ComponentType"
+    restricted = true
+    label = "Component Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text DataKitName {
+    apiName = "DataKitDeploymentLog.DataKitName"
+    length = 40
+    label = "Data Kit Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text DataSpaceName {
+    apiName = "DataKitDeploymentLog.DataSpaceName"
+    length = 40
+    label = "Data Space Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text DeployJob {
+    apiName = "DataKitDeploymentLog.DeployJob"
+    length = 40
+    label = "Deploy Job"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea DeploymentError {
+    apiName = "DataKitDeploymentLog.DeploymentError"
+    length = 128000
+    label = "Deployment Error"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist DeploymentStatus {
+    apiName = "DataKitDeploymentLog.DeploymentStatus"
+    restricted = true
+    label = "Deployment Status"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text FlowInterviewIdentifier {
+    apiName = "DataKitDeploymentLog.FlowInterviewIdentifier"
+    length = 80
+    label = "Flow Interview Identifier"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "DataKitDeploymentLog.Name"
+    length = 255
+    label = "Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DataKitDeploymentLog.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TemplateVersion {
+    apiName = "DataKitDeploymentLog.TemplateVersion"
+    label = "Template Version"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "DataKitDeploymentLog.Id"
+    label = "Data Kit Deployment Log ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DataKitDeploymentLog.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DataKitDeploymentLog.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DataKitDeploymentLog.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DataKitDeploymentLog.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DataKitDeploymentLog.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DataKitDeploymentLog.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

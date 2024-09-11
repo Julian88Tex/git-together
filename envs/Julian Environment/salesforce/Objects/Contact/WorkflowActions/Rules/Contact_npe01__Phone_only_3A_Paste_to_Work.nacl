@@ -1,0 +1,47 @@
+salesforce.WorkflowRule Contact_npe01__Phone_only_3A_Paste_to_Work@vuuspsss {
+  fullName = "Contact.npe01__Phone only%3A Paste to Work"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__PreferredPhonetoWork@vuu
+      type = "FieldUpdate"
+    },
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__WorkPhonetoPhone@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  booleanFilter = "1 AND 2 AND 3 AND 4 AND 5 AND 6"
+  criteriaItems = [
+    {
+      field = salesforce.Contact.field.Phone
+      operation = "notEqual"
+    },
+    {
+      field = salesforce.Contact.field.npe01__PreferredPhone__c
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.npe01__WorkPhone__c
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.MobilePhone
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.HomePhone
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.OtherPhone
+      operation = "equals"
+    },
+  ]
+  description = "If there is a value in the standard Phone field AND no values in any NPSP phone fields or Preferred Phone, then Salesforce updates two fields: Work Phone is updated with the phone number in the standard Phone field and Preferred Phone is set to Work."
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Phone only%3A Paste to Work"
+}

@@ -1,0 +1,15 @@
+salesforce.NetworkBranding cbjulian88tex {
+  network = "julian88tex"
+  primaryColor = "#1797C0"
+  primaryComplementColor = "#FFFFFF"
+  quaternaryColor = "#B1BAC1"
+  quaternaryComplementColor = "#222222"
+  secondaryColor = "#51606E"
+  tertiaryColor = "#DDE4E9"
+  tertiaryComplementColor = "#222222"
+  zeronaryColor = "#51606E"
+  zeronaryComplementColor = "#FFFFFF"
+  fullName = "cbjulian88tex"
+  content = file("salesforce/Records/NetworkBranding/cbjulian88tex.networkBranding")
+  _alias = "cbjulian88tex"
+}

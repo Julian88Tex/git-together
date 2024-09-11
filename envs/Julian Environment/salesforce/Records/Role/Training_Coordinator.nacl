@@ -1,0 +1,10 @@
+salesforce.Role Training_Coordinator {
+  fullName = "Training_Coordinator"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  name = "Training Coordinator"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.Sales_Strategy_Manager
+  _alias = "Training_Coordinator"
+}

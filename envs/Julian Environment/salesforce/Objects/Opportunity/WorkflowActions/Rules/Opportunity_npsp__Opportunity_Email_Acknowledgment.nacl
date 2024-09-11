@@ -1,0 +1,25 @@
+salesforce.WorkflowRule Opportunity_npsp__Opportunity_Email_Acknowledgment@vuuss {
+  fullName = "Opportunity.npsp__Opportunity Email Acknowledgment"
+  actions = [
+    {
+      name = salesforce.WorkflowAlert.instance.Opportunity_npsp__Opportunity_Email_Acknowledgment@vuuuu
+      type = "Alert"
+    },
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Opportunity_npsp__Opportunity_AcknowledgmentStatus_Update@vuuuu
+      type = "FieldUpdate"
+    },
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Opportunity_npsp__Opportunity_Acknowledgment_Date_Update@vuuuuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  description = "Emails an acknowledgement to the Primary Contact for an Opportunity when the Acknowledgement Status is set to Email Acknowledgement Now."
+  formula = "TEXT(npsp__Acknowledgment_Status__c) = $Label.npsp__sendAcknowledgmentFireStatus &&  npsp__Primary_Contact__r.Email <> NULL &&  npsp__Primary_Contact__r.npsp__Do_Not_Contact__c <> True &&  npsp__Primary_Contact__r.HasOptedOutOfEmail <> True &&  npsp__Primary_Contact__r.npsp__Deceased__c <> True"
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity Email Acknowledgment"
+}

@@ -1,0 +1,4 @@
+salesforce.InstalledPackage CodeBuilder {
+  fullName = "CodeBuilder"
+  _alias = "CodeBuilder"
+}

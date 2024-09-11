@@ -1,0 +1,15 @@
+salesforce.WebLink Contact_npe4__Relationships_Viewer {
+  fullName = "Contact.npe4__Relationships_Viewer"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Relationships Viewer"
+  openType = "replace"
+  protected = false
+  url = "{!URLFOR('/apex/npsp__REL_RelationshipsViewer?id=' + Contact.Id)}"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe4__Relationships_Viewer"
+}

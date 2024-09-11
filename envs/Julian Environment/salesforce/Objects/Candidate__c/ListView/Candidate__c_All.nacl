@@ -1,0 +1,9 @@
+salesforce.ListView Candidate__c_All {
+  fullName = "Candidate__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Candidate__c,
+  ]
+  _alias = "All"
+}

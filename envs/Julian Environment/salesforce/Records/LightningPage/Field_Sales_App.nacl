@@ -1,0 +1,114 @@
+salesforce.LightningPage Field_Sales_App {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityName"
+                value = "Account"
+              },
+              {
+                name = "filterName"
+                value = "MyAccounts"
+              },
+              {
+                name = "pageSize"
+                value = "7"
+              },
+            ]
+            componentName = "flexipage:filterListCard"
+            identifier = "flexipage_filterListCard"
+          }
+        },
+      ]
+      name = "column1"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityNames"
+                valueList = {
+                  valueListItems = [
+                    {
+                      value = "Account"
+                    },
+                    {
+                      value = "Opportunity"
+                    },
+                    {
+                      value = "Lead"
+                    },
+                  ]
+                }
+              },
+              {
+                name = "label"
+                value = "Opportunities & Leads"
+              },
+              {
+                name = "maxRecords"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:recentItems"
+            identifier = "flexipage_recentItems"
+          }
+        },
+      ]
+      name = "column2"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Field Sales App"
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = salesforce.QuickAction.instance.LogACall
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewCase
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewLead
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewTask
+      },
+      {
+        quickActionName = "npe03__NewTask"
+      },
+      {
+        quickActionName = "npsp__LogACall"
+      },
+      {
+        quickActionName = "npsp__NewTask"
+      },
+      {
+        quickActionName = "stayclassy__LogACall"
+      },
+      {
+        quickActionName = "stayclassy__NewCase"
+      },
+      {
+        quickActionName = "stayclassy__NewTask"
+      },
+    ]
+  }
+  template = {
+    name = "flexipage:appHomeTemplateTwoColumns"
+  }
+  type = "AppPage"
+  fullName = "Field_Sales_App"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ListView.instance.Account_MyAccounts
+    },
+  ]
+  _alias = "Field_Sales_App"
+}

@@ -1,0 +1,15 @@
+salesforce.ValidationRule Contact_Contact_must_be_in_Account_ZIP_Code {
+  fullName = "Contact.Contact_must_be_in_Account_ZIP_Code"
+  active = false
+  errorConditionFormula = '''
+AND(
+ NOT(ISBLANK(Account.ShippingPostalCode)),
+ NOT (MailingPostalCode = Account.ShippingPostalCode))
+'''
+  errorDisplayField = "MailingPostalCode"
+  errorMessage = "Contact Mailing Postal Code must Equal Account Shipping Code"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.Contact_must_be_in_Account_ZIP_Code"
+}

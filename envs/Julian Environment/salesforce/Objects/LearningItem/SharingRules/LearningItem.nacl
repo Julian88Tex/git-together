@@ -1,0 +1,7 @@
+salesforce.SharingRules LearningItem {
+  fullName = "LearningItem"
+  _parent = [
+    salesforce.LearningItem,
+  ]
+  _alias = "LearningItem"
+}

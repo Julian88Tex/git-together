@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__WorkPhonetoPhone@vuu {
+  fullName = "Contact.npe01__WorkPhonetoPhone"
+  field = salesforce.Contact.field.npe01__WorkPhone__c
+  formula = "Phone"
+  name = "Work Phone to Phone"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__WorkPhonetoPhone"
+}

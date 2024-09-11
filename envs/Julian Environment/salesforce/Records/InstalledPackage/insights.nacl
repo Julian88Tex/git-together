@@ -1,0 +1,5 @@
+salesforce.InstalledPackage insights {
+  versionNumber = "1.23"
+  fullName = "insights"
+  _alias = "insights"
+}

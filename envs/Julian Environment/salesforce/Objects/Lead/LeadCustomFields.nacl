@@ -1,0 +1,684 @@
+type salesforce.Lead {
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Lead.CurrentGenerators__c"
+    externalId = false
+    label = "Current Generator(s)"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaDate DB_Created_Date_without_Time__c {
+    apiName = "Lead.DB_Created_Date_without_Time__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package.  If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    formula = "CreatedDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Created Date without Time"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Lead.field.CreatedDate
+      },
+    ]
+  }
+  salesforce.FormulaNumber DB_Lead_Age__c {
+    apiName = "Lead.DB_Lead_Age__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formula = "NOW() - LastModifiedDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Lead Age"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Lead.field.LastModifiedDate
+      },
+    ]
+  }
+  salesforce.MultiselectPicklist GW_Volunteers__Volunteer_Availability__c {
+    apiName = "Lead.GW_Volunteers__Volunteer_Availability__c"
+    deprecated = false
+    label = "Volunteer Availability"
+    valueSet = [
+      {
+        fullName = "Weekdays"
+        default = false
+        label = "Weekdays"
+      },
+      {
+        fullName = "Weekends"
+        default = false
+        label = "Weekends"
+      },
+      {
+        fullName = "Morning"
+        default = false
+        label = "Morning"
+      },
+      {
+        fullName = "Afternoon"
+        default = false
+        label = "Afternoon"
+      },
+      {
+        fullName = "Weekly"
+        default = false
+        label = "Weekly"
+      },
+    ]
+    sorted = false
+    restricted = false
+    visibleLines = 8
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea GW_Volunteers__Volunteer_Notes__c {
+    apiName = "Lead.GW_Volunteers__Volunteer_Notes__c"
+    deprecated = false
+    label = "Volunteer Notes"
+    length = 32000
+    visibleLines = 5
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MultiselectPicklist GW_Volunteers__Volunteer_Skills__c {
+    apiName = "Lead.GW_Volunteers__Volunteer_Skills__c"
+    deprecated = false
+    inlineHelpText = "Select the skill(s) this person has that should be used to find volunteer jobs."
+    label = "Volunteer Skills"
+    valueSet = [
+      {
+        fullName = "Computer usage"
+        default = false
+        label = "Computer usage"
+      },
+      {
+        fullName = "Manual labor"
+        default = false
+        label = "Manual labor"
+      },
+      {
+        fullName = "Marketing"
+        default = false
+        label = "Marketing"
+      },
+      {
+        fullName = "Fundraising"
+        default = false
+        label = "Fundraising"
+      },
+      {
+        fullName = "Event Planning"
+        default = false
+        label = "Event Planning"
+      },
+      {
+        fullName = "Landscaping"
+        default = false
+        label = "Landscaping"
+      },
+    ]
+    sorted = false
+    restricted = false
+    visibleLines = 8
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist GW_Volunteers__Volunteer_Status__c {
+    apiName = "Lead.GW_Volunteers__Volunteer_Status__c"
+    deprecated = false
+    label = "Volunteer Status"
+    valueSet = [
+      {
+        fullName = "New Sign Up"
+        default = false
+        label = "New Sign Up"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Lead.NumberofLocations__c"
+    externalId = false
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Primary__c {
+    apiName = "Lead.Primary__c"
+    label = "Primary"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProductInterest__c {
+    apiName = "Lead.ProductInterest__c"
+    label = "Product Interest"
+    valueSet = [
+      {
+        fullName = "GC1000 series"
+        default = false
+        label = "GC1000 series"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SICCode__c {
+    apiName = "Lead.SICCode__c"
+    externalId = false
+    label = "SIC Code"
+    length = 15
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox emma__Bounced__c {
+    apiName = "Lead.emma__Bounced__c"
+    defaultValue = false
+    deprecated = false
+    label = "Error?"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text emma__Emma_Member_ID__c {
+    apiName = "Lead.emma__Emma_Member_ID__c"
+    deprecated = false
+    description = "Unique ID of member in the Emma system."
+    externalId = false
+    label = "Emma Member ID"
+    length = 40
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime emma__Last_Synced_Date__c {
+    apiName = "Lead.emma__Last_Synced_Date__c"
+    deprecated = false
+    label = "Emma Last Synced Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text emma__Sync_Message__c {
+    apiName = "Lead.emma__Sync_Message__c"
+    deprecated = false
+    externalId = false
+    label = "Emma Sync Message"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist emma__Sync_Status__c {
+    apiName = "Lead.emma__Sync_Status__c"
+    deprecated = false
+    label = "Emma Sync Status"
+    valueSet = [
+      {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      },
+      {
+        fullName = "Synchronized"
+        default = false
+        label = "Synchronized"
+      },
+      {
+        fullName = "Error"
+        default = false
+        label = "Error"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist npe01__Preferred_Email__c {
+    apiName = "Lead.npe01__Preferred_Email__c"
+    deprecated = false
+    label = "Preferred Email"
+    valueSet = [
+      {
+        fullName = "Personal"
+        default = false
+        label = "Personal"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Alternate"
+        default = false
+        label = "Alternate"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist npe01__Preferred_Phone__c {
+    apiName = "Lead.npe01__Preferred_Phone__c"
+    deprecated = false
+    label = "Preferred Phone"
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Mobile"
+        default = false
+        label = "Mobile"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup npsp__Batch__c {
+    apiName = "Lead.npsp__Batch__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    inlineHelpText = "The batch this lead was created from."
+    label = "Batch"
+    referenceTo = [
+      "npsp__Batch__c",
+    ]
+    relationshipLabel = "Leads"
+    relationshipName = "Leads"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text npsp__CompanyCity__c {
+    apiName = "Lead.npsp__CompanyCity__c"
+    deprecated = false
+    externalId = false
+    label = "Company City"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text npsp__CompanyCountry__c {
+    apiName = "Lead.npsp__CompanyCountry__c"
+    deprecated = false
+    externalId = false
+    label = "Company Country"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text npsp__CompanyPostalCode__c {
+    apiName = "Lead.npsp__CompanyPostalCode__c"
+    deprecated = false
+    externalId = false
+    label = "Company Zip/Postal Code"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text npsp__CompanyState__c {
+    apiName = "Lead.npsp__CompanyState__c"
+    deprecated = false
+    externalId = false
+    label = "Company State/Province"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.TextArea npsp__CompanyStreet__c {
+    apiName = "Lead.npsp__CompanyStreet__c"
+    deprecated = false
+    label = "Company Street"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox pi__Needs_Score_Synced__c {
+    apiName = "Lead.pi__Needs_Score_Synced__c"
+    defaultValue = false
+    deprecated = false
+    description = "This field is no longer used."
+    label = "Needs Score Synced"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime pi__Pardot_Last_Scored_At__c {
+    apiName = "Lead.pi__Pardot_Last_Scored_At__c"
+    deprecated = false
+    description = '''
+Used for Account Engagement Scoring Categories. Indicates the last time a Scoring Category score was updated for this lead.
+
+            Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview
+'''
+    label = "Account Engagement Last Scored At"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__campaign__c {
+    apiName = "Lead.pi__campaign__c"
+    deprecated = false
+    description = "The Account Engagement Campaign represents the first marketing touch with a prospect. It may be a campaign associated with your web site, landing page, paid search initiative, or any other marketing effort. Prospects may only be associated with one Account Engagement campaign. This value can later be changed manually or via an Automation Rule."
+    externalId = false
+    label = "Account Engagement Campaign"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea pi__comments__c {
+    apiName = "Lead.pi__comments__c"
+    deprecated = false
+    label = "Account Engagement Comments"
+    length = 32000
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime pi__conversion_date__c {
+    apiName = "Lead.pi__conversion_date__c"
+    deprecated = false
+    description = "The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect."
+    label = "Account Engagement Conversion Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__conversion_object_name__c {
+    apiName = "Lead.pi__conversion_object_name__c"
+    deprecated = false
+    description = "This is the name of the object (form, form handler, landing page, or video form) that converted an anonymous visitor into a named prospect."
+    externalId = false
+    label = "Conversion Object Name"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__conversion_object_type__c {
+    apiName = "Lead.pi__conversion_object_type__c"
+    deprecated = false
+    description = "The type of object which converted an anonymous visitor into a named prospect (form, form handler, landing page, or video form)."
+    externalId = false
+    label = "Conversion Object Type"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime pi__created_date__c {
+    apiName = "Lead.pi__created_date__c"
+    deprecated = false
+    description = "The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date."
+    label = "Account Engagement Created Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime pi__first_activity__c {
+    apiName = "Lead.pi__first_activity__c"
+    deprecated = false
+    label = "Account Engagement First Activity"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__first_search_term__c {
+    apiName = "Lead.pi__first_search_term__c"
+    deprecated = false
+    description = "If a Prospects first touch was the result of a search, the field holds the term that was searched on."
+    externalId = false
+    label = "Account Engagement First Referrer Query"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__first_search_type__c {
+    apiName = "Lead.pi__first_search_type__c"
+    deprecated = false
+    description = "If a Prospects first touch was the result of a search, this field contains the type of search conducted."
+    externalId = false
+    label = "Account Engagement First Referrer Type"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea pi__first_touch_url__c {
+    apiName = "Lead.pi__first_touch_url__c"
+    deprecated = false
+    description = "The value of the referrer for the first tracked request made by a Prospect."
+    label = "Account Engagement First Referrer"
+    length = 65000
+    visibleLines = 2
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__grade__c {
+    apiName = "Lead.pi__grade__c"
+    deprecated = false
+    description = "The Account Engagement grade is based on how well a prospect fits your organization's ideal customer profile. Explicit factors such as company size, industry, job title and more help determine this value. A combination of grade (explicit) and score (implicit) can be used to very effectively optimize the sales team's time. Grade, like score, is calculated within the Account Engagement system and cannot be edited in Salesforce.com."
+    externalId = false
+    label = "Account Engagement Grade"
+    length = 10
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime pi__last_activity__c {
+    apiName = "Lead.pi__last_activity__c"
+    deprecated = false
+    label = "Account Engagement Last Activity"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea pi__notes__c {
+    apiName = "Lead.pi__notes__c"
+    deprecated = false
+    label = "Account Engagement Notes"
+    length = 32000
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox pi__pardot_hard_bounced__c {
+    apiName = "Lead.pi__pardot_hard_bounced__c"
+    defaultValue = false
+    deprecated = false
+    description = "Boolean that determines whether lead hard bounced."
+    label = "Account Engagement Hard Bounced"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number pi__score__c {
+    apiName = "Lead.pi__score__c"
+    deprecated = false
+    description = "The Account Engagement score is based on implicit buying signals a lead demonstrates through his or her activities and responses to your marketing efforts. The higher the score, the more active the lead has been. A combination of score (implicit buying signals) and grade (explicit factors) helps you prioritize your prospects. Score, like grade, is calculated within the Account Engagement system and cannot be edited in Salesforce.com."
+    externalId = false
+    label = "Account Engagement Score"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url pi__url__c {
+    apiName = "Lead.pi__url__c"
+    deprecated = false
+    description = "This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com."
+    label = "Account Engagement URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__utm_campaign__c {
+    apiName = "Lead.pi__utm_campaign__c"
+    deprecated = false
+    externalId = false
+    label = "Google Analytics Campaign"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__utm_content__c {
+    apiName = "Lead.pi__utm_content__c"
+    deprecated = false
+    externalId = false
+    label = "Google Analytics Content"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__utm_medium__c {
+    apiName = "Lead.pi__utm_medium__c"
+    deprecated = false
+    externalId = false
+    label = "Google Analytics Medium"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__utm_source__c {
+    apiName = "Lead.pi__utm_source__c"
+    deprecated = false
+    externalId = false
+    label = "Google Analytics Source"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text pi__utm_term__c {
+    apiName = "Lead.pi__utm_term__c"
+    deprecated = false
+    externalId = false
+    label = "Google Analytics Term"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

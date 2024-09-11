@@ -1,0 +1,47 @@
+salesforce.ApprovalProcess Case_Case_Escalation@vu {
+  fullName = "Case.Case_Escalation"
+  active = true
+  allowRecall = false
+  allowedSubmitters = {
+    type = "owner"
+  }
+  approvalPageFields = {
+    field = [
+      "CaseNumber",
+      "Owner",
+      "CreatedDate",
+    ]
+  }
+  approvalStep = [
+    {
+      allowDelegate = false
+      assignedApprover = {
+        approver = {
+          name = "julian88tex@gmail.com"
+          type = "user"
+        }
+        whenMultipleApprovers = "FirstResponse"
+      }
+      label = "Step 1"
+      name = "Step_1"
+    },
+  ]
+  enableMobileDeviceAccess = false
+  entryCriteria = {
+    criteriaItems = [
+      {
+        field = salesforce.Case.field.Product__c
+        operation = "notEqual"
+        value = "GC1040"
+      },
+    ]
+  }
+  finalApprovalRecordLock = true
+  finalRejectionRecordLock = false
+  label = "Case Escalation"
+  postTemplate = "Julian_Template"
+  processOrder = 1
+  recordEditability = "AdminOnly"
+  showApprovalHistory = true
+  _alias = "Case Escalation"
+}

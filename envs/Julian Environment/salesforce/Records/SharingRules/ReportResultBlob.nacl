@@ -1,0 +1,4 @@
+salesforce.SharingRules ReportResultBlob {
+  fullName = "ReportResultBlob"
+  _alias = "ReportResultBlob"
+}

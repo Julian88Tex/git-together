@@ -1,0 +1,9 @@
+salesforce.ListView Vehicle__c_All {
+  fullName = "Vehicle__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Vehicle__c,
+  ]
+  _alias = "All"
+}

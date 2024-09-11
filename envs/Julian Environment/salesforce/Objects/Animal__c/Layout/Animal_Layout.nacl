@@ -1,0 +1,90 @@
+salesforce.Layout Animal__c_Animal_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Animal__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.Animal_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.Food_Category__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.Count__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.Park_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.External_ID__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Animal__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Animal__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Animal__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Animal__c-Animal Layout"
+  _parent = [
+    salesforce.Animal__c,
+  ]
+  _alias = "Animal__c-Animal Layout"
+}

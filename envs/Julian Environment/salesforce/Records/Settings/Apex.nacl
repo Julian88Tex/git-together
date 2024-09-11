@@ -1,0 +1,19 @@
+salesforce.ApexSettings {
+  fullName = "Apex"
+  enableAggregateCodeCoverageOnly = false
+  enableApexAccessRightsPref = false
+  enableApexApprovalLockUnlock = false
+  enableApexCtrlImplicitWithSharingPref = false
+  enableApexPropertyGetterPref = false
+  enableAuraApexCtrlAuthUserAccessCheckPref = false
+  enableAuraApexCtrlGuestUserAccessCheckPref = false
+  enableCompileOnDeploy = false
+  enableDisableParallelApexTesting = false
+  enableGaplessTestAutoNum = true
+  enableMngdCtrlActionAccessPref = false
+  enableNonCertifiedApexMdCrud = false
+  enableRestrictCommunityExecAnon = "false"
+  enableSecureNoArgConstructorPref = false
+  enableTestSetupSkipTestResults = "false"
+  _alias = "Apex"
+}

@@ -1,0 +1,6 @@
+salesforce.IndustriesSettings {
+  fullName = "Industries"
+  enableAccountScoreEnabled = "false"
+  rlaEditIfAccHasEdit = "false"
+  _alias = "Industries"
+}

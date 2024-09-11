@@ -1,0 +1,31 @@
+salesforce.WorkflowRule Lead_GW_Volunteers__Volunteer_Signup___Lead@vuuussbs {
+  fullName = "Lead.GW_Volunteers__Volunteer Signup - Lead"
+  actions = [
+    {
+      name = salesforce.WorkflowAlert.instance.Lead_GW_Volunteers__Volunteer_Signup_Notification_Email_Alert_Lead@vuuuuuuuu
+      type = "Alert"
+    },
+    {
+      name = salesforce.WorkflowAlert.instance.Lead_GW_Volunteers__Volunteer_Signup_Thank_You_Email_Alert_Lead@vuuuuuuuuu
+      type = "Alert"
+    },
+    {
+      name = salesforce.WorkflowTask.instance.Lead_GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Lead@vuuuuuuuu
+      type = "Task"
+    },
+  ]
+  active = true
+  criteriaItems = [
+    {
+      field = salesforce.Lead.field.GW_Volunteers__Volunteer_Status__c
+      operation = "equals"
+      value = "New Sign Up"
+    },
+  ]
+  description = "When a new lead is created from a volunteer signup, send a thank you and notify the volunteer manager"
+  triggerType = "onCreateOnly"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.GW_Volunteers__Volunteer Signup - Lead"
+}

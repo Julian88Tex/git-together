@@ -1,0 +1,9 @@
+salesforce.ListView ContactRequest_My_ContactRequests {
+  fullName = "ContactRequest.My_ContactRequests"
+  filterScope = "Mine"
+  label = "My Contact Requests"
+  _parent = [
+    salesforce.ContactRequest,
+  ]
+  _alias = "My Contact Requests"
+}

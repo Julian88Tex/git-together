@@ -1,0 +1,16 @@
+salesforce.ApexComponent leadConvertTaskDescriptionComponent {
+  apiVersion = 29
+  description = "This custom Component contains elements related to the Description field on a newly created Task in the Lead Convert process"
+  label = "leadConvertTaskDescriptionComponent"
+  fullName = "leadConvertTaskDescriptionComponent"
+  content = file("salesforce/Records/ApexComponent/leadConvertTaskDescriptionComponent.component")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskDescComponentController
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertTaskDescriptionComponent"
+}

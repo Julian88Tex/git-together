@@ -1,0 +1,2146 @@
+type salesforce.Opportunity {
+  salesforce.Text BidPal__Bidpal_GiftID__c {
+    apiName = "Opportunity.BidPal__Bidpal_GiftID__c"
+    caseSensitive = false
+    deprecated = false
+    externalId = true
+    label = "Bidpal Gift ID"
+    length = 120
+    trackTrending = false
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Class__c {
+    apiName = "Opportunity.Class__c"
+    label = "Class"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "A"
+        default = false
+        label = "A"
+      },
+      {
+        fullName = "B"
+        default = false
+        label = "B"
+      },
+      {
+        fullName = "C"
+        default = false
+        label = "C"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Opportunity.CurrentGenerators__c"
+    externalId = false
+    label = "Current Generator(s)"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup Custom_Contact__c {
+    apiName = "Opportunity.Custom_Contact__c"
+    deleteConstraint = "SetNull"
+    label = "Custom Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Opportunities (Custom Contact)"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Custom_Payment_Type__c {
+    apiName = "Opportunity.Custom_Payment_Type__c"
+    externalId = false
+    label = "Custom Payment Type"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist DB_Competitor__c {
+    apiName = "Opportunity.DB_Competitor__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field."
+    label = "DB Competitor"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Competitor A"
+        default = false
+        label = "Competitor A"
+      },
+      {
+        fullName = "Competitor B"
+        default = false
+        label = "Competitor B"
+      },
+      {
+        fullName = "Competitor C"
+        default = false
+        label = "Competitor C"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DeliveryInstallationStatus__c {
+    apiName = "Opportunity.DeliveryInstallationStatus__c"
+    label = "Delivery/Installation Status"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "In progress"
+        default = false
+        label = "In progress"
+      },
+      {
+        fullName = "Yet to begin"
+        default = false
+        label = "Yet to begin"
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description_Test__c {
+    apiName = "Opportunity.Description_Test__c"
+    externalId = false
+    label = "Description Test"
+    length = 120
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaText Donor_Level_Auto__c {
+    apiName = "Opportunity.Donor_Level_Auto__c"
+    externalId = false
+    formula = "IF(Amount < 5, \"Red\", \"Yellow\")"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Donor Level Auto"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.Amount
+      },
+    ]
+  }
+  salesforce.Picklist Donor_Level__c {
+    apiName = "Opportunity.Donor_Level__c"
+    label = "Donor Level"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Red"
+        default = false
+        label = "Red"
+      },
+      {
+        fullName = "Yellow"
+        default = false
+        label = "Yellow"
+      },
+      {
+        fullName = "Green"
+        default = false
+        label = "Green"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Fundraiser_Name__c {
+    apiName = "Opportunity.Fundraiser_Name__c"
+    externalId = false
+    label = "Fundraiser Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text MainCompetitors__c {
+    apiName = "Opportunity.MainCompetitors__c"
+    externalId = false
+    label = "Main Competitor(s)"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Meta__c {
+    apiName = "Opportunity.Meta__c"
+    externalId = false
+    label = "Meta"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist My_Custom_Designation__c {
+    apiName = "Opportunity.My_Custom_Designation__c"
+    label = "My Custom Designation"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Restricted"
+        default = false
+        label = "Restricted"
+      },
+      {
+        fullName = "Unrestricted"
+        default = false
+        label = "Unrestricted"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text OrderNumber__c {
+    apiName = "Opportunity.OrderNumber__c"
+    externalId = false
+    label = "Order Number"
+    length = 8
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Region2__c {
+    apiName = "Opportunity.Region2__c"
+    externalId = false
+    label = "Region2"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Region_Map__c {
+    apiName = "Opportunity.Region_Map__c"
+    label = "Region Map"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Northwest"
+        default = false
+        label = "Northwest"
+      },
+      {
+        fullName = "Southwest"
+        default = false
+        label = "Southwest"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup Region__c {
+    apiName = "Opportunity.Region__c"
+    deleteConstraint = "SetNull"
+    label = "Region"
+    referenceTo = [
+      salesforce.Region__c,
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text T_Shirt_Size__c {
+    apiName = "Opportunity.T_Shirt_Size__c"
+    externalId = false
+    label = "T-Shirt Size"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Test_Comment__c {
+    apiName = "Opportunity.Test_Comment__c"
+    externalId = false
+    label = "Test Comment"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Test_Picklist__c {
+    apiName = "Opportunity.Test_Picklist__c"
+    label = "Test Picklist"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "test"
+        default = false
+        label = "test"
+      },
+      {
+        fullName = "test1"
+        default = false
+        label = "test1"
+      },
+      {
+        fullName = "test2"
+        default = false
+        label = "test2"
+      },
+      {
+        fullName = "test3"
+        default = false
+        label = "test3"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text TrackingNumber__c {
+    apiName = "Opportunity.TrackingNumber__c"
+    externalId = false
+    label = "Tracking Number"
+    length = 12
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup funraise__Funraise_Pledge__c {
+    apiName = "Opportunity.funraise__Funraise_Pledge__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The Funraise pledge this opportunity should count towards"
+    label = "Funraise Pledge"
+    referenceTo = [
+      "funraise__Pledge__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Lookup funraise__Subscription__c {
+    apiName = "Opportunity.funraise__Subscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Funraise Subscription"
+    referenceTo = [
+      "funraise__Subscription__c",
+    ]
+    relationshipLabel = "Donations"
+    relationshipName = "Donations"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Lookup funraise__fr_Donor__c {
+    apiName = "Opportunity.funraise__fr_Donor__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Funraise Donor"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Funraise Donations"
+    relationshipName = "fr_Donations"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text funraise__fr_ID__c {
+    apiName = "Opportunity.funraise__fr_ID__c"
+    caseSensitive = false
+    deprecated = false
+    externalId = true
+    label = "Funraise ID"
+    length = 255
+    trackTrending = false
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCurrency npe01__Amount_Outstanding__c {
+    apiName = "Opportunity.npe01__Amount_Outstanding__c"
+    deprecated = false
+    description = "Formula: The Amount of this Opportunity minus the Payment Writeoff Amount and Payment Amount Received."
+    formula = "Amount - NULLVALUE(npe01__Payments_Made__c, 0) - NULLVALUE(npe01__Amount_Written_Off__c, 0)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Formula: The Amount of this Opportunity minus the Payment Writeoff Amount and Payment Amount Received."
+    label = "Remaining Balance"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.Amount
+      },
+      {
+        reference = salesforce.Opportunity.field.npe01__Amount_Written_Off__c
+      },
+      {
+        reference = salesforce.Opportunity.field.npe01__Payments_Made__c
+      },
+    ]
+  }
+  salesforce.Summary npe01__Amount_Written_Off__c {
+    apiName = "Opportunity.npe01__Amount_Written_Off__c"
+    deprecated = false
+    description = "Total value of the Payments marked as written-off or noncollectable for this Opportunity."
+    inlineHelpText = "Total value of the Payments marked as written-off or noncollectable for this Opportunity."
+    label = "Payment Writeoff Amount"
+    summarizedField = "npe01__OppPayment__c.npe01__Payment_Amount__c"
+    summaryFilterItems = [
+      {
+        field = "npe01__OppPayment__c.npe01__Written_Off__c"
+        operation = "equals"
+        value = "True"
+      },
+    ]
+    summaryForeignKey = "npe01__OppPayment__c.npe01__Opportunity__c"
+    summaryOperation = "sum"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text npe01__Contact_Id_for_Role__c {
+    apiName = "Opportunity.npe01__Contact_Id_for_Role__c"
+    deprecated = false
+    description = "System field updated automatically.  Do not use."
+    externalId = false
+    inlineHelpText = "Hidden field for passing a Contact Id for Contact Role creation."
+    label = "Contact Id for Role"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox npe01__Do_Not_Automatically_Create_Payment__c {
+    apiName = "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c"
+    defaultValue = false
+    deprecated = false
+    description = "If payments are active, and if this is checked, a new payment will not be automatically created for this Opportunity."
+    inlineHelpText = "If payments are active, and if checked, a new payment will not be automatically created for this Opportunity."
+    label = "Do Not Automatically Create Payment"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText npe01__Is_Opp_From_Individual__c {
+    apiName = "Opportunity.npe01__Is_Opp_From_Individual__c"
+    deprecated = false
+    description = "Formula: Whether or not the related Account is defined as an individual (SYSTEMIsIndividual__c)"
+    externalId = false
+    formula = "IF( Account.npe01__SYSTEMIsIndividual__c, 'true', 'false' )"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Formula: Whether or not the related Account is defined as an individual (SYSTEMIsIndividual__c)"
+    label = "Is Opp From Individual"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+      },
+      {
+        reference = salesforce.Opportunity.field.AccountId
+      },
+    ]
+  }
+  salesforce.Picklist npe01__Member_Level__c {
+    apiName = "Opportunity.npe01__Member_Level__c"
+    deprecated = false
+    description = "Used for Membership Opportunities (Record Type)"
+    inlineHelpText = "Determines the value on the Contact or Account of the Last Membership Level field."
+    label = "Member Level"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npe01__Membership_End_Date__c {
+    apiName = "Opportunity.npe01__Membership_End_Date__c"
+    deprecated = false
+    description = "Used for Membership Opportunities (Record Type)"
+    inlineHelpText = "Date membership period ends."
+    label = "Membership End Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist npe01__Membership_Origin__c {
+    apiName = "Opportunity.npe01__Membership_Origin__c"
+    deprecated = false
+    description = "Used for Membership Opportunities (Record Type)"
+    inlineHelpText = "Is this a renewal, a new membership, or a membership with someone who lapsed and has returned."
+    label = "Membership Origin"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "Renewal"
+        default = false
+        label = "Renewal"
+      },
+      {
+        fullName = "Reacquire"
+        default = false
+        label = "Reacquire"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npe01__Membership_Start_Date__c {
+    apiName = "Opportunity.npe01__Membership_Start_Date__c"
+    deprecated = false
+    description = "Used for Membership Opportunities (Record Type)"
+    inlineHelpText = "Date when membership period starts"
+    label = "Membership Start Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary npe01__Number_of_Payments__c {
+    apiName = "Opportunity.npe01__Number_of_Payments__c"
+    deprecated = false
+    description = "Calculated based on the Payment object."
+    inlineHelpText = "Total number of payments for this Opportunity (Donation)"
+    label = "Number of Payments"
+    summaryForeignKey = "npe01__OppPayment__c.npe01__Opportunity__c"
+    summaryOperation = "count"
+    trackTrending = false
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary npe01__Payments_Made__c {
+    apiName = "Opportunity.npe01__Payments_Made__c"
+    deprecated = false
+    description = "The total value of Payments marked as paid for this Opportunity."
+    inlineHelpText = "The total value of Payments marked as paid for this Opportunity."
+    label = "Payment Amount Received"
+    summarizedField = "npe01__OppPayment__c.npe01__Payment_Amount__c"
+    summaryFilterItems = [
+      {
+        field = "npe01__OppPayment__c.npe01__Paid__c"
+        operation = "equals"
+        value = "True"
+      },
+    ]
+    summaryForeignKey = "npe01__OppPayment__c.npe01__Opportunity__c"
+    summaryOperation = "sum"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup npe03__Recurring_Donation__c {
+    apiName = "Opportunity.npe03__Recurring_Donation__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Recurring Donation"
+    referenceTo = [
+      "npe03__Recurring_Donation__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Donations"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText npo02__CombinedRollupFieldset__c {
+    apiName = "Opportunity.npo02__CombinedRollupFieldset__c"
+    deprecated = false
+    description = "Hidden system field, do not add to layouts."
+    externalId = false
+    formula = "TEXT(CloseDate) + ';|;'+ TEXT(Amount) + ';|;'+ TEXT(npe01__Member_Level__c) + ';|;'+ TEXT(npe01__Membership_Origin__c) + ';|;' +  Id"
+    inlineHelpText = "Concatenated fields used during rollups to locate the most recent opportunity."
+    label = "Combined Rollup Fieldset"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.Amount
+      },
+      {
+        reference = salesforce.Opportunity.field.CloseDate
+      },
+      {
+        reference = salesforce.Opportunity.field.Id
+      },
+      {
+        reference = salesforce.Opportunity.field.npe01__Member_Level__c
+      },
+      {
+        reference = salesforce.Opportunity.field.npe01__Membership_Origin__c
+      },
+    ]
+  }
+  salesforce.Picklist npo02__systemHouseholdContactRoleProcessor__c {
+    apiName = "Opportunity.npo02__systemHouseholdContactRoleProcessor__c"
+    deprecated = false
+    description = "Hidden system field.  Do not update, updated by automatic process."
+    inlineHelpText = "Controls if Household contact roles are created for Opportunities.  DEPRECATED.  Replaced by custom settings."
+    label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "All Opportunities"
+        default = true
+        label = "All Opportunities"
+      },
+      {
+        fullName = "No Opportunities"
+        default = false
+        label = "No Opportunities"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npsp__Acknowledgment_Date__c {
+    apiName = "Opportunity.npsp__Acknowledgment_Date__c"
+    deprecated = false
+    description = "The date that you acknowledged this Opportunity."
+    inlineHelpText = "Date of acknowledgment"
+    label = "Acknowledgment Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist npsp__Acknowledgment_Status__c {
+    apiName = "Opportunity.npsp__Acknowledgment_Status__c"
+    deprecated = false
+    description = "The acknowledgement status of this Opportunity."
+    inlineHelpText = "Status of Acknowledgment of this gift."
+    label = "Acknowledgment Status"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "To Be Acknowledged"
+        default = false
+        label = "To Be Acknowledged"
+      },
+      {
+        fullName = "Acknowledged"
+        default = false
+        label = "Acknowledged"
+      },
+      {
+        fullName = "Do Not Acknowledge"
+        default = false
+        label = "Do Not Acknowledge"
+      },
+      {
+        fullName = "Email Acknowledgment Now"
+        default = false
+        label = "Email Acknowledgment Now"
+      },
+      {
+        fullName = "Email Acknowledgment Not Sent"
+        default = false
+        label = "Email Acknowledgment Not Sent"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npsp__Ask_Date__c {
+    apiName = "Opportunity.npsp__Ask_Date__c"
+    deprecated = false
+    description = "The date the donor was asked for this Donation. This may be different from the date you received it."
+    inlineHelpText = "The date when the donor was specifically asked for the donation, as opposed to the Opportunity Close Date that the organization may set to either when the Opportunity was first created, or when the Opportunity was won."
+    label = "Ask Date"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Text npsp__Batch_Number__c {
+    apiName = "Opportunity.npsp__Batch_Number__c"
+    deprecated = false
+    description = "The batch that created this Opportunity. This field is automatically populated based on your Batch Number Settings in NPSP Settings."
+    externalId = false
+    inlineHelpText = "The batch that created this Opportunity. This field is automatically populated based on your Batch Number Settings in NPSP Settings."
+    label = "Batch Number"
+    length = 30
+    trackTrending = false
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Lookup npsp__Batch__c {
+    apiName = "Opportunity.npsp__Batch__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Batch"
+    referenceTo = [
+      "npsp__Batch__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea npsp__Closed_Lost_Reason__c {
+    apiName = "Opportunity.npsp__Closed_Lost_Reason__c"
+    deprecated = false
+    description = "Notes on why the donation ask was not successful."
+    inlineHelpText = "Notes on why the donation ask was not successful."
+    label = "Closed Lost Reason"
+    length = 32768
+    trackTrending = false
+    visibleLines = 3
+    _hidden_value = true
+  }
+  salesforce.Text npsp__CommitmentId__c {
+    apiName = "Opportunity.npsp__CommitmentId__c"
+    deprecated = false
+    description = "External identifier for Salesforce.org payment service integration."
+    externalId = true
+    inlineHelpText = "External identifier for Salesforce.org payment service integration."
+    label = "Elevate Recurring Id"
+    length = 100
+    trackTrending = false
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox npsp__DisableContactRoleAutomation__c {
+    apiName = "Opportunity.npsp__DisableContactRoleAutomation__c"
+    defaultValue = false
+    deprecated = false
+    description = "When selected, this field disables several aspects of NPSP Opportunity Contact Role automation, potentially resulting in incorrect or duplicate data. Refer to the product documentation for more details."
+    inlineHelpText = "When selected, this field disables several aspects of NPSP Opportunity Contact Role automation, potentially resulting in incorrect or duplicate data. Refer to the product documentation for more details."
+    label = "Disable Contact Role Automation"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Currency npsp__Fair_Market_Value__c {
+    apiName = "Opportunity.npsp__Fair_Market_Value__c"
+    deprecated = false
+    description = "The Fair Market Value of an In-Kind gift."
+    inlineHelpText = "The Fair Market Value of an In-Kind gift."
+    label = "Fair Market Value"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Picklist npsp__Gift_Strategy__c {
+    apiName = "Opportunity.npsp__Gift_Strategy__c"
+    deprecated = false
+    description = "Categorizes the type of ask for this Opportunity, for example, New Donor."
+    inlineHelpText = "Categorizes the type of ask for this opportunity."
+    label = "Gift Strategy"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "New Donor"
+        default = false
+        label = "New Donor"
+      },
+      {
+        fullName = "Renewal"
+        default = false
+        label = "Renewal"
+      },
+      {
+        fullName = "Upgrade"
+        default = false
+        label = "Upgrade"
+      },
+    ]
+    sorted = false
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Date npsp__Grant_Contract_Date__c {
+    apiName = "Opportunity.npsp__Grant_Contract_Date__c"
+    deprecated = false
+    description = "The date of the Grant's inception, according to the document or contract sent by the grantmaking organization."
+    inlineHelpText = "The date of the grant's inception, according to the document or contract sent by the grant-making organization."
+    label = "Grant Contract Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text npsp__Grant_Contract_Number__c {
+    apiName = "Opportunity.npsp__Grant_Contract_Number__c"
+    deprecated = false
+    description = "Use this to track unique numbers sometimes assigned by grantmaking organizations."
+    externalId = false
+    inlineHelpText = "Tracks unique numbers sometimes assigned by grant-making organizations."
+    label = "Grant Contract Number"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Date npsp__Grant_Period_End_Date__c {
+    apiName = "Opportunity.npsp__Grant_Period_End_Date__c"
+    deprecated = false
+    description = "The date on which the period of the grant ends."
+    label = "Grant Period End Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npsp__Grant_Period_Start_Date__c {
+    apiName = "Opportunity.npsp__Grant_Period_Start_Date__c"
+    deprecated = false
+    description = "The date on which the period of the grant begins."
+    label = "Grant Period Start Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea npsp__Grant_Program_Area_s__c {
+    apiName = "Opportunity.npsp__Grant_Program_Area_s__c"
+    deprecated = false
+    description = "Use this to describe the funding areas for the Grant or Donation. For example, the names of the programs the Grant or Donation is designated for."
+    inlineHelpText = "Describes the funding areas for the grant. You can enter anything you want here. For example, you could enter the name of the program the grant applies to."
+    label = "Program Areas"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url npsp__Grant_Requirements_Website__c {
+    apiName = "Opportunity.npsp__Grant_Requirements_Website__c"
+    deprecated = false
+    description = "A URL that points to the grant requirements on the grantmaker's website."
+    inlineHelpText = "A URL that points to the grant requirements on the grant-maker's website."
+    label = "Grant Requirements Website"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup npsp__Honoree_Contact__c {
+    apiName = "Opportunity.npsp__Honoree_Contact__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the Contact record of the honoree for this Donation."
+    inlineHelpText = "The existing Contact record of the honoree for this donation."
+    label = "Honoree Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Opportunities (Honoree Contact)"
+    relationshipName = "Honoree_Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea npsp__Honoree_Information__c {
+    apiName = "Opportunity.npsp__Honoree_Information__c"
+    deprecated = false
+    description = "Contact information, such as email, address, or phone the donor provided for the tribute honoree."
+    inlineHelpText = "Contact information, such as email, address, or phone the donor provided for the tribute honoree."
+    label = "Honoree Information"
+    length = 32768
+    trackTrending = false
+    visibleLines = 10
+    _hidden_value = true
+  }
+  salesforce.Text npsp__Honoree_Name__c {
+    apiName = "Opportunity.npsp__Honoree_Name__c"
+    deprecated = false
+    description = "The honoree name as provided by the donor. If this field is left blank, and the Honoree Contact field contains a value, NPSP automatically populates this field with that value."
+    externalId = false
+    inlineHelpText = "The honoree name as provided by the donor. If this field is left blank, and the Honoree Contact field contains a value, Salesforce automatically populates this field with that value."
+    label = "Honoree Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Html npsp__In_Kind_Description__c {
+    apiName = "Opportunity.npsp__In_Kind_Description__c"
+    deprecated = false
+    description = "Holds any rich text description of the In-Kind Gift, including pictures."
+    inlineHelpText = "Holds any rich text description of the In-Kind Gift, including pictures."
+    label = "In-Kind Description"
+    length = 32768
+    trackTrending = false
+    visibleLines = 10
+    _hidden_value = true
+  }
+  salesforce.Checkbox npsp__In_Kind_Donor_Declared_Value__c {
+    apiName = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the donor provided the Fair Market Value for this In-Kind Gift."
+    inlineHelpText = "Checked if the donor provided the Fair Market Value for this In-Kind gift."
+    label = "In-Kind Donor Declared Value"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Picklist npsp__In_Kind_Type__c {
+    apiName = "Opportunity.npsp__In_Kind_Type__c"
+    deprecated = false
+    description = "The type of In-Kind Gift, for example, Goods or Services."
+    inlineHelpText = "The type of In-Kind gift."
+    label = "In-Kind Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Goods"
+        default = false
+        label = "Goods"
+      },
+      {
+        fullName = "Services"
+        default = false
+        label = "Services"
+      },
+    ]
+    sorted = false
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox npsp__Is_Grant_Renewal__c {
+    apiName = "Opportunity.npsp__Is_Grant_Renewal__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the Grant is a renewal of a previous Grant."
+    inlineHelpText = "If selected, indicates that the grant is a renewal of a previous grant."
+    label = "Is Grant Renewal"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup npsp__Matching_Gift_Account__c {
+    apiName = "Opportunity.npsp__Matching_Gift_Account__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the Account record of the company that will match this Donation."
+    inlineHelpText = "The account of the company who will match this gift."
+    label = "Matching Gift Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    relationshipLabel = "Matched Gifts"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Text npsp__Matching_Gift_Employer__c {
+    apiName = "Opportunity.npsp__Matching_Gift_Employer__c"
+    deprecated = false
+    description = "The name of the company that will match this Donation."
+    externalId = false
+    inlineHelpText = "The name of the company who will match this gift."
+    label = "Matching Gift Employer"
+    length = 255
+    trackTrending = false
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Picklist npsp__Matching_Gift_Status__c {
+    apiName = "Opportunity.npsp__Matching_Gift_Status__c"
+    deprecated = false
+    description = "The status of the Matching Gift for this Donation, for example, Submitted or Received."
+    inlineHelpText = "The status of this gift being matched."
+    label = "Matching Gift Status"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Potential"
+        default = false
+        label = "Potential"
+      },
+      {
+        fullName = "Submitted"
+        default = false
+        label = "Submitted"
+      },
+      {
+        fullName = "Received"
+        default = false
+        label = "Received"
+      },
+    ]
+    sorted = false
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Lookup npsp__Matching_Gift__c {
+    apiName = "Opportunity.npsp__Matching_Gift__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the Opportunity record for the Matching Gift for this Donation."
+    inlineHelpText = "The employer's matching gift for this employee's gift."
+    label = "Matching Gift"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    relationshipLabel = "Matched Gifts"
+    relationshipName = "MatchedGifts"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Summary npsp__Next_Grant_Deadline_Due_Date__c {
+    apiName = "Opportunity.npsp__Next_Grant_Deadline_Due_Date__c"
+    deprecated = false
+    description = "The due date for this Opportunity's next Deliverable (read only)."
+    inlineHelpText = "The NPSP updates this field automatically based on the next Grant Deadline record."
+    label = "Next Deliverable Date"
+    summarizedField = "npsp__Grant_Deadline__c.npsp__Grant_Deadline_Due_Date__c"
+    summaryFilterItems = [
+      {
+        field = "npsp__Grant_Deadline__c.npsp__Grant_Deadline_Due_Date__c"
+        operation = "notEqual"
+        value = ""
+      },
+      {
+        field = "npsp__Grant_Deadline__c.npsp__Grant_Deliverable_Close_Date__c"
+        operation = "equals"
+        value = ""
+      },
+    ]
+    summaryForeignKey = "npsp__Grant_Deadline__c.npsp__Opportunity__c"
+    summaryOperation = "min"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea npsp__Notification_Message__c {
+    apiName = "Opportunity.npsp__Notification_Message__c"
+    deprecated = false
+    description = "A personalized message for the notification recipient."
+    inlineHelpText = "A personalized message for the notification recipient."
+    label = "Notification Message"
+    length = 32768
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist npsp__Notification_Preference__c {
+    apiName = "Opportunity.npsp__Notification_Preference__c"
+    deprecated = false
+    description = "Indicates how the notification recipient should be notified, for example, by email or phone."
+    inlineHelpText = "How the notification recipient should be notified."
+    label = "Notification Preference"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Postal Mail"
+        default = false
+        label = "Postal Mail"
+      },
+      {
+        fullName = "Phone"
+        default = false
+        label = "Phone"
+      },
+      {
+        fullName = "Do Not Notify"
+        default = false
+        label = "Do Not Notify"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup npsp__Notification_Recipient_Contact__c {
+    apiName = "Opportunity.npsp__Notification_Recipient_Contact__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the Contact record of the person who should be notified about this Donation."
+    inlineHelpText = "The existing Contact record of the person to be notified for this donation."
+    label = "Notification Recipient Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Opportunities (Notification Recipient)"
+    relationshipName = "Notification_Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email npsp__Notification_Recipient_Email__c {
+    apiName = "Opportunity.npsp__Notification_Recipient_Email__c"
+    deprecated = false
+    description = "The email address for the person receiving the honor/memorial notification."
+    externalId = false
+    inlineHelpText = "The email address for the person receiving the honor/memorial notification."
+    label = "Notification Recipient Email"
+    trackTrending = false
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.TextArea npsp__Notification_Recipient_Information__c {
+    apiName = "Opportunity.npsp__Notification_Recipient_Information__c"
+    deprecated = false
+    description = "Enter any contact information such as address, phone, or email that the donor provided for the notification recipient."
+    inlineHelpText = "The contact information (as provided by the donor) for the notification recipient."
+    label = "Notification Recipient Information"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text npsp__Notification_Recipient_Name__c {
+    apiName = "Opportunity.npsp__Notification_Recipient_Name__c"
+    deprecated = false
+    description = "The name that the donor provided of the person you should notify about this Donation. If this field is left blank and the Notification Recipient Contact field contains a value, NPSP automatically populates this field with that value."
+    externalId = false
+    inlineHelpText = "The name (as provided by the donor) of the person who should be notified about this gift. If this field is left blank and the Notification Recipient Contact field contains a value, Salesforce automatically populates this field with that value."
+    label = "Notification Recipient Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup npsp__Previous_Grant_Opportunity__c {
+    apiName = "Opportunity.npsp__Previous_Grant_Opportunity__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "If this Grant is a renewal of a previous Grant, use this field to relate this record to the previous Grant."
+    inlineHelpText = "If this grant is a renewal of a previous grant, use this field to relate this record to the previous one."
+    label = "Previous Grant/Gift Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    relationshipLabel = "Related Grants/Gifts"
+    relationshipName = "Previous_Grant_Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text npsp__Primary_Contact_Campaign_Member_Status__c {
+    apiName = "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c"
+    deprecated = false
+    description = "The status NPSP uses when it creates a Campaign Member for this Opportunity's Primary Contact and Primary Campaign Source. Leave blank to default to a responded status for Closed/Won Opportunities, and a non-responded status for other Opportunities."
+    externalId = false
+    inlineHelpText = "The status to use when creating a campaign member for this opportunity's primary contact and primary campaign source. Leave blank to default to an responded status for closed/won opportunities, and a non-responded status for other opportunities."
+    label = "Primary Contact Campaign Member Status"
+    length = 40
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup npsp__Primary_Contact__c {
+    apiName = "Opportunity.npsp__Primary_Contact__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The Primary Contact for this Opportunity. If this is an individual Donation, NPSP attributes the Donation to the Primary Contact. If this is an organizational Donation, NPSP attributes a soft credit to the Primary Contact."
+    inlineHelpText = "The primary contact for this opportunity. The primary contact role is kept in sync with this field. For individual donations, this denotes attribution for this opportunity."
+    label = "Primary Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npsp__Qualified_Date__c {
+    apiName = "Opportunity.npsp__Qualified_Date__c"
+    deprecated = false
+    description = "The date your organization identified this donor as qualifying for this Donation."
+    inlineHelpText = "The date this donor was identified as qualifying for this donation."
+    label = "Qualified Date"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.FormulaText npsp__Recurring_Donation_Installment_Name__c {
+    apiName = "Opportunity.npsp__Recurring_Donation_Installment_Name__c"
+    deprecated = false
+    description = "The installment name for inclusion in Opportunity naming. Shows the installment number in parentheses for open ended Recurring Donations, or the installment number out of the total for Recurring Donations with a set number of installments."
+    externalId = false
+    formula = '''
+IF(
+ISBLANK(npe03__Recurring_Donation__c),
+'',
+  IF(
+    OR(ISPICKVAL(npe03__Recurring_Donation__r.npe03__Open_Ended_Status__c, 'Open'),ISPICKVAL(npe03__Recurring_Donation__r.npe03__Open_Ended_Status__c, 'Closed'),ISBLANK(npe03__Recurring_Donation__r.npe03__Installments__c)),
+    '('&TEXT(npsp__Recurring_Donation_Installment_Number__c)&')',
+    '('&TEXT(npsp__Recurring_Donation_Installment_Number__c)&' '&$Label.npsp__oppInstallmentsOf&' '&TEXT(npe03__Recurring_Donation__r.npe03__Installments__c)&')'
+  )
+)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Installment name for inclusion in Opportunity Naming. Shows the installment number in parenthesis for open ended recurring donations, or the installment number out of the total for recurring donations with a set number of installments."
+    label = "Recurring Donation Installment Name"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.npe03__Recurring_Donation__c
+      },
+      {
+        reference = salesforce.Opportunity.field.npsp__Recurring_Donation_Installment_Number__c
+      },
+    ]
+  }
+  salesforce.Number npsp__Recurring_Donation_Installment_Number__c {
+    apiName = "Opportunity.npsp__Recurring_Donation_Installment_Number__c"
+    deprecated = false
+    description = "The installment number of this Opportunity's Recurring Donation schedule."
+    externalId = false
+    inlineHelpText = "The installment number of this opportunity's recurring donation schedule."
+    label = "Recurring Donation Installment Number"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency npsp__Requested_Amount__c {
+    apiName = "Opportunity.npsp__Requested_Amount__c"
+    deprecated = false
+    description = "The amount you are requesting. This number might be different from the final award amount."
+    inlineHelpText = "The amount you are requesting. This number might be different from the final award amount."
+    label = "Requested Amount"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date npsp__Tribute_Notification_Date__c {
+    apiName = "Opportunity.npsp__Tribute_Notification_Date__c"
+    deprecated = false
+    description = "The date when a notification about this tribute gift was sent."
+    label = "Tribute Notification Date"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Picklist npsp__Tribute_Notification_Status__c {
+    apiName = "Opportunity.npsp__Tribute_Notification_Status__c"
+    deprecated = false
+    description = "Indicates whether a notification's been sent for this tribute gift."
+    label = "Tribute Notification Status"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "To Be Notified"
+        default = false
+        label = "To Be Notified"
+      },
+      {
+        fullName = "Notified"
+        default = false
+        label = "Notified"
+      },
+    ]
+    sorted = false
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist npsp__Tribute_Type__c {
+    apiName = "Opportunity.npsp__Tribute_Type__c"
+    deprecated = false
+    description = "Indicates whether the Donation is in honor or in memory of an individual."
+    inlineHelpText = "Indicates whether the gift is in honor or memory of an individual."
+    label = "Tribute Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "In Honor Of"
+        default = false
+        label = "In Honor Of"
+      },
+      {
+        fullName = "In Memory Of"
+        default = false
+        label = "In Memory Of"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox stayclassy__Anonymous_Donor__c {
+    apiName = "Opportunity.stayclassy__Anonymous_Donor__c"
+    defaultValue = false
+    deprecated = false
+    label = "Anonymous Donor"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__Billing_First_Name__c {
+    apiName = "Opportunity.stayclassy__Billing_First_Name__c"
+    deprecated = false
+    description = "First Name of the person associated with billing info"
+    externalId = false
+    label = "Billing First Name"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__Billing_Last_Name__c {
+    apiName = "Opportunity.stayclassy__Billing_Last_Name__c"
+    deprecated = false
+    description = "Last Name of the person associated with billing info"
+    externalId = false
+    label = "Billing Last Name"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__Browser_Info__c {
+    apiName = "Opportunity.stayclassy__Browser_Info__c"
+    deprecated = false
+    description = "Contains information indicating the browser type/version and operating system used by the donor to make a purchase"
+    externalId = false
+    label = "Browser Info"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__Campaign__c {
+    apiName = "Opportunity.stayclassy__Campaign__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Campaign"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Opportunities (Campaign)"
+    relationshipName = "Opportunities2"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__Classy_Custom_Answer__c {
+    apiName = "Opportunity.stayclassy__Classy_Custom_Answer__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Classy Custom Answer"
+    referenceTo = [
+      "stayclassy__Classy_Custom_Answer__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency stayclassy__Classy_Order_Total__c {
+    apiName = "Opportunity.stayclassy__Classy_Order_Total__c"
+    deprecated = false
+    description = "The total amount for a Classy order or transaction, including donations and products (tickets/registrations)."
+    label = "Order Total"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__Credit_Card_Expiration_Date__c {
+    apiName = "Opportunity.stayclassy__Credit_Card_Expiration_Date__c"
+    deprecated = false
+    externalId = false
+    label = "Credit Card Expiration Date"
+    length = 6
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__Credit_Card_Last_Four_Digits__c {
+    apiName = "Opportunity.stayclassy__Credit_Card_Last_Four_Digits__c"
+    deprecated = false
+    externalId = false
+    label = "Credit Card Last Four Digits"
+    length = 4
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__Credit_Card_Type__c {
+    apiName = "Opportunity.stayclassy__Credit_Card_Type__c"
+    deprecated = false
+    description = "Type of credit card used for a donation (Visa, MasterCard, Amex, etc.)"
+    externalId = false
+    label = "Credit Card Type"
+    length = 30
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox stayclassy__Dedication_Ecard_Request__c {
+    apiName = "Opportunity.stayclassy__Dedication_Ecard_Request__c"
+    defaultValue = false
+    deprecated = false
+    label = "Dedication eCard Request"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea stayclassy__Dedication_Email_Body__c {
+    apiName = "Opportunity.stayclassy__Dedication_Email_Body__c"
+    deprecated = false
+    label = "Dedication Body"
+    length = 4000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText stayclassy__Device_Type__c {
+    apiName = "Opportunity.stayclassy__Device_Type__c"
+    deprecated = false
+    externalId = false
+    formula = '''
+IF (
+!ISBLANK(stayclassy__Browser_Info__c), (
+  IF (
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "android")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "iphone")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "ipad")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "blackberry")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "opera mini")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "opera mobi")) ||
+    (CONTAINS(LOWER(stayclassy__Browser_Info__c), "iemobile"))
+  ,'Mobile',
+  'Desktop')
+), NULL)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Device Type"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.stayclassy__Browser_Info__c
+      },
+    ]
+  }
+  salesforce.Text stayclassy__Discount_Code__c {
+    apiName = "Opportunity.stayclassy__Discount_Code__c"
+    deprecated = false
+    description = "Name of the discount code applied to an order"
+    externalId = false
+    label = "Discount Code"
+    length = 45
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number stayclassy__Discount_Total__c {
+    apiName = "Opportunity.stayclassy__Discount_Total__c"
+    deprecated = false
+    description = "Total value of a discount code applied to an order"
+    externalId = false
+    label = "Discount Total"
+    precision = 10
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__Fundraising_Page__c {
+    apiName = "Opportunity.stayclassy__Fundraising_Page__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Fundraising Page"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Opportunities (Fundraiser)"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__Fundraising_Team__c {
+    apiName = "Opportunity.stayclassy__Fundraising_Team__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Fundraising Team"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Opportunities (Team)"
+    relationshipName = "Opportunities1"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox stayclassy__Hide_Donation_Amount__c {
+    apiName = "Opportunity.stayclassy__Hide_Donation_Amount__c"
+    defaultValue = false
+    deprecated = false
+    description = "When checked, indicates that the amount of a donation will not be displayed on a Classy page"
+    label = "Hide Donation Amount"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox stayclassy__Hide_Donation_Comment__c {
+    apiName = "Opportunity.stayclassy__Hide_Donation_Comment__c"
+    defaultValue = false
+    deprecated = false
+    description = "When checked, hides the donor comment and prevents it from being displayed on Classy pages"
+    label = "Hide Donation Comment"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCheckbox stayclassy__Offline_Donation__c {
+    apiName = "Opportunity.stayclassy__Offline_Donation__c"
+    deprecated = false
+    formula = '''
+IF (
+  stayclassy__gateway_name__c = 'Offline' || CONTAINS(stayclassy__gateway_name__c, 'Offline')
+,true
+,false)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Offline Donation"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Opportunity.field.stayclassy__gateway_name__c
+      },
+    ]
+  }
+  salesforce.Number stayclassy__Organization_ID__c {
+    apiName = "Opportunity.stayclassy__Organization_ID__c"
+    deprecated = false
+    description = "The Classy Organization ID associated with a transaction."
+    externalId = false
+    label = "Organization ID"
+    precision = 10
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__PaymentID__c {
+    apiName = "Opportunity.stayclassy__PaymentID__c"
+    deprecated = false
+    externalId = false
+    label = "Payment ID"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__Payment_Method__c {
+    apiName = "Opportunity.stayclassy__Payment_Method__c"
+    deprecated = false
+    description = "Payment method (can be credit card, check, cash, PayPal, etc.)"
+    externalId = false
+    label = "Payment Method"
+    length = 40
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist stayclassy__Transaction_Type__c {
+    apiName = "Opportunity.stayclassy__Transaction_Type__c"
+    deprecated = false
+    description = "Indicates the type of transaction (donation, ticket, or registration)"
+    label = "Transaction Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Donation"
+        default = false
+        label = "Donation"
+      },
+      {
+        fullName = "Ticket"
+        default = false
+        label = "Ticket"
+      },
+      {
+        fullName = "Registration"
+        default = false
+        label = "Registration"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_address2__c {
+    apiName = "Opportunity.stayclassy__cc_address2__c"
+    deprecated = false
+    externalId = false
+    label = "Billing Address 2"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_address__c {
+    apiName = "Opportunity.stayclassy__cc_address__c"
+    deprecated = false
+    externalId = false
+    label = "Billing Address"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_city__c {
+    apiName = "Opportunity.stayclassy__cc_city__c"
+    deprecated = false
+    externalId = false
+    label = "Billing City"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_country__c {
+    apiName = "Opportunity.stayclassy__cc_country__c"
+    deprecated = false
+    externalId = false
+    label = "Billing Country"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_state__c {
+    apiName = "Opportunity.stayclassy__cc_state__c"
+    deprecated = false
+    externalId = false
+    label = "Billing State"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__cc_zip__c {
+    apiName = "Opportunity.stayclassy__cc_zip__c"
+    deprecated = false
+    externalId = false
+    label = "Billing Postal Code"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__check_number__c {
+    apiName = "Opportunity.stayclassy__check_number__c"
+    deprecated = false
+    externalId = false
+    label = "Check Number"
+    length = 32
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_address__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_address__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact Address"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_city__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_city__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact City"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_country__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_country__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact Country"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Email stayclassy__dedication_contact_email__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_email__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact Email"
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_name__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_name__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact Name"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_state__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_state__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact State"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_contact_zip__c {
+    apiName = "Opportunity.stayclassy__dedication_contact_zip__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Contact Zip"
+    length = 15
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox stayclassy__dedication_include_gift_amount__c {
+    apiName = "Opportunity.stayclassy__dedication_include_gift_amount__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the dedication donation should include the amount of the gift in correspondence."
+    label = "Dedication Include Gift Amount"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_name__c {
+    apiName = "Opportunity.stayclassy__dedication_name__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Name"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__dedication_type__c {
+    apiName = "Opportunity.stayclassy__dedication_type__c"
+    deprecated = false
+    externalId = false
+    label = "Dedication Type"
+    length = 25
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency stayclassy__donation_total__c {
+    apiName = "Opportunity.stayclassy__donation_total__c"
+    deprecated = false
+    label = "Donation Total"
+    precision = 10
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__gateway_name__c {
+    apiName = "Opportunity.stayclassy__gateway_name__c"
+    deprecated = false
+    externalId = false
+    label = "Payment Gateway Name"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__gateway_transaction_id__c {
+    apiName = "Opportunity.stayclassy__gateway_transaction_id__c"
+    deprecated = false
+    externalId = false
+    label = "Payment Gateway Transaction ID"
+    length = 50
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency stayclassy__host_total__c {
+    apiName = "Opportunity.stayclassy__host_total__c"
+    deprecated = false
+    label = "Host Total"
+    precision = 10
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime stayclassy__order_date__c {
+    apiName = "Opportunity.stayclassy__order_date__c"
+    deprecated = false
+    label = "Transaction Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime stayclassy__refund_date__c {
+    apiName = "Opportunity.stayclassy__refund_date__c"
+    deprecated = false
+    label = "Refund Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__sc_order_id__c {
+    apiName = "Opportunity.stayclassy__sc_order_id__c"
+    deprecated = false
+    externalId = true
+    label = "Classy Donation ID"
+    length = 12
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__sf_contact_id__c {
+    apiName = "Opportunity.stayclassy__sf_contact_id__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Contact associated with a transaction"
+    label = "Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__sf_designation_id__c {
+    apiName = "Opportunity.stayclassy__sf_designation_id__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Classy Designation"
+    referenceTo = [
+      "stayclassy__sc_designation__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__sf_recurring_id__c {
+    apiName = "Opportunity.stayclassy__sf_recurring_id__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Classy Recurring Donor"
+    referenceTo = [
+      "stayclassy__sc_recurring_profile__c",
+    ]
+    relationshipLabel = "Opportunities"
+    relationshipName = "Opportunities"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency stayclassy__transaction_total__c {
+    apiName = "Opportunity.stayclassy__transaction_total__c"
+    deprecated = false
+    label = "Transaction Fees"
+    precision = 6
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_CommunityDeviceActEmailTemplate@zcd {
+  available = true
+  description = "Email that users receive with their verification code."
+  encodingKey = "UTF-8"
+  name = "Experience Cloud: Device Activation Verification Email"
+  style = "none"
+  subject = "Verify your identity in {!Community_Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/CommunityDeviceActEmailTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/CommunityDeviceActEmailTemplate/CommunityDeviceActEmailTemplate.email")
+  _alias = "unfiled$public/CommunityDeviceActEmailTemplate"
+}

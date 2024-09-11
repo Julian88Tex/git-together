@@ -1,0 +1,76 @@
+salesforce.FieldSet User_PersonalInfo_EPIM {
+  fullName = "User.PersonalInfo_EPIM"
+  description = "Fieldset for User Field Masking"
+  displayedFields = [
+    {
+      field = salesforce.User.field.Name
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.SenderEmail
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Department
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Alias
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "LastName"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "FirstName"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Username
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Signature
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Division
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.FederationIdentifier
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.EmployeeNumber
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Title
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Extension
+      isFieldManaged = true
+      isRequired = false
+    },
+  ]
+  label = "PersonalInfo_EPIM"
+  _parent = [
+    salesforce.User,
+  ]
+  _alias = "PersonalInfo_EPIM"
+}

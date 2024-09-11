@@ -1,0 +1,234 @@
+type salesforce.ApiAnomalyEventStore {
+  salesforce.DateTime EventDate {
+    apiName = "ApiAnomalyEventStore.EventDate"
+    _required = true
+    label = "Event Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EventIdentifier {
+    apiName = "ApiAnomalyEventStore.EventIdentifier"
+    length = 80
+    _required = true
+    label = "Event ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Operation {
+    apiName = "ApiAnomalyEventStore.Operation"
+    length = 255
+    label = "Operation"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea QueriedEntities {
+    apiName = "ApiAnomalyEventStore.QueriedEntities"
+    length = 1000
+    label = "Queried Entities"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text RequestIdentifier {
+    apiName = "ApiAnomalyEventStore.RequestIdentifier"
+    length = 255
+    label = "Request Identifier"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number RowsProcessed {
+    apiName = "ApiAnomalyEventStore.RowsProcessed"
+    label = "Rows Processed"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Score {
+    apiName = "ApiAnomalyEventStore.Score"
+    label = "Score"
+    precision = 12
+    scale = 6
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SecurityEventData {
+    apiName = "ApiAnomalyEventStore.SecurityEventData"
+    length = 10000
+    label = "Event Data"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SourceIp {
+    apiName = "ApiAnomalyEventStore.SourceIp"
+    length = 255
+    label = "Source IP Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Summary {
+    apiName = "ApiAnomalyEventStore.Summary"
+    length = 1000
+    label = "Summary"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Uri {
+    apiName = "ApiAnomalyEventStore.Uri"
+    length = 255
+    label = "Uri"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea UserAgent {
+    apiName = "ApiAnomalyEventStore.UserAgent"
+    length = 1000
+    label = "User Agent"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "ApiAnomalyEventStore.UserId"
+    relationshipName = "User"
+    label = "User ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ApiAnomalyEventStore.Id"
+    label = "API Anomaly Event Store ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ApiAnomalyEventNumber {
+    apiName = "ApiAnomalyEventStore.ApiAnomalyEventNumber"
+    label = "Event Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ApiAnomalyEventStore.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ApiAnomalyEventStore.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ApiAnomalyEventStore.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Username {
+    apiName = "ApiAnomalyEventStore.Username"
+    length = 255
+    label = "Username"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SessionKey {
+    apiName = "ApiAnomalyEventStore.SessionKey"
+    length = 24
+    label = "Session Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LoginKey {
+    apiName = "ApiAnomalyEventStore.LoginKey"
+    length = 24
+    label = "Login Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PolicyId {
+    apiName = "ApiAnomalyEventStore.PolicyId"
+    relationshipName = "Policy"
+    label = "Transaction Security Policy ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PolicyOutcome {
+    apiName = "ApiAnomalyEventStore.PolicyOutcome"
+    restricted = true
+    label = "Policy Outcome"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number EvaluationTime {
+    apiName = "ApiAnomalyEventStore.EvaluationTime"
+    label = "Evaluation Time"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,5 @@
+salesforce.InstalledPackage sfdobase {
+  versionNumber = "1"
+  fullName = "sfdobase"
+  _alias = "sfdobase"
+}

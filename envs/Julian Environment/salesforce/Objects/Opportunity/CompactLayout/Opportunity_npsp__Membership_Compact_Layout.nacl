@@ -1,0 +1,16 @@
+salesforce.CompactLayout Opportunity_npsp__Membership_Compact_Layout {
+  fullName = "Opportunity.npsp__Membership_Compact_Layout"
+  fields = [
+    "AccountId",
+    "Amount",
+    "StageName",
+    "npe01__Membership_Start_Date__c",
+    "npe01__Membership_End_Date__c",
+    "npe01__Member_Level__c",
+  ]
+  label = "DEPRECATED: Membership Compact Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "DEPRECATED: Membership Compact Layout (npsp)"
+}

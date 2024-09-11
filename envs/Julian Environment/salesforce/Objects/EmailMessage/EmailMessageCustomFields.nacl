@@ -1,0 +1,15 @@
+type salesforce.EmailMessage {
+  salesforce.Text funraise__fr_Email_ID__c {
+    apiName = "EmailMessage.funraise__fr_Email_ID__c"
+    deprecated = false
+    description = "Email ID from funraise"
+    externalId = true
+    label = "Funraise Email ID"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

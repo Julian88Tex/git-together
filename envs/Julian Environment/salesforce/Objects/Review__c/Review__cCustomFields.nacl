@@ -1,0 +1,18 @@
+type salesforce.Review__c {
+  salesforce.MasterDetail Job_Application__c {
+    apiName = "Review__c.Job_Application__c"
+    label = "Job Application"
+    referenceTo = [
+      salesforce.Job_Application__c,
+    ]
+    relationshipLabel = "Reviews"
+    relationshipName = "Reviews"
+    relationshipOrder = 0
+    reparentableMasterDetail = true
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

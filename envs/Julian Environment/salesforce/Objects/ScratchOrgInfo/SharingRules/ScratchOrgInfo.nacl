@@ -1,0 +1,7 @@
+salesforce.SharingRules ScratchOrgInfo {
+  fullName = "ScratchOrgInfo"
+  _parent = [
+    salesforce.ScratchOrgInfo,
+  ]
+  _alias = "ScratchOrgInfo"
+}

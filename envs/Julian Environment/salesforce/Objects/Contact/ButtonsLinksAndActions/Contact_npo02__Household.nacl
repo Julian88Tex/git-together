@@ -1,0 +1,15 @@
+salesforce.WebLink Contact_npo02__Household {
+  fullName = "Contact.npo02__Household"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Household"
+  openType = "replace"
+  protected = false
+  url = "{!IF(ISNULL(Contact.npo02__HouseholdId__c),URLFOR($Action.npo02__Household__c.New,null,[cid=Contact.Id,retURL=URLFOR($Action.Contact.View, Contact.Id)]),URLFOR($Action.npo02__Household__c.Edit,Contact.npo02__HouseholdId__c,[cid=Contact.Id,hhid=Contact.npo02__HouseholdId__c,retURL=URLFOR($Action.Contact.View, Contact.Id)]))}"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npo02__Household"
+}

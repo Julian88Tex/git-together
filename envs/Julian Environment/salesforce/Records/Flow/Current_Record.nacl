@@ -1,0 +1,134 @@
+salesforce.Flow Current_Record {
+  fullName = "Current_Record"
+  apiVersion = 61
+  environments = "Default"
+  interviewLabel = "Current Record {!$Flow.CurrentDateTime}"
+  label = "Current Record"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  recordLookups = [
+    {
+      name = "varRelatedContacts"
+      label = "varRelatedContacts"
+      locationX = 176
+      locationY = 134
+      assignNullValuesIfNoRecordsFound = false
+      connector = {
+        targetReference = "Display"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          field = salesforce.Contact.field.AccountId
+          operator = "EqualTo"
+          value = {
+            elementReference = "RecordId"
+          }
+        },
+      ]
+      getFirstRecordOnly = false
+      object = salesforce.Contact
+      storeOutputAutomatically = true
+    },
+  ]
+  screens = {
+    name = "Display"
+    label = "Display"
+    locationX = 176
+    locationY = 242
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    fields = [
+      {
+        name = "ContactsDataTable"
+        dataTypeMappings = {
+          typeName = "T"
+          typeValue = salesforce.Contact
+        }
+        extensionName = "flowruntime:datatable"
+        fieldType = "ComponentInstance"
+        inputParameters = [
+          {
+            name = "label"
+            value = {
+              stringValue = "Data Table"
+            }
+          },
+          {
+            name = "selectionMode"
+            value = {
+              stringValue = "NO_SELECTION"
+            }
+          },
+          {
+            name = "minRowSelection"
+            value = {
+              numberValue = 0
+            }
+          },
+          {
+            name = "tableData"
+            value = {
+              elementReference = "varRelatedContacts"
+            }
+          },
+          {
+            name = "columns"
+            value = {
+              stringValue = "[{\"apiName\":\"Id\",\"guid\":\"column-230b\",\"editable\":false,\"hasCustomHeaderLabel\":false,\"customHeaderLabel\":\"\",\"wrapText\":true,\"order\":0,\"label\":\"Contact ID\",\"type\":\"text\"},{\"apiName\":\"Name\",\"guid\":\"column-9015\",\"editable\":false,\"hasCustomHeaderLabel\":false,\"customHeaderLabel\":\"\",\"wrapText\":true,\"order\":1,\"label\":\"Full Name\",\"type\":\"text\"},{\"apiName\":\"Email\",\"guid\":\"column-c3c8\",\"editable\":false,\"hasCustomHeaderLabel\":false,\"customHeaderLabel\":\"\",\"wrapText\":true,\"order\":2,\"label\":\"Email\",\"type\":\"email\"},{\"apiName\":\"FirstName\",\"guid\":\"column-a98a\",\"editable\":false,\"hasCustomHeaderLabel\":false,\"customHeaderLabel\":\"\",\"wrapText\":true,\"order\":3,\"label\":\"First Name\",\"type\":\"text\"},{\"apiName\":\"LastName\",\"guid\":\"column-9a09\",\"editable\":false,\"hasCustomHeaderLabel\":false,\"customHeaderLabel\":\"\",\"wrapText\":true,\"order\":4,\"label\":\"Last Name\",\"type\":\"text\"}]"
+            }
+          },
+          {
+            name = "maxRowSelection"
+            value = {
+              numberValue = 0
+            }
+          },
+        ]
+        inputsOnNextNavToAssocScrn = "UseStoredValues"
+        isRequired = true
+        storeOutputAutomatically = true
+      },
+    ]
+    showFooter = true
+    showHeader = true
+  }
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "varRelatedContacts"
+    }
+  }
+  status = "Active"
+  variables = [
+    {
+      name = "RecordId"
+      dataType = "String"
+      isCollection = false
+      isInput = true
+      isOutput = false
+    },
+  ]
+  _alias = "Current Record"
+}

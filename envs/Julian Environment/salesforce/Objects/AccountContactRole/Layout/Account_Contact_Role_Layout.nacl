@@ -1,0 +1,51 @@
+salesforce.Layout AccountContactRole_Account_Contact_Role_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Contact Role"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountContactRole.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AccountContactRole.field.IsPrimary
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountContactRole.field.Role
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AccountContactRole-Account Contact Role Layout"
+  _parent = [
+    salesforce.AccountContactRole,
+  ]
+  _alias = "AccountContactRole-Account Contact Role Layout"
+}

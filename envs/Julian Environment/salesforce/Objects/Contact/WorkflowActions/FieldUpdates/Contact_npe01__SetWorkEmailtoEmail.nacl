@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__SetWorkEmailtoEmail@vuu {
+  fullName = "Contact.npe01__SetWorkEmailtoEmail"
+  field = salesforce.Contact.field.npe01__WorkEmail__c
+  formula = "Email"
+  name = "Set Work Email to Email"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__SetWorkEmailtoEmail"
+}
