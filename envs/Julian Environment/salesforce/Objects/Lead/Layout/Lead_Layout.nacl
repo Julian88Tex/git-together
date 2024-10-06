@@ -1,6 +1,8 @@
-salesforce.Layout Contact_Contact_Layout@bs {
+salesforce.Layout Lead_Lead_Layout@bs {
+  customButtons = [
+    "Convert_Lead",
+  ]
   excludeButtons = [
-    "RequestUseSfdc",
     "Submit",
   ]
   layoutSections = [
@@ -8,49 +10,41 @@ salesforce.Layout Contact_Contact_Layout@bs {
       customLabel = false
       detailHeading = false
       editHeading = true
-      label = "Contact Information"
+      label = "Lead Information"
       layoutColumns = [
         {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.OwnerId
+              field = salesforce.Lead.field.OwnerId
             },
             {
               behavior = "Required"
-              field = salesforce.Contact.field.Name
+              field = salesforce.Lead.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Company
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AccountId
+              field = salesforce.Lead.field.Title
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Title
+              field = salesforce.Lead.field.LeadSource
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Department
+              field = salesforce.Lead.field.CampaignId
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Birthdate
+              field = salesforce.Lead.field.Industry
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.ReportsToId
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.LeadSource
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.Custom_Email_Opt_Out__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.Astro_Location__c
+              field = salesforce.Lead.field.AnnualRevenue
             },
           ]
         },
@@ -58,15 +52,35 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Email
+              field = salesforce.Lead.field.Phone
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantName
+              field = salesforce.Lead.field.MobilePhone
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantPhone
+              field = salesforce.Lead.field.Fax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Website
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Rating
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.NumberOfEmployees
             },
           ]
         },
@@ -83,57 +97,14 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.MailingAddress
+              field = salesforce.Lead.field.Address
             },
           ]
         },
         {
-          layoutItems = [
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.OtherAddress
-            },
-          ]
         },
       ]
       style = "TwoColumnsTopToBottom"
-    },
-    {
-      customLabel = true
-      detailHeading = true
-      editHeading = true
-      label = "Phone Numbers"
-      layoutColumns = [
-        {
-          layoutItems = [
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.Phone
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.MobilePhone
-            },
-          ]
-        },
-        {
-          layoutItems = [
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.HomePhone
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.OtherPhone
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Contact.field.Fax
-            },
-          ]
-        },
-      ]
-      style = "TwoColumnsLeftToRight"
     },
     {
       customLabel = false
@@ -145,7 +116,15 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Languages__c
+              field = salesforce.Lead.field.ProductInterest__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.SICCode__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.NumberofLocations__c
             },
           ]
         },
@@ -153,7 +132,11 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Level__c
+              field = salesforce.Lead.field.CurrentGenerators__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Primary__c
             },
           ]
         },
@@ -170,7 +153,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.CreatedById
+              field = salesforce.Lead.field.CreatedById
             },
           ]
         },
@@ -178,7 +161,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.LastModifiedById
+              field = salesforce.Lead.field.LastModifiedById
             },
           ]
         },
@@ -195,7 +178,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Description
+              field = salesforce.Lead.field.Description
             },
           ]
         },
@@ -252,7 +235,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
       {
         layoutItem = {
           behavior = "Readonly"
-          field = salesforce.Contact.field.AccountId
+          field = salesforce.Lead.field.CampaignId
         }
       },
     ]
@@ -260,28 +243,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
   relatedLists = [
     {
       fields = [
-        "OPPORTUNITY.NAME",
-        "OPPORTUNITY.STAGE_NAME",
-        "OPPORTUNITY.AMOUNT",
-        "OPPORTUNITY.CLOSE_DATE",
-      ]
-      relatedList = "RelatedOpportunityList"
-    },
-    {
-      fields = [
-        "CASES.CASE_NUMBER",
-        "CASES.SUBJECT",
-        "CASES.PRIORITY",
-        "CASES.CREATED_DATE",
-        "CASES.STATUS",
-        "OWNER_NAME",
-      ]
-      relatedList = "RelatedCaseList"
-    },
-    {
-      fields = [
         "TASK.SUBJECT",
-        "TASK.WHAT_NAME",
         "ACTIVITY.TASK",
         "TASK.DUE_DATE",
         "TASK.STATUS",
@@ -293,7 +255,6 @@ salesforce.Layout Contact_Contact_Layout@bs {
     {
       fields = [
         "TASK.SUBJECT",
-        "TASK.WHAT_NAME",
         "ACTIVITY.TASK",
         "TASK.DUE_DATE",
         "CORE.USERS.FULL_NAME",
@@ -313,9 +274,6 @@ salesforce.Layout Contact_Contact_Layout@bs {
       relatedList = "RelatedCampaignList"
     },
     {
-      relatedList = "RelatedNoteList"
-    },
-    {
       fields = [
         "ACTIVITY.SUBJECT",
         "EMAIL_STATUS.CREATED_DATE",
@@ -325,32 +283,22 @@ salesforce.Layout Contact_Contact_Layout@bs {
       ]
       relatedList = "RelatedEmailStatusList"
     },
-    {
-      fields = [
-        "OPPORTUNITY.NAME",
-        "ACCOUNT.NAME",
-        "OPPORTUNITY.CLOSE_DATE",
-      ]
-      relatedList = salesforce.Opportunity.field.Custom_Contact__c
-    },
   ]
-  relatedObjects = [
-    "AccountId",
-  ]
+  runAssignmentRulesDefault = false
   showEmailCheckbox = false
   showHighlightsPanel = false
   showInteractionLogPanel = false
-  showRunAssignmentRulesCheckbox = false
+  showRunAssignmentRulesCheckbox = true
   showSubmitAndAttachButton = false
   summaryLayout = {
-    masterLabel = "00h61000001HdA8"
+    masterLabel = "00h61000001HdA9"
     sizeX = 4
     sizeY = 0
     summaryLayoutStyle = "Default"
   }
-  fullName = "Contact-Contact Layout"
+  fullName = "Lead-Lead Layout"
   _parent = [
-    salesforce.Contact,
+    salesforce.Lead,
   ]
-  _alias = "Contact-Contact Layout"
+  _alias = "Lead-Lead Layout"
 }
