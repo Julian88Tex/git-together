@@ -82,6 +82,10 @@ salesforce.Layout FlowRecord_Flow_Layout@bs {
         "Exits",
         "Errors",
         "Name",
+        "CreatedDate",
+        "RunInMode",
+        "ApiVersion",
+        "CapacityCategory",
       ]
       relatedList = "FlowRecordVersions"
     },

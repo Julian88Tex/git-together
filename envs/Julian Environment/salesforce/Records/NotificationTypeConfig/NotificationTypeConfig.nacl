@@ -312,6 +312,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     {
       notificationChannels = {
         desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "quote_to_order"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
         mobileEnabled = false
       }
       notificationType = "reply_recommendation_notify"

@@ -1,4 +1,4 @@
-type salesforce.DataKitDeploymentLog {
+type salesforce.AiEvalCopilotTestCaseRslt {
   annotations {
     serviceid apiName {
     }
@@ -55,10 +55,10 @@ type salesforce.DataKitDeploymentLog {
     hidden_string internalId {
     }
   }
-  apiName = "DataKitDeploymentLog"
+  apiName = "AiEvalCopilotTestCaseRslt"
   metadataType = "CustomObject"
-  label = "Data Kit Deployment Log"
+  label = "AiEvalCopilotTestCaseRslt"
   enableFeeds = false
-  externalSharingModel = "Private"
-  _alias = "Data Kit Deployment Log"
+  externalSharingModel = "ControlledByParent"
+  _alias = "AiEvalCopilotTestCaseRslt"
 }

@@ -1,20 +1,22 @@
 salesforce.SharingRules Project__c {
-  sharingCriteriaRules = {
-    fullName = "Training_Share"
-    accessLevel = "Read"
-    label = "Training Share"
-    sharedTo = {
-      role = [
-        salesforce.Role.instance.Training_Coordinator,
-      ]
-    }
-    criteriaItems = {
-      field = salesforce.Project__c.field.Priority__c
-      operation = "equals"
-      value = "High"
-    }
-    includeRecordsOwnedByAll = false
-  }
+  sharingCriteriaRules = [
+    {
+      fullName = "Training_Share"
+      accessLevel = "Read"
+      label = "Training Share"
+      sharedTo = {
+        role = [
+          salesforce.Role.instance.Training_Coordinator,
+        ]
+      }
+      criteriaItems = {
+        field = salesforce.Project__c.field.Priority__c
+        operation = "equals"
+        value = "High"
+      }
+      includeRecordsOwnedByAll = false
+    },
+  ]
   fullName = "Project__c"
   _parent = [
     salesforce.Project__c,

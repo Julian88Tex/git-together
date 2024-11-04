@@ -67,7 +67,7 @@ type salesforce.ExpressionFilter {
   salesforce.Text FilterConditionLogic {
     apiName = "ExpressionFilter.FilterConditionLogic"
     length = 255
-    label = "FilterConditionLogic"
+    label = "Filter Condition Logic"
     createable = true
     updateable = true
     unique = false
@@ -86,7 +86,7 @@ type salesforce.ExpressionFilter {
   salesforce.Text FilterDescription {
     apiName = "ExpressionFilter.FilterDescription"
     length = 255
-    label = "FilterDescription"
+    label = "Filter Description"
     createable = true
     updateable = true
     unique = false

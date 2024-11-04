@@ -67,7 +67,7 @@ type salesforce.ExpressionFilterCriteria {
   salesforce.Text FilterTarget {
     apiName = "ExpressionFilterCriteria.FilterTarget"
     length = 255
-    label = "FilterTarget"
+    label = "Filter Target"
     createable = true
     updateable = true
     unique = false
@@ -94,7 +94,7 @@ type salesforce.ExpressionFilterCriteria {
   }
   salesforce.Number SortOrder {
     apiName = "ExpressionFilterCriteria.SortOrder"
-    label = "SortOrder"
+    label = "Sort Order"
     precision = 8
     createable = true
     updateable = true

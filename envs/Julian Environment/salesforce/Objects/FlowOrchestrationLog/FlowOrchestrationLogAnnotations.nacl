@@ -1,4 +1,4 @@
-type salesforce.Task {
+type salesforce.FlowOrchestrationLog {
   annotations {
     serviceid apiName {
     }
@@ -55,9 +55,9 @@ type salesforce.Task {
     hidden_string internalId {
     }
   }
-  apiName = "Task"
+  apiName = "FlowOrchestrationLog"
   metadataType = "CustomObject"
-  label = "Task"
+  label = "Orchestration Run Log"
   actionOverrides = [
     {
       actionName = "CancelEdit"
@@ -74,100 +74,16 @@ type salesforce.Task {
       type = "Default"
     },
     {
-      actionName = "Close"
+      actionName = "List"
       type = "Default"
     },
     {
-      actionName = "Close"
+      actionName = "List"
       formFactor = "Large"
       type = "Default"
     },
     {
-      actionName = "Close"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "DeleteSeries"
-      type = "Default"
-    },
-    {
-      actionName = "DeleteSeries"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "DeleteSeries"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchFlowForManualTask"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchFlowForManualTask"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchFlowForManualTask"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchOmniForManualTask"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchOmniForManualTask"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "LaunchOmniForManualTask"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "NewTask"
-      type = "Default"
-    },
-    {
-      actionName = "NewTask"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "NewTask"
+      actionName = "List"
       formFactor = "Small"
       type = "Default"
     },
@@ -182,6 +98,20 @@ type salesforce.Task {
     },
     {
       actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
       formFactor = "Small"
       type = "Default"
     },
@@ -202,12 +132,6 @@ type salesforce.Task {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  searchLayouts = {
-  }
-  _alias = "Task"
-  topicsForObjects = {
-    enableTopics = true
-  }
-  historyTrackedFields = {
-  }
+  externalSharingModel = "ReadWrite"
+  _alias = "Orchestration Run Log"
 }

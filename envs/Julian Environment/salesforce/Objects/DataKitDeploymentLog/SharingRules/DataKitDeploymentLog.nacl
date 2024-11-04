@@ -1,7 +1,0 @@
-salesforce.SharingRules DataKitDeploymentLog {
-  fullName = "DataKitDeploymentLog"
-  _parent = [
-    salesforce.DataKitDeploymentLog,
-  ]
-  _alias = "DataKitDeploymentLog"
-}

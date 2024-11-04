@@ -74,6 +74,15 @@ salesforce.ForecastingSettings {
       ]
     },
     {
+      forecastingItemCategoryApiName = "customcategory"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "custom category"
+          weight = 1
+        },
+      ]
+    },
+    {
       forecastingItemCategoryApiName = "commitforecast"
       weightedSourceCategories = [
         {
@@ -109,6 +118,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "OpportunityCloseDate"
@@ -881,6 +891,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "OpportunityCloseDate"
@@ -1653,6 +1664,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "OpportunityCloseDate"
@@ -2430,6 +2442,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "OpportunityCloseDate"
@@ -3202,6 +3215,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ProductDate"
@@ -3979,6 +3993,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ProductDate"
@@ -4751,6 +4766,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ProductDate"
@@ -5528,6 +5544,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ProductDate"
@@ -6300,6 +6317,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ScheduleDate"
@@ -7077,6 +7095,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ScheduleDate"
@@ -7849,6 +7868,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ScheduleDate"
@@ -8626,6 +8646,7 @@ salesforce.ForecastingSettings {
         "commitonly",
         "closedonly",
         "pipelineonly",
+        "customcategory",
         "bestcaseonly",
       ]
       forecastingDateType = "ScheduleDate"
