@@ -29,8 +29,6 @@ salesforce.Flow Current_Record {
     {
       name = "varRelatedContacts"
       label = "varRelatedContacts"
-      locationX = 176
-      locationY = 134
       assignNullValuesIfNoRecordsFound = false
       connector = {
         targetReference = "Display"
@@ -53,8 +51,6 @@ salesforce.Flow Current_Record {
   screens = {
     name = "Display"
     label = "Display"
-    locationX = 176
-    locationY = 242
     allowBack = true
     allowFinish = true
     allowPause = true
@@ -114,8 +110,6 @@ salesforce.Flow Current_Record {
     showHeader = true
   }
   start = {
-    locationX = 50
-    locationY = 0
     connector = {
       targetReference = "varRelatedContacts"
     }
