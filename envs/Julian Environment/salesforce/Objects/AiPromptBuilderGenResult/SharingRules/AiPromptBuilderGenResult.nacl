@@ -1,7 +1,0 @@
-salesforce.SharingRules AiPromptBuilderGenResult {
-  fullName = "AiPromptBuilderGenResult"
-  _parent = [
-    salesforce.AiPromptBuilderGenResult,
-  ]
-  _alias = "AiPromptBuilderGenResult"
-}

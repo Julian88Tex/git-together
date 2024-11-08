@@ -1,7 +1,0 @@
-salesforce.SharingRules AiEvaluation {
-  fullName = "AiEvaluation"
-  _parent = [
-    salesforce.AiEvaluation,
-  ]
-  _alias = "AiEvaluation"
-}
