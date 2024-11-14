@@ -66,6 +66,13 @@ type salesforce.User {
     unique = true
     _hidden_value = true
   }
+  salesforce.Checkbox Q9__IsConnecting__c {
+    apiName = "User.Q9__IsConnecting__c"
+    defaultValue = false
+    deprecated = false
+    label = "IsConnecting"
+    _hidden_value = true
+  }
   salesforce.Checkbox Q9__IsElementsUserByFederationId__c {
     apiName = "User.Q9__IsElementsUserByFederationId__c"
     defaultValue = false
