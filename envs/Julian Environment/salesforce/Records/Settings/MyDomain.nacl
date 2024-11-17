@@ -10,7 +10,7 @@ salesforce.MyDomainSettings {
   enableNativeBrowserForAuthOnIos = false
   enableShareBrowserSessionAndroidForAuth = "false"
   enableShareBrowserSessionIOSForAuth = "false"
-  instancedUrlRedirectHandling = "Redirect"
+  instancedUrlRedirectHandling = "NoRedirect"
   isFirstPartyCookieUseRequired = "false"
   logRedirections = "false"
   myDomainName = "julian88tex-dev-ed"
