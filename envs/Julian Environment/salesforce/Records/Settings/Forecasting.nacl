@@ -105,6 +105,9 @@ salesforce.ForecastingSettings {
       ]
     },
   ]
+  forecastingSubmissionSettings = {
+    allowForecastingSubmissions = false
+  }
   forecastingTypeSettings = [
     {
       active = true
@@ -160,6 +163,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "CORE.USERS.ALIAS"
@@ -270,8 +281,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -340,6 +359,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -442,6 +465,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -466,6 +493,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -484,6 +519,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -518,12 +565,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -536,6 +599,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -576,6 +655,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -646,6 +729,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -706,12 +793,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -736,6 +835,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
           "CORE.USERS.LAST_NAME",
@@ -763,7 +864,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -781,6 +884,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -806,17 +910,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -825,11 +935,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -840,6 +958,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -857,6 +976,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -872,8 +992,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -935,6 +1058,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -1043,8 +1174,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -1113,6 +1252,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -1215,6 +1358,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -1239,6 +1386,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -1257,6 +1412,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -1291,12 +1458,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -1309,6 +1492,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -1349,6 +1548,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -1419,6 +1622,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -1479,12 +1686,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -1509,6 +1728,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1536,7 +1757,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -1554,6 +1777,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -1579,17 +1803,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -1598,11 +1828,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -1613,6 +1851,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -1630,6 +1869,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -1645,8 +1885,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -1708,6 +1951,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "CORE.USERS.ALIAS"
           label = "Opportunity Owner Alias"
         },
@@ -1820,8 +2071,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -1890,6 +2149,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -1992,6 +2255,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -2016,6 +2283,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -2034,6 +2309,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -2068,12 +2355,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -2086,6 +2389,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -2126,6 +2445,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -2196,6 +2519,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -2256,12 +2583,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -2286,6 +2625,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
           "CORE.USERS.LAST_NAME",
@@ -2314,7 +2655,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -2332,6 +2675,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -2357,17 +2701,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -2376,11 +2726,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -2391,6 +2749,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -2408,6 +2767,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -2423,8 +2783,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -2486,6 +2849,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -2594,8 +2965,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -2664,6 +3043,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -2766,6 +3149,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -2790,6 +3177,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -2808,6 +3203,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -2842,12 +3249,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -2860,6 +3283,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -2900,6 +3339,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -2970,6 +3413,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -3030,12 +3477,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -3060,6 +3519,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -3087,7 +3548,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -3105,6 +3568,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -3130,17 +3594,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -3149,11 +3619,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -3164,6 +3642,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -3181,6 +3660,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -3196,8 +3676,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -3259,6 +3742,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -3371,8 +3862,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -3441,6 +3940,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -3543,6 +4046,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -3567,6 +4074,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -3585,6 +4100,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -3619,12 +4146,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -3637,6 +4180,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -3677,6 +4236,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -3747,6 +4310,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -3807,12 +4374,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -3837,6 +4416,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -3865,7 +4446,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -3883,6 +4466,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -3908,17 +4492,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -3927,11 +4517,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -3942,6 +4540,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -3959,6 +4558,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -3974,8 +4574,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -4037,6 +4640,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -4145,8 +4756,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -4215,6 +4834,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -4317,6 +4940,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -4341,6 +4968,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -4359,6 +4994,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -4393,12 +5040,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -4411,6 +5074,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -4451,6 +5130,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -4521,6 +5204,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -4581,12 +5268,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -4611,6 +5310,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -4638,7 +5339,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -4656,6 +5359,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -4681,17 +5385,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -4700,11 +5410,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -4715,6 +5433,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -4732,6 +5451,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -4747,8 +5467,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -4810,6 +5533,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -4922,8 +5653,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -4992,6 +5731,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -5094,6 +5837,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -5118,6 +5865,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -5136,6 +5891,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -5170,12 +5937,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -5188,6 +5971,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -5228,6 +6027,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -5298,6 +6101,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -5358,12 +6165,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -5388,6 +6207,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -5416,7 +6237,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -5434,6 +6257,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -5459,17 +6283,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -5478,11 +6308,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -5493,6 +6331,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -5510,6 +6349,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -5525,8 +6365,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -5588,6 +6431,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -5696,8 +6547,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -5766,6 +6625,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -5868,6 +6731,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -5892,6 +6759,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -5910,6 +6785,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -5944,12 +6831,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -5962,6 +6865,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -6002,6 +6921,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -6072,6 +6995,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -6132,12 +7059,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -6162,6 +7101,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -6189,7 +7130,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -6207,6 +7150,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -6232,17 +7176,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -6251,11 +7201,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -6266,6 +7224,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -6283,6 +7242,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -6298,8 +7258,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -6361,6 +7324,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -6473,8 +7444,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -6543,6 +7522,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -6645,6 +7628,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -6669,6 +7656,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -6687,6 +7682,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -6721,12 +7728,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -6739,6 +7762,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -6779,6 +7818,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -6849,6 +7892,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -6909,12 +7956,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -6939,6 +7998,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -6967,7 +8028,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -6985,6 +8048,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -7010,17 +8074,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -7029,11 +8099,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -7044,6 +8122,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -7061,6 +8140,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -7076,8 +8156,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -7139,6 +8222,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -7247,8 +8338,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -7317,6 +8416,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -7419,6 +8522,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -7443,6 +8550,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -7461,6 +8576,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -7495,12 +8622,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -7513,6 +8656,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -7553,6 +8712,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -7623,6 +8786,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -7683,12 +8850,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -7713,6 +8892,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -7740,7 +8921,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -7758,6 +8941,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -7783,17 +8967,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -7802,11 +8992,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -7817,6 +9015,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -7834,6 +9033,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -7849,8 +9049,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -7912,6 +9115,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -8024,8 +9235,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -8094,6 +9313,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -8196,6 +9419,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -8220,6 +9447,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -8238,6 +9473,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -8272,12 +9519,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -8290,6 +9553,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -8330,6 +9609,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -8400,6 +9683,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -8460,12 +9747,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -8490,6 +9789,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -8518,7 +9819,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -8536,6 +9839,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -8561,17 +9865,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -8580,11 +9890,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -8595,6 +9913,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -8612,6 +9931,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -8627,8 +9947,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -8690,6 +10013,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -8798,8 +10129,16 @@ salesforce.ForecastingSettings {
           label = "Anonymous Donor"
         },
         {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
           field = "Opportunity.npsp__Batch__c"
           label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
         },
         {
           field = "Opportunity.BidPal__Bidpal_GiftID__c"
@@ -8868,6 +10207,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.stayclassy__sf_recurring_id__c"
           label = "Classy Recurring Donor"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
         },
         {
           field = "Opportunity.npo02__CombinedRollupFieldset__c"
@@ -8970,6 +10313,10 @@ salesforce.ForecastingSettings {
           label = "Device Type"
         },
         {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
           field = "Opportunity.stayclassy__Discount_Code__c"
           label = "Discount Code"
         },
@@ -8994,6 +10341,14 @@ salesforce.ForecastingSettings {
           label = "Do Not Automatically Create Payment"
         },
         {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
           field = "Opportunity.Fundraiser_Name__c"
           label = "Fundraiser Name"
         },
@@ -9012,6 +10367,18 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.funraise__fr_ID__c"
           label = "Funraise ID"
+        },
+        {
+          field = "Opportunity.funraise__Funraise_Pledge__c"
+          label = "Funraise Pledge"
+        },
+        {
+          field = "Opportunity.funraise__Subscription__c"
+          label = "Funraise Subscription"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
         },
         {
           field = "Opportunity.npsp__Grant_Contract_Date__c"
@@ -9046,12 +10413,28 @@ salesforce.ForecastingSettings {
           label = "Honoree Contact"
         },
         {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Name__c"
           label = "Honoree Name"
         },
         {
           field = "Opportunity.stayclassy__host_total__c"
           label = "Host Total"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
         },
         {
           field = "Opportunity.npsp__Is_Grant_Renewal__c"
@@ -9064,6 +10447,22 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.MainCompetitors__c"
           label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
         },
         {
           field = "Opportunity.npe01__Member_Level__c"
@@ -9104,6 +10503,10 @@ salesforce.ForecastingSettings {
         {
           field = "Opportunity.npsp__Notification_Recipient_Contact__c"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
         },
         {
           field = "Opportunity.npsp__Notification_Recipient_Information__c"
@@ -9174,6 +10577,10 @@ salesforce.ForecastingSettings {
           label = "Program Areas"
         },
         {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
           field = "Opportunity.npe03__Recurring_Donation__c"
           label = "Recurring Donation"
         },
@@ -9234,12 +10641,24 @@ salesforce.ForecastingSettings {
           label = "Transaction Type"
         },
         {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
           field = "Opportunity.npsp__Tribute_Type__c"
           label = "Tribute Type"
         },
         {
           field = "Opportunity.T_Shirt_Size__c"
           label = "T-Shirt Size"
+        },
+        {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
         },
         {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
@@ -9264,6 +10683,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -9291,7 +10712,9 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Acknowledgment_Date__c",
           "Opportunity.npsp__Acknowledgment_Status__c",
           "Opportunity.stayclassy__Anonymous_Donor__c",
+          "Opportunity.npsp__Ask_Date__c",
           "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
           "Opportunity.BidPal__Bidpal_GiftID__c",
           "Opportunity.stayclassy__cc_address__c",
           "Opportunity.stayclassy__cc_address2__c",
@@ -9309,6 +10732,7 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__sf_designation_id__c",
           "Opportunity.stayclassy__sc_order_id__c",
           "Opportunity.stayclassy__sf_recurring_id__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
           "Opportunity.npo02__CombinedRollupFieldset__c",
           "Opportunity.stayclassy__sf_contact_id__c",
           "Opportunity.npe01__Contact_Id_for_Role__c",
@@ -9334,17 +10758,23 @@ salesforce.ForecastingSettings {
           "Opportunity.DeliveryInstallationStatus__c",
           "Opportunity.Description_Test__c",
           "Opportunity.stayclassy__Device_Type__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
           "Opportunity.stayclassy__Discount_Code__c",
           "Opportunity.stayclassy__Discount_Total__c",
           "Opportunity.stayclassy__donation_total__c",
           "Opportunity.Donor_Level__c",
           "Opportunity.Donor_Level_Auto__c",
           "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
           "Opportunity.Fundraiser_Name__c",
           "Opportunity.stayclassy__Fundraising_Page__c",
           "Opportunity.stayclassy__Fundraising_Team__c",
           "Opportunity.funraise__fr_Donor__c",
           "Opportunity.funraise__fr_ID__c",
+          "Opportunity.funraise__Funraise_Pledge__c",
+          "Opportunity.funraise__Subscription__c",
+          "Opportunity.npsp__Gift_Strategy__c",
           "Opportunity.npsp__Grant_Contract_Date__c",
           "Opportunity.npsp__Grant_Contract_Number__c",
           "Opportunity.npsp__Grant_Period_End_Date__c",
@@ -9353,11 +10783,19 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__Hide_Donation_Amount__c",
           "Opportunity.stayclassy__Hide_Donation_Comment__c",
           "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
           "Opportunity.stayclassy__host_total__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
           "Opportunity.npsp__Is_Grant_Renewal__c",
           "Opportunity.npe01__Is_Opp_From_Individual__c",
           "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
           "Opportunity.npe01__Member_Level__c",
           "Opportunity.npe01__Membership_End_Date__c",
           "Opportunity.npe01__Membership_Origin__c",
@@ -9368,6 +10806,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Notification_Message__c",
           "Opportunity.npsp__Notification_Preference__c",
           "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
           "Opportunity.npsp__Notification_Recipient_Information__c",
           "Opportunity.npsp__Notification_Recipient_Name__c",
           "Opportunity.npe01__Number_of_Payments__c",
@@ -9385,6 +10824,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Primary_Contact__c",
           "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
           "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
           "Opportunity.npe03__Recurring_Donation__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
           "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
@@ -9400,8 +10840,11 @@ salesforce.ForecastingSettings {
           "Opportunity.stayclassy__order_date__c",
           "Opportunity.stayclassy__transaction_total__c",
           "Opportunity.stayclassy__Transaction_Type__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
           "Opportunity.npsp__Tribute_Type__c",
           "Opportunity.T_Shirt_Size__c",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]

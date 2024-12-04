@@ -1,32 +1,41 @@
 salesforce.StandardValueSet AssetStatus {
   fullName = "AssetStatus"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Shipped"
-      default = false
-      label = "Shipped"
-    },
-    {
-      fullName = "Installed"
-      default = false
-      label = "Installed"
-    },
-    {
-      fullName = "Registered"
-      default = false
-      label = "Registered"
-    },
-    {
-      fullName = "Obsolete"
-      default = false
-      label = "Obsolete"
-    },
-    {
-      fullName = "Purchased"
-      default = false
-      label = "Purchased"
-    },
-  ]
+  standardValue = {
+    values = {
+      Shipped = {
+        fullName = "Shipped"
+        default = false
+        label = "Shipped"
+      }
+      Installed = {
+        fullName = "Installed"
+        default = false
+        label = "Installed"
+      }
+      Registered = {
+        fullName = "Registered"
+        default = false
+        label = "Registered"
+      }
+      Obsolete = {
+        fullName = "Obsolete"
+        default = false
+        label = "Obsolete"
+      }
+      Purchased = {
+        fullName = "Purchased"
+        default = false
+        label = "Purchased"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.AssetStatus.standardValue.values.Shipped,
+      salesforce.StandardValueSet.instance.AssetStatus.standardValue.values.Installed,
+      salesforce.StandardValueSet.instance.AssetStatus.standardValue.values.Registered,
+      salesforce.StandardValueSet.instance.AssetStatus.standardValue.values.Obsolete,
+      salesforce.StandardValueSet.instance.AssetStatus.standardValue.values.Purchased,
+    ]
+  }
   _alias = "AssetStatus"
 }

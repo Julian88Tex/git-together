@@ -11,13 +11,15 @@ salesforce.ContentSettings {
   enableContentSupportMultiLanguage = false
   enableContentWorkspaceAccess = true
   enableDeleteFileInContentPacks = false
+  enableFileIngestToDataCloud = true
   enableFileShareSetByRecord = false
   enableFilesUsrShareNetRestricted = false
   enableJPGPreviews = false
+  enableLWCFileUpload = false
   enableLibraryManagedFiles = false
   enableSiteGuestUserToUploadFiles = false
   enableUploadFilesOnAttachments = false
-  setValidContentTypeForAtchDocDownload = "false"
+  setValidContentTypeForAtchDocDownload = false
   skipContentAssetTriggers = false
   skipContentAssetTriggersOnDeploy = true
   _alias = "Content"

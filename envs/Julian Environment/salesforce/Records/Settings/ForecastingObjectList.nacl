@@ -56,16 +56,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -74,6 +110,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -98,6 +138,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -150,6 +194,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -218,6 +266,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -296,6 +348,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -332,6 +388,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -340,12 +400,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -484,6 +552,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -516,6 +588,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -526,6 +602,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -572,6 +652,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -588,12 +672,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -610,6 +706,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
           "CORE.USERS.LAST_NAME",
@@ -637,7 +735,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -655,6 +755,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -680,17 +781,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -699,11 +806,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -714,6 +829,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -731,6 +847,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -746,8 +863,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -809,16 +929,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -827,6 +983,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -851,6 +1011,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -903,6 +1067,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -971,6 +1139,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -1049,6 +1221,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -1085,6 +1261,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -1093,12 +1273,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -1237,6 +1425,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -1269,6 +1461,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -1279,6 +1475,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -1325,6 +1525,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -1341,12 +1545,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -1363,6 +1579,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1390,7 +1608,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -1408,6 +1628,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -1433,17 +1654,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -1452,11 +1679,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -1467,6 +1702,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -1484,6 +1720,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -1499,8 +1736,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -1562,16 +1802,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -1580,6 +1856,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -1604,6 +1884,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -1656,6 +1940,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -1724,6 +2012,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -1802,6 +2094,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "SPLITAMOUNT"
           label = "Forecasted Amount"
         },
@@ -1842,6 +2138,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -1850,12 +2150,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -1994,6 +2302,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -2026,6 +2338,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -2036,6 +2352,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -2082,6 +2402,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -2098,12 +2422,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -2120,6 +2456,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
           "CORE.USERS.LAST_NAME",
@@ -2148,7 +2486,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -2166,6 +2506,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -2191,17 +2532,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -2210,11 +2557,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -2225,6 +2580,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -2242,6 +2598,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -2257,8 +2614,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -2320,16 +2680,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -2338,6 +2734,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -2362,6 +2762,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -2414,6 +2818,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -2482,6 +2890,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -2560,6 +2972,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -2596,6 +3012,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -2604,12 +3024,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -2748,6 +3176,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -2780,6 +3212,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -2790,6 +3226,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -2836,6 +3276,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -2852,12 +3296,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -2874,6 +3330,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -2901,7 +3359,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -2919,6 +3379,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -2944,17 +3405,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -2963,11 +3430,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -2978,6 +3453,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -2995,6 +3471,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -3010,8 +3487,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -3073,16 +3553,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -3091,6 +3607,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -3115,6 +3635,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -3167,6 +3691,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -3235,6 +3763,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -3313,6 +3845,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "SPLITAMOUNT"
           label = "Forecasted Amount"
         },
@@ -3353,6 +3889,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -3361,12 +3901,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -3505,6 +4053,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -3537,6 +4089,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -3547,6 +4103,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -3593,6 +4153,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -3609,12 +4173,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -3631,6 +4207,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -3659,7 +4237,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -3677,6 +4257,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -3702,17 +4283,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -3721,11 +4308,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -3736,6 +4331,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -3753,6 +4349,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -3768,8 +4365,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -3831,16 +4431,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -3849,6 +4485,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -3873,6 +4513,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -3925,6 +4569,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -3993,6 +4641,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -4071,6 +4723,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -4107,6 +4763,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -4115,12 +4775,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -4259,6 +4927,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -4291,6 +4963,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -4301,6 +4977,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -4347,6 +5027,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -4363,12 +5047,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -4385,6 +5081,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -4412,7 +5110,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -4430,6 +5130,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -4455,17 +5156,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -4474,11 +5181,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -4489,6 +5204,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -4506,6 +5222,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -4521,8 +5238,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -4584,16 +5304,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -4602,6 +5358,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -4626,6 +5386,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -4678,6 +5442,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -4746,6 +5514,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -4824,6 +5596,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "SPLITAMOUNT"
           label = "Forecasted Amount"
         },
@@ -4864,6 +5640,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -4872,12 +5652,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -5016,6 +5804,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -5048,6 +5840,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -5058,6 +5854,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -5104,6 +5904,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -5120,12 +5924,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -5142,6 +5958,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -5170,7 +5988,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -5188,6 +6008,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -5213,17 +6034,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -5232,11 +6059,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -5247,6 +6082,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -5264,6 +6100,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -5279,8 +6116,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -5342,16 +6182,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -5360,6 +6236,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -5384,6 +6264,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -5436,6 +6320,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -5504,6 +6392,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -5582,6 +6474,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -5618,6 +6514,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -5626,12 +6526,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -5770,6 +6678,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -5802,6 +6714,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -5812,6 +6728,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -5858,6 +6778,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -5874,12 +6798,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -5896,6 +6832,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -5923,7 +6861,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -5941,6 +6881,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -5966,17 +6907,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -5985,11 +6932,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -6000,6 +6955,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -6017,6 +6973,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -6032,8 +6989,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -6095,16 +7055,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -6113,6 +7109,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -6137,6 +7137,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -6189,6 +7193,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -6257,6 +7265,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -6335,6 +7347,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "SPLITAMOUNT"
           label = "Forecasted Amount"
         },
@@ -6375,6 +7391,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -6383,12 +7403,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -6527,6 +7555,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -6559,6 +7591,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -6569,6 +7605,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -6615,6 +7655,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -6631,12 +7675,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -6653,6 +7709,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -6681,7 +7739,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -6699,6 +7759,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -6724,17 +7785,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -6743,11 +7810,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -6758,6 +7833,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -6775,6 +7851,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -6790,8 +7867,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -6853,16 +7933,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -6871,6 +7987,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -6895,6 +8015,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -6947,6 +8071,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -7015,6 +8143,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -7093,6 +8225,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -7129,6 +8265,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -7137,12 +8277,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -7281,6 +8429,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -7313,6 +8465,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -7323,6 +8479,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -7369,6 +8529,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -7385,12 +8549,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -7407,6 +8583,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -7434,7 +8612,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -7452,6 +8632,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -7477,17 +8658,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -7496,11 +8683,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -7511,6 +8706,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -7528,6 +8724,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -7543,8 +8740,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -7606,16 +8806,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -7624,6 +8860,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -7648,6 +8888,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -7700,6 +8944,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -7768,6 +9016,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -7846,6 +9098,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "SPLITAMOUNT"
           label = "Forecasted Amount"
         },
@@ -7886,6 +9142,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -7894,12 +9154,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -8038,6 +9306,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -8070,6 +9342,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -8080,6 +9356,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -8126,6 +9406,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -8142,12 +9426,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -8164,6 +9460,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -8192,7 +9490,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -8210,6 +9510,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -8235,17 +9536,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -8254,11 +9561,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -8269,6 +9584,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -8286,6 +9602,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -8301,8 +9618,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]
@@ -8364,16 +9684,52 @@ salesforce.ForecastingObjectListSettings {
           label = "Stage"
         },
         {
+          field = "00N6100000DVAjs"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N6100000DVAjr"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N6100000DVAju"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N6100000DVAjt"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
           field = "OPPORTUNITY.NAME"
           label = "Opportunity Name"
+        },
+        {
+          field = "00N4M00000IQG5d"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "00N4M00000IQG5c"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N4M00000IQG5f"
+          label = "Tribute Notification Status"
         },
         {
           field = "00N6100000FuoCY"
           label = "Description Test"
         },
         {
+          field = "00N4M00000IQG5e"
+          label = "Tribute Notification Date"
+        },
+        {
           field = "OPPORTUNITY.LAST_STAGE_CHANGE"
           label = "Last Stage Change Date"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
         },
         {
           field = "00N6100000H870u"
@@ -8382,6 +9738,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrLWd"
           label = "Class"
+        },
+        {
+          field = "00N4M00000IakPB"
+          label = "Funraise Subscription"
         },
         {
           field = "00N6100000I79cj"
@@ -8406,6 +9766,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000DWI1B"
           label = "T-Shirt Size"
+        },
+        {
+          field = "00N4M00000IuvcT"
+          label = "Batch Number"
         },
         {
           field = "DESCRIPTION"
@@ -8458,6 +9822,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N61000005D5W6"
           label = "Current Generator(s)"
+        },
+        {
+          field = "00N4M00000IK4vf"
+          label = "Disable Contact Role Automation"
         },
         {
           field = "CORE.USERS.LAST_NAME"
@@ -8526,6 +9894,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BqKjy"
           label = "Offline Donation"
+        },
+        {
+          field = "00N6100000BrMJy"
+          label = "Matching Gift Account"
         },
         {
           field = "OPPORTUNITY.EXP_AMOUNT"
@@ -8604,6 +9976,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Billing Postal Code"
         },
         {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "00N4M00000IT0V6"
           label = "Bidpal Gift ID"
         },
@@ -8640,6 +10016,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Contact Zip"
         },
         {
+          field = "00N6100000BrMKG"
+          label = "Matching Gift"
+        },
+        {
           field = "00N6100000BqKkF"
           label = "Dedication Contact State"
         },
@@ -8648,12 +10028,20 @@ salesforce.ForecastingObjectListSettings {
           label = "Dedication Name"
         },
         {
+          field = "00N6100000BrMKE"
+          label = "Matching Gift Employer"
+        },
+        {
           field = "00N6100000BqKkH"
           label = "Dedication Include Gift Amount"
         },
         {
           field = "00N4M00000IPE9J"
           label = "Donor Level"
+        },
+        {
+          field = "00N6100000BrMKF"
+          label = "Matching Gift Status"
         },
         {
           field = "ACCOUNT.SITE"
@@ -8792,6 +10180,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Notification Preference"
         },
         {
+          field = "PARTNER.NAME"
+          label = "Partner Account"
+        },
+        {
           field = "OPPORTUNITY.LEAD_SOURCE"
           label = "Lead Source"
         },
@@ -8824,6 +10216,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Fiscal Period"
         },
         {
+          field = "00N4M00000IujGC"
+          label = "Elevate Recurring Id"
+        },
+        {
           field = "FULL_NAME"
           label = "Owner Full Name"
         },
@@ -8834,6 +10230,10 @@ salesforce.ForecastingObjectListSettings {
         {
           field = "00N6100000BrFEw"
           label = "Grant Contract Number"
+        },
+        {
+          field = "00N4M00000Iuliy"
+          label = "Funraise Pledge"
         },
         {
           field = "00N6100000BrFEv"
@@ -8880,6 +10280,10 @@ salesforce.ForecastingObjectListSettings {
           label = "Opportunity Record Type"
         },
         {
+          field = "00N6100000H5Poa"
+          label = "Qualified Date"
+        },
+        {
           field = "00N6100000BrFFk"
           label = "Next Deliverable Date"
         },
@@ -8896,12 +10300,24 @@ salesforce.ForecastingObjectListSettings {
           label = "Payment Writeoff Amount"
         },
         {
+          field = "00N6100000H5PoY"
+          label = "Closed Lost Reason"
+        },
+        {
           field = "00N6100000BrF7E"
           label = "Payment Amount Received"
         },
         {
+          field = "00N6100000H5PoZ"
+          label = "Gift Strategy"
+        },
+        {
           field = "00N6100000BrF7D"
           label = "Number of Payments"
+        },
+        {
+          field = "00N6100000H5PoX"
+          label = "Ask Date"
         },
       ]
       forecastingObjectListSelectedSettings = {
@@ -8918,6 +10334,8 @@ salesforce.ForecastingObjectListSettings {
       }
       forecastingObjectListUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -8945,7 +10363,9 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFEs",
           "00N6100000BrFEt",
           "00N6100000BqKji",
+          "00N6100000H5PoX",
           "00N6100000BrFEu",
+          "00N4M00000IuvcT",
           "00N4M00000IT0V6",
           "00N6100000BqKk4",
           "00N6100000BqKk3",
@@ -8963,6 +10383,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkS",
           "00N6100000BqKkQ",
           "00N6100000BqKkT",
+          "00N6100000H5PoY",
           "00N6100000BrF9f",
           "00N6100000BqKkR",
           "00N6100000BrF6z",
@@ -8988,17 +10409,23 @@ salesforce.ForecastingObjectListSettings {
           "00N61000005D5W7",
           "00N6100000FuoCY",
           "00N6100000BqKjt",
+          "00N4M00000IK4vf",
           "00N6100000BqKju",
           "00N6100000BqKjv",
           "00N6100000BqKkK",
           "00N4M00000IPE9J",
           "00N4M00000IPE9O",
           "00N6100000BrF70",
+          "00N4M00000IujGC",
+          "00N6100000DVAjr",
           "00N6100000F2O63",
           "00N6100000BqKjw",
           "00N6100000BqKjx",
           "00N6100000I79cj",
           "00N6100000I79ck",
+          "00N4M00000Iuliy",
+          "00N4M00000IakPB",
+          "00N6100000H5PoZ",
           "00N6100000BrFEv",
           "00N6100000BrFEw",
           "00N6100000BrFEx",
@@ -9007,11 +10434,19 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000DV37N",
           "00N6100000DV37O",
           "00N6100000BrFF1",
+          "00N4M00000IQG5c",
           "00N6100000BrFF2",
           "00N6100000BqKkN",
+          "00N6100000DVAjs",
+          "00N6100000DVAjt",
+          "00N6100000DVAju",
           "00N6100000BrFF3",
           "00N6100000BrF71",
           "00N61000005D5W8",
+          "00N6100000BrMKG",
+          "00N6100000BrMJy",
+          "00N6100000BrMKE",
+          "00N6100000BrMKF",
           "00N6100000BrF72",
           "00N6100000BrF73",
           "00N6100000BrF74",
@@ -9022,6 +10457,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFF4",
           "00N6100000BrFF5",
           "00N6100000BrFF6",
+          "00N4M00000IQG5d",
           "00N6100000BrFF7",
           "00N6100000BrFF8",
           "00N6100000BrF7D",
@@ -9039,6 +10475,7 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BrFFB",
           "00N6100000BrFFA",
           "00N6100000BrFEz",
+          "00N6100000H5Poa",
           "00N6100000BrF9w",
           "00N6100000BrFFC",
           "00N6100000BrFFD",
@@ -9054,8 +10491,11 @@ salesforce.ForecastingObjectListSettings {
           "00N6100000BqKkO",
           "00N6100000BqKkU",
           "00N6100000BqKk2",
+          "00N4M00000IQG5e",
+          "00N4M00000IQG5f",
           "00N6100000BrFFF",
           "00N6100000DWI1B",
+          "PARTNER.NAME",
           "OPPORTUNITY.LAST_STAGE_CHANGE",
           "OPPORTUNITY.PUSH_COUNT",
         ]

@@ -1,27 +1,35 @@
 salesforce.StandardValueSet TaskType {
   fullName = "TaskType"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Call"
-      default = false
-      label = "Call"
-    },
-    {
-      fullName = "Meeting"
-      default = false
-      label = "Meeting"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-    {
-      fullName = "Email"
-      default = false
-      label = "Email"
-    },
-  ]
+  standardValue = {
+    values = {
+      Call = {
+        fullName = "Call"
+        default = false
+        label = "Call"
+      }
+      Meeting = {
+        fullName = "Meeting"
+        default = false
+        label = "Meeting"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+      Email = {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.TaskType.standardValue.values.Call,
+      salesforce.StandardValueSet.instance.TaskType.standardValue.values.Meeting,
+      salesforce.StandardValueSet.instance.TaskType.standardValue.values.Other,
+      salesforce.StandardValueSet.instance.TaskType.standardValue.values.Email,
+    ]
+  }
   _alias = "TaskType"
 }

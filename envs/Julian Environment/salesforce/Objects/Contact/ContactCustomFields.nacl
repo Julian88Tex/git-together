@@ -12,28 +12,36 @@ type salesforce.Contact {
   salesforce.Picklist Custom_Email_Opt_Out__c {
     apiName = "Contact.Custom_Email_Opt_Out__c"
     label = "Custom Email Opt Out"
-    valueSet = [
-      {
-        fullName = "asdf"
-        default = false
-        label = "asdf"
-      },
-      {
-        fullName = "qwe"
-        default = false
-        label = "qwe"
-      },
-      {
-        fullName = "zxcv"
-        default = false
-        label = "zxcv"
-      },
-      {
-        fullName = "test_2"
-        default = false
-        label = "test"
-      },
-    ]
+    valueSet = {
+      values = {
+        asdf = {
+          fullName = "asdf"
+          default = false
+          label = "asdf"
+        }
+        qwe = {
+          fullName = "qwe"
+          default = false
+          label = "qwe"
+        }
+        zxcv = {
+          fullName = "zxcv"
+          default = false
+          label = "zxcv"
+        }
+        test_2 = {
+          fullName = "test_2"
+          default = false
+          label = "test"
+        }
+      }
+      order = [
+        salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.asdf,
+        salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.qwe,
+        salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.zxcv,
+        salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.test_2,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -109,33 +117,42 @@ type salesforce.Contact {
     apiName = "Contact.GW_Volunteers__Volunteer_Availability__c"
     deprecated = false
     label = "Volunteer Availability"
-    valueSet = [
-      {
-        fullName = "Weekdays"
-        default = false
-        label = "Weekdays"
-      },
-      {
-        fullName = "Weekends"
-        default = false
-        label = "Weekends"
-      },
-      {
-        fullName = "Morning"
-        default = false
-        label = "Morning"
-      },
-      {
-        fullName = "Afternoon"
-        default = false
-        label = "Afternoon"
-      },
-      {
-        fullName = "Weekly"
-        default = false
-        label = "Weekly"
-      },
-    ]
+    valueSet = {
+      values = {
+        Weekdays = {
+          fullName = "Weekdays"
+          default = false
+          label = "Weekdays"
+        }
+        Weekends = {
+          fullName = "Weekends"
+          default = false
+          label = "Weekends"
+        }
+        Morning = {
+          fullName = "Morning"
+          default = false
+          label = "Morning"
+        }
+        Afternoon = {
+          fullName = "Afternoon"
+          default = false
+          label = "Afternoon"
+        }
+        Weekly = {
+          fullName = "Weekly"
+          default = false
+          label = "Weekly"
+        }
+      }
+      order = [
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekdays,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekends,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Morning,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Afternoon,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekly,
+      ]
+    }
     sorted = false
     restricted = false
     visibleLines = 8
@@ -214,38 +231,48 @@ type salesforce.Contact {
     deprecated = false
     inlineHelpText = "Select the skill(s) this contact has that should be used to find volunteer jobs."
     label = "Volunteer Skills"
-    valueSet = [
-      {
-        fullName = "Computer usage"
-        default = false
-        label = "Computer usage"
-      },
-      {
-        fullName = "Manual labor"
-        default = false
-        label = "Manual labor"
-      },
-      {
-        fullName = "Marketing"
-        default = false
-        label = "Marketing"
-      },
-      {
-        fullName = "Fundraising"
-        default = false
-        label = "Fundraising"
-      },
-      {
-        fullName = "Event Planning"
-        default = false
-        label = "Event Planning"
-      },
-      {
-        fullName = "Landscaping"
-        default = false
-        label = "Landscaping"
-      },
-    ]
+    valueSet = {
+      values = {
+        Computer_usage@s = {
+          fullName = "Computer usage"
+          default = false
+          label = "Computer usage"
+        }
+        Manual_labor@s = {
+          fullName = "Manual labor"
+          default = false
+          label = "Manual labor"
+        }
+        Marketing = {
+          fullName = "Marketing"
+          default = false
+          label = "Marketing"
+        }
+        Fundraising = {
+          fullName = "Fundraising"
+          default = false
+          label = "Fundraising"
+        }
+        Event_Planning@s = {
+          fullName = "Event Planning"
+          default = false
+          label = "Event Planning"
+        }
+        Landscaping = {
+          fullName = "Landscaping"
+          default = false
+          label = "Landscaping"
+        }
+      }
+      order = [
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Computer_usage@s,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Manual_labor@s,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Marketing,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Fundraising,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Event_Planning@s,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Landscaping,
+      ]
+    }
     sorted = false
     restricted = false
     visibleLines = 8
@@ -257,28 +284,36 @@ type salesforce.Contact {
     apiName = "Contact.GW_Volunteers__Volunteer_Status__c"
     deprecated = false
     label = "Volunteer Status"
-    valueSet = [
-      {
-        fullName = "Active"
-        default = false
-        label = "Active"
-      },
-      {
-        fullName = "Inactive"
-        default = false
-        label = "Inactive"
-      },
-      {
-        fullName = "New Sign Up"
-        default = false
-        label = "New Sign Up"
-      },
-      {
-        fullName = "Prospective"
-        default = false
-        label = "Prospective"
-      },
-    ]
+    valueSet = {
+      values = {
+        Active = {
+          fullName = "Active"
+          default = false
+          label = "Active"
+        }
+        Inactive = {
+          fullName = "Inactive"
+          default = false
+          label = "Inactive"
+        }
+        New_Sign_Up@s = {
+          fullName = "New Sign Up"
+          default = false
+          label = "New Sign Up"
+        }
+        Prospective = {
+          fullName = "Prospective"
+          default = false
+          label = "Prospective"
+        }
+      }
+      order = [
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Status__c.valueSet.values.Active,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Status__c.valueSet.values.Inactive,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Status__c.valueSet.values.New_Sign_Up@s,
+        salesforce.Contact.field.GW_Volunteers__Volunteer_Status__c.valueSet.values.Prospective,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -299,23 +334,30 @@ type salesforce.Contact {
   salesforce.Picklist Level__c {
     apiName = "Contact.Level__c"
     label = "Level"
-    valueSet = [
-      {
-        fullName = "Secondary"
-        default = false
-        label = "Secondary"
-      },
-      {
-        fullName = "Tertiary"
-        default = false
-        label = "Tertiary"
-      },
-      {
-        fullName = "Primary"
-        default = false
-        label = "Primary"
-      },
-    ]
+    valueSet = {
+      values = {
+        Secondary = {
+          fullName = "Secondary"
+          default = false
+          label = "Secondary"
+        }
+        Tertiary = {
+          fullName = "Tertiary"
+          default = false
+          label = "Tertiary"
+        }
+        Primary = {
+          fullName = "Primary"
+          default = false
+          label = "Primary"
+        }
+      }
+      order = [
+        salesforce.Contact.field.Level__c.valueSet.values.Secondary,
+        salesforce.Contact.field.Level__c.valueSet.values.Tertiary,
+        salesforce.Contact.field.Level__c.valueSet.values.Primary,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -369,23 +411,30 @@ type salesforce.Contact {
     apiName = "Contact.emma__Sync_Status__c"
     deprecated = false
     label = "Emma Sync Status"
-    valueSet = [
-      {
-        fullName = "Pending"
-        default = false
-        label = "Pending"
-      },
-      {
-        fullName = "Synchronized"
-        default = false
-        label = "Synchronized"
-      },
-      {
-        fullName = "Error"
-        default = false
-        label = "Error"
-      },
-    ]
+    valueSet = {
+      values = {
+        Pending = {
+          fullName = "Pending"
+          default = false
+          label = "Pending"
+        }
+        Synchronized = {
+          fullName = "Synchronized"
+          default = false
+          label = "Synchronized"
+        }
+        Error = {
+          fullName = "Error"
+          default = false
+          label = "Error"
+        }
+      }
+      order = [
+        salesforce.Contact.field.emma__Sync_Status__c.valueSet.values.Pending,
+        salesforce.Contact.field.emma__Sync_Status__c.valueSet.values.Synchronized,
+        salesforce.Contact.field.emma__Sync_Status__c.valueSet.values.Error,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -685,28 +734,36 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "Which phone number should be used for most communications involving this Contact?"
     inlineHelpText = "Which phone number should be used for most communications involving this Contact?"
     label = "Preferred Phone"
-    valueSet = [
-      {
-        fullName = "Home"
-        default = true
-        label = "Home"
-      },
-      {
-        fullName = "Work"
-        default = false
-        label = "Work"
-      },
-      {
-        fullName = "Mobile"
-        default = false
-        label = "Mobile"
-      },
-      {
-        fullName = "Other"
-        default = false
-        label = "Other"
-      },
-    ]
+    valueSet = {
+      values = {
+        Home = {
+          fullName = "Home"
+          default = true
+          label = "Home"
+        }
+        Work = {
+          fullName = "Work"
+          default = false
+          label = "Work"
+        }
+        Mobile = {
+          fullName = "Mobile"
+          default = false
+          label = "Mobile"
+        }
+        Other = {
+          fullName = "Other"
+          default = false
+          label = "Other"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Home,
+        salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Work,
+        salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Mobile,
+        salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Other,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -719,23 +776,30 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "Which email should be used for most communications involving this Contact?"
     inlineHelpText = "Which email should be used for most communications involving this Contact?"
     label = "Preferred Email"
-    valueSet = [
-      {
-        fullName = "Personal"
-        default = true
-        label = "Personal"
-      },
-      {
-        fullName = "Work"
-        default = false
-        label = "Work"
-      },
-      {
-        fullName = "Alternate"
-        default = false
-        label = "Alternate"
-      },
-    ]
+    valueSet = {
+      values = {
+        Personal = {
+          fullName = "Personal"
+          default = true
+          label = "Personal"
+        }
+        Work = {
+          fullName = "Work"
+          default = false
+          label = "Work"
+        }
+        Alternate = {
+          fullName = "Alternate"
+          default = false
+          label = "Alternate"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Personal,
+        salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Work,
+        salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Alternate,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -748,23 +812,30 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "Which type of address is the mailing address?"
     inlineHelpText = "Which type of address is the mailing address?"
     label = "Primary Address Type"
-    valueSet = [
-      {
-        fullName = "Home"
-        default = false
-        label = "Home"
-      },
-      {
-        fullName = "Work"
-        default = false
-        label = "Work"
-      },
-      {
-        fullName = "Other"
-        default = false
-        label = "Other"
-      },
-    ]
+    valueSet = {
+      values = {
+        Home = {
+          fullName = "Home"
+          default = false
+          label = "Home"
+        }
+        Work = {
+          fullName = "Work"
+          default = false
+          label = "Work"
+        }
+        Other = {
+          fullName = "Other"
+          default = false
+          label = "Other"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Home,
+        salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Work,
+        salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Other,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -788,23 +859,30 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "What type of address is the other address?"
     inlineHelpText = "What type of address is the other address?"
     label = "Secondary Address Type"
-    valueSet = [
-      {
-        fullName = "Home"
-        default = false
-        label = "Home"
-      },
-      {
-        fullName = "Work"
-        default = false
-        label = "Work"
-      },
-      {
-        fullName = "Other"
-        default = false
-        label = "Other"
-      },
-    ]
+    valueSet = {
+      values = {
+        Home = {
+          fullName = "Home"
+          default = false
+          label = "Home"
+        }
+        Work = {
+          fullName = "Work"
+          default = false
+          label = "Work"
+        }
+        Other = {
+          fullName = "Other"
+          default = false
+          label = "Other"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Home,
+        salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Work,
+        salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Other,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -817,18 +895,24 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "NO LONGER USED - Hidden system field: do not change.  Updated by automatic processes.  See Contacts & Organization settings."
     inlineHelpText = "Indicates which model drives Account relationship behavior: Individual (Bucket) or One-to-One"
     label = "DEPRECATED - _SYSTEM: ACCOUNT PROCESSOR"
-    valueSet = [
-      {
-        fullName = "One-to-One"
-        default = true
-        label = "One-to-One"
-      },
-      {
-        fullName = "Individual"
-        default = false
-        label = "Individual"
-      },
-    ]
+    valueSet = {
+      values = {
+        One_to_One@b = {
+          fullName = "One-to-One"
+          default = true
+          label = "One-to-One"
+        }
+        Individual = {
+          fullName = "Individual"
+          default = false
+          label = "Individual"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npe01__SystemAccountProcessor__c.valueSet.values.One_to_One@b,
+        salesforce.Contact.field.npe01__SystemAccountProcessor__c.valueSet.values.Individual,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -1215,23 +1299,30 @@ npo02__Household__r.npo02__LastCloseDate__c)
     description = "Determines which household names this contact is NOT included as part of."
     inlineHelpText = "Determines which household names this contact is NOT included as part of."
     label = "Naming Exclusions"
-    valueSet = [
-      {
-        fullName = "Household__c.Name"
-        default = false
-        label = "Household__c.Name"
-      },
-      {
-        fullName = "Household__c.Formal_Greeting__c"
-        default = false
-        label = "Household__c.Formal_Greeting__c"
-      },
-      {
-        fullName = "Household__c.Informal_Greeting__c"
-        default = false
-        label = "Household__c.Informal_Greeting__c"
-      },
-    ]
+    valueSet = {
+      values = {
+        Household__c_Name@uuv = {
+          fullName = "Household__c.Name"
+          default = false
+          label = "Household__c.Name"
+        }
+        Household__c_Formal_Greeting__c@uuvuuu = {
+          fullName = "Household__c.Formal_Greeting__c"
+          default = false
+          label = "Household__c.Formal_Greeting__c"
+        }
+        Household__c_Informal_Greeting__c@uuvuuu = {
+          fullName = "Household__c.Informal_Greeting__c"
+          default = false
+          label = "Household__c.Informal_Greeting__c"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Name@uuv,
+        salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Formal_Greeting__c@uuvuuu,
+        salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Informal_Greeting__c@uuvuuu,
+      ]
+    }
     sorted = false
     restricted = false
     visibleLines = 3
@@ -1502,23 +1593,30 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     deprecated = false
     description = "Used to set if Households should get created for all Contacts, or just those which are connected to an individual account.  Deprecated; replaced by HouseholdsSettings npo02__Household_Rules__c"
     label = "_SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED"
-    valueSet = [
-      {
-        fullName = "All Individual Contacts"
-        default = false
-        label = "All Individual Contacts"
-      },
-      {
-        fullName = "All New or Edited Contacts"
-        default = false
-        label = "All New or Edited Contacts"
-      },
-      {
-        fullName = "No Contacts"
-        default = false
-        label = "No Contacts"
-      },
-    ]
+    valueSet = {
+      values = {
+        All_Individual_Contacts@s = {
+          fullName = "All Individual Contacts"
+          default = false
+          label = "All Individual Contacts"
+        }
+        All_New_or_Edited_Contacts@s = {
+          fullName = "All New or Edited Contacts"
+          default = false
+          label = "All New or Edited Contacts"
+        }
+        No_Contacts@s = {
+          fullName = "No Contacts"
+          default = false
+          label = "No Contacts"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.All_Individual_Contacts@s,
+        salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.All_New_or_Edited_Contacts@s,
+        salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.No_Contacts@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -1917,23 +2015,30 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "Indicates if this Contact is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
     inlineHelpText = "Indicates if this Contact is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
     label = "Sustainer"
-    valueSet = [
-      {
-        fullName = "Active"
-        default = false
-        label = "Active"
-      },
-      {
-        fullName = "Lapsed"
-        default = false
-        label = "Lapsed"
-      },
-      {
-        fullName = "Former"
-        default = false
-        label = "Former"
-      },
-    ]
+    valueSet = {
+      values = {
+        Active = {
+          fullName = "Active"
+          default = false
+          label = "Active"
+        }
+        Lapsed = {
+          fullName = "Lapsed"
+          default = false
+          label = "Lapsed"
+        }
+        Former = {
+          fullName = "Former"
+          default = false
+          label = "Former"
+        }
+      }
+      order = [
+        salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Active,
+        salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Lapsed,
+        salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Former,
+      ]
+    }
     sorted = false
     restricted = false
     _hidden_value = true
@@ -2308,18 +2413,24 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     apiName = "Contact.stayclassy__Gender__c"
     deprecated = false
     label = "Gender"
-    valueSet = [
-      {
-        fullName = "Female"
-        default = false
-        label = "Female"
-      },
-      {
-        fullName = "Male"
-        default = false
-        label = "Male"
-      },
-    ]
+    valueSet = {
+      values = {
+        Female = {
+          fullName = "Female"
+          default = false
+          label = "Female"
+        }
+        Male = {
+          fullName = "Male"
+          default = false
+          label = "Male"
+        }
+      }
+      order = [
+        salesforce.Contact.field.stayclassy__Gender__c.valueSet.values.Female,
+        salesforce.Contact.field.stayclassy__Gender__c.valueSet.values.Male,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true

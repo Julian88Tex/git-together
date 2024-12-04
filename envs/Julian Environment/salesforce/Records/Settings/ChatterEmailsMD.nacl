@@ -1,14 +1,14 @@
 salesforce.ChatterEmailsMDSettings {
   fullName = "ChatterEmailsMD"
-  enableChatterDigestEmailsApiOnly = "false"
-  enableChatterEmailAttachment = "true"
-  enableCollaborationEmail = "true"
-  enableDisplayAppDownloadBadges = "true"
-  enableEmailReplyToChatter = "true"
-  enableEmailToChatter = "true"
-  noQnOwnNotifyOnCaseCmt = "false"
-  noQnOwnNotifyOnRep = "false"
-  noQnSubNotifyOnBestR = "false"
-  noQnSubNotifyOnRep = "false"
+  enableChatterDigestEmailsApiOnly = false
+  enableChatterEmailAttachment = true
+  enableCollaborationEmail = true
+  enableDisplayAppDownloadBadges = true
+  enableEmailReplyToChatter = true
+  enableEmailToChatter = true
+  noQnOwnNotifyOnCaseCmt = false
+  noQnOwnNotifyOnRep = false
+  noQnSubNotifyOnBestR = false
+  noQnSubNotifyOnRep = false
   _alias = "ChatterEmailsMD"
 }

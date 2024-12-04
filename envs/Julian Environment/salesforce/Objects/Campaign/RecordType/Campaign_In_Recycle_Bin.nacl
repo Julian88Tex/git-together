@@ -7,19 +7,19 @@ salesforce.RecordType Campaign_In_Recycle_Bin {
       picklist = salesforce.Campaign.field.Status
       values = [
         {
-          fullName = "Aborted"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Aborted.fullName
           default = false
         },
         {
-          fullName = "Completed"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Completed.fullName
           default = false
         },
         {
-          fullName = "In Progress"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.In_Progress@s.fullName
           default = false
         },
         {
-          fullName = "Planned"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Planned.fullName
           default = true
         },
       ]
@@ -28,51 +28,51 @@ salesforce.RecordType Campaign_In_Recycle_Bin {
       picklist = salesforce.Campaign.field.Type
       values = [
         {
-          fullName = "Advertisement"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Advertisement.fullName
           default = false
         },
         {
-          fullName = "Banner Ads"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Banner_Ads@s.fullName
           default = false
         },
         {
-          fullName = "Conference"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Conference.fullName
           default = true
         },
         {
-          fullName = "Direct Mail"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Direct_Mail@s.fullName
           default = false
         },
         {
-          fullName = "Email"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Email.fullName
           default = false
         },
         {
-          fullName = "Other"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Other.fullName
           default = false
         },
         {
-          fullName = "Partners"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Partners.fullName
           default = false
         },
         {
-          fullName = "Public Relations"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Public_Relations@s.fullName
           default = false
         },
         {
-          fullName = "Referral Program"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Referral_Program@s.fullName
           default = false
         },
         {
-          fullName = "Telemarketing"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Telemarketing.fullName
           default = false
         },
         {
-          fullName = "Trade Show"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Trade_Show@s.fullName
           default = false
         },
         {
-          fullName = "Webinar"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Webinar.fullName
           default = false
         },
       ]
@@ -81,15 +81,15 @@ salesforce.RecordType Campaign_In_Recycle_Bin {
       picklist = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c
       values = [
         {
-          fullName = "Campaign"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Campaign.fullName
           default = false
         },
         {
-          fullName = "Fundraiser"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Fundraiser.fullName
           default = false
         },
         {
-          fullName = "Team"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Team.fullName
           default = false
         },
       ]

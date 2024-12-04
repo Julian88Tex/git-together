@@ -5,28 +5,36 @@ type salesforce.Candidate__c {
     inlineHelpText = "How well does this candidate fit the job description?"
     label = "Prospect Rating"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Hot"
-        default = false
-        label = "Hot"
-      },
-      {
-        fullName = "Warm"
-        default = false
-        label = "Warm"
-      },
-      {
-        fullName = "Cool"
-        default = false
-        label = "Cool"
-      },
-      {
-        fullName = "Manager Favorite"
-        default = false
-        label = "Manager Favorite"
-      },
-    ]
+    valueSet = {
+      values = {
+        Hot = {
+          fullName = "Hot"
+          default = false
+          label = "Hot"
+        }
+        Warm = {
+          fullName = "Warm"
+          default = false
+          label = "Warm"
+        }
+        Cool = {
+          fullName = "Cool"
+          default = false
+          label = "Cool"
+        }
+        Manager_Favorite@s = {
+          fullName = "Manager Favorite"
+          default = false
+          label = "Manager Favorite"
+        }
+      }
+      order = [
+        salesforce.Candidate__c.field.Prospect_Rating__c.valueSet.values.Hot,
+        salesforce.Candidate__c.field.Prospect_Rating__c.valueSet.values.Warm,
+        salesforce.Candidate__c.field.Prospect_Rating__c.valueSet.values.Cool,
+        salesforce.Candidate__c.field.Prospect_Rating__c.valueSet.values.Manager_Favorite@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true

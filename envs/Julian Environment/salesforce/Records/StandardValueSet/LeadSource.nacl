@@ -1,32 +1,41 @@
 salesforce.StandardValueSet LeadSource {
   fullName = "LeadSource"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Web"
-      default = false
-      label = "Web"
-    },
-    {
-      fullName = "Phone Inquiry"
-      default = false
-      label = "Phone Inquiry"
-    },
-    {
-      fullName = "Partner Referral"
-      default = false
-      label = "Partner Referral"
-    },
-    {
-      fullName = "Purchased List"
-      default = false
-      label = "Purchased List"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-  ]
+  standardValue = {
+    values = {
+      Web = {
+        fullName = "Web"
+        default = false
+        label = "Web"
+      }
+      Phone_Inquiry@s = {
+        fullName = "Phone Inquiry"
+        default = false
+        label = "Phone Inquiry"
+      }
+      Partner_Referral@s = {
+        fullName = "Partner Referral"
+        default = false
+        label = "Partner Referral"
+      }
+      Purchased_List@s = {
+        fullName = "Purchased List"
+        default = false
+        label = "Purchased List"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Web,
+      salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Phone_Inquiry@s,
+      salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Partner_Referral@s,
+      salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Purchased_List@s,
+      salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Other,
+    ]
+  }
   _alias = "LeadSource"
 }

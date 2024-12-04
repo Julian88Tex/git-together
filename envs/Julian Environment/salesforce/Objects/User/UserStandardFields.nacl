@@ -791,6 +791,20 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
+  salesforce.Checkbox UserPreferencesActionLauncherEinsteinGptConsent {
+    apiName = "User.UserPreferencesActionLauncherEinsteinGptConsent"
+    label = "ActionLauncherEinsteinGptConsent"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox UserPreferencesAssistiveActionsEnabledInActionLauncher {
+    apiName = "User.UserPreferencesAssistiveActionsEnabledInActionLauncher"
+    label = "AssistiveActionsEnabledInActionLauncher"
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Checkbox UserPreferencesEnableAutoSubForFeeds {
     apiName = "User.UserPreferencesEnableAutoSubForFeeds"
     label = "EnableAutoSubForFeeds"

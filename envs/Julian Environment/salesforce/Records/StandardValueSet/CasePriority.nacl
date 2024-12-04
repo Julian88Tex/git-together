@@ -1,22 +1,29 @@
 salesforce.StandardValueSet CasePriority {
   fullName = "CasePriority"
   sorted = false
-  standardValue = [
-    {
-      fullName = "High"
-      default = false
-      label = "High"
-    },
-    {
-      fullName = "Medium"
-      default = true
-      label = "Medium"
-    },
-    {
-      fullName = "Low"
-      default = false
-      label = "Low"
-    },
-  ]
+  standardValue = {
+    values = {
+      High = {
+        fullName = "High"
+        default = false
+        label = "High"
+      }
+      Medium = {
+        fullName = "Medium"
+        default = true
+        label = "Medium"
+      }
+      Low = {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.CasePriority.standardValue.values.High,
+      salesforce.StandardValueSet.instance.CasePriority.standardValue.values.Medium,
+      salesforce.StandardValueSet.instance.CasePriority.standardValue.values.Low,
+    ]
+  }
   _alias = "CasePriority"
 }

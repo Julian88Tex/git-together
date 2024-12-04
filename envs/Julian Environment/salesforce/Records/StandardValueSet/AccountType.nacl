@@ -1,52 +1,65 @@
 salesforce.StandardValueSet AccountType {
   fullName = "AccountType"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Prospect"
-      default = false
-      label = "Prospect"
-    },
-    {
-      fullName = "Customer - Direct"
-      default = false
-      label = "Customer - Direct"
-    },
-    {
-      fullName = "Customer - Channel"
-      default = false
-      label = "Customer - Channel"
-    },
-    {
-      fullName = "Channel Partner / Reseller"
-      default = false
-      label = "Channel Partner / Reseller"
-    },
-    {
-      fullName = "Installation Partner"
-      default = false
-      label = "Installation Partner"
-    },
-    {
-      fullName = "Technology Partner"
-      default = false
-      label = "Technology Partner"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-    {
-      fullName = "Customer"
-      default = false
-      label = "Customer"
-    },
-    {
-      fullName = "Pending"
-      default = false
-      label = "Pending"
-    },
-  ]
+  standardValue = {
+    values = {
+      Prospect = {
+        fullName = "Prospect"
+        default = false
+        label = "Prospect"
+      }
+      Customer___Direct@sbs = {
+        fullName = "Customer - Direct"
+        default = false
+        label = "Customer - Direct"
+      }
+      Customer___Channel@sbs = {
+        fullName = "Customer - Channel"
+        default = false
+        label = "Customer - Channel"
+      }
+      Channel_Partner___Reseller@ssds = {
+        fullName = "Channel Partner / Reseller"
+        default = false
+        label = "Channel Partner / Reseller"
+      }
+      Installation_Partner@s = {
+        fullName = "Installation Partner"
+        default = false
+        label = "Installation Partner"
+      }
+      Technology_Partner@s = {
+        fullName = "Technology Partner"
+        default = false
+        label = "Technology Partner"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+      Customer = {
+        fullName = "Customer"
+        default = false
+        label = "Customer"
+      }
+      Pending = {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Prospect,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Customer___Direct@sbs,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Customer___Channel@sbs,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Channel_Partner___Reseller@ssds,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Installation_Partner@s,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Technology_Partner@s,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Other,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Customer,
+      salesforce.StandardValueSet.instance.AccountType.standardValue.values.Pending,
+    ]
+  }
   _alias = "AccountType"
 }

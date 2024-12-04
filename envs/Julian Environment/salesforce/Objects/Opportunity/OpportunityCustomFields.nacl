@@ -16,23 +16,30 @@ type salesforce.Opportunity {
     apiName = "Opportunity.Class__c"
     label = "Class"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "A"
-        default = false
-        label = "A"
-      },
-      {
-        fullName = "B"
-        default = false
-        label = "B"
-      },
-      {
-        fullName = "C"
-        default = false
-        label = "C"
-      },
-    ]
+    valueSet = {
+      values = {
+        A = {
+          fullName = "A"
+          default = false
+          label = "A"
+        }
+        B = {
+          fullName = "B"
+          default = false
+          label = "B"
+        }
+        C = {
+          fullName = "C"
+          default = false
+          label = "C"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.Class__c.valueSet.values.A,
+        salesforce.Opportunity.field.Class__c.valueSet.values.B,
+        salesforce.Opportunity.field.Class__c.valueSet.values.C,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -82,23 +89,30 @@ type salesforce.Opportunity {
     description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field."
     label = "DB Competitor"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Competitor A"
-        default = false
-        label = "Competitor A"
-      },
-      {
-        fullName = "Competitor B"
-        default = false
-        label = "Competitor B"
-      },
-      {
-        fullName = "Competitor C"
-        default = false
-        label = "Competitor C"
-      },
-    ]
+    valueSet = {
+      values = {
+        Competitor_A@s = {
+          fullName = "Competitor A"
+          default = false
+          label = "Competitor A"
+        }
+        Competitor_B@s = {
+          fullName = "Competitor B"
+          default = false
+          label = "Competitor B"
+        }
+        Competitor_C@s = {
+          fullName = "Competitor C"
+          default = false
+          label = "Competitor C"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.DB_Competitor__c.valueSet.values.Competitor_A@s,
+        salesforce.Opportunity.field.DB_Competitor__c.valueSet.values.Competitor_B@s,
+        salesforce.Opportunity.field.DB_Competitor__c.valueSet.values.Competitor_C@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -109,23 +123,30 @@ type salesforce.Opportunity {
     apiName = "Opportunity.DeliveryInstallationStatus__c"
     label = "Delivery/Installation Status"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "In progress"
-        default = false
-        label = "In progress"
-      },
-      {
-        fullName = "Yet to begin"
-        default = false
-        label = "Yet to begin"
-      },
-      {
-        fullName = "Completed"
-        default = false
-        label = "Completed"
-      },
-    ]
+    valueSet = {
+      values = {
+        In_progress@s = {
+          fullName = "In progress"
+          default = false
+          label = "In progress"
+        }
+        Yet_to_begin@s = {
+          fullName = "Yet to begin"
+          default = false
+          label = "Yet to begin"
+        }
+        Completed = {
+          fullName = "Completed"
+          default = false
+          label = "Completed"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.In_progress@s,
+        salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.Yet_to_begin@s,
+        salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.Completed,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -167,23 +188,30 @@ type salesforce.Opportunity {
     apiName = "Opportunity.Donor_Level__c"
     label = "Donor Level"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Red"
-        default = false
-        label = "Red"
-      },
-      {
-        fullName = "Yellow"
-        default = false
-        label = "Yellow"
-      },
-      {
-        fullName = "Green"
-        default = false
-        label = "Green"
-      },
-    ]
+    valueSet = {
+      values = {
+        Red = {
+          fullName = "Red"
+          default = false
+          label = "Red"
+        }
+        Yellow = {
+          fullName = "Yellow"
+          default = false
+          label = "Yellow"
+        }
+        Green = {
+          fullName = "Green"
+          default = false
+          label = "Green"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Red,
+        salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Yellow,
+        salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Green,
+      ]
+    }
     sorted = false
     restricted = true
     createable = true
@@ -230,18 +258,24 @@ type salesforce.Opportunity {
     apiName = "Opportunity.My_Custom_Designation__c"
     label = "My Custom Designation"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Restricted"
-        default = false
-        label = "Restricted"
-      },
-      {
-        fullName = "Unrestricted"
-        default = false
-        label = "Unrestricted"
-      },
-    ]
+    valueSet = {
+      values = {
+        Restricted = {
+          fullName = "Restricted"
+          default = false
+          label = "Restricted"
+        }
+        Unrestricted = {
+          fullName = "Unrestricted"
+          default = false
+          label = "Unrestricted"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.My_Custom_Designation__c.valueSet.values.Restricted,
+        salesforce.Opportunity.field.My_Custom_Designation__c.valueSet.values.Unrestricted,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -276,18 +310,24 @@ type salesforce.Opportunity {
     apiName = "Opportunity.Region_Map__c"
     label = "Region Map"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Northwest"
-        default = false
-        label = "Northwest"
-      },
-      {
-        fullName = "Southwest"
-        default = false
-        label = "Southwest"
-      },
-    ]
+    valueSet = {
+      values = {
+        Northwest = {
+          fullName = "Northwest"
+          default = false
+          label = "Northwest"
+        }
+        Southwest = {
+          fullName = "Southwest"
+          default = false
+          label = "Southwest"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.Region_Map__c.valueSet.values.Northwest,
+        salesforce.Opportunity.field.Region_Map__c.valueSet.values.Southwest,
+      ]
+    }
     sorted = false
     restricted = true
     createable = true
@@ -336,28 +376,36 @@ type salesforce.Opportunity {
     apiName = "Opportunity.Test_Picklist__c"
     label = "Test Picklist"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "test"
-        default = false
-        label = "test"
-      },
-      {
-        fullName = "test1"
-        default = false
-        label = "test1"
-      },
-      {
-        fullName = "test2"
-        default = false
-        label = "test2"
-      },
-      {
-        fullName = "test3"
-        default = false
-        label = "test3"
-      },
-    ]
+    valueSet = {
+      values = {
+        test = {
+          fullName = "test"
+          default = false
+          label = "test"
+        }
+        test1 = {
+          fullName = "test1"
+          default = false
+          label = "test1"
+        }
+        test2 = {
+          fullName = "test2"
+          default = false
+          label = "test2"
+        }
+        test3 = {
+          fullName = "test3"
+          default = false
+          label = "test3"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test,
+        salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test1,
+        salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test2,
+        salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test3,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -542,23 +590,30 @@ type salesforce.Opportunity {
     inlineHelpText = "Determines the value on the Contact or Account of the Last Membership Level field."
     label = "Member Level"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Gold"
-        default = false
-        label = "Gold"
-      },
-      {
-        fullName = "Silver"
-        default = false
-        label = "Silver"
-      },
-      {
-        fullName = "Bronze"
-        default = false
-        label = "Bronze"
-      },
-    ]
+    valueSet = {
+      values = {
+        Gold = {
+          fullName = "Gold"
+          default = false
+          label = "Gold"
+        }
+        Silver = {
+          fullName = "Silver"
+          default = false
+          label = "Silver"
+        }
+        Bronze = {
+          fullName = "Bronze"
+          default = false
+          label = "Bronze"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npe01__Member_Level__c.valueSet.values.Gold,
+        salesforce.Opportunity.field.npe01__Member_Level__c.valueSet.values.Silver,
+        salesforce.Opportunity.field.npe01__Member_Level__c.valueSet.values.Bronze,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -583,23 +638,30 @@ type salesforce.Opportunity {
     inlineHelpText = "Is this a renewal, a new membership, or a membership with someone who lapsed and has returned."
     label = "Membership Origin"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "New"
-        default = false
-        label = "New"
-      },
-      {
-        fullName = "Renewal"
-        default = false
-        label = "Renewal"
-      },
-      {
-        fullName = "Reacquire"
-        default = false
-        label = "Reacquire"
-      },
-    ]
+    valueSet = {
+      values = {
+        New = {
+          fullName = "New"
+          default = false
+          label = "New"
+        }
+        Renewal = {
+          fullName = "Renewal"
+          default = false
+          label = "Renewal"
+        }
+        Reacquire = {
+          fullName = "Reacquire"
+          default = false
+          label = "Reacquire"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npe01__Membership_Origin__c.valueSet.values.New,
+        salesforce.Opportunity.field.npe01__Membership_Origin__c.valueSet.values.Renewal,
+        salesforce.Opportunity.field.npe01__Membership_Origin__c.valueSet.values.Reacquire,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -710,18 +772,24 @@ type salesforce.Opportunity {
     inlineHelpText = "Controls if Household contact roles are created for Opportunities.  DEPRECATED.  Replaced by custom settings."
     label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "All Opportunities"
-        default = true
-        label = "All Opportunities"
-      },
-      {
-        fullName = "No Opportunities"
-        default = false
-        label = "No Opportunities"
-      },
-    ]
+    valueSet = {
+      values = {
+        All_Opportunities@s = {
+          fullName = "All Opportunities"
+          default = true
+          label = "All Opportunities"
+        }
+        No_Opportunities@s = {
+          fullName = "No Opportunities"
+          default = false
+          label = "No Opportunities"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npo02__systemHouseholdContactRoleProcessor__c.valueSet.values.All_Opportunities@s,
+        salesforce.Opportunity.field.npo02__systemHouseholdContactRoleProcessor__c.valueSet.values.No_Opportunities@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -746,33 +814,42 @@ type salesforce.Opportunity {
     inlineHelpText = "Status of Acknowledgment of this gift."
     label = "Acknowledgment Status"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "To Be Acknowledged"
-        default = false
-        label = "To Be Acknowledged"
-      },
-      {
-        fullName = "Acknowledged"
-        default = false
-        label = "Acknowledged"
-      },
-      {
-        fullName = "Do Not Acknowledge"
-        default = false
-        label = "Do Not Acknowledge"
-      },
-      {
-        fullName = "Email Acknowledgment Now"
-        default = false
-        label = "Email Acknowledgment Now"
-      },
-      {
-        fullName = "Email Acknowledgment Not Sent"
-        default = false
-        label = "Email Acknowledgment Not Sent"
-      },
-    ]
+    valueSet = {
+      values = {
+        To_Be_Acknowledged@s = {
+          fullName = "To Be Acknowledged"
+          default = false
+          label = "To Be Acknowledged"
+        }
+        Acknowledged = {
+          fullName = "Acknowledged"
+          default = false
+          label = "Acknowledged"
+        }
+        Do_Not_Acknowledge@s = {
+          fullName = "Do Not Acknowledge"
+          default = false
+          label = "Do Not Acknowledge"
+        }
+        Email_Acknowledgment_Now@s = {
+          fullName = "Email Acknowledgment Now"
+          default = false
+          label = "Email Acknowledgment Now"
+        }
+        Email_Acknowledgment_Not_Sent@s = {
+          fullName = "Email Acknowledgment Not Sent"
+          default = false
+          label = "Email Acknowledgment Not Sent"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Acknowledgment_Status__c.valueSet.values.To_Be_Acknowledged@s,
+        salesforce.Opportunity.field.npsp__Acknowledgment_Status__c.valueSet.values.Acknowledged,
+        salesforce.Opportunity.field.npsp__Acknowledgment_Status__c.valueSet.values.Do_Not_Acknowledge@s,
+        salesforce.Opportunity.field.npsp__Acknowledgment_Status__c.valueSet.values.Email_Acknowledgment_Now@s,
+        salesforce.Opportunity.field.npsp__Acknowledgment_Status__c.valueSet.values.Email_Acknowledgment_Not_Sent@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -866,23 +943,30 @@ type salesforce.Opportunity {
     inlineHelpText = "Categorizes the type of ask for this opportunity."
     label = "Gift Strategy"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "New Donor"
-        default = false
-        label = "New Donor"
-      },
-      {
-        fullName = "Renewal"
-        default = false
-        label = "Renewal"
-      },
-      {
-        fullName = "Upgrade"
-        default = false
-        label = "Upgrade"
-      },
-    ]
+    valueSet = {
+      values = {
+        New_Donor@s = {
+          fullName = "New Donor"
+          default = false
+          label = "New Donor"
+        }
+        Renewal = {
+          fullName = "Renewal"
+          default = false
+          label = "Renewal"
+        }
+        Upgrade = {
+          fullName = "Upgrade"
+          default = false
+          label = "Upgrade"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Gift_Strategy__c.valueSet.values.New_Donor@s,
+        salesforce.Opportunity.field.npsp__Gift_Strategy__c.valueSet.values.Renewal,
+        salesforce.Opportunity.field.npsp__Gift_Strategy__c.valueSet.values.Upgrade,
+      ]
+    }
     sorted = false
     restricted = true
     _hidden_value = true
@@ -1026,18 +1110,24 @@ type salesforce.Opportunity {
     inlineHelpText = "The type of In-Kind gift."
     label = "In-Kind Type"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Goods"
-        default = false
-        label = "Goods"
-      },
-      {
-        fullName = "Services"
-        default = false
-        label = "Services"
-      },
-    ]
+    valueSet = {
+      values = {
+        Goods = {
+          fullName = "Goods"
+          default = false
+          label = "Goods"
+        }
+        Services = {
+          fullName = "Services"
+          default = false
+          label = "Services"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__In_Kind_Type__c.valueSet.values.Goods,
+        salesforce.Opportunity.field.npsp__In_Kind_Type__c.valueSet.values.Services,
+      ]
+    }
     sorted = false
     restricted = false
     _hidden_value = true
@@ -1088,23 +1178,30 @@ type salesforce.Opportunity {
     inlineHelpText = "The status of this gift being matched."
     label = "Matching Gift Status"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Potential"
-        default = false
-        label = "Potential"
-      },
-      {
-        fullName = "Submitted"
-        default = false
-        label = "Submitted"
-      },
-      {
-        fullName = "Received"
-        default = false
-        label = "Received"
-      },
-    ]
+    valueSet = {
+      values = {
+        Potential = {
+          fullName = "Potential"
+          default = false
+          label = "Potential"
+        }
+        Submitted = {
+          fullName = "Submitted"
+          default = false
+          label = "Submitted"
+        }
+        Received = {
+          fullName = "Received"
+          default = false
+          label = "Received"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Matching_Gift_Status__c.valueSet.values.Potential,
+        salesforce.Opportunity.field.npsp__Matching_Gift_Status__c.valueSet.values.Submitted,
+        salesforce.Opportunity.field.npsp__Matching_Gift_Status__c.valueSet.values.Received,
+      ]
+    }
     sorted = false
     restricted = false
     _hidden_value = true
@@ -1171,28 +1268,36 @@ type salesforce.Opportunity {
     inlineHelpText = "How the notification recipient should be notified."
     label = "Notification Preference"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Email"
-        default = false
-        label = "Email"
-      },
-      {
-        fullName = "Postal Mail"
-        default = false
-        label = "Postal Mail"
-      },
-      {
-        fullName = "Phone"
-        default = false
-        label = "Phone"
-      },
-      {
-        fullName = "Do Not Notify"
-        default = false
-        label = "Do Not Notify"
-      },
-    ]
+    valueSet = {
+      values = {
+        Email = {
+          fullName = "Email"
+          default = false
+          label = "Email"
+        }
+        Postal_Mail@s = {
+          fullName = "Postal Mail"
+          default = false
+          label = "Postal Mail"
+        }
+        Phone = {
+          fullName = "Phone"
+          default = false
+          label = "Phone"
+        }
+        Do_Not_Notify@s = {
+          fullName = "Do Not Notify"
+          default = false
+          label = "Do Not Notify"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Notification_Preference__c.valueSet.values.Email,
+        salesforce.Opportunity.field.npsp__Notification_Preference__c.valueSet.values.Postal_Mail@s,
+        salesforce.Opportunity.field.npsp__Notification_Preference__c.valueSet.values.Phone,
+        salesforce.Opportunity.field.npsp__Notification_Preference__c.valueSet.values.Do_Not_Notify@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -1388,18 +1493,24 @@ ISBLANK(npe03__Recurring_Donation__c),
     description = "Indicates whether a notification's been sent for this tribute gift."
     label = "Tribute Notification Status"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "To Be Notified"
-        default = false
-        label = "To Be Notified"
-      },
-      {
-        fullName = "Notified"
-        default = false
-        label = "Notified"
-      },
-    ]
+    valueSet = {
+      values = {
+        To_Be_Notified@s = {
+          fullName = "To Be Notified"
+          default = false
+          label = "To Be Notified"
+        }
+        Notified = {
+          fullName = "Notified"
+          default = false
+          label = "Notified"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c.valueSet.values.To_Be_Notified@s,
+        salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c.valueSet.values.Notified,
+      ]
+    }
     sorted = false
     restricted = false
     _hidden_value = true
@@ -1411,18 +1522,24 @@ ISBLANK(npe03__Recurring_Donation__c),
     inlineHelpText = "Indicates whether the gift is in honor or memory of an individual."
     label = "Tribute Type"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "In Honor Of"
-        default = false
-        label = "In Honor Of"
-      },
-      {
-        fullName = "In Memory Of"
-        default = false
-        label = "In Memory Of"
-      },
-    ]
+    valueSet = {
+      values = {
+        In_Honor_Of@s = {
+          fullName = "In Honor Of"
+          default = false
+          label = "In Honor Of"
+        }
+        In_Memory_Of@s = {
+          fullName = "In Memory Of"
+          default = false
+          label = "In Memory Of"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.npsp__Tribute_Type__c.valueSet.values.In_Honor_Of@s,
+        salesforce.Opportunity.field.npsp__Tribute_Type__c.valueSet.values.In_Memory_Of@s,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true
@@ -1767,23 +1884,30 @@ IF (
     description = "Indicates the type of transaction (donation, ticket, or registration)"
     label = "Transaction Type"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Donation"
-        default = false
-        label = "Donation"
-      },
-      {
-        fullName = "Ticket"
-        default = false
-        label = "Ticket"
-      },
-      {
-        fullName = "Registration"
-        default = false
-        label = "Registration"
-      },
-    ]
+    valueSet = {
+      values = {
+        Donation = {
+          fullName = "Donation"
+          default = false
+          label = "Donation"
+        }
+        Ticket = {
+          fullName = "Ticket"
+          default = false
+          label = "Ticket"
+        }
+        Registration = {
+          fullName = "Registration"
+          default = false
+          label = "Registration"
+        }
+      }
+      order = [
+        salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Donation,
+        salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Ticket,
+        salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Registration,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true

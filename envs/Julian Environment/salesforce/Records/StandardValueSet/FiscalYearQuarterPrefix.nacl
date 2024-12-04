@@ -1,27 +1,35 @@
 salesforce.StandardValueSet FiscalYearQuarterPrefix {
   fullName = "FiscalYearQuarterPrefix"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Quarter"
-      default = true
-      label = "Quarter"
-    },
-    {
-      fullName = "FQ"
-      default = false
-      label = "FQ"
-    },
-    {
-      fullName = "Q"
-      default = false
-      label = "Q"
-    },
-    {
-      fullName = "Trimester"
-      default = false
-      label = "Trimester"
-    },
-  ]
+  standardValue = {
+    values = {
+      Quarter = {
+        fullName = "Quarter"
+        default = true
+        label = "Quarter"
+      }
+      FQ = {
+        fullName = "FQ"
+        default = false
+        label = "FQ"
+      }
+      Q = {
+        fullName = "Q"
+        default = false
+        label = "Q"
+      }
+      Trimester = {
+        fullName = "Trimester"
+        default = false
+        label = "Trimester"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.FiscalYearQuarterPrefix.standardValue.values.Quarter,
+      salesforce.StandardValueSet.instance.FiscalYearQuarterPrefix.standardValue.values.FQ,
+      salesforce.StandardValueSet.instance.FiscalYearQuarterPrefix.standardValue.values.Q,
+      salesforce.StandardValueSet.instance.FiscalYearQuarterPrefix.standardValue.values.Trimester,
+    ]
+  }
   _alias = "FiscalYearQuarterPrefix"
 }

@@ -3,23 +3,30 @@ type salesforce.Project__c {
     apiName = "Project__c.Priority__c"
     label = "Priority"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "High"
-        default = false
-        label = "High"
-      },
-      {
-        fullName = "Medium"
-        default = false
-        label = "Medium"
-      },
-      {
-        fullName = "Low"
-        default = false
-        label = "Low"
-      },
-    ]
+    valueSet = {
+      values = {
+        High = {
+          fullName = "High"
+          default = false
+          label = "High"
+        }
+        Medium = {
+          fullName = "Medium"
+          default = false
+          label = "Medium"
+        }
+        Low = {
+          fullName = "Low"
+          default = false
+          label = "Low"
+        }
+      }
+      order = [
+        salesforce.Project__c.field.Priority__c.valueSet.values.High,
+        salesforce.Project__c.field.Priority__c.valueSet.values.Medium,
+        salesforce.Project__c.field.Priority__c.valueSet.values.Low,
+      ]
+    }
     sorted = false
     restricted = false
     createable = true

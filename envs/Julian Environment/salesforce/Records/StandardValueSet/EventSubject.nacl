@@ -1,32 +1,41 @@
 salesforce.StandardValueSet EventSubject {
   fullName = "EventSubject"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Call"
-      default = false
-      label = "Call"
-    },
-    {
-      fullName = "Email"
-      default = false
-      label = "Email"
-    },
-    {
-      fullName = "Meeting"
-      default = false
-      label = "Meeting"
-    },
-    {
-      fullName = "Send Letter/Quote"
-      default = false
-      label = "Send Letter/Quote"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-  ]
+  standardValue = {
+    values = {
+      Call = {
+        fullName = "Call"
+        default = false
+        label = "Call"
+      }
+      Email = {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      }
+      Meeting = {
+        fullName = "Meeting"
+        default = false
+        label = "Meeting"
+      }
+      Send_Letter_Quote@sd = {
+        fullName = "Send Letter/Quote"
+        default = false
+        label = "Send Letter/Quote"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.EventSubject.standardValue.values.Call,
+      salesforce.StandardValueSet.instance.EventSubject.standardValue.values.Email,
+      salesforce.StandardValueSet.instance.EventSubject.standardValue.values.Meeting,
+      salesforce.StandardValueSet.instance.EventSubject.standardValue.values.Send_Letter_Quote@sd,
+      salesforce.StandardValueSet.instance.EventSubject.standardValue.values.Other,
+    ]
+  }
   _alias = "EventSubject"
 }

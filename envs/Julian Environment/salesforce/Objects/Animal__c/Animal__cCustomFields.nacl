@@ -39,23 +39,30 @@ type salesforce.Animal__c {
     apiName = "Animal__c.Food_Category__c"
     label = "Food Category"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Herbivore"
-        default = false
-        label = "Herbivore"
-      },
-      {
-        fullName = "Carnivore"
-        default = false
-        label = "Carnivore"
-      },
-      {
-        fullName = "Omnivore"
-        default = false
-        label = "Omnivore"
-      },
-    ]
+    valueSet = {
+      values = {
+        Herbivore = {
+          fullName = "Herbivore"
+          default = false
+          label = "Herbivore"
+        }
+        Carnivore = {
+          fullName = "Carnivore"
+          default = false
+          label = "Carnivore"
+        }
+        Omnivore = {
+          fullName = "Omnivore"
+          default = false
+          label = "Omnivore"
+        }
+      }
+      order = [
+        salesforce.Animal__c.field.Food_Category__c.valueSet.values.Herbivore,
+        salesforce.Animal__c.field.Food_Category__c.valueSet.values.Carnivore,
+        salesforce.Animal__c.field.Food_Category__c.valueSet.values.Omnivore,
+      ]
+    }
     sorted = false
     restricted = true
     createable = true

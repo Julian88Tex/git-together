@@ -101,4 +101,31 @@ type salesforce.FlowOrchestrationInstance {
     updateable = true
     queryable = true
   }
+  salesforce.Unknown Duration {
+    apiName = "FlowOrchestrationInstance.Duration"
+    label = "Duration"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CurrentStage {
+    apiName = "FlowOrchestrationInstance.CurrentStage"
+    length = 100
+    label = "Current Stage"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TriggeringRecord {
+    apiName = "FlowOrchestrationInstance.TriggeringRecord"
+    length = 40
+    label = "Triggering Record ID"
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
 }

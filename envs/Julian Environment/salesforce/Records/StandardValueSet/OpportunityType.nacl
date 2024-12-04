@@ -1,27 +1,35 @@
 salesforce.StandardValueSet OpportunityType {
   fullName = "OpportunityType"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Existing Customer - Upgrade"
-      default = false
-      label = "Existing Customer - Upgrade"
-    },
-    {
-      fullName = "Existing Customer - Replacement"
-      default = false
-      label = "Existing Customer - Replacement"
-    },
-    {
-      fullName = "Existing Customer - Downgrade"
-      default = false
-      label = "Existing Customer - Downgrade"
-    },
-    {
-      fullName = "New Customer"
-      default = false
-      label = "New Customer"
-    },
-  ]
+  standardValue = {
+    values = {
+      Existing_Customer___Upgrade@ssbs = {
+        fullName = "Existing Customer - Upgrade"
+        default = false
+        label = "Existing Customer - Upgrade"
+      }
+      Existing_Customer___Replacement@ssbs = {
+        fullName = "Existing Customer - Replacement"
+        default = false
+        label = "Existing Customer - Replacement"
+      }
+      Existing_Customer___Downgrade@ssbs = {
+        fullName = "Existing Customer - Downgrade"
+        default = false
+        label = "Existing Customer - Downgrade"
+      }
+      New_Customer@s = {
+        fullName = "New Customer"
+        default = false
+        label = "New Customer"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Upgrade@ssbs,
+      salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Replacement@ssbs,
+      salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Downgrade@ssbs,
+      salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.New_Customer@s,
+    ]
+  }
   _alias = "OpportunityType"
 }
