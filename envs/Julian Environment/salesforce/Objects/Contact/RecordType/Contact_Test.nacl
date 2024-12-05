@@ -7,15 +7,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.Custom_Email_Opt_Out__c
       values = [
         {
-          fullName = salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.asdf.fullName
+          fullName = "asdf"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.qwe.fullName
+          fullName = "qwe"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.Custom_Email_Opt_Out__c.valueSet.values.zxcv.fullName
+          fullName = "zxcv"
           default = false
         },
       ]
@@ -24,23 +24,23 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.LeadSource
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Partner_Referral@s.fullName
+          fullName = "Partner Referral"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Phone_Inquiry@s.fullName
+          fullName = "Phone Inquiry"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Purchased_List@s.fullName
+          fullName = "Purchased List"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Web.fullName
+          fullName = "Web"
           default = false
         },
       ]
@@ -49,15 +49,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.Level__c
       values = [
         {
-          fullName = salesforce.Contact.field.Level__c.valueSet.values.Primary.fullName
+          fullName = "Primary"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.Level__c.valueSet.values.Secondary.fullName
+          fullName = "Secondary"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.Level__c.valueSet.values.Tertiary.fullName
+          fullName = "Tertiary"
           default = false
         },
       ]
@@ -91,19 +91,19 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npe01__PreferredPhone__c
       values = [
         {
-          fullName = salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Home.fullName
+          fullName = "Home"
           default = true
         },
         {
-          fullName = salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Mobile.fullName
+          fullName = "Mobile"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__PreferredPhone__c.valueSet.values.Work.fullName
+          fullName = "Work"
           default = false
         },
       ]
@@ -112,15 +112,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npe01__Preferred_Email__c
       values = [
         {
-          fullName = salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Alternate.fullName
+          fullName = "Alternate"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Personal.fullName
+          fullName = "Personal"
           default = true
         },
         {
-          fullName = salesforce.Contact.field.npe01__Preferred_Email__c.valueSet.values.Work.fullName
+          fullName = "Work"
           default = false
         },
       ]
@@ -129,15 +129,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npe01__Primary_Address_Type__c
       values = [
         {
-          fullName = salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Home.fullName
+          fullName = "Home"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__Primary_Address_Type__c.valueSet.values.Work.fullName
+          fullName = "Work"
           default = false
         },
       ]
@@ -146,15 +146,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npe01__Secondary_Address_Type__c
       values = [
         {
-          fullName = salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Home.fullName
+          fullName = "Home"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__Secondary_Address_Type__c.valueSet.values.Work.fullName
+          fullName = "Work"
           default = false
         },
       ]
@@ -163,11 +163,11 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npe01__SystemAccountProcessor__c
       values = [
         {
-          fullName = salesforce.Contact.field.npe01__SystemAccountProcessor__c.valueSet.values.Individual.fullName
+          fullName = "Individual"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npe01__SystemAccountProcessor__c.valueSet.values.One_to_One@b.fullName
+          fullName = "One-to-One"
           default = true
         },
       ]
@@ -176,15 +176,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npo02__Naming_Exclusions__c
       values = [
         {
-          fullName = salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Formal_Greeting__c@uuvuuu.fullName
+          fullName = "Household%5F%5Fc%2EFormal_Greeting%5F%5Fc"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Informal_Greeting__c@uuvuuu.fullName
+          fullName = "Household%5F%5Fc%2EInformal_Greeting%5F%5Fc"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npo02__Naming_Exclusions__c.valueSet.values.Household__c_Name@uuv.fullName
+          fullName = "Household%5F%5Fc%2EName"
           default = false
         },
       ]
@@ -193,15 +193,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npo02__SystemHouseholdProcessor__c
       values = [
         {
-          fullName = salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.All_Individual_Contacts@s.fullName
+          fullName = "All Individual Contacts"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.All_New_or_Edited_Contacts@s.fullName
+          fullName = "All New or Edited Contacts"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npo02__SystemHouseholdProcessor__c.valueSet.values.No_Contacts@s.fullName
+          fullName = "No Contacts"
           default = false
         },
       ]
@@ -210,15 +210,15 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.npsp__Sustainer__c
       values = [
         {
-          fullName = salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Active.fullName
+          fullName = "Active"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Former.fullName
+          fullName = "Former"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.npsp__Sustainer__c.valueSet.values.Lapsed.fullName
+          fullName = "Lapsed"
           default = false
         },
       ]
@@ -227,11 +227,11 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.stayclassy__Gender__c
       values = [
         {
-          fullName = salesforce.Contact.field.stayclassy__Gender__c.valueSet.values.Female.fullName
+          fullName = "Female"
           default = false
         },
         {
-          fullName = salesforce.Contact.field.stayclassy__Gender__c.valueSet.values.Male.fullName
+          fullName = "Male"
           default = false
         },
       ]

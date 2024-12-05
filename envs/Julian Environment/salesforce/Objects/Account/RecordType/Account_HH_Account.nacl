@@ -8,23 +8,23 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.AccountSource
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Partner_Referral@s.fullName
+          fullName = "Partner Referral"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Phone_Inquiry@s.fullName
+          fullName = "Phone Inquiry"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Purchased_List@s.fullName
+          fullName = "Purchased List"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Web.fullName
+          fullName = "Web"
           default = false
         },
       ]
@@ -33,11 +33,11 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.Active__c
       values = [
         {
-          fullName = salesforce.Account.field.Active__c.valueSet.values.No.fullName
+          fullName = "No"
           default = false
         },
         {
-          fullName = salesforce.Account.field.Active__c.valueSet.values.Yes.fullName
+          fullName = "Yes"
           default = false
         },
       ]
@@ -46,15 +46,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.CustomerPriority__c
       values = [
         {
-          fullName = salesforce.Account.field.CustomerPriority__c.valueSet.values.High.fullName
+          fullName = "High"
           default = false
         },
         {
-          fullName = salesforce.Account.field.CustomerPriority__c.valueSet.values.Low.fullName
+          fullName = "Low"
           default = false
         },
         {
-          fullName = salesforce.Account.field.CustomerPriority__c.valueSet.values.Medium.fullName
+          fullName = "Medium"
           default = false
         },
       ]
@@ -63,131 +63,131 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.Industry
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Agriculture.fullName
+          fullName = "Agriculture"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Apparel.fullName
+          fullName = "Apparel"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Banking.fullName
+          fullName = "Banking"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Biotechnology.fullName
+          fullName = "Biotechnology"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Chemicals.fullName
+          fullName = "Chemicals"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Communications.fullName
+          fullName = "Communications"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Construction.fullName
+          fullName = "Construction"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Consulting.fullName
+          fullName = "Consulting"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Education.fullName
+          fullName = "Education"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Electronics.fullName
+          fullName = "Electronics"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Energy.fullName
+          fullName = "Energy"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Engineering.fullName
+          fullName = "Engineering"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Entertainment.fullName
+          fullName = "Entertainment"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Environmental.fullName
+          fullName = "Environmental"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Finance.fullName
+          fullName = "Finance"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Food___Beverage@ses.fullName
+          fullName = "Food %26 Beverage"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Government.fullName
+          fullName = "Government"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Healthcare.fullName
+          fullName = "Healthcare"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Hospitality.fullName
+          fullName = "Hospitality"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Insurance.fullName
+          fullName = "Insurance"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Machinery.fullName
+          fullName = "Machinery"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Manufacturing.fullName
+          fullName = "Manufacturing"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Media.fullName
+          fullName = "Media"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Not_For_Profit@s.fullName
+          fullName = "Not For Profit"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Recreation.fullName
+          fullName = "Recreation"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Retail.fullName
+          fullName = "Retail"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Shipping.fullName
+          fullName = "Shipping"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Technology.fullName
+          fullName = "Technology"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Telecommunications.fullName
+          fullName = "Telecommunications"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Transportation.fullName
+          fullName = "Transportation"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.Industry.standardValue.values.Utilities.fullName
+          fullName = "Utilities"
           default = false
         },
       ]
@@ -196,19 +196,19 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.Ownership
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.AccountOwnership.standardValue.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountOwnership.standardValue.values.Private.fullName
+          fullName = "Private"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountOwnership.standardValue.values.Public.fullName
+          fullName = "Public"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountOwnership.standardValue.values.Subsidiary.fullName
+          fullName = "Subsidiary"
           default = false
         },
       ]
@@ -217,15 +217,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.Rating
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Cold.fullName
+          fullName = "Cold"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Hot.fullName
+          fullName = "Hot"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Warm.fullName
+          fullName = "Warm"
           default = false
         },
       ]
@@ -234,19 +234,19 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.SLA__c
       values = [
         {
-          fullName = salesforce.Account.field.SLA__c.valueSet.values.Bronze.fullName
+          fullName = "Bronze"
           default = false
         },
         {
-          fullName = salesforce.Account.field.SLA__c.valueSet.values.Gold.fullName
+          fullName = "Gold"
           default = false
         },
         {
-          fullName = salesforce.Account.field.SLA__c.valueSet.values.Platinum.fullName
+          fullName = "Platinum"
           default = false
         },
         {
-          fullName = salesforce.Account.field.SLA__c.valueSet.values.Silver.fullName
+          fullName = "Silver"
           default = false
         },
       ]
@@ -255,31 +255,31 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.Type
       values = [
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Channel_Partner___Reseller@ssds.fullName
+          fullName = "Channel Partner %2F Reseller"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Customer___Channel@sbs.fullName
+          fullName = "Customer - Channel"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Customer___Direct@sbs.fullName
+          fullName = "Customer - Direct"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Installation_Partner@s.fullName
+          fullName = "Installation Partner"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Other.fullName
+          fullName = "Other"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Prospect.fullName
+          fullName = "Prospect"
           default = false
         },
         {
-          fullName = salesforce.StandardValueSet.instance.AccountType.standardValue.values.Technology_Partner@s.fullName
+          fullName = "Technology Partner"
           default = false
         },
       ]
@@ -288,15 +288,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.UpsellOpportunity__c
       values = [
         {
-          fullName = salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Maybe.fullName
+          fullName = "Maybe"
           default = false
         },
         {
-          fullName = salesforce.Account.field.UpsellOpportunity__c.valueSet.values.No.fullName
+          fullName = "No"
           default = false
         },
         {
-          fullName = salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Yes.fullName
+          fullName = "Yes"
           default = false
         },
       ]
@@ -305,15 +305,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c
       values = [
         {
-          fullName = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Formal_Greeting__c.fullName
+          fullName = "Formal_Greeting%5F%5Fc"
           default = false
         },
         {
-          fullName = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Informal_Greeting__c.fullName
+          fullName = "Informal_Greeting%5F%5Fc"
           default = false
         },
         {
-          fullName = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Name.fullName
+          fullName = "Name"
           default = false
         },
       ]
@@ -322,15 +322,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.npsp__Sustainer__c
       values = [
         {
-          fullName = salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Active.fullName
+          fullName = "Active"
           default = false
         },
         {
-          fullName = salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Former.fullName
+          fullName = "Former"
           default = false
         },
         {
-          fullName = salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Lapsed.fullName
+          fullName = "Lapsed"
           default = false
         },
       ]
@@ -339,11 +339,11 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.stayclassy__Active__c
       values = [
         {
-          fullName = salesforce.Account.field.stayclassy__Active__c.valueSet.values.No.fullName
+          fullName = "No"
           default = false
         },
         {
-          fullName = salesforce.Account.field.stayclassy__Active__c.valueSet.values.Yes.fullName
+          fullName = "Yes"
           default = false
         },
       ]

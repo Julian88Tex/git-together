@@ -1,83 +1,67 @@
 salesforce.StandardValueSet CampaignType {
   fullName = "CampaignType"
   sorted = false
-  standardValue = {
-    values = {
-      Conference = {
-        fullName = "Conference"
-        default = true
-        label = "Conference"
-      }
-      Webinar = {
-        fullName = "Webinar"
-        default = false
-        label = "Webinar"
-      }
-      Trade_Show@s = {
-        fullName = "Trade Show"
-        default = false
-        label = "Trade Show"
-      }
-      Public_Relations@s = {
-        fullName = "Public Relations"
-        default = false
-        label = "Public Relations"
-      }
-      Partners = {
-        fullName = "Partners"
-        default = false
-        label = "Partners"
-      }
-      Referral_Program@s = {
-        fullName = "Referral Program"
-        default = false
-        label = "Referral Program"
-      }
-      Advertisement = {
-        fullName = "Advertisement"
-        default = false
-        label = "Advertisement"
-      }
-      Banner_Ads@s = {
-        fullName = "Banner Ads"
-        default = false
-        label = "Banner Ads"
-      }
-      Direct_Mail@s = {
-        fullName = "Direct Mail"
-        default = false
-        label = "Direct Mail"
-      }
-      Email = {
-        fullName = "Email"
-        default = false
-        label = "Email"
-      }
-      Telemarketing = {
-        fullName = "Telemarketing"
-        default = false
-        label = "Telemarketing"
-      }
-      Other = {
-        fullName = "Other"
-        default = false
-        label = "Other"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Conference,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Webinar,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Trade_Show@s,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Public_Relations@s,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Partners,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Referral_Program@s,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Advertisement,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Banner_Ads@s,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Direct_Mail@s,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Email,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Telemarketing,
-      salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Other,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Conference"
+      default = true
+      label = "Conference"
+    },
+    {
+      fullName = "Webinar"
+      default = false
+      label = "Webinar"
+    },
+    {
+      fullName = "Trade Show"
+      default = false
+      label = "Trade Show"
+    },
+    {
+      fullName = "Public Relations"
+      default = false
+      label = "Public Relations"
+    },
+    {
+      fullName = "Partners"
+      default = false
+      label = "Partners"
+    },
+    {
+      fullName = "Referral Program"
+      default = false
+      label = "Referral Program"
+    },
+    {
+      fullName = "Advertisement"
+      default = false
+      label = "Advertisement"
+    },
+    {
+      fullName = "Banner Ads"
+      default = false
+      label = "Banner Ads"
+    },
+    {
+      fullName = "Direct Mail"
+      default = false
+      label = "Direct Mail"
+    },
+    {
+      fullName = "Email"
+      default = false
+      label = "Email"
+    },
+    {
+      fullName = "Telemarketing"
+      default = false
+      label = "Telemarketing"
+    },
+    {
+      fullName = "Other"
+      default = false
+      label = "Other"
+    },
+  ]
   _alias = "CampaignType"
 }

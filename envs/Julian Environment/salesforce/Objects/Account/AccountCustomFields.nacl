@@ -2,24 +2,18 @@ type salesforce.Account {
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
     label = "Active"
-    valueSet = {
-      values = {
-        No = {
-          fullName = "No"
-          default = false
-          label = "No"
-        }
-        Yes = {
-          fullName = "Yes"
-          default = false
-          label = "Yes"
-        }
-      }
-      order = [
-        salesforce.Account.field.Active__c.valueSet.values.No,
-        salesforce.Account.field.Active__c.valueSet.values.Yes,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -29,30 +23,23 @@ type salesforce.Account {
   salesforce.Picklist CustomerPriority__c {
     apiName = "Account.CustomerPriority__c"
     label = "Customer Priority"
-    valueSet = {
-      values = {
-        High = {
-          fullName = "High"
-          default = false
-          label = "High"
-        }
-        Low = {
-          fullName = "Low"
-          default = false
-          label = "Low"
-        }
-        Medium = {
-          fullName = "Medium"
-          default = false
-          label = "Medium"
-        }
-      }
-      order = [
-        salesforce.Account.field.CustomerPriority__c.valueSet.values.High,
-        salesforce.Account.field.CustomerPriority__c.valueSet.values.Low,
-        salesforce.Account.field.CustomerPriority__c.valueSet.values.Medium,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -102,36 +89,28 @@ type salesforce.Account {
   salesforce.Picklist SLA__c {
     apiName = "Account.SLA__c"
     label = "SLA"
-    valueSet = {
-      values = {
-        Gold = {
-          fullName = "Gold"
-          default = false
-          label = "Gold"
-        }
-        Silver = {
-          fullName = "Silver"
-          default = false
-          label = "Silver"
-        }
-        Platinum = {
-          fullName = "Platinum"
-          default = false
-          label = "Platinum"
-        }
-        Bronze = {
-          fullName = "Bronze"
-          default = false
-          label = "Bronze"
-        }
-      }
-      order = [
-        salesforce.Account.field.SLA__c.valueSet.values.Gold,
-        salesforce.Account.field.SLA__c.valueSet.values.Silver,
-        salesforce.Account.field.SLA__c.valueSet.values.Platinum,
-        salesforce.Account.field.SLA__c.valueSet.values.Bronze,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -141,30 +120,23 @@ type salesforce.Account {
   salesforce.Picklist UpsellOpportunity__c {
     apiName = "Account.UpsellOpportunity__c"
     label = "Upsell Opportunity"
-    valueSet = {
-      values = {
-        Maybe = {
-          fullName = "Maybe"
-          default = false
-          label = "Maybe"
-        }
-        No = {
-          fullName = "No"
-          default = false
-          label = "No"
-        }
-        Yes = {
-          fullName = "Yes"
-          default = false
-          label = "Yes"
-        }
-      }
-      order = [
-        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Maybe,
-        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.No,
-        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Yes,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -616,30 +588,23 @@ type salesforce.Account {
     deprecated = false
     inlineHelpText = "For Household Accounts, specifies which name related fields should not be automatically populated by the Householding code."
     label = "_SYSTEM: CUSTOM NAMING"
-    valueSet = {
-      values = {
-        Name = {
-          fullName = "Name"
-          default = false
-          label = "Name"
-        }
-        Formal_Greeting__c = {
-          fullName = "Formal_Greeting__c"
-          default = false
-          label = "Formal_Greeting__c"
-        }
-        Informal_Greeting__c = {
-          fullName = "Informal_Greeting__c"
-          default = false
-          label = "Informal_Greeting__c"
-        }
-      }
-      order = [
-        salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Name,
-        salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Formal_Greeting__c,
-        salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c.valueSet.values.Informal_Greeting__c,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Name"
+        default = false
+        label = "Name"
+      },
+      {
+        fullName = "Formal_Greeting__c"
+        default = false
+        label = "Formal_Greeting__c"
+      },
+      {
+        fullName = "Informal_Greeting__c"
+        default = false
+        label = "Informal_Greeting__c"
+      },
+    ]
     sorted = false
     restricted = false
     visibleLines = 3
@@ -722,54 +687,43 @@ type salesforce.Account {
     description = "The general program area(s) that this organization funds."
     inlineHelpText = "The general program area(s) that this organization funds."
     label = "Funding Focus"
-    valueSet = {
-      values = {
-        Animal_Welfare@s = {
-          fullName = "Animal Welfare"
-          default = false
-          label = "Animal Welfare"
-        }
-        Arts_and_Culture@s = {
-          fullName = "Arts and Culture"
-          default = false
-          label = "Arts and Culture"
-        }
-        Capacity_Building@s = {
-          fullName = "Capacity Building"
-          default = false
-          label = "Capacity Building"
-        }
-        Education = {
-          fullName = "Education"
-          default = false
-          label = "Education"
-        }
-        Environmental = {
-          fullName = "Environmental"
-          default = false
-          label = "Environmental"
-        }
-        Health_Services@s = {
-          fullName = "Health Services"
-          default = false
-          label = "Health Services"
-        }
-        Human_Services@s = {
-          fullName = "Human Services"
-          default = false
-          label = "Human Services"
-        }
-      }
-      order = [
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Animal_Welfare@s,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Arts_and_Culture@s,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Capacity_Building@s,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Education,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Environmental,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Health_Services@s,
-        salesforce.Account.field.npsp__Funding_Focus__c.valueSet.values.Human_Services@s,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Animal Welfare"
+        default = false
+        label = "Animal Welfare"
+      },
+      {
+        fullName = "Arts and Culture"
+        default = false
+        label = "Arts and Culture"
+      },
+      {
+        fullName = "Capacity Building"
+        default = false
+        label = "Capacity Building"
+      },
+      {
+        fullName = "Education"
+        default = false
+        label = "Education"
+      },
+      {
+        fullName = "Environmental"
+        default = false
+        label = "Environmental"
+      },
+      {
+        fullName = "Health Services"
+        default = false
+        label = "Health Services"
+      },
+      {
+        fullName = "Human Services"
+        default = false
+        label = "Human Services"
+      },
+    ]
     sorted = false
     restricted = false
     visibleLines = 4
@@ -964,30 +918,23 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     description = "Indicates if this Account is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
     inlineHelpText = "Indicates if this Account is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
     label = "Sustainer"
-    valueSet = {
-      values = {
-        Active = {
-          fullName = "Active"
-          default = false
-          label = "Active"
-        }
-        Lapsed = {
-          fullName = "Lapsed"
-          default = false
-          label = "Lapsed"
-        }
-        Former = {
-          fullName = "Former"
-          default = false
-          label = "Former"
-        }
-      }
-      order = [
-        salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Active,
-        salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Lapsed,
-        salesforce.Account.field.npsp__Sustainer__c.valueSet.values.Former,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Active"
+        default = false
+        label = "Active"
+      },
+      {
+        fullName = "Lapsed"
+        default = false
+        label = "Lapsed"
+      },
+      {
+        fullName = "Former"
+        default = false
+        label = "Former"
+      },
+    ]
     sorted = false
     restricted = false
     _hidden_value = true
@@ -1004,24 +951,18 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     apiName = "Account.stayclassy__Active__c"
     deprecated = false
     label = "Active"
-    valueSet = {
-      values = {
-        No = {
-          fullName = "No"
-          default = false
-          label = "No"
-        }
-        Yes = {
-          fullName = "Yes"
-          default = false
-          label = "Yes"
-        }
-      }
-      order = [
-        salesforce.Account.field.stayclassy__Active__c.valueSet.values.No,
-        salesforce.Account.field.stayclassy__Active__c.valueSet.values.Yes,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
     sorted = false
     restricted = false
     _hidden_value = true

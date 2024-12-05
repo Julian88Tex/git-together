@@ -29,90 +29,73 @@ type salesforce.Campaign {
     apiName = "Campaign.DB_Campaign_Tactic__c"
     description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
     label = "DB Campaign Tactic"
-    valueSet = {
-      values = {
-        Print_Advertisement@s = {
-          fullName = "Print Advertisement"
-          default = false
-          label = "Print Advertisement"
-        }
-        Email = {
-          fullName = "Email"
-          default = false
-          label = "Email"
-        }
-        Employment_Seminars@s = {
-          fullName = "Employment Seminars"
-          default = false
-          label = "Employment Seminars"
-        }
-        Webinars = {
-          fullName = "Webinars"
-          default = false
-          label = "Webinars"
-        }
-        Public_Relations@s = {
-          fullName = "Public Relations"
-          default = false
-          label = "Public Relations"
-        }
-        Partners = {
-          fullName = "Partners"
-          default = false
-          label = "Partners"
-        }
-        Referral_Program@s = {
-          fullName = "Referral Program"
-          default = false
-          label = "Referral Program"
-        }
-        Other = {
-          fullName = "Other"
-          default = false
-          label = "Other"
-        }
-        Lunches = {
-          fullName = "Lunches"
-          default = false
-          label = "Lunches"
-        }
-        Direct_Mail@s = {
-          fullName = "Direct Mail"
-          default = false
-          label = "Direct Mail"
-        }
-        Sales_Call_Down@s = {
-          fullName = "Sales Call Down"
-          default = false
-          label = "Sales Call Down"
-        }
-        Online_Banners_Ads@sd = {
-          fullName = "Online Banners/Ads"
-          default = false
-          label = "Online Banners/Ads"
-        }
-        Internal_Website@s = {
-          fullName = "Internal Website"
-          default = false
-          label = "Internal Website"
-        }
-      }
-      order = [
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Print_Advertisement@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Email,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Employment_Seminars@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Webinars,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Public_Relations@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Partners,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Referral_Program@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Other,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Lunches,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Direct_Mail@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Sales_Call_Down@s,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Online_Banners_Ads@sd,
-        salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Internal_Website@s,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Print Advertisement"
+        default = false
+        label = "Print Advertisement"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Employment Seminars"
+        default = false
+        label = "Employment Seminars"
+      },
+      {
+        fullName = "Webinars"
+        default = false
+        label = "Webinars"
+      },
+      {
+        fullName = "Public Relations"
+        default = false
+        label = "Public Relations"
+      },
+      {
+        fullName = "Partners"
+        default = false
+        label = "Partners"
+      },
+      {
+        fullName = "Referral Program"
+        default = false
+        label = "Referral Program"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+      {
+        fullName = "Lunches"
+        default = false
+        label = "Lunches"
+      },
+      {
+        fullName = "Direct Mail"
+        default = false
+        label = "Direct Mail"
+      },
+      {
+        fullName = "Sales Call Down"
+        default = false
+        label = "Sales Call Down"
+      },
+      {
+        fullName = "Online Banners/Ads"
+        default = false
+        label = "Online Banners/Ads"
+      },
+      {
+        fullName = "Internal Website"
+        default = false
+        label = "Internal Website"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -181,540 +164,448 @@ type salesforce.Campaign {
     deprecated = false
     inlineHelpText = "The Time Zone to use when displaying Shift times on Sites pages.  You only need to set this if you want to override the Time Zone set on the Site Guest User profile."
     label = "Volunteer Website Time Zone"
-    valueSet = {
-      values = {
-        Pacific_Kiritimati@d = {
-          fullName = "Pacific/Kiritimati"
-          default = false
-          label = "Pacific/Kiritimati"
-        }
-        Pacific_Chatham@d = {
-          fullName = "Pacific/Chatham"
-          default = false
-          label = "Pacific/Chatham"
-        }
-        Pacific_Auckland@d = {
-          fullName = "Pacific/Auckland"
-          default = false
-          label = "Pacific/Auckland"
-        }
-        Pacific_Enderbury@d = {
-          fullName = "Pacific/Enderbury"
-          default = false
-          label = "Pacific/Enderbury"
-        }
-        Pacific_Tongatapu@d = {
-          fullName = "Pacific/Tongatapu"
-          default = false
-          label = "Pacific/Tongatapu"
-        }
-        Asia_Kamchatka@d = {
-          fullName = "Asia/Kamchatka"
-          default = false
-          label = "Asia/Kamchatka"
-        }
-        Pacific_Fiji@d = {
-          fullName = "Pacific/Fiji"
-          default = false
-          label = "Pacific/Fiji"
-        }
-        Pacific_Norfolk@d = {
-          fullName = "Pacific/Norfolk"
-          default = false
-          label = "Pacific/Norfolk"
-        }
-        Australia_Lord_Howe@du = {
-          fullName = "Australia/Lord_Howe"
-          default = false
-          label = "Australia/Lord_Howe"
-        }
-        Australia_Sydney@d = {
-          fullName = "Australia/Sydney"
-          default = false
-          label = "Australia/Sydney"
-        }
-        Pacific_Guadalcanal@d = {
-          fullName = "Pacific/Guadalcanal"
-          default = false
-          label = "Pacific/Guadalcanal"
-        }
-        Australia_Adelaide@d = {
-          fullName = "Australia/Adelaide"
-          default = false
-          label = "Australia/Adelaide"
-        }
-        Australia_Brisbane@d = {
-          fullName = "Australia/Brisbane"
-          default = false
-          label = "Australia/Brisbane"
-        }
-        Australia_Darwin@d = {
-          fullName = "Australia/Darwin"
-          default = false
-          label = "Australia/Darwin"
-        }
-        Asia_Seoul@d = {
-          fullName = "Asia/Seoul"
-          default = false
-          label = "Asia/Seoul"
-        }
-        Asia_Tokyo@d = {
-          fullName = "Asia/Tokyo"
-          default = false
-          label = "Asia/Tokyo"
-        }
-        Asia_Hong_Kong@du = {
-          fullName = "Asia/Hong_Kong"
-          default = false
-          label = "Asia/Hong_Kong"
-        }
-        Asia_Kuala_Lumpur@du = {
-          fullName = "Asia/Kuala_Lumpur"
-          default = false
-          label = "Asia/Kuala_Lumpur"
-        }
-        Asia_Manila@d = {
-          fullName = "Asia/Manila"
-          default = false
-          label = "Asia/Manila"
-        }
-        Asia_Shanghai@d = {
-          fullName = "Asia/Shanghai"
-          default = false
-          label = "Asia/Shanghai"
-        }
-        Asia_Singapore@d = {
-          fullName = "Asia/Singapore"
-          default = false
-          label = "Asia/Singapore"
-        }
-        Asia_Taipei@d = {
-          fullName = "Asia/Taipei"
-          default = false
-          label = "Asia/Taipei"
-        }
-        Australia_Perth@d = {
-          fullName = "Australia/Perth"
-          default = false
-          label = "Australia/Perth"
-        }
-        Asia_Bangkok@d = {
-          fullName = "Asia/Bangkok"
-          default = false
-          label = "Asia/Bangkok"
-        }
-        Asia_Jakarta@d = {
-          fullName = "Asia/Jakarta"
-          default = false
-          label = "Asia/Jakarta"
-        }
-        Asia_Saigon@d = {
-          fullName = "Asia/Saigon"
-          default = false
-          label = "Asia/Saigon"
-        }
-        Asia_Rangoon@d = {
-          fullName = "Asia/Rangoon"
-          default = false
-          label = "Asia/Rangoon"
-        }
-        Asia_Dacca@d = {
-          fullName = "Asia/Dacca"
-          default = false
-          label = "Asia/Dacca"
-        }
-        Asia_Yekaterinburg@d = {
-          fullName = "Asia/Yekaterinburg"
-          default = false
-          label = "Asia/Yekaterinburg"
-        }
-        Asia_Katmandu@d = {
-          fullName = "Asia/Katmandu"
-          default = false
-          label = "Asia/Katmandu"
-        }
-        Asia_Calcutta@d = {
-          fullName = "Asia/Calcutta"
-          default = false
-          label = "Asia/Calcutta"
-        }
-        Asia_Colombo@d = {
-          fullName = "Asia/Colombo"
-          default = false
-          label = "Asia/Colombo"
-        }
-        Asia_Karachi@d = {
-          fullName = "Asia/Karachi"
-          default = false
-          label = "Asia/Karachi"
-        }
-        Asia_Tashkent@d = {
-          fullName = "Asia/Tashkent"
-          default = false
-          label = "Asia/Tashkent"
-        }
-        Asia_Kabul@d = {
-          fullName = "Asia/Kabul"
-          default = false
-          label = "Asia/Kabul"
-        }
-        Asia_Dubai@d = {
-          fullName = "Asia/Dubai"
-          default = false
-          label = "Asia/Dubai"
-        }
-        Asia_Tbilisi@d = {
-          fullName = "Asia/Tbilisi"
-          default = false
-          label = "Asia/Tbilisi"
-        }
-        Europe_Moscow@d = {
-          fullName = "Europe/Moscow"
-          default = false
-          label = "Europe/Moscow"
-        }
-        Asia_Tehran@d = {
-          fullName = "Asia/Tehran"
-          default = false
-          label = "Asia/Tehran"
-        }
-        Africa_Nairobi@d = {
-          fullName = "Africa/Nairobi"
-          default = false
-          label = "Africa/Nairobi"
-        }
-        Asia_Baghdad@d = {
-          fullName = "Asia/Baghdad"
-          default = false
-          label = "Asia/Baghdad"
-        }
-        Asia_Kuwait@d = {
-          fullName = "Asia/Kuwait"
-          default = false
-          label = "Asia/Kuwait"
-        }
-        Asia_Riyadh@d = {
-          fullName = "Asia/Riyadh"
-          default = false
-          label = "Asia/Riyadh"
-        }
-        Europe_Minsk@d = {
-          fullName = "Europe/Minsk"
-          default = false
-          label = "Europe/Minsk"
-        }
-        Africa_Cairo@d = {
-          fullName = "Africa/Cairo"
-          default = false
-          label = "Africa/Cairo"
-        }
-        Africa_Johannesburg@d = {
-          fullName = "Africa/Johannesburg"
-          default = false
-          label = "Africa/Johannesburg"
-        }
-        Asia_Jerusalem@d = {
-          fullName = "Asia/Jerusalem"
-          default = false
-          label = "Asia/Jerusalem"
-        }
-        Europe_Athens@d = {
-          fullName = "Europe/Athens"
-          default = false
-          label = "Europe/Athens"
-        }
-        Europe_Bucharest@d = {
-          fullName = "Europe/Bucharest"
-          default = false
-          label = "Europe/Bucharest"
-        }
-        Europe_Helsinki@d = {
-          fullName = "Europe/Helsinki"
-          default = false
-          label = "Europe/Helsinki"
-        }
-        Europe_Istanbul@d = {
-          fullName = "Europe/Istanbul"
-          default = false
-          label = "Europe/Istanbul"
-        }
-        Africa_Algiers@d = {
-          fullName = "Africa/Algiers"
-          default = false
-          label = "Africa/Algiers"
-        }
-        Europe_Amsterdam@d = {
-          fullName = "Europe/Amsterdam"
-          default = false
-          label = "Europe/Amsterdam"
-        }
-        Europe_Berlin@d = {
-          fullName = "Europe/Berlin"
-          default = false
-          label = "Europe/Berlin"
-        }
-        Europe_Brussels@d = {
-          fullName = "Europe/Brussels"
-          default = false
-          label = "Europe/Brussels"
-        }
-        Europe_Paris@d = {
-          fullName = "Europe/Paris"
-          default = false
-          label = "Europe/Paris"
-        }
-        Europe_Prague@d = {
-          fullName = "Europe/Prague"
-          default = false
-          label = "Europe/Prague"
-        }
-        Europe_Rome@d = {
-          fullName = "Europe/Rome"
-          default = false
-          label = "Europe/Rome"
-        }
-        Europe_Dublin@d = {
-          fullName = "Europe/Dublin"
-          default = false
-          label = "Europe/Dublin"
-        }
-        Europe_Lisbon@d = {
-          fullName = "Europe/Lisbon"
-          default = false
-          label = "Europe/Lisbon"
-        }
-        Europe_London@d = {
-          fullName = "Europe/London"
-          default = false
-          label = "Europe/London"
-        }
-        GMT = {
-          fullName = "GMT"
-          default = false
-          label = "GMT"
-        }
-        Atlantic_Cape_Verde@du = {
-          fullName = "Atlantic/Cape_Verde"
-          default = false
-          label = "Atlantic/Cape_Verde"
-        }
-        America_Sao_Paulo@du = {
-          fullName = "America/Sao_Paulo"
-          default = false
-          label = "America/Sao_Paulo"
-        }
-        Atlantic_South_Georgia@du = {
-          fullName = "Atlantic/South_Georgia"
-          default = false
-          label = "Atlantic/South_Georgia"
-        }
-        America_Buenos_Aires@du = {
-          fullName = "America/Buenos_Aires"
-          default = false
-          label = "America/Buenos_Aires"
-        }
-        America_Santiago@d = {
-          fullName = "America/Santiago"
-          default = false
-          label = "America/Santiago"
-        }
-        America_St_Johns@du = {
-          fullName = "America/St_Johns"
-          default = false
-          label = "America/St_Johns"
-        }
-        America_Halifax@d = {
-          fullName = "America/Halifax"
-          default = false
-          label = "America/Halifax"
-        }
-        America_Puerto_Rico@du = {
-          fullName = "America/Puerto_Rico"
-          default = false
-          label = "America/Puerto_Rico"
-        }
-        Atlantic_Bermuda@d = {
-          fullName = "Atlantic/Bermuda"
-          default = false
-          label = "Atlantic/Bermuda"
-        }
-        America_Caracas@d = {
-          fullName = "America/Caracas"
-          default = false
-          label = "America/Caracas"
-        }
-        America_Bogota@d = {
-          fullName = "America/Bogota"
-          default = false
-          label = "America/Bogota"
-        }
-        America_Indianapolis@d = {
-          fullName = "America/Indianapolis"
-          default = false
-          label = "America/Indianapolis"
-        }
-        America_Lima@d = {
-          fullName = "America/Lima"
-          default = false
-          label = "America/Lima"
-        }
-        America_New_York@du = {
-          fullName = "America/New_York"
-          default = false
-          label = "America/New_York"
-        }
-        America_Panama@d = {
-          fullName = "America/Panama"
-          default = false
-          label = "America/Panama"
-        }
-        America_Chicago@d = {
-          fullName = "America/Chicago"
-          default = false
-          label = "America/Chicago"
-        }
-        America_El_Salvador@du = {
-          fullName = "America/El_Salvador"
-          default = false
-          label = "America/El_Salvador"
-        }
-        America_Mexico_City@du = {
-          fullName = "America/Mexico_City"
-          default = false
-          label = "America/Mexico_City"
-        }
-        America_Denver@d = {
-          fullName = "America/Denver"
-          default = false
-          label = "America/Denver"
-        }
-        America_Phoenix@d = {
-          fullName = "America/Phoenix"
-          default = false
-          label = "America/Phoenix"
-        }
-        America_Los_Angeles@du = {
-          fullName = "America/Los_Angeles"
-          default = false
-          label = "America/Los_Angeles"
-        }
-        America_Tijuana@d = {
-          fullName = "America/Tijuana"
-          default = false
-          label = "America/Tijuana"
-        }
-        America_Anchorage@d = {
-          fullName = "America/Anchorage"
-          default = false
-          label = "America/Anchorage"
-        }
-        Pacific_Honolulu@d = {
-          fullName = "Pacific/Honolulu"
-          default = false
-          label = "Pacific/Honolulu"
-        }
-        Pacific_Niue@d = {
-          fullName = "Pacific/Niue"
-          default = false
-          label = "Pacific/Niue"
-        }
-        Pacific_Pago_Pago@du = {
-          fullName = "Pacific/Pago_Pago"
-          default = false
-          label = "Pacific/Pago_Pago"
-        }
-      }
-      order = [
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Kiritimati@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Chatham@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Auckland@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Enderbury@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Tongatapu@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kamchatka@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Fiji@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Norfolk@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Lord_Howe@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Sydney@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Guadalcanal@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Adelaide@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Brisbane@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Darwin@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Seoul@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tokyo@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Hong_Kong@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kuala_Lumpur@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Manila@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Shanghai@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Singapore@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Taipei@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Perth@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Bangkok@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Jakarta@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Saigon@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Rangoon@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Dacca@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Yekaterinburg@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Katmandu@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Calcutta@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Colombo@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Karachi@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tashkent@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kabul@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Dubai@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tbilisi@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Moscow@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tehran@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Nairobi@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Baghdad@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kuwait@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Riyadh@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Minsk@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Cairo@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Johannesburg@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Jerusalem@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Athens@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Bucharest@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Helsinki@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Istanbul@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Algiers@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Amsterdam@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Berlin@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Brussels@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Paris@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Prague@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Rome@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Dublin@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Lisbon@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_London@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.GMT,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_Cape_Verde@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Sao_Paulo@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_South_Georgia@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Buenos_Aires@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Santiago@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_St_Johns@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Halifax@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Puerto_Rico@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_Bermuda@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Caracas@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Bogota@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Indianapolis@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Lima@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_New_York@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Panama@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Chicago@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_El_Salvador@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Mexico_City@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Denver@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Phoenix@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Los_Angeles@du,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Tijuana@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Anchorage@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Honolulu@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Niue@d,
-        salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Pago_Pago@du,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Pacific/Kiritimati"
+        default = false
+        label = "Pacific/Kiritimati"
+      },
+      {
+        fullName = "Pacific/Chatham"
+        default = false
+        label = "Pacific/Chatham"
+      },
+      {
+        fullName = "Pacific/Auckland"
+        default = false
+        label = "Pacific/Auckland"
+      },
+      {
+        fullName = "Pacific/Enderbury"
+        default = false
+        label = "Pacific/Enderbury"
+      },
+      {
+        fullName = "Pacific/Tongatapu"
+        default = false
+        label = "Pacific/Tongatapu"
+      },
+      {
+        fullName = "Asia/Kamchatka"
+        default = false
+        label = "Asia/Kamchatka"
+      },
+      {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "Pacific/Fiji"
+      },
+      {
+        fullName = "Pacific/Norfolk"
+        default = false
+        label = "Pacific/Norfolk"
+      },
+      {
+        fullName = "Australia/Lord_Howe"
+        default = false
+        label = "Australia/Lord_Howe"
+      },
+      {
+        fullName = "Australia/Sydney"
+        default = false
+        label = "Australia/Sydney"
+      },
+      {
+        fullName = "Pacific/Guadalcanal"
+        default = false
+        label = "Pacific/Guadalcanal"
+      },
+      {
+        fullName = "Australia/Adelaide"
+        default = false
+        label = "Australia/Adelaide"
+      },
+      {
+        fullName = "Australia/Brisbane"
+        default = false
+        label = "Australia/Brisbane"
+      },
+      {
+        fullName = "Australia/Darwin"
+        default = false
+        label = "Australia/Darwin"
+      },
+      {
+        fullName = "Asia/Seoul"
+        default = false
+        label = "Asia/Seoul"
+      },
+      {
+        fullName = "Asia/Tokyo"
+        default = false
+        label = "Asia/Tokyo"
+      },
+      {
+        fullName = "Asia/Hong_Kong"
+        default = false
+        label = "Asia/Hong_Kong"
+      },
+      {
+        fullName = "Asia/Kuala_Lumpur"
+        default = false
+        label = "Asia/Kuala_Lumpur"
+      },
+      {
+        fullName = "Asia/Manila"
+        default = false
+        label = "Asia/Manila"
+      },
+      {
+        fullName = "Asia/Shanghai"
+        default = false
+        label = "Asia/Shanghai"
+      },
+      {
+        fullName = "Asia/Singapore"
+        default = false
+        label = "Asia/Singapore"
+      },
+      {
+        fullName = "Asia/Taipei"
+        default = false
+        label = "Asia/Taipei"
+      },
+      {
+        fullName = "Australia/Perth"
+        default = false
+        label = "Australia/Perth"
+      },
+      {
+        fullName = "Asia/Bangkok"
+        default = false
+        label = "Asia/Bangkok"
+      },
+      {
+        fullName = "Asia/Jakarta"
+        default = false
+        label = "Asia/Jakarta"
+      },
+      {
+        fullName = "Asia/Saigon"
+        default = false
+        label = "Asia/Saigon"
+      },
+      {
+        fullName = "Asia/Rangoon"
+        default = false
+        label = "Asia/Rangoon"
+      },
+      {
+        fullName = "Asia/Dacca"
+        default = false
+        label = "Asia/Dacca"
+      },
+      {
+        fullName = "Asia/Yekaterinburg"
+        default = false
+        label = "Asia/Yekaterinburg"
+      },
+      {
+        fullName = "Asia/Katmandu"
+        default = false
+        label = "Asia/Katmandu"
+      },
+      {
+        fullName = "Asia/Calcutta"
+        default = false
+        label = "Asia/Calcutta"
+      },
+      {
+        fullName = "Asia/Colombo"
+        default = false
+        label = "Asia/Colombo"
+      },
+      {
+        fullName = "Asia/Karachi"
+        default = false
+        label = "Asia/Karachi"
+      },
+      {
+        fullName = "Asia/Tashkent"
+        default = false
+        label = "Asia/Tashkent"
+      },
+      {
+        fullName = "Asia/Kabul"
+        default = false
+        label = "Asia/Kabul"
+      },
+      {
+        fullName = "Asia/Dubai"
+        default = false
+        label = "Asia/Dubai"
+      },
+      {
+        fullName = "Asia/Tbilisi"
+        default = false
+        label = "Asia/Tbilisi"
+      },
+      {
+        fullName = "Europe/Moscow"
+        default = false
+        label = "Europe/Moscow"
+      },
+      {
+        fullName = "Asia/Tehran"
+        default = false
+        label = "Asia/Tehran"
+      },
+      {
+        fullName = "Africa/Nairobi"
+        default = false
+        label = "Africa/Nairobi"
+      },
+      {
+        fullName = "Asia/Baghdad"
+        default = false
+        label = "Asia/Baghdad"
+      },
+      {
+        fullName = "Asia/Kuwait"
+        default = false
+        label = "Asia/Kuwait"
+      },
+      {
+        fullName = "Asia/Riyadh"
+        default = false
+        label = "Asia/Riyadh"
+      },
+      {
+        fullName = "Europe/Minsk"
+        default = false
+        label = "Europe/Minsk"
+      },
+      {
+        fullName = "Africa/Cairo"
+        default = false
+        label = "Africa/Cairo"
+      },
+      {
+        fullName = "Africa/Johannesburg"
+        default = false
+        label = "Africa/Johannesburg"
+      },
+      {
+        fullName = "Asia/Jerusalem"
+        default = false
+        label = "Asia/Jerusalem"
+      },
+      {
+        fullName = "Europe/Athens"
+        default = false
+        label = "Europe/Athens"
+      },
+      {
+        fullName = "Europe/Bucharest"
+        default = false
+        label = "Europe/Bucharest"
+      },
+      {
+        fullName = "Europe/Helsinki"
+        default = false
+        label = "Europe/Helsinki"
+      },
+      {
+        fullName = "Europe/Istanbul"
+        default = false
+        label = "Europe/Istanbul"
+      },
+      {
+        fullName = "Africa/Algiers"
+        default = false
+        label = "Africa/Algiers"
+      },
+      {
+        fullName = "Europe/Amsterdam"
+        default = false
+        label = "Europe/Amsterdam"
+      },
+      {
+        fullName = "Europe/Berlin"
+        default = false
+        label = "Europe/Berlin"
+      },
+      {
+        fullName = "Europe/Brussels"
+        default = false
+        label = "Europe/Brussels"
+      },
+      {
+        fullName = "Europe/Paris"
+        default = false
+        label = "Europe/Paris"
+      },
+      {
+        fullName = "Europe/Prague"
+        default = false
+        label = "Europe/Prague"
+      },
+      {
+        fullName = "Europe/Rome"
+        default = false
+        label = "Europe/Rome"
+      },
+      {
+        fullName = "Europe/Dublin"
+        default = false
+        label = "Europe/Dublin"
+      },
+      {
+        fullName = "Europe/Lisbon"
+        default = false
+        label = "Europe/Lisbon"
+      },
+      {
+        fullName = "Europe/London"
+        default = false
+        label = "Europe/London"
+      },
+      {
+        fullName = "GMT"
+        default = false
+        label = "GMT"
+      },
+      {
+        fullName = "Atlantic/Cape_Verde"
+        default = false
+        label = "Atlantic/Cape_Verde"
+      },
+      {
+        fullName = "America/Sao_Paulo"
+        default = false
+        label = "America/Sao_Paulo"
+      },
+      {
+        fullName = "Atlantic/South_Georgia"
+        default = false
+        label = "Atlantic/South_Georgia"
+      },
+      {
+        fullName = "America/Buenos_Aires"
+        default = false
+        label = "America/Buenos_Aires"
+      },
+      {
+        fullName = "America/Santiago"
+        default = false
+        label = "America/Santiago"
+      },
+      {
+        fullName = "America/St_Johns"
+        default = false
+        label = "America/St_Johns"
+      },
+      {
+        fullName = "America/Halifax"
+        default = false
+        label = "America/Halifax"
+      },
+      {
+        fullName = "America/Puerto_Rico"
+        default = false
+        label = "America/Puerto_Rico"
+      },
+      {
+        fullName = "Atlantic/Bermuda"
+        default = false
+        label = "Atlantic/Bermuda"
+      },
+      {
+        fullName = "America/Caracas"
+        default = false
+        label = "America/Caracas"
+      },
+      {
+        fullName = "America/Bogota"
+        default = false
+        label = "America/Bogota"
+      },
+      {
+        fullName = "America/Indianapolis"
+        default = false
+        label = "America/Indianapolis"
+      },
+      {
+        fullName = "America/Lima"
+        default = false
+        label = "America/Lima"
+      },
+      {
+        fullName = "America/New_York"
+        default = false
+        label = "America/New_York"
+      },
+      {
+        fullName = "America/Panama"
+        default = false
+        label = "America/Panama"
+      },
+      {
+        fullName = "America/Chicago"
+        default = false
+        label = "America/Chicago"
+      },
+      {
+        fullName = "America/El_Salvador"
+        default = false
+        label = "America/El_Salvador"
+      },
+      {
+        fullName = "America/Mexico_City"
+        default = false
+        label = "America/Mexico_City"
+      },
+      {
+        fullName = "America/Denver"
+        default = false
+        label = "America/Denver"
+      },
+      {
+        fullName = "America/Phoenix"
+        default = false
+        label = "America/Phoenix"
+      },
+      {
+        fullName = "America/Los_Angeles"
+        default = false
+        label = "America/Los_Angeles"
+      },
+      {
+        fullName = "America/Tijuana"
+        default = false
+        label = "America/Tijuana"
+      },
+      {
+        fullName = "America/Anchorage"
+        default = false
+        label = "America/Anchorage"
+      },
+      {
+        fullName = "Pacific/Honolulu"
+        default = false
+        label = "Pacific/Honolulu"
+      },
+      {
+        fullName = "Pacific/Niue"
+        default = false
+        label = "Pacific/Niue"
+      },
+      {
+        fullName = "Pacific/Pago_Pago"
+        default = false
+        label = "Pacific/Pago_Pago"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -796,30 +687,23 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     deprecated = false
     description = "Indicates the level of the Campaign hierarchy for a record, either Campaign (a parent Classy Campaign), Team, or Fundraiser"
     label = "Classy Campaign Hierarchy"
-    valueSet = {
-      values = {
-        Campaign = {
-          fullName = "Campaign"
-          default = false
-          label = "Campaign"
-        }
-        Fundraiser = {
-          fullName = "Fundraiser"
-          default = false
-          label = "Fundraiser"
-        }
-        Team = {
-          fullName = "Team"
-          default = false
-          label = "Team"
-        }
-      }
-      order = [
-        salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Campaign,
-        salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Fundraiser,
-        salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Team,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Campaign"
+        default = false
+        label = "Campaign"
+      },
+      {
+        fullName = "Fundraiser"
+        default = false
+        label = "Fundraiser"
+      },
+      {
+        fullName = "Team"
+        default = false
+        label = "Team"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true

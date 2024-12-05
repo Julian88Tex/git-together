@@ -1,41 +1,32 @@
 salesforce.StandardValueSet CaseType {
   fullName = "CaseType"
   sorted = false
-  standardValue = {
-    values = {
-      Mechanical = {
-        fullName = "Mechanical"
-        default = false
-        label = "Mechanical"
-      }
-      Electrical = {
-        fullName = "Electrical"
-        default = false
-        label = "Electrical"
-      }
-      Electronic = {
-        fullName = "Electronic"
-        default = false
-        label = "Electronic"
-      }
-      Structural = {
-        fullName = "Structural"
-        default = false
-        label = "Structural"
-      }
-      Other = {
-        fullName = "Other"
-        default = false
-        label = "Other"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.CaseType.standardValue.values.Mechanical,
-      salesforce.StandardValueSet.instance.CaseType.standardValue.values.Electrical,
-      salesforce.StandardValueSet.instance.CaseType.standardValue.values.Electronic,
-      salesforce.StandardValueSet.instance.CaseType.standardValue.values.Structural,
-      salesforce.StandardValueSet.instance.CaseType.standardValue.values.Other,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Mechanical"
+      default = false
+      label = "Mechanical"
+    },
+    {
+      fullName = "Electrical"
+      default = false
+      label = "Electrical"
+    },
+    {
+      fullName = "Electronic"
+      default = false
+      label = "Electronic"
+    },
+    {
+      fullName = "Structural"
+      default = false
+      label = "Structural"
+    },
+    {
+      fullName = "Other"
+      default = false
+      label = "Other"
+    },
+  ]
   _alias = "CaseType"
 }

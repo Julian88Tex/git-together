@@ -1,29 +1,22 @@
 salesforce.StandardValueSet AccountRating {
   fullName = "AccountRating"
   sorted = false
-  standardValue = {
-    values = {
-      Hot = {
-        fullName = "Hot"
-        default = false
-        label = "Hot"
-      }
-      Warm = {
-        fullName = "Warm"
-        default = false
-        label = "Warm"
-      }
-      Cold = {
-        fullName = "Cold"
-        default = false
-        label = "Cold"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Hot,
-      salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Warm,
-      salesforce.StandardValueSet.instance.AccountRating.standardValue.values.Cold,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Hot"
+      default = false
+      label = "Hot"
+    },
+    {
+      fullName = "Warm"
+      default = false
+      label = "Warm"
+    },
+    {
+      fullName = "Cold"
+      default = false
+      label = "Cold"
+    },
+  ]
   _alias = "AccountRating"
 }

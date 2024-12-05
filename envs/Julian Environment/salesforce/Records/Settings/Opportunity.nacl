@@ -8,9 +8,9 @@ salesforce.OpportunitySettings {
   enableOpportunityInsightsInMobile = false
   enableOpportunityTeam = false
   enableUpdateReminders = true
-  oppAmountDealMotionEnabled = true
-  oppCloseDateDealMotionEnabled = true
+  oppAmountDealMotionEnabled = "true"
+  oppCloseDateDealMotionEnabled = "true"
   promptToAddProducts = false
-  pushCountEnabled = true
+  pushCountEnabled = "true"
   _alias = "Opportunity"
 }

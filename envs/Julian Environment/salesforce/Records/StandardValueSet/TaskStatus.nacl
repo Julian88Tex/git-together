@@ -1,46 +1,37 @@
 salesforce.StandardValueSet TaskStatus {
   fullName = "TaskStatus"
   sorted = false
-  standardValue = {
-    values = {
-      Not_Started@s = {
-        fullName = "Not Started"
-        default = true
-        label = "Not Started"
-        closed = false
-      }
-      In_Progress@s = {
-        fullName = "In Progress"
-        default = false
-        label = "In Progress"
-        closed = false
-      }
-      Completed = {
-        fullName = "Completed"
-        default = false
-        label = "Completed"
-        closed = true
-      }
-      Waiting_on_someone_else@s = {
-        fullName = "Waiting on someone else"
-        default = false
-        label = "Waiting on someone else"
-        closed = false
-      }
-      Deferred = {
-        fullName = "Deferred"
-        default = false
-        label = "Deferred"
-        closed = false
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.TaskStatus.standardValue.values.Not_Started@s,
-      salesforce.StandardValueSet.instance.TaskStatus.standardValue.values.In_Progress@s,
-      salesforce.StandardValueSet.instance.TaskStatus.standardValue.values.Completed,
-      salesforce.StandardValueSet.instance.TaskStatus.standardValue.values.Waiting_on_someone_else@s,
-      salesforce.StandardValueSet.instance.TaskStatus.standardValue.values.Deferred,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Not Started"
+      default = true
+      label = "Not Started"
+      closed = false
+    },
+    {
+      fullName = "In Progress"
+      default = false
+      label = "In Progress"
+      closed = false
+    },
+    {
+      fullName = "Completed"
+      default = false
+      label = "Completed"
+      closed = true
+    },
+    {
+      fullName = "Waiting on someone else"
+      default = false
+      label = "Waiting on someone else"
+      closed = false
+    },
+    {
+      fullName = "Deferred"
+      default = false
+      label = "Deferred"
+      closed = false
+    },
+  ]
   _alias = "TaskStatus"
 }

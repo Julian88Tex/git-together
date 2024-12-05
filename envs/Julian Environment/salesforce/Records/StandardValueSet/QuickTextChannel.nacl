@@ -1,47 +1,37 @@
 salesforce.StandardValueSet QuickTextChannel {
   fullName = "QuickTextChannel"
   sorted = false
-  standardValue = {
-    values = {
-      Email = {
-        fullName = "Email"
-        default = true
-        label = "Email"
-      }
-      Portal = {
-        fullName = "Portal"
-        default = false
-        label = "Portal"
-      }
-      Phone = {
-        fullName = "Phone"
-        default = false
-        label = "Phone"
-      }
-      Internal = {
-        fullName = "Internal"
-        default = false
-        label = "Internal"
-      }
-      Event = {
-        fullName = "Event"
-        default = false
-        label = "Event"
-      }
-      Task = {
-        fullName = "Task"
-        default = false
-        label = "Task"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Email,
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Portal,
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Phone,
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Internal,
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Event,
-      salesforce.StandardValueSet.instance.QuickTextChannel.standardValue.values.Task,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Email"
+      default = true
+      label = "Email"
+    },
+    {
+      fullName = "Portal"
+      default = false
+      label = "Portal"
+    },
+    {
+      fullName = "Phone"
+      default = false
+      label = "Phone"
+    },
+    {
+      fullName = "Internal"
+      default = false
+      label = "Internal"
+    },
+    {
+      fullName = "Event"
+      default = false
+      label = "Event"
+    },
+    {
+      fullName = "Task"
+      default = false
+      label = "Task"
+    },
+  ]
   _alias = "QuickTextChannel"
 }

@@ -21,14 +21,14 @@ salesforce.UserEngagementSettings {
   enableScheduledSwitcher = true
   enableSfdcProductFeedbackSurvey = true
   enableShowSalesforceUserAssist = true
-  isAutoTransitionDelayed = false
+  isAutoTransitionDelayed = "false"
   isCrucNotificationDisabled = false
-  isCustomProfileAutoTransitionDelayed = false
+  isCustomProfileAutoTransitionDelayed = "false"
   isLEXWelcomeMatDisabled = false
   isMeetTheAssistantDisabledInClassic = false
   isMeetTheAssistantDisabledInLightning = false
-  isSmartNudgesDisabled = false
+  isSmartNudgesDisabled = "false"
   optimizerAppEnabled = false
-  suggestedForYou = true
+  suggestedForYou = "true"
   _alias = "UserEngagement"
 }

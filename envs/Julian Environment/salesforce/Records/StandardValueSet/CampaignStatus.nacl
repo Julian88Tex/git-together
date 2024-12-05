@@ -1,35 +1,27 @@
 salesforce.StandardValueSet CampaignStatus {
   fullName = "CampaignStatus"
   sorted = false
-  standardValue = {
-    values = {
-      Planned = {
-        fullName = "Planned"
-        default = true
-        label = "Planned"
-      }
-      In_Progress@s = {
-        fullName = "In Progress"
-        default = false
-        label = "In Progress"
-      }
-      Completed = {
-        fullName = "Completed"
-        default = false
-        label = "Completed"
-      }
-      Aborted = {
-        fullName = "Aborted"
-        default = false
-        label = "Aborted"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Planned,
-      salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.In_Progress@s,
-      salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Completed,
-      salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Aborted,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Planned"
+      default = true
+      label = "Planned"
+    },
+    {
+      fullName = "In Progress"
+      default = false
+      label = "In Progress"
+    },
+    {
+      fullName = "Completed"
+      default = false
+      label = "Completed"
+    },
+    {
+      fullName = "Aborted"
+      default = false
+      label = "Aborted"
+    },
+  ]
   _alias = "CampaignStatus"
 }

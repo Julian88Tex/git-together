@@ -1,5 +1,5 @@
 salesforce.SourceTrackingSettings {
   fullName = "SourceTracking"
-  enableSourceTrackingSandboxes = true
+  enableSourceTrackingSandboxes = "true"
   _alias = "SourceTracking"
 }

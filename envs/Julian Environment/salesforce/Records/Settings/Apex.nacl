@@ -12,8 +12,8 @@ salesforce.ApexSettings {
   enableGaplessTestAutoNum = true
   enableMngdCtrlActionAccessPref = false
   enableNonCertifiedApexMdCrud = false
-  enableRestrictCommunityExecAnon = false
+  enableRestrictCommunityExecAnon = "false"
   enableSecureNoArgConstructorPref = false
-  enableTestSetupSkipTestResults = false
+  enableTestSetupSkipTestResults = "false"
   _alias = "Apex"
 }

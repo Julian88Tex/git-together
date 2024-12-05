@@ -4,43 +4,43 @@ salesforce.BusinessProcess Opportunity_stayclassy__Default_Sales_Process@uuuss {
   isActive = true
   values = [
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Closed_Lost@s.fullName
+      fullName = "Closed Lost"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Closed_Won@s.fullName
+      fullName = "Closed Won"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Id__Decision_Makers@vss.fullName
+      fullName = "Id%2E Decision Makers"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Needs_Analysis@s.fullName
+      fullName = "Needs Analysis"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Negotiation_Review@d.fullName
+      fullName = "Negotiation%2FReview"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Perception_Analysis@s.fullName
+      fullName = "Perception Analysis"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Proposal_Price_Quote@ds.fullName
+      fullName = "Proposal%2FPrice Quote"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Prospecting.fullName
+      fullName = "Prospecting"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Qualification.fullName
+      fullName = "Qualification"
       default = false
     },
     {
-      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Value_Proposition@s.fullName
+      fullName = "Value Proposition"
       default = false
     },
   ]

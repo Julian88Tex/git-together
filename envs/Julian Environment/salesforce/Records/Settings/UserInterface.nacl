@@ -1,24 +1,24 @@
 salesforce.UserInterfaceSettings {
-  multiColumnSort = false
+  multiColumnSort = "false"
   fullName = "UserInterface"
-  alternateAlohaListView = true
-  dynamicMruActionsOff = false
+  alternateAlohaListView = "true"
+  dynamicMruActionsOff = "false"
   enableAsyncRelatedLists = false
   enableClickjackUserPageHeaderless = false
   enableCollapsibleSections = true
-  enableCollapsibleSideBar = false
+  enableCollapsibleSideBar = "false"
   enableCustomObjectTruncate = false
-  enableCustomeSideBarOnAllPages = false
+  enableCustomeSideBarOnAllPages = "false"
   enableDeleteFieldHistory = false
   enableExternalObjectAsyncRelatedLists = true
   enableHoverDetails = true
   enableInlineEdit = true
-  enableNewPageLayoutEditor = true
+  enableNewPageLayoutEditor = "true"
   enablePersonalCanvas = true
-  enablePrintableListViews = true
-  enableProfileCustomTabsets = true
+  enablePrintableListViews = "true"
+  enableProfileCustomTabsets = "true"
   enableQuickCreate = true
-  enableRelatedListHovers = true
-  enableTabOrganizer = true
+  enableRelatedListHovers = "true"
+  enableTabOrganizer = "true"
   _alias = "UserInterface"
 }

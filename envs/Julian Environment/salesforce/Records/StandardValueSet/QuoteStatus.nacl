@@ -1,67 +1,55 @@
 salesforce.StandardValueSet QuoteStatus {
   fullName = "QuoteStatus"
   sorted = false
-  standardValue = {
-    values = {
-      Draft = {
-        fullName = "Draft"
-        default = true
-        label = "Draft"
-        allowEmail = true
-      }
-      Needs_Review@s = {
-        fullName = "Needs Review"
-        default = false
-        label = "Needs Review"
-        allowEmail = true
-      }
-      In_Review@s = {
-        fullName = "In Review"
-        default = false
-        label = "In Review"
-        allowEmail = true
-      }
-      Approved = {
-        fullName = "Approved"
-        default = false
-        label = "Approved"
-        allowEmail = true
-      }
-      Rejected = {
-        fullName = "Rejected"
-        default = false
-        label = "Rejected"
-        allowEmail = true
-      }
-      Presented = {
-        fullName = "Presented"
-        default = false
-        label = "Presented"
-        allowEmail = true
-      }
-      Accepted = {
-        fullName = "Accepted"
-        default = false
-        label = "Accepted"
-        allowEmail = true
-      }
-      Denied = {
-        fullName = "Denied"
-        default = false
-        label = "Denied"
-        allowEmail = true
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Draft,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Needs_Review@s,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.In_Review@s,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Approved,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Rejected,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Presented,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Accepted,
-      salesforce.StandardValueSet.instance.QuoteStatus.standardValue.values.Denied,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Draft"
+      default = true
+      label = "Draft"
+      allowEmail = true
+    },
+    {
+      fullName = "Needs Review"
+      default = false
+      label = "Needs Review"
+      allowEmail = true
+    },
+    {
+      fullName = "In Review"
+      default = false
+      label = "In Review"
+      allowEmail = true
+    },
+    {
+      fullName = "Approved"
+      default = false
+      label = "Approved"
+      allowEmail = true
+    },
+    {
+      fullName = "Rejected"
+      default = false
+      label = "Rejected"
+      allowEmail = true
+    },
+    {
+      fullName = "Presented"
+      default = false
+      label = "Presented"
+      allowEmail = true
+    },
+    {
+      fullName = "Accepted"
+      default = false
+      label = "Accepted"
+      allowEmail = true
+    },
+    {
+      fullName = "Denied"
+      default = false
+      label = "Denied"
+      allowEmail = true
+    },
+  ]
   _alias = "QuoteStatus"
 }

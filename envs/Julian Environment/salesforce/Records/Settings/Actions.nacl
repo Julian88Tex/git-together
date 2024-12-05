@@ -2,7 +2,7 @@ salesforce.ActionsSettings {
   fullName = "Actions"
   enableDefaultQuickActionsOn = true
   enableMdpEnabled = true
-  enableOfflineWebLinks = false
+  enableOfflineWebLinks = "false"
   enableThirdPartyActions = false
   _alias = "Actions"
 }

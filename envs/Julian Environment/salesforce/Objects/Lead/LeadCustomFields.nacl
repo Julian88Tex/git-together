@@ -50,42 +50,33 @@ type salesforce.Lead {
     apiName = "Lead.GW_Volunteers__Volunteer_Availability__c"
     deprecated = false
     label = "Volunteer Availability"
-    valueSet = {
-      values = {
-        Weekdays = {
-          fullName = "Weekdays"
-          default = false
-          label = "Weekdays"
-        }
-        Weekends = {
-          fullName = "Weekends"
-          default = false
-          label = "Weekends"
-        }
-        Morning = {
-          fullName = "Morning"
-          default = false
-          label = "Morning"
-        }
-        Afternoon = {
-          fullName = "Afternoon"
-          default = false
-          label = "Afternoon"
-        }
-        Weekly = {
-          fullName = "Weekly"
-          default = false
-          label = "Weekly"
-        }
-      }
-      order = [
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekdays,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekends,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Morning,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Afternoon,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Availability__c.valueSet.values.Weekly,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Weekdays"
+        default = false
+        label = "Weekdays"
+      },
+      {
+        fullName = "Weekends"
+        default = false
+        label = "Weekends"
+      },
+      {
+        fullName = "Morning"
+        default = false
+        label = "Morning"
+      },
+      {
+        fullName = "Afternoon"
+        default = false
+        label = "Afternoon"
+      },
+      {
+        fullName = "Weekly"
+        default = false
+        label = "Weekly"
+      },
+    ]
     sorted = false
     restricted = false
     visibleLines = 8
@@ -108,48 +99,38 @@ type salesforce.Lead {
     deprecated = false
     inlineHelpText = "Select the skill(s) this person has that should be used to find volunteer jobs."
     label = "Volunteer Skills"
-    valueSet = {
-      values = {
-        Computer_usage@s = {
-          fullName = "Computer usage"
-          default = false
-          label = "Computer usage"
-        }
-        Manual_labor@s = {
-          fullName = "Manual labor"
-          default = false
-          label = "Manual labor"
-        }
-        Marketing = {
-          fullName = "Marketing"
-          default = false
-          label = "Marketing"
-        }
-        Fundraising = {
-          fullName = "Fundraising"
-          default = false
-          label = "Fundraising"
-        }
-        Event_Planning@s = {
-          fullName = "Event Planning"
-          default = false
-          label = "Event Planning"
-        }
-        Landscaping = {
-          fullName = "Landscaping"
-          default = false
-          label = "Landscaping"
-        }
-      }
-      order = [
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Computer_usage@s,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Manual_labor@s,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Marketing,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Fundraising,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Event_Planning@s,
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Skills__c.valueSet.values.Landscaping,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Computer usage"
+        default = false
+        label = "Computer usage"
+      },
+      {
+        fullName = "Manual labor"
+        default = false
+        label = "Manual labor"
+      },
+      {
+        fullName = "Marketing"
+        default = false
+        label = "Marketing"
+      },
+      {
+        fullName = "Fundraising"
+        default = false
+        label = "Fundraising"
+      },
+      {
+        fullName = "Event Planning"
+        default = false
+        label = "Event Planning"
+      },
+      {
+        fullName = "Landscaping"
+        default = false
+        label = "Landscaping"
+      },
+    ]
     sorted = false
     restricted = false
     visibleLines = 8
@@ -161,18 +142,13 @@ type salesforce.Lead {
     apiName = "Lead.GW_Volunteers__Volunteer_Status__c"
     deprecated = false
     label = "Volunteer Status"
-    valueSet = {
-      values = {
-        New_Sign_Up@s = {
-          fullName = "New Sign Up"
-          default = false
-          label = "New Sign Up"
-        }
-      }
-      order = [
-        salesforce.Lead.field.GW_Volunteers__Volunteer_Status__c.valueSet.values.New_Sign_Up@s,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "New Sign Up"
+        default = false
+        label = "New Sign Up"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -193,24 +169,18 @@ type salesforce.Lead {
   salesforce.Picklist Primary__c {
     apiName = "Lead.Primary__c"
     label = "Primary"
-    valueSet = {
-      values = {
-        No = {
-          fullName = "No"
-          default = false
-          label = "No"
-        }
-        Yes = {
-          fullName = "Yes"
-          default = false
-          label = "Yes"
-        }
-      }
-      order = [
-        salesforce.Lead.field.Primary__c.valueSet.values.No,
-        salesforce.Lead.field.Primary__c.valueSet.values.Yes,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -220,30 +190,23 @@ type salesforce.Lead {
   salesforce.Picklist ProductInterest__c {
     apiName = "Lead.ProductInterest__c"
     label = "Product Interest"
-    valueSet = {
-      values = {
-        GC1000_series@s = {
-          fullName = "GC1000 series"
-          default = false
-          label = "GC1000 series"
-        }
-        GC5000_series@s = {
-          fullName = "GC5000 series"
-          default = false
-          label = "GC5000 series"
-        }
-        GC3000_series@s = {
-          fullName = "GC3000 series"
-          default = false
-          label = "GC3000 series"
-        }
-      }
-      order = [
-        salesforce.Lead.field.ProductInterest__c.valueSet.values.GC1000_series@s,
-        salesforce.Lead.field.ProductInterest__c.valueSet.values.GC5000_series@s,
-        salesforce.Lead.field.ProductInterest__c.valueSet.values.GC3000_series@s,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "GC1000 series"
+        default = false
+        label = "GC1000 series"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -307,30 +270,23 @@ type salesforce.Lead {
     apiName = "Lead.emma__Sync_Status__c"
     deprecated = false
     label = "Emma Sync Status"
-    valueSet = {
-      values = {
-        Pending = {
-          fullName = "Pending"
-          default = false
-          label = "Pending"
-        }
-        Synchronized = {
-          fullName = "Synchronized"
-          default = false
-          label = "Synchronized"
-        }
-        Error = {
-          fullName = "Error"
-          default = false
-          label = "Error"
-        }
-      }
-      order = [
-        salesforce.Lead.field.emma__Sync_Status__c.valueSet.values.Pending,
-        salesforce.Lead.field.emma__Sync_Status__c.valueSet.values.Synchronized,
-        salesforce.Lead.field.emma__Sync_Status__c.valueSet.values.Error,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      },
+      {
+        fullName = "Synchronized"
+        default = false
+        label = "Synchronized"
+      },
+      {
+        fullName = "Error"
+        default = false
+        label = "Error"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -341,30 +297,23 @@ type salesforce.Lead {
     apiName = "Lead.npe01__Preferred_Email__c"
     deprecated = false
     label = "Preferred Email"
-    valueSet = {
-      values = {
-        Personal = {
-          fullName = "Personal"
-          default = false
-          label = "Personal"
-        }
-        Work = {
-          fullName = "Work"
-          default = false
-          label = "Work"
-        }
-        Alternate = {
-          fullName = "Alternate"
-          default = false
-          label = "Alternate"
-        }
-      }
-      order = [
-        salesforce.Lead.field.npe01__Preferred_Email__c.valueSet.values.Personal,
-        salesforce.Lead.field.npe01__Preferred_Email__c.valueSet.values.Work,
-        salesforce.Lead.field.npe01__Preferred_Email__c.valueSet.values.Alternate,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Personal"
+        default = false
+        label = "Personal"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Alternate"
+        default = false
+        label = "Alternate"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true
@@ -375,36 +324,28 @@ type salesforce.Lead {
     apiName = "Lead.npe01__Preferred_Phone__c"
     deprecated = false
     label = "Preferred Phone"
-    valueSet = {
-      values = {
-        Home = {
-          fullName = "Home"
-          default = false
-          label = "Home"
-        }
-        Work = {
-          fullName = "Work"
-          default = false
-          label = "Work"
-        }
-        Mobile = {
-          fullName = "Mobile"
-          default = false
-          label = "Mobile"
-        }
-        Other = {
-          fullName = "Other"
-          default = false
-          label = "Other"
-        }
-      }
-      order = [
-        salesforce.Lead.field.npe01__Preferred_Phone__c.valueSet.values.Home,
-        salesforce.Lead.field.npe01__Preferred_Phone__c.valueSet.values.Work,
-        salesforce.Lead.field.npe01__Preferred_Phone__c.valueSet.values.Mobile,
-        salesforce.Lead.field.npe01__Preferred_Phone__c.valueSet.values.Other,
-      ]
-    }
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Mobile"
+        default = false
+        label = "Mobile"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
     sorted = false
     restricted = false
     createable = true

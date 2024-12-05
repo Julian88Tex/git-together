@@ -4,10 +4,10 @@ salesforce.SecuritySettings {
   enableAdminLoginAsAnyUser = true
   enableAuditFieldsInactiveOwner = false
   enableAuraSecureEvalPref = true
-  enableCoepHeader = false
-  enableCoopHeader = false
-  enableCrossOrgRedirects = false
-  enablePermissionsPolicy = false
+  enableCoepHeader = "false"
+  enableCoopHeader = "false"
+  enableCrossOrgRedirects = "false"
+  enablePermissionsPolicy = "false"
   enableRequireHttpsConnection = true
   networkAccess = {
   }
@@ -22,8 +22,8 @@ salesforce.SecuritySettings {
     obscureSecretAnswer = false
     questionRestriction = "DoesNotContainPassword"
   }
-  redirectBlockModeEnabled = false
-  sendCspForUncommonClients = false
+  redirectBlockModeEnabled = "false"
+  sendCspForUncommonClients = "false"
   sessionSettings = {
     allowUserAuthenticationByCertificate = false
     allowUserCertBasedAuthenticationWithOcspValidation = false

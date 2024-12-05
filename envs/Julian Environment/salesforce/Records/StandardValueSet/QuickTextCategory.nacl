@@ -1,29 +1,22 @@
 salesforce.StandardValueSet QuickTextCategory {
   fullName = "QuickTextCategory"
   sorted = false
-  standardValue = {
-    values = {
-      Greetings = {
-        fullName = "Greetings"
-        default = true
-        label = "Greetings"
-      }
-      FAQ = {
-        fullName = "FAQ"
-        default = false
-        label = "FAQ"
-      }
-      Closings = {
-        fullName = "Closings"
-        default = false
-        label = "Closings"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.QuickTextCategory.standardValue.values.Greetings,
-      salesforce.StandardValueSet.instance.QuickTextCategory.standardValue.values.FAQ,
-      salesforce.StandardValueSet.instance.QuickTextCategory.standardValue.values.Closings,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Greetings"
+      default = true
+      label = "Greetings"
+    },
+    {
+      fullName = "FAQ"
+      default = false
+      label = "FAQ"
+    },
+    {
+      fullName = "Closings"
+      default = false
+      label = "Closings"
+    },
+  ]
   _alias = "QuickTextCategory"
 }

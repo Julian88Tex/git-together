@@ -1,35 +1,27 @@
 salesforce.StandardValueSet FiscalYearQuarterName {
   fullName = "FiscalYearQuarterName"
   sorted = false
-  standardValue = {
-    values = {
-      Spring = {
-        fullName = "Spring"
-        default = true
-        label = "Spring"
-      }
-      Summer = {
-        fullName = "Summer"
-        default = false
-        label = "Summer"
-      }
-      Fall = {
-        fullName = "Fall"
-        default = false
-        label = "Fall"
-      }
-      Winter = {
-        fullName = "Winter"
-        default = false
-        label = "Winter"
-      }
-    }
-    order = [
-      salesforce.StandardValueSet.instance.FiscalYearQuarterName.standardValue.values.Spring,
-      salesforce.StandardValueSet.instance.FiscalYearQuarterName.standardValue.values.Summer,
-      salesforce.StandardValueSet.instance.FiscalYearQuarterName.standardValue.values.Fall,
-      salesforce.StandardValueSet.instance.FiscalYearQuarterName.standardValue.values.Winter,
-    ]
-  }
+  standardValue = [
+    {
+      fullName = "Spring"
+      default = true
+      label = "Spring"
+    },
+    {
+      fullName = "Summer"
+      default = false
+      label = "Summer"
+    },
+    {
+      fullName = "Fall"
+      default = false
+      label = "Fall"
+    },
+    {
+      fullName = "Winter"
+      default = false
+      label = "Winter"
+    },
+  ]
   _alias = "FiscalYearQuarterName"
 }
