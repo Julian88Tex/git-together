@@ -1,0 +1,196 @@
+name: Org Setup
+run-name: '${{ github.event.inputs.name }}::${{ github.event.inputs.org }}::${{ github.event.inputs.flow }}::${{ github.event.inputs.days }}::${{ github.event.inputs.delete_on_failure }}'
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        required: true
+        description: CumulusCI org name (no spaces)
+        default: my-org
+      flow:
+        type: choice
+        description: CumulusCI flow
+        default: dev_org
+        options:
+        - dev_org
+        - install_prod
+      org:
+        type: choice
+        description: CumulusCI org
+        default: qa
+        options:
+        - qa
+        - regression
+        - preview
+      days:
+        type: string
+        description: Days until org expires (1 to 30)
+        default: '1'
+      delete_on_failure:
+        type: boolean
+        description: Delete org if action fails or is cancelled.
+        default: true
+
+env:
+  CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
+  CUMULUSCI_SERVICE_github: '{"username": "julain88tex", "email": "julian88tex@gmail.com", "token": "${{ secrets.CUMULUSCI_SERVICE_github }}"}'
+
+jobs:
+  org_setup:
+    name: '${{ github.event.inputs.name }}::${{ github.event.inputs.org }}::${{ github.event.inputs.flow }}::${{ github.event.inputs.days }}::${{ github.event.inputs.delete_on_failure }}'
+    runs-on: ubuntu-latest
+    outputs:
+      org_info_output: ${{ steps.org_info_sfdx.outputs.org_info_step }}
+      instanceurl: ${{steps.sfdx_instanceurl.outputs.prop}}
+      username: ${{steps.sfdx_username.outputs.prop}}
+      password: ${{steps.sfdx_password.outputs.prop}}
+      expiration: ${{steps.sfdx_expiration.outputs.prop}}
+      sfdxtemporaryurl: ${{steps.sfdx_temporaryurl.outputs.prop}}
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+      - name: Name Org Alias
+        run: |
+          perl -i -pe 's/git-together - Dev Org/${{ github.event.inputs.name }}/g;' orgs/dev.json
+          perl -i -pe 's/git-together - QA Org/${{ github.event.inputs.name }}/g;' orgs/qa.json
+          perl -i -pe 's/git-together - Regression Org/${{ github.event.inputs.name }}/g;' orgs/regression.json
+          perl -i -pe 's/git-together - Preview Org/${{ github.event.inputs.name }}/g;' orgs/preview.json
+      - name: Install sfdx with npm
+        run: |
+          npm install sfdx-cli --global
+      - name: Authenticate Dev Hub
+        run: |
+          echo ${{ secrets.SFDX_AUTH_URL_JULIAN }} > sfdx_auth
+          sfdx force:auth:sfdxurl:store -f sfdx_auth -d -a DevHub
+      - name: Display Dev Hub Limits
+        run: |
+          sfdx force:limits:api:display -u DevHub
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+      - name: Install CumulusCI
+        run: |
+          python -m pip install -U pip
+          pip install cumulusci
+      - name: Create QA Org
+        run: |
+          cci org scratch ${{ github.event.inputs.org }} ${{ github.event.inputs.name }} --days ${{ github.event.inputs.days }}
+      - name: Run ${{ github.event.inputs.flow }} Flow
+        run: |
+         cci flow run ${{ github.event.inputs.flow }} --org ${{ github.event.inputs.name }}
+      - name: Store Robot Results
+        if: failure()
+        uses: actions/upload-artifact@v1
+        with:
+          name: robot
+          path: robot/git-together/results
+      - name: Display Org Info CCI
+        if: always()
+        run: |
+          echo "::set-output name=org_info_step::$(cci org info ${{ github.event.inputs.name }} --json)"
+      - name: Display Org Info SFDX
+        if: always()
+        run: |
+          sfdx force:org:display --verbose --json -u git-together__${{ github.event.inputs.name }}
+      - name: Display Temporary Login URL (this will expire)
+        if: always()
+        run: |
+          sfdx force:org:open -r -u git-together__${{ github.event.inputs.name }}
+      - name: Save Temporary Login URL To File
+        if: always()
+        run: |
+          sfdx force:org:open -r -u git-together__${{ github.event.inputs.name }} --json >> sfdxtemporaryurl.json
+      - name: Create Error Gist
+        if: failure()
+        run: |
+          cci error gist
+      - name: Save Org Info SFDX
+        id: org_info_sfdx
+        if: always()
+        run: |
+          echo "::set-output name=org_info_step::$(sfdx force:org:display --verbose --json -u git-together__${{ github.event.inputs.name }} >> orgdisplay.json)"
+      - name: Get SFDX Auth URL
+        id: sfdx_auth_url
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'orgdisplay.json'
+            prop_path: 'result.sfdxAuthUrl'
+      - name: Get SFDX Instance URL
+        id: sfdx_instanceurl
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'orgdisplay.json'
+            prop_path: 'result.instanceUrl'
+      - name: Get SFDX Username
+        id: sfdx_username
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'orgdisplay.json'
+            prop_path: 'result.username'
+      - name: Get SFDX Password
+        id: sfdx_password
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'orgdisplay.json'
+            prop_path: 'result.password'
+      - name: Get SFDX Expiration Date
+        id: sfdx_expiration
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'orgdisplay.json'
+            prop_path: 'result.expirationDate'
+      - name: Get SFDX Temporary Instance URL
+        id: sfdx_temporaryurl
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'sfdxtemporaryurl.json'
+            prop_path: 'result.url'
+      - name: Delete Org On Cancellation or Failure
+        if: (cancelled() || failure()) && github.event.inputs.delete_on_failure == 'true'
+        run: |
+          cci org scratch_delete ${{ github.event.inputs.name }}
+
+  # success_notification:
+  #   name: Success Notification
+  #   runs-on: ubuntu-latest
+  #   needs: [org_setup]
+  #   if: success()
+  #   steps:
+  #   - name: Prepare Slack Message
+  #     id: slack-message-creator
+  #     run: |
+  #       SLACK_MESSAGE="*Instance URL:* ${{ needs.org_setup.outputs.instanceurl }}
+  #       *Username:* ${{ needs.org_setup.outputs.username }}
+  #       *Password:* ${{ needs.org_setup.outputs.password }}
+  #       *Expiration Date:* ${{ needs.org_setup.outputs.expiration }}
+  #       *Temporary URL:* ${{ needs.org_setup.outputs.sfdxtemporaryurl }}"
+  #       # Allows for escaping of new line characters so they are captured in message correctly
+  #       echo "::set-output name=slack-message::${SLACK_MESSAGE//$'\n'/'%0A'}"
+  #   - uses: actions/checkout@v2
+  #   - name: Slack Notification
+  #     uses: rtCamp/action-slack-notify@v2
+  #     env:
+  #       SLACK_WEBHOOK: ${{ secrets.SLACK_INBOUND_WEBHOOK_URL_GITHUB_ACTION_NOTIFICATIONS}}
+  #       SLACK_COLOR: ${{ needs.org_setup.result }}
+  #       SLACK_TITLE: 'Success: ${{ github.event.inputs.flow }} flow completed on "${{ github.event.inputs.name }}" org by ${{ github.actor }}.'
+  #       SLACK_MESSAGE: '${{ steps.slack-message-creator.outputs.slack-message }}'
+
+  # failure_notification:
+  #   name: Failure Notification
+  #   runs-on: ubuntu-latest
+  #   needs: [org_setup]
+  #   if: failure()
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: Slack Notification
+  #     uses: rtCamp/action-slack-notify@v2
+  #     env:
+  #       SLACK_WEBHOOK: ${{ secrets.SLACK_INBOUND_WEBHOOK_URL_GITHUB_ACTION_NOTIFICATIONS}}
+  #       SLACK_COLOR: ${{ needs.org_setup.result }}
+  #       SLACK_TITLE: 'Failure: ${{ github.event.inputs.flow }} flow failed on "${{ github.event.inputs.name }}" org.'
+  #       SLACK_MESSAGE: 'Failure: ${{ github.event.inputs.flow }} flow failed on "${{ github.event.inputs.name }}" org.'

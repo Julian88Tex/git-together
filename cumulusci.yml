@@ -120,3 +120,50 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+    run_apex:
+      description: Run Apex to perform post-release actions.
+      class_path: cumulusci.tasks.apex.anon.ApexAnonymous
+      options:
+        apex: |
+          // Sample Apex to update some records
+          List<Account> accounts = [SELECT Id FROM Account WHERE Industry = 'Technology'];
+          for (Account acc : accounts) {
+            acc.Rating = 'Hot';
+          }
+          update accounts;
+
+    deploy_picklist_values:
+      description: Deploy picklist value changes using metadata API.
+      class_path: cumulusci.tasks.salesforce.UpdateMetadata
+      options:
+        api_version: 57.0
+        metadata:
+          CustomField:
+            - fullName: Account.Industry
+              picklist:
+                valueSet:
+                  valueSetDefinition:
+                    value: 
+                      - fullName: New_Picklist_Value_1
+                        default: false
+                      - fullName: New_Picklist_Value_2
+                        default: false
+                    sorted: false
+
+    activate_lightning_record_page:
+      description: Activate a new Lightning Record Page using Robot Framework.
+      class_path: cumulusci.tasks.robotframework.Robot
+      options:
+        test: tests/activate_lightning_record_page.robot
+
+flows:
+    post_release_steps:
+      description: Automate common post-release steps including Apex, picklist updates, and activating a Lightning Record Page.
+      steps:
+        1:
+          task: run_apex
+        2:
+          task: deploy_picklist_values
+        3:
+          task: activate_lightning_record_page

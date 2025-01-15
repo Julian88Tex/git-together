@@ -3,7 +3,7 @@ name: CumulusCI Release Flow
 on:
   push:
     branches:
-      - main
+      - release
 
 jobs:
   run_release_flow:
@@ -37,4 +37,4 @@ jobs:
       # Step 5: Run CumulusCI Release Flow
       - name: Run Release Flow
         run: |
-          cci flow run release --org default
+          cci flow run post_release_steps --org default

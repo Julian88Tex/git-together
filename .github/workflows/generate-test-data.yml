@@ -1,0 +1,20 @@
+name: Generate Test Data with Snowfakery
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: "Choose the dataset to generate (e.g., loan_applications, customer_orders)"
+        required: true
+        default: "loan_applications"
+      record_count:
+        description: "Number of records to generate"
+        required: false
+        default: "100"
+
+jobs:
+  generate-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start data generation
+        run: echo "Generating ${{ github.event.inputs.record_count }} records for ${{ github.event.inputs.dataset }}..."
