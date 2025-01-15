@@ -243,14 +243,11 @@ type salesforce.Account {
     },
     {
       actionName = "View"
-      comment = "Action override created by Lightning App Builder during activation."
-      content = "Account_Record_Page1"
-      formFactor = "Large"
-      skipRecordTypeSelect = false
-      type = "Flexipage"
+      type = "Default"
     },
     {
       actionName = "View"
+      formFactor = "Large"
       type = "Default"
     },
     {
@@ -290,8 +287,7 @@ type salesforce.Account {
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = true
   enableHistory = false
-  externalSharingModel = "ReadWrite"
-  recordTypeTrackFeedHistory = false
+  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ACCOUNT.NAME",
@@ -310,8 +306,6 @@ type salesforce.Account {
       "CORE.USERS.ALIAS",
       "ACCOUNT.TYPE",
       "ACCOUNT.PHONE1",
-      "npo02__HouseholdPhone__c",
-      "npsp__Matching_Gift_Phone__c",
     ]
     searchResultsAdditionalFields = [
       "ACCOUNT.NAME",
@@ -328,9 +322,4 @@ type salesforce.Account {
     Name = salesforce.Account.field.Name
     OwnerId = salesforce.Account.field.OwnerId
   }
-  _generated_dependencies = [
-    {
-      reference = salesforce.LightningPage.instance.Account_Record_Page1
-    },
-  ]
 }
