@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SupportEscalatedCaseNotification@zcd {
+  available = true
+  description = "Notification email on case escalation"
+  encodingKey = "UTF-8"
+  name = "Support: Escalated Case Notification"
+  style = "none"
+  subject = "ESCALATED CASE {!Case.CaseNumber}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportEscalatedCaseNotification"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SupportEscalatedCaseNotification/SupportEscalatedCaseNotification.email")
+  _alias = "unfiled$public/SupportEscalatedCaseNotification"
+}

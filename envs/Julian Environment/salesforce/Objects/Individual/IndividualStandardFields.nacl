@@ -1,0 +1,255 @@
+type salesforce.Individual {
+  salesforce.Date BirthDate {
+    apiName = "Individual.BirthDate"
+    label = "Birth Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox CanStorePiiElsewhere {
+    apiName = "Individual.CanStorePiiElsewhere"
+    defaultValue = false
+    label = "OK to Store PII Data Elsewhere"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ChildrenCount {
+    apiName = "Individual.ChildrenCount"
+    label = "Number of Children"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number ConsumerCreditScore {
+    apiName = "Individual.ConsumerCreditScore"
+    label = "Consumer Credit Score"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Text ConsumerCreditScoreProviderName {
+    apiName = "Individual.ConsumerCreditScoreProviderName"
+    length = 255
+    label = "Consumer Credit Score Provider Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number ConvictionsCount {
+    apiName = "Individual.ConvictionsCount"
+    label = "Conviction Count"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Date DeathDate {
+    apiName = "Individual.DeathDate"
+    label = "Death Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOptedOutGeoTracking {
+    apiName = "Individual.HasOptedOutGeoTracking"
+    defaultValue = false
+    label = "Block Geolocation Tracking"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOptedOutProcessing {
+    apiName = "Individual.HasOptedOutProcessing"
+    defaultValue = false
+    label = "Don't Process"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOptedOutProfiling {
+    apiName = "Individual.HasOptedOutProfiling"
+    defaultValue = false
+    label = "Don't Profile"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOptedOutSolicit {
+    apiName = "Individual.HasOptedOutSolicit"
+    defaultValue = false
+    label = "Don't Market"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOptedOutTracking {
+    apiName = "Individual.HasOptedOutTracking"
+    defaultValue = false
+    label = "Don't Track"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist IndividualsAge {
+    apiName = "Individual.IndividualsAge"
+    restricted = false
+    label = "Individual's Age"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number InfluencerRating {
+    apiName = "Individual.InfluencerRating"
+    label = "Influencer Rating"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Checkbox IsHomeOwner {
+    apiName = "Individual.IsHomeOwner"
+    defaultValue = false
+    label = "Is Homeowner"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist MilitaryService {
+    apiName = "Individual.MilitaryService"
+    restricted = false
+    label = "Military Service"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Name Name {
+    apiName = "Individual.Name"
+    _required = true
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Occupation {
+    apiName = "Individual.Occupation"
+    length = 150
+    label = "Occupation"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Individual.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox SendIndividualData {
+    apiName = "Individual.SendIndividualData"
+    defaultValue = false
+    label = "Export Individual's Data"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox ShouldForget {
+    apiName = "Individual.ShouldForget"
+    defaultValue = false
+    label = "Forget this Individual"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url Website {
+    apiName = "Individual.Website"
+    label = "Website"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Individual.Id"
+    label = "Individual ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Individual.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Individual.MasterRecordId"
+    relationshipName = "MasterRecord"
+    label = "Master Record ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Individual.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Individual.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Individual.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Individual.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Individual.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

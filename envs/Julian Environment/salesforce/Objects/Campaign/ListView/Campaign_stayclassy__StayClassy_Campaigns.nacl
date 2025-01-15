@@ -1,0 +1,30 @@
+salesforce.ListView Campaign_stayclassy__StayClassy_Campaigns {
+  fullName = "Campaign.stayclassy__StayClassy_Campaigns"
+  columns = [
+    "CAMPAIGN.NAME",
+    salesforce.Campaign.field.stayclassy__sc_event_id__c,
+    "CAMPAIGN.START_DATE",
+    "CAMPAIGN.END_DATE",
+    "CAMPAIGN.EXP_REVENUE",
+    "AMOUNT_WON",
+    salesforce.Campaign.field.stayclassy__percent_goal_reached__c,
+    "CAMPAIGN.STATUS",
+    salesforce.Campaign.field.stayclassy__campaign_url__c,
+    "CAMPAIGN.CAMPAIGN_TYPE",
+    "CAMPAIGN.NUM_CONTACTS",
+    "CAMPAIGN.LAST_UPDATE",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "stayclassy__sc_event_id__c"
+      operation = "greaterThan"
+      value = "0"
+    },
+  ]
+  label = "All Classy Campaigns"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "All Classy Campaigns (stayclassy)"
+}

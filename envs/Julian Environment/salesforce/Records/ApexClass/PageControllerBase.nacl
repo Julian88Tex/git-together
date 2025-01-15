@@ -1,0 +1,12 @@
+salesforce.ApexClass PageControllerBase {
+  apiVersion = 29
+  status = "Active"
+  fullName = "PageControllerBase"
+  content = file("salesforce/Records/ApexClass/PageControllerBase.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+  ]
+  _alias = "PageControllerBase"
+}

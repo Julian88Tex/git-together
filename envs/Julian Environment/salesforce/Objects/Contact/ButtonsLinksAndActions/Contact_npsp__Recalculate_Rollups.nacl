@@ -1,0 +1,15 @@
+salesforce.WebLink Contact_npsp__Recalculate_Rollups {
+  fullName = "Contact.npsp__Recalculate_Rollups"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Recalculate Rollups"
+  openType = "sidebar"
+  page = "npsp__CRLP_RollupContact_BTN"
+  protected = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npsp__Recalculate_Rollups"
+}

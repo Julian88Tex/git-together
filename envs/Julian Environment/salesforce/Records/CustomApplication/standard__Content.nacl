@@ -1,0 +1,24 @@
+salesforce.CustomApplication standard__Content {
+  defaultLandingTab = "standard-home"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-Workspace",
+    "standard-ContentSearch",
+    "standard-ContentSubscriptions",
+    salesforce.CustomTab.instance.Candidate__c,
+    salesforce.CustomTab.instance.npsp__Batch__c,
+    salesforce.CustomTab.instance.Region__c,
+    salesforce.CustomTab.instance.New_Customer_Flow,
+    salesforce.CustomTab.instance.npsp__Trigger_Handler__c,
+    salesforce.CustomTab.instance.Animal__c,
+  ]
+  fullName = "standard__Content"
+  _alias = "standard__Content"
+}

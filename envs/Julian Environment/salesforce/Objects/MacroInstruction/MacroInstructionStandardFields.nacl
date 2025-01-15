@@ -1,0 +1,122 @@
+type salesforce.MacroInstruction {
+  serviceid Id {
+    apiName = "MacroInstruction.Id"
+    label = "Macro Instruction ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "MacroInstruction.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "MacroInstruction.Name"
+    label = "Macro Instruction Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "MacroInstruction.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "MacroInstruction.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "MacroInstruction.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "MacroInstruction.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "MacroInstruction.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MacroId {
+    apiName = "MacroInstruction.MacroId"
+    relationshipName = "Macro"
+    _required = true
+    label = "Macro ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Operation {
+    apiName = "MacroInstruction.Operation"
+    restricted = true
+    _required = true
+    label = "Operation"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Target {
+    apiName = "MacroInstruction.Target"
+    restricted = true
+    label = "Target"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Value {
+    apiName = "MacroInstruction.Value"
+    length = 4000
+    label = "Value"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ValueRecord {
+    apiName = "MacroInstruction.ValueRecord"
+    length = 15
+    label = "Value Record ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number SortOrder {
+    apiName = "MacroInstruction.SortOrder"
+    _required = true
+    label = "Sort Order"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+}

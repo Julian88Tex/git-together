@@ -1,0 +1,32 @@
+type salesforce.Trail__c {
+  salesforce.LongTextArea Description__c {
+    apiName = "Trail__c.Description__c"
+    label = "Description"
+    length = 32768
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Distance__c {
+    apiName = "Trail__c.Distance__c"
+    externalId = false
+    label = "Distance"
+    precision = 3
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Last_Inspection_Date__c {
+    apiName = "Trail__c.Last_Inspection_Date__c"
+    label = "Last Inspection Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

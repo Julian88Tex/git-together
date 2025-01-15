@@ -1,0 +1,5 @@
+salesforce.InstalledPackage slackv2 {
+  versionNumber = "1.88"
+  fullName = "slackv2"
+  _alias = "slackv2"
+}

@@ -1,0 +1,6 @@
+type salesforce.OrgMetricScanResult {
+  salesforce.Picklist ItemStatus {
+    apiName = "OrgMetricScanResult.ItemStatus"
+    _hidden_value = true
+  }
+}

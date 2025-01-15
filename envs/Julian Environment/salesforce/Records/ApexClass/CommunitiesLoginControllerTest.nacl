@@ -1,0 +1,12 @@
+salesforce.ApexClass CommunitiesLoginControllerTest {
+  apiVersion = 37
+  status = "Active"
+  fullName = "CommunitiesLoginControllerTest"
+  content = file("salesforce/Records/ApexClass/CommunitiesLoginControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CommunitiesLoginController
+    },
+  ]
+  _alias = "CommunitiesLoginControllerTest"
+}

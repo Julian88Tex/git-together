@@ -1,0 +1,17 @@
+salesforce.WorkflowRule Contact_npe01__Contact_2EEmailChanged_Work@vuupu {
+  fullName = "Contact.npe01__Contact%2EEmailChanged_Work"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__ContactWorkEmailUpdate@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  description = "If the standard Email field is newly entered or changed AND the Preferred Email picklist is set to Work THEN Salesforce will fill in the Work Email field with the email address entered in the standard Email field."
+  formula = "AND(      ISPICKVAL( npe01__Preferred_Email__c ,\"Work\"),      OR(           AND(                ISNEW(),                LEN(Email)>0           ),           ISCHANGED( Email )      ) )"
+  triggerType = "onAllChanges"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Contact%2EEmailChanged_Work"
+}

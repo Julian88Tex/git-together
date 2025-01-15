@@ -1,0 +1,9 @@
+salesforce.ListView Order_AllOrders {
+  fullName = "Order.AllOrders"
+  filterScope = "Everything"
+  label = "All Orders"
+  _parent = [
+    salesforce.Order,
+  ]
+  _alias = "All Orders"
+}

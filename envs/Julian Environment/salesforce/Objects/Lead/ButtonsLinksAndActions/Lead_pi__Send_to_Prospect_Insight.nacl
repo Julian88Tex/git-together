@@ -1,0 +1,17 @@
+salesforce.WebLink Lead_pi__Send_to_Prospect_Insight {
+  fullName = "Lead.pi__Send_to_Prospect_Insight"
+  availability = "online"
+  description = "Send this Lead to Account Engagement"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Send to Account Engagement"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/pi__SendToPardot?leadEmail={!URLENCODE(Lead.Email)}&leadId={!Lead.Id}&serverUrl={!$Api.Partner_Server_URL_90}"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.pi__Send_to_Prospect_Insight"
+}

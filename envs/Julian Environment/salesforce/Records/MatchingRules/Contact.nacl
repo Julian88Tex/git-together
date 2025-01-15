@@ -1,0 +1,75 @@
+salesforce.MatchingRules Contact {
+  fullName = "Contact"
+  matchingRules = [
+    {
+      fullName = "First_Name_Same"
+      description = "First Name Same"
+      label = "First Name Same"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "stayclassy__TEST_Email__c"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+    {
+      fullName = "insights__Insights_Platform_Contact_Matching_Rule"
+      description = "The default matching rule for contact records in Insights Platform. Matches exactly on Last Name, with fuzzy matching on First Name, Mailing Street, and Mailing Zip/Postal Code."
+      label = "Insights Platform Contact Matching Rule"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "FirstName"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "MailingPostalCode"
+          matchingMethod = "Zip"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "MailingStreet"
+          matchingMethod = "Street"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+    {
+      fullName = "npsp__NPSP_Contact_Personal_Email_Match"
+      description = "Matching rule for contact records; matches on First Name, Last Name, and Personal Email."
+      label = "NPSP Contact Personal Email Match"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "FirstName"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "npe01__HomeEmail__c"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+  ]
+  _alias = "Contact"
+}

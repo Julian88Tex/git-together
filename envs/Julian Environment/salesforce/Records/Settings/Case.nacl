@@ -1,0 +1,48 @@
+salesforce.CaseSettings {
+  fullName = "Case"
+  caseAssignNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseAssignmentNotification@zcd
+  caseCreateNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseCreatedPhoneInquiries@zcd
+  caseFeedItemSettings = {
+    characterLimit = 400
+    displayFormat = "Default"
+    feedItemType = "EmailMessageEvent"
+  }
+  caseFeedReadUnreadLtng = false
+  caseMergeInLightning = "false"
+  closeCaseThroughStatusChange = false
+  defaultCaseFeedLayoutOn = true
+  defaultCaseOwner = "julian88tex@gmail.com"
+  defaultCaseOwnerType = "User"
+  defaultCaseUser = "julian88tex@gmail.com"
+  emailToCase = {
+    enableEmailToCase = false
+  }
+  enableCaseFeed = true
+  enableCollapseEmailThread = true
+  enableEarlyEscalationRuleTriggers = false
+  enableEscalateQfiToCaseInternal = false
+  enableEscalateQfiToCaseNetworks = false
+  enableExtNetworksCaseFeedEnabled = false
+  enableMultiLangSolnSrchCSS = "false"
+  enableMultiLangSolnSrchPKB = "false"
+  enableMultiLangSolution = "false"
+  enableSolutionCategory = "false"
+  enableSolutionInlineCategory = "true"
+  enableSolutionShortSummary = "true"
+  enableSuggestedSolutions = true
+  escalateCaseBefore = false
+  notifyContactOnCaseComment = false
+  notifyDefaultCaseOwner = false
+  notifyOwnerOnCaseComment = false
+  notifyOwnerOnCaseOwnerChange = false
+  showEmailAttachmentsInCaseAttachmentsRL = true
+  useSystemEmailAddress = true
+  useSystemUserAsDefaultCaseUser = false
+  visibleInCssCheckbox = false
+  webToCase = {
+    caseOrigin = "Web"
+    defaultResponseTemplate = "unfiled$public/SupportCaseCreatedWebInquiries"
+    enableWebToCase = true
+  }
+  _alias = "Case"
+}

@@ -1,0 +1,225 @@
+salesforce.Flow Change_System_Fields {
+  fullName = "Change_System_Fields"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myDecision"
+      }
+    },
+  ]
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+              ]
+              leftValueReference = "myVariable_current.RecordTypeId"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "01261000000SG8tAAG"
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Is a Household Account"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Change_System_Fields-1_Account"
+  label = "Change _System Fields"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Account"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onCreateOnly"
+      }
+    },
+  ]
+  processType = "Workflow"
+  recordUpdates = [
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "always"
+          }
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Account]"
+          }
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Change _System Field"
+      locationX = 100
+      locationY = 200
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Account.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "Boolean"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "_SYSTEM: IsIndividual"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Boolean"
+              }
+            },
+          ]
+          field = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+          value = {
+            booleanValue = true
+          }
+        },
+      ]
+      object = salesforce.Account
+    },
+  ]
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Obsolete"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Account
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Account
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _alias = "Change _System Fields"
+}

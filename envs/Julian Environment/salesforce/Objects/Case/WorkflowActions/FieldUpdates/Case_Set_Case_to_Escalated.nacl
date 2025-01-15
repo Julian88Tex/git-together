@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Case_Set_Case_to_Escalated@vuuu {
+  fullName = "Case.Set_Case_to_Escalated"
+  field = salesforce.Case.field.IsEscalated
+  literalValue = "1"
+  name = "Set Case to Escalated"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case.Set_Case_to_Escalated"
+}

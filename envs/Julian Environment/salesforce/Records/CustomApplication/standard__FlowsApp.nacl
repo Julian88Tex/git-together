@@ -1,0 +1,24 @@
+salesforce.CustomApplication standard__FlowsApp {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "FlowsApp"
+  navType = "Standard"
+  tabs = [
+    "standard-home",
+    "standard-FlowRecord",
+  ]
+  uiType = "Lightning"
+  utilityBar = "FlowsApp_UtilityBar"
+  fullName = "standard__FlowsApp"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.FlowsApp_UtilityBar
+    },
+  ]
+  _alias = "FlowsApp (standard)"
+}

@@ -1,0 +1,33 @@
+salesforce.ListView Opportunity_stayclassy__StayClassy_Donations {
+  fullName = "Opportunity.stayclassy__StayClassy_Donations"
+  columns = [
+    "OPPORTUNITY.NAME",
+    "ACCOUNT.NAME",
+    salesforce.Opportunity.field.stayclassy__sf_contact_id__c,
+    "OPPORTUNITY.AMOUNT",
+    salesforce.Opportunity.field.stayclassy__order_date__c,
+    salesforce.Opportunity.field.stayclassy__sc_order_id__c,
+    salesforce.Opportunity.field.stayclassy__Campaign__c,
+    salesforce.Opportunity.field.stayclassy__Payment_Method__c,
+    "OPPORTUNITY.RECORDTYPE",
+    "OPPORTUNITY.LAST_UPDATE",
+    salesforce.Opportunity.field.stayclassy__donation_total__c,
+    salesforce.Opportunity.field.stayclassy__sf_recurring_id__c,
+    "OPPORTUNITY.STAGE_NAME",
+    "UPDATEDBY_USER.ALIAS",
+    "CREATEDBY_USER.ALIAS",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "stayclassy__sc_order_id__c"
+      operation = "greaterThan"
+      value = "0"
+    },
+  ]
+  label = "Classy Donations"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Classy Donations (stayclassy)"
+}

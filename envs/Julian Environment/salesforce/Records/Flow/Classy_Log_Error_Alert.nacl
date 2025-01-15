@@ -1,0 +1,172 @@
+salesforce.Flow Classy_Log_Error_Alert {
+  fullName = "Classy_Log_Error_Alert"
+  actionCalls = [
+    {
+      processMetadataValues = [
+        {
+          name = "emailAlertSelection"
+          value = {
+            stringValue = "Classy_Exception_Log"
+          }
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Send Error Email"
+      locationX = 100
+      locationY = 200
+      actionName = "stayclassy__Classy_Logs__c.Classy_Exception_Log"
+      actionType = "emailAlert"
+      inputParameters = [
+        {
+          name = "SObjectRowId"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+      ]
+      nameSegment = "stayclassy__Classy_Logs__c.Classy_Exception_Log"
+      versionSegment = 1
+    },
+  ]
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myDecision"
+      }
+    },
+  ]
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+              ]
+              leftValueReference = "myVariable_current.stayclassy__Type__c"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "Exception"
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Type Exception"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Classy_Log_Error_Alert-2_stayclassy__Classy_Logs__c"
+  label = "Classy Log Error Alert"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "stayclassy__Classy_Logs__c"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onCreateOnly"
+      }
+    },
+  ]
+  processType = "Workflow"
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Draft"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = "stayclassy__Classy_Logs__c"
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = "stayclassy__Classy_Logs__c"
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _alias = "Classy Log Error Alert"
+}

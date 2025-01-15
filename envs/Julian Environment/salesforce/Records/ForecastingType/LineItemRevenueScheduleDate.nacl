@@ -1,0 +1,13 @@
+salesforce.ForecastingType LineItemRevenueScheduleDate {
+  fullName = "LineItemRevenueScheduleDate"
+  active = false
+  amount = true
+  dateType = "2"
+  developerName = "LineItemRevenueScheduleDate"
+  hasCustomGroup = false
+  hasProductFamily = true
+  masterLabel = "Line Item Revenue Schedule Date"
+  quantity = false
+  roleType = "R"
+  _alias = "LineItemRevenueScheduleDate"
+}

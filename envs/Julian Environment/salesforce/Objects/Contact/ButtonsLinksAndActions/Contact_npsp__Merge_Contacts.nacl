@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_npsp__Merge_Contacts {
+  fullName = "Contact.npsp__Merge_Contacts"
+  availability = "online"
+  displayType = "massActionButton"
+  height = 600
+  linkType = "page"
+  masterLabel = "Merge Contacts"
+  openType = "sidebar"
+  page = "npsp__CON_ContactMerge"
+  protected = false
+  requireRowSelection = true
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npsp__Merge_Contacts"
+}

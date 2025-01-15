@@ -1,0 +1,14 @@
+type salesforce.OrgMetricScanSummary {
+  salesforce.Picklist ErrorMessage {
+    apiName = "OrgMetricScanSummary.ErrorMessage"
+    _hidden_value = true
+  }
+  salesforce.Picklist ImplementationEffort {
+    apiName = "OrgMetricScanSummary.ImplementationEffort"
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "OrgMetricScanSummary.Status"
+    _hidden_value = true
+  }
+}

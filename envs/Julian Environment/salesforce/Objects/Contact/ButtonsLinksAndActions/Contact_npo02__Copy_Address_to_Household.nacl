@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_npo02__Copy_Address_to_Household {
+  fullName = "Contact.npo02__Copy_Address_to_Household"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Copy Address to Household"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/npsp__ADDR_CopyAddrHHObjBTN?id={!Contact.Id}"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npo02__Copy_Address_to_Household"
+}

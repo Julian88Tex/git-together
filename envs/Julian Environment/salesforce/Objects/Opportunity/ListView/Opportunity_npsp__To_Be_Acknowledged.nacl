@@ -1,0 +1,26 @@
+salesforce.ListView Opportunity_npsp__To_Be_Acknowledged {
+  fullName = "Opportunity.npsp__To_Be_Acknowledged"
+  columns = [
+    "OPPORTUNITY.NAME",
+    salesforce.Opportunity.field.npsp__Primary_Contact__c,
+    "ACCOUNT.NAME",
+    "OPPORTUNITY.AMOUNT",
+    "OPPORTUNITY.CLOSE_DATE",
+    "OPPORTUNITY.STAGE_NAME",
+    salesforce.Opportunity.field.npsp__Acknowledgment_Status__c,
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "npsp__Acknowledgment_Status__c"
+      operation = "equals"
+      value = "To Be Acknowledged,Email Acknowledgment Not Sent"
+    },
+  ]
+  label = "To Be Acknowledged"
+  language = "en_US"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "To Be Acknowledged (npsp)"
+}

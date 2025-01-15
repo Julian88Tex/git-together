@@ -1,0 +1,5 @@
+salesforce.InstalledPackage npo02 {
+  versionNumber = "3.18"
+  fullName = "npo02"
+  _alias = "npo02"
+}

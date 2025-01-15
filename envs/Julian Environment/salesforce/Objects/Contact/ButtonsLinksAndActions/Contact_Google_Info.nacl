@@ -1,0 +1,23 @@
+salesforce.WebLink Contact_Google_Info {
+  fullName = "Contact.Google_Info"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  hasMenubar = false
+  hasScrollbars = true
+  hasToolbar = false
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "Google Info"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  url = "http://google.com?q={!Contact.Name}"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.Google_Info"
+}

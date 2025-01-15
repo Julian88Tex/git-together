@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_CommunityHeadlessRegistrationTemplate@zcd {
+  available = true
+  description = "Email that users receive with their one-time password during the headless registration flow"
+  encodingKey = "UTF-8"
+  name = "Experience Cloud: One-Time Password Email for Headless Registration Verification"
+  style = "none"
+  subject = "Verify your identity in {!Community.Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/CommunityHeadlessRegistrationTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/CommunityHeadlessRegistrationTemplate/CommunityHeadlessRegistrationTemplate.email")
+  _alias = "unfiled$public/CommunityHeadlessRegistrationTemplate"
+}

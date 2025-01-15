@@ -1,0 +1,127 @@
+type salesforce.AuthorizationFormText {
+  salesforce.MasterDetail AuthorizationFormId {
+    apiName = "AuthorizationFormText.AuthorizationFormId"
+    relationshipName = "AuthorizationForm"
+    _required = true
+    label = "Authorization Form ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup ContentDocumentId {
+    apiName = "AuthorizationFormText.ContentDocumentId"
+    relationshipName = "ContentDocument"
+    label = "Content Document ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown DetailAuthorizationFormText {
+    apiName = "AuthorizationFormText.DetailAuthorizationFormText"
+    _hidden_value = true
+  }
+  salesforce.Text FullAuthorizationFormUrl {
+    apiName = "AuthorizationFormText.FullAuthorizationFormUrl"
+    length = 255
+    label = "Full Authorization Form Url"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Locale {
+    apiName = "AuthorizationFormText.Locale"
+    restricted = true
+    label = "Locale"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "AuthorizationFormText.Name"
+    length = 255
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SummaryAuthFormText {
+    apiName = "AuthorizationFormText.SummaryAuthFormText"
+    length = 255
+    label = "Summary Auth Form Text"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AuthorizationFormText.Id"
+    label = "Authorization Form Text ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationFormText.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationFormText.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationFormText.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationFormText.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationFormText.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationFormText.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LocaleSelection {
+    apiName = "AuthorizationFormText.LocaleSelection"
+    restricted = true
+    label = "Locale"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

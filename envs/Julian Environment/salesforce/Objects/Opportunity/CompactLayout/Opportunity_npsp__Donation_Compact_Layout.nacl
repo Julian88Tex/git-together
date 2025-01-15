@@ -1,0 +1,14 @@
+salesforce.CompactLayout Opportunity_npsp__Donation_Compact_Layout {
+  fullName = "Opportunity.npsp__Donation_Compact_Layout"
+  fields = [
+    "AccountId",
+    "Amount",
+    "CloseDate",
+    "StageName",
+  ]
+  label = "DEPRECATED: Donation Compact Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "DEPRECATED: Donation Compact Layout (npsp)"
+}

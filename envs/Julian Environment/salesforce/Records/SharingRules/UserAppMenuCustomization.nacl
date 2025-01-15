@@ -1,0 +1,4 @@
+salesforce.SharingRules UserAppMenuCustomization {
+  fullName = "UserAppMenuCustomization"
+  _alias = "UserAppMenuCustomization"
+}

@@ -1,0 +1,24 @@
+salesforce.ApexClass leadConvertCoreComponentController {
+  apiVersion = 29
+  status = "Active"
+  fullName = "leadConvertCoreComponentController"
+  content = file("salesforce/Records/ApexClass/leadConvertCoreComponentController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+  _alias = "leadConvertCoreComponentController"
+}

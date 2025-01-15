@@ -1,0 +1,11 @@
+salesforce.Certificate SelfSignedCert_06Feb2021_034316 {
+  caSigned = false
+  encryptedWithPlatformEncryption = false
+  expirationDate = "2022-02-06T00:00:00.000Z"
+  keySize = 2048
+  masterLabel = "SelfSignedCert_06Feb2021_034316"
+  privateKeyExportable = true
+  fullName = "SelfSignedCert_06Feb2021_034316"
+  content = file("salesforce/Records/Certificate/SelfSignedCert_06Feb2021_034316.crt")
+  _alias = "SelfSignedCert_06Feb2021_034316"
+}

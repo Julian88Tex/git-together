@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate@zcd {
+  available = true
+  description = "This email template applies to self-registration requests that are processed in batches after the request is submitted. A user receives this email when there is an error processing their self-registration request."
+  encodingKey = "UTF-8"
+  name = "Experience Cloud: Self-Registration Micro-Batch Submission Error User Email"
+  style = "none"
+  subject = "Your registration to {!Community_Name} has failed"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate.email")
+  _alias = "unfiled$public/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate"
+}

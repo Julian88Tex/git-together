@@ -1,0 +1,4 @@
+salesforce.SharingRules FlowInterviewLog {
+  fullName = "FlowInterviewLog"
+  _alias = "FlowInterviewLog"
+}

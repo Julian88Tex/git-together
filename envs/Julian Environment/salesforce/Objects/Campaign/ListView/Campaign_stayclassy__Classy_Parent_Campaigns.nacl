@@ -1,0 +1,33 @@
+salesforce.ListView Campaign_stayclassy__Classy_Parent_Campaigns {
+  fullName = "Campaign.stayclassy__Classy_Parent_Campaigns"
+  columns = [
+    "CAMPAIGN.NAME",
+    "CAMPAIGN.START_DATE",
+    "CAMPAIGN.END_DATE",
+    "CAMPAIGN.CAMPAIGN_TYPE",
+    "CAMPAIGN.STATUS",
+    "CAMPAIGN.ACTIVE",
+    salesforce.Campaign.field.stayclassy__sc_event_id__c,
+    "CAMPAIGN.CREATED_DATE",
+    "CAMPAIGN.LAST_UPDATE",
+    "AMOUNT_WON",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "stayclassy__sc_event_id__c"
+      operation = "greaterThan"
+      value = "0"
+    },
+    {
+      field = "stayclassy__Classy_Campaign_Type__c"
+      operation = "equals"
+      value = "Campaign"
+    },
+  ]
+  label = "Classy Parent Campaigns"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Classy Parent Campaigns (stayclassy)"
+}

@@ -1,0 +1,13 @@
+salesforce.CustomTab Field_Sales_App {
+  fullName = "Field_Sales_App"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Field_Sales_App"
+  label = "Field Sales App"
+  motif = "Custom53: Bell"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Field_Sales_App
+    },
+  ]
+  _alias = "Field Sales App"
+}

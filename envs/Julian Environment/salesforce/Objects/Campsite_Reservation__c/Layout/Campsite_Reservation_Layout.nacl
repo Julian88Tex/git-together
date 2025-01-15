@@ -1,0 +1,80 @@
+salesforce.Layout Campsite_Reservation__c_Campsite_Reservation_Layout@uuubss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Campsite_Reservation__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Campsite_Reservation__c.field.User__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Campsite_Reservation__c.field.Start_Date__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Campsite_Reservation__c.field.End_Date__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Campsite_Reservation__c.field.Campsite__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Campsite_Reservation__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Campsite_Reservation__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Campsite_Reservation__c-Campsite Reservation Layout"
+  _parent = [
+    salesforce.Campsite_Reservation__c,
+  ]
+  _alias = "Campsite_Reservation__c-Campsite Reservation Layout"
+}

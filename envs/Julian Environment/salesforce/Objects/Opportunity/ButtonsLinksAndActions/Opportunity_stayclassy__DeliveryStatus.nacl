@@ -1,0 +1,23 @@
+salesforce.WebLink Opportunity_stayclassy__DeliveryStatus {
+  fullName = "Opportunity.stayclassy__DeliveryStatus"
+  availability = "online"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  hasMenubar = true
+  hasScrollbars = true
+  hasToolbar = true
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "Unused Field"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = true
+  showsStatus = true
+  url = "http://www.fedex.com/cgi-bin/tracking"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.stayclassy__DeliveryStatus"
+}

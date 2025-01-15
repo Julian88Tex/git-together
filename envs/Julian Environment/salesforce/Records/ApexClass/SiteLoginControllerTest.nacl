@@ -1,0 +1,12 @@
+salesforce.ApexClass SiteLoginControllerTest {
+  apiVersion = 37
+  status = "Active"
+  fullName = "SiteLoginControllerTest"
+  content = file("salesforce/Records/ApexClass/SiteLoginControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SiteLoginController
+    },
+  ]
+  _alias = "SiteLoginControllerTest"
+}

@@ -1,0 +1,7 @@
+salesforce.ExternalClientAppSettings {
+  fullName = "ExternalClientApp"
+  enableClientSecretInRestApiAccess = "false"
+  enableConsumerSecretApiAccess = "false"
+  _alias = "ExternalClientApp"
+  enablePackageEcaOauthFromDevOrg = "false"
+}

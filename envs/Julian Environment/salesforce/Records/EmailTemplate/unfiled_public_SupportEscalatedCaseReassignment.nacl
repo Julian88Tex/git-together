@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SupportEscalatedCaseReassignment@zcd {
+  available = true
+  description = "Case reassignment email to new case owner on escalation"
+  encodingKey = "UTF-8"
+  name = "Support: Escalated Case Reassignment"
+  style = "none"
+  subject = "ESCALATED CASE {!Case.CaseNumber}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportEscalatedCaseReassignment"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SupportEscalatedCaseReassignment/SupportEscalatedCaseReassignment.email")
+  _alias = "unfiled$public/SupportEscalatedCaseReassignment"
+}

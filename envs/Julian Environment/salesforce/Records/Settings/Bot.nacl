@@ -1,0 +1,5 @@
+salesforce.BotSettings {
+  fullName = "Bot"
+  enableBots = false
+  _alias = "Bot"
+}

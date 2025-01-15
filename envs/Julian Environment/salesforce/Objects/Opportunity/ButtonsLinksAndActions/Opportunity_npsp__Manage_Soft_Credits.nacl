@@ -1,0 +1,15 @@
+salesforce.WebLink Opportunity_npsp__Manage_Soft_Credits {
+  fullName = "Opportunity.npsp__Manage_Soft_Credits"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Manage Soft Credits"
+  openType = "sidebar"
+  page = "npsp__PSC_ManageSoftCredits"
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Manage_Soft_Credits"
+}

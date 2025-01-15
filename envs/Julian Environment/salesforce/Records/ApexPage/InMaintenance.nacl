@@ -1,0 +1,60 @@
+salesforce.ApexPage InMaintenance {
+  apiVersion = 37
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Force.com In Maintenance page"
+  label = "InMaintenance"
+  packageVersions = [
+    {
+      majorNumber = 3
+      minorNumber = 4
+      namespace = "npe01"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 5
+      namespace = "npe03"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 3
+      namespace = "npe4"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 3
+      namespace = "npe5"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 6
+      namespace = "npo02"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 82
+      namespace = "npsp"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "sf_chttr_apps"
+    },
+    {
+      majorNumber = 5
+      minorNumber = 201
+      namespace = "stayclassy"
+    },
+  ]
+  fullName = "InMaintenance"
+  content = file("salesforce/Records/ApexPage/InMaintenance.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.StdExceptionTemplate
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+  _alias = "InMaintenance"
+}

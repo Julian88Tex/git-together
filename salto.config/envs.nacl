@@ -1,0 +1,10 @@
+envs {
+  envs = [
+    {
+      name = "Julian Environment"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}

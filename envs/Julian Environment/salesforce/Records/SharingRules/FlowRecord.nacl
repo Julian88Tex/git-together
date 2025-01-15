@@ -1,0 +1,4 @@
+salesforce.SharingRules FlowRecord {
+  fullName = "FlowRecord"
+  _alias = "FlowRecord"
+}

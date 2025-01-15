@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_slackv2__Send_to_Slack {
+  fullName = "Opportunity.slackv2__Send_to_Slack"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Send to Slack"
+  openType = "noSidebar"
+  protected = false
+  url = "/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Opportunity.Id)}&objectApiName=Opportunity"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.slackv2__Send_to_Slack"
+}

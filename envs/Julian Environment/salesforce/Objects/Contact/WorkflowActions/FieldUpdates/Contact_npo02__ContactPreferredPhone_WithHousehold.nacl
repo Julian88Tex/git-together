@@ -1,0 +1,35 @@
+salesforce.WorkflowFieldUpdate Contact_npo02__ContactPreferredPhone_WithHousehold@vuuu {
+  fullName = "Contact.npo02__ContactPreferredPhone_WithHousehold"
+  description = "FOR USE WITH HOUSEHOLDS. Populates the standard Phone field displayed on activities based on the Preferred Phone field value."
+  field = salesforce.Contact.field.Phone
+  formula = '''
+CASE( 
+npe01__PreferredPhone__c , 
+"Work", 
+npe01__WorkPhone__c , 
+"Household",
+ npo02__Formula_HouseholdPhone__c ,
+"Home", 
+HomePhone, 
+"Personal",
+HomePhone,
+"Mobile", 
+MobilePhone, 
+"Other", 
+OtherPhone, 
+If(LEN( npe01__WorkPhone__c )>0 , npe01__WorkPhone__c , 
+if(LEN( HomePhone)>0, HomePhone, 
+if(LEN( MobilePhone)>0, MobilePhone, 
+OtherPhone 
+))))
+'''
+  name = "Contact.PreferredPhone_WithHousehold"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npo02__ContactPreferredPhone_WithHousehold"
+}

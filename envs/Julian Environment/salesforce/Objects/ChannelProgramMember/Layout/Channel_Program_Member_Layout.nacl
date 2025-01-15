@@ -1,0 +1,74 @@
+salesforce.Layout ChannelProgramMember_Channel_Program_Member_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ChannelProgramMember.field.ProgramId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ChannelProgramMember.field.LevelId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ChannelProgramMember.field.PartnerId
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ChannelProgramMember.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ChannelProgramMember.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ChannelProgramMember-Channel Program Member Layout"
+  _parent = [
+    salesforce.ChannelProgramMember,
+  ]
+  _alias = "ChannelProgramMember-Channel Program Member Layout"
+}

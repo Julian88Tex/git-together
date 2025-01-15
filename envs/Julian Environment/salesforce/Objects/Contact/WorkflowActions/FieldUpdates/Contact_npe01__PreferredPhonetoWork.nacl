@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__PreferredPhonetoWork@vuu {
+  fullName = "Contact.npe01__PreferredPhonetoWork"
+  field = salesforce.Contact.field.npe01__PreferredPhone__c
+  literalValue = "Work"
+  name = "Preferred Phone to Work"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__PreferredPhonetoWork"
+}

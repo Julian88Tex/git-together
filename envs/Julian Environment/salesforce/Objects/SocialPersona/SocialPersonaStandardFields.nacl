@@ -1,0 +1,30 @@
+type salesforce.SocialPersona {
+  salesforce.Unknown ExternalId {
+    apiName = "SocialPersona.ExternalId"
+    _hidden_value = true
+  }
+  salesforce.Unknown ExternalPictureURL {
+    apiName = "SocialPersona.ExternalPictureURL"
+    _hidden_value = true
+  }
+  salesforce.Unknown Name {
+    apiName = "SocialPersona.Name"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ParentId {
+    apiName = "SocialPersona.ParentId"
+    _hidden_value = true
+  }
+  salesforce.Unknown ProfileUrl {
+    apiName = "SocialPersona.ProfileUrl"
+    _hidden_value = true
+  }
+  salesforce.Unknown Provider {
+    apiName = "SocialPersona.Provider"
+    _hidden_value = true
+  }
+  salesforce.Unknown SourceApp {
+    apiName = "SocialPersona.SourceApp"
+    _hidden_value = true
+  }
+}

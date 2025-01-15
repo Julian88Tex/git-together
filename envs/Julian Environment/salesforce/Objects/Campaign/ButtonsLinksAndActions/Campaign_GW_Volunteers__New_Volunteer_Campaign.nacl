@@ -1,0 +1,17 @@
+salesforce.WebLink Campaign_GW_Volunteers__New_Volunteer_Campaign {
+  fullName = "Campaign.GW_Volunteers__New_Volunteer_Campaign"
+  availability = "online"
+  displayType = "massActionButton"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "New Volunteer Campaign"
+  openType = "sidebar"
+  protected = false
+  requireRowSelection = false
+  url = "/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}VolunteersCampaignWizard"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.GW_Volunteers__New_Volunteer_Campaign"
+}

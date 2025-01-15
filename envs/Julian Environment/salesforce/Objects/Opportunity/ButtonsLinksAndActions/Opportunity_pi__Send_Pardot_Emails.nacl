@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_pi__Send_Pardot_Emails {
+  fullName = "Opportunity.pi__Send_Pardot_Emails"
+  availability = "online"
+  displayType = "massActionButton"
+  height = 600
+  linkType = "page"
+  masterLabel = "Send Engage Email"
+  openType = "sidebar"
+  page = "pi__MicroCampaignOpportunity"
+  protected = false
+  requireRowSelection = true
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.pi__Send_Pardot_Emails"
+}

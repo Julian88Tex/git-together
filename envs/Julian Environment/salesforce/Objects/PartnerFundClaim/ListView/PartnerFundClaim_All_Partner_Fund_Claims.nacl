@@ -1,0 +1,9 @@
+salesforce.ListView PartnerFundClaim_All_Partner_Fund_Claims {
+  fullName = "PartnerFundClaim.All_Partner_Fund_Claims"
+  filterScope = "Everything"
+  label = "All Partner Fund Claims"
+  _parent = [
+    salesforce.PartnerFundClaim,
+  ]
+  _alias = "All Partner Fund Claims"
+}

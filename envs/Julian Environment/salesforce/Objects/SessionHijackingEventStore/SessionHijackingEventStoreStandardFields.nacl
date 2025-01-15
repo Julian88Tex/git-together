@@ -1,0 +1,278 @@
+type salesforce.SessionHijackingEventStore {
+  salesforce.Text CurrentIp {
+    apiName = "SessionHijackingEventStore.CurrentIp"
+    length = 39
+    label = "Current IP Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CurrentPlatform {
+    apiName = "SessionHijackingEventStore.CurrentPlatform"
+    length = 255
+    label = "Current Platform"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CurrentScreen {
+    apiName = "SessionHijackingEventStore.CurrentScreen"
+    length = 255
+    label = "Current Screen"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea CurrentUserAgent {
+    apiName = "SessionHijackingEventStore.CurrentUserAgent"
+    length = 1000
+    label = "Current User Agent"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CurrentWindow {
+    apiName = "SessionHijackingEventStore.CurrentWindow"
+    length = 255
+    label = "Current Window"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime EventDate {
+    apiName = "SessionHijackingEventStore.EventDate"
+    _required = true
+    label = "Event Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EventIdentifier {
+    apiName = "SessionHijackingEventStore.EventIdentifier"
+    length = 80
+    _required = true
+    label = "Event ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PreviousIp {
+    apiName = "SessionHijackingEventStore.PreviousIp"
+    length = 39
+    label = "Previous IP Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PreviousPlatform {
+    apiName = "SessionHijackingEventStore.PreviousPlatform"
+    length = 255
+    label = "Previous Platform"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PreviousScreen {
+    apiName = "SessionHijackingEventStore.PreviousScreen"
+    length = 255
+    label = "Previous Screen"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea PreviousUserAgent {
+    apiName = "SessionHijackingEventStore.PreviousUserAgent"
+    length = 1000
+    label = "Previous User Agent"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PreviousWindow {
+    apiName = "SessionHijackingEventStore.PreviousWindow"
+    length = 255
+    label = "Previous Window"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Score {
+    apiName = "SessionHijackingEventStore.Score"
+    label = "Score"
+    precision = 12
+    scale = 6
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SecurityEventData {
+    apiName = "SessionHijackingEventStore.SecurityEventData"
+    length = 10000
+    label = "Event Data"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SourceIp {
+    apiName = "SessionHijackingEventStore.SourceIp"
+    length = 255
+    label = "Source IP Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Summary {
+    apiName = "SessionHijackingEventStore.Summary"
+    length = 1000
+    label = "Summary"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "SessionHijackingEventStore.UserId"
+    relationshipName = "User"
+    label = "User ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "SessionHijackingEventStore.Id"
+    label = "Session Hijacking Event Store ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber SessionHijackingEventNumber {
+    apiName = "SessionHijackingEventStore.SessionHijackingEventNumber"
+    label = "Event Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SessionHijackingEventStore.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SessionHijackingEventStore.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SessionHijackingEventStore.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Username {
+    apiName = "SessionHijackingEventStore.Username"
+    length = 255
+    label = "Username"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SessionKey {
+    apiName = "SessionHijackingEventStore.SessionKey"
+    length = 24
+    label = "Session Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LoginKey {
+    apiName = "SessionHijackingEventStore.LoginKey"
+    length = 24
+    label = "Login Key"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PolicyId {
+    apiName = "SessionHijackingEventStore.PolicyId"
+    relationshipName = "Policy"
+    label = "Transaction Security Policy ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PolicyOutcome {
+    apiName = "SessionHijackingEventStore.PolicyOutcome"
+    restricted = true
+    label = "Policy Outcome"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number EvaluationTime {
+    apiName = "SessionHijackingEventStore.EvaluationTime"
+    label = "Evaluation Time"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+}

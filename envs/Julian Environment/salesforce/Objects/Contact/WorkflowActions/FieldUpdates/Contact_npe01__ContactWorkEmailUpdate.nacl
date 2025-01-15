@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__ContactWorkEmailUpdate@vuu {
+  fullName = "Contact.npe01__ContactWorkEmailUpdate"
+  field = salesforce.Contact.field.npe01__WorkEmail__c
+  formula = "Email"
+  name = "Contact.WorkEmail.Update"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__ContactWorkEmailUpdate"
+}

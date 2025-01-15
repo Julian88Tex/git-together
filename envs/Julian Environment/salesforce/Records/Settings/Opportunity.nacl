@@ -1,0 +1,16 @@
+salesforce.OpportunitySettings {
+  fullName = "Opportunity"
+  autoActivateNewReminders = true
+  customizableProductSchedulesEnabled = false
+  doesEnforceStandardOpportunitySaveLogic = true
+  enableFindSimilarOpportunities = false
+  enableOpportunityFieldHistoryTracking = true
+  enableOpportunityInsightsInMobile = false
+  enableOpportunityTeam = false
+  enableUpdateReminders = true
+  oppAmountDealMotionEnabled = "true"
+  oppCloseDateDealMotionEnabled = "true"
+  promptToAddProducts = false
+  pushCountEnabled = "true"
+  _alias = "Opportunity"
+}

@@ -1,0 +1,16 @@
+salesforce.WebLink Lead_slackv2__Slack_Alerts {
+  fullName = "Lead.slackv2__Slack_Alerts"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Slack Alerts"
+  openType = "noSidebar"
+  protected = false
+  url = "/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}slackAlerts?recordId={!CASESAFEID (Lead.Id)}&objectApiName=Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.slackv2__Slack_Alerts"
+}

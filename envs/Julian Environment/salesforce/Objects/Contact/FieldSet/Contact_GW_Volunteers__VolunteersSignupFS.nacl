@@ -1,0 +1,143 @@
+salesforce.FieldSet Contact_GW_Volunteers__VolunteersSignupFS {
+  fullName = "Contact.GW_Volunteers__VolunteersSignupFS"
+  availableFields = [
+    {
+      field = salesforce.Contact.field.Birthdate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Department
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.DoNotCall
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HasOptedOutOfEmail
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.LeadSource
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.MobilePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.OtherPhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Salutation"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Title
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Auto_Reminder_Email_Opt_Out__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "This field set specifies the Contact fields displayed on the VolunteersSignupFS visualforce page, which is exposed through Sites for hosting on public websites."
+  displayedFields = [
+    {
+      field = salesforce.Contact.field.Phone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HomePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Organization__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Notes__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "VolunteersSignupFS"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "VolunteersSignupFS (GW_Volunteers)"
+}

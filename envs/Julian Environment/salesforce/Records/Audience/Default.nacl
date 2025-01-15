@@ -1,0 +1,10 @@
+salesforce.Audience Default {
+  fullName = "Default"
+  audienceName = "Default"
+  container = salesforce.Network.instance.julian88tex
+  criteria = {
+  }
+  formulaFilterType = "AllCriteriaMatch"
+  isDefaultAudience = true
+  _alias = "Default"
+}

@@ -1,0 +1,5 @@
+salesforce.InstalledPackage pi {
+  versionNumber = "4.89"
+  fullName = "pi"
+  _alias = "pi"
+}

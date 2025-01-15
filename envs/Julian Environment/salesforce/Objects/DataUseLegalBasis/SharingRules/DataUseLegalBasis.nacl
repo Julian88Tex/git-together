@@ -1,0 +1,7 @@
+salesforce.SharingRules DataUseLegalBasis {
+  fullName = "DataUseLegalBasis"
+  _parent = [
+    salesforce.DataUseLegalBasis,
+  ]
+  _alias = "DataUseLegalBasis"
+}

@@ -1,0 +1,7 @@
+salesforce.ApexClass emptyClassAndLowerCaseName {
+  apiVersion = 61
+  status = "Active"
+  fullName = "emptyClassAndLowerCaseName"
+  content = file("salesforce/Records/ApexClass/emptyClassAndLowerCaseName.cls")
+  _alias = "emptyClassAndLowerCaseName"
+}

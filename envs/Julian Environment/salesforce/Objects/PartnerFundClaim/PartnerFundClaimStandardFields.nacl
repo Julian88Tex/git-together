@@ -1,0 +1,140 @@
+type salesforce.PartnerFundClaim {
+  salesforce.Lookup AllocationId {
+    apiName = "PartnerFundClaim.AllocationId"
+    relationshipName = "Allocation"
+    label = "Partner Fund Allocation ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency Amount {
+    apiName = "PartnerFundClaim.Amount"
+    _required = true
+    label = "Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Lookup BudgetId {
+    apiName = "PartnerFundClaim.BudgetId"
+    relationshipName = "Budget"
+    label = "Partner Marketing Budget ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerFundClaim.ChannelPartnerId"
+    relationshipName = "ChannelPartner"
+    label = "Channel Partner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerFundClaim.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerFundClaim.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RequestId {
+    apiName = "PartnerFundClaim.RequestId"
+    relationshipName = "Request"
+    _required = true
+    label = "Partner Fund Request ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "PartnerFundClaim.Status"
+    restricted = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerFundClaim.Title"
+    length = 255
+    _required = true
+    label = "Partner Fund Claim Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PartnerFundClaim.Id"
+    label = "Partner Fund Claim ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerFundClaim.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerFundClaim.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerFundClaim.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerFundClaim.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerFundClaim.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerFundClaim.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

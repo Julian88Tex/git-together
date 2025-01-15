@@ -1,0 +1,15 @@
+type salesforce.Position__c {
+  salesforce.Lookup Hiring_Manager__c {
+    apiName = "Position__c.Hiring_Manager__c"
+    deleteConstraint = "SetNull"
+    label = "Hiring Manager"
+    referenceTo = [
+      salesforce.User,
+    ]
+    relationshipName = "Positions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,42 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__ContactPreferredEmail@vuu {
+  fullName = "Contact.npe01__ContactPreferredEmail"
+  field = salesforce.Contact.field.Email
+  formula = '''
+CASE( 
+npe01__Preferred_Email__c , 
+
+"Work", 
+if(len(npe01__WorkEmail__c)>0, npe01__WorkEmail__c, 
+if(len(npe01__HomeEmail__c)>0, npe01__HomeEmail__c, 
+npe01__AlternateEmail__c)), 
+
+"Personal", 
+if(len(npe01__HomeEmail__c)>0, npe01__HomeEmail__c, 
+if(len(npe01__WorkEmail__c)>0, npe01__WorkEmail__c, 
+npe01__AlternateEmail__c)), 
+
+"Home", 
+if(len(npe01__HomeEmail__c)>0, npe01__HomeEmail__c, 
+if(len(npe01__WorkEmail__c)>0, npe01__WorkEmail__c, 
+npe01__AlternateEmail__c)), 
+
+"Alternate", 
+if(len(npe01__AlternateEmail__c)>0, npe01__AlternateEmail__c, 
+if(len(npe01__WorkEmail__c)>0, npe01__WorkEmail__c, 
+npe01__HomeEmail__c)), 
+
+If(LEN(npe01__WorkEmail__c)>0 , npe01__WorkEmail__c , 
+if(LEN( npe01__HomeEmail__c)>0, npe01__HomeEmail__c, 
+npe01__AlternateEmail__c 
+)))
+'''
+  name = "Contact.PreferredEmail"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__ContactPreferredEmail"
+}

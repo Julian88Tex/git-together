@@ -1,0 +1,7 @@
+salesforce.SharingRules AuthorizationFormConsent {
+  fullName = "AuthorizationFormConsent"
+  _parent = [
+    salesforce.AuthorizationFormConsent,
+  ]
+  _alias = "AuthorizationFormConsent"
+}

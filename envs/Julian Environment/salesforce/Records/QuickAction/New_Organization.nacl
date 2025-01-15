@@ -1,0 +1,56 @@
+salesforce.QuickAction New_Organization {
+  fullName = "New_Organization"
+  label = "New Organization"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Type"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "BillingAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Website"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = true
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  targetObject = salesforce.Account
+  targetRecordType = salesforce.RecordType.instance.Account_Organization
+  type = "Create"
+  _alias = "New Organization"
+}

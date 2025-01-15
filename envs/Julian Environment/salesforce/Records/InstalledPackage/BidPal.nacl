@@ -1,0 +1,5 @@
+salesforce.InstalledPackage BidPal {
+  versionNumber = "2.12"
+  fullName = "BidPal"
+  _alias = "BidPal"
+}

@@ -1,0 +1,180 @@
+type salesforce.PartnerFundRequest {
+  salesforce.Picklist Activity {
+    apiName = "PartnerFundRequest.Activity"
+    restricted = false
+    label = "Activity"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.CampaignType
+  }
+  salesforce.Lookup AllocationId {
+    apiName = "PartnerFundRequest.AllocationId"
+    relationshipName = "Allocation"
+    label = "Partner Fund Allocation ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Amount {
+    apiName = "PartnerFundRequest.Amount"
+    label = "Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Lookup BudgetId {
+    apiName = "PartnerFundRequest.BudgetId"
+    relationshipName = "Budget"
+    label = "Partner Marketing Budget ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CampaignId {
+    apiName = "PartnerFundRequest.CampaignId"
+    relationshipName = "Campaign"
+    label = "Campaign ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerFundRequest.ChannelPartnerId"
+    relationshipName = "ChannelPartner"
+    label = "Channel Partner ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerFundRequest.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea DesiredOutcome {
+    apiName = "PartnerFundRequest.DesiredOutcome"
+    label = "Desired Outcome"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerFundRequest.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency RequestedAmount {
+    apiName = "PartnerFundRequest.RequestedAmount"
+    label = "Requested Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "PartnerFundRequest.Status"
+    restricted = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerFundRequest.Title"
+    length = 255
+    _required = true
+    label = "Partner Fund Request Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency TotalApprovedFcs {
+    apiName = "PartnerFundRequest.TotalApprovedFcs"
+    label = "Total Approved Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalReimbursedFcs {
+    apiName = "PartnerFundRequest.TotalReimbursedFcs"
+    label = "Total Reimbursed Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "PartnerFundRequest.Id"
+    label = "Partner Fund Request ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerFundRequest.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerFundRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerFundRequest.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerFundRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerFundRequest.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerFundRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

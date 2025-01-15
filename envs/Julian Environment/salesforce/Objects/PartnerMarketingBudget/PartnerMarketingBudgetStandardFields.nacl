@@ -1,0 +1,179 @@
+type salesforce.PartnerMarketingBudget {
+  salesforce.Currency Amount {
+    apiName = "PartnerMarketingBudget.Amount"
+    _required = true
+    label = "Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerMarketingBudget.ChannelPartnerId"
+    relationshipName = "ChannelPartner"
+    label = "Channel Partner ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerMarketingBudget.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "PartnerMarketingBudget.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsIgnoreValidation {
+    apiName = "PartnerMarketingBudget.IsIgnoreValidation"
+    defaultValue = false
+    label = "Ignore Validation Rules"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerMarketingBudget.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Hierarchy ParentMdfBudgetId {
+    apiName = "PartnerMarketingBudget.ParentMdfBudgetId"
+    _hidden_value = true
+  }
+  salesforce.Date StartDate {
+    apiName = "PartnerMarketingBudget.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerMarketingBudget.Title"
+    length = 255
+    _required = true
+    label = "Partner Marketing Budget Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency TotalAllocatedAmount {
+    apiName = "PartnerMarketingBudget.TotalAllocatedAmount"
+    label = "Total Allocated Amount"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFcs {
+    apiName = "PartnerMarketingBudget.TotalApprovedFcs"
+    label = "Total Approved Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFrs {
+    apiName = "PartnerMarketingBudget.TotalApprovedFrs"
+    label = "Total Approved Fund Requests"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalReimbursedFcs {
+    apiName = "PartnerMarketingBudget.TotalReimbursedFcs"
+    label = "Total Reimbursed Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "PartnerMarketingBudget.Type"
+    restricted = true
+    _required = true
+    label = "Budget Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PartnerMarketingBudget.Id"
+    label = "Partner Marketing Budget ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerMarketingBudget.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerMarketingBudget.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerMarketingBudget.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerMarketingBudget.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerMarketingBudget.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerMarketingBudget.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

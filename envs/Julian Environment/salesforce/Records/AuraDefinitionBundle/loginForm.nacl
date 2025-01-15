@@ -1,0 +1,23 @@
+salesforce.AuraDefinitionBundle loginForm {
+  apiVersion = 37
+  description = "Sample Component for loginForm"
+  fullName = "loginForm"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/loginForm/loginFormController.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/loginForm/loginFormHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/loginForm/loginForm.css")
+  designContent = file("salesforce/Records/AuraDefinitionBundle/loginForm/loginForm.design")
+  markup = file("salesforce/Records/AuraDefinitionBundle/loginForm/loginForm.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LightningLoginFormController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.loginForm
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.setStartUrl
+    },
+  ]
+  _alias = "loginForm"
+}

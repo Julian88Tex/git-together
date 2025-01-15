@@ -1,0 +1,42 @@
+salesforce.ApexClass leadConvertController {
+  apiVersion = 29
+  status = "Active"
+  fullName = "leadConvertController"
+  content = file("salesforce/Records/ApexClass/leadConvertController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Activity.field.Primary_Resource__c
+    },
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.DateTimeUtility
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertCoreComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskDescComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskInfoComponentController
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertController"
+}

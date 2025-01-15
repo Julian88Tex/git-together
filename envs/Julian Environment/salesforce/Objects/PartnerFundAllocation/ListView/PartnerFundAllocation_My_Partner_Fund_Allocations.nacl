@@ -1,0 +1,9 @@
+salesforce.ListView PartnerFundAllocation_My_Partner_Fund_Allocations {
+  fullName = "PartnerFundAllocation.My_Partner_Fund_Allocations"
+  filterScope = "Mine"
+  label = "My Partner Fund Allocations"
+  _parent = [
+    salesforce.PartnerFundAllocation,
+  ]
+  _alias = "My Partner Fund Allocations"
+}

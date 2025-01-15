@@ -1,0 +1,21 @@
+salesforce.ApexClass MicrobatchSelfRegController {
+  apiVersion = 54
+  status = "Active"
+  fullName = "MicrobatchSelfRegController"
+  content = file("salesforce/Records/ApexClass/MicrobatchSelfRegController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexPage.instance.CommunitiesSelfRegConfirm
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+  _alias = "MicrobatchSelfRegController"
+}

@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_slackv2__Send_to_Slack {
+  fullName = "Contact.slackv2__Send_to_Slack"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Send to Slack"
+  openType = "noSidebar"
+  protected = false
+  url = "/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Contact.Id)}&objectApiName=Contact"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.slackv2__Send_to_Slack"
+}

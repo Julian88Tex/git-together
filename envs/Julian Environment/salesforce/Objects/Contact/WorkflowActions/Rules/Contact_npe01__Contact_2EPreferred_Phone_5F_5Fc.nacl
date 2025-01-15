@@ -1,0 +1,17 @@
+salesforce.WorkflowRule Contact_npe01__Contact_2EPreferred_Phone_5F_5Fc@vuupupp {
+  fullName = "Contact.npe01__Contact%2EPreferred_Phone%5F%5Fc"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__ContactPreferredPhone@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  description = "This workflow OVERWRITES the existing value in the standard Phone field based on the Preferred Phone field value.  This rule needs to be turned on manually after an Upgrade to this package."
+  formula = "OR(  LEN(Phone)=0, ISCHANGED(npe01__PreferredPhone__c) ,  ISCHANGED(npe01__WorkPhone__c) ,  ISCHANGED(HomePhone) ,  ISCHANGED(MobilePhone) , ISCHANGED(OtherPhone)  )"
+  triggerType = "onAllChanges"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Contact%2EPreferred_Phone%5F%5Fc"
+}
