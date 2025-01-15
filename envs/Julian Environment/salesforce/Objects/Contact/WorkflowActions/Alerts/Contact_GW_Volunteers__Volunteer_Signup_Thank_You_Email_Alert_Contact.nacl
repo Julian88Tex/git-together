@@ -1,0 +1,17 @@
+salesforce.WorkflowAlert Contact_GW_Volunteers__Volunteer_Signup_Thank_You_Email_Alert_Contact@vuuuuuuuuu {
+  fullName = "Contact.GW_Volunteers__Volunteer_Signup_Thank_You_Email_Alert_Contact"
+  description = "Volunteer Signup Thank You Email Alert - Contact"
+  protected = false
+  recipients = [
+    {
+      field = salesforce.Contact.field.Email
+      type = "email"
+    },
+  ]
+  senderType = "CurrentUser"
+  template = "GW_Volunteers__Volunteers_Email_Templates/GW_Volunteers__Volunteer_Signup_Thank_You"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.GW_Volunteers__Volunteer_Signup_Thank_You_Email_Alert_Contact"
+}

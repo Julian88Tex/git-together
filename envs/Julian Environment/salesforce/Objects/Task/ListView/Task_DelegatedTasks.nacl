@@ -1,0 +1,20 @@
+salesforce.ListView Task_DelegatedTasks {
+  fullName = "Task.DelegatedTasks"
+  columns = [
+    "SUBJECT",
+    "WHO_NAME",
+    "WHAT_NAME",
+    "DUE_DATE",
+    "STATUS",
+    "PRIORITY",
+    "CORE.USERS.ALIAS",
+    "LAST_UPDATE",
+    "UPDATEDBY_USER.ALIAS",
+  ]
+  filterScope = "Delegated"
+  label = "ENCODED:{!FilterNames.Task_DelegatedTasks}"
+  _parent = [
+    salesforce.Task,
+  ]
+  _alias = "ENCODED:{!FilterNames.Task_DelegatedTasks}"
+}

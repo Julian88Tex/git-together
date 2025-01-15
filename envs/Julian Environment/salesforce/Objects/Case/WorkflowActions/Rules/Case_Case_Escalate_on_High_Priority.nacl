@@ -1,0 +1,31 @@
+salesforce.WorkflowRule Case_Case_Escalate_on_High_Priority@vssss {
+  fullName = "Case.Case Escalate on High Priority"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Case_Set_Case_to_Escalated@vuuu
+      type = "FieldUpdate"
+    },
+    {
+      name = salesforce.WorkflowTask.instance.Case_Follow_Up_on_Escalated_Case@vuuuu
+      type = "Task"
+    },
+  ]
+  active = true
+  criteriaItems = [
+    {
+      field = salesforce.Case.field.Priority
+      operation = "equals"
+      value = "High"
+    },
+    {
+      field = salesforce.Case.field.Status
+      operation = "notEqual"
+      value = "Closed"
+    },
+  ]
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case.Case Escalate on High Priority"
+}

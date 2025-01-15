@@ -1,0 +1,141 @@
+type salesforce.Case {
+  salesforce.FormulaNumber Days_Since_Last_Update__c {
+    apiName = "Case.Days_Since_Last_Update__c"
+    externalId = false
+    formula = "Today() - Account.LastActivityDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Days Since Last Update"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.LastActivityDate
+      },
+      {
+        reference = salesforce.Case.field.AccountId
+      },
+    ]
+  }
+  salesforce.Text EngineeringReqNumber__c {
+    apiName = "Case.EngineeringReqNumber__c"
+    externalId = false
+    label = "Engineering Req Number"
+    length = 12
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist PotentialLiability__c {
+    apiName = "Case.PotentialLiability__c"
+    label = "Potential Liability"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Product__c {
+    apiName = "Case.Product__c"
+    label = "Product"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "GC1040"
+        default = false
+        label = "GC1040"
+      },
+      {
+        fullName = "GC1060"
+        default = false
+        label = "GC1060"
+      },
+      {
+        fullName = "GC3020"
+        default = false
+        label = "GC3020"
+      },
+      {
+        fullName = "GC3040"
+        default = false
+        label = "GC3040"
+      },
+      {
+        fullName = "GC3060"
+        default = false
+        label = "GC3060"
+      },
+      {
+        fullName = "GC5020"
+        default = false
+        label = "GC5020"
+      },
+      {
+        fullName = "GC5040"
+        default = false
+        label = "GC5040"
+      },
+      {
+        fullName = "GC5060"
+        default = false
+        label = "GC5060"
+      },
+      {
+        fullName = "GC1020"
+        default = false
+        label = "GC1020"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SLAViolation__c {
+    apiName = "Case.SLAViolation__c"
+    label = "SLA Violation"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

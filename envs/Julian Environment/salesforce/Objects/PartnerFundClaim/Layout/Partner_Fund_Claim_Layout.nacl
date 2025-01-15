@@ -1,0 +1,100 @@
+salesforce.Layout PartnerFundClaim_Partner_Fund_Claim_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundClaim.field.Title
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundClaim.field.RequestId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundClaim.field.BudgetId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundClaim.field.AllocationId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundClaim.field.ChannelPartnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundClaim.field.Amount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundClaim.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundClaim.field.Description
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundClaim.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundClaim.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundClaim.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PartnerFundClaim-Partner Fund Claim Layout"
+  _parent = [
+    salesforce.PartnerFundClaim,
+  ]
+  _alias = "PartnerFundClaim-Partner Fund Claim Layout"
+}

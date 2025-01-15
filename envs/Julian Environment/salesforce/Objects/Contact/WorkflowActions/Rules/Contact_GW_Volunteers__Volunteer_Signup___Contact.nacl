@@ -1,0 +1,25 @@
+salesforce.WorkflowRule Contact_GW_Volunteers__Volunteer_Signup___Contact@vuuussbs {
+  fullName = "Contact.GW_Volunteers__Volunteer Signup - Contact"
+  actions = [
+    {
+      name = salesforce.WorkflowAlert.instance.Contact_GW_Volunteers__Volunteer_Signup_Notification_Email_Alert_Contact@vuuuuuuuu
+      type = "Alert"
+    },
+    {
+      name = salesforce.WorkflowAlert.instance.Contact_GW_Volunteers__Volunteer_Signup_Thank_You_Email_Alert_Contact@vuuuuuuuuu
+      type = "Alert"
+    },
+    {
+      name = salesforce.WorkflowTask.instance.Contact_GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Contact@vuuuuuuuu
+      type = "Task"
+    },
+  ]
+  active = true
+  description = "When a contact is updated or created from VolunteersSignup(FS) or VolunteersJobListing(FS), thank them and notify the volunteer manager.  Note if you are not using VolunteersSignup(FS), you can de-activate this rule to avoid multiple emails being sent."
+  formula = "GW_Volunteers__Volunteer_Last_Web_Signup_Date__c =  TODAY()"
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.GW_Volunteers__Volunteer Signup - Contact"
+}

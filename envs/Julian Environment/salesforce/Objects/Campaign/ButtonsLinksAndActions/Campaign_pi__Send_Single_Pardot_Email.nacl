@@ -1,0 +1,15 @@
+salesforce.WebLink Campaign_pi__Send_Single_Pardot_Email {
+  fullName = "Campaign.pi__Send_Single_Pardot_Email"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Send Engage Email"
+  openType = "sidebar"
+  page = "pi__MicroCampaignSingleCampaign"
+  protected = false
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.pi__Send_Single_Pardot_Email"
+}

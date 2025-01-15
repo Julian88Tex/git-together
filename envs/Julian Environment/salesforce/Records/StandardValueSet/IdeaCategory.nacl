@@ -1,0 +1,5 @@
+salesforce.StandardValueSet IdeaCategory {
+  fullName = "IdeaCategory"
+  sorted = false
+  _alias = "IdeaCategory"
+}

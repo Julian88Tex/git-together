@@ -1,0 +1,102 @@
+salesforce.ApexPage MicrobatchSelfReg {
+  apiVersion = 54
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Process self-registration requests in batches instead of individually"
+  label = "MicrobatchSelfReg"
+  packageVersions = [
+    {
+      majorNumber = 2
+      minorNumber = 12
+      namespace = "BidPal"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 121
+      namespace = "GW_Volunteers"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 49
+      namespace = "emma"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 99
+      namespace = "funraise"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 20
+      namespace = "insights"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 19
+      namespace = "npe01"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 22
+      namespace = "npe03"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 12
+      namespace = "npe4"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 10
+      namespace = "npe5"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 15
+      namespace = "npo02"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 212
+      namespace = "npsp"
+    },
+    {
+      majorNumber = 3
+      minorNumber = 85
+      namespace = "pi"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 20
+      namespace = "sf_chttr_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 0
+      namespace = "sfdobase"
+    },
+    {
+      majorNumber = 5
+      minorNumber = 201
+      namespace = "stayclassy"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 100
+      namespace = "zkmulti"
+    },
+  ]
+  fullName = "MicrobatchSelfReg"
+  content = file("salesforce/Records/ApexPage/MicrobatchSelfReg.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MicrobatchSelfRegController
+    },
+  ]
+  _alias = "MicrobatchSelfReg"
+}

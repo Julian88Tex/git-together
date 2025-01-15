@@ -1,0 +1,921 @@
+type salesforce.Campaign {
+  salesforce.Lookup Classy_Campaign__c {
+    apiName = "Campaign.Classy_Campaign__c"
+    deleteConstraint = "SetNull"
+    label = "Campaign"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Campaigns"
+    relationshipName = "Campaigns"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup Classy_Team__c {
+    apiName = "Campaign.Classy_Team__c"
+    deleteConstraint = "SetNull"
+    label = "Campaign_Team"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Campaigns (Campaign_Team)"
+    relationshipName = "Campaigns1"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DB_Campaign_Tactic__c {
+    apiName = "Campaign.DB_Campaign_Tactic__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    label = "DB Campaign Tactic"
+    valueSet = [
+      {
+        fullName = "Print Advertisement"
+        default = false
+        label = "Print Advertisement"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Employment Seminars"
+        default = false
+        label = "Employment Seminars"
+      },
+      {
+        fullName = "Webinars"
+        default = false
+        label = "Webinars"
+      },
+      {
+        fullName = "Public Relations"
+        default = false
+        label = "Public Relations"
+      },
+      {
+        fullName = "Partners"
+        default = false
+        label = "Partners"
+      },
+      {
+        fullName = "Referral Program"
+        default = false
+        label = "Referral Program"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+      {
+        fullName = "Lunches"
+        default = false
+        label = "Lunches"
+      },
+      {
+        fullName = "Direct Mail"
+        default = false
+        label = "Direct Mail"
+      },
+      {
+        fullName = "Sales Call Down"
+        default = false
+        label = "Sales Call Down"
+      },
+      {
+        fullName = "Online Banners/Ads"
+        default = false
+        label = "Online Banners/Ads"
+      },
+      {
+        fullName = "Internal Website"
+        default = false
+        label = "Internal Website"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary GW_Volunteers__Number_of_Volunteers__c {
+    apiName = "Campaign.GW_Volunteers__Number_of_Volunteers__c"
+    deprecated = false
+    inlineHelpText = "The total number of volunteers whose Hours Status = Completed or Confirmed."
+    label = "Number of Volunteers"
+    summarizedField = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Number_of_Volunteers__c"
+    summaryForeignKey = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Campaign__c"
+    summaryOperation = "sum"
+    precision = 5
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary GW_Volunteers__Volunteer_Completed_Hours__c {
+    apiName = "Campaign.GW_Volunteers__Volunteer_Completed_Hours__c"
+    deprecated = false
+    inlineHelpText = "Total number of hours that are completed.  Hours with other status values are not included."
+    label = "Volunteer Completed Hours"
+    summarizedField = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Number_of_Completed_Hours__c"
+    summaryForeignKey = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Campaign__c"
+    summaryOperation = "sum"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary GW_Volunteers__Volunteer_Jobs__c {
+    apiName = "Campaign.GW_Volunteers__Volunteer_Jobs__c"
+    deprecated = false
+    label = "Volunteer Jobs"
+    summaryForeignKey = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Campaign__c"
+    summaryOperation = "count"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary GW_Volunteers__Volunteer_Shifts__c {
+    apiName = "Campaign.GW_Volunteers__Volunteer_Shifts__c"
+    deprecated = false
+    label = "Volunteer Shifts"
+    summarizedField = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Number_of_Shifts__c"
+    summaryForeignKey = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Campaign__c"
+    summaryOperation = "sum"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist GW_Volunteers__Volunteer_Website_Time_Zone__c {
+    apiName = "Campaign.GW_Volunteers__Volunteer_Website_Time_Zone__c"
+    deprecated = false
+    inlineHelpText = "The Time Zone to use when displaying Shift times on Sites pages.  You only need to set this if you want to override the Time Zone set on the Site Guest User profile."
+    label = "Volunteer Website Time Zone"
+    valueSet = [
+      {
+        fullName = "Pacific/Kiritimati"
+        default = false
+        label = "Pacific/Kiritimati"
+      },
+      {
+        fullName = "Pacific/Chatham"
+        default = false
+        label = "Pacific/Chatham"
+      },
+      {
+        fullName = "Pacific/Auckland"
+        default = false
+        label = "Pacific/Auckland"
+      },
+      {
+        fullName = "Pacific/Enderbury"
+        default = false
+        label = "Pacific/Enderbury"
+      },
+      {
+        fullName = "Pacific/Tongatapu"
+        default = false
+        label = "Pacific/Tongatapu"
+      },
+      {
+        fullName = "Asia/Kamchatka"
+        default = false
+        label = "Asia/Kamchatka"
+      },
+      {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "Pacific/Fiji"
+      },
+      {
+        fullName = "Pacific/Norfolk"
+        default = false
+        label = "Pacific/Norfolk"
+      },
+      {
+        fullName = "Australia/Lord_Howe"
+        default = false
+        label = "Australia/Lord_Howe"
+      },
+      {
+        fullName = "Australia/Sydney"
+        default = false
+        label = "Australia/Sydney"
+      },
+      {
+        fullName = "Pacific/Guadalcanal"
+        default = false
+        label = "Pacific/Guadalcanal"
+      },
+      {
+        fullName = "Australia/Adelaide"
+        default = false
+        label = "Australia/Adelaide"
+      },
+      {
+        fullName = "Australia/Brisbane"
+        default = false
+        label = "Australia/Brisbane"
+      },
+      {
+        fullName = "Australia/Darwin"
+        default = false
+        label = "Australia/Darwin"
+      },
+      {
+        fullName = "Asia/Seoul"
+        default = false
+        label = "Asia/Seoul"
+      },
+      {
+        fullName = "Asia/Tokyo"
+        default = false
+        label = "Asia/Tokyo"
+      },
+      {
+        fullName = "Asia/Hong_Kong"
+        default = false
+        label = "Asia/Hong_Kong"
+      },
+      {
+        fullName = "Asia/Kuala_Lumpur"
+        default = false
+        label = "Asia/Kuala_Lumpur"
+      },
+      {
+        fullName = "Asia/Manila"
+        default = false
+        label = "Asia/Manila"
+      },
+      {
+        fullName = "Asia/Shanghai"
+        default = false
+        label = "Asia/Shanghai"
+      },
+      {
+        fullName = "Asia/Singapore"
+        default = false
+        label = "Asia/Singapore"
+      },
+      {
+        fullName = "Asia/Taipei"
+        default = false
+        label = "Asia/Taipei"
+      },
+      {
+        fullName = "Australia/Perth"
+        default = false
+        label = "Australia/Perth"
+      },
+      {
+        fullName = "Asia/Bangkok"
+        default = false
+        label = "Asia/Bangkok"
+      },
+      {
+        fullName = "Asia/Jakarta"
+        default = false
+        label = "Asia/Jakarta"
+      },
+      {
+        fullName = "Asia/Saigon"
+        default = false
+        label = "Asia/Saigon"
+      },
+      {
+        fullName = "Asia/Rangoon"
+        default = false
+        label = "Asia/Rangoon"
+      },
+      {
+        fullName = "Asia/Dacca"
+        default = false
+        label = "Asia/Dacca"
+      },
+      {
+        fullName = "Asia/Yekaterinburg"
+        default = false
+        label = "Asia/Yekaterinburg"
+      },
+      {
+        fullName = "Asia/Katmandu"
+        default = false
+        label = "Asia/Katmandu"
+      },
+      {
+        fullName = "Asia/Calcutta"
+        default = false
+        label = "Asia/Calcutta"
+      },
+      {
+        fullName = "Asia/Colombo"
+        default = false
+        label = "Asia/Colombo"
+      },
+      {
+        fullName = "Asia/Karachi"
+        default = false
+        label = "Asia/Karachi"
+      },
+      {
+        fullName = "Asia/Tashkent"
+        default = false
+        label = "Asia/Tashkent"
+      },
+      {
+        fullName = "Asia/Kabul"
+        default = false
+        label = "Asia/Kabul"
+      },
+      {
+        fullName = "Asia/Dubai"
+        default = false
+        label = "Asia/Dubai"
+      },
+      {
+        fullName = "Asia/Tbilisi"
+        default = false
+        label = "Asia/Tbilisi"
+      },
+      {
+        fullName = "Europe/Moscow"
+        default = false
+        label = "Europe/Moscow"
+      },
+      {
+        fullName = "Asia/Tehran"
+        default = false
+        label = "Asia/Tehran"
+      },
+      {
+        fullName = "Africa/Nairobi"
+        default = false
+        label = "Africa/Nairobi"
+      },
+      {
+        fullName = "Asia/Baghdad"
+        default = false
+        label = "Asia/Baghdad"
+      },
+      {
+        fullName = "Asia/Kuwait"
+        default = false
+        label = "Asia/Kuwait"
+      },
+      {
+        fullName = "Asia/Riyadh"
+        default = false
+        label = "Asia/Riyadh"
+      },
+      {
+        fullName = "Europe/Minsk"
+        default = false
+        label = "Europe/Minsk"
+      },
+      {
+        fullName = "Africa/Cairo"
+        default = false
+        label = "Africa/Cairo"
+      },
+      {
+        fullName = "Africa/Johannesburg"
+        default = false
+        label = "Africa/Johannesburg"
+      },
+      {
+        fullName = "Asia/Jerusalem"
+        default = false
+        label = "Asia/Jerusalem"
+      },
+      {
+        fullName = "Europe/Athens"
+        default = false
+        label = "Europe/Athens"
+      },
+      {
+        fullName = "Europe/Bucharest"
+        default = false
+        label = "Europe/Bucharest"
+      },
+      {
+        fullName = "Europe/Helsinki"
+        default = false
+        label = "Europe/Helsinki"
+      },
+      {
+        fullName = "Europe/Istanbul"
+        default = false
+        label = "Europe/Istanbul"
+      },
+      {
+        fullName = "Africa/Algiers"
+        default = false
+        label = "Africa/Algiers"
+      },
+      {
+        fullName = "Europe/Amsterdam"
+        default = false
+        label = "Europe/Amsterdam"
+      },
+      {
+        fullName = "Europe/Berlin"
+        default = false
+        label = "Europe/Berlin"
+      },
+      {
+        fullName = "Europe/Brussels"
+        default = false
+        label = "Europe/Brussels"
+      },
+      {
+        fullName = "Europe/Paris"
+        default = false
+        label = "Europe/Paris"
+      },
+      {
+        fullName = "Europe/Prague"
+        default = false
+        label = "Europe/Prague"
+      },
+      {
+        fullName = "Europe/Rome"
+        default = false
+        label = "Europe/Rome"
+      },
+      {
+        fullName = "Europe/Dublin"
+        default = false
+        label = "Europe/Dublin"
+      },
+      {
+        fullName = "Europe/Lisbon"
+        default = false
+        label = "Europe/Lisbon"
+      },
+      {
+        fullName = "Europe/London"
+        default = false
+        label = "Europe/London"
+      },
+      {
+        fullName = "GMT"
+        default = false
+        label = "GMT"
+      },
+      {
+        fullName = "Atlantic/Cape_Verde"
+        default = false
+        label = "Atlantic/Cape_Verde"
+      },
+      {
+        fullName = "America/Sao_Paulo"
+        default = false
+        label = "America/Sao_Paulo"
+      },
+      {
+        fullName = "Atlantic/South_Georgia"
+        default = false
+        label = "Atlantic/South_Georgia"
+      },
+      {
+        fullName = "America/Buenos_Aires"
+        default = false
+        label = "America/Buenos_Aires"
+      },
+      {
+        fullName = "America/Santiago"
+        default = false
+        label = "America/Santiago"
+      },
+      {
+        fullName = "America/St_Johns"
+        default = false
+        label = "America/St_Johns"
+      },
+      {
+        fullName = "America/Halifax"
+        default = false
+        label = "America/Halifax"
+      },
+      {
+        fullName = "America/Puerto_Rico"
+        default = false
+        label = "America/Puerto_Rico"
+      },
+      {
+        fullName = "Atlantic/Bermuda"
+        default = false
+        label = "Atlantic/Bermuda"
+      },
+      {
+        fullName = "America/Caracas"
+        default = false
+        label = "America/Caracas"
+      },
+      {
+        fullName = "America/Bogota"
+        default = false
+        label = "America/Bogota"
+      },
+      {
+        fullName = "America/Indianapolis"
+        default = false
+        label = "America/Indianapolis"
+      },
+      {
+        fullName = "America/Lima"
+        default = false
+        label = "America/Lima"
+      },
+      {
+        fullName = "America/New_York"
+        default = false
+        label = "America/New_York"
+      },
+      {
+        fullName = "America/Panama"
+        default = false
+        label = "America/Panama"
+      },
+      {
+        fullName = "America/Chicago"
+        default = false
+        label = "America/Chicago"
+      },
+      {
+        fullName = "America/El_Salvador"
+        default = false
+        label = "America/El_Salvador"
+      },
+      {
+        fullName = "America/Mexico_City"
+        default = false
+        label = "America/Mexico_City"
+      },
+      {
+        fullName = "America/Denver"
+        default = false
+        label = "America/Denver"
+      },
+      {
+        fullName = "America/Phoenix"
+        default = false
+        label = "America/Phoenix"
+      },
+      {
+        fullName = "America/Los_Angeles"
+        default = false
+        label = "America/Los_Angeles"
+      },
+      {
+        fullName = "America/Tijuana"
+        default = false
+        label = "America/Tijuana"
+      },
+      {
+        fullName = "America/Anchorage"
+        default = false
+        label = "America/Anchorage"
+      },
+      {
+        fullName = "Pacific/Honolulu"
+        default = false
+        label = "Pacific/Honolulu"
+      },
+      {
+        fullName = "Pacific/Niue"
+        default = false
+        label = "Pacific/Niue"
+      },
+      {
+        fullName = "Pacific/Pago_Pago"
+        default = false
+        label = "Pacific/Pago_Pago"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary GW_Volunteers__Volunteers_Still_Needed__c {
+    apiName = "Campaign.GW_Volunteers__Volunteers_Still_Needed__c"
+    deprecated = false
+    label = "Volunteers Still Needed"
+    summarizedField = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Number_of_Volunteers_Still_Needed__c"
+    summaryForeignKey = "GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Campaign__c"
+    summaryOperation = "sum"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text funraise__fr_ID__c {
+    apiName = "Campaign.funraise__fr_ID__c"
+    caseSensitive = false
+    deprecated = false
+    description = "Funraise ID for campaigns in platform"
+    externalId = true
+    label = "Funraise ID"
+    length = 255
+    unique = true
+    _hidden_value = true
+  }
+  salesforce.Text pi__Pardot_Campaign_Id__c {
+    apiName = "Campaign.pi__Pardot_Campaign_Id__c"
+    caseSensitive = false
+    deprecated = false
+    description = "The Pardot identifier for the connected campaign record"
+    externalId = true
+    label = "Pardot Campaign Id"
+    length = 10
+    unique = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox pi__Pardot_Has_Dependencies__c {
+    apiName = "Campaign.pi__Pardot_Has_Dependencies__c"
+    defaultValue = false
+    deprecated = false
+    description = "Determines if Pardot has marketing assets using this campaign"
+    label = "Pardot Has Dependencies"
+    _hidden_value = true
+  }
+  salesforce.FormulaCurrency stayclassy__Average_Gift__c {
+    apiName = "Campaign.stayclassy__Average_Gift__c"
+    deprecated = false
+    formula = '''
+IF (
+HierarchyNumberOfWonOpportunities > 0,
+HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
+0)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Average Gift"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Campaign.field.HierarchyAmountWonOpportunities
+      },
+      {
+        reference = salesforce.Campaign.field.HierarchyNumberOfWonOpportunities
+      },
+    ]
+  }
+  salesforce.Picklist stayclassy__Classy_Campaign_Type__c {
+    apiName = "Campaign.stayclassy__Classy_Campaign_Type__c"
+    deprecated = false
+    description = "Indicates the level of the Campaign hierarchy for a record, either Campaign (a parent Classy Campaign), Team, or Fundraiser"
+    label = "Classy Campaign Hierarchy"
+    valueSet = [
+      {
+        fullName = "Campaign"
+        default = false
+        label = "Campaign"
+      },
+      {
+        fullName = "Fundraiser"
+        default = false
+        label = "Fundraiser"
+      },
+      {
+        fullName = "Team"
+        default = false
+        label = "Team"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency stayclassy__Commitment__c {
+    apiName = "Campaign.stayclassy__Commitment__c"
+    deprecated = false
+    description = "Represents the Commitment level of a fundraiser or supporter"
+    label = "Commitment"
+    precision = 10
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url stayclassy__Event_Image_URL__c {
+    apiName = "Campaign.stayclassy__Event_Image_URL__c"
+    deprecated = false
+    description = "For top-level events, this is the URL to the main event image"
+    label = "Event Image URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__Fundraiser_Alias__c {
+    apiName = "Campaign.stayclassy__Fundraiser_Alias__c"
+    deprecated = false
+    description = "Used to distinguish multiple fundraising pages created by a single Contact.  Since a single user can sign up multiple people to create fundraising pages, the alias can be used to represent one of the additional supporters.  For example, a parent might sign up their children for fundraising pages.  The parent remains the Contact attached to the fundraising page, and the alias would be the children's names."
+    externalId = false
+    label = "Fundraiser Alias"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__address1__c {
+    apiName = "Campaign.stayclassy__address1__c"
+    deprecated = false
+    externalId = false
+    label = "Address"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__address2__c {
+    apiName = "Campaign.stayclassy__address2__c"
+    deprecated = false
+    externalId = false
+    label = "Address 2"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaText stayclassy__campaign_url__c {
+    apiName = "Campaign.stayclassy__campaign_url__c"
+    deprecated = false
+    externalId = false
+    formula = '''
+IF(
+ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Fundraiser"), "https://www.classy.org/fundraise?fcid=" & text(stayclassy__sc_event_id__c), 
+IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.org/fundraise/team?ftid=" & text(stayclassy__sc_event_id__c), 
+"https://www.classy.org/events/detail?eid=" & text(stayclassy__sc_event_id__c)
+))
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Campaign URL"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c
+      },
+      {
+        reference = salesforce.Campaign.field.stayclassy__sc_event_id__c
+      },
+    ]
+  }
+  salesforce.Text stayclassy__city__c {
+    apiName = "Campaign.stayclassy__city__c"
+    deprecated = false
+    externalId = false
+    label = "City"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__country__c {
+    apiName = "Campaign.stayclassy__country__c"
+    deprecated = false
+    externalId = false
+    label = "Country"
+    length = 50
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaPercent stayclassy__percent_goal_reached__c {
+    apiName = "Campaign.stayclassy__percent_goal_reached__c"
+    deprecated = false
+    formula = "IF(ExpectedRevenue > 0, AmountWonOpportunities / ExpectedRevenue, 0)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "% of Goal Reached"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Campaign.field.AmountWonOpportunities
+      },
+      {
+        reference = salesforce.Campaign.field.ExpectedRevenue
+      },
+    ]
+  }
+  salesforce.Number stayclassy__sc_event_id__c {
+    apiName = "Campaign.stayclassy__sc_event_id__c"
+    deprecated = false
+    externalId = true
+    label = "Classy Campaign ID"
+    precision = 12
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__sf_contact_id__c {
+    apiName = "Campaign.stayclassy__sf_contact_id__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Contact for this individual fundraiser or team captain for a team fundraiser"
+    label = "Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Campaigns"
+    relationshipName = "Campaigns"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__sf_designation_id__c {
+    apiName = "Campaign.stayclassy__sf_designation_id__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Classy Designation for this Campaign, Fundraiser, or Team"
+    label = "Classy Designations"
+    referenceTo = [
+      "stayclassy__sc_designation__c",
+    ]
+    relationshipLabel = "Campaigns"
+    relationshipName = "Campaigns"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text stayclassy__state__c {
+    apiName = "Campaign.stayclassy__state__c"
+    deprecated = false
+    externalId = false
+    label = "State"
+    length = 50
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__venue_name__c {
+    apiName = "Campaign.stayclassy__venue_name__c"
+    deprecated = false
+    externalId = false
+    label = "Name of the Venue"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text stayclassy__zip__c {
+    apiName = "Campaign.stayclassy__zip__c"
+    deprecated = false
+    externalId = false
+    label = "Postal Code"
+    length = 10
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

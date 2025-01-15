@@ -1,0 +1,4 @@
+salesforce.SharingRules AssistantInteraction {
+  fullName = "AssistantInteraction"
+  _alias = "AssistantInteraction"
+}

@@ -1,0 +1,77 @@
+type salesforce.Animal__c {
+  salesforce.Text Animal_Name__c {
+    apiName = "Animal__c.Animal_Name__c"
+    externalId = false
+    label = "Animal Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number Count__c {
+    apiName = "Animal__c.Count__c"
+    externalId = false
+    label = "Count"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text External_ID__c {
+    apiName = "Animal__c.External_ID__c"
+    externalId = true
+    label = "External ID"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Food_Category__c {
+    apiName = "Animal__c.Food_Category__c"
+    label = "Food Category"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Herbivore"
+        default = false
+        label = "Herbivore"
+      },
+      {
+        fullName = "Carnivore"
+        default = false
+        label = "Carnivore"
+      },
+      {
+        fullName = "Omnivore"
+        default = false
+        label = "Omnivore"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Park_Name__c {
+    apiName = "Animal__c.Park_Name__c"
+    externalId = false
+    label = "Park Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

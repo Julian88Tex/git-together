@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Contact_npe01__ContactMobilePhoneUpdate@vuu {
+  fullName = "Contact.npe01__ContactMobilePhoneUpdate"
+  field = salesforce.Contact.field.MobilePhone
+  formula = "Phone"
+  name = "Contact.MobilePhone.Update"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__ContactMobilePhoneUpdate"
+}

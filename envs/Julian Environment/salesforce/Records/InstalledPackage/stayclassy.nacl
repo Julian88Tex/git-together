@@ -1,0 +1,5 @@
+salesforce.InstalledPackage stayclassy {
+  versionNumber = "5.201"
+  fullName = "stayclassy"
+  _alias = "stayclassy"
+}

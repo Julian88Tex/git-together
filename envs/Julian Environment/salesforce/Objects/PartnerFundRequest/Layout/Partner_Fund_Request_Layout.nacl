@@ -1,0 +1,154 @@
+salesforce.Layout PartnerFundRequest_Partner_Fund_Request_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundRequest.field.Title
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundRequest.field.ChannelPartnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.CampaignId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundRequest.field.RequestedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.Activity
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.DesiredOutcome
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Request Approval"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundRequest.field.BudgetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.AllocationId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundRequest.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.Amount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Fund Claims"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundRequest.field.TotalApprovedFcs
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundRequest.field.TotalReimbursedFcs
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundRequest.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundRequest.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundRequest.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PartnerFundRequest-Partner Fund Request Layout"
+  _parent = [
+    salesforce.PartnerFundRequest,
+  ]
+  _alias = "PartnerFundRequest-Partner Fund Request Layout"
+}

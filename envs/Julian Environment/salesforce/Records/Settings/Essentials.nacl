@@ -1,0 +1,4 @@
+salesforce.EssentialsSettings {
+  fullName = "Essentials"
+  _alias = "Essentials"
+}

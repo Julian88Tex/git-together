@@ -1,0 +1,65 @@
+type salesforce.Product2 {
+  salesforce.Percent stayclassy__Charity_Donation_Percentage__c {
+    apiName = "Product2.stayclassy__Charity_Donation_Percentage__c"
+    deprecated = false
+    description = "Donation percentage for a ticket/registration purchase specified in StayClassy"
+    label = "Charity Donation Percentage"
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number stayclassy__Classy_Campaign_ID__c {
+    apiName = "Product2.stayclassy__Classy_Campaign_ID__c"
+    deprecated = false
+    description = "The Classy Campaign/Event ID"
+    externalId = false
+    label = "Classy Campaign ID"
+    precision = 12
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup stayclassy__Classy_Campaign__c {
+    apiName = "Product2.stayclassy__Classy_Campaign__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Classy Campaign"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    relationshipLabel = "Products"
+    relationshipName = "Products"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number stayclassy__Classy_Product_ID__c {
+    apiName = "Product2.stayclassy__Classy_Product_ID__c"
+    deprecated = false
+    externalId = true
+    label = "Classy Product ID"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number stayclassy__Quantity_Available__c {
+    apiName = "Product2.stayclassy__Quantity_Available__c"
+    deprecated = false
+    description = "Indicates the number of ticket/registrations available to be purchased"
+    externalId = false
+    label = "Quantity Available"
+    precision = 5
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

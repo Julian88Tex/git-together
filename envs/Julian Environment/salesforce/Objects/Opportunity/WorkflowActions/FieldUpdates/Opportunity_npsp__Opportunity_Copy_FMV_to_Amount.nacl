@@ -1,0 +1,15 @@
+salesforce.WorkflowFieldUpdate Opportunity_npsp__Opportunity_Copy_FMV_to_Amount@vuuuuuu {
+  fullName = "Opportunity.npsp__Opportunity_Copy_FMV_to_Amount"
+  description = "Copy the Opportunities Fair Market Value field to the Amount field."
+  field = salesforce.Opportunity.field.Amount
+  formula = "npsp__Fair_Market_Value__c"
+  name = "Opportunity Copy FMV to Amount"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity_Copy_FMV_to_Amount"
+}

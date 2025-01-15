@@ -1,0 +1,69 @@
+salesforce.QuickAction Quote_SendEmail@v {
+  fullName = "Quote.SendEmail"
+  fieldOverrides = [
+    {
+      field = "ToAddress"
+      formula = "Quote.Contact.Email"
+    },
+  ]
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ValidatedFromAddress"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "ToAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CcAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "BccAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Subject"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "HtmlBody"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "RelatedToId"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "EmailTemplateId"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "SendEmail"
+  targetObject = "OutgoingEmail"
+  targetParentField = "RelatedTo"
+  type = "SendEmail"
+  _parent = [
+    salesforce.Quote,
+  ]
+  _alias = "Quote.SendEmail"
+}

@@ -1,0 +1,6 @@
+salesforce.ExternalCredential Test {
+  fullName = "Test"
+  authenticationProtocol = "Custom"
+  label = "TEst"
+  _alias = "TEst"
+}

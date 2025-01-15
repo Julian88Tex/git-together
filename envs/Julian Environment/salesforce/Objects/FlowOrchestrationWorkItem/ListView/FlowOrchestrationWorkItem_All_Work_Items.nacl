@@ -1,0 +1,9 @@
+salesforce.ListView FlowOrchestrationWorkItem_All_Work_Items {
+  fullName = "FlowOrchestrationWorkItem.All_Work_Items"
+  filterScope = "Everything"
+  label = "All Work Items"
+  _parent = [
+    salesforce.FlowOrchestrationWorkItem,
+  ]
+  _alias = "All Work Items"
+}

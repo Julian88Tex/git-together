@@ -1,0 +1,7 @@
+salesforce.SharingRules PartnerMarketingBudget {
+  fullName = "PartnerMarketingBudget"
+  _parent = [
+    salesforce.PartnerMarketingBudget,
+  ]
+  _alias = "PartnerMarketingBudget"
+}

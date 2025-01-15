@@ -1,0 +1,378 @@
+salesforce.Flow Regions_Map_to_Region {
+  fullName = "Regions_Map_to_Region"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myDecision"
+      }
+    },
+  ]
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "formula_myRule_1"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Update Region Field"
+        },
+      ]
+    },
+  ]
+  formulas = [
+    {
+      name = "formula_myRule_1"
+      dataType = "Boolean"
+      expression = "true"
+    },
+  ]
+  interviewLabel = "Regions_Map_to_Region-4_Opportunity"
+  label = "Regions Map to Region"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Opportunity"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onAllChanges"
+      }
+    },
+  ]
+  processType = "Workflow"
+  recordUpdates = [
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "criteria"
+          }
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Opportunity]"
+          }
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Northwest"
+      locationX = 100
+      locationY = 200
+      connector = {
+        targetReference = "myRule_1_A2"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "inputDataType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Region Map"
+              }
+            },
+            {
+              name = "leftHandSideType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+            {
+              name = "operatorDataType"
+              value = {
+                stringValue = "String"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Region_Map__c
+          operator = "EqualTo"
+          value = {
+            stringValue = "Northwest"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "Boolean"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Anonymous Donor"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Boolean"
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.stayclassy__Anonymous_Donor__c
+          value = {
+            booleanValue = true
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+    },
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "criteria"
+          }
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Opportunity]"
+          }
+        },
+      ]
+      name = "myRule_1_A2"
+      label = "Southwest"
+      locationX = 100
+      locationY = 300
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "inputDataType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Region Map"
+              }
+            },
+            {
+              name = "leftHandSideType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+            {
+              name = "operatorDataType"
+              value = {
+                stringValue = "String"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Region_Map__c
+          operator = "EqualTo"
+          value = {
+            stringValue = "Southwest"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "ID"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Region"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "ID"
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Region__c
+          value = {
+            stringValue = "a0z61000000zZcX"
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+    },
+  ]
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Active"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _alias = "Regions Map to Region"
+}

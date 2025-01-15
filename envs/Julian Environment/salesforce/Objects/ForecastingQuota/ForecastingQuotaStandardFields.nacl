@@ -1,0 +1,139 @@
+type salesforce.ForecastingQuota {
+  salesforce.Picklist ProductFamily {
+    apiName = "ForecastingQuota.ProductFamily"
+    restricted = false
+    label = "Product Family"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  serviceid Id {
+    apiName = "ForecastingQuota.Id"
+    label = "ForecastingQuota ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PeriodId {
+    apiName = "ForecastingQuota.PeriodId"
+    label = "Period ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date StartDate {
+    apiName = "ForecastingQuota.StartDate"
+    _required = true
+    label = "Quota Month"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ForecastingGroupItemId {
+    apiName = "ForecastingQuota.ForecastingGroupItemId"
+    relationshipName = "ForecastingGroupItem"
+    label = "Forecasting Group Item ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Currency QuotaAmount {
+    apiName = "ForecastingQuota.QuotaAmount"
+    _required = true
+    label = "Quota Amount"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+  }
+  salesforce.Number QuotaQuantity {
+    apiName = "ForecastingQuota.QuotaQuantity"
+    _required = true
+    label = "Quota Quantity"
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup QuotaOwnerId {
+    apiName = "ForecastingQuota.QuotaOwnerId"
+    relationshipName = "QuotaOwner"
+    _required = true
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsQuantity {
+    apiName = "ForecastingQuota.IsQuantity"
+    defaultValue = false
+    label = "Is Quantity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsAmount {
+    apiName = "ForecastingQuota.IsAmount"
+    defaultValue = false
+    label = "Is Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ForecastingQuota.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ForecastingQuota.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ForecastingQuota.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ForecastingQuota.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ForecastingQuota.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ForecastingTypeId {
+    apiName = "ForecastingQuota.ForecastingTypeId"
+    _required = true
+    label = "Forecasting Type ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

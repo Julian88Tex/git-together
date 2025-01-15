@@ -1,0 +1,27 @@
+salesforce.ListView Campaign_GW_Volunteers__Volunteer_Campaigns {
+  fullName = "Campaign.GW_Volunteers__Volunteer_Campaigns"
+  columns = [
+    "CAMPAIGN.NAME",
+    "CAMPAIGN.START_DATE",
+    "CAMPAIGN.END_DATE",
+    "CAMPAIGN.ACTIVE",
+    "CAMPAIGN.STATUS",
+    salesforce.Campaign.field.GW_Volunteers__Number_of_Volunteers__c,
+    salesforce.Campaign.field.GW_Volunteers__Volunteer_Completed_Hours__c,
+    salesforce.Campaign.field.GW_Volunteers__Volunteer_Jobs__c,
+    salesforce.Campaign.field.GW_Volunteers__Volunteers_Still_Needed__c,
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "CAMPAIGN.RECORDTYPE"
+      operation = "equals"
+      value = "Campaign.GW_Volunteers__Volunteers_Campaign"
+    },
+  ]
+  label = "Volunteer Campaigns"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Volunteer Campaigns (GW_Volunteers)"
+}

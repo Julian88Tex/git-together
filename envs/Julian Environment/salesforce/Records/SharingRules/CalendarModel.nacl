@@ -1,0 +1,4 @@
+salesforce.SharingRules CalendarModel {
+  fullName = "CalendarModel"
+  _alias = "CalendarModel"
+}

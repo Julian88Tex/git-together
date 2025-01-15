@@ -1,0 +1,14 @@
+salesforce.DataDotComSettings {
+  fullName = "DataDotCom"
+  enableAccountExportButtonOff = false
+  enableAccountImportButtonOff = false
+  enableAllowDupeContactFromLead = false
+  enableAllowDupeLeadFromContact = false
+  enableContactExportButtonOff = false
+  enableContactImportButtonOff = false
+  enableDDCSocialKeyEnabled = "false"
+  enableDataDotComCleanEnabled = "true"
+  enableDataDotComOptOutsEnabled = "false"
+  enableDatacloudAPIEnabled = "true"
+  _alias = "DataDotCom"
+}

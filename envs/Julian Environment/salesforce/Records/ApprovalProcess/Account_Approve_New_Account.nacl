@@ -1,0 +1,74 @@
+salesforce.ApprovalProcess Account_Approve_New_Account@vuu {
+  fullName = "Account.Approve_New_Account"
+  active = true
+  allowRecall = false
+  allowedSubmitters = {
+    type = "owner"
+  }
+  approvalPageFields = {
+    field = [
+      "Name",
+      "Owner",
+    ]
+  }
+  approvalStep = [
+    {
+      allowDelegate = false
+      approvalActions = {
+        action = [
+          {
+            name = "Set_to_Customer"
+            type = "FieldUpdate"
+          },
+        ]
+      }
+      assignedApprover = {
+        approver = {
+          name = "julian88tex@gmail.com"
+          type = "user"
+        }
+        whenMultipleApprovers = "FirstResponse"
+      }
+      label = "Step 1"
+      name = "Step_1"
+      rejectionActions = {
+        action = [
+          {
+            name = "Set_to_Prospect"
+            type = "FieldUpdate"
+          },
+        ]
+      }
+    },
+  ]
+  enableMobileDeviceAccess = false
+  entryCriteria = {
+    criteriaItems = [
+      {
+        field = salesforce.Account.field.Type
+        operation = "equals"
+        value = "Prospect"
+      },
+      {
+        field = salesforce.Account.field.NumberOfEmployees
+        operation = "greaterThan"
+        value = "500"
+      },
+    ]
+  }
+  finalApprovalRecordLock = false
+  finalRejectionRecordLock = false
+  initialSubmissionActions = {
+    action = [
+      {
+        name = "Set_to_Pending"
+        type = "FieldUpdate"
+      },
+    ]
+  }
+  label = "Approve New Account"
+  processOrder = 1
+  recordEditability = "AdminOnly"
+  showApprovalHistory = true
+  _alias = "Approve New Account"
+}

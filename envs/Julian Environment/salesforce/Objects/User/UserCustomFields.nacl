@@ -1,0 +1,220 @@
+type salesforce.User {
+  salesforce.Picklist DB_Region__c {
+    apiName = "User.DB_Region__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    label = "DB Region"
+    valueSet = [
+      {
+        fullName = "NA"
+        color = "#009900"
+        default = false
+        label = "NA"
+      },
+      {
+        fullName = "EMEA"
+        color = "#3333FF"
+        default = false
+        label = "EMEA"
+      },
+      {
+        fullName = "APAC"
+        color = "#CC6600"
+        default = false
+        label = "APAC"
+      },
+      {
+        fullName = "LA"
+        color = "#990000"
+        default = false
+        label = "LA"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email Q9__ElementsEmail__c {
+    apiName = "User.Q9__ElementsEmail__c"
+    deprecated = false
+    externalId = false
+    label = "Elements Email"
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Q9__ElementsId__c {
+    apiName = "User.Q9__ElementsId__c"
+    caseSensitive = false
+    deprecated = false
+    externalId = true
+    label = "Elements Id"
+    length = 80
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email Q9__Federation_Email__c {
+    apiName = "User.Q9__Federation_Email__c"
+    caseSensitive = true
+    deprecated = false
+    externalId = true
+    label = "Federation Email"
+    unique = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox Q9__IsConnecting__c {
+    apiName = "User.Q9__IsConnecting__c"
+    defaultValue = false
+    deprecated = false
+    label = "IsConnecting"
+    _hidden_value = true
+  }
+  salesforce.Checkbox Q9__IsElementsUserByFederationId__c {
+    apiName = "User.Q9__IsElementsUserByFederationId__c"
+    defaultValue = false
+    deprecated = false
+    label = "Elements User By FederationId"
+    _hidden_value = true
+  }
+  salesforce.Checkbox Q9__IsElementsUser__c {
+    apiName = "User.Q9__IsElementsUser__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates that the user has access to Elements."
+    label = "Elements User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox pi__Can_View_Not_Assigned_Prospects__c {
+    apiName = "User.pi__Can_View_Not_Assigned_Prospects__c"
+    defaultValue = false
+    deprecated = false
+    label = "Can View Not Assigned Prospects"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.EncryptedText pi__Pardot_Api_Key__c {
+    apiName = "User.pi__Pardot_Api_Key__c"
+    deprecated = false
+    label = "Account Engagement Api Key"
+    length = 100
+    maskChar = "X"
+    maskType = "all"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__Pardot_Api_Version__c {
+    apiName = "User.pi__Pardot_Api_Version__c"
+    deprecated = false
+    externalId = false
+    label = "Account Engagement Api Version"
+    length = 1
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.EncryptedText pi__Pardot_User_Id__c {
+    apiName = "User.pi__Pardot_User_Id__c"
+    deprecated = false
+    label = "Account Engagement User Id"
+    length = 100
+    maskChar = "X"
+    maskType = "all"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.EncryptedText pi__Pardot_User_Key__c {
+    apiName = "User.pi__Pardot_User_Key__c"
+    deprecated = false
+    label = "Account Engagement User Key"
+    length = 100
+    maskChar = "X"
+    maskType = "all"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text pi__Pardot_User_Role__c {
+    apiName = "User.pi__Pardot_User_Role__c"
+    deprecated = false
+    externalId = false
+    label = "Account Engagement User Role"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text zkmulti__EncryptedFedExEndUserKey__c {
+    apiName = "User.zkmulti__EncryptedFedExEndUserKey__c"
+    deprecated = false
+    externalId = false
+    label = "Encrypted FedEx End User Key"
+    length = 255
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text zkmulti__EncryptedFedExEndUserPassword__c {
+    apiName = "User.zkmulti__EncryptedFedExEndUserPassword__c"
+    deprecated = false
+    externalId = false
+    label = "Encrypted FedEx End User Password"
+    length = 255
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text zkmulti__FedExEndUserKey__c {
+    apiName = "User.zkmulti__FedExEndUserKey__c"
+    deprecated = false
+    externalId = false
+    label = "FedEx End User Key"
+    length = 16
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text zkmulti__FedExEndUserPassword__c {
+    apiName = "User.zkmulti__FedExEndUserPassword__c"
+    deprecated = false
+    externalId = false
+    label = "FedEx End User Password"
+    length = 25
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text zkmulti__FedExRegisteredPreference__c {
+    apiName = "User.zkmulti__FedExRegisteredPreference__c"
+    deprecated = false
+    externalId = false
+    label = "FedEx Registered Preference"
+    length = 30
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text zkmulti__Registered_Preference__c {
+    apiName = "User.zkmulti__Registered_Preference__c"
+    deprecated = false
+    externalId = false
+    label = "Registered Preference"
+    length = 40
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox zkmulti__UserCredentialsEncrypted__c {
+    apiName = "User.zkmulti__UserCredentialsEncrypted__c"
+    defaultValue = false
+    deprecated = false
+    label = "User Credentials Encrypted"
+    _hidden_value = true
+  }
+}

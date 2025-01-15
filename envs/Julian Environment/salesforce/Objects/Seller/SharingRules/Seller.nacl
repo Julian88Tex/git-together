@@ -1,0 +1,7 @@
+salesforce.SharingRules Seller {
+  fullName = "Seller"
+  _parent = [
+    salesforce.Seller,
+  ]
+  _alias = "Seller"
+}

@@ -1,0 +1,12 @@
+salesforce.CustomTab New_Customer_Flow {
+  fullName = "New_Customer_Flow"
+  label = "New Customer Flow"
+  motif = "Custom51: Apple"
+  page = "FlowPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.FlowPage
+    },
+  ]
+  _alias = "New Customer Flow"
+}

@@ -1,0 +1,4 @@
+salesforce.SharingRules TodayGoal {
+  fullName = "TodayGoal"
+  _alias = "TodayGoal"
+}

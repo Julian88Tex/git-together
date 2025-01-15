@@ -1,0 +1,17 @@
+salesforce.WorkflowRule Contact_npe01__Contact_2EPhoneChanged_Mobile@vuupu {
+  fullName = "Contact.npe01__Contact%2EPhoneChanged_Mobile"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__ContactMobilePhoneUpdate@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  description = "If the standard Phone field is newly entered or changed AND the Preferred Phone picklist is set to Mobile THEN Salesforce will fill in the Mobile Phone field with the phone number entered in the standard Phone field."
+  formula = "AND(      ISPICKVAL( npe01__PreferredPhone__c ,\"Mobile\"),      OR(           AND(                ISNEW(),                LEN(Phone)>0           ),           ISCHANGED( Phone )      ) )"
+  triggerType = "onAllChanges"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Contact%2EPhoneChanged_Mobile"
+}

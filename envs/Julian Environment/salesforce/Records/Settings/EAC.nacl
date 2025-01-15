@@ -1,0 +1,9 @@
+salesforce.EACSettings {
+  fullName = "EAC"
+  autoPopulateGoogleMeetLinks = "false"
+  enableInsightsInTimeline = true
+  enableInsightsInTimelineEacStd = false
+  s2XSvcAccEmail = "false"
+  syncInternalEvents = "false"
+  _alias = "EAC"
+}

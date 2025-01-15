@@ -1,0 +1,55 @@
+salesforce.StandardValueSet QuoteStatus {
+  fullName = "QuoteStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Draft"
+      default = true
+      label = "Draft"
+      allowEmail = true
+    },
+    {
+      fullName = "Needs Review"
+      default = false
+      label = "Needs Review"
+      allowEmail = true
+    },
+    {
+      fullName = "In Review"
+      default = false
+      label = "In Review"
+      allowEmail = true
+    },
+    {
+      fullName = "Approved"
+      default = false
+      label = "Approved"
+      allowEmail = true
+    },
+    {
+      fullName = "Rejected"
+      default = false
+      label = "Rejected"
+      allowEmail = true
+    },
+    {
+      fullName = "Presented"
+      default = false
+      label = "Presented"
+      allowEmail = true
+    },
+    {
+      fullName = "Accepted"
+      default = false
+      label = "Accepted"
+      allowEmail = true
+    },
+    {
+      fullName = "Denied"
+      default = false
+      label = "Denied"
+      allowEmail = true
+    },
+  ]
+  _alias = "QuoteStatus"
+}

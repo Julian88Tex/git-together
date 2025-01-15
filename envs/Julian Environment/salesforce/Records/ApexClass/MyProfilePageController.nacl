@@ -1,0 +1,18 @@
+salesforce.ApexClass MyProfilePageController {
+  apiVersion = 37
+  status = "Active"
+  fullName = "MyProfilePageController"
+  content = file("salesforce/Records/ApexClass/MyProfilePageController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.ChangePassword
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+  _alias = "MyProfilePageController"
+}

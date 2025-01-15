@@ -1,0 +1,298 @@
+salesforce.Flow test_test {
+  fullName = "test_test"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myPreWaitDecision_myWait_myRule_1"
+      }
+    },
+    {
+      name = "myWaitAssignment_myWait_myRule_1"
+      label = "myWaitAssignment_myWait_myRule_1"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "cancelWaits"
+          operator = "Add"
+          value = {
+            stringValue = "myWait_myRule_1"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myDecision"
+      }
+    },
+    {
+      name = "myWaitEvent_myWait_myRule_1_event_0_postWaitExecutionAssignment"
+      label = "myWaitEvent_myWait_myRule_1_event_0_postWaitExecutionAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myWaitEvent_myWait_myRule_1_event_0_postActionExecutionVariable"
+          operator = "Assign"
+          value = {
+            booleanValue = true
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myWait_myRule_1"
+      }
+    },
+  ]
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "formula_myRule_1"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myWait_myRule_1"
+          }
+          label = "test"
+        },
+      ]
+    },
+    {
+      name = "myPostWaitDecision_myWaitEvent_myWait_myRule_1_event_0"
+      label = "myPostWaitDecision_myWaitEvent_myWait_myRule_1_event_0"
+      locationX = 0
+      locationY = 0
+      defaultConnector = {
+        targetReference = "myWaitEvent_myWait_myRule_1_event_0_postWaitExecutionAssignment"
+      }
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myPostWaitRule_myWaitEvent_myWait_myRule_1_event_0"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "myVariable_current.LastModifiedDate"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myWaitEvent_myWait_myRule_1_event_0_postWaitExecutionAssignment"
+          }
+          label = "myPostWaitRule_myWaitEvent_myWait_myRule_1_event_0"
+        },
+      ]
+    },
+    {
+      name = "myPreWaitDecision_myWait_myRule_1"
+      label = "myPreWaitDecision_myWait_myRule_1"
+      locationX = 0
+      locationY = 0
+      defaultConnector = {
+        targetReference = "myWaitAssignment_myWait_myRule_1"
+      }
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myPreWaitRule_myWait_myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "formula_myRule_1"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myDecision"
+          }
+          label = "myPreWaitRule_myWait_myRule_1"
+        },
+      ]
+    },
+  ]
+  description = "test"
+  formulas = [
+    {
+      name = "formula_myRule_1"
+      dataType = "Boolean"
+      expression = "true"
+    },
+  ]
+  interviewLabel = "test_test-1_InterviewLabel"
+  label = "test test"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "npsp__Address__c"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onCreateOnly"
+      }
+    },
+  ]
+  processType = "Workflow"
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Draft"
+  variables = [
+    {
+      name = "cancelWaits"
+      dataType = "String"
+      isCollection = true
+      isInput = false
+      isOutput = true
+    },
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = "npsp__Address__c"
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = "npsp__Address__c"
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+    {
+      name = "myWaitEvent_myWait_myRule_1_event_0_postActionExecutionVariable"
+      dataType = "Boolean"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        booleanValue = false
+      }
+    },
+  ]
+  waits = {
+    name = "myWait_myRule_1"
+    label = "myWait_myRule_1"
+    locationX = 0
+    locationY = 0
+    defaultConnectorLabel = "defaultLabel"
+    waitEvents = {
+      processMetadataValues = {
+        name = "inputParameterType"
+        value = {
+          stringValue = "referenced"
+        }
+      }
+      name = "myWaitEvent_myWait_myRule_1_event_0"
+      conditionLogic = "and"
+      conditions = {
+        leftValueReference = "myWaitEvent_myWait_myRule_1_event_0_postActionExecutionVariable"
+        operator = "EqualTo"
+        rightValue = {
+          booleanValue = false
+        }
+      }
+      connector = {
+        targetReference = "myPostWaitDecision_myWaitEvent_myWait_myRule_1_event_0"
+      }
+      eventType = "DateRefAlarmEvent"
+      inputParameters = [
+        {
+          name = "TimeTableColumnEnumOrId"
+          value = {
+            stringValue = "npsp__Address__c"
+          }
+        },
+        {
+          name = "EntityObjectId"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+        {
+          name = "TimeOffsetUnit"
+          value = {
+            stringValue = "Hours"
+          }
+        },
+        {
+          name = "TimeOffset"
+          value = {
+            numberValue = 1
+          }
+        },
+        {
+          name = "TimeFieldColumnEnumOrId"
+          value = {
+            stringValue = "LastModifiedDate"
+          }
+        },
+      ]
+      label = "myWaitEvent_myWait_myRule_1_event_0"
+    }
+  }
+  _alias = "test test"
+}

@@ -1,0 +1,10 @@
+salesforce.Role Chief_Sales_Officer {
+  fullName = "Chief_Sales_Officer"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  name = "Chief Sales Officer"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.CEO
+  _alias = "Chief_Sales_Officer"
+}

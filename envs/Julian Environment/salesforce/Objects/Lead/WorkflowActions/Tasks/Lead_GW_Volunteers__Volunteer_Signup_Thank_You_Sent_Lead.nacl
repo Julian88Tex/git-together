@@ -1,0 +1,15 @@
+salesforce.WorkflowTask Lead_GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Lead@vuuuuuuuu {
+  fullName = "Lead.GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Lead"
+  assignedToType = "owner"
+  description = "An automatic email has been sent to the lead thanking them for signing up to be a volunteer."
+  dueDateOffset = 0
+  notifyAssignee = false
+  priority = "Normal"
+  protected = false
+  status = "Completed"
+  subject = "Volunteer Signup Thank You Sent - Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Lead"
+}

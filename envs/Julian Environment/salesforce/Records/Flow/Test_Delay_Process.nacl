@@ -1,0 +1,260 @@
+salesforce.Flow Test_Delay_Process {
+  fullName = "Test_Delay_Process"
+  actionCalls = [
+    {
+      name = "invocableContextErrorEmail"
+      label = "Context Error Email"
+      locationX = 0
+      locationY = 0
+      actionName = "emailSimple"
+      actionType = "emailSimple"
+      inputParameters = [
+        {
+          name = "emailSubject"
+          value = {
+            stringValue = "Your Process Failed to Execute"
+          }
+        },
+        {
+          name = "emailBody"
+          value = {
+            stringValue = "The Test_Delay_Process-1 invocable process failed to start because no records in your org match the record Id specified. In the entities that invoke Test_Delay_Process-1, such as other processes, check the value for this input: SObjectId."
+          }
+        },
+        {
+          name = "emailAddresses"
+          value = {
+            stringValue = "julian88tex@gmail.com"
+          }
+        },
+      ]
+      nameSegment = "emailSimple"
+      versionSegment = 1
+    },
+    {
+      name = "invocableSObjectErrorEmail"
+      label = "SObject Or Id Error Email"
+      locationX = 0
+      locationY = 0
+      actionName = "emailSimple"
+      actionType = "emailSimple"
+      inputParameters = [
+        {
+          name = "emailSubject"
+          value = {
+            stringValue = "Your Process Failed to Execute"
+          }
+        },
+        {
+          name = "emailBody"
+          value = {
+            stringValue = '''
+The Test_Delay_Process-1 invocable process failed to start because a valid value wasn't found. This can happen when entities that invoke Test_Delay_Process-1, such as other processes, don't have values for either the SObject or SObjectId. For example: 
+-An SObject or SObject ID wasn't specified.
+-A value might have been included, but it was null at runtime. 
+'''
+          }
+        },
+        {
+          name = "emailAddresses"
+          value = {
+            stringValue = "julian88tex@gmail.com"
+          }
+        },
+      ]
+      nameSegment = "emailSimple"
+      versionSegment = 1
+    },
+  ]
+  apiVersion = 49
+  decisions = [
+    {
+      name = "invocableContextCheckDecision"
+      label = "Context Check Decision"
+      locationX = 0
+      locationY = 0
+      defaultConnector = {
+        targetReference = "invocableContextErrorEmail"
+      }
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "invocableContextCheckRule"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "SObject"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myDecision"
+          }
+          label = "SObject Context Record Found"
+        },
+      ]
+    },
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+              ]
+              leftValueReference = "SObject.Account.OwnerId"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "tes"
+              }
+            },
+          ]
+          label = "test"
+        },
+      ]
+    },
+    {
+      name = "sobjectInputCheckDecision"
+      label = "SObject Input Check Decision"
+      locationX = 0
+      locationY = 0
+      defaultConnector = {
+        targetReference = "invocableSObjectErrorEmail"
+      }
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "sobjectInputCheckRule"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "SObject"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myDecision"
+          }
+          label = "SObject Not Null"
+        },
+        {
+          name = "sobjectIdInputCheckRule"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "SObjectId"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myInvocableContextRecordLookup"
+          }
+          label = "SObject Id Not Null"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Test_Delay_Process-1_InterviewLabel"
+  label = "Test Delay Process"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Opportunity"
+      }
+    },
+  ]
+  processType = "InvocableProcess"
+  recordLookups = [
+    {
+      name = "myInvocableContextRecordLookup"
+      label = "myInvocableContextRecordLookup"
+      locationX = 0
+      locationY = 0
+      assignNullValuesIfNoRecordsFound = false
+      connector = {
+        targetReference = "invocableContextCheckDecision"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          field = salesforce.Opportunity.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "SObjectId"
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+      outputReference = "SObject"
+      queriedFields = [
+        salesforce.Opportunity.field.AccountId,
+      ]
+    },
+  ]
+  startElementReference = "sobjectInputCheckDecision"
+  status = "Draft"
+  variables = [
+    {
+      name = "SObject"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "SObjectId"
+      dataType = "String"
+      isCollection = false
+      isInput = true
+      isOutput = true
+    },
+  ]
+  _alias = "Test Delay Process"
+}

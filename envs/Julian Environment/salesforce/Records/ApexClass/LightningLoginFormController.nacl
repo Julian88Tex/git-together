@@ -1,0 +1,7 @@
+salesforce.ApexClass LightningLoginFormController {
+  apiVersion = 37
+  status = "Active"
+  fullName = "LightningLoginFormController"
+  content = file("salesforce/Records/ApexClass/LightningLoginFormController.cls")
+  _alias = "LightningLoginFormController"
+}

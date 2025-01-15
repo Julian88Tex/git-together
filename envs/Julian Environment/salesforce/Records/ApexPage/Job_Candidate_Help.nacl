@@ -1,0 +1,21 @@
+salesforce.ApexPage Job_Candidate_Help {
+  apiVersion = 35
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Job Candidate Help"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 10
+      namespace = "sf_chttr_apps"
+    },
+    {
+      majorNumber = 5
+      minorNumber = 0
+      namespace = "stayclassy"
+    },
+  ]
+  fullName = "Job_Candidate_Help"
+  content = file("salesforce/Records/ApexPage/Job_Candidate_Help.page")
+  _alias = "Job Candidate Help"
+}

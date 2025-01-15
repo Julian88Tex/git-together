@@ -1,0 +1,9 @@
+salesforce.ListView Opportunity_MyOpportunities {
+  fullName = "Opportunity.MyOpportunities"
+  filterScope = "Mine"
+  label = "My Opportunities"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "My Opportunities"
+}

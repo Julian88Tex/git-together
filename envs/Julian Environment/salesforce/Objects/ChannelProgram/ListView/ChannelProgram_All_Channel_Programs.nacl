@@ -1,0 +1,9 @@
+salesforce.ListView ChannelProgram_All_Channel_Programs {
+  fullName = "ChannelProgram.All_Channel_Programs"
+  filterScope = "Everything"
+  label = "All Channel Programs"
+  _parent = [
+    salesforce.ChannelProgram,
+  ]
+  _alias = "All Channel Programs"
+}

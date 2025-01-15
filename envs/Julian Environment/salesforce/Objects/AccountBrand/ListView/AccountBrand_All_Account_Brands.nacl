@@ -1,0 +1,9 @@
+salesforce.ListView AccountBrand_All_Account_Brands {
+  fullName = "AccountBrand.All_Account_Brands"
+  filterScope = "Everything"
+  label = "All Account Brands"
+  _parent = [
+    salesforce.AccountBrand,
+  ]
+  _alias = "All Account Brands"
+}

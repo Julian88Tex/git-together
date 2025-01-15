@@ -1,0 +1,63 @@
+salesforce.QuickAction New_Detailed_Account {
+  fullName = "New_Detailed_Account"
+  fieldOverrides = [
+    {
+      field = "Type"
+      literalValue = "Prospect"
+    },
+  ]
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Fax"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Industry"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Type"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Website"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Rating"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = salesforce.Account
+  targetRecordType = salesforce.RecordType.instance.Account_stayclassy__Classy
+  type = "Create"
+  _alias = "New_Detailed_Account"
+}

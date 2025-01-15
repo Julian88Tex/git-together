@@ -1,0 +1,122 @@
+type salesforce.OpportunityRelatedDeleteLog {
+  serviceid Id {
+    apiName = "OpportunityRelatedDeleteLog.Id"
+    label = "Opportunity Related Delete Log ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OpportunityRelatedDeleteLog.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber DeleteLog {
+    apiName = "OpportunityRelatedDeleteLog.DeleteLog"
+    label = "Opportunity Related Delete Log Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OpportunityRelatedDeleteLog.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OpportunityRelatedDeleteLog.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OpportunityRelatedDeleteLog.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OpportunityRelatedDeleteLog.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OpportunityRelatedDeleteLog.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "OpportunityRelatedDeleteLog.OpportunityId"
+    relationshipName = "Opportunity"
+    _required = true
+    label = "Opportunity ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Parent {
+    apiName = "OpportunityRelatedDeleteLog.Parent"
+    length = 18
+    label = "Parent"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist FieldName {
+    apiName = "OpportunityRelatedDeleteLog.FieldName"
+    restricted = true
+    label = "Field Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist DataType {
+    apiName = "OpportunityRelatedDeleteLog.DataType"
+    restricted = true
+    label = "Data Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist SobjectType {
+    apiName = "OpportunityRelatedDeleteLog.SobjectType"
+    label = "SobjectType"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AnyType Value {
+    apiName = "OpportunityRelatedDeleteLog.Value"
+    label = "Value"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

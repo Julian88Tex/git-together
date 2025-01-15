@@ -1,0 +1,214 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+    {
+      name = salesforce.CustomApplication.instance.standard__Platform
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Service
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Marketing
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__ServiceConsole
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AppLauncher
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Community
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sites
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Chatter
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Content
+      type = "CustomApplication"
+    },
+    {
+      name = "stayclassy__StayClassy"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Charitable
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Garage
+      type = "CustomApplication"
+    },
+    {
+      name = "Chatter_Desktop"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Chatter_for_Android"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Chatter_for_BlackBerry"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Chatter_for_iOS"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce1_for_Windows"
+      type = "ConnectedApp"
+    },
+    {
+      name = "SalesforceA"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Chatterbox"
+      type = "ConnectedApp"
+    },
+    {
+      name = "npsp__Nonprofit_CRM"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningSales
+      type = "CustomApplication"
+    },
+    {
+      name = "GW_Volunteers__Groundwire_Volunteers"
+      type = "CustomApplication"
+    },
+    {
+      name = "Dataloader_Bulk"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Dataloader_Partner"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_IDE"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_Migration_Tool"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Mobile_Dashboards"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Touch"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_for_Outlook"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Workbench"
+      type = "ConnectedApp"
+    },
+    {
+      name = "emma__Emma_Email_Marketing"
+      type = "CustomApplication"
+    },
+    {
+      name = "Emma_for_Salesforce"
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.Network.instance.julian88tex
+      type = "Network"
+    },
+    {
+      name = "pi__ProspectInsight"
+      type = "CustomApplication"
+    },
+    {
+      name = "pi__Sales_Reach"
+      type = "CustomApplication"
+    },
+    {
+      name = "funraise__Funraise"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningInstrumentation
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.julianmetaci
+      type = "ConnectedApp"
+    },
+    {
+      name = "DEVHUB_qe1k727m8ofqyvgssuhz"
+      type = "ConnectedApp"
+    },
+    {
+      name = "zkmulti__Multi_Carrier_Shipmate"
+      type = "CustomApplication"
+    },
+    {
+      name = "Zenkraft_MultiCarrier"
+      type = "ConnectedApp"
+    },
+    {
+      name = "BidPal__BidPal_Integration"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.IoT_API_Quick_Start
+      type = "ConnectedApp"
+    },
+    {
+      name = "insights__SupporterDataIntegrity"
+      type = "CustomApplication"
+    },
+    {
+      name = "slackv2__Slack_Setup"
+      type = "CustomApplication"
+    },
+    {
+      name = "Slack"
+      type = "ConnectedApp"
+    },
+    {
+      name = "CodeBuilder__CodeBuilder"
+      type = "CustomApplication"
+    },
+    {
+      name = "Zuppio__Zuppio_Navigator"
+      type = "CustomApplication"
+    },
+    {
+      name = "Q9__Elements"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__FlowsApp
+      type = "CustomApplication"
+    },
+  ]
+  _alias = "AppSwitcher"
+}

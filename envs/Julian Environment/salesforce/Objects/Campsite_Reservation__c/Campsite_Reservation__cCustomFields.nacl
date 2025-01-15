@@ -1,0 +1,47 @@
+type salesforce.Campsite_Reservation__c {
+  salesforce.MasterDetail Campsite__c {
+    apiName = "Campsite_Reservation__c.Campsite__c"
+    label = "Campsite"
+    referenceTo = [
+      salesforce.Campsite__c,
+    ]
+    relationshipLabel = "Campsite Reservations"
+    relationshipName = "Campsite_Reservations"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Date End_Date__c {
+    apiName = "Campsite_Reservation__c.End_Date__c"
+    label = "End Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Start_Date__c {
+    apiName = "Campsite_Reservation__c.Start_Date__c"
+    label = "Start Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup User__c {
+    apiName = "Campsite_Reservation__c.User__c"
+    deleteConstraint = "SetNull"
+    label = "User"
+    referenceTo = [
+      salesforce.User,
+    ]
+    relationshipName = "Campsite_Reservations"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

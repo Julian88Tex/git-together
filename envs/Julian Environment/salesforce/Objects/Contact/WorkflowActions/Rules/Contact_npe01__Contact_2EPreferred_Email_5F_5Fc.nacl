@@ -1,0 +1,17 @@
+salesforce.WorkflowRule Contact_npe01__Contact_2EPreferred_Email_5F_5Fc@vuupupp {
+  fullName = "Contact.npe01__Contact%2EPreferred_Email%5F%5Fc"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__ContactPreferredEmail@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  description = "This workflow OVERWRITES the existing value in the standard Email field based on the Preferred Email field value.  This rule needs to be turned on manually after an Upgrade to this package."
+  formula = "OR( LEN(Email)=0, ISCHANGED(npe01__Preferred_Email__c) , ISCHANGED(npe01__WorkEmail__c) , ISCHANGED(npe01__HomeEmail__c) , ISCHANGED(npe01__AlternateEmail__c)  )"
+  triggerType = "onAllChanges"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Contact%2EPreferred_Email%5F%5Fc"
+}

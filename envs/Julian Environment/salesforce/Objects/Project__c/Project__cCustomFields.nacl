@@ -1,0 +1,29 @@
+type salesforce.Project__c {
+  salesforce.Picklist Priority__c {
+    apiName = "Project__c.Priority__c"
+    label = "Priority"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

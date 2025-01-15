@@ -1,0 +1,35 @@
+salesforce.Flow Test4 {
+  fullName = "Test4"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myUniquelyDummyAssignment"
+      label = "myUniquelyDummyAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myUniquelyDummyVariable"
+          operator = "Assign"
+          value = {
+            stringValue = "fakeVal"
+          }
+        },
+      ]
+    },
+  ]
+  label = "Test4"
+  processType = "InvocableProcess"
+  startElementReference = "myUniquelyDummyAssignment"
+  status = "InvalidDraft"
+  variables = [
+    {
+      name = "myUniquelyDummyVariable"
+      dataType = "String"
+      isCollection = false
+      isInput = false
+      isOutput = false
+    },
+  ]
+  _alias = "Test4"
+}

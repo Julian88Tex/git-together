@@ -1,0 +1,7 @@
+salesforce.SharingRules EngagementChannelType {
+  fullName = "EngagementChannelType"
+  _parent = [
+    salesforce.EngagementChannelType,
+  ]
+  _alias = "EngagementChannelType"
+}

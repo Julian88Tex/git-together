@@ -1,0 +1,6 @@
+salesforce.CustomTab npsp__Trigger_Handler__c {
+  fullName = "npsp__Trigger_Handler__c"
+  customObject = true
+  motif = "Custom63: Chip"
+  _alias = "npsp__Trigger_Handler__c"
+}

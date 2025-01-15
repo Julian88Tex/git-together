@@ -1,0 +1,14 @@
+salesforce.NavigationMenu SFDC_Default_Navigation_julian88tex {
+  fullName = "SFDC_Default_Navigation_julian88tex"
+  container = "julian88tex"
+  containerType = "Network"
+  label = "Default Navigation"
+  navigationMenuItem = {
+    label = "Topics"
+    position = 1
+    publiclyAvailable = true
+    target = "ShowMoreTopics"
+    type = "NavigationalTopic"
+  }
+  _alias = "Default Navigation"
+}

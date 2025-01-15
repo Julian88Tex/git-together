@@ -1,0 +1,9 @@
+salesforce.ListView Pricebook2_All_Pricebooks {
+  fullName = "Pricebook2.All_Pricebooks"
+  filterScope = "Everything"
+  label = "All Price Books"
+  _parent = [
+    salesforce.Pricebook2,
+  ]
+  _alias = "All Price Books"
+}
