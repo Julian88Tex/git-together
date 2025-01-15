@@ -536,6 +536,107 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Home"),
       },
     ]
   }
+  salesforce.FormulaDate npe01__Last_Donation_Date__c {
+    apiName = "Contact.npe01__Last_Donation_Date__c"
+    deprecated = false
+    description = "Formula:  The Last Donation Date of the Account where this Contact is the One to One Contact.   This has been superseded by the 'Last Gift Date' field in the Households package."
+    formula = '''
+if( Account.npe01__One2OneContact__c = Id ,
+Account.npe01__LastDonationDate__c,
+null
+)
+'''
+    inlineHelpText = "WARNING - This field may not accurately reflect the donation history. Please use the Last Gift Date field instead."
+    label = "DEPRECATED - Last Transaction Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__LastDonationDate__c
+      },
+      {
+        reference = salesforce.Account.field.npe01__One2OneContact__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.Id
+      },
+    ]
+  }
+  salesforce.FormulaCurrency npe01__Lifetime_Giving_History_Amount__c {
+    apiName = "Contact.npe01__Lifetime_Giving_History_Amount__c"
+    deprecated = false
+    description = "Formula:  The Lifetime Donation Amount of the Account where this Contact is the One to One Contact.  This field has been superseded by the 'Total Amount' field in the Households package."
+    formula = '''
+IF( Account.npe01__One2OneContact__c = Id ,
+Account.npe01__LifetimeDonationHistory_Amount__c,
+null
+)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "WARNING- This field may not accurately reflect donation histories. Please use the Total Amount field on the Contact record instead."
+    label = "Lifetime Transaction Total"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__LifetimeDonationHistory_Amount__c
+      },
+      {
+        reference = salesforce.Account.field.npe01__One2OneContact__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.Id
+      },
+    ]
+  }
+  salesforce.FormulaText npe01__Organization_Type__c {
+    apiName = "Contact.npe01__Organization_Type__c"
+    deprecated = false
+    description = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
+    externalId = false
+    formula = "NULLVALUE(IF( Account.npe01__SYSTEM_AccountType__c==\"\", TEXT(Account.Type),Account.npe01__SYSTEM_AccountType__c),\"Organization\" )"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
+    label = "Organization Type"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.Type
+      },
+      {
+        reference = salesforce.Account.field.npe01__SYSTEM_AccountType__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+    ]
+  }
   salesforce.FormulaText npe01__Other_Address__c {
     apiName = "Contact.npe01__Other_Address__c"
     deprecated = false
@@ -745,6 +846,33 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     updateable = true
     queryable = true
   }
+  salesforce.FormulaText npe01__Type_of_Account__c {
+    apiName = "Contact.npe01__Type_of_Account__c"
+    deprecated = false
+    description = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
+    externalId = false
+    formula = "IF(Account.npe01__SYSTEMIsIndividual__c,\"Individual\",\"Organization\")"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
+    label = "Type of Account"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+    ]
+  }
   salesforce.Email npe01__WorkEmail__c {
     apiName = "Contact.npe01__WorkEmail__c"
     deprecated = false
@@ -852,6 +980,79 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     updateable = true
     queryable = true
   }
+  salesforce.FormulaText npo02__Formula_HouseholdMailingAddress__c {
+    apiName = "Contact.npo02__Formula_HouseholdMailingAddress__c"
+    deprecated = false
+    description = "Formula: Clone of the Household Mailing address (also a Formula)"
+    externalId = false
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account',
+
+Account.BillingStreet & BR() &
+Account.BillingCity & IF(ISBLANK(Account.BillingCity), "", ", ") & Account.BillingState & " " & Account.BillingPostalCode 
+& IF(ISBLANK(Account.BillingCountry), "", BR()& Account.BillingCountry),
+
+npo02__Household__r.npo02__Formula_MailingAddress__c)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Household Mailing Address"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
+  }
+  salesforce.FormulaText npo02__Formula_HouseholdPhone__c {
+    apiName = "Contact.npo02__Formula_HouseholdPhone__c"
+    deprecated = false
+    description = "Formula: Simple formula of Household Phone field."
+    externalId = false
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__HouseholdPhone__c,
+npo02__Household__r.npo02__HouseholdPhone__c)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Household Phone"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npo02__HouseholdPhone__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
+  }
   salesforce.Number npo02__Household_Naming_Order__c {
     apiName = "Contact.npo02__Household_Naming_Order__c"
     deprecated = false
@@ -889,6 +1090,38 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.FormulaDate npo02__LastCloseDateHH__c {
+    apiName = "Contact.npo02__LastCloseDateHH__c"
+    deprecated = false
+    description = "Formula: Last Close Date field of the related Household."
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__LastCloseDate__c,
+npo02__Household__r.npo02__LastCloseDate__c)
+'''
+    label = "Last Household Gift Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npo02__LastCloseDate__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
   }
   salesforce.Date npo02__LastCloseDate__c {
     apiName = "Contact.npo02__LastCloseDate__c"
@@ -1058,6 +1291,41 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     updateable = true
     queryable = true
   }
+  salesforce.FormulaCurrency npo02__OppAmountLastYearHH__c {
+    apiName = "Contact.npo02__OppAmountLastYearHH__c"
+    deprecated = false
+    description = "Formula:  Total Gifts Last Year on related Household."
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__OppAmountLastYear__c,
+npo02__Household__r.npo02__OppAmountLastYear__c)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Total Household Gifts Last Year"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npo02__OppAmountLastYear__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
+  }
   salesforce.Currency npo02__OppAmountLastYear__c {
     apiName = "Contact.npo02__OppAmountLastYear__c"
     defaultValueFormula = "0"
@@ -1069,6 +1337,41 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.FormulaCurrency npo02__OppAmountThisYearHH__c {
+    apiName = "Contact.npo02__OppAmountThisYearHH__c"
+    deprecated = false
+    description = "Formula:  Total Gifts This Year on related Household."
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__OppAmountThisYear__c,
+npo02__Household__r.npo02__OppAmountThisYear__c)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Total Household Gifts This Year"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npo02__OppAmountThisYear__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
   }
   salesforce.Currency npo02__OppAmountThisYear__c {
     apiName = "Contact.npo02__OppAmountThisYear__c"
@@ -1246,6 +1549,41 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     updateable = true
     queryable = true
   }
+  salesforce.FormulaCurrency npo02__Total_Household_Gifts__c {
+    apiName = "Contact.npo02__Total_Household_Gifts__c"
+    deprecated = false
+    description = "Formula:  Total Gifts on related Household."
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__TotalOppAmount__c,
+npo02__Household__r.npo02__TotalOppAmount__c)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Total Household Gifts"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npo02__TotalOppAmount__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npe01__Organization_Type__c
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
+  }
   salesforce.FormulaText npsp__Address_Verification_Status__c {
     apiName = "Contact.npsp__Address_Verification_Status__c"
     deprecated = false
@@ -1393,6 +1731,35 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     label = "First Soft Credit Date"
     _hidden_value = true
   }
+  salesforce.FormulaText npsp__HHId__c {
+    apiName = "Contact.npsp__HHId__c"
+    deprecated = false
+    description = "Holds the Id of the Household record (either Household Account, or Household object) this Contact is currently associated with (read only)."
+    externalId = false
+    formula = "if(Account.npe01__SYSTEM_AccountType__c=='Household Account',CASESAFEID(AccountId),CASESAFEID(npo02__Household__c))"
+    inlineHelpText = "holds the ID of the current household, whether it is a Household Account, or a Household Object."
+    label = "HHId"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__SYSTEM_AccountType__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.npo02__Household__c
+      },
+    ]
+  }
   salesforce.Currency npsp__Largest_Soft_Credit_Amount__c {
     apiName = "Contact.npsp__Largest_Soft_Credit_Amount__c"
     deprecated = false
@@ -1504,6 +1871,32 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.FormulaCheckbox npsp__Primary_Contact__c {
+    apiName = "Contact.npsp__Primary_Contact__c"
+    deprecated = false
+    description = "Indicates if this Contact is designated as the Primary Contact on their Account (read only)."
+    formula = "Account.npe01__One2OneContact__c = Id"
+    inlineHelpText = "This is is checked if the user is the Primary Contact on their Account.  The Primary Contact can be edited on the Account."
+    label = "Primary Contact"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__One2OneContact__c
+      },
+      {
+        reference = salesforce.Contact.field.AccountId
+      },
+      {
+        reference = salesforce.Contact.field.Id
+      },
+    ]
   }
   salesforce.Currency npsp__Soft_Credit_Last_N_Days__c {
     apiName = "Contact.npsp__Soft_Credit_Last_N_Days__c"

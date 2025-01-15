@@ -1,0 +1,16 @@
+salesforce.WebLink Account_pi__Send_To_Prospect_Insight {
+  fullName = "Account.pi__Send_To_Prospect_Insight"
+  availability = "online"
+  description = "Send this Person Account to Account Engagement"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Send To Account Engagement"
+  openType = "sidebar"
+  page = "pi__PardotAccountSendToPardot"
+  protected = false
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.pi__Send_To_Prospect_Insight"
+}

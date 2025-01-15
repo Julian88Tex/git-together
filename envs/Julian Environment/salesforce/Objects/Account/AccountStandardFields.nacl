@@ -35,6 +35,28 @@ type salesforce.Account {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Text ChannelProgramLevelName {
+    apiName = "Account.ChannelProgramLevelName"
+    length = 255
+    label = "Channel Program Level Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ChannelProgramName {
+    apiName = "Account.ChannelProgramName"
+    length = 255
+    label = "Channel Program Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Picklist CleanStatus {
     apiName = "Account.CleanStatus"
     restricted = true
@@ -85,6 +107,22 @@ type salesforce.Account {
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.Industry
   }
+  salesforce.Checkbox IsCustomerPortal {
+    apiName = "Account.IsCustomerPortal"
+    defaultValue = false
+    label = "Customer Portal Account"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPartner {
+    apiName = "Account.IsPartner"
+    defaultValue = false
+    label = "Partner Account"
+    createable = false
+    updateable = true
+    queryable = true
+  }
   salesforce.Text Jigsaw {
     apiName = "Account.Jigsaw"
     length = 20
@@ -134,14 +172,6 @@ type salesforce.Account {
     updateable = true
     scale = 0
     unique = false
-    queryable = true
-  }
-  salesforce.Lookup OperatingHoursId {
-    apiName = "Account.OperatingHoursId"
-    relationshipName = "OperatingHours"
-    label = "Operating Hour ID"
-    createable = true
-    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
@@ -295,6 +325,15 @@ type salesforce.Account {
     label = "Master Record ID"
     createable = false
     updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RecordTypeId {
+    apiName = "Account.RecordTypeId"
+    relationshipName = "RecordType"
+    label = "Record Type ID"
+    createable = true
+    updateable = true
     queryable = true
     _hidden_value = true
   }
