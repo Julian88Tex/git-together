@@ -1,0 +1,67 @@
+---
+version: 1.0
+
+# Shell script to run when pushing the source code to the scratch orgs.
+# It's a great place to automate tasks like permission set assignments or data loading.
+push_script: |
+  export nDESIGN_INSTALL_KEY=${nDESIGN_INSTALL_KEY}
+  export nFORCE_INSTALL_KEY=${nFORCE_INSTALL_KEY}
+  export LLC_BI_INSTALL_KEY=${LLC_BI_INSTALL_KEY}
+  export NDOC_INSTALL_KEY=${NDOC_INSTALL_KEY}
+  export nFUSE_INSTALL_KEY=${nFUSE_INSTALL_KEY}
+  export nCino_INSTALL_KEY=${nCino_INSTALL_KEY}
+  export nFORMS_INSTALL_KEY=${nFORMS_INSTALL_KEY}
+  export nXBI_INSTALL_KEY=${nXBI_INSTALL_KEY}
+  export EFPIO_INSTALL_KEY=${EFPIO_INSTALL_KEY}
+  export MTRNS_INSTALL_KEY=${MTRNS_INSTALL_KEY}
+  export nSBA_INSTALL_KEY=${nSBA_INSTALL_KEY}
+  echo $nDESIGN_INSTALL_KEY
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  python3 get-pip.py
+  pip install wheel
+  pip install --no-build-isolation cumulusci
+  cci org list
+  cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+  cci flow run dependencies --org ${SALESFORCE_USERNAME}
+
+custom_scripts:
+  scratch_org:
+    "Import Data1":
+      description: "Import data using SFDMU"
+      run: |
+        # echo y | sf plugins install sfdmu
+        # sf sfdmu run -p data -s csvfile -u "${SF_TARGET_ORG}" --filelog 0 -n
+        # apk add py3-pip libffi-dev gcc musl-dev linux-headers python3-dev
+        # python3 -m venv myenv && source myenv/bin/activate && python -m ensurepip --upgrade
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        python3 get-pip.py
+        pip install wheel
+        pip install --no-build-isolation cumulusci
+        cci org list
+        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+        chmod +x data/replace_composite.sh
+        ./data/replace_composite.sh PLACEHOLDER_LAST_NAME ${HUTTE_GIT_USER_NAME}
+        cci task run composite_request --org ${SF_TARGET_ORG} --data_files data/composite_actual.json
+
+    "Push Script Manual":
+      description: "Import data using SFDMU"
+      run: |
+        export nDESIGN_INSTALL_KEY=${nDESIGN_INSTALL_KEY}
+        export nFORCE_INSTALL_KEY=${nFORCE_INSTALL_KEY}
+        export LLC_BI_INSTALL_KEY=${LLC_BI_INSTALL_KEY}
+        export NDOC_INSTALL_KEY=${NDOC_INSTALL_KEY}
+        export nFUSE_INSTALL_KEY=${nFUSE_INSTALL_KEY}
+        export nCino_INSTALL_KEY=${nCino_INSTALL_KEY}
+        export nFORMS_INSTALL_KEY=${nFORMS_INSTALL_KEY}
+        export nXBI_INSTALL_KEY=${nXBI_INSTALL_KEY}
+        export EFPIO_INSTALL_KEY=${EFPIO_INSTALL_KEY}
+        export MTRNS_INSTALL_KEY=${MTRNS_INSTALL_KEY}
+        export nSBA_INSTALL_KEY=${nSBA_INSTALL_KEY}
+        echo $nDESIGN_INSTALL_KEY
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        python3 get-pip.py
+        pip install wheel
+        pip install --no-build-isolation cumulusci
+        cci org list
+        cci org import ${SALESFORCE_USERNAME} ${SALESFORCE_USERNAME}
+        cci flow run dependencies --org ${SALESFORCE_USERNAME}

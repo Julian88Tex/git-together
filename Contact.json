@@ -1,0 +1,68 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Julian"
+            },
+            "FirstName": "Julian",
+            "LastName": "Joseph",
+            "Phone": "123456789"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Michelle"
+            },
+            "FirstName": "Michelle",
+            "LastName": "Holcey",
+            "Phone": "987654321"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "V"
+            },
+            "FirstName": "Wutang",
+            "LastName": "Dizle",
+            "Phone": "111111111"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "KennyLin"
+            },
+            "FirstName": "Kenny",
+            "LastName": "Lin",
+            "Phone": "334567890"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Emma"
+            },
+            "FirstName": "Emma",
+            "LastName": "April",
+            "Phone": "123456678"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "J"
+            },
+            "FirstName": "Johnny",
+            "LastName": "Nguyen",
+            "Phone": "111111111"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Otto"
+            },
+            "FirstName": "Otto",
+            "LastName": "Hightower",
+            "Phone": "123456789"
+
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+  "orgName": "salesforce-fsc - Dev Org",
+  "edition": "Enterprise",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "chatterSettings": {
+      "enableChatter": true
+    },
+    "userManagementSettings": {
+      "enableNewProfileUI": true
+    },
+    "securitySettings": {
+      "enableAdminLoginAsAnyUser": true,
+      "sessionSettings": {
+        "forceRelogin": false
+      },
+      "enableAuditFieldsInactiveOwner": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    }
+  },
+  "features": ["Communities",
+    "ContactsToMultipleAccounts",
+    "PersonAccounts",
+    "IndustriesActionPlan",
+    "DocumentChecklist",
+    "FinancialServicesUser:9",
+    "FinancialServicesUser:10",
+    "FinancialServicesCommunityUser:10",
+    "FlowSites"],
+  "objectSettings": {
+    "account": {
+       "defaultRecordType": "PersonAccount",
+       "sharingModel": "read"
+    },
+    "opportunity": {
+      "sharingModel": "private"
+    },
+    "case": {
+      "sharingModel": "private"
+    }
+  }
+}
