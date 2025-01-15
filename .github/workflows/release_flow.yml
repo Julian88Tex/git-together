@@ -1,0 +1,40 @@
+name: CumulusCI Release Flow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_release_flow:
+    name: Run CumulusCI Release Flow
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+
+      # Step 3: Install CumulusCI
+      - name: Install CumulusCI
+        run: |
+          pip install cumulusci
+
+      # Step 4: Authenticate with Salesforce Org
+      - name: Authenticate with Salesforce Org
+        env:
+          SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
+        run: |
+          echo $SFDX_AUTH_URL > sfdx_auth_url.txt
+          sfdx auth:sfdxurl:store --file sfdx_auth_url.txt --setdefaultusername
+
+      # Step 5: Run CumulusCI Release Flow
+      - name: Run Release Flow
+        run: |
+          cci flow run release --org default
