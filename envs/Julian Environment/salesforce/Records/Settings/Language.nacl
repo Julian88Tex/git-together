@@ -2,9 +2,9 @@ salesforce.LanguageSettings {
   fullName = "Language"
   enableEndUserLanguages = false
   enableICULocaleDateFormat = false
-  enableLanguageExtensionPackage = "false"
+  enableLanguageExtensionPackage = false
   enableLocalNamesForStdObjects = false
-  enableLocaleInsensitiveFiltering = "false"
+  enableLocaleInsensitiveFiltering = false
   enablePlatformLanguages = false
   enableTranslationWorkbench = false
   useLanguageFallback = false

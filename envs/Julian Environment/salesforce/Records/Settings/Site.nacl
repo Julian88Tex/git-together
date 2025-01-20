@@ -1,6 +1,6 @@
 salesforce.SiteSettings {
   fullName = "Site"
-  enableEnhancedSitesAndContentPlatform = "true"
+  enableEnhancedSitesAndContentPlatform = true
   enableProxyLoginICHeader = true
   enableTopicsInSites = false
   _alias = "Site"

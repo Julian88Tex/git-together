@@ -8,7 +8,7 @@ salesforce.CaseSettings {
     feedItemType = "EmailMessageEvent"
   }
   caseFeedReadUnreadLtng = false
-  caseMergeInLightning = "false"
+  caseMergeInLightning = false
   closeCaseThroughStatusChange = false
   defaultCaseFeedLayoutOn = true
   defaultCaseOwner = "julian88tex@gmail.com"
@@ -23,12 +23,12 @@ salesforce.CaseSettings {
   enableEscalateQfiToCaseInternal = false
   enableEscalateQfiToCaseNetworks = false
   enableExtNetworksCaseFeedEnabled = false
-  enableMultiLangSolnSrchCSS = "false"
-  enableMultiLangSolnSrchPKB = "false"
-  enableMultiLangSolution = "false"
-  enableSolutionCategory = "false"
-  enableSolutionInlineCategory = "true"
-  enableSolutionShortSummary = "true"
+  enableMultiLangSolnSrchCSS = false
+  enableMultiLangSolnSrchPKB = false
+  enableMultiLangSolution = false
+  enableSolutionCategory = false
+  enableSolutionInlineCategory = true
+  enableSolutionShortSummary = true
   enableSuggestedSolutions = true
   escalateCaseBefore = false
   notifyContactOnCaseComment = false

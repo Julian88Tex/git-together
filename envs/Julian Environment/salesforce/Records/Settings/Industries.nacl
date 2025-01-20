@@ -1,10 +1,10 @@
 salesforce.IndustriesSettings {
   fullName = "Industries"
-  enableAccountScoreEnabled = "false"
-  enableDontSharePartyprofWPortalOrgPref = "false"
-  enablePartyProfileParentSharingOrgPref = "false"
-  enablePartyprofParentMultiSharingOrgPref = "false"
-  partyProfMultiShrPrtnrsOrgPref = "false"
-  rlaEditIfAccHasEdit = "false"
+  enableAccountScoreEnabled = false
+  enableDontSharePartyprofWPortalOrgPref = false
+  enablePartyProfileParentSharingOrgPref = false
+  enablePartyprofParentMultiSharingOrgPref = false
+  partyProfMultiShrPrtnrsOrgPref = false
+  rlaEditIfAccHasEdit = false
   _alias = "Industries"
 }

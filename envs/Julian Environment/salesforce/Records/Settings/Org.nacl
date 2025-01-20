@@ -1,8 +1,8 @@
 salesforce.OrgSettings {
   fullName = "Org"
   enableCustomerSuccessPortal = false
-  enableMakeDeploymentsMandatory = "true"
+  enableMakeDeploymentsMandatory = true
   enableManageSelfServiceUsers = false
-  enableRADeploymentAttributeOnly = "true"
+  enableRADeploymentAttributeOnly = true
   _alias = "Org"
 }

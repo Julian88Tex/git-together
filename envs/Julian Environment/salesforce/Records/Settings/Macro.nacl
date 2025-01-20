@@ -1,6 +1,6 @@
 salesforce.MacroSettings {
   fullName = "Macro"
-  contextualMacroFiltering = "true"
+  contextualMacroFiltering = true
   enableAdvancedSearch = false
   macrosInFolders = false
   _alias = "Macro"
