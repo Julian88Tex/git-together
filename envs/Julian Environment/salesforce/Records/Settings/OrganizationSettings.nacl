@@ -36,6 +36,5 @@ salesforce.Organization {
   NumKnowledgeService = 2
   WebToCaseDefaultOrigin = "Web"
   TotalTrustedRequestsLimit = 120000
-  TotalTrustedRequestsUsage = 0
   IsReadOnly = false
 }

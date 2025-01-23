@@ -7,12 +7,12 @@ salesforce.ApexPage Job_Candidate_Help {
     {
       majorNumber = 1
       minorNumber = 10
-      namespace = "sf_chttr_apps"
+      namespace = salesforce.InstalledPackage.instance.sf_chttr_apps
     },
     {
       majorNumber = 5
       minorNumber = 0
-      namespace = "stayclassy"
+      namespace = salesforce.InstalledPackage.instance.stayclassy
     },
   ]
   fullName = "Job_Candidate_Help"

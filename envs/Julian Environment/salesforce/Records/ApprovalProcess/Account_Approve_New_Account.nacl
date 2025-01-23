@@ -17,7 +17,7 @@ salesforce.ApprovalProcess Account_Approve_New_Account@vuu {
       approvalActions = {
         action = [
           {
-            name = "Set_to_Customer"
+            name = salesforce.WorkflowFieldUpdate.instance.Account_Set_to_Customer@vuu
             type = "FieldUpdate"
           },
         ]
@@ -34,7 +34,7 @@ salesforce.ApprovalProcess Account_Approve_New_Account@vuu {
       rejectionActions = {
         action = [
           {
-            name = "Set_to_Prospect"
+            name = salesforce.WorkflowFieldUpdate.instance.Account_Set_to_Prospect@vuu
             type = "FieldUpdate"
           },
         ]
@@ -61,7 +61,7 @@ salesforce.ApprovalProcess Account_Approve_New_Account@vuu {
   initialSubmissionActions = {
     action = [
       {
-        name = "Set_to_Pending"
+        name = salesforce.WorkflowFieldUpdate.instance.Account_Set_to_Pending@vuu
         type = "FieldUpdate"
       },
     ]
@@ -70,5 +70,8 @@ salesforce.ApprovalProcess Account_Approve_New_Account@vuu {
   processOrder = 1
   recordEditability = "AdminOnly"
   showApprovalHistory = true
+  _parent = [
+    salesforce.Account,
+  ]
   _alias = "Approve New Account"
 }

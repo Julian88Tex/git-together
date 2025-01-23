@@ -8,42 +8,42 @@ salesforce.ApexPage SiteRegister {
     {
       majorNumber = 3
       minorNumber = 4
-      namespace = "npe01"
+      namespace = salesforce.InstalledPackage.instance.npe01
     },
     {
       majorNumber = 3
       minorNumber = 5
-      namespace = "npe03"
+      namespace = salesforce.InstalledPackage.instance.npe03
     },
     {
       majorNumber = 3
       minorNumber = 3
-      namespace = "npe4"
+      namespace = salesforce.InstalledPackage.instance.npe4
     },
     {
       majorNumber = 3
       minorNumber = 3
-      namespace = "npe5"
+      namespace = salesforce.InstalledPackage.instance.npe5
     },
     {
       majorNumber = 3
       minorNumber = 6
-      namespace = "npo02"
+      namespace = salesforce.InstalledPackage.instance.npo02
     },
     {
       majorNumber = 3
       minorNumber = 82
-      namespace = "npsp"
+      namespace = salesforce.InstalledPackage.instance.npsp
     },
     {
       majorNumber = 1
       minorNumber = 11
-      namespace = "sf_chttr_apps"
+      namespace = salesforce.InstalledPackage.instance.sf_chttr_apps
     },
     {
       majorNumber = 5
       minorNumber = 201
-      namespace = "stayclassy"
+      namespace = salesforce.InstalledPackage.instance.stayclassy
     },
   ]
   fullName = "SiteRegister"

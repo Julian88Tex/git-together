@@ -43,5 +43,8 @@ salesforce.ApprovalProcess Case_Case_Escalation@vu {
   processOrder = 1
   recordEditability = "AdminOnly"
   showApprovalHistory = true
+  _parent = [
+    salesforce.Case,
+  ]
   _alias = "Case Escalation"
 }

@@ -8,87 +8,87 @@ salesforce.ApexPage MicrobatchSelfReg {
     {
       majorNumber = 2
       minorNumber = 12
-      namespace = "BidPal"
+      namespace = salesforce.InstalledPackage.instance.BidPal
     },
     {
       majorNumber = 3
       minorNumber = 121
-      namespace = "GW_Volunteers"
+      namespace = salesforce.InstalledPackage.instance.GW_Volunteers
     },
     {
       majorNumber = 3
       minorNumber = 49
-      namespace = "emma"
+      namespace = salesforce.InstalledPackage.instance.emma
     },
     {
       majorNumber = 1
       minorNumber = 99
-      namespace = "funraise"
+      namespace = salesforce.InstalledPackage.instance.funraise
     },
     {
       majorNumber = 1
       minorNumber = 20
-      namespace = "insights"
+      namespace = salesforce.InstalledPackage.instance.insights
     },
     {
       majorNumber = 3
       minorNumber = 19
-      namespace = "npe01"
+      namespace = salesforce.InstalledPackage.instance.npe01
     },
     {
       majorNumber = 3
       minorNumber = 22
-      namespace = "npe03"
+      namespace = salesforce.InstalledPackage.instance.npe03
     },
     {
       majorNumber = 3
       minorNumber = 12
-      namespace = "npe4"
+      namespace = salesforce.InstalledPackage.instance.npe4
     },
     {
       majorNumber = 3
       minorNumber = 10
-      namespace = "npe5"
+      namespace = salesforce.InstalledPackage.instance.npe5
     },
     {
       majorNumber = 3
       minorNumber = 15
-      namespace = "npo02"
+      namespace = salesforce.InstalledPackage.instance.npo02
     },
     {
       majorNumber = 3
       minorNumber = 212
-      namespace = "npsp"
+      namespace = salesforce.InstalledPackage.instance.npsp
     },
     {
       majorNumber = 3
       minorNumber = 85
-      namespace = "pi"
+      namespace = salesforce.InstalledPackage.instance.pi
     },
     {
       majorNumber = 1
       minorNumber = 20
-      namespace = "sf_chttr_apps"
+      namespace = salesforce.InstalledPackage.instance.sf_chttr_apps
     },
     {
       majorNumber = 1
       minorNumber = 7
-      namespace = "sf_com_apps"
+      namespace = salesforce.InstalledPackage.instance.sf_com_apps
     },
     {
       majorNumber = 1
       minorNumber = 0
-      namespace = "sfdobase"
+      namespace = salesforce.InstalledPackage.instance.sfdobase
     },
     {
       majorNumber = 5
       minorNumber = 201
-      namespace = "stayclassy"
+      namespace = salesforce.InstalledPackage.instance.stayclassy
     },
     {
       majorNumber = 1
       minorNumber = 100
-      namespace = "zkmulti"
+      namespace = salesforce.InstalledPackage.instance.zkmulti
     },
   ]
   fullName = "MicrobatchSelfReg"

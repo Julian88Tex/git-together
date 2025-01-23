@@ -2,7 +2,7 @@ salesforce.Network julian88tex {
   fullName = "julian88tex"
   allowInternalUserLogin = false
   allowMembersToFlag = false
-  changePasswordTemplate = "unfiled$public/CommunityChangePasswordEmailTemplate"
+  changePasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityChangePasswordEmailTemplate@zcd
   communityRoles = {
   }
   disableReputationRecordConversations = false
@@ -30,7 +30,7 @@ salesforce.Network julian88tex {
   enableTopicAssignmentRules = false
   enableTopicSuggestions = true
   enableUpDownVote = false
-  forgotPasswordTemplate = "unfiled$public/CommunityForgotPasswordEmailTemplate"
+  forgotPasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityForgotPasswordEmailTemplate@zcd
   gatherCustomerSentimentData = false
   headlessForgotPasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityHeadlessForgotPasswordTemplate@zcd
   headlessRegistrationTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityHeadlessRegistrationTemplate@zcd
@@ -54,6 +54,6 @@ salesforce.Network julian88tex {
     defaultTab = "home"
     standardTab = "Chatter"
   }
-  welcomeTemplate = "unfiled$public/CommunityWelcomeEmailTemplate"
+  welcomeTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityWelcomeEmailTemplate@zcd
   _alias = "julian88tex"
 }
