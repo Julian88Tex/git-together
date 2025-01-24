@@ -507,6 +507,34 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
   }
+  salesforce.FormulaText npe01__Is_Opp_From_Individual__c {
+    apiName = "Opportunity.npe01__Is_Opp_From_Individual__c"
+    deprecated = false
+    description = "Formula: Whether or not the related Account is defined as an individual (SYSTEMIsIndividual__c)"
+    externalId = false
+    formula = "IF( Account.npe01__SYSTEMIsIndividual__c, 'true', 'false' )"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Formula: Whether or not the related Account is defined as an individual (SYSTEMIsIndividual__c)"
+    label = "Is Opp From Individual"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account
+      },
+      {
+        reference = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+      },
+      {
+        reference = salesforce.Opportunity.field.AccountId
+      },
+    ]
+  }
   salesforce.Picklist npe01__Member_Level__c {
     apiName = "Opportunity.npe01__Member_Level__c"
     deprecated = false
