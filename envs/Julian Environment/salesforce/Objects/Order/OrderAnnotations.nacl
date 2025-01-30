@@ -58,6 +58,7 @@ type salesforce.Order {
   apiName = "Order"
   metadataType = "CustomObject"
   label = "Order"
+  description = ""
   actionOverrides = [
     {
       actionName = "Activate"

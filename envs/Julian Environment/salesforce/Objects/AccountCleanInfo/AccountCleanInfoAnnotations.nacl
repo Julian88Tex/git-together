@@ -58,6 +58,7 @@ type salesforce.AccountCleanInfo {
   apiName = "AccountCleanInfo"
   metadataType = "CustomObject"
   label = "Account Clean Info"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Account Clean Info"

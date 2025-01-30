@@ -58,6 +58,7 @@ type salesforce.ConsumptionSchedule {
   apiName = "ConsumptionSchedule"
   metadataType = "CustomObject"
   label = "Consumption Schedule"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.DandBCompany {
   apiName = "DandBCompany"
   metadataType = "CustomObject"
   label = "D&B Company"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

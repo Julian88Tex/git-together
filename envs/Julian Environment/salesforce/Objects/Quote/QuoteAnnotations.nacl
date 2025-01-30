@@ -58,6 +58,7 @@ type salesforce.Quote {
   apiName = "Quote"
   metadataType = "CustomObject"
   label = "Quote"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

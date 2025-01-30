@@ -58,6 +58,7 @@ type salesforce.Macro {
   apiName = "Macro"
   metadataType = "CustomObject"
   label = "Macro"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

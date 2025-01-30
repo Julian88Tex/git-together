@@ -58,6 +58,7 @@ type salesforce.OpportunityRelatedDeleteLog {
   apiName = "OpportunityRelatedDeleteLog"
   metadataType = "CustomObject"
   label = "Opportunity Related Delete Log"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Opportunity Related Delete Log"

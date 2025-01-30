@@ -58,6 +58,7 @@ type salesforce.LearningLinkProgress {
   apiName = "LearningLinkProgress"
   metadataType = "CustomObject"
   label = "LearningLinkProgress"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "LearningLinkProgress"

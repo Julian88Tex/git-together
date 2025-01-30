@@ -58,6 +58,7 @@ type salesforce.Idea {
   apiName = "Idea"
   metadataType = "CustomObject"
   label = "Idea"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.Pricebook2 {
   apiName = "Pricebook2"
   metadataType = "CustomObject"
   label = "Price Book"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

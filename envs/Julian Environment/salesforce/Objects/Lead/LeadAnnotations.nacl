@@ -58,6 +58,7 @@ type salesforce.Lead {
   apiName = "Lead"
   metadataType = "CustomObject"
   label = "Lead"
+  description = ""
   actionOverrides = [
     {
       actionName = "Accept"

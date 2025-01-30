@@ -58,6 +58,7 @@ type salesforce.UserProvisioningRequest {
   apiName = "UserProvisioningRequest"
   metadataType = "CustomObject"
   label = "User Provisioning Request"
+  description = ""
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "Private"

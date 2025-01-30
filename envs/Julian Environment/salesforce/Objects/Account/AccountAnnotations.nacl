@@ -58,6 +58,7 @@ type salesforce.Account {
   apiName = "Account"
   metadataType = "CustomObject"
   label = "Account"
+  description = ""
   actionOverrides = [
     {
       actionName = "CallHighlightAction"

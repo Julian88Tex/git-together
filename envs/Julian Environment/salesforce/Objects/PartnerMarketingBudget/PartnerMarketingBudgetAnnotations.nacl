@@ -58,6 +58,7 @@ type salesforce.PartnerMarketingBudget {
   apiName = "PartnerMarketingBudget"
   metadataType = "CustomObject"
   label = "Partner Marketing Budget"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

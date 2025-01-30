@@ -58,6 +58,7 @@ type salesforce.ForecastingCustomData {
   apiName = "ForecastingCustomData"
   metadataType = "CustomObject"
   label = "Forecasting Custom Data"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ReadWrite"
   _alias = "Forecasting Custom Data"

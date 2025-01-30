@@ -58,6 +58,7 @@ type salesforce.PromptError {
   apiName = "PromptError"
   metadataType = "CustomObject"
   label = "Prompt Error"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "Prompt Error"

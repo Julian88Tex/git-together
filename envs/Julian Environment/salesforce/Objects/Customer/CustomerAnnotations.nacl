@@ -58,6 +58,7 @@ type salesforce.Customer {
   apiName = "Customer"
   metadataType = "CustomObject"
   label = "Customer"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

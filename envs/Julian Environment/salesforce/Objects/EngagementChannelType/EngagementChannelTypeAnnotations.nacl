@@ -58,6 +58,7 @@ type salesforce.EngagementChannelType {
   apiName = "EngagementChannelType"
   metadataType = "CustomObject"
   label = "Engagement Channel Type"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

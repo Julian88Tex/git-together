@@ -58,6 +58,7 @@ type salesforce.ContactCleanInfo {
   apiName = "ContactCleanInfo"
   metadataType = "CustomObject"
   label = "Contact Clean Info"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Contact Clean Info"

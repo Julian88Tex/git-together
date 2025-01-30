@@ -94,6 +94,7 @@ type salesforce.Project__c {
   apiName = "Project__c"
   metadataType = "CustomObject"
   label = "Project"
+  description = ""
   pluralLabel = "Projects"
   actionOverrides = [
     {

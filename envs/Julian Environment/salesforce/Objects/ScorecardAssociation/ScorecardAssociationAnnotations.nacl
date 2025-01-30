@@ -58,6 +58,7 @@ type salesforce.ScorecardAssociation {
   apiName = "ScorecardAssociation"
   metadataType = "CustomObject"
   label = "Scorecard Association"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

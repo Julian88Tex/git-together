@@ -58,6 +58,7 @@ type salesforce.Case {
   apiName = "Case"
   metadataType = "CustomObject"
   label = "Case"
+  description = ""
   actionOverrides = [
     {
       actionName = "Accept"

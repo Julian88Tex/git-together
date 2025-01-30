@@ -94,6 +94,7 @@ type salesforce.Campsite_Reservation__c {
   apiName = "Campsite_Reservation__c"
   metadataType = "CustomObject"
   label = "Campsite Reservation"
+  description = ""
   pluralLabel = "Campsite Reservations"
   actionOverrides = [
     {

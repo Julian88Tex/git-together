@@ -58,6 +58,7 @@ type salesforce.Event {
   apiName = "Event"
   metadataType = "CustomObject"
   label = "Event"
+  description = ""
   actionOverrides = [
     {
       actionName = "Accept"

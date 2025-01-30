@@ -58,6 +58,7 @@ type salesforce.Image {
   apiName = "Image"
   metadataType = "CustomObject"
   label = "Image"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

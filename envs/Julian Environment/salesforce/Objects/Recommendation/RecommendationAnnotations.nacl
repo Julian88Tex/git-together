@@ -58,6 +58,7 @@ type salesforce.Recommendation {
   apiName = "Recommendation"
   metadataType = "CustomObject"
   label = "Recommendation"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

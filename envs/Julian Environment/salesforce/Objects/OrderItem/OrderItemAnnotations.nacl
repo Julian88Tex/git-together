@@ -58,6 +58,7 @@ type salesforce.OrderItem {
   apiName = "OrderItem"
   metadataType = "CustomObject"
   label = "Order Product"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddProduct"

@@ -58,6 +58,7 @@ type salesforce.DuplicateRecordSet {
   apiName = "DuplicateRecordSet"
   metadataType = "CustomObject"
   label = "Duplicate Record Set"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

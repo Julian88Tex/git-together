@@ -58,6 +58,7 @@ type salesforce.Contract {
   apiName = "Contract"
   metadataType = "CustomObject"
   label = "Contract"
+  description = ""
   actionOverrides = [
     {
       actionName = "Activate"

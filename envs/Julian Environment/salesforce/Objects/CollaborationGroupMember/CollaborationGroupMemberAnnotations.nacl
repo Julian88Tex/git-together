@@ -58,6 +58,7 @@ type salesforce.CollaborationGroupMember {
   apiName = "CollaborationGroupMember"
   metadataType = "CustomObject"
   label = "Group Member"
+  description = ""
   actionOverrides = [
     {
       actionName = "Delete"

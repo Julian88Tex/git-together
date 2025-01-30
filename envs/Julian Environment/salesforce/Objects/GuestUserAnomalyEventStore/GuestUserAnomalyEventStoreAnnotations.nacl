@@ -58,6 +58,7 @@ type salesforce.GuestUserAnomalyEventStore {
   apiName = "GuestUserAnomalyEventStore"
   metadataType = "CustomObject"
   label = "Guest User Anomaly Event Store"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

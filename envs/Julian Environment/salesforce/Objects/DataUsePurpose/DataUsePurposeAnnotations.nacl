@@ -58,6 +58,7 @@ type salesforce.DataUsePurpose {
   apiName = "DataUsePurpose"
   metadataType = "CustomObject"
   label = "Data Use Purpose"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

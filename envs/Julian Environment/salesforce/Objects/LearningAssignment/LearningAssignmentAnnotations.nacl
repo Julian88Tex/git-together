@@ -58,6 +58,7 @@ type salesforce.LearningAssignment {
   apiName = "LearningAssignment"
   metadataType = "CustomObject"
   label = "LearningAssignment"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "LearningAssignment"

@@ -58,6 +58,7 @@ type salesforce.PricebookEntry {
   apiName = "PricebookEntry"
   metadataType = "CustomObject"
   label = "Price Book Entry"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddPricebookEntry"

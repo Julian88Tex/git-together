@@ -58,6 +58,7 @@ type salesforce.OpportunityCompetitor {
   apiName = "OpportunityCompetitor"
   metadataType = "CustomObject"
   label = "Opportunity: Competitor"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.AssetRelationship {
   apiName = "AssetRelationship"
   metadataType = "CustomObject"
   label = "Asset Relationship"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

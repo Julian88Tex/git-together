@@ -58,6 +58,7 @@ type salesforce.ExchangeUserMapping {
   apiName = "ExchangeUserMapping"
   metadataType = "CustomObject"
   label = "ExchangeUserMapping"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "ExchangeUserMapping"

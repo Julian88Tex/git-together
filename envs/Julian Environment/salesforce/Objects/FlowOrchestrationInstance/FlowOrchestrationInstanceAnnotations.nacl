@@ -58,6 +58,7 @@ type salesforce.FlowOrchestrationInstance {
   apiName = "FlowOrchestrationInstance"
   metadataType = "CustomObject"
   label = "Orchestration Run"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

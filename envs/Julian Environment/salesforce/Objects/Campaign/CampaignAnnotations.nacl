@@ -58,6 +58,7 @@ type salesforce.Campaign {
   apiName = "Campaign"
   metadataType = "CustomObject"
   label = "Campaign"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddCampaign"

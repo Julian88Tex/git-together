@@ -58,6 +58,7 @@ type salesforce.AuthorizationFormConsent {
   apiName = "AuthorizationFormConsent"
   metadataType = "CustomObject"
   label = "Authorization Form Consent"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

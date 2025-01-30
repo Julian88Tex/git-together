@@ -58,6 +58,7 @@ type salesforce.ContactRequest {
   apiName = "ContactRequest"
   metadataType = "CustomObject"
   label = "Contact Request"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

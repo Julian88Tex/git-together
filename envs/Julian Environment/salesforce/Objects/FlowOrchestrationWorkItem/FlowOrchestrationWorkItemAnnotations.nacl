@@ -58,6 +58,7 @@ type salesforce.FlowOrchestrationWorkItem {
   apiName = "FlowOrchestrationWorkItem"
   metadataType = "CustomObject"
   label = "Orchestration Work Item"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

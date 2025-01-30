@@ -58,6 +58,7 @@ type salesforce.ScorecardMetric {
   apiName = "ScorecardMetric"
   metadataType = "CustomObject"
   label = "Scorecard Metric"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

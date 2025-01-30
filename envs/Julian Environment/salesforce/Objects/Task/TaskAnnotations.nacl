@@ -58,6 +58,7 @@ type salesforce.Task {
   apiName = "Task"
   metadataType = "CustomObject"
   label = "Task"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

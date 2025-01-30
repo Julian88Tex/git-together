@@ -94,6 +94,7 @@ type salesforce.JobPosting__c {
   apiName = "JobPosting__c"
   metadataType = "CustomObject"
   label = "JobPosting"
+  description = ""
   pluralLabel = "JobPostings"
   actionOverrides = [
     {

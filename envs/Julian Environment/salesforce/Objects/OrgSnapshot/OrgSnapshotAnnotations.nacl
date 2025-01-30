@@ -58,6 +58,7 @@ type salesforce.OrgSnapshot {
   apiName = "OrgSnapshot"
   metadataType = "CustomObject"
   label = "Org Snapshot"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "Org Snapshot"

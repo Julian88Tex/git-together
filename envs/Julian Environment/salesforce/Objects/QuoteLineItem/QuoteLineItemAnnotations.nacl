@@ -58,6 +58,7 @@ type salesforce.QuoteLineItem {
   apiName = "QuoteLineItem"
   metadataType = "CustomObject"
   label = "Quote Line Item"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddQuoteLine"

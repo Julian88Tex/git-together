@@ -58,6 +58,7 @@ type salesforce.ConsumptionRate {
   apiName = "ConsumptionRate"
   metadataType = "CustomObject"
   label = "Consumption Rate"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

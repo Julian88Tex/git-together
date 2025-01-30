@@ -58,6 +58,7 @@ type salesforce.OrgDeleteRequest {
   apiName = "OrgDeleteRequest"
   metadataType = "CustomObject"
   label = "Org Delete Request"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "Org Delete Request"

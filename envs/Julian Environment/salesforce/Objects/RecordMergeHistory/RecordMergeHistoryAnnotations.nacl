@@ -58,6 +58,7 @@ type salesforce.RecordMergeHistory {
   apiName = "RecordMergeHistory"
   metadataType = "CustomObject"
   label = "RecordMergeHistory"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "RecordMergeHistory"

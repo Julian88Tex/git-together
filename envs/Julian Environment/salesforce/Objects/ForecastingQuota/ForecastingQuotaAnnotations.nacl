@@ -58,6 +58,7 @@ type salesforce.ForecastingQuota {
   apiName = "ForecastingQuota"
   metadataType = "CustomObject"
   label = "Forecasting Quota"
+  description = ""
   enableFeeds = false
   _alias = "Forecasting Quota"
 }

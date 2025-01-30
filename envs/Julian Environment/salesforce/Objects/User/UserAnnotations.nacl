@@ -58,6 +58,7 @@ type salesforce.User {
   apiName = "User"
   metadataType = "CustomObject"
   label = "User"
+  description = ""
   actionOverrides = [
     {
       actionName = "CallHighlightAction"

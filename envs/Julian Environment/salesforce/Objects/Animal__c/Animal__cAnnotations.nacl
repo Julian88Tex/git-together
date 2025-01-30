@@ -94,6 +94,7 @@ type salesforce.Animal__c {
   apiName = "Animal__c"
   metadataType = "CustomObject"
   label = "Animal"
+  description = ""
   pluralLabel = "Animals"
   actionOverrides = [
     {

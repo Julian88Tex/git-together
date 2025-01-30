@@ -58,6 +58,7 @@ type salesforce.AuthorizationFormText {
   apiName = "AuthorizationFormText"
   metadataType = "CustomObject"
   label = "Authorization Form Text"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

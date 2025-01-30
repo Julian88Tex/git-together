@@ -58,6 +58,7 @@ type salesforce.CommSubscription {
   apiName = "CommSubscription"
   metadataType = "CustomObject"
   label = "Communication Subscription"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

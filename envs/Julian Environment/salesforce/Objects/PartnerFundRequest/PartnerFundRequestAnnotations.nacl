@@ -58,6 +58,7 @@ type salesforce.PartnerFundRequest {
   apiName = "PartnerFundRequest"
   metadataType = "CustomObject"
   label = "Partner Fund Request"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

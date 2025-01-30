@@ -58,6 +58,7 @@ type salesforce.NetworkMember {
   apiName = "NetworkMember"
   metadataType = "CustomObject"
   label = "Network Member"
+  description = ""
   enableFeeds = false
   _alias = "Network Member"
 }

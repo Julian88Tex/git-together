@@ -58,6 +58,7 @@ type salesforce.TopicAssignment {
   apiName = "TopicAssignment"
   metadataType = "CustomObject"
   label = "Topic Assignment"
+  description = ""
   enableFeeds = false
   _alias = "Topic Assignment"
 }

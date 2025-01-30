@@ -58,6 +58,7 @@ type salesforce.MacroInstruction {
   apiName = "MacroInstruction"
   metadataType = "CustomObject"
   label = "Macro Instruction"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Macro Instruction"

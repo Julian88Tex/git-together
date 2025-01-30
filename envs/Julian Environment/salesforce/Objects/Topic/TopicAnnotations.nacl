@@ -58,6 +58,7 @@ type salesforce.Topic {
   apiName = "Topic"
   metadataType = "CustomObject"
   label = "Topic"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

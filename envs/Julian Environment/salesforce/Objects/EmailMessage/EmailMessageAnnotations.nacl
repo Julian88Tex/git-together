@@ -58,6 +58,7 @@ type salesforce.EmailMessage {
   apiName = "EmailMessage"
   metadataType = "CustomObject"
   label = "Email Message"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

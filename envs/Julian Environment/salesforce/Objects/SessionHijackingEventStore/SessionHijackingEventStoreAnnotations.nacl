@@ -58,6 +58,7 @@ type salesforce.SessionHijackingEventStore {
   apiName = "SessionHijackingEventStore"
   metadataType = "CustomObject"
   label = "Session Hijacking Event Store"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.ReportAnomalyEventStore {
   apiName = "ReportAnomalyEventStore"
   metadataType = "CustomObject"
   label = "Report Anomaly Event Store"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

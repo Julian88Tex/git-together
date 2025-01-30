@@ -58,6 +58,7 @@ type salesforce.ScratchOrgInfo {
   apiName = "ScratchOrgInfo"
   metadataType = "CustomObject"
   label = "Scratch Org Info"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

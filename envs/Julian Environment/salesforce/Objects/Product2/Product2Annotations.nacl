@@ -58,6 +58,7 @@ type salesforce.Product2 {
   apiName = "Product2"
   metadataType = "CustomObject"
   label = "Product"
+  description = ""
   actionOverrides = [
     {
       actionName = "Add"

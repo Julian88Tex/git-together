@@ -58,6 +58,7 @@ type salesforce.ContentVersion {
   apiName = "ContentVersion"
   metadataType = "CustomObject"
   label = "Content Version"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

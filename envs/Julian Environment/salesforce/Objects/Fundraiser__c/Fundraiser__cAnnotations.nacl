@@ -94,6 +94,7 @@ type salesforce.Fundraiser__c {
   apiName = "Fundraiser__c"
   metadataType = "CustomObject"
   label = "Fundraiser"
+  description = ""
   pluralLabel = "Fundraisers"
   actionOverrides = [
     {

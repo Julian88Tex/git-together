@@ -94,6 +94,7 @@ type salesforce.Review__c {
   apiName = "Review__c"
   metadataType = "CustomObject"
   label = "Review"
+  description = ""
   pluralLabel = "Reviews"
   actionOverrides = [
     {

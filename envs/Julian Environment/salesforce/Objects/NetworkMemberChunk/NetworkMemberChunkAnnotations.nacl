@@ -58,6 +58,7 @@ type salesforce.NetworkMemberChunk {
   apiName = "NetworkMemberChunk"
   metadataType = "CustomObject"
   label = "NetworkMemberChunk"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "NetworkMemberChunk"

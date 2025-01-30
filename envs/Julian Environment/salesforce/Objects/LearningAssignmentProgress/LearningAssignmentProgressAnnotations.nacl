@@ -58,6 +58,7 @@ type salesforce.LearningAssignmentProgress {
   apiName = "LearningAssignmentProgress"
   metadataType = "CustomObject"
   label = "LearningAssignmentProgress"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "LearningAssignmentProgress"

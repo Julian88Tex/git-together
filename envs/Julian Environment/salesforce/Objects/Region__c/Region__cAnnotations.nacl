@@ -94,6 +94,7 @@ type salesforce.Region__c {
   apiName = "Region__c"
   metadataType = "CustomObject"
   label = "Region"
+  description = ""
   pluralLabel = "Regions"
   actionOverrides = [
     {

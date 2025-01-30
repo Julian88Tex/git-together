@@ -58,6 +58,7 @@ type salesforce.StreamingChannel {
   apiName = "StreamingChannel"
   metadataType = "CustomObject"
   label = "Streaming Channel"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

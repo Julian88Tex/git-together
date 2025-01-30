@@ -58,6 +58,7 @@ type salesforce.UserLocalWebServerIdentity {
   apiName = "UserLocalWebServerIdentity"
   metadataType = "CustomObject"
   label = "User Local Web Server Identity"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "User Local Web Server Identity"

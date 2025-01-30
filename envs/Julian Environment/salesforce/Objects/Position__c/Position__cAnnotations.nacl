@@ -94,6 +94,7 @@ type salesforce.Position__c {
   apiName = "Position__c"
   metadataType = "CustomObject"
   label = "Position"
+  description = ""
   pluralLabel = "Positions"
   actionOverrides = [
     {

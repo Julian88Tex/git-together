@@ -58,6 +58,7 @@ type salesforce.OrgMetricScanSummary {
   apiName = "OrgMetricScanSummary"
   metadataType = "CustomObject"
   label = "OrgMetricScanSummary"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

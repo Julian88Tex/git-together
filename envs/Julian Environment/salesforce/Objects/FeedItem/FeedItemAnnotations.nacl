@@ -58,6 +58,7 @@ type salesforce.FeedItem {
   apiName = "FeedItem"
   metadataType = "CustomObject"
   label = "Feed Item"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

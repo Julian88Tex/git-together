@@ -58,6 +58,7 @@ type salesforce.OpportunityLineItem {
   apiName = "OpportunityLineItem"
   metadataType = "CustomObject"
   label = "Opportunity Product"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddProduct"

@@ -94,6 +94,7 @@ type salesforce.Vehicle__c {
   apiName = "Vehicle__c"
   metadataType = "CustomObject"
   label = "Vehicle"
+  description = ""
   pluralLabel = "Vehicles"
   actionOverrides = [
     {

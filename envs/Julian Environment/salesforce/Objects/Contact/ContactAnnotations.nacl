@@ -58,6 +58,7 @@ type salesforce.Contact {
   apiName = "Contact"
   metadataType = "CustomObject"
   label = "Contact"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddCampaign"

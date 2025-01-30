@@ -58,6 +58,7 @@ type salesforce.SocialPersona {
   apiName = "SocialPersona"
   metadataType = "CustomObject"
   label = "SocialPersona"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

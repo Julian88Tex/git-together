@@ -58,6 +58,7 @@ type salesforce.Seller {
   apiName = "Seller"
   metadataType = "CustomObject"
   label = "Seller"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -94,6 +94,7 @@ type salesforce.Trail__c {
   apiName = "Trail__c"
   metadataType = "CustomObject"
   label = "Trail"
+  description = ""
   pluralLabel = "Trails"
   actionOverrides = [
     {

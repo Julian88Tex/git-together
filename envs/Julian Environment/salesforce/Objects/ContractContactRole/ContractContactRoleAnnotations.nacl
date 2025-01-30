@@ -58,6 +58,7 @@ type salesforce.ContractContactRole {
   apiName = "ContractContactRole"
   metadataType = "CustomObject"
   label = "Contract Contact Role"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddContactRole"

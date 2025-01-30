@@ -58,6 +58,7 @@ type salesforce.ForecastingAdjustment {
   apiName = "ForecastingAdjustment"
   metadataType = "CustomObject"
   label = "Forecasting Adjustment"
+  description = ""
   enableFeeds = false
   _alias = "Forecasting Adjustment"
 }

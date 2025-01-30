@@ -58,6 +58,7 @@ type salesforce.RecordAction {
   apiName = "RecordAction"
   metadataType = "CustomObject"
   label = "RecordAction"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ReadWrite"
   _alias = "RecordAction"

@@ -58,6 +58,7 @@ type salesforce.AccountContactRelation {
   apiName = "AccountContactRelation"
   metadataType = "CustomObject"
   label = "Account Contact Relationship"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

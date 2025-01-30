@@ -58,6 +58,7 @@ type salesforce.PartnerFundAllocation {
   apiName = "PartnerFundAllocation"
   metadataType = "CustomObject"
   label = "Partner Fund Allocation"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

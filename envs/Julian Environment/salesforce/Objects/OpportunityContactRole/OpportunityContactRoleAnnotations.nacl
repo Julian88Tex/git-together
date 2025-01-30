@@ -58,6 +58,7 @@ type salesforce.OpportunityContactRole {
   apiName = "OpportunityContactRole"
   metadataType = "CustomObject"
   label = "Opportunity Contact Role"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddContactRole"

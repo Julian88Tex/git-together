@@ -94,6 +94,7 @@ type salesforce.Website__c {
   apiName = "Website__c"
   metadataType = "CustomObject"
   label = "Website"
+  description = ""
   pluralLabel = "Websites"
   actionOverrides = [
     {

@@ -58,6 +58,7 @@ type salesforce.NamespaceRegistry {
   apiName = "NamespaceRegistry"
   metadataType = "CustomObject"
   label = "Namespace Registry"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

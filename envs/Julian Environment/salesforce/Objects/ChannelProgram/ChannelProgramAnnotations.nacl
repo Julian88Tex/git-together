@@ -58,6 +58,7 @@ type salesforce.ChannelProgram {
   apiName = "ChannelProgram"
   metadataType = "CustomObject"
   label = "Channel Program"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

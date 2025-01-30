@@ -58,6 +58,7 @@ type salesforce.QuickText {
   apiName = "QuickText"
   metadataType = "CustomObject"
   label = "Quick Text"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

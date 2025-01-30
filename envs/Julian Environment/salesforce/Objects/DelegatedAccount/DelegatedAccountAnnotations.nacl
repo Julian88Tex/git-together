@@ -58,6 +58,7 @@ type salesforce.DelegatedAccount {
   apiName = "DelegatedAccount"
   metadataType = "CustomObject"
   label = "External Managed Account"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

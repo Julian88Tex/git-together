@@ -58,6 +58,7 @@ type salesforce.BusinessBrand {
   apiName = "BusinessBrand"
   metadataType = "CustomObject"
   label = "Business Brand"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

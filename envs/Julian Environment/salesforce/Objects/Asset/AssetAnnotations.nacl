@@ -58,6 +58,7 @@ type salesforce.Asset {
   apiName = "Asset"
   metadataType = "CustomObject"
   label = "Asset"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

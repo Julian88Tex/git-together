@@ -58,6 +58,7 @@ type salesforce.Individual {
   apiName = "Individual"
   metadataType = "CustomObject"
   label = "Individual"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

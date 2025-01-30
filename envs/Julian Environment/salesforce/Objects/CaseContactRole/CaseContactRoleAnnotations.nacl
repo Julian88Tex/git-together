@@ -58,6 +58,7 @@ type salesforce.CaseContactRole {
   apiName = "CaseContactRole"
   metadataType = "CustomObject"
   label = "Case Contact Role"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

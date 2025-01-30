@@ -58,6 +58,7 @@ type salesforce.LearningItem {
   apiName = "LearningItem"
   metadataType = "CustomObject"
   label = "LearningItem"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "LearningItem"

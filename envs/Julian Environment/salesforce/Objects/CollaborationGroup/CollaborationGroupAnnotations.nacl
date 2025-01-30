@@ -58,6 +58,7 @@ type salesforce.CollaborationGroup {
   apiName = "CollaborationGroup"
   metadataType = "CustomObject"
   label = "Group"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddMembersAction"
