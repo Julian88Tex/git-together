@@ -29,7 +29,6 @@ salesforce.Flow Test_Delay_Process {
         },
       ]
       nameSegment = "emailSimple"
-      versionSegment = 1
     },
     {
       name = "invocableSObjectErrorEmail"
@@ -63,7 +62,6 @@ The Test_Delay_Process-1 invocable process failed to start because a valid value
         },
       ]
       nameSegment = "emailSimple"
-      versionSegment = 1
     },
   ]
   apiVersion = 49

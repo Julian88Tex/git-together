@@ -117,6 +117,20 @@ type salesforce.Product2 {
       type = "Default"
     },
     {
+      actionName = "EcmActivateDeactivateProduct2"
+      type = "Default"
+    },
+    {
+      actionName = "EcmActivateDeactivateProduct2"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "EcmActivateDeactivateProduct2"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "Edit"
       type = "Default"
     },

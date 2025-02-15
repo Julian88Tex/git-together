@@ -1,0 +1,9 @@
+salesforce.ListView ApprovalSubmission_My_ApprovalSubmissions {
+  fullName = "ApprovalSubmission.My_ApprovalSubmissions"
+  filterScope = "Mine"
+  label = "MyApprovalSubmissions"
+  _parent = [
+    salesforce.ApprovalSubmission,
+  ]
+  _alias = "MyApprovalSubmissions"
+}

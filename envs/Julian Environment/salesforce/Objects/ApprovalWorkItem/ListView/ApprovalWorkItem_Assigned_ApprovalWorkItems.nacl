@@ -1,0 +1,16 @@
+salesforce.ListView ApprovalWorkItem_Assigned_ApprovalWorkItems {
+  fullName = "ApprovalWorkItem.Assigned_ApprovalWorkItems"
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "Status"
+      operation = "equals"
+      value = "AS"
+    },
+  ]
+  label = "AssignedApprovalWorkItems"
+  _parent = [
+    salesforce.ApprovalWorkItem,
+  ]
+  _alias = "AssignedApprovalWorkItems"
+}

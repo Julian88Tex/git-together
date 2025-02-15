@@ -15,7 +15,7 @@ salesforce.ContentSettings {
   enableFileShareSetByRecord = false
   enableFilesUsrShareNetRestricted = false
   enableJPGPreviews = false
-  enableLWCFileUpload = false
+  enableLWCFileUpload = true
   enableLibraryManagedFiles = false
   enableSiteGuestUserToUploadFiles = false
   enableUploadFilesOnAttachments = false

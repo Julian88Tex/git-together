@@ -1,0 +1,16 @@
+salesforce.ListView ApprovalSubmission_Pending_ApprovalSubmissions {
+  fullName = "ApprovalSubmission.Pending_ApprovalSubmissions"
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "Status"
+      operation = "equals"
+      value = "IP"
+    },
+  ]
+  label = "PendingApprovalSubmissions"
+  _parent = [
+    salesforce.ApprovalSubmission,
+  ]
+  _alias = "PendingApprovalSubmissions"
+}

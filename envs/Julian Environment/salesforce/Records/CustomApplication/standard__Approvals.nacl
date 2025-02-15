@@ -1,0 +1,24 @@
+salesforce.CustomApplication standard__Approvals {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Approvals"
+  navType = "Console"
+  tabs = [
+    "standard-ApprovalsHome",
+  ]
+  uiType = "Lightning"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-ApprovalsHome"
+      },
+    ]
+  }
+  fullName = "standard__Approvals"
+  _alias = "Approvals (standard)"
+}

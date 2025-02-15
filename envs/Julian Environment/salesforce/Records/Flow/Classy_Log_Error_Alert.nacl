@@ -25,7 +25,6 @@ salesforce.Flow Classy_Log_Error_Alert {
         },
       ]
       nameSegment = "stayclassy__Classy_Logs__c.Classy_Exception_Log"
-      versionSegment = 1
     },
   ]
   apiVersion = 49

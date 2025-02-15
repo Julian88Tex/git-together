@@ -135,6 +135,14 @@ type salesforce.User {
     caseSensitive = false
     queryable = true
   }
+  salesforce.Picklist EndDay {
+    apiName = "User.EndDay"
+    restricted = true
+    label = "End of Day"
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Phone Extension {
     apiName = "User.Extension"
     label = "Extension"
@@ -301,6 +309,14 @@ type salesforce.User {
     apiName = "User.Signature"
     length = 1333
     label = "Email Signature"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist StartDay {
+    apiName = "User.StartDay"
+    restricted = true
+    label = "Start of Day"
     createable = true
     updateable = true
     queryable = true
@@ -484,6 +500,14 @@ type salesforce.User {
     queryable = true
     _hidden_value = true
   }
+  salesforce.DateTime PasswordExpirationDate {
+    apiName = "User.PasswordExpirationDate"
+    label = "Password Expiration Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
     label = "Failed Login Attempts"
@@ -492,6 +516,14 @@ type salesforce.User {
     updateable = false
     scale = 0
     unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date SuAccessExpirationDate {
+    apiName = "User.SuAccessExpirationDate"
+    label = "SU Access Expiration Date"
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -1210,6 +1242,15 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.Checkbox IsPartner {
+    apiName = "User.IsPartner"
+    defaultValue = false
+    label = "Is Partner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "User.AccountId"

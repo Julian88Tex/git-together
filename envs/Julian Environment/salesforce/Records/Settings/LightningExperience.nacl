@@ -30,7 +30,7 @@ salesforce.LightningExperienceSettings {
   enableS1DesktopEnabled = true
   enableS1UiLoggingEnabled = true
   enableSidToken3rdPartyAuraApp = false
-  enableStackedModalManagerEnabled = false
+  enableStackedModalManagerEnabled = true
   enableTryLightningOptOut = false
   enableUseS1AlohaDesktop = false
   enableUsersAreLightningOnly = false

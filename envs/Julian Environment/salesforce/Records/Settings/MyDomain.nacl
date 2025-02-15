@@ -18,6 +18,7 @@ salesforce.MyDomainSettings {
   logRedirections = false
   myDomainName = "julian88tex-dev-ed"
   myDomainSuffix = "MySalesforce"
+  onboardCustomerSpecificSuffix = false
   redirectForceComSiteUrls = true
   redirectPriorMyDomain = true
   use3rdPartyCookieBlockingCompatibleHostnames = true

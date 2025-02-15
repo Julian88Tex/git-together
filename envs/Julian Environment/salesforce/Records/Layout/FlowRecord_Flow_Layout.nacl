@@ -86,6 +86,7 @@ salesforce.Layout FlowRecord_Flow_Layout@bs {
         "RunInMode",
         "ApiVersion",
         "CapacityCategory",
+        "AreMetricsLoggedToDataCloud",
       ]
       relatedList = "FlowRecordVersions"
     },

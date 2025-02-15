@@ -1,0 +1,9 @@
+salesforce.ListView ApprovalWorkItem_All_ApprovalWorkItems {
+  fullName = "ApprovalWorkItem.All_ApprovalWorkItems"
+  filterScope = "Everything"
+  label = "AllApprovalWorkItems"
+  _parent = [
+    salesforce.ApprovalWorkItem,
+  ]
+  _alias = "AllApprovalWorkItems"
+}

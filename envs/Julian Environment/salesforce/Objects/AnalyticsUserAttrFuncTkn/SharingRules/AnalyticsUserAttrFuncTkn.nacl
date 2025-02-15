@@ -1,0 +1,7 @@
+salesforce.SharingRules AnalyticsUserAttrFuncTkn {
+  fullName = "AnalyticsUserAttrFuncTkn"
+  _parent = [
+    salesforce.AnalyticsUserAttrFuncTkn,
+  ]
+  _alias = "AnalyticsUserAttrFuncTkn"
+}

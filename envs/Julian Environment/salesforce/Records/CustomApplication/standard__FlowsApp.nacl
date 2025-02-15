@@ -11,6 +11,7 @@ salesforce.CustomApplication standard__FlowsApp {
   tabs = [
     "standard-home",
     "standard-FlowRecord",
+    "standard-Monitor",
   ]
   uiType = "Lightning"
   utilityBar = "FlowsApp_UtilityBar"

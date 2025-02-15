@@ -248,6 +248,20 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     },
     {
       notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "invoice_generation"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "ls_metadata_record_update"
+    },
+    {
+      notificationChannels = {
         desktopEnabled = false
         mobileEnabled = false
       }

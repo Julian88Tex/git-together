@@ -10,6 +10,10 @@ type salesforce.FlowOrchestrationInstance {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Unknown OrchestrationLabel {
+    apiName = "FlowOrchestrationInstance.OrchestrationLabel"
+    _hidden_value = true
+  }
   salesforce.Lookup OwnerId {
     apiName = "FlowOrchestrationInstance.OwnerId"
     relationshipName = "Owner"

@@ -1,4 +1,4 @@
-type salesforce.GuestUserAnomalyEventStore {
+type salesforce.ApprovalSubmission {
   annotations {
     serviceid apiName {
     }
@@ -6,13 +6,13 @@ type salesforce.GuestUserAnomalyEventStore {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -55,9 +55,9 @@ type salesforce.GuestUserAnomalyEventStore {
     hidden_string internalId {
     }
   }
-  apiName = "GuestUserAnomalyEventStore"
+  apiName = "ApprovalSubmission"
   metadataType = "CustomObject"
-  label = "Guest User Anomaly Event Store"
+  label = "Approval Submission"
   description = ""
   actionOverrides = [
     {
@@ -89,20 +89,6 @@ type salesforce.GuestUserAnomalyEventStore {
       type = "Default"
     },
     {
-      actionName = "ProvideFeedbackAction"
-      type = "Default"
-    },
-    {
-      actionName = "ProvideFeedbackAction"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "ProvideFeedbackAction"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
       actionName = "SaveEdit"
       type = "Default"
     },
@@ -127,12 +113,26 @@ type salesforce.GuestUserAnomalyEventStore {
     },
     {
       actionName = "Tab"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "View"
       formFactor = "Small"
       type = "Default"
     },
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ReadWrite"
-  _alias = "Guest User Anomaly Event Store"
+  externalSharingModel = "Private"
+  _alias = "Approval Submission"
 }

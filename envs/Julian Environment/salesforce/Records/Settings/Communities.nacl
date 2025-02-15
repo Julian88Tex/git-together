@@ -10,7 +10,6 @@ salesforce.CommunitiesSettings {
   enableEnablePRM = false
   enableExternalAccHierPref = false
   enableGuestPermDisOptOutCruc = false
-  enableGuestRecordReassignOrgPref = true
   enableGuestSecurityOptOutCruc = false
   enableGuvSecurityOptOutPref = false
   enableInviteChatterGuestEnabled = true

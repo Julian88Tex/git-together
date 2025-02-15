@@ -1,6 +1,6 @@
 salesforce.UserEngagementSettings {
   fullName = "UserEngagement"
-  canGovCloudUseAdoptionApps = false
+  canUseAdoptionApps = false
   doesScheduledSwitcherRunDaily = false
   enableCustomHelpGlobalSection = false
   enableHelpMenuShowFeedback = true
