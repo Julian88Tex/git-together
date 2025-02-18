@@ -21,5 +21,13 @@ salesforce.WorkflowRule Opportunity_npsp__Opportunity_Email_Acknowledgment@vuuss
   _parent = [
     salesforce.Opportunity,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity.field.npsp__Acknowledgment_Status__c
+    },
+    {
+      reference = salesforce.Opportunity.field.npsp__Primary_Contact__c
+    },
+  ]
   _alias = "Opportunity.npsp__Opportunity Email Acknowledgment"
 }

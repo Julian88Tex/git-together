@@ -38,5 +38,19 @@ npe01__AlternateEmail__c
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.npe01__AlternateEmail__c
+    },
+    {
+      reference = salesforce.Contact.field.npe01__HomeEmail__c
+    },
+    {
+      reference = salesforce.Contact.field.npe01__Preferred_Email__c
+    },
+    {
+      reference = salesforce.Contact.field.npe01__WorkEmail__c
+    },
+  ]
   _alias = "Contact.npe01__ContactPreferredEmail"
 }

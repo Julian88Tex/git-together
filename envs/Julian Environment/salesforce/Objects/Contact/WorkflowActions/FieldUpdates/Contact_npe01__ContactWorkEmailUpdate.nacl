@@ -10,5 +10,10 @@ salesforce.WorkflowFieldUpdate Contact_npe01__ContactWorkEmailUpdate@vuu {
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.Email
+    },
+  ]
   _alias = "Contact.npe01__ContactWorkEmailUpdate"
 }

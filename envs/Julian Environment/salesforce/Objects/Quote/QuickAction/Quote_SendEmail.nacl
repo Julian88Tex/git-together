@@ -65,5 +65,16 @@ salesforce.QuickAction Quote_SendEmail@v {
   _parent = [
     salesforce.Quote,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Contact.field.Email
+    },
+    {
+      reference = salesforce.Quote.field.ContactId
+    },
+  ]
   _alias = "Quote.SendEmail"
 }

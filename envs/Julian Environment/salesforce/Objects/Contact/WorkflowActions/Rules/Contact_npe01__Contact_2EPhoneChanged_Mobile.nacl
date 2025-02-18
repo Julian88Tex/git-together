@@ -13,5 +13,13 @@ salesforce.WorkflowRule Contact_npe01__Contact_2EPhoneChanged_Mobile@vuupu {
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.Phone
+    },
+    {
+      reference = salesforce.Contact.field.npe01__PreferredPhone__c
+    },
+  ]
   _alias = "Contact.npe01__Contact%2EPhoneChanged_Mobile"
 }

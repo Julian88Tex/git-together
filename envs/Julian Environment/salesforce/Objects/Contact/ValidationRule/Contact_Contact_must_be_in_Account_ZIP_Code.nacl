@@ -11,5 +11,13 @@ AND(
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact.field.AccountId
+    },
+  ]
   _alias = "Contact.Contact_must_be_in_Account_ZIP_Code"
 }

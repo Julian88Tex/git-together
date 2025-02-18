@@ -49,5 +49,10 @@ salesforce.QuickAction FeedItem_NewTaskFromFeedItem@v {
   _parent = [
     salesforce.FeedItem,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.FeedItem.field.Body
+    },
+  ]
   _alias = "FeedItem.NewTaskFromFeedItem"
 }

@@ -21,5 +21,10 @@ salesforce.WorkflowRule Contact_GW_Volunteers__Volunteer_Signup___Contact@vuuuss
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.GW_Volunteers__Volunteer_Last_Web_Signup_Date__c
+    },
+  ]
   _alias = "Contact.GW_Volunteers__Volunteer Signup - Contact"
 }

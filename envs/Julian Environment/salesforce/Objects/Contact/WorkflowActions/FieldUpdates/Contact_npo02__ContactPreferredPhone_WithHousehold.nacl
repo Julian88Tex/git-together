@@ -31,5 +31,25 @@ OtherPhone
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.HomePhone
+    },
+    {
+      reference = salesforce.Contact.field.MobilePhone
+    },
+    {
+      reference = salesforce.Contact.field.OtherPhone
+    },
+    {
+      reference = salesforce.Contact.field.npe01__PreferredPhone__c
+    },
+    {
+      reference = salesforce.Contact.field.npe01__WorkPhone__c
+    },
+    {
+      reference = salesforce.Contact.field.npo02__Formula_HouseholdPhone__c
+    },
+  ]
   _alias = "Contact.npo02__ContactPreferredPhone_WithHousehold"
 }

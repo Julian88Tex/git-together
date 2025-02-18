@@ -13,5 +13,13 @@ salesforce.WorkflowRule Contact_npe01__Contact_2EEmailChanged_Work@vuupu {
   _parent = [
     salesforce.Contact,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact.field.Email
+    },
+    {
+      reference = salesforce.Contact.field.npe01__Preferred_Email__c
+    },
+  ]
   _alias = "Contact.npe01__Contact%2EEmailChanged_Work"
 }

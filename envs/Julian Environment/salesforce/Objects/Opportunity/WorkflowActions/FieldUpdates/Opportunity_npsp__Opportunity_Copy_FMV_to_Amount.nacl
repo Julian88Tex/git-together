@@ -11,5 +11,10 @@ salesforce.WorkflowFieldUpdate Opportunity_npsp__Opportunity_Copy_FMV_to_Amount@
   _parent = [
     salesforce.Opportunity,
   ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity.field.npsp__Fair_Market_Value__c
+    },
+  ]
   _alias = "Opportunity.npsp__Opportunity_Copy_FMV_to_Amount"
 }
