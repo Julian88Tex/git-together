@@ -8,59 +8,64 @@ salesforce.Layout Global_Global_Layout@bs {
         sortOrder = 0
       },
       {
-        actionName = "npsp__NewTask"
+        actionName = "FeedItem.ContentPost"
         actionType = "QuickAction"
         sortOrder = 1
       },
       {
-        actionName = "FeedItem.MobileSmartActions"
+        actionName = salesforce.QuickAction.instance.NewEvent
         actionType = "QuickAction"
         sortOrder = 2
       },
       {
-        actionName = "npsp__NewContact"
+        actionName = salesforce.QuickAction.instance.NewTask
         actionType = "QuickAction"
         sortOrder = 3
       },
       {
-        actionName = salesforce.QuickAction.instance.New_Organization
+        actionName = salesforce.QuickAction.instance.NewContact
         actionType = "QuickAction"
         sortOrder = 4
       },
       {
-        actionName = salesforce.QuickAction.instance.New_Household_Account
+        actionName = salesforce.QuickAction.instance.LogACall
         actionType = "QuickAction"
         sortOrder = 5
       },
       {
-        actionName = "npsp__New_Recurring_Donation"
+        actionName = salesforce.QuickAction.instance.NewOpportunity
         actionType = "QuickAction"
         sortOrder = 6
       },
       {
-        actionName = "npe03__NewNote"
+        actionName = salesforce.QuickAction.instance.NewCase
         actionType = "QuickAction"
         sortOrder = 7
       },
       {
-        actionName = "npsp__New_Campaign"
+        actionName = salesforce.QuickAction.instance.NewLead
         actionType = "QuickAction"
         sortOrder = 8
       },
       {
-        actionName = "FeedItem.ContentPost"
+        actionName = "FeedItem.LinkPost"
         actionType = "QuickAction"
         sortOrder = 9
       },
       {
-        actionName = "npsp__LogACall"
+        actionName = "FeedItem.PollPost"
         actionType = "QuickAction"
         sortOrder = 10
       },
       {
-        actionName = "FeedItem.LinkPost"
+        actionName = "FeedItem.QuestionPost"
         actionType = "QuickAction"
         sortOrder = 11
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 12
       },
     ]
   }
@@ -76,31 +81,34 @@ salesforce.Layout Global_Global_Layout@bs {
         quickActionName = "FeedItem.PollPost"
       },
       {
+        quickActionName = "FeedItem.QuestionPost"
+      },
+      {
         quickActionName = "FeedItem.TextPost"
       },
       {
-        quickActionName = salesforce.QuickAction.instance.New_Detailed_Account
+        quickActionName = salesforce.QuickAction.instance.LogACall
       },
       {
-        quickActionName = salesforce.QuickAction.instance.New_Household_Account
+        quickActionName = salesforce.QuickAction.instance.NewCase
       },
       {
-        quickActionName = salesforce.QuickAction.instance.New_Organization
+        quickActionName = salesforce.QuickAction.instance.NewContact
       },
       {
-        quickActionName = "npsp__LogACall"
+        quickActionName = salesforce.QuickAction.instance.NewEvent
       },
       {
-        quickActionName = "npsp__NewContact"
+        quickActionName = salesforce.QuickAction.instance.NewLead
       },
       {
-        quickActionName = "npsp__NewTask"
+        quickActionName = salesforce.QuickAction.instance.NewOpportunity
       },
       {
-        quickActionName = "npsp__New_Campaign"
+        quickActionName = salesforce.QuickAction.instance.NewTask
       },
       {
-        quickActionName = "npsp__New_Recurring_Donation"
+        quickActionName = salesforce.QuickAction.instance.SendEmail
       },
     ]
   }
