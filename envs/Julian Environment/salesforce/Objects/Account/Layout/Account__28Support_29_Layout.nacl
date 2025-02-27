@@ -1,8 +1,6 @@
 salesforce.Layout Account_Account__28Support_29_Layout@bspps {
-  emailDefault = false
-  headers = [
-    "PersonalTagging",
-    "PublicTagging",
+  excludeButtons = [
+    "Submit",
   ]
   layoutSections = [
     {
@@ -44,10 +42,6 @@ salesforce.Layout Account_Account__28Support_29_Layout@bspps {
             {
               behavior = "Edit"
               field = salesforce.Account.field.Website
-            },
-            {
-              behavior = "Readonly"
-              field = salesforce.Account.field.Potential_Value__c
             },
           ]
         },
@@ -206,6 +200,7 @@ salesforce.Layout Account_Account__28Support_29_Layout@bspps {
       customLabel = false
       detailHeading = false
       editHeading = false
+      label = "Custom Links"
       layoutColumns = [
         {
           layoutItems = [
@@ -222,11 +217,153 @@ salesforce.Layout Account_Account__28Support_29_Layout@bspps {
       style = "CustomLinks"
     },
   ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = "FeedItem.TextPost"
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = "FeedItem.ContentPost"
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewContact
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewCase
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 5
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewNote
+        actionType = "QuickAction"
+        sortOrder = 6
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 7
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 8
+      },
+      {
+        actionName = "FeedItem.LinkPost"
+        actionType = "QuickAction"
+        sortOrder = 9
+      },
+      {
+        actionName = "FeedItem.PollPost"
+        actionType = "QuickAction"
+        sortOrder = 10
+      },
+      {
+        actionName = "FeedItem.QuestionPost"
+        actionType = "QuickAction"
+        sortOrder = 11
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 12
+      },
+      {
+        actionName = "JigsawSearch"
+        actionType = "StandardButton"
+        sortOrder = 13
+      },
+      {
+        actionName = "Submit"
+        actionType = "StandardButton"
+        sortOrder = 14
+      },
+      {
+        actionName = "AccountHierarchy"
+        actionType = "StandardButton"
+        sortOrder = 15
+      },
+      {
+        actionName = "IncludeOffline"
+        actionType = "StandardButton"
+        sortOrder = 16
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 17
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 18
+      },
+      {
+        actionName = "XClean"
+        actionType = "StandardButton"
+        sortOrder = 19
+      },
+      {
+        actionName = "Share"
+        actionType = "StandardButton"
+        sortOrder = 20
+      },
+      {
+        actionName = "SendEmail"
+        actionType = "StandardButton"
+        sortOrder = 21
+      },
+      {
+        actionName = "ChangeOwnerOne"
+        actionType = "StandardButton"
+        sortOrder = 22
+      },
+      {
+        actionName = "ChangeRecordType"
+        actionType = "StandardButton"
+        sortOrder = 23
+      },
+      {
+        actionName = "CallHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 24
+      },
+      {
+        actionName = "SmsHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 25
+      },
+      {
+        actionName = "EmailHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 26
+      },
+      {
+        actionName = "WebsiteHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 27
+      },
+    ]
+  }
   quickActionList = {
     quickActionListItems = [
-      {
-        quickActionName = "FeedItem.ContentNote"
-      },
       {
         quickActionName = "FeedItem.ContentPost"
       },
@@ -335,26 +472,21 @@ salesforce.Layout Account_Account__28Support_29_Layout@bspps {
       ]
       relatedList = "RelatedPartnerList"
     },
-    {
-      fields = [
-        "CreatedDate",
-        "StepStatus",
-        "OriginalActor",
-        "Actor",
-        "Comments",
-      ]
-      relatedList = "RelatedProcessHistoryList"
-    },
   ]
   relatedObjects = [
     "ParentId",
   ]
-  runAssignmentRulesDefault = false
-  showEmailCheckbox = true
+  showEmailCheckbox = false
   showHighlightsPanel = false
   showInteractionLogPanel = false
-  showRunAssignmentRulesCheckbox = true
+  showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h1a0000012AHI"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
   fullName = "Account-Account %28Support%29 Layout"
   _parent = [
     salesforce.Account,
