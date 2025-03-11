@@ -57,7 +57,7 @@ type salesforce.OrgMetricScanResult {
   }
   apiName = "OrgMetricScanResult"
   metadataType = "CustomObject"
-  label = "OrgMetricScanResult"
+  label = "Org Metric Scan Result"
   description = ""
   actionOverrides = [
     {
@@ -189,5 +189,5 @@ type salesforce.OrgMetricScanResult {
   ]
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
-  _alias = "OrgMetricScanResult"
+  _alias = "Org Metric Scan Result"
 }
