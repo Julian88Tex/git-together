@@ -44,6 +44,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
       notificationType = "bulk_action_plan_save"
     },
     {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "cdp_data_share_notif_type"
+    },
+    {
       appSettings = [
         {
           connectedAppName = "sf_chttr_apps__Chatter_for_Android"
