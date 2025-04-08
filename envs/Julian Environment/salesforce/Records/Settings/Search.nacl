@@ -449,6 +449,12 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
+        name = "Q9__Q9_Logger__c"
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
         name = "Q9__RMNode__c"
         resultsPerPageCount = 0
       },

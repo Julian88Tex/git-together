@@ -213,6 +213,10 @@ salesforce.AppMenu AppSwitcher {
       name = salesforce.CustomApplication.instance.standard__Approvals
       type = "CustomApplication"
     },
+    {
+      name = "Q9__Elements_Lightning"
+      type = "CustomApplication"
+    },
   ]
   _alias = "AppSwitcher"
 }
