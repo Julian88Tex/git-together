@@ -1,7 +1,4 @@
 salesforce.Layout Account_Account_Layout@bs {
-  customButtons = [
-    "npsp__Manage_Household",
-  ]
   excludeButtons = [
     "Submit",
   ]
@@ -46,22 +43,6 @@ salesforce.Layout Account_Account_Layout@bs {
               behavior = "Edit"
               field = salesforce.Account.field.AnnualRevenue
             },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npe01__SYSTEM_AccountType__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
-            },
-            {
-              behavior = "Readonly"
-              field = salesforce.Account.field.Potential_Value__c
-            },
           ]
         },
         {
@@ -97,14 +78,6 @@ salesforce.Layout Account_Account_Layout@bs {
             {
               behavior = "Edit"
               field = salesforce.Account.field.Sic
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npe01__One2OneContact__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.RecordTypeId
             },
           ]
         },
@@ -176,38 +149,6 @@ salesforce.Layout Account_Account_Layout@bs {
               behavior = "Edit"
               field = salesforce.Account.field.UpsellOpportunity__c
             },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__Best_Gift_Year_Total__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__TotalOppAmount__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__OppAmountLastNDays__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__OppAmountLastYear__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__OppAmountThisYear__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__OppAmount2YearsAgo__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__TotalMembershipOppAmount__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.npo02__NumberOfClosedOpps__c
-            },
           ]
         },
       ]
@@ -256,7 +197,7 @@ salesforce.Layout Account_Account_Layout@bs {
       style = "OneColumn"
     },
     {
-      customLabel = true
+      customLabel = false
       detailHeading = false
       editHeading = false
       label = "Custom Links"
@@ -310,102 +251,119 @@ salesforce.Layout Account_Account_Layout@bs {
         sortOrder = 5
       },
       {
-        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionName = salesforce.QuickAction.instance.NewNote
         actionType = "QuickAction"
         sortOrder = 6
       },
       {
-        actionName = salesforce.QuickAction.instance.NewEvent
+        actionName = salesforce.QuickAction.instance.NewOpportunity
         actionType = "QuickAction"
         sortOrder = 7
       },
       {
-        actionName = "FeedItem.LinkPost"
+        actionName = salesforce.QuickAction.instance.NewEvent
         actionType = "QuickAction"
         sortOrder = 8
       },
       {
-        actionName = "FeedItem.PollPost"
+        actionName = "FeedItem.LinkPost"
         actionType = "QuickAction"
         sortOrder = 9
       },
       {
-        actionName = "FeedItem.QuestionPost"
+        actionName = "FeedItem.PollPost"
         actionType = "QuickAction"
         sortOrder = 10
       },
       {
-        actionName = salesforce.QuickAction.instance.Account_Update_Account_Information@vuu
+        actionName = "FeedItem.QuestionPost"
         actionType = "QuickAction"
         sortOrder = 11
       },
       {
-        actionName = "Edit"
-        actionType = "StandardButton"
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
         sortOrder = 12
       },
       {
-        actionName = "Delete"
+        actionName = "ChangeOwnerOne"
         actionType = "StandardButton"
         sortOrder = 13
       },
       {
-        actionName = "Share"
+        actionName = "IncludeOffline"
         actionType = "StandardButton"
         sortOrder = 14
       },
       {
-        actionName = "JigsawSearch"
+        actionName = "XClean"
         actionType = "StandardButton"
         sortOrder = 15
       },
       {
-        actionName = "IncludeOffline"
+        actionName = "Submit"
         actionType = "StandardButton"
         sortOrder = 16
       },
       {
-        actionName = "Submit"
+        actionName = "SendEmail"
         actionType = "StandardButton"
         sortOrder = 17
       },
       {
-        actionName = "SendEmail"
+        actionName = "JigsawSearch"
         actionType = "StandardButton"
         sortOrder = 18
       },
       {
-        actionName = "XClean"
+        actionName = "Edit"
         actionType = "StandardButton"
         sortOrder = 19
       },
       {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 20
+      },
+      {
+        actionName = "ChangeRecordType"
+        actionType = "StandardButton"
+        sortOrder = 21
+      },
+      {
+        actionName = "Share"
+        actionType = "StandardButton"
+        sortOrder = 22
+      },
+      {
+        actionName = "AccountHierarchy"
+        actionType = "StandardButton"
+        sortOrder = 23
+      },
+      {
         actionName = "CallHighlightAction"
         actionType = "ProductivityAction"
-        sortOrder = 20
+        sortOrder = 24
+      },
+      {
+        actionName = "SmsHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 25
       },
       {
         actionName = "EmailHighlightAction"
         actionType = "ProductivityAction"
-        sortOrder = 21
+        sortOrder = 26
       },
       {
         actionName = "WebsiteHighlightAction"
         actionType = "ProductivityAction"
-        sortOrder = 22
-      },
-      {
-        actionName = salesforce.QuickAction.instance.SendEmail
-        actionType = "QuickAction"
-        sortOrder = 23
+        sortOrder = 27
       },
     ]
   }
   quickActionList = {
     quickActionListItems = [
-      {
-        quickActionName = salesforce.QuickAction.instance.Account_Update_Account_Information@vuu
-      },
       {
         quickActionName = "FeedItem.ContentPost"
       },
@@ -434,6 +392,9 @@ salesforce.Layout Account_Account_Layout@bs {
         quickActionName = salesforce.QuickAction.instance.NewEvent
       },
       {
+        quickActionName = salesforce.QuickAction.instance.NewNote
+      },
+      {
         quickActionName = salesforce.QuickAction.instance.NewOpportunity
       },
       {
@@ -445,22 +406,6 @@ salesforce.Layout Account_Account_Layout@bs {
     ]
   }
   relatedLists = [
-    {
-      fields = [
-        "NAME",
-        "npsp__MailingCity__c",
-        "npsp__MailingCountry__c",
-        "npsp__MailingState__c",
-        "npsp__MailingStreet__c",
-        "npsp__Formula_MailingStreetAddress__c",
-        "npsp__MailingStreet2__c",
-        "npsp__MailingPostalCode__c",
-      ]
-      relatedList = "npsp__Address__c.npsp__Household_Account__c"
-    },
-    {
-      relatedList = "RelatedAccountContactRoleList"
-    },
     {
       fields = [
         "FULL_NAME",
@@ -527,16 +472,6 @@ salesforce.Layout Account_Account_Layout@bs {
       ]
       relatedList = "RelatedPartnerList"
     },
-    {
-      fields = [
-        "CreatedDate",
-        "StepStatus",
-        "OriginalActor",
-        "Actor",
-        "Comments",
-      ]
-      relatedList = "RelatedProcessHistoryList"
-    },
   ]
   relatedObjects = [
     "ParentId",
@@ -547,7 +482,7 @@ salesforce.Layout Account_Account_Layout@bs {
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false
   summaryLayout = {
-    masterLabel = "00h61000001HdA7"
+    masterLabel = "00h1a0000012AGq"
     sizeX = 4
     sizeY = 0
     summaryLayoutStyle = "Default"
