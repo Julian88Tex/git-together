@@ -1,0 +1,16 @@
+salesforce.ListView Lead_MyUnreadLeads {
+  fullName = "Lead.MyUnreadLeads"
+  filterScope = "Mine"
+  filters = [
+    {
+      field = "LEAD.UNREAD"
+      operation = "equals"
+      value = "1"
+    },
+  ]
+  label = "My Unread Leads"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "My Unread Leads"
+}

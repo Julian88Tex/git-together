@@ -1,0 +1,293 @@
+salesforce.FieldSet Lead_npsp__BDE_List_FS {
+  fullName = "Lead.npsp__BDE_List_FS"
+  availableFields = [
+    {
+      field = salesforce.Lead.field.AnnualRevenue
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "City"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npsp__CompanyCity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npsp__CompanyCountry__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npsp__CompanyPostalCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npsp__CompanyState__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npsp__CompanyStreet__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.ConvertedAccountId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.ConvertedContactId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.ConvertedDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.ConvertedOpportunityId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Country"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.CreatedById
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.CreatedDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Description
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.DoNotCall
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.EmailBouncedDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.EmailBouncedReason
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Fax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "FirstName"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.HasOptedOutOfEmail
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.HasOptedOutOfFax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Id
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Industry
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.IsConverted
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.IsDeleted
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.IsUnreadByOwner
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.LastActivityDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.LastModifiedById
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.LastModifiedDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "LastName"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "LastReferencedDate"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.LastTransferDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "LastViewedDate"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Latitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.LeadSource
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Longitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.MasterRecordId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.MobilePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.NumberOfEmployees
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.OwnerId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Phone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.PhotoUrl
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "PostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npe01__Preferred_Email__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.npe01__Preferred_Phone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Rating
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Salutation"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "State"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Status
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Street"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Title
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Website
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Batch Data Entry"
+  displayedFields = [
+    {
+      field = salesforce.Lead.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Email
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Lead.field.Company
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "BDE List FS"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "BDE List FS (npsp)"
+}

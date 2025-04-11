@@ -1,0 +1,23 @@
+type salesforce.Event {
+  salesforce.Text Primary_Resource__c {
+    apiName = "Event.Primary_Resource__c"
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    activityField = salesforce.Activity.field.Primary_Resource__c
+  }
+  salesforce.FormulaText DB_Activity_Type__c {
+    apiName = "Event.DB_Activity_Type__c"
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Event.field.Subject
+      },
+    ]
+    activityField = salesforce.Activity.field.DB_Activity_Type__c
+  }
+}

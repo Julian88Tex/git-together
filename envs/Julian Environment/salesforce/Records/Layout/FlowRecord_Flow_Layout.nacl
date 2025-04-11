@@ -1,0 +1,99 @@
+salesforce.Layout FlowRecord_Flow_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "FlowLabel"
+            },
+            {
+              behavior = "Edit"
+              field = "Description"
+            },
+            {
+              behavior = "Edit"
+              field = "AssociatedRecordId"
+            },
+            {
+              behavior = "Edit"
+              field = "CreatedById"
+            },
+            {
+              behavior = "Edit"
+              field = "LastModifiedById"
+            },
+            {
+              behavior = "Edit"
+              field = "FlowCategory"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "ApiName"
+            },
+            {
+              behavior = "Required"
+              field = "FlowType"
+            },
+            {
+              behavior = "Edit"
+              field = "CreatedDate"
+            },
+            {
+              behavior = "Edit"
+              field = "LastModifiedDate"
+            },
+            {
+              behavior = "Edit"
+              field = "FlowSubcategory"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "VersionNumber",
+        "ProgressStatus",
+        "LastModifiedDate",
+        "Entries",
+        "Exits",
+        "Errors",
+        "Name",
+        "CreatedDate",
+        "RunInMode",
+        "ApiVersion",
+        "CapacityCategory",
+        "AreMetricsLoggedToDataCloud",
+      ]
+      relatedList = "FlowRecordVersions"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FlowRecord-Flow Layout"
+  _alias = "FlowRecord-Flow Layout"
+}

@@ -1,0 +1,14 @@
+salesforce.CompactLayout Contact_Phone_and_Email {
+  fullName = "Contact.Phone_and_Email"
+  fields = [
+    "Name",
+    "Phone",
+    "MobilePhone",
+    "Email",
+  ]
+  label = "Phone and Email"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Phone and Email"
+}

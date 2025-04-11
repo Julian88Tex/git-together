@@ -1,0 +1,9 @@
+salesforce.ListView Product2_AllProducts {
+  fullName = "Product2.AllProducts"
+  filterScope = "Everything"
+  label = "All Products"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _alias = "All Products"
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules StreamingChannel {
+  fullName = "StreamingChannel"
+  _parent = [
+    salesforce.StreamingChannel,
+  ]
+  _alias = "StreamingChannel"
+}

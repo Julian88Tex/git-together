@@ -1,0 +1,143 @@
+type salesforce.PartnerFundAllocation {
+  salesforce.Currency Amount {
+    apiName = "PartnerFundAllocation.Amount"
+    _required = true
+    label = "Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Lookup BudgetId {
+    apiName = "PartnerFundAllocation.BudgetId"
+    relationshipName = "Budget"
+    _required = true
+    label = "Partner Marketing Budget ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerFundAllocation.ChannelPartnerId"
+    relationshipName = "ChannelPartner"
+    label = "Channel Partner ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerFundAllocation.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerFundAllocation.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerFundAllocation.Title"
+    length = 255
+    _required = true
+    label = "Partner Fund Allocation Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency TotalApprovedFcs {
+    apiName = "PartnerFundAllocation.TotalApprovedFcs"
+    label = "Total Approved Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFrs {
+    apiName = "PartnerFundAllocation.TotalApprovedFrs"
+    label = "Total Approved Fund Requests"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalReimbursedFcs {
+    apiName = "PartnerFundAllocation.TotalReimbursedFcs"
+    label = "Total Reimbursed Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "PartnerFundAllocation.Id"
+    label = "Partner Fund Allocation ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerFundAllocation.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerFundAllocation.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerFundAllocation.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerFundAllocation.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerFundAllocation.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerFundAllocation.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

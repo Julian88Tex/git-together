@@ -1,0 +1,36 @@
+salesforce.Flow Test_Partner {
+  fullName = "Test_Partner"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myUniquelyDummyAssignment"
+      label = "myUniquelyDummyAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myUniquelyDummyVariable.Name"
+          operator = "Assign"
+          value = {
+            stringValue = "fakeVal"
+          }
+        },
+      ]
+    },
+  ]
+  label = "Test Partner"
+  processType = "Workflow"
+  startElementReference = "myUniquelyDummyAssignment"
+  status = "InvalidDraft"
+  variables = [
+    {
+      name = "myUniquelyDummyVariable"
+      dataType = "SObject"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      objectType = salesforce.Account
+    },
+  ]
+  _alias = "Test Partner"
+}

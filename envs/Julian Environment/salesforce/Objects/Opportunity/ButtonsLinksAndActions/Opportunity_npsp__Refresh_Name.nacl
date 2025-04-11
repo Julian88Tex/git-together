@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_npsp__Refresh_Name {
+  fullName = "Opportunity.npsp__Refresh_Name"
+  availability = "online"
+  description = "Updates this opportunity's name based on the naming scheme in NPSP settings."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Refresh Name"
+  openType = "sidebar"
+  page = "npsp__OPP_OpportunityNamingBTN"
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Refresh_Name"
+}

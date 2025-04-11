@@ -1,0 +1,293 @@
+salesforce.Flow Update_Custom_Designation {
+  fullName = "Update_Custom_Designation"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "myDecision"
+      }
+    },
+  ]
+  decisions = [
+    {
+      name = "myDecision"
+      label = "Primary Decision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+              ]
+              leftValueReference = "myVariable_current.stayclassy__sf_designation_id__c"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "a0861000002uatqAAA"
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_pmetdec"
+          }
+          label = "Is \"General Funds Project\""
+        },
+      ]
+    },
+    {
+      name = "myRule_1_pmetdec"
+      label = "Previously Met Decision"
+      locationX = 100
+      locationY = 100
+      defaultConnector = {
+        targetReference = "myRule_1_A1"
+      }
+      defaultConnectorLabel = "Not Previously Met"
+      rules = [
+        {
+          name = "myRule_1_pmetnullrule"
+          conditionLogic = "or"
+          conditions = [
+            {
+              leftValueReference = "myVariable_old"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Previously Met - Null"
+        },
+        {
+          name = "myRule_1_pmetrule"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "ID"
+                  }
+                },
+              ]
+              leftValueReference = "myVariable_old.stayclassy__sf_designation_id__c"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "a0861000002uatqAAA"
+              }
+            },
+          ]
+          label = "Previously Met - Prev"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Update_Custom_Designation-1_Opportunity"
+  label = "Update Custom Designation"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Opportunity"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onAllChanges"
+      }
+    },
+  ]
+  processType = "Workflow"
+  recordUpdates = [
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "always"
+          }
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Opportunity]"
+          }
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Update Custom Designation"
+      locationX = 100
+      locationY = 200
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "My Custom Designation"
+              }
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Picklist"
+              }
+            },
+          ]
+          field = salesforce.Opportunity.field.My_Custom_Designation__c
+          value = {
+            stringValue = "Unrestricted"
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+    },
+  ]
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Active"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity.field.stayclassy__sf_designation_id__c
+    },
+  ]
+  _alias = "Update Custom Designation"
+}

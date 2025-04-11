@@ -1,0 +1,37 @@
+salesforce.WorkflowRule Opportunity_npsp__Opportunity_Copy_FMV_to_Amount@vuussss {
+  fullName = "Opportunity.npsp__Opportunity Copy FMV to Amount"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Opportunity_npsp__Opportunity_Copy_FMV_to_Amount@vuuuuuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  booleanFilter = "(1 OR 2) AND (3 AND 4)"
+  criteriaItems = [
+    {
+      field = salesforce.Opportunity.field.Amount
+      operation = "equals"
+      value = "0"
+    },
+    {
+      field = salesforce.Opportunity.field.Amount
+      operation = "equals"
+    },
+    {
+      field = salesforce.Opportunity.field.npsp__Fair_Market_Value__c
+      operation = "notEqual"
+      value = "0"
+    },
+    {
+      field = salesforce.Opportunity.field.npsp__Fair_Market_Value__c
+      operation = "notEqual"
+    },
+  ]
+  description = "Enable this rule to copy the Fair Market Value to the Amount field, when the Amount is zero or blank."
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity Copy FMV to Amount"
+}

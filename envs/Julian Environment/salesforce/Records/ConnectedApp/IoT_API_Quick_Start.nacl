@@ -1,0 +1,29 @@
+salesforce.ConnectedApp IoT_API_Quick_Start {
+  fullName = "IoT_API_Quick_Start"
+  contactEmail = "Julian88Tex@gmail.com"
+  contactPhone = "5127363854"
+  label = "IoT API Quick Start"
+  oauthConfig = {
+    callbackUrl = "https://"
+    consumerKey = "3MVG9KI2HHAq33RxBoW.hYQeIT_pHnnK1HADgIWkajaeYkDAWI1X5b0UhIzZXUHEnxpnSQd4eCJJqXMsVSsTL"
+    isAdminApproved = false
+    isClientCredentialEnabled = false
+    isCodeCredentialEnabled = false
+    isCodeCredentialPostOnly = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    isNamedUserJwtEnabled = false
+    isPkceRequired = false
+    isRefreshTokenRotationEnabled = false
+    isSecretRequiredForRefreshToken = true
+    isSecretRequiredForTokenExchange = false
+    isTokenExchangeEnabled = false
+    scopes = "Api"
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    isTokenExchangeFlowEnabled = false
+    refreshTokenPolicy = "infinite"
+  }
+  _alias = "IoT API Quick Start"
+}

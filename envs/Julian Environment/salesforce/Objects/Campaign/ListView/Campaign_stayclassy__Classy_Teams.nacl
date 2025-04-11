@@ -1,0 +1,26 @@
+salesforce.ListView Campaign_stayclassy__Classy_Teams {
+  fullName = "Campaign.stayclassy__Classy_Teams"
+  columns = [
+    "CAMPAIGN.NAME",
+    "PARENT_NAME",
+    salesforce.Campaign.field.stayclassy__sf_contact_id__c,
+    "CAMPAIGN.STATUS",
+    "TOT_AMOUNT_WON",
+    "CAMPAIGN.EXP_REVENUE",
+    "AMOUNT_ALL",
+    salesforce.Campaign.field.stayclassy__sc_event_id__c,
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "CAMPAIGN.CAMPAIGN_TYPE"
+      operation = "equals"
+      value = "Team"
+    },
+  ]
+  label = "Classy Teams"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Classy Teams (stayclassy)"
+}

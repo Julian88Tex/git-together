@@ -1,0 +1,26 @@
+salesforce.CustomApplication Garage {
+  defaultLandingTab = "Vehicle__c"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Garage"
+  tabs = [
+    "standard-Chatter",
+    "standard-File",
+    salesforce.CustomTab.instance.Vehicle__c,
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Candidate__c,
+    salesforce.CustomTab.instance.npsp__Batch__c,
+    salesforce.CustomTab.instance.Region__c,
+    salesforce.CustomTab.instance.New_Customer_Flow,
+    salesforce.CustomTab.instance.npsp__Trigger_Handler__c,
+    salesforce.CustomTab.instance.Animal__c,
+  ]
+  fullName = "Garage"
+  _alias = "Garage"
+}

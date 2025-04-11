@@ -1,0 +1,5 @@
+salesforce.StandardValueSet EntitlementType {
+  fullName = "EntitlementType"
+  sorted = false
+  _alias = "EntitlementType"
+}

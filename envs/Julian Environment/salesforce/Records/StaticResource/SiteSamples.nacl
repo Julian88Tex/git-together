@@ -1,0 +1,8 @@
+salesforce.StaticResource SiteSamples {
+  cacheControl = "Public"
+  contentType = "application/zip"
+  description = "Static resource for sites sample pages"
+  fullName = "SiteSamples"
+  content = file("salesforce/Records/StaticResource/SiteSamples.zip")
+  _alias = "SiteSamples"
+}

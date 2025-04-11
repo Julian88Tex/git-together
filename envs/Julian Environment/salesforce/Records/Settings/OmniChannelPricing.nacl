@@ -1,0 +1,4 @@
+salesforce.OmniChannelPricingSettings {
+  fullName = "OmniChannelPricing"
+  _alias = "OmniChannelPricing"
+}

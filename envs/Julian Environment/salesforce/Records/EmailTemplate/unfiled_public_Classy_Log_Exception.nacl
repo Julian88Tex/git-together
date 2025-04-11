@@ -1,0 +1,12 @@
+salesforce.EmailTemplate unfiled_public_Classy_Log_Exception@zcduu {
+  available = true
+  encodingKey = "ISO-8859-1"
+  name = "Classy Log Exception"
+  style = "none"
+  subject = "Classy Exception Log {!stayclassy__Classy_Logs__c.Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/Classy_Log_Exception"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Classy_Log_Exception/Classy_Log_Exception.email")
+  _alias = "unfiled$public/Classy_Log_Exception"
+}

@@ -1,0 +1,12 @@
+salesforce.ApexClass AnimalDataFetcherMock {
+  apiVersion = 57
+  status = "Active"
+  fullName = "AnimalDataFetcherMock"
+  content = file("salesforce/Records/ApexClass/AnimalDataFetcherMock.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AnimalDataFetcher
+    },
+  ]
+  _alias = "AnimalDataFetcherMock"
+}

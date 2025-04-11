@@ -1,0 +1,11 @@
+salesforce.WorkflowRule Contact_npo02__Contact_2EPreferred_Phone_5F_5Fc_WithHousehold@vuupupps {
+  fullName = "Contact.npo02__Contact%2EPreferred_Phone%5F%5Fc WithHousehold"
+  active = false
+  description = "DEPRICATED: This workflow does not do anything yet."
+  formula = "1=2"
+  triggerType = "onCreateOnly"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npo02__Contact%2EPreferred_Phone%5F%5Fc WithHousehold"
+}

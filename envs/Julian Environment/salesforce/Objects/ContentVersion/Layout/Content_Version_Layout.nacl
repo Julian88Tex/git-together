@@ -1,0 +1,50 @@
+salesforce.Layout ContentVersion_Content_Version_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ContentVersion.field.Title
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContentVersion.field.Description
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Title",
+      "Description",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContentVersion-Content Version Layout"
+  _parent = [
+    salesforce.ContentVersion,
+  ]
+  _alias = "ContentVersion-Content Version Layout"
+}

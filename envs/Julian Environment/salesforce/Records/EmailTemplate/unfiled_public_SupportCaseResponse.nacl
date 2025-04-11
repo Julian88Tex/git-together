@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SupportCaseResponse@zcd {
+  available = true
+  description = "Standardized template for responses to customer inquiries"
+  encodingKey = "UTF-8"
+  name = "Support: Case Response"
+  style = "none"
+  subject = "Response to your Genwatt Case {!Case.CaseNumber}: {!Case.Subject}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportCaseResponse"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SupportCaseResponse/SupportCaseResponse.email")
+  _alias = "unfiled$public/SupportCaseResponse"
+}

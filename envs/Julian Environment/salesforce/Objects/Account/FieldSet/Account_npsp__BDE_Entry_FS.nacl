@@ -1,0 +1,313 @@
+salesforce.FieldSet Account_npsp__BDE_Entry_FS {
+  fullName = "Account.npsp__BDE_Entry_FS"
+  availableFields = [
+    {
+      field = salesforce.Account.field.AccountNumber
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.AnnualRevenue
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingLatitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingLongitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "BillingStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Description
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Fax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__Formal_Greeting__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Funding_Focus__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Grantmaker__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__HouseholdPhone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Id
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Industry
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__Informal_Greeting__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.MasterRecordId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Administrator_Name__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Amount_Max__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Amount_Min__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Annual_Employee_Max__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Comments__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Company__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Email__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Info_Updated__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Percent__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Phone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Matching_Gift_Request_Deadline__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__MembershipEndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__MembershipJoinDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Membership_Span__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npsp__Membership_Status__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.NumberOfEmployees
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npe01__One2OneContact__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.OwnerId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Ownership
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.ParentId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Phone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.PhotoUrl
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Rating
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.RecordTypeId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npe01__SYSTEM_AccountType__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingLatitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingLongitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Site
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.npo02__SmallestAmount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.TickerSymbol
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Website
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Batch Data Entry"
+  displayedFields = [
+    {
+      field = salesforce.Account.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.Type
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Account.field.AccountSource
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ShippingPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "BDE Entry FS"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "BDE Entry FS (npsp)"
+}

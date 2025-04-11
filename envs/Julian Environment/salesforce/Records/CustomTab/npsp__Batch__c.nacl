@@ -1,0 +1,7 @@
+salesforce.CustomTab npsp__Batch__c {
+  fullName = "npsp__Batch__c"
+  customObject = true
+  description = "Test"
+  motif = "Custom49: CD/DVD"
+  _alias = "npsp__Batch__c"
+}

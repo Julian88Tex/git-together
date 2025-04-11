@@ -1,0 +1,23 @@
+salesforce.AuraDefinitionBundle selfRegister {
+  apiVersion = 37
+  description = "Sample Component for selfRegister"
+  fullName = "selfRegister"
+  type = "Component"
+  designContent = file("salesforce/Records/AuraDefinitionBundle/selfRegister/selfRegister.design")
+  markup = file("salesforce/Records/AuraDefinitionBundle/selfRegister/selfRegister.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/selfRegister/selfRegisterController.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/selfRegister/selfRegisterHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/selfRegister/selfRegister.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LightningSelfRegisterController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.selfRegister
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.setStartUrl
+    },
+  ]
+  _alias = "selfRegister"
+}

@@ -1,0 +1,378 @@
+type salesforce.Lead {
+  salesforce.Address Address {
+    apiName = "Lead.Address"
+    label = "Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency AnnualRevenue {
+    apiName = "Lead.AnnualRevenue"
+    label = "Annual Revenue"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+  }
+  salesforce.Lookup CampaignId {
+    apiName = "Lead.CampaignId"
+    _hidden_value = true
+  }
+  salesforce.Picklist CleanStatus {
+    apiName = "Lead.CleanStatus"
+    restricted = true
+    label = "Clean Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Company {
+    apiName = "Lead.Company"
+    length = 255
+    _required = true
+    label = "Company"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text CompanyDunsNumber {
+    apiName = "Lead.CompanyDunsNumber"
+    length = 9
+    label = "Company D-U-N-S Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup DandbCompanyId {
+    apiName = "Lead.DandbCompanyId"
+    relationshipName = "DandbCompany"
+    label = "D&B Company ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Lead.Description"
+    length = 32000
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown DoNotCall {
+    apiName = "Lead.DoNotCall"
+    _hidden_value = true
+  }
+  salesforce.Email Email {
+    apiName = "Lead.Email"
+    label = "Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Phone Fax {
+    apiName = "Lead.Fax"
+    label = "Fax"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown HasOptedOutOfEmail {
+    apiName = "Lead.HasOptedOutOfEmail"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutOfFax {
+    apiName = "Lead.HasOptedOutOfFax"
+    _hidden_value = true
+  }
+  salesforce.Lookup IndividualId {
+    apiName = "Lead.IndividualId"
+    relationshipName = "Individual"
+    label = "Individual ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Industry {
+    apiName = "Lead.Industry"
+    restricted = false
+    label = "Industry"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Industry
+  }
+  salesforce.Text Jigsaw {
+    apiName = "Lead.Jigsaw"
+    length = 20
+    label = "Data.com Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Unknown LastTransferDate {
+    apiName = "Lead.LastTransferDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist LeadSource {
+    apiName = "Lead.LeadSource"
+    restricted = false
+    label = "Lead Source"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Phone MobilePhone {
+    apiName = "Lead.MobilePhone"
+    label = "Mobile Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Name Name {
+    apiName = "Lead.Name"
+    _required = true
+    label = "Full Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number NumberOfEmployees {
+    apiName = "Lead.NumberOfEmployees"
+    label = "Employees"
+    precision = 8
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Lead.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PartnerAccountId {
+    apiName = "Lead.PartnerAccountId"
+    _hidden_value = true
+  }
+  salesforce.Phone Phone {
+    apiName = "Lead.Phone"
+    label = "Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Rating {
+    apiName = "Lead.Rating"
+    restricted = false
+    label = "Rating"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.AccountRating
+  }
+  salesforce.Picklist Status {
+    apiName = "Lead.Status"
+    restricted = false
+    _required = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.LeadStatus
+  }
+  salesforce.Text Title {
+    apiName = "Lead.Title"
+    length = 128
+    label = "Title"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Url Website {
+    apiName = "Lead.Website"
+    label = "Website"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Lead.Id"
+    label = "Lead ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Lead.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Lead.MasterRecordId"
+    relationshipName = "MasterRecord"
+    label = "Master Record ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "Lead.PhotoUrl"
+    label = "Photo URL"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsConverted {
+    apiName = "Lead.IsConverted"
+    defaultValue = false
+    label = "Converted"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Date ConvertedDate {
+    apiName = "Lead.ConvertedDate"
+    label = "Converted Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ConvertedAccountId {
+    apiName = "Lead.ConvertedAccountId"
+    relationshipName = "ConvertedAccount"
+    label = "Converted Account ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ConvertedContactId {
+    apiName = "Lead.ConvertedContactId"
+    relationshipName = "ConvertedContact"
+    label = "Converted Contact ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ConvertedOpportunityId {
+    apiName = "Lead.ConvertedOpportunityId"
+    relationshipName = "ConvertedOpportunity"
+    label = "Converted Opportunity ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsUnreadByOwner {
+    apiName = "Lead.IsUnreadByOwner"
+    defaultValue = false
+    label = "Unread By Owner"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Lead.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Lead.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Lead.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Lead.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Lead.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Lead.LastActivityDate"
+    label = "Last Activity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text JigsawContactId {
+    apiName = "Lead.JigsawContactId"
+    length = 20
+    label = "Jigsaw Contact ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EmailBouncedReason {
+    apiName = "Lead.EmailBouncedReason"
+    length = 255
+    label = "Email Bounced Reason"
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime EmailBouncedDate {
+    apiName = "Lead.EmailBouncedDate"
+    label = "Email Bounced Date"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+}

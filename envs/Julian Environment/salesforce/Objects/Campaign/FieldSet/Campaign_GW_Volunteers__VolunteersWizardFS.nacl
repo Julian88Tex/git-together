@@ -1,0 +1,78 @@
+salesforce.FieldSet Campaign_GW_Volunteers__VolunteersWizardFS {
+  fullName = "Campaign.GW_Volunteers__VolunteersWizardFS"
+  availableFields = [
+    {
+      field = salesforce.Campaign.field.ActualCost
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.BudgetedCost
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.ExpectedResponse
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.ExpectedRevenue
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "This field set is used by the Volunteers Wizard, to allow the user to specify which Campaign fields to display on the New Volunteer Campaign section."
+  displayedFields = [
+    {
+      field = salesforce.Campaign.field.Name
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.Campaign.field.ParentId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.IsActive
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.Status
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.Type
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.StartDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.EndDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Campaign.field.Description
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "VolunteersWizardFS"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "VolunteersWizardFS (GW_Volunteers)"
+}

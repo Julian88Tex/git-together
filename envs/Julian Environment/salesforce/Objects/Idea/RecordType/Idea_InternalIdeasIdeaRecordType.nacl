@@ -1,0 +1,10 @@
+salesforce.RecordType Idea_InternalIdeasIdeaRecordType {
+  fullName = "Idea.InternalIdeasIdeaRecordType"
+  active = true
+  description = "Record Type used to associate ideas with a specific community"
+  label = "Internal Ideas: Idea Record Type"
+  _parent = [
+    salesforce.Idea,
+  ]
+  _alias = "Internal Ideas: Idea Record Type"
+}

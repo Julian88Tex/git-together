@@ -1,0 +1,9 @@
+salesforce.ListView Animal__c_All {
+  fullName = "Animal__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Animal__c,
+  ]
+  _alias = "All"
+}

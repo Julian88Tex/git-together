@@ -1,0 +1,13 @@
+salesforce.ForecastingType OpportunityRevenueScheduleDate {
+  fullName = "OpportunityRevenueScheduleDate"
+  active = false
+  amount = true
+  dateType = "2"
+  developerName = "OpportunityRevenueScheduleDate"
+  hasCustomGroup = false
+  hasProductFamily = false
+  masterLabel = "Opportunity Revenue Schedule Date"
+  quantity = false
+  roleType = "R"
+  _alias = "OpportunityRevenueScheduleDate"
+}

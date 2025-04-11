@@ -1,0 +1,8 @@
+salesforce.ApexComponent leadConvertPageHeaderTextComponent {
+  apiVersion = 29
+  description = "The text used in the header of the custom Lead Convert page. Fully customizable HTML."
+  label = "leadConvertPageHeaderTextComponent"
+  fullName = "leadConvertPageHeaderTextComponent"
+  content = file("salesforce/Records/ApexComponent/leadConvertPageHeaderTextComponent.component")
+  _alias = "leadConvertPageHeaderTextComponent"
+}

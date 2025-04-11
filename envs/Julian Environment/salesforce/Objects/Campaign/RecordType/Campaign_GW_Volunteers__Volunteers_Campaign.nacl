@@ -1,0 +1,517 @@
+salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
+  fullName = "Campaign.GW_Volunteers__Volunteers_Campaign"
+  active = true
+  description = "A campaign specifically used to track Volunteers"
+  label = "Volunteer Campaign"
+  picklistValues = [
+    {
+      picklist = salesforce.Campaign.field.DB_Campaign_Tactic__c
+      values = [
+        {
+          fullName = "Direct Mail"
+          default = false
+        },
+        {
+          fullName = "Email"
+          default = false
+        },
+        {
+          fullName = "Employment Seminars"
+          default = false
+        },
+        {
+          fullName = "Internal Website"
+          default = false
+        },
+        {
+          fullName = "Lunches"
+          default = false
+        },
+        {
+          fullName = "Online Banners%2FAds"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partners"
+          default = false
+        },
+        {
+          fullName = "Print Advertisement"
+          default = false
+        },
+        {
+          fullName = "Public Relations"
+          default = false
+        },
+        {
+          fullName = "Referral Program"
+          default = false
+        },
+        {
+          fullName = "Sales Call Down"
+          default = false
+        },
+        {
+          fullName = "Webinars"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c
+      values = [
+        {
+          fullName = "Africa%2FAlgiers"
+          default = false
+        },
+        {
+          fullName = "Africa%2FCairo"
+          default = false
+        },
+        {
+          fullName = "Africa%2FJohannesburg"
+          default = false
+        },
+        {
+          fullName = "Africa%2FNairobi"
+          default = false
+        },
+        {
+          fullName = "America%2FAnchorage"
+          default = false
+        },
+        {
+          fullName = "America%2FBogota"
+          default = false
+        },
+        {
+          fullName = "America%2FBuenos_Aires"
+          default = false
+        },
+        {
+          fullName = "America%2FCaracas"
+          default = false
+        },
+        {
+          fullName = "America%2FChicago"
+          default = false
+        },
+        {
+          fullName = "America%2FDenver"
+          default = false
+        },
+        {
+          fullName = "America%2FEl_Salvador"
+          default = false
+        },
+        {
+          fullName = "America%2FHalifax"
+          default = false
+        },
+        {
+          fullName = "America%2FIndianapolis"
+          default = false
+        },
+        {
+          fullName = "America%2FLima"
+          default = false
+        },
+        {
+          fullName = "America%2FLos_Angeles"
+          default = false
+        },
+        {
+          fullName = "America%2FMexico_City"
+          default = false
+        },
+        {
+          fullName = "America%2FNew_York"
+          default = false
+        },
+        {
+          fullName = "America%2FPanama"
+          default = false
+        },
+        {
+          fullName = "America%2FPhoenix"
+          default = false
+        },
+        {
+          fullName = "America%2FPuerto_Rico"
+          default = false
+        },
+        {
+          fullName = "America%2FSantiago"
+          default = false
+        },
+        {
+          fullName = "America%2FSao_Paulo"
+          default = false
+        },
+        {
+          fullName = "America%2FSt_Johns"
+          default = false
+        },
+        {
+          fullName = "America%2FTijuana"
+          default = false
+        },
+        {
+          fullName = "Asia%2FBaghdad"
+          default = false
+        },
+        {
+          fullName = "Asia%2FBangkok"
+          default = false
+        },
+        {
+          fullName = "Asia%2FCalcutta"
+          default = false
+        },
+        {
+          fullName = "Asia%2FColombo"
+          default = false
+        },
+        {
+          fullName = "Asia%2FDacca"
+          default = false
+        },
+        {
+          fullName = "Asia%2FDubai"
+          default = false
+        },
+        {
+          fullName = "Asia%2FHong_Kong"
+          default = false
+        },
+        {
+          fullName = "Asia%2FJakarta"
+          default = false
+        },
+        {
+          fullName = "Asia%2FJerusalem"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKabul"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKamchatka"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKarachi"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKatmandu"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKuala_Lumpur"
+          default = false
+        },
+        {
+          fullName = "Asia%2FKuwait"
+          default = false
+        },
+        {
+          fullName = "Asia%2FManila"
+          default = false
+        },
+        {
+          fullName = "Asia%2FRangoon"
+          default = false
+        },
+        {
+          fullName = "Asia%2FRiyadh"
+          default = false
+        },
+        {
+          fullName = "Asia%2FSaigon"
+          default = false
+        },
+        {
+          fullName = "Asia%2FSeoul"
+          default = false
+        },
+        {
+          fullName = "Asia%2FShanghai"
+          default = false
+        },
+        {
+          fullName = "Asia%2FSingapore"
+          default = false
+        },
+        {
+          fullName = "Asia%2FTaipei"
+          default = false
+        },
+        {
+          fullName = "Asia%2FTashkent"
+          default = false
+        },
+        {
+          fullName = "Asia%2FTbilisi"
+          default = false
+        },
+        {
+          fullName = "Asia%2FTehran"
+          default = false
+        },
+        {
+          fullName = "Asia%2FTokyo"
+          default = false
+        },
+        {
+          fullName = "Asia%2FYekaterinburg"
+          default = false
+        },
+        {
+          fullName = "Atlantic%2FBermuda"
+          default = false
+        },
+        {
+          fullName = "Atlantic%2FCape_Verde"
+          default = false
+        },
+        {
+          fullName = "Atlantic%2FSouth_Georgia"
+          default = false
+        },
+        {
+          fullName = "Australia%2FAdelaide"
+          default = false
+        },
+        {
+          fullName = "Australia%2FBrisbane"
+          default = false
+        },
+        {
+          fullName = "Australia%2FDarwin"
+          default = false
+        },
+        {
+          fullName = "Australia%2FLord_Howe"
+          default = false
+        },
+        {
+          fullName = "Australia%2FPerth"
+          default = false
+        },
+        {
+          fullName = "Australia%2FSydney"
+          default = false
+        },
+        {
+          fullName = "Europe%2FAmsterdam"
+          default = false
+        },
+        {
+          fullName = "Europe%2FAthens"
+          default = false
+        },
+        {
+          fullName = "Europe%2FBerlin"
+          default = false
+        },
+        {
+          fullName = "Europe%2FBrussels"
+          default = false
+        },
+        {
+          fullName = "Europe%2FBucharest"
+          default = false
+        },
+        {
+          fullName = "Europe%2FDublin"
+          default = false
+        },
+        {
+          fullName = "Europe%2FHelsinki"
+          default = false
+        },
+        {
+          fullName = "Europe%2FIstanbul"
+          default = false
+        },
+        {
+          fullName = "Europe%2FLisbon"
+          default = false
+        },
+        {
+          fullName = "Europe%2FLondon"
+          default = false
+        },
+        {
+          fullName = "Europe%2FMinsk"
+          default = false
+        },
+        {
+          fullName = "Europe%2FMoscow"
+          default = false
+        },
+        {
+          fullName = "Europe%2FParis"
+          default = false
+        },
+        {
+          fullName = "Europe%2FPrague"
+          default = false
+        },
+        {
+          fullName = "Europe%2FRome"
+          default = false
+        },
+        {
+          fullName = "GMT"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FAuckland"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FChatham"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FEnderbury"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FFiji"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FGuadalcanal"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FHonolulu"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FKiritimati"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FNiue"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FNorfolk"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FPago_Pago"
+          default = false
+        },
+        {
+          fullName = "Pacific%2FTongatapu"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.Status
+      values = [
+        {
+          fullName = "Aborted"
+          default = false
+        },
+        {
+          fullName = "Completed"
+          default = false
+        },
+        {
+          fullName = "In Progress"
+          default = false
+        },
+        {
+          fullName = "Planned"
+          default = true
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.Type
+      values = [
+        {
+          fullName = "Advertisement"
+          default = false
+        },
+        {
+          fullName = "Banner Ads"
+          default = false
+        },
+        {
+          fullName = "Conference"
+          default = true
+        },
+        {
+          fullName = "Direct Mail"
+          default = false
+        },
+        {
+          fullName = "Email"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partners"
+          default = false
+        },
+        {
+          fullName = "Public Relations"
+          default = false
+        },
+        {
+          fullName = "Referral Program"
+          default = false
+        },
+        {
+          fullName = "Telemarketing"
+          default = false
+        },
+        {
+          fullName = "Trade Show"
+          default = false
+        },
+        {
+          fullName = "Webinar"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c
+      values = [
+        {
+          fullName = "Campaign"
+          default = false
+        },
+        {
+          fullName = "Fundraiser"
+          default = false
+        },
+        {
+          fullName = "Team"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Volunteer Campaign (GW_Volunteers)"
+}

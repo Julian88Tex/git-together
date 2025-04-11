@@ -1,0 +1,12 @@
+salesforce.ApexClass CommunitiesLandingControllerTest {
+  apiVersion = 37
+  status = "Active"
+  fullName = "CommunitiesLandingControllerTest"
+  content = file("salesforce/Records/ApexClass/CommunitiesLandingControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CommunitiesLandingController
+    },
+  ]
+  _alias = "CommunitiesLandingControllerTest"
+}

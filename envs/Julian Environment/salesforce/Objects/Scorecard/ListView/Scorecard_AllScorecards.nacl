@@ -1,0 +1,9 @@
+salesforce.ListView Scorecard_AllScorecards {
+  fullName = "Scorecard.AllScorecards"
+  filterScope = "Everything"
+  label = "All Scorecards"
+  _parent = [
+    salesforce.Scorecard,
+  ]
+  _alias = "All Scorecards"
+}

@@ -1,0 +1,16 @@
+salesforce.WebLink Task_slackv2__Send_to_Slack {
+  fullName = "Task.slackv2__Send_to_Slack"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Send to Slack"
+  openType = "noSidebar"
+  protected = false
+  url = "/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Task.Id)}&objectApiName=Task"
+  _parent = [
+    salesforce.Task,
+  ]
+  _alias = "Task.slackv2__Send_to_Slack"
+}

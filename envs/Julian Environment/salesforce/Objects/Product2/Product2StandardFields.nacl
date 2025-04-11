@@ -1,0 +1,156 @@
+type salesforce.Product2 {
+  salesforce.LongTextArea Description {
+    apiName = "Product2.Description"
+    length = 4000
+    label = "Product Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url DisplayUrl {
+    apiName = "Product2.DisplayUrl"
+    label = "Display URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ExternalDataSourceId {
+    apiName = "Product2.ExternalDataSourceId"
+    label = "External Data Source ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ExternalId {
+    apiName = "Product2.ExternalId"
+    length = 255
+    label = "External ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Family {
+    apiName = "Product2.Family"
+    restricted = false
+    label = "Product Family"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Product2.IsActive"
+    defaultValue = false
+    label = "Active"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "Product2.Name"
+    length = 255
+    _required = true
+    label = "Product Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text ProductCode {
+    apiName = "Product2.ProductCode"
+    length = 255
+    label = "Product Code"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist QuantityUnitOfMeasure {
+    apiName = "Product2.QuantityUnitOfMeasure"
+    restricted = false
+    label = "Quantity Unit Of Measure"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text StockKeepingUnit {
+    apiName = "Product2.StockKeepingUnit"
+    length = 180
+    label = "Product SKU"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Product2.Id"
+    label = "Product ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Product2.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Product2.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Product2.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Product2.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Product2.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Product2.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsArchived {
+    apiName = "Product2.IsArchived"
+    defaultValue = false
+    label = "Archived"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

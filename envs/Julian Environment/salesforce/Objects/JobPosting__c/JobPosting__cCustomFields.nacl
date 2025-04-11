@@ -1,0 +1,34 @@
+type salesforce.JobPosting__c {
+  salesforce.MasterDetail Position__c {
+    apiName = "JobPosting__c.Position__c"
+    label = "Position"
+    referenceTo = [
+      salesforce.Position__c,
+    ]
+    relationshipLabel = "Websites"
+    relationshipName = "JobPostings"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.MasterDetail Website__c {
+    apiName = "JobPosting__c.Website__c"
+    label = "Website"
+    referenceTo = [
+      salesforce.Website__c,
+    ]
+    relationshipLabel = "Positions"
+    relationshipName = "JobPostings"
+    relationshipOrder = 1
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

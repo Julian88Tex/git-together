@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Account_Set_to_Customer@vuu {
+  fullName = "Account.Set_to_Customer"
+  field = salesforce.Account.field.Type
+  literalValue = "Customer"
+  name = "Set to Customer"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.Set_to_Customer"
+}

@@ -1,0 +1,178 @@
+salesforce.FieldSet Contact_GW_Volunteers__VolunteersReportHoursFS {
+  fullName = "Contact.GW_Volunteers__VolunteersReportHoursFS"
+  availableFields = [
+    {
+      field = salesforce.Contact.field.AssistantName
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.AssistantPhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Birthdate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Department
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Fax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HasOptedOutOfEmail
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HasOptedOutOfFax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HomePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.LeadSource
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.MobilePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.OtherPhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Phone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Salutation"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Title
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Auto_Reminder_Email_Opt_Out__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Availability__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Notes__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Organization__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Skills__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.GW_Volunteers__Volunteer_Status__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "VolunteersReportHours visualforce page"
+  displayedFields = [
+    {
+      field = "FirstName"
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = "LastName"
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.Contact.field.Email
+      isFieldManaged = true
+      isRequired = true
+    },
+  ]
+  label = "VolunteersReportHoursFS"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "VolunteersReportHoursFS (GW_Volunteers)"
+}

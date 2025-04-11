@@ -1,0 +1,16 @@
+salesforce.WebLink Campaign_GW_Volunteers__Mass_Email_Volunteers {
+  fullName = "Campaign.GW_Volunteers__Mass_Email_Volunteers"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Mass Email Volunteers"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}SendBulkEmail?campaignId={!Campaign.Id}"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.GW_Volunteers__Mass_Email_Volunteers"
+}

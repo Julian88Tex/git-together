@@ -1,0 +1,45 @@
+salesforce.ApexClass TestLeadConvertPage {
+  apiVersion = 29
+  status = "Active"
+  fullName = "TestLeadConvertPage"
+  content = file("salesforce/Records/ApexClass/TestLeadConvertPage.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertCoreComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskDescComponentController
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskInfoComponentController
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.Task
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+  _alias = "TestLeadConvertPage"
+}

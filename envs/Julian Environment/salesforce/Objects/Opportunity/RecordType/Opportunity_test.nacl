@@ -1,0 +1,211 @@
+salesforce.RecordType Opportunity_test {
+  fullName = "Opportunity.test"
+  active = true
+  businessProcess = salesforce.BusinessProcess.instance.Opportunity_stayclassy__Default_Sales_Process@uuuss
+  label = "test"
+  picklistValues = [
+    {
+      picklist = salesforce.Opportunity.field.Class__c
+      values = [
+        {
+          fullName = "A"
+          default = false
+        },
+        {
+          fullName = "B"
+          default = false
+        },
+        {
+          fullName = "C"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.DeliveryInstallationStatus__c
+      values = [
+        {
+          fullName = "Completed"
+          default = false
+        },
+        {
+          fullName = "In progress"
+          default = false
+        },
+        {
+          fullName = "Yet to begin"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.Donor_Level__c
+      values = [
+        {
+          fullName = "Green"
+          default = false
+        },
+        {
+          fullName = "Red"
+          default = false
+        },
+        {
+          fullName = "Yellow"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.ForecastCategoryName
+      values = [
+        {
+          fullName = "Best Case"
+          default = false
+        },
+        {
+          fullName = "Closed"
+          default = false
+        },
+        {
+          fullName = "Commit"
+          default = false
+        },
+        {
+          fullName = "Omitted"
+          default = false
+        },
+        {
+          fullName = "Pipeline"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.LeadSource
+      values = [
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partner Referral"
+          default = false
+        },
+        {
+          fullName = "Phone Inquiry"
+          default = false
+        },
+        {
+          fullName = "Purchased List"
+          default = false
+        },
+        {
+          fullName = "Web"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.My_Custom_Designation__c
+      values = [
+        {
+          fullName = "Restricted"
+          default = false
+        },
+        {
+          fullName = "Unrestricted"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.Region_Map__c
+      values = [
+        {
+          fullName = "Northwest"
+          default = false
+        },
+        {
+          fullName = "Southwest"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.Test_Picklist__c
+      values = [
+        {
+          fullName = "test"
+          default = false
+        },
+        {
+          fullName = "test1"
+          default = false
+        },
+        {
+          fullName = "test2"
+          default = false
+        },
+        {
+          fullName = "test3"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.Type
+      values = [
+        {
+          fullName = "Existing Customer - Downgrade"
+          default = false
+        },
+        {
+          fullName = "Existing Customer - Replacement"
+          default = false
+        },
+        {
+          fullName = "Existing Customer - Upgrade"
+          default = false
+        },
+        {
+          fullName = "New Customer"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c
+      values = [
+        {
+          fullName = "Notified"
+          default = false
+        },
+        {
+          fullName = "To Be Notified"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.stayclassy__Transaction_Type__c
+      values = [
+        {
+          fullName = "Donation"
+          default = false
+        },
+        {
+          fullName = "Registration"
+          default = false
+        },
+        {
+          fullName = "Ticket"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "test"
+}

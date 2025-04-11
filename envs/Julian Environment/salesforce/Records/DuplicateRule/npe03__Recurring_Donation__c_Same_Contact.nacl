@@ -1,0 +1,25 @@
+salesforce.DuplicateRule npe03__Recurring_Donation__c_Same_Contact@uuuuuvu {
+  fullName = "npe03__Recurring_Donation__c.Same_Contact"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Use one of these records?"
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = "npe03__Recurring_Donation__c"
+      matchingRule = "Same_Contact_matching_rule"
+    },
+  ]
+  isActive = false
+  masterLabel = "Same Contact"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = [
+    "Alert",
+    "Report",
+  ]
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _alias = "npe03__Recurring_Donation__c.Same_Contact"
+}

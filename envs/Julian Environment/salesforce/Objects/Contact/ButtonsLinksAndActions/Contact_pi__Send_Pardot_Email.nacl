@@ -1,0 +1,15 @@
+salesforce.WebLink Contact_pi__Send_Pardot_Email {
+  fullName = "Contact.pi__Send_Pardot_Email"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Send Account Engagement Email"
+  openType = "sidebar"
+  page = "pi__SendPardotEmailContact"
+  protected = false
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.pi__Send_Pardot_Email"
+}

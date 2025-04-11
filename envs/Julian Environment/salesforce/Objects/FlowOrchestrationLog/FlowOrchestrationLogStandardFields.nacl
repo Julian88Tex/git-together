@@ -1,0 +1,201 @@
+type salesforce.FlowOrchestrationLog {
+  salesforce.Text Actor {
+    apiName = "FlowOrchestrationLog.Actor"
+    length = 255
+    label = "Completed By"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Assignee {
+    apiName = "FlowOrchestrationLog.Assignee"
+    length = 255
+    label = "Assigned To"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AssigneeType {
+    apiName = "FlowOrchestrationLog.AssigneeType"
+    restricted = true
+    label = "Assignment Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Comments {
+    apiName = "FlowOrchestrationLog.Comments"
+    length = 1333
+    label = "Comments"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Context {
+    apiName = "FlowOrchestrationLog.Context"
+    length = 80
+    label = "Context Record"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown Duration {
+    apiName = "FlowOrchestrationLog.Duration"
+    label = "Duration (seconds)"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Kind {
+    apiName = "FlowOrchestrationLog.Kind"
+    restricted = true
+    _required = true
+    label = "Milestone"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail OrchestrationInstanceId {
+    apiName = "FlowOrchestrationLog.OrchestrationInstanceId"
+    relationshipName = "OrchestrationInstance"
+    _required = true
+    label = "Orchestration Run ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OrchestrationName {
+    apiName = "FlowOrchestrationLog.OrchestrationName"
+    length = 80
+    _required = true
+    label = "Orchestration Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number OrchestrationVersion {
+    apiName = "FlowOrchestrationLog.OrchestrationVersion"
+    _required = true
+    label = "Orchestration Version"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text StageName {
+    apiName = "FlowOrchestrationLog.StageName"
+    length = 80
+    label = "Stage"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text StepName {
+    apiName = "FlowOrchestrationLog.StepName"
+    length = 80
+    label = "Step"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime Timestamp {
+    apiName = "FlowOrchestrationLog.Timestamp"
+    _required = true
+    label = "Timestamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "FlowOrchestrationLog.Id"
+    label = "Orchestration Run Log ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FlowOrchestrationLog.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "FlowOrchestrationLog.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FlowOrchestrationLog.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FlowOrchestrationLog.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FlowOrchestrationLog.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "FlowOrchestrationLog.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FlowOrchestrationLog.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

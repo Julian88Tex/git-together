@@ -1,0 +1,7 @@
+salesforce.SharingRules ActiveScratchOrg {
+  fullName = "ActiveScratchOrg"
+  _parent = [
+    salesforce.ActiveScratchOrg,
+  ]
+  _alias = "ActiveScratchOrg"
+}

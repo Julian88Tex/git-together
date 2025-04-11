@@ -1,0 +1,29 @@
+salesforce.WebLink Campaign_Campaign_Link {
+  fullName = "Campaign.Campaign_Link"
+  availability = "online"
+  description = "Link to the Classy Campaign"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  hasMenubar = false
+  hasScrollbars = true
+  hasToolbar = false
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "Campaign Link"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  url = "https://www.classy.org/fundraise?fcid={!TEXT( Campaign.stayclassy__sc_event_id__c )}"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Campaign.field.stayclassy__sc_event_id__c
+    },
+  ]
+  _alias = "Campaign.Campaign_Link"
+}

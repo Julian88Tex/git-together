@@ -1,0 +1,15 @@
+salesforce.WorkflowFieldUpdate Opportunity_npsp__Opportunity_Acknowledgment_Date_Update@vuuuuu {
+  fullName = "Opportunity.npsp__Opportunity_Acknowledgment_Date_Update"
+  description = "sets the Acknowledgment Date to Today."
+  field = salesforce.Opportunity.field.npsp__Acknowledgment_Date__c
+  formula = "Today()"
+  name = "Opportunity Acknowledgment Date Update"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity_Acknowledgment_Date_Update"
+}

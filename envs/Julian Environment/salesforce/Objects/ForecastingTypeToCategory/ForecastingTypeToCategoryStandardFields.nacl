@@ -1,0 +1,108 @@
+type salesforce.ForecastingTypeToCategory {
+  salesforce.Picklist ForecastingItemCategory {
+    apiName = "ForecastingTypeToCategory.ForecastingItemCategory"
+    restricted = false
+    _required = true
+    label = "Forecasting Item Category"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ForecastingTypeToCategory.Id"
+    label = "Forecasting Type To Category Mapping ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ForecastingTypeToCategory.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ForecastingTypeToCategory.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ForecastingTypeToCategory.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ForecastingTypeToCategory.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ForecastingTypeToCategory.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ForecastingTypeToCategory.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ForecastingTypeId {
+    apiName = "ForecastingTypeToCategory.ForecastingTypeId"
+    relationshipName = "ForecastingType"
+    _required = true
+    label = "Forecasting Type ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number DisplayPosition {
+    apiName = "ForecastingTypeToCategory.DisplayPosition"
+    label = "Display Position"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsAdjustable {
+    apiName = "ForecastingTypeToCategory.IsAdjustable"
+    defaultValue = false
+    label = "Is Adjustable"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsOwnerAdjustable {
+    apiName = "ForecastingTypeToCategory.IsOwnerAdjustable"
+    defaultValue = false
+    label = "Is Owner Adjustable"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

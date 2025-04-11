@@ -1,0 +1,9 @@
+salesforce.FieldSet DuplicateRecordSet_npsp__ContactMergeDRS {
+  fullName = "DuplicateRecordSet.npsp__ContactMergeDRS"
+  description = "Contact Merge page"
+  label = "ContactMergeDRS"
+  _parent = [
+    salesforce.DuplicateRecordSet,
+  ]
+  _alias = "ContactMergeDRS (npsp)"
+}

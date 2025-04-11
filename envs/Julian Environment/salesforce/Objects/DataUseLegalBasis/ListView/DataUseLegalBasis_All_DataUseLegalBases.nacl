@@ -1,0 +1,9 @@
+salesforce.ListView DataUseLegalBasis_All_DataUseLegalBases {
+  fullName = "DataUseLegalBasis.All_DataUseLegalBases"
+  filterScope = "Everything"
+  label = "All Data Use Legal Bases"
+  _parent = [
+    salesforce.DataUseLegalBasis,
+  ]
+  _alias = "All Data Use Legal Bases"
+}

@@ -1,0 +1,102 @@
+salesforce.RecordType Campaign_In_Recycle_Bin {
+  fullName = "Campaign.In_Recycle_Bin"
+  active = true
+  label = "In Recycle Bin"
+  picklistValues = [
+    {
+      picklist = salesforce.Campaign.field.Status
+      values = [
+        {
+          fullName = "Aborted"
+          default = false
+        },
+        {
+          fullName = "Completed"
+          default = false
+        },
+        {
+          fullName = "In Progress"
+          default = false
+        },
+        {
+          fullName = "Planned"
+          default = true
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.Type
+      values = [
+        {
+          fullName = "Advertisement"
+          default = false
+        },
+        {
+          fullName = "Banner Ads"
+          default = false
+        },
+        {
+          fullName = "Conference"
+          default = true
+        },
+        {
+          fullName = "Direct Mail"
+          default = false
+        },
+        {
+          fullName = "Email"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partners"
+          default = false
+        },
+        {
+          fullName = "Public Relations"
+          default = false
+        },
+        {
+          fullName = "Referral Program"
+          default = false
+        },
+        {
+          fullName = "Telemarketing"
+          default = false
+        },
+        {
+          fullName = "Trade Show"
+          default = false
+        },
+        {
+          fullName = "Webinar"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c
+      values = [
+        {
+          fullName = "Campaign"
+          default = false
+        },
+        {
+          fullName = "Fundraiser"
+          default = false
+        },
+        {
+          fullName = "Team"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "In Recycle Bin"
+}

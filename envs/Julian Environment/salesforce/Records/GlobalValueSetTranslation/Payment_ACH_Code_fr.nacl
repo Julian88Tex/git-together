@@ -1,0 +1,4 @@
+salesforce.GlobalValueSetTranslation Payment_ACH_Code_fr@uub {
+  fullName = "Payment_ACH_Code-fr"
+  _alias = "Payment_ACH_Code-fr"
+}

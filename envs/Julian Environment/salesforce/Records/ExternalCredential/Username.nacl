@@ -1,0 +1,6 @@
+salesforce.ExternalCredential Username {
+  fullName = "Username"
+  authenticationProtocol = "Custom"
+  label = "Username"
+  _alias = "Username"
+}

@@ -1,0 +1,47 @@
+salesforce.Flow Copy_LastName_to_Title_On_Contact_Edit {
+  fullName = "Copy_LastName_to_Title_On_Contact_Edit"
+  apiVersion = 57
+  description = "Copies the LastName field to Title field whenever a Contact record is edited"
+  label = "Copy LastName to Title On Contact Edit"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordUpdates = [
+    {
+      name = "Update_Contact_Title"
+      label = "Update Contact Title"
+      locationX = 176
+      locationY = 188
+      inputAssignments = [
+        {
+          field = "Title"
+          value = {
+            elementReference = "$Record.LastName"
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Update_Contact_Title"
+    }
+    object = salesforce.Contact
+    recordTriggerType = "CreateAndUpdate"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Active"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Copy LastName to Title On Contact Edit"
+}

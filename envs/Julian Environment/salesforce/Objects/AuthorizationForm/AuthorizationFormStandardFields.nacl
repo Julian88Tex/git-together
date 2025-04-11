@@ -1,0 +1,119 @@
+type salesforce.AuthorizationForm {
+  salesforce.Lookup DefaultAuthFormTextId {
+    apiName = "AuthorizationForm.DefaultAuthFormTextId"
+    relationshipName = "DefaultAuthFormText"
+    label = "Default Authorization Form Text ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveFromDate {
+    apiName = "AuthorizationForm.EffectiveFromDate"
+    label = "Effective From Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveToDate {
+    apiName = "AuthorizationForm.EffectiveToDate"
+    label = "Effective To Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsSignatureRequired {
+    apiName = "AuthorizationForm.IsSignatureRequired"
+    defaultValue = false
+    label = "Is Signature Required"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "AuthorizationForm.Name"
+    length = 255
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AuthorizationForm.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text RevisionNumber {
+    apiName = "AuthorizationForm.RevisionNumber"
+    length = 10
+    label = "Revision Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AuthorizationForm.Id"
+    label = "Authorization Form ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationForm.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationForm.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationForm.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationForm.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationForm.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationForm.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,13 @@
+salesforce.CompactLayout Contact_npsp__NPSP_Contact_Compact_Layout {
+  fullName = "Contact.npsp__NPSP_Contact_Compact_Layout"
+  fields = [
+    "Name",
+    "AccountId",
+    "npo02__TotalOppAmount__c",
+  ]
+  label = "NPSP Contact Compact Layout"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "NPSP Contact Compact Layout (npsp)"
+}

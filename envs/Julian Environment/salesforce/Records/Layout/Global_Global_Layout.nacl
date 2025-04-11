@@ -1,0 +1,112 @@
+salesforce.Layout Global_Global_Layout@bs {
+  platformActionList = {
+    actionListContext = "Global"
+    platformActionListItems = [
+      {
+        actionName = "FeedItem.TextPost"
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = "npsp__NewTask"
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = "FeedItem.MobileSmartActions"
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = "npsp__NewContact"
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.New_Organization
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = salesforce.QuickAction.instance.New_Household_Account
+        actionType = "QuickAction"
+        sortOrder = 5
+      },
+      {
+        actionName = "npsp__New_Recurring_Donation"
+        actionType = "QuickAction"
+        sortOrder = 6
+      },
+      {
+        actionName = "npe03__NewNote"
+        actionType = "QuickAction"
+        sortOrder = 7
+      },
+      {
+        actionName = "npsp__New_Campaign"
+        actionType = "QuickAction"
+        sortOrder = 8
+      },
+      {
+        actionName = "FeedItem.ContentPost"
+        actionType = "QuickAction"
+        sortOrder = 9
+      },
+      {
+        actionName = "npsp__LogACall"
+        actionType = "QuickAction"
+        sortOrder = 10
+      },
+      {
+        actionName = "FeedItem.LinkPost"
+        actionType = "QuickAction"
+        sortOrder = 11
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.New_Detailed_Account
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.New_Household_Account
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.New_Organization
+      },
+      {
+        quickActionName = "npsp__LogACall"
+      },
+      {
+        quickActionName = "npsp__NewContact"
+      },
+      {
+        quickActionName = "npsp__NewTask"
+      },
+      {
+        quickActionName = "npsp__New_Campaign"
+      },
+      {
+        quickActionName = "npsp__New_Recurring_Donation"
+      },
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Global-Global Layout"
+  _alias = "Global-Global Layout"
+}

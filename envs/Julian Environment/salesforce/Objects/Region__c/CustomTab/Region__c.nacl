@@ -1,0 +1,9 @@
+salesforce.CustomTab Region__c {
+  fullName = "Region__c"
+  customObject = true
+  motif = "Custom20: Airplane"
+  _parent = [
+    salesforce.Region__c,
+  ]
+  _alias = "Region__c"
+}

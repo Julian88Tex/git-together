@@ -1,0 +1,7 @@
+salesforce.ApexClass EmailManager {
+  apiVersion = 42
+  status = "Active"
+  fullName = "EmailManager"
+  content = file("salesforce/Records/ApexClass/EmailManager.cls")
+  _alias = "EmailManager"
+}

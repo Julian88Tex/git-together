@@ -1,0 +1,27 @@
+salesforce.ApexClass AnimalDataFetcher {
+  apiVersion = 57
+  status = "Active"
+  fullName = "AnimalDataFetcher"
+  content = file("salesforce/Records/ApexClass/AnimalDataFetcher.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Animal__c
+    },
+    {
+      reference = salesforce.Animal__c.field.Animal_Name__c
+    },
+    {
+      reference = salesforce.Animal__c.field.Count__c
+    },
+    {
+      reference = salesforce.Animal__c.field.External_ID__c
+    },
+    {
+      reference = salesforce.Animal__c.field.Food_Category__c
+    },
+    {
+      reference = salesforce.Animal__c.field.Park_Name__c
+    },
+  ]
+  _alias = "AnimalDataFetcher"
+}

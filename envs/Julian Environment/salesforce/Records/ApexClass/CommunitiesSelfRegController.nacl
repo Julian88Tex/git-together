@@ -1,0 +1,15 @@
+salesforce.ApexClass CommunitiesSelfRegController {
+  apiVersion = 37
+  status = "Active"
+  fullName = "CommunitiesSelfRegController"
+  content = file("salesforce/Records/ApexClass/CommunitiesSelfRegController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.CommunitiesSelfRegConfirm
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+  _alias = "CommunitiesSelfRegController"
+}

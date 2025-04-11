@@ -1,0 +1,9 @@
+salesforce.ListView ApprovalSubmission_All_ApprovalSubmissions {
+  fullName = "ApprovalSubmission.All_ApprovalSubmissions"
+  filterScope = "Everything"
+  label = "AllApprovalSubmissions"
+  _parent = [
+    salesforce.ApprovalSubmission,
+  ]
+  _alias = "AllApprovalSubmissions"
+}

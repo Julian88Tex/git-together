@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_MarketingProductInquiryResponse@zcd {
+  available = true
+  description = "Standard email response to website product inquiries"
+  encodingKey = "UTF-8"
+  name = "Marketing: Product Inquiry Response"
+  style = "none"
+  subject = "GenWatt: Thanks for your inquiry"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/MarketingProductInquiryResponse"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/MarketingProductInquiryResponse/MarketingProductInquiryResponse.email")
+  _alias = "unfiled$public/MarketingProductInquiryResponse"
+}

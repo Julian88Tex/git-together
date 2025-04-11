@@ -1,0 +1,416 @@
+salesforce.Layout Contact_Test_Classy@bs {
+  customButtons = [
+    "Google_Info",
+  ]
+  excludeButtons = [
+    "RequestUseSfdc",
+    "Submit",
+  ]
+  feedLayout = {
+    autocollapsePublisher = true
+    compactFeed = true
+    feedFilterPosition = "CenterDropDown"
+    feedFilters = [
+      {
+        feedFilterType = "AllUpdates"
+      },
+      {
+        feedFilterType = "FeedItemType"
+        feedItemType = "TextPost"
+      },
+    ]
+    fullWidthFeed = true
+    hideSidebar = false
+    highlightExternalFeedItems = true
+    rightComponents = [
+      {
+        componentType = "Following"
+      },
+      {
+        componentType = "Followers"
+      },
+      {
+        componentType = "Topics"
+      },
+      {
+        componentType = "CustomLinks"
+      },
+      {
+        componentType = "CustomButtons"
+      },
+    ]
+    useInlineFiltersInConsole = true
+  }
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Contact Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Title
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Contact.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__TEST_Email__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Birthdate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.RecordTypeId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Custom_Email_Opt_Out__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Astro_Location__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.MobilePhone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.HasOptedOutOfEmail
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Description
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Contact.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Contact.field.LastModifiedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.AssistantPhone
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Contact.field.stayclassy__average_donation__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.MailingAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Address_Type__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.OtherAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Classy Member Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__sc_member_id__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__opt_in__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Text_Opt_In__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Company__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Gender__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Website__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.stayclassy__Blog__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Classy Engagement"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              height = 200
+              page = "stayclassy__ClassyEngagement"
+              showLabel = false
+              showScrollbars = false
+              width = "100%"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.SendEmail
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Contact.field.AccountId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "stayclassy__sc_order_id__c",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+        "OPPORTUNITY.TYPE",
+        "Test_Comment__c",
+        "stayclassy__Campaign__c",
+        "stayclassy__Fundraising_Team__c",
+        "stayclassy__Fundraising_Page__c",
+      ]
+      relatedList = "RelatedOpportunityList"
+      sortField = "OPPORTUNITY.CLOSE_DATE"
+      sortOrder = "Desc"
+    },
+    {
+      fields = [
+        "CAMPAIGN.NAME",
+        "PARENT_NAME",
+        "CAMPAIGN.CAMPAIGN_TYPE",
+        "CAMPAIGN.START_DATE",
+        "CAMPAIGN.END_DATE",
+        "CAMPAIGN.STATUS",
+        "CAMPAIGN.NUM_WON_OPPORTUNITIES",
+        "AMOUNT_WON",
+        "stayclassy__percent_goal_reached__c",
+      ]
+      relatedList = salesforce.Campaign.field.stayclassy__sf_contact_id__c
+      sortField = "CAMPAIGN.END_DATE"
+      sortOrder = "Desc"
+    },
+    {
+      fields = [
+        "CAMPAIGN.NAME",
+        "CAMPAIGN.START_DATE",
+        "CAMPAIGN.CAMPAIGN_TYPE",
+        "CM.STATUS",
+        "stayclassy__Classy_Campaign_Type__c",
+        "CM.FIRST_ASSOCIATED_DATE",
+        "CM.LAST_UPDATE",
+      ]
+      relatedList = "RelatedCampaignList"
+    },
+    {
+      fields = [
+        "NAME",
+        "CREATED_DATE",
+        "stayclassy__donation_amount__c",
+      ]
+      relatedList = "stayclassy__sc_recurring_profile__c.stayclassy__sf_contact_id__c"
+    },
+    {
+      fields = [
+        "stayclassy__Classy_Custom_Question__c",
+        "stayclassy__Answer__c",
+        "stayclassy__Answer_ID__c",
+        "OBJECT_ID",
+        "CREATED_DATE",
+        "stayclassy__Fundraiser__c",
+        "NAME",
+      ]
+      relatedList = "stayclassy__Classy_Custom_Answer__c.stayclassy__Contact__c"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = "stayclassy__Classy_Contact_Match__c.stayclassy__Contact__c"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "ACCOUNT.NAME",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = salesforce.Opportunity.field.Custom_Contact__c
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h610000030VBT"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Contact-Test Classy"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact-Test Classy"
+}

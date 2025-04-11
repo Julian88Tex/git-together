@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_npsp__New_Gift {
+  fullName = "Contact.npsp__New_Gift"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "New Gift"
+  openType = "sidebar"
+  protected = false
+  url = "/lightning/n/{!$Setup.npsp__Package_Settings__c.npsp__Namespace_Prefix__c}GE_Gift_Entry?c__view=Single_Gift_Entry&c__apiName=Contact&c__donorRecordId={!Contact.Id}"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npsp__New_Gift"
+}

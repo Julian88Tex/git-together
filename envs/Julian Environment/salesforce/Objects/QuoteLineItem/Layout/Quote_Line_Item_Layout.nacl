@@ -1,0 +1,111 @@
+salesforce.Layout QuoteLineItem_Quote_Line_Item_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "QuoteLineItem Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.LineNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.QuoteLineItem.field.Product2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.QuoteLineItem.field.QuoteId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.ListPrice
+            },
+            {
+              behavior = "Required"
+              field = salesforce.QuoteLineItem.field.UnitPrice
+            },
+            {
+              behavior = "Required"
+              field = salesforce.QuoteLineItem.field.Quantity
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.Subtotal
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.QuoteLineItem.field.Discount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.TotalPrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.QuoteLineItem.field.Description
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.QuoteLineItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  multilineLayoutFields = [
+    "Product2Id",
+    "ListPrice",
+    "UnitPrice",
+    "Quantity",
+    "Subtotal",
+    "Discount",
+    "TotalPrice",
+    "QuoteId",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "QuoteLineItem-Quote Line Item Layout"
+  _parent = [
+    salesforce.QuoteLineItem,
+  ]
+  _alias = "QuoteLineItem-Quote Line Item Layout"
+}

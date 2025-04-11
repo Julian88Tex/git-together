@@ -1,0 +1,424 @@
+type salesforce.Event {
+  salesforce.Date ActivityDate {
+    apiName = "Event.ActivityDate"
+    label = "Due Date Only"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ActivityDateTime {
+    apiName = "Event.ActivityDateTime"
+    label = "Due Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Attendees {
+    apiName = "Event.Attendees"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Event.Description"
+    length = 32000
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number DurationInMinutes {
+    apiName = "Event.DurationInMinutes"
+    label = "Duration"
+    precision = 8
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Unknown Email {
+    apiName = "Event.Email"
+    _hidden_value = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "Event.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist EventSubtype {
+    apiName = "Event.EventSubtype"
+    restricted = true
+    label = "Event Subtype"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox IsAllDayEvent {
+    apiName = "Event.IsAllDayEvent"
+    defaultValue = false
+    label = "All-Day Event"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPrivate {
+    apiName = "Event.IsPrivate"
+    defaultValue = false
+    label = "Private"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsRecurrence2 {
+    apiName = "Event.IsRecurrence2"
+    defaultValue = false
+    label = "Repeat"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsReminderSet {
+    apiName = "Event.IsReminderSet"
+    defaultValue = false
+    label = "Reminder Set"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown IsVisibleInSelfService {
+    apiName = "Event.IsVisibleInSelfService"
+    _hidden_value = true
+  }
+  salesforce.Text Location {
+    apiName = "Event.Location"
+    length = 255
+    label = "Location"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Event.OwnerId"
+    relationshipName = "Owner"
+    label = "Assigned To ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown Phone {
+    apiName = "Event.Phone"
+    _hidden_value = true
+  }
+  salesforce.Picklist ShowAs {
+    apiName = "Event.ShowAs"
+    restricted = true
+    label = "Show Time As"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "Event.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Subject {
+    apiName = "Event.Subject"
+    restricted = false
+    label = "Subject"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.EventSubject
+  }
+  salesforce.Picklist Type {
+    apiName = "Event.Type"
+    _hidden_value = true
+  }
+  salesforce.Lookup WhatId {
+    apiName = "Event.WhatId"
+    relationshipName = "What"
+    label = "Related To ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "Event.WhoId"
+    relationshipName = "Who"
+    label = "Name ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Event.Id"
+    label = "Activity ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date EndDate {
+    apiName = "Event.EndDate"
+    label = "End Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "Event.AccountId"
+    relationshipName = "Account"
+    label = "Account ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Event.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsChild {
+    apiName = "Event.IsChild"
+    defaultValue = false
+    label = "Is Child"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsGroupEvent {
+    apiName = "Event.IsGroupEvent"
+    defaultValue = false
+    label = "Is Group Event"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist GroupEventType {
+    apiName = "Event.GroupEventType"
+    restricted = true
+    label = "Group Event Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Event.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Event.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Event.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Event.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Event.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsArchived {
+    apiName = "Event.IsArchived"
+    defaultValue = false
+    label = "Archived"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RecurrenceActivityId {
+    apiName = "Event.RecurrenceActivityId"
+    label = "Recurrence Activity ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRecurrence {
+    apiName = "Event.IsRecurrence"
+    defaultValue = false
+    label = "Create Recurring Series of Events"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime RecurrenceStartDateTime {
+    apiName = "Event.RecurrenceStartDateTime"
+    label = "Recurrence Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date RecurrenceEndDateOnly {
+    apiName = "Event.RecurrenceEndDateOnly"
+    label = "Recurrence End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RecurrenceTimeZoneSidKey {
+    apiName = "Event.RecurrenceTimeZoneSidKey"
+    restricted = true
+    label = "Recurrence Time Zone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RecurrenceType {
+    apiName = "Event.RecurrenceType"
+    restricted = true
+    label = "Recurrence Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number RecurrenceInterval {
+    apiName = "Event.RecurrenceInterval"
+    label = "Recurrence Interval"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number RecurrenceDayOfWeekMask {
+    apiName = "Event.RecurrenceDayOfWeekMask"
+    label = "Recurrence Day of Week Mask"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number RecurrenceDayOfMonth {
+    apiName = "Event.RecurrenceDayOfMonth"
+    label = "Recurrence Day of Month"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist RecurrenceInstance {
+    apiName = "Event.RecurrenceInstance"
+    restricted = true
+    label = "Recurrence Instance"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RecurrenceMonthOfYear {
+    apiName = "Event.RecurrenceMonthOfYear"
+    restricted = true
+    label = "Recurrence Month of Year"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ReminderDateTime {
+    apiName = "Event.ReminderDateTime"
+    label = "Reminder Date/Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsRecurrence2Exclusion {
+    apiName = "Event.IsRecurrence2Exclusion"
+    defaultValue = false
+    label = "Historical Event, Not Following Recurrence"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Recurrence2PatternText {
+    apiName = "Event.Recurrence2PatternText"
+    length = 512
+    label = "Recurrence Pattern"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Recurrence2PatternVersion {
+    apiName = "Event.Recurrence2PatternVersion"
+    restricted = true
+    label = "Pattern Version"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRecurrence2Exception {
+    apiName = "Event.IsRecurrence2Exception"
+    defaultValue = false
+    label = "Is Exception"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime Recurrence2PatternStartDate {
+    apiName = "Event.Recurrence2PatternStartDate"
+    label = "Recurrence Pattern Start Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Recurrence2PatternTimeZone {
+    apiName = "Event.Recurrence2PatternTimeZone"
+    length = 255
+    label = "Recurrence Pattern Time Zone Reference"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+}

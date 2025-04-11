@@ -1,0 +1,22 @@
+salesforce.ListView Contact_stayclassy__Classy_Donors {
+  fullName = "Contact.stayclassy__Classy_Donors"
+  columns = [
+    "FULL_NAME",
+    "ACCOUNT.NAME",
+    "CONTACT.TITLE",
+    "CONTACT.PHONE1",
+    "CONTACT.EMAIL",
+    "CONTACT.ADDRESS2_STREET",
+    "CONTACT.ADDRESS2_CITY",
+    "CONTACT.ADDRESS2_STATE",
+    "CONTACT.ADDRESS2_ZIP",
+    "CONTACT.ADDRESS2_COUNTRY",
+    salesforce.Contact.field.stayclassy__sc_member_id__c,
+  ]
+  filterScope = "Everything"
+  label = "Classy Donors"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Classy Donors (stayclassy)"
+}

@@ -1,0 +1,243 @@
+type salesforce.FeedItem {
+  serviceid Id {
+    apiName = "FeedItem.Id"
+    label = "Feed Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "FeedItem.ParentId"
+    relationshipName = "Parent"
+    _required = true
+    label = "Parent ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "FeedItem.Type"
+    restricted = true
+    label = "Feed Item Type"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FeedItem.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = true
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FeedItem.CreatedDate"
+    label = "Created Date"
+    createable = true
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FeedItem.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FeedItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FeedItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Revision {
+    apiName = "FeedItem.Revision"
+    label = "Revision"
+    precision = 9
+    createable = true
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup LastEditById {
+    apiName = "FeedItem.LastEditById"
+    label = "Last Edit By ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime LastEditDate {
+    apiName = "FeedItem.LastEditDate"
+    label = "Last Edit Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Number CommentCount {
+    apiName = "FeedItem.CommentCount"
+    _required = true
+    label = "Comment Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number LikeCount {
+    apiName = "FeedItem.LikeCount"
+    _required = true
+    label = "Like Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "FeedItem.Title"
+    length = 255
+    label = "Title"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea Body {
+    apiName = "FeedItem.Body"
+    length = 10000
+    label = "Body"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url LinkUrl {
+    apiName = "FeedItem.LinkUrl"
+    label = "Link Url"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox IsRichText {
+    apiName = "FeedItem.IsRichText"
+    defaultValue = false
+    label = "Is Rich Text"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "FeedItem.RelatedRecordId"
+    label = "Related Record ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup InsertedById {
+    apiName = "FeedItem.InsertedById"
+    relationshipName = "InsertedBy"
+    _required = true
+    label = "InsertedBy ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist NetworkScope {
+    apiName = "FeedItem.NetworkScope"
+    restricted = true
+    label = "Network Scope"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Visibility {
+    apiName = "FeedItem.Visibility"
+    restricted = true
+    label = "Visibility"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BestCommentId {
+    apiName = "FeedItem.BestCommentId"
+    relationshipName = "BestComment"
+    label = "Best Comment ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasContent {
+    apiName = "FeedItem.HasContent"
+    defaultValue = false
+    label = "Has Content"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasLink {
+    apiName = "FeedItem.HasLink"
+    defaultValue = false
+    label = "Has Link"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasFeedEntity {
+    apiName = "FeedItem.HasFeedEntity"
+    defaultValue = false
+    label = "Has Feed Entity Attachment"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasVerifiedComment {
+    apiName = "FeedItem.HasVerifiedComment"
+    defaultValue = false
+    label = "Has Verified Comment"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "FeedItem.IsClosed"
+    defaultValue = false
+    label = "Is Closed"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FeedItem.Status"
+    restricted = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

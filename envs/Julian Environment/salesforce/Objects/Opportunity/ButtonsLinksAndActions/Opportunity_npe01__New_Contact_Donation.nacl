@@ -1,0 +1,22 @@
+salesforce.WebLink Opportunity_npe01__New_Contact_Donation {
+  fullName = "Opportunity.npe01__New_Contact_Donation"
+  availability = "online"
+  description = "Replaces the standard New Donation button on the Donations related list on the Contact Page Layout if you have Donation Record Types."
+  displayType = "massActionButton"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "New Contact Donation"
+  openType = "replace"
+  protected = false
+  requireRowSelection = false
+  url = '''
+/setup/ui/recordtypeselect.jsp?
+ent=Opportunity&
+retURL=%2F{!Contact.Id}&
+save_new_url=%2F006%2Fe%3Flookupcmpgn%3D1%26retURL%3D%252F{!Contact.Id}%26accid%3D{!Account.Id}%26conid%3D{!Contact.Id}&opp3={!Contact.Name}-%20Donation%20{!Today}
+'''
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npe01__New_Contact_Donation"
+}

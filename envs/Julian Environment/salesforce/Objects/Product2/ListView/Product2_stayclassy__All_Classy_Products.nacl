@@ -1,0 +1,26 @@
+salesforce.ListView Product2_stayclassy__All_Classy_Products {
+  fullName = "Product2.stayclassy__All_Classy_Products"
+  columns = [
+    "PRODUCT2.NAME",
+    "PRODUCT2.CUSTOMER_PRODUCT_ID",
+    salesforce.Product2.field.stayclassy__Classy_Campaign__c,
+    "PRODUCT2.DESCRIPTION",
+    salesforce.Product2.field.stayclassy__Charity_Donation_Percentage__c,
+    "PRODUCT2.ACTIVE",
+    salesforce.Product2.field.stayclassy__Quantity_Available__c,
+    "PRODUCT2.LAST_UPDATE",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "stayclassy__Classy_Product_ID__c"
+      operation = "greaterThan"
+      value = "0"
+    },
+  ]
+  label = "All Classy Products"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _alias = "All Classy Products (stayclassy)"
+}

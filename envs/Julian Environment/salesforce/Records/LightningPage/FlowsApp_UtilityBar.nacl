@@ -1,0 +1,24 @@
+salesforce.LightningPage FlowsApp_UtilityBar {
+  description = "The default utility bar for the FlowsApp application."
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "notes:utilityBarNoteList"
+            identifier = "notes_utilityBarNoteList"
+          }
+        },
+      ]
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "FlowsApp App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  fullName = "FlowsApp_UtilityBar"
+  _alias = "FlowsApp_UtilityBar"
+}

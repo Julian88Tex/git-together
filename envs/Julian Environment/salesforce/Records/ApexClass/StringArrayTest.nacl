@@ -1,0 +1,7 @@
+salesforce.ApexClass StringArrayTest {
+  apiVersion = 42
+  status = "Active"
+  fullName = "StringArrayTest"
+  content = file("salesforce/Records/ApexClass/StringArrayTest.cls")
+  _alias = "StringArrayTest"
+}

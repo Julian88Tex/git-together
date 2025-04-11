@@ -1,0 +1,5 @@
+salesforce.CustomAddressFieldSettings {
+  fullName = "CustomAddressField"
+  enableCustomAddressField = false
+  _alias = "CustomAddressField"
+}

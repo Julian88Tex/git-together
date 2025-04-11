@@ -1,0 +1,55 @@
+type salesforce.Activity {
+  salesforce.FormulaText DB_Activity_Type__c {
+    apiName = "Activity.DB_Activity_Type__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package.  If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formula = "IF(CONTAINS( Subject , \"Email\"), \"Email\", IF(CONTAINS( Subject , \"Cold Call\"), \"Cold Call\", IF(CONTAINS( Subject , \"Call\"), \"Call\", IF(CONTAINS( Subject , \"Meeting\"), \"Meeting\", IF(CONTAINS( Subject , \"On Site Visit\"), \"Site Visit\", IF(CONTAINS( Subject , \"Quote\"), \"Send Letter/Quote\", \"Other\"))))))"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Activity Type"
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text Primary_Resource__c {
+    apiName = "Activity.Primary_Resource__c"
+    description = "it was created just to run the Example provided. It should be removed in the final version."
+    externalId = false
+    label = "Primary Resource"
+    length = 255
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Text funraise__fr_Task_ID__c {
+    apiName = "Activity.funraise__fr_Task_ID__c"
+    caseSensitive = false
+    deprecated = false
+    externalId = true
+    label = "Funraise Task ID"
+    length = 255
+    unique = true
+    _hidden_value = true
+  }
+  salesforce.Lookup npsp__Engagement_Plan_Task__c {
+    apiName = "Activity.npsp__Engagement_Plan_Task__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Engagement Plan Task"
+    referenceTo = [
+      "npsp__Engagement_Plan_Task__c",
+    ]
+    relationshipLabel = "Tasks"
+    relationshipName = "Tasks"
+    _hidden_value = true
+  }
+  salesforce.Lookup npsp__Engagement_Plan__c {
+    apiName = "Activity.npsp__Engagement_Plan__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    label = "Engagement Plan"
+    referenceTo = [
+      "npsp__Engagement_Plan__c",
+    ]
+    relationshipLabel = "Tasks"
+    relationshipName = "Tasks"
+    _hidden_value = true
+  }
+}

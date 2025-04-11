@@ -1,0 +1,4 @@
+salesforce.PredictionBuilderSettings {
+  fullName = "PredictionBuilder"
+  _alias = "PredictionBuilder"
+}

@@ -1,0 +1,9 @@
+salesforce.ListView Contact_AllContacts {
+  fullName = "Contact.AllContacts"
+  filterScope = "Everything"
+  label = "All Contacts"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "All Contacts"
+}

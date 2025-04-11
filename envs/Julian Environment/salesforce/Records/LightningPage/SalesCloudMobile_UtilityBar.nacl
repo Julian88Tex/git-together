@@ -1,0 +1,16 @@
+salesforce.LightningPage SalesCloudMobile_UtilityBar {
+  description = "The default utility bar for the Sales Cloud Mobile application."
+  flexiPageRegions = [
+    {
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Sales Cloud Mobile App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  fullName = "SalesCloudMobile_UtilityBar"
+  _alias = "SalesCloudMobile_UtilityBar"
+}

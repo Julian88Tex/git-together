@@ -21,29 +21,48 @@
         {
             "attributes": {
                 "type": "Contact",
-                "referenceId": "Julian89"
+                "referenceId": "V"
             },
-            "FirstName": "Julian89",
-            "LastName": "Joseph89",
-            "Phone": "987654321"
+            "FirstName": "Wutang",
+            "LastName": "Dizle",
+            "Phone": "111111111"
         },
         {
             "attributes": {
                 "type": "Contact",
-                "referenceId": "Sung"
+                "referenceId": "KennyLin"
             },
-            "FirstName": "Sung",
-            "LastName": "Song",
-            "Phone": "6549873213"
+            "FirstName": "Kenny",
+            "LastName": "Lin",
+            "Phone": "334567890"
         },
         {
             "attributes": {
                 "type": "Contact",
-                "referenceId": "Paul"
+                "referenceId": "Emma"
             },
-            "FirstName": "Paul",
-            "LastName": "Park",
-            "Phone": "1234567893"
+            "FirstName": "Emma",
+            "LastName": "April",
+            "Phone": "123456678"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "J"
+            },
+            "FirstName": "Johnny",
+            "LastName": "Nguyen",
+            "Phone": "111111111"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "Otto"
+            },
+            "FirstName": "Otto",
+            "LastName": "Hightower",
+            "Phone": "123456789"
+
         }
     ]
 }

@@ -1,0 +1,9 @@
+salesforce.CustomTab Vehicle__c {
+  fullName = "Vehicle__c"
+  customObject = true
+  motif = "Custom2: Fan"
+  _parent = [
+    salesforce.Vehicle__c,
+  ]
+  _alias = "Vehicle__c"
+}

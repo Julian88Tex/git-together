@@ -1,0 +1,38 @@
+salesforce.CustomApplication standard__LightningSales {
+  formFactors = [
+    "Small",
+    "Medium",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Sales"
+  navType = "Standard"
+  tabs = [
+    "standard-home",
+    "standard-Opportunity",
+    "standard-Lead",
+    "standard-Task",
+    "standard-File",
+    "standard-ContentNote",
+    "standard-Account",
+    "standard-Contact",
+    "standard-Campaign",
+    "standard-Dashboard",
+    "standard-report",
+    "standard-Feed",
+    "standard-CollaborationGroup",
+    "standard-Event",
+    "standard-OtherUserProfile",
+    "standard-Case",
+    "standard-Forecasting3",
+    salesforce.CustomTab.instance.npsp__Trigger_Handler__c,
+    "standard-Quote",
+    salesforce.CustomTab.instance.Animal__c,
+  ]
+  uiType = "Lightning"
+  fullName = "standard__LightningSales"
+  _alias = "Sales (standard)"
+}
