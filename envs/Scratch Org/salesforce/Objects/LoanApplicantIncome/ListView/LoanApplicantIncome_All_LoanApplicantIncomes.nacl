@@ -1,9 +1,0 @@
-salesforce.ListView LoanApplicantIncome_All_LoanApplicantIncomes {
-  fullName = "LoanApplicantIncome.All_LoanApplicantIncomes"
-  filterScope = "Everything"
-  label = "All Loan Applicant Incomes"
-  _parent = [
-    salesforce.LoanApplicantIncome,
-  ]
-  _alias = "All Loan Applicant Incomes"
-}

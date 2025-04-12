@@ -1,7 +1,0 @@
-salesforce.AccountIntelligenceSettings {
-  enableAccountLogos = false
-  enableAutomatedAccountFields = false
-  enableNewsStories = false
-  fullName = "AccountIntelligence"
-  _alias = "AccountIntelligence"
-}

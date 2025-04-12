@@ -1,7 +1,0 @@
-salesforce.SharingRules ActionPlan {
-  fullName = "ActionPlan"
-  _parent = [
-    salesforce.ActionPlan,
-  ]
-  _alias = "ActionPlan"
-}

@@ -1,7 +1,0 @@
-salesforce.SharingRules DataUsePurpose {
-  fullName = "DataUsePurpose"
-  _parent = [
-    salesforce.DataUsePurpose,
-  ]
-  _alias = "DataUsePurpose"
-}

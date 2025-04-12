@@ -1,7 +1,0 @@
-salesforce.SharingRules WorkerCompCoverageClass {
-  fullName = "WorkerCompCoverageClass"
-  _parent = [
-    salesforce.WorkerCompCoverageClass,
-  ]
-  _alias = "WorkerCompCoverageClass"
-}

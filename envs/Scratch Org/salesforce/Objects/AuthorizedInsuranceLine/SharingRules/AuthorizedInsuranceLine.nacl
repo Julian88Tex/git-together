@@ -1,7 +1,0 @@
-salesforce.SharingRules AuthorizedInsuranceLine {
-  fullName = "AuthorizedInsuranceLine"
-  _parent = [
-    salesforce.AuthorizedInsuranceLine,
-  ]
-  _alias = "AuthorizedInsuranceLine"
-}

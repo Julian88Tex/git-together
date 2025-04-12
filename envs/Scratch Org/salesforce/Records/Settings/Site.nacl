@@ -1,6 +1,0 @@
-salesforce.SiteSettings {
-  enableProxyLoginICHeader = false
-  enableTopicsInSites = false
-  fullName = "Site"
-  _alias = "Site"
-}

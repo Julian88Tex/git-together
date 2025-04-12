@@ -1,7 +1,0 @@
-salesforce.SharingRules InsuranceAsyncBulkRequest {
-  fullName = "InsuranceAsyncBulkRequest"
-  _parent = [
-    salesforce.InsuranceAsyncBulkRequest,
-  ]
-  _alias = "InsuranceAsyncBulkRequest"
-}

@@ -1,5 +1,0 @@
-salesforce.TrialOrgSettings {
-  enableSampleDataDeleted = false
-  fullName = "TrialOrg"
-  _alias = "TrialOrg"
-}

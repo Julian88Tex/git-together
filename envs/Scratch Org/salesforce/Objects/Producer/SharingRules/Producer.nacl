@@ -1,7 +1,0 @@
-salesforce.SharingRules Producer {
-  fullName = "Producer"
-  _parent = [
-    salesforce.Producer,
-  ]
-  _alias = "Producer"
-}

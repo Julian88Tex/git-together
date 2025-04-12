@@ -1,7 +1,0 @@
-salesforce.SharingRules LocationTrustMeasure {
-  fullName = "LocationTrustMeasure"
-  _parent = [
-    salesforce.LocationTrustMeasure,
-  ]
-  _alias = "LocationTrustMeasure"
-}

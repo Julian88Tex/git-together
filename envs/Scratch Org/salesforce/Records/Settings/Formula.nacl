@@ -1,5 +1,0 @@
-salesforce.FormulaSettings {
-  enableDSTAwareDatevalue = false
-  fullName = "Formula"
-  _alias = "Formula"
-}

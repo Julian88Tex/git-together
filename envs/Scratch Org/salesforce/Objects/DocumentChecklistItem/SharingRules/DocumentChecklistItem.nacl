@@ -1,7 +1,0 @@
-salesforce.SharingRules DocumentChecklistItem {
-  fullName = "DocumentChecklistItem"
-  _parent = [
-    salesforce.DocumentChecklistItem,
-  ]
-  _alias = "DocumentChecklistItem"
-}

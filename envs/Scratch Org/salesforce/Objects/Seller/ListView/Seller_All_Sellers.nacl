@@ -1,9 +1,0 @@
-salesforce.ListView Seller_All_Sellers {
-  fullName = "Seller.All_Sellers"
-  filterScope = "Everything"
-  label = "All Sellers"
-  _parent = [
-    salesforce.Seller,
-  ]
-  _alias = "All Sellers"
-}

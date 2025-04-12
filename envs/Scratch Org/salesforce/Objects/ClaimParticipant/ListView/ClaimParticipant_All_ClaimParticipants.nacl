@@ -1,9 +1,0 @@
-salesforce.ListView ClaimParticipant_All_ClaimParticipants {
-  fullName = "ClaimParticipant.All_ClaimParticipants"
-  filterScope = "Everything"
-  label = "All Claim Participants"
-  _parent = [
-    salesforce.ClaimParticipant,
-  ]
-  _alias = "All Claim Participants"
-}

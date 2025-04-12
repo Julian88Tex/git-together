@@ -1,7 +1,0 @@
-salesforce.SharingRules PartyIncome {
-  fullName = "PartyIncome"
-  _parent = [
-    salesforce.PartyIncome,
-  ]
-  _alias = "PartyIncome"
-}

@@ -1,8 +1,0 @@
-salesforce.ProductDiscoverySettings {
-  discoverProductsFlowNameOrgValue = "revenue_products__DiscoverProducts"
-  prodDiscBrowseContextDefOrgValue = "ProductDiscoveryContext__stdctx"
-  prodDiscPricingEnabledOrgValue = "false"
-  prodDiscQualEnabledOrgValue = "false"
-  fullName = "ProductDiscovery"
-  _alias = "ProductDiscovery"
-}

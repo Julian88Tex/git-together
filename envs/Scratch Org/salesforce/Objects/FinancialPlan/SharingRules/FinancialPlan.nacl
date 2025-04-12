@@ -1,7 +1,0 @@
-salesforce.SharingRules FinancialPlan {
-  fullName = "FinancialPlan"
-  _parent = [
-    salesforce.FinancialPlan,
-  ]
-  _alias = "FinancialPlan"
-}

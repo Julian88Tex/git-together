@@ -1,7 +1,0 @@
-salesforce.SharingRules AccountBrand {
-  fullName = "AccountBrand"
-  _parent = [
-    salesforce.AccountBrand,
-  ]
-  _alias = "AccountBrand"
-}

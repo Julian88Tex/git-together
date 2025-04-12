@@ -1,7 +1,0 @@
-salesforce.SharingRules ApplicationFormProduct {
-  fullName = "ApplicationFormProduct"
-  _parent = [
-    salesforce.ApplicationFormProduct,
-  ]
-  _alias = "ApplicationFormProduct"
-}

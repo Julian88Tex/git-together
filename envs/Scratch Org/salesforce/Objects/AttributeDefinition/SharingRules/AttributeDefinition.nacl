@@ -1,7 +1,0 @@
-salesforce.SharingRules AttributeDefinition {
-  fullName = "AttributeDefinition"
-  _parent = [
-    salesforce.AttributeDefinition,
-  ]
-  _alias = "AttributeDefinition"
-}

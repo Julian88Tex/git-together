@@ -1,5 +1,0 @@
-salesforce.StandardValueSet InvoiceStatus {
-  fullName = "InvoiceStatus"
-  sorted = false
-  _alias = "InvoiceStatus"
-}

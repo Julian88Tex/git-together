@@ -1,6 +1,0 @@
-salesforce.Community Internal_Community@s {
-  fullName = "Internal Community"
-  active = true
-  showInPortal = false
-  _alias = "Internal Community"
-}

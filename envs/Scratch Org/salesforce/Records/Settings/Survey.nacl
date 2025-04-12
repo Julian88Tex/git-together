@@ -1,5 +1,0 @@
-salesforce.SurveySettings {
-  enableSurvey = false
-  fullName = "Survey"
-  _alias = "Survey"
-}

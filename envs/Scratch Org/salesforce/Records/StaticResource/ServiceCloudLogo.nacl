@@ -1,7 +1,0 @@
-salesforce.StaticResource ServiceCloudLogo {
-  cacheControl = "Private"
-  contentType = "image/png"
-  fullName = "ServiceCloudLogo"
-  content = file("salesforce/Records/StaticResource/ServiceCloudLogo.png")
-  _alias = "ServiceCloudLogo"
-}

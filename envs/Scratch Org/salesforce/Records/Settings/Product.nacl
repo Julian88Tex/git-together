@@ -1,8 +1,0 @@
-salesforce.ProductSettings {
-  enableCascadeActivateToRelatedPrices = true
-  enableMySettings = false
-  enableQuantitySchedule = false
-  enableRevenueSchedule = false
-  fullName = "Product"
-  _alias = "Product"
-}

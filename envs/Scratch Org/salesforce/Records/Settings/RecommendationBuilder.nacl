@@ -1,6 +1,0 @@
-salesforce.RecommendationBuilderSettings {
-  enableErbEnabledPref = false
-  enableErbStartedPref = false
-  fullName = "RecommendationBuilder"
-  _alias = "RecommendationBuilder"
-}

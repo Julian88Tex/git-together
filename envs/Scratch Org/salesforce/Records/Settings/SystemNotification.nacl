@@ -1,6 +1,0 @@
-salesforce.SystemNotificationSettings {
-  disableDowntimeNotifications = false
-  disableMaintenanceNotifications = false
-  fullName = "SystemNotification"
-  _alias = "SystemNotification"
-}

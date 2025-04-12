@@ -1,9 +1,0 @@
-salesforce.ListView InsurancePolicyCoverage_All_InsurancePolicyCoverages {
-  fullName = "InsurancePolicyCoverage.All_InsurancePolicyCoverages"
-  filterScope = "Everything"
-  label = "All Insurance Policy Coverages"
-  _parent = [
-    salesforce.InsurancePolicyCoverage,
-  ]
-  _alias = "All Insurance Policy Coverages"
-}

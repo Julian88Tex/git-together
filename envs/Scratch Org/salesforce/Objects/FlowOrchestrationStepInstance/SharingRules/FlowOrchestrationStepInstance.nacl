@@ -1,7 +1,0 @@
-salesforce.SharingRules FlowOrchestrationStepInstance {
-  fullName = "FlowOrchestrationStepInstance"
-  _parent = [
-    salesforce.FlowOrchestrationStepInstance,
-  ]
-  _alias = "FlowOrchestrationStepInstance"
-}

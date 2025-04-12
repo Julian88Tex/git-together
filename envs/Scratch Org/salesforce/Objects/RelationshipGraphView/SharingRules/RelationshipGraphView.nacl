@@ -1,7 +1,0 @@
-salesforce.SharingRules RelationshipGraphView {
-  fullName = "RelationshipGraphView"
-  _parent = [
-    salesforce.RelationshipGraphView,
-  ]
-  _alias = "RelationshipGraphView"
-}

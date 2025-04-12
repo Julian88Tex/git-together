@@ -1,7 +1,0 @@
-salesforce.PartyDataModelSettings {
-  enableAutoSelectIndividualOnMerge = false
-  enableConsentManagement = true
-  enableIndividualAutoCreate = false
-  fullName = "PartyDataModel"
-  _alias = "PartyDataModel"
-}

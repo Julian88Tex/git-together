@@ -1,7 +1,0 @@
-salesforce.SharingRules Asset {
-  fullName = "Asset"
-  _parent = [
-    salesforce.Asset,
-  ]
-  _alias = "Asset"
-}

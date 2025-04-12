@@ -1,4 +1,0 @@
-salesforce.MatchingRules Address {
-  fullName = "Address"
-  _alias = "Address"
-}

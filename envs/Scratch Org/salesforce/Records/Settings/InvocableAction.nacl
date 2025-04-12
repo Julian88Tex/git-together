@@ -1,5 +1,0 @@
-salesforce.InvocableActionSettings {
-  isPartialSaveAllowed = true
-  fullName = "InvocableAction"
-  _alias = "InvocableAction"
-}

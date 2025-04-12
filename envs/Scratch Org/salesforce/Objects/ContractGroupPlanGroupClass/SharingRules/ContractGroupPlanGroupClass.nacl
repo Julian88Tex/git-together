@@ -1,7 +1,0 @@
-salesforce.SharingRules ContractGroupPlanGroupClass {
-  fullName = "ContractGroupPlanGroupClass"
-  _parent = [
-    salesforce.ContractGroupPlanGroupClass,
-  ]
-  _alias = "ContractGroupPlanGroupClass"
-}

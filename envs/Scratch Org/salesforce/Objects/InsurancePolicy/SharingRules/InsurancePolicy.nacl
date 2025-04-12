@@ -1,7 +1,0 @@
-salesforce.SharingRules InsurancePolicy {
-  fullName = "InsurancePolicy"
-  _parent = [
-    salesforce.InsurancePolicy,
-  ]
-  _alias = "InsurancePolicy"
-}

@@ -31,18 +31,6 @@ salesforce {
           metadataType = "DocumentFolder"
         },
         {
-          metadataType = "Profile"
-        },
-        {
-          metadataType = "PermissionSet"
-        },
-        {
-          metadataType = "MutingPermissionSet"
-        },
-        {
-          metadataType = "PermissionSetGroup"
-        },
-        {
           metadataType = "SiteDotCom"
         },
         {
@@ -91,6 +79,26 @@ salesforce {
         },
         {
           metadataType = "ManagedEventSubscription"
+        },
+        {
+          metadataType = "Profile"
+        },
+        {
+          metadataType = "PermissionSet"
+        },
+        {
+          metadataType = "MutingPermissionSet"
+        },
+        {
+          metadataType = "PermissionSetGroup"
+        },
+        {
+          metadataType = "Portal"
+          name = "Customer Portal"
+        },
+        {
+          metadataType = "ConnectedApp"
+          name = "CPQIntegrationUserApp"
         },
       ]
     }
