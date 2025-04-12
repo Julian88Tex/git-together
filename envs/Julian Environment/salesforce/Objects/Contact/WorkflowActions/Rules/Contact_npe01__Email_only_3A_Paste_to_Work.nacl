@@ -1,0 +1,42 @@
+salesforce.WorkflowRule Contact_npe01__Email_only_3A_Paste_to_Work@vuuspsss {
+  fullName = "Contact.npe01__Email only%3A Paste to Work"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__SetPrefEmailtoWork@vuu
+      type = "FieldUpdate"
+    },
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Contact_npe01__SetWorkEmailtoEmail@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  criteriaItems = [
+    {
+      field = salesforce.Contact.field.Email
+      operation = "notEqual"
+    },
+    {
+      field = salesforce.Contact.field.npe01__Preferred_Email__c
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.npe01__HomeEmail__c
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.npe01__AlternateEmail__c
+      operation = "equals"
+    },
+    {
+      field = salesforce.Contact.field.npe01__WorkEmail__c
+      operation = "equals"
+    },
+  ]
+  description = "If there is a value in the standard Email field AND no values in any NPSP email fields or Preferred Email, then Salesforce updates two fields: Work Email is updated with the email address in the standard Email field and Preferred Email is set to Work."
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.npe01__Email only%3A Paste to Work"
+}

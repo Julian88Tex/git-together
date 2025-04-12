@@ -1,0 +1,5 @@
+salesforce.InstalledPackage sf_com_apps {
+  versionNumber = "1.7"
+  fullName = "sf_com_apps"
+  _alias = "sf_com_apps"
+}

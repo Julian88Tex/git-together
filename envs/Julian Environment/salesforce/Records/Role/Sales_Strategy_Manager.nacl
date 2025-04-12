@@ -1,0 +1,10 @@
+salesforce.Role Sales_Strategy_Manager {
+  fullName = "Sales_Strategy_Manager"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  name = "Sales Strategy Manager"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.Chief_Sales_Officer
+  _alias = "Sales_Strategy_Manager"
+}

@@ -1,0 +1,85 @@
+type salesforce.OrgDeleteRequest {
+  serviceid Id {
+    apiName = "OrgDeleteRequest.Id"
+    label = "Org Delete Request ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrgDeleteRequest.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrgDeleteRequest.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "OrgDeleteRequest.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrgDeleteRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrgDeleteRequest.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrgDeleteRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrgDeleteRequest.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrgDeleteRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RequestType {
+    apiName = "OrgDeleteRequest.RequestType"
+    restricted = true
+    _required = true
+    label = "Request Type"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

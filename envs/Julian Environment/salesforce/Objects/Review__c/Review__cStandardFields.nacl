@@ -1,0 +1,69 @@
+type salesforce.Review__c {
+  serviceid Id {
+    apiName = "Review__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Review__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Review__c.Name"
+    length = 80
+    label = "Review Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Review__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Review__c.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Review__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Review__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Review__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

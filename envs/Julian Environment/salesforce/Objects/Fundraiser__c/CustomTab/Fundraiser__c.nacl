@@ -1,0 +1,9 @@
+salesforce.CustomTab Fundraiser__c {
+  fullName = "Fundraiser__c"
+  customObject = true
+  motif = "Custom1: Heart"
+  _parent = [
+    salesforce.Fundraiser__c,
+  ]
+  _alias = "Fundraiser__c"
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules RecordMergeHistory {
+  fullName = "RecordMergeHistory"
+  _parent = [
+    salesforce.RecordMergeHistory,
+  ]
+  _alias = "RecordMergeHistory"
+}

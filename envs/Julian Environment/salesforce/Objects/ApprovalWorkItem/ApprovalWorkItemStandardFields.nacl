@@ -1,0 +1,162 @@
+type salesforce.ApprovalWorkItem {
+  salesforce.Text ApprovalConditionName {
+    apiName = "ApprovalWorkItem.ApprovalConditionName"
+    length = 255
+    label = "Approval Condition Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ApprovalSubmissionId {
+    apiName = "ApprovalWorkItem.ApprovalSubmissionId"
+    relationshipName = "ApprovalSubmission"
+    _required = true
+    label = "Approval Submission ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AssignedToId {
+    apiName = "ApprovalWorkItem.AssignedToId"
+    relationshipName = "AssignedTo"
+    label = "Assigned To ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Html Comments {
+    apiName = "ApprovalWorkItem.Comments"
+    length = 32000
+    label = "Comments"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup FlowOrchestrationWorkItemId {
+    apiName = "ApprovalWorkItem.FlowOrchestrationWorkItemId"
+    relationshipName = "FlowOrchestrationWorkItem"
+    label = "Orchestration Work Item ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "ApprovalWorkItem.RelatedRecordId"
+    relationshipName = "RelatedRecord"
+    label = "Related Record ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text RelatedRecordObjectName {
+    apiName = "ApprovalWorkItem.RelatedRecordObjectName"
+    length = 255
+    label = "Related Record Object Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ReviewedById {
+    apiName = "ApprovalWorkItem.ReviewedById"
+    relationshipName = "ReviewedBy"
+    label = "User ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime ReviewedDate {
+    apiName = "ApprovalWorkItem.ReviewedDate"
+    label = "Reviewed Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ApprovalWorkItem.Status"
+    restricted = true
+    _required = true
+    label = "Status"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ApprovalWorkItem.Id"
+    label = "Approval Work Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ApprovalWorkItem.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ApprovalWorkItem.Name"
+    label = "Approval Work Item Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ApprovalWorkItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ApprovalWorkItem.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ApprovalWorkItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ApprovalWorkItem.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ApprovalWorkItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

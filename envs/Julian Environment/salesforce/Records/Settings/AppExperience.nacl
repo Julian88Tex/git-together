@@ -1,0 +1,5 @@
+salesforce.AppExperienceSettings {
+  fullName = "AppExperience"
+  doesHideAllAppsInAppLauncher = false
+  _alias = "AppExperience"
+}

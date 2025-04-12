@@ -1,0 +1,9 @@
+salesforce.ListView Region__c_All {
+  fullName = "Region__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Region__c,
+  ]
+  _alias = "All"
+}

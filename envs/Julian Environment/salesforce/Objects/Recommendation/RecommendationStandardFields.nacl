@@ -1,0 +1,160 @@
+type salesforce.Recommendation {
+  salesforce.Text AcceptanceLabel {
+    apiName = "Recommendation.AcceptanceLabel"
+    length = 80
+    _required = true
+    label = "Acceptance Label"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text ActionReference {
+    apiName = "Recommendation.ActionReference"
+    length = 255
+    _required = true
+    label = "Action"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "Recommendation.Description"
+    length = 255
+    _required = true
+    label = "Description"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup ImageId {
+    apiName = "Recommendation.ImageId"
+    inlineHelpText = "For best results, use a 1000 px x 380 px image at 72 dpi or one with a similar ratio."
+    relationshipName = "Image"
+    label = "Asset File ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActionActive {
+    apiName = "Recommendation.IsActionActive"
+    defaultValue = false
+    label = "Is Action Active"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Recommendation.Name"
+    length = 80
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text RejectionLabel {
+    apiName = "Recommendation.RejectionLabel"
+    length = 80
+    _required = true
+    label = "Rejection Label"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Recommendation.Id"
+    label = "Recommendation ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Recommendation.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Recommendation.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Recommendation.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Recommendation.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Recommendation.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Recommendation.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "Recommendation.NetworkId"
+    relationshipName = "Network"
+    label = "Network ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ExternalId {
+    apiName = "Recommendation.ExternalId"
+    length = 255
+    label = "External Id"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text RecommendationKey {
+    apiName = "Recommendation.RecommendationKey"
+    length = 255
+    label = "RecommendationResponse Identifier"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+}

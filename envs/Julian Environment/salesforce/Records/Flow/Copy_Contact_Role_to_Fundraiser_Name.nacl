@@ -1,0 +1,81 @@
+salesforce.Flow Copy_Contact_Role_to_Fundraiser_Name {
+  fullName = "Copy_Contact_Role_to_Fundraiser_Name"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Copy_Contact_Role_to_Fundraiser_Name-1_Contact"
+  label = "Copy Contact Role to Fundraiser Name"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Contact"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onAllChanges"
+      }
+    },
+  ]
+  processType = "Workflow"
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Draft"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Contact
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Contact
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _alias = "Copy Contact Role to Fundraiser Name"
+}

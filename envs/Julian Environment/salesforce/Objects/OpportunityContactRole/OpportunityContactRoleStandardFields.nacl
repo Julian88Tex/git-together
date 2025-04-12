@@ -1,0 +1,94 @@
+type salesforce.OpportunityContactRole {
+  salesforce.Lookup ContactId {
+    apiName = "OpportunityContactRole.ContactId"
+    relationshipName = "Contact"
+    _required = true
+    label = "Contact ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPrimary {
+    apiName = "OpportunityContactRole.IsPrimary"
+    defaultValue = false
+    label = "Primary"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "OpportunityContactRole.OpportunityId"
+    relationshipName = "Opportunity"
+    _required = true
+    label = "Opportunity ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Role {
+    apiName = "OpportunityContactRole.Role"
+    restricted = false
+    label = "Role"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.ContactRole
+  }
+  serviceid Id {
+    apiName = "OpportunityContactRole.Id"
+    label = "Contact Role ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OpportunityContactRole.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OpportunityContactRole.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OpportunityContactRole.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OpportunityContactRole.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OpportunityContactRole.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OpportunityContactRole.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

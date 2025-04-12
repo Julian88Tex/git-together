@@ -1,0 +1,5 @@
+salesforce.InstalledPackage zkmulti {
+  versionNumber = "1.100.14"
+  fullName = "zkmulti"
+  _alias = "zkmulti"
+}

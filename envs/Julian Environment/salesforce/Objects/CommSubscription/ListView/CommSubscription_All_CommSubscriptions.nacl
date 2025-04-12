@@ -1,0 +1,9 @@
+salesforce.ListView CommSubscription_All_CommSubscriptions {
+  fullName = "CommSubscription.All_CommSubscriptions"
+  filterScope = "Everything"
+  label = "All Communication Subscriptions"
+  _parent = [
+    salesforce.CommSubscription,
+  ]
+  _alias = "All Communication Subscriptions"
+}

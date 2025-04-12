@@ -1,0 +1,298 @@
+salesforce.FieldSet Contact_npsp__BDE_Entry_FS {
+  fullName = "Contact.npsp__BDE_Entry_FS"
+  availableFields = [
+    {
+      field = salesforce.Contact.field.npe01__AlternateEmail__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.AssistantName
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.AssistantPhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npo02__AverageAmount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Birthdate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Current_Address__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Deceased__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Department
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Description
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.DoNotCall
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Do_Not_Contact__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Exclude_from_Household_Formal_Greeting__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Exclude_from_Household_Informal_Greeting__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Exclude_from_Household_Name__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Fax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HasOptedOutOfEmail
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HasOptedOutOfFax
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__HomeEmail__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npo02__Household_Naming_Order__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npo02__Household__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.LeadSource
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingLatitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingLongitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.MobilePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npo02__Naming_Exclusions__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherCountry"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherLatitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherLongitude"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.OtherPhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "OtherStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Phone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.PhotoUrl
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__PreferredPhone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__Preferred_Email__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__Primary_Address_Type__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__Primary_Affiliation__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__Private__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.ReportsToId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Salutation"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__Secondary_Address_Type__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Title
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__WorkEmail__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npsp__is_Address_Override__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Batch Data Entry"
+  displayedFields = [
+    {
+      field = "FirstName"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "LastName"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.Email
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.AccountId
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.npe01__WorkPhone__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contact.field.HomePhone
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingStreet"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingCity"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingState"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "MailingPostalCode"
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "BDE Entry FS"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "BDE Entry FS (npsp)"
+}

@@ -1,0 +1,15 @@
+salesforce.ApexClass leadConvertTaskDescComponentController {
+  apiVersion = 29
+  status = "Active"
+  fullName = "leadConvertTaskDescComponentController"
+  content = file("salesforce/Records/ApexClass/leadConvertTaskDescComponentController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertTaskDescComponentController"
+}

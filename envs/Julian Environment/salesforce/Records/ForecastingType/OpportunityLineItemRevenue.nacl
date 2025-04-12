@@ -1,0 +1,13 @@
+salesforce.ForecastingType OpportunityLineItemRevenue {
+  fullName = "OpportunityLineItemRevenue"
+  active = false
+  amount = true
+  dateType = "0"
+  developerName = "OpportunityLineItemRevenue"
+  hasCustomGroup = false
+  hasProductFamily = true
+  masterLabel = "Opportunity Line Item Revenue"
+  quantity = false
+  roleType = "R"
+  _alias = "OpportunityLineItemRevenue"
+}

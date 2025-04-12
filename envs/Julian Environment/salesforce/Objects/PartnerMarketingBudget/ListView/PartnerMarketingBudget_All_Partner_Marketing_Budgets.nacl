@@ -1,0 +1,9 @@
+salesforce.ListView PartnerMarketingBudget_All_Partner_Marketing_Budgets {
+  fullName = "PartnerMarketingBudget.All_Partner_Marketing_Budgets"
+  filterScope = "Everything"
+  label = "All Partner Marketing Budgets"
+  _parent = [
+    salesforce.PartnerMarketingBudget,
+  ]
+  _alias = "All Partner Marketing Budgets"
+}

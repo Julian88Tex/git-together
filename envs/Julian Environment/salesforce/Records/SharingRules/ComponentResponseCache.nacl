@@ -1,0 +1,4 @@
+salesforce.SharingRules ComponentResponseCache {
+  fullName = "ComponentResponseCache"
+  _alias = "ComponentResponseCache"
+}

@@ -1,0 +1,27 @@
+salesforce.CustomApplication standard__Community {
+  defaultLandingTab = "standard-home"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-Contact",
+    "standard-Account",
+    "standard-Idea",
+    "standard-IdeaTheme",
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Candidate__c,
+    salesforce.CustomTab.instance.npsp__Batch__c,
+    salesforce.CustomTab.instance.Region__c,
+    salesforce.CustomTab.instance.New_Customer_Flow,
+    salesforce.CustomTab.instance.npsp__Trigger_Handler__c,
+    salesforce.CustomTab.instance.Animal__c,
+  ]
+  fullName = "standard__Community"
+  _alias = "standard__Community"
+}

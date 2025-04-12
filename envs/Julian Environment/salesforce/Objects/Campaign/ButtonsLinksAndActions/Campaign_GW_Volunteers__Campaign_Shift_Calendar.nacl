@@ -1,0 +1,15 @@
+salesforce.WebLink Campaign_GW_Volunteers__Campaign_Shift_Calendar {
+  fullName = "Campaign.GW_Volunteers__Campaign_Shift_Calendar"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Shift Calendar"
+  openType = "replace"
+  protected = false
+  url = "/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}JobCalendar?campaignId={!Campaign.Id}"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.GW_Volunteers__Campaign_Shift_Calendar"
+}

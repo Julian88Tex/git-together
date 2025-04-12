@@ -1,0 +1,17 @@
+salesforce.WebLink Campaign_npo02__Household_Mailing_List {
+  fullName = "Campaign.npo02__Household_Mailing_List"
+  availability = "online"
+  description = "Deduplicated mailing list of Households"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Household Mailing List"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/npsp__HH_CampaignDedupeBTN?id={!Campaign.Id}"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.npo02__Household_Mailing_List"
+}

@@ -1,0 +1,78 @@
+type salesforce.Project__c {
+  serviceid Id {
+    apiName = "Project__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Project__c.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Project__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Project__c.Name"
+    length = 80
+    label = "Project Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Project__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Project__c.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Project__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Project__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Project__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

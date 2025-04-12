@@ -1,0 +1,8 @@
+envs {
+  envsCloud = [
+    {
+      uuid = "0ce06462-d6e0-4f52-885d-7f30638dcc4a"
+      folderName = "Julian Environment"
+    },
+  ]
+}

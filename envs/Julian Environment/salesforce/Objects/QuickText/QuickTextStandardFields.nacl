@@ -1,0 +1,122 @@
+type salesforce.QuickText {
+  salesforce.Picklist Category {
+    apiName = "QuickText.Category"
+    restricted = false
+    label = "Category"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.QuickTextCategory
+  }
+  salesforce.Picklist Channel {
+    apiName = "QuickText.Channel"
+    restricted = false
+    label = "Channel"
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.QuickTextChannel
+  }
+  salesforce.Checkbox IsInsertable {
+    apiName = "QuickText.IsInsertable"
+    defaultValue = false
+    label = "Include in selected channels"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Message {
+    apiName = "QuickText.Message"
+    length = 4096
+    label = "Message"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "QuickText.Name"
+    length = 255
+    _required = true
+    label = "Quick Text Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "QuickText.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "QuickText.Id"
+    label = "Quick Text ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "QuickText.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "QuickText.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "QuickText.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "QuickText.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "QuickText.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "QuickText.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist SourceType {
+    apiName = "QuickText.SourceType"
+    restricted = true
+    label = "Source Entity Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

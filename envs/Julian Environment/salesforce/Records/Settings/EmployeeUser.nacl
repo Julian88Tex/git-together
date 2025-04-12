@@ -1,0 +1,4 @@
+salesforce.EmployeeUserSettings {
+  fullName = "EmployeeUser"
+  _alias = "EmployeeUser"
+}

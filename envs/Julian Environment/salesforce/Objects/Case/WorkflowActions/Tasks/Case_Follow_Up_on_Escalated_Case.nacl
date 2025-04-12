@@ -1,0 +1,14 @@
+salesforce.WorkflowTask Case_Follow_Up_on_Escalated_Case@vuuuu {
+  fullName = "Case.Follow_Up_on_Escalated_Case"
+  assignedToType = "owner"
+  dueDateOffset = 0
+  notifyAssignee = false
+  priority = "Normal"
+  protected = false
+  status = "Not Started"
+  subject = "Follow Up on Escalated Case"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case.Follow_Up_on_Escalated_Case"
+}

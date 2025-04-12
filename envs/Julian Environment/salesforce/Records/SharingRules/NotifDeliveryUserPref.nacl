@@ -1,0 +1,4 @@
+salesforce.SharingRules NotifDeliveryUserPref {
+  fullName = "NotifDeliveryUserPref"
+  _alias = "NotifDeliveryUserPref"
+}

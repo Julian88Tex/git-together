@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_pi__Send_Pardot_Emails {
+  fullName = "Contact.pi__Send_Pardot_Emails"
+  availability = "online"
+  displayType = "massActionButton"
+  height = 600
+  linkType = "page"
+  masterLabel = "Send Engage Email"
+  openType = "sidebar"
+  page = "pi__MicroCampaignContact"
+  protected = false
+  requireRowSelection = true
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.pi__Send_Pardot_Emails"
+}

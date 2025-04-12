@@ -1,0 +1,63 @@
+salesforce.ApexPage SiteTemplate {
+  apiVersion = 37
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Force.com template for site pages"
+  label = "SiteTemplate"
+  packageVersions = [
+    {
+      majorNumber = 3
+      minorNumber = 4
+      namespace = salesforce.InstalledPackage.instance.npe01
+    },
+    {
+      majorNumber = 3
+      minorNumber = 5
+      namespace = salesforce.InstalledPackage.instance.npe03
+    },
+    {
+      majorNumber = 3
+      minorNumber = 3
+      namespace = salesforce.InstalledPackage.instance.npe4
+    },
+    {
+      majorNumber = 3
+      minorNumber = 3
+      namespace = salesforce.InstalledPackage.instance.npe5
+    },
+    {
+      majorNumber = 3
+      minorNumber = 6
+      namespace = salesforce.InstalledPackage.instance.npo02
+    },
+    {
+      majorNumber = 3
+      minorNumber = 82
+      namespace = salesforce.InstalledPackage.instance.npsp
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = salesforce.InstalledPackage.instance.sf_chttr_apps
+    },
+    {
+      majorNumber = 5
+      minorNumber = 201
+      namespace = salesforce.InstalledPackage.instance.stayclassy
+    },
+  ]
+  fullName = "SiteTemplate"
+  content = file("salesforce/Records/ApexPage/SiteTemplate.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SiteFooter
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SiteHeader
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+  _alias = "SiteTemplate"
+}

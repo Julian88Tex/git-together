@@ -1,0 +1,16 @@
+salesforce.WebLink Lead_Convert_Lead {
+  fullName = "Lead.Convert_Lead"
+  availability = "online"
+  description = "Custom Button that calls custom Convert Lead page to replace standard 'Convert' button on Lead Page Layout."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Convert"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.leadConvertPage
+  protected = false
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.Convert_Lead"
+}

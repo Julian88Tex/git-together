@@ -1,0 +1,117 @@
+salesforce.Layout PartnerFundAllocation_Partner_Fund_Allocation_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundAllocation.field.Title
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundAllocation.field.BudgetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundAllocation.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundAllocation.field.Amount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartnerFundAllocation.field.ChannelPartnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Allocation Usage"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundAllocation.field.TotalApprovedFrs
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundAllocation.field.TotalApprovedFcs
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundAllocation.field.TotalReimbursedFcs
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PartnerFundAllocation.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundAllocation.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartnerFundAllocation.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PartnerFundAllocation-Partner Fund Allocation Layout"
+  _parent = [
+    salesforce.PartnerFundAllocation,
+  ]
+  _alias = "PartnerFundAllocation-Partner Fund Allocation Layout"
+}

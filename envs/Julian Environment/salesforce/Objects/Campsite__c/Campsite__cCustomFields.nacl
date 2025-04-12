@@ -1,0 +1,12 @@
+type salesforce.Campsite__c {
+  salesforce.LongTextArea Description__c {
+    apiName = "Campsite__c.Description__c"
+    label = "Description"
+    length = 32768
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

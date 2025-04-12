@@ -1,0 +1,9 @@
+salesforce.ListView ChannelProgram_My_Channel_Programs {
+  fullName = "ChannelProgram.My_Channel_Programs"
+  filterScope = "Mine"
+  label = "My Channel Programs"
+  _parent = [
+    salesforce.ChannelProgram,
+  ]
+  _alias = "My Channel Programs"
+}

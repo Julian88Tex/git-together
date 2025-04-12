@@ -1,0 +1,7 @@
+salesforce.SharingRules Contact {
+  fullName = "Contact"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact"
+}

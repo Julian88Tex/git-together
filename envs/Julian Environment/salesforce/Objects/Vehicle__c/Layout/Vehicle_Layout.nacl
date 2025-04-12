@@ -1,0 +1,95 @@
+salesforce.Layout Vehicle__c_Vehicle_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Vehicle__c.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Vehicle__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Vehicle__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Vehicle__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Vehicle__c-Vehicle Layout"
+  _parent = [
+    salesforce.Vehicle__c,
+  ]
+  _alias = "Vehicle__c-Vehicle Layout"
+}

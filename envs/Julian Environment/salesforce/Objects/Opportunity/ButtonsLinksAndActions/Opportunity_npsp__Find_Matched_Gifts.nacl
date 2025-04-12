@@ -1,0 +1,15 @@
+salesforce.WebLink Opportunity_npsp__Find_Matched_Gifts {
+  fullName = "Opportunity.npsp__Find_Matched_Gifts"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Find Matched Gifts"
+  openType = "sidebar"
+  page = "npsp__MTCH_FindGifts"
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Find_Matched_Gifts"
+}

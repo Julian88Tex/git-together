@@ -1,0 +1,3 @@
+AccountNumber,AccountSource,AnnualRevenue,BillingCity,BillingCountry,BillingGeocodeAccuracy,BillingLatitude,BillingLongitude,BillingPostalCode,BillingState,BillingStreet,CleanStatus,Description,DunsNumber,Fax,Id,Industry,Jigsaw,NaicsCode,NaicsDesc,Name,NumberOfEmployees,OperatingHours.Name,OperatingHoursId,Ownership,Parent.Name,ParentId,Phone,Rating,ShippingCity,ShippingCountry,ShippingGeocodeAccuracy,ShippingLatitude,ShippingLongitude,ShippingPostalCode,ShippingState,ShippingStreet,Sic,SicDesc,Site,TickerSymbol,Tradestyle,Type,Website,YearStarted
+,,,,,,,,,,,Pending,,,,ULPQIQMZUXLEANTTFU,,,,,ACME,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,Pending,,,,XHYRZHXIC6JBYEL918,,,,,Sample Account for Entitlements,,,,,,,,,,,,,,,,,,,,,,,,

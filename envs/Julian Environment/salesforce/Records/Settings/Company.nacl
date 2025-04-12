@@ -1,0 +1,9 @@
+salesforce.CompanySettings {
+  fullName = "Company"
+  enableCustomFiscalYear = false
+  fiscalYear = {
+    fiscalYearNameBasedOn = "endingMonth"
+    startMonth = "February"
+  }
+  _alias = "Company"
+}

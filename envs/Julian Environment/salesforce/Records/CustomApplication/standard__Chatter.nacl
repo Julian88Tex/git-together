@@ -1,0 +1,25 @@
+salesforce.CustomApplication standard__Chatter {
+  defaultLandingTab = "standard-home"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-UserProfile",
+    "standard-OtherUserProfile",
+    "standard-CollaborationGroup",
+    "standard-File",
+    salesforce.CustomTab.instance.Candidate__c,
+    salesforce.CustomTab.instance.npsp__Batch__c,
+    salesforce.CustomTab.instance.Region__c,
+    salesforce.CustomTab.instance.New_Customer_Flow,
+    salesforce.CustomTab.instance.npsp__Trigger_Handler__c,
+    salesforce.CustomTab.instance.Animal__c,
+  ]
+  fullName = "standard__Chatter"
+  _alias = "standard__Chatter"
+}

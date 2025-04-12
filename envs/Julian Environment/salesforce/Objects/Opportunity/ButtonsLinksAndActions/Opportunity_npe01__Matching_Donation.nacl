@@ -1,0 +1,16 @@
+salesforce.WebLink Opportunity_npe01__Matching_Donation {
+  fullName = "Opportunity.npe01__Matching_Donation"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "DEPRECATED - Matching Donation"
+  openType = "sidebar"
+  protected = false
+  url = "/apex/npsp__OPP_MatchingDonationsBTN?id={!Opportunity.Id}"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npe01__Matching_Donation"
+}

@@ -1,0 +1,17 @@
+salesforce.WorkflowAlert Opportunity_npsp__Opportunity_Email_Acknowledgment@vuuuu {
+  fullName = "Opportunity.npsp__Opportunity_Email_Acknowledgment"
+  description = "Opportunity Email Acknowledgment"
+  protected = false
+  recipients = [
+    {
+      field = salesforce.Opportunity.field.npsp__Primary_Contact__c
+      type = "contactLookup"
+    },
+  ]
+  senderType = "CurrentUser"
+  template = "npsp__NPSP_Email_Templates/npsp__NPSP_Opportunity_Acknowledgment"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.npsp__Opportunity_Email_Acknowledgment"
+}

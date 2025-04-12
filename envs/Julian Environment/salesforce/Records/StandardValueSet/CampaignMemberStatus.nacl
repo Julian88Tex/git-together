@@ -1,0 +1,72 @@
+salesforce.StandardValueSet CampaignMemberStatus {
+  fullName = "CampaignMemberStatus"
+  sorted = true
+  standardValue = [
+    {
+      fullName = "Canceled"
+      default = false
+      label = "Canceled"
+    },
+    {
+      fullName = "Completed"
+      default = false
+      label = "Completed"
+    },
+    {
+      fullName = "Confirmed"
+      default = false
+      label = "Confirmed"
+    },
+    {
+      fullName = "Donor"
+      default = false
+      label = "Donor"
+    },
+    {
+      fullName = "Fundraiser"
+      default = false
+      label = "Fundraiser"
+    },
+    {
+      fullName = "No-Show"
+      default = false
+      label = "No-Show"
+    },
+    {
+      fullName = "Planned"
+      default = false
+      label = "Planned"
+    },
+    {
+      fullName = "Prospect"
+      default = false
+      label = "Prospect"
+    },
+    {
+      fullName = "Received"
+      default = false
+      label = "Received"
+    },
+    {
+      fullName = "Responded"
+      default = false
+      label = "Responded"
+    },
+    {
+      fullName = "Sent"
+      default = false
+      label = "Sent"
+    },
+    {
+      fullName = "Team Captain"
+      default = false
+      label = "Team Captain"
+    },
+    {
+      fullName = "Team Member"
+      default = false
+      label = "Team Member"
+    },
+  ]
+  _alias = "CampaignMemberStatus"
+}

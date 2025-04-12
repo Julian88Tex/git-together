@@ -1,0 +1,4 @@
+salesforce.DocumentChecklistSettings {
+  fullName = "DocumentChecklist"
+  _alias = "DocumentChecklist"
+}

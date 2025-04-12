@@ -1,0 +1,90 @@
+type salesforce.NamespaceRegistry {
+  salesforce.Text NamespacePrefix {
+    apiName = "NamespaceRegistry.NamespacePrefix"
+    length = 15
+    _required = true
+    label = "Namespace Prefix"
+    createable = false
+    updateable = false
+    unique = true
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "NamespaceRegistry.Id"
+    label = "Namespace Registry ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "NamespaceRegistry.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "NamespaceRegistry.Name"
+    label = "Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "NamespaceRegistry.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "NamespaceRegistry.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "NamespaceRegistry.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "NamespaceRegistry.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "NamespaceRegistry.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text NamespaceOrg {
+    apiName = "NamespaceRegistry.NamespaceOrg"
+    length = 15
+    label = "Namespace Org ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,3 @@
+Email,LastName,FirstName,Salutation,OtherStreet,OtherCity,OtherState,OtherPostalCode,OtherCountry,OtherLatitude,OtherLongitude,OtherGeocodeAccuracy,MailingStreet,MailingCity,MailingState,MailingPostalCode,MailingCountry,MailingLatitude,MailingLongitude,MailingGeocodeAccuracy,Phone,Fax,MobilePhone,HomePhone,OtherPhone,AssistantPhone,Title,Department,AssistantName,LeadSource,Birthdate,Description,EmailBouncedReason,EmailBouncedDate,Jigsaw,CleanStatus,Account.Name,Individual.Name,$$Email$LastName$FirstName,ReportsTo.$$Email$LastName$FirstName
+jane.doe@example.com,Doe,Jane,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pending,ACME,,jane.doe@example.com;Doe;Jane,
+john.doe@example.com,Doe,John,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pending,ACME,,john.doe@example.com;Doe;John,

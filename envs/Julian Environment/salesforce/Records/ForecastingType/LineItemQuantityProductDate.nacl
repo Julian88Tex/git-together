@@ -1,0 +1,13 @@
+salesforce.ForecastingType LineItemQuantityProductDate {
+  fullName = "LineItemQuantityProductDate"
+  active = false
+  amount = false
+  dateType = "1"
+  developerName = "LineItemQuantityProductDate"
+  hasCustomGroup = false
+  hasProductFamily = true
+  masterLabel = "Line Item Quantity Product Date"
+  quantity = true
+  roleType = "R"
+  _alias = "LineItemQuantityProductDate"
+}

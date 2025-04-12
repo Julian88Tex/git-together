@@ -1,0 +1,8 @@
+salesforce.CustomLabel Region {
+  fullName = "Region"
+  language = "en_US"
+  protected = true
+  shortDescription = "Region"
+  value = "Region"
+  _alias = "Region"
+}

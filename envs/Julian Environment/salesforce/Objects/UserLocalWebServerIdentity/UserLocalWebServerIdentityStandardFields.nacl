@@ -1,0 +1,78 @@
+type salesforce.UserLocalWebServerIdentity {
+  serviceid Id {
+    apiName = "UserLocalWebServerIdentity.Id"
+    label = "User Local Web Server Identity ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "UserLocalWebServerIdentity.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "UserLocalWebServerIdentity.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "UserLocalWebServerIdentity.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "UserLocalWebServerIdentity.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "UserLocalWebServerIdentity.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "UserLocalWebServerIdentity.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "UserLocalWebServerIdentity.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LocalWebServerIdentityToken {
+    apiName = "UserLocalWebServerIdentity.LocalWebServerIdentityToken"
+    length = 255
+    label = "Local Web Server Identity Token"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+}

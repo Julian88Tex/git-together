@@ -1,0 +1,15 @@
+salesforce.WebLink Campaign_GW_Volunteers__CampaignRoster {
+  fullName = "Campaign.GW_Volunteers__CampaignRoster"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Volunteer Roster"
+  openType = "replace"
+  protected = false
+  url = "/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}OpenReport?ReportDevName=Volunteer_Roster&pv0={!Campaign.Id}"
+  _parent = [
+    salesforce.Campaign,
+  ]
+  _alias = "Campaign.GW_Volunteers__CampaignRoster"
+}

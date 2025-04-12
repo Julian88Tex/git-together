@@ -1,0 +1,145 @@
+type salesforce.ApprovalSubmissionDetail {
+  salesforce.Picklist ActionChannelName {
+    apiName = "ApprovalSubmissionDetail.ActionChannelName"
+    restricted = true
+    _required = true
+    label = "Action Channel Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ActionContext {
+    apiName = "ApprovalSubmissionDetail.ActionContext"
+    length = 255
+    label = "Action Context"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ActionName {
+    apiName = "ApprovalSubmissionDetail.ActionName"
+    restricted = true
+    _required = true
+    label = "Action Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ActionPerformedById {
+    apiName = "ApprovalSubmissionDetail.ActionPerformedById"
+    relationshipName = "ActionPerformedBy"
+    label = "User ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ActionPerformerRole {
+    apiName = "ApprovalSubmissionDetail.ActionPerformerRole"
+    restricted = true
+    _required = true
+    label = "Action Performer Role"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ApprovalSubmissionId {
+    apiName = "ApprovalSubmissionDetail.ApprovalSubmissionId"
+    relationshipName = "ApprovalSubmission"
+    _required = true
+    label = "Approval Submission ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ApprovalWorkItemId {
+    apiName = "ApprovalSubmissionDetail.ApprovalWorkItemId"
+    relationshipName = "ApprovalWorkItem"
+    label = "Approval Work Item ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Html Comments {
+    apiName = "ApprovalSubmissionDetail.Comments"
+    length = 32000
+    label = "Comments"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ApprovalSubmissionDetail.Id"
+    label = "Approval Submission Detail ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ApprovalSubmissionDetail.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ApprovalSubmissionDetail.Name"
+    label = "Approval Submission Detail Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ApprovalSubmissionDetail.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ApprovalSubmissionDetail.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ApprovalSubmissionDetail.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ApprovalSubmissionDetail.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ApprovalSubmissionDetail.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

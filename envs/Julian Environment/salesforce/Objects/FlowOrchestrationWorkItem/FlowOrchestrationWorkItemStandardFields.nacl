@@ -1,0 +1,153 @@
+type salesforce.FlowOrchestrationWorkItem {
+  salesforce.Lookup AssigneeId {
+    apiName = "FlowOrchestrationWorkItem.AssigneeId"
+    relationshipName = "Assignee"
+    _required = true
+    label = "Assignee ID"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "FlowOrchestrationWorkItem.Description"
+    length = 255
+    label = "Description"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Label {
+    apiName = "FlowOrchestrationWorkItem.Label"
+    length = 80
+    label = "Step"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "FlowOrchestrationWorkItem.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = false
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "FlowOrchestrationWorkItem.RelatedRecordId"
+    relationshipName = "RelatedRecord"
+    label = "Context Record ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ScreenFlow {
+    apiName = "FlowOrchestrationWorkItem.ScreenFlow"
+    restricted = true
+    label = "Screen Flow ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FlowOrchestrationWorkItem.Status"
+    restricted = true
+    _required = true
+    label = "Status"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup StepInstanceId {
+    apiName = "FlowOrchestrationWorkItem.StepInstanceId"
+    relationshipName = "StepInstance"
+    label = "Orchestration Step Run ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "FlowOrchestrationWorkItem.Id"
+    label = "Orchestration Work Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FlowOrchestrationWorkItem.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "FlowOrchestrationWorkItem.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FlowOrchestrationWorkItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FlowOrchestrationWorkItem.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FlowOrchestrationWorkItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "FlowOrchestrationWorkItem.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FlowOrchestrationWorkItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea ScreenFlowInputs {
+    apiName = "FlowOrchestrationWorkItem.ScreenFlowInputs"
+    length = 32768
+    label = "Screen Flow Inputs"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,11 @@
+salesforce.PostTemplate Case_Julian_Template@vu {
+  fullName = "Case.Julian_Template"
+  default = true
+  fields = [
+    "CaseNumber",
+    "ContactFax",
+    "Asset",
+  ]
+  label = "Julian Template"
+  _alias = "Julian Template"
+}

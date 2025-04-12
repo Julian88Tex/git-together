@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SupportCaseCreatedPhoneInquiries@zcd {
+  available = true
+  description = "Notification to customer about case created through phone call"
+  encodingKey = "UTF-8"
+  name = "Support: Case Created (Phone Inquiries)"
+  style = "none"
+  subject = "Your Genwatt case number {!Case.CaseNumber} has been recorded"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportCaseCreatedPhoneInquiries"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SupportCaseCreatedPhoneInquiries/SupportCaseCreatedPhoneInquiries.email")
+  _alias = "unfiled$public/SupportCaseCreatedPhoneInquiries"
+}

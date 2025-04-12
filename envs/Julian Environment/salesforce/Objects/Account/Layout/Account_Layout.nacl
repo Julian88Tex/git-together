@@ -1,0 +1,560 @@
+salesforce.Layout Account_Account_Layout@bs {
+  customButtons = [
+    "npsp__Manage_Household",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Account Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Account.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ParentId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.AccountNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Site
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Industry
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.AnnualRevenue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npe01__SYSTEM_AccountType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__SYSTEM_CUSTOM_NAMING__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npe01__SYSTEMIsIndividual__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.Potential_Value__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Rating
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Fax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Website
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.TickerSymbol
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Ownership
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.NumberOfEmployees
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Sic
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npe01__One2OneContact__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.RecordTypeId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.BillingAddress
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ShippingAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.CustomerPriority__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SLAExpirationDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.NumberofLocations__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Active__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SLA__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SLASerialNumber__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.UpsellOpportunity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__Best_Gift_Year_Total__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__TotalOppAmount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__OppAmountLastNDays__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__OppAmountLastYear__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__OppAmountThisYear__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__OppAmount2YearsAgo__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__TotalMembershipOppAmount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.npo02__NumberOfClosedOpps__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              customLink = salesforce.WebLink.instance.Account_Billing
+            },
+          ]
+        },
+        {
+        },
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = "FeedItem.TextPost"
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = "FeedItem.ContentPost"
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewContact
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewCase
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 5
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 6
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 7
+      },
+      {
+        actionName = "FeedItem.LinkPost"
+        actionType = "QuickAction"
+        sortOrder = 8
+      },
+      {
+        actionName = "FeedItem.PollPost"
+        actionType = "QuickAction"
+        sortOrder = 9
+      },
+      {
+        actionName = "FeedItem.QuestionPost"
+        actionType = "QuickAction"
+        sortOrder = 10
+      },
+      {
+        actionName = salesforce.QuickAction.instance.Account_Update_Account_Information@vuu
+        actionType = "QuickAction"
+        sortOrder = 11
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 12
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 13
+      },
+      {
+        actionName = "Share"
+        actionType = "StandardButton"
+        sortOrder = 14
+      },
+      {
+        actionName = "JigsawSearch"
+        actionType = "StandardButton"
+        sortOrder = 15
+      },
+      {
+        actionName = "IncludeOffline"
+        actionType = "StandardButton"
+        sortOrder = 16
+      },
+      {
+        actionName = "Submit"
+        actionType = "StandardButton"
+        sortOrder = 17
+      },
+      {
+        actionName = "SendEmail"
+        actionType = "StandardButton"
+        sortOrder = 18
+      },
+      {
+        actionName = "XClean"
+        actionType = "StandardButton"
+        sortOrder = 19
+      },
+      {
+        actionName = "CallHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 20
+      },
+      {
+        actionName = "EmailHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 21
+      },
+      {
+        actionName = "WebsiteHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 22
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 23
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = salesforce.QuickAction.instance.Account_Update_Account_Information@vuu
+      },
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.QuestionPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.LogACall
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewCase
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewContact
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewEvent
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewOpportunity
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewTask
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.SendEmail
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "npsp__MailingCity__c",
+        "npsp__MailingCountry__c",
+        "npsp__MailingState__c",
+        "npsp__MailingStreet__c",
+        "npsp__Formula_MailingStreetAddress__c",
+        "npsp__MailingStreet2__c",
+        "npsp__MailingPostalCode__c",
+      ]
+      relatedList = "npsp__Address__c.npsp__Household_Account__c"
+    },
+    {
+      relatedList = "RelatedAccountContactRoleList"
+    },
+    {
+      fields = [
+        "FULL_NAME",
+        "CONTACT.TITLE",
+        "CONTACT.EMAIL",
+        "CONTACT.PHONE1",
+      ]
+      relatedList = "RelatedContactList"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = "RelatedOpportunityList"
+    },
+    {
+      fields = [
+        "CASES.CASE_NUMBER",
+        "NAME",
+        "CASES.SUBJECT",
+        "CASES.PRIORITY",
+        "CASES.CREATED_DATE_DATE_ONLY",
+        "CASES.STATUS",
+        "OWNER_NAME",
+      ]
+      relatedList = "RelatedCaseList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "OPPORTUNITY.NAME",
+        "PARTNER.ROLE",
+      ]
+      relatedList = "RelatedPartnerList"
+    },
+    {
+      fields = [
+        "CreatedDate",
+        "StepStatus",
+        "OriginalActor",
+        "Actor",
+        "Comments",
+      ]
+      relatedList = "RelatedProcessHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "ParentId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000001HdA7"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Account-Account Layout"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account-Account Layout"
+}

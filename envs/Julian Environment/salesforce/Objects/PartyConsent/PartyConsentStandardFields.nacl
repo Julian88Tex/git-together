@@ -1,0 +1,167 @@
+type salesforce.PartyConsent {
+  salesforce.Picklist Action {
+    apiName = "PartyConsent.Action"
+    restricted = true
+    _required = true
+    label = "Action"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BusinessBrandId {
+    apiName = "PartyConsent.BusinessBrandId"
+    relationshipName = "BusinessBrand"
+    label = "Business Brand ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CaptureContactPointType {
+    apiName = "PartyConsent.CaptureContactPointType"
+    restricted = true
+    label = "Consent Captured Contact Point Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CaptureDate {
+    apiName = "PartyConsent.CaptureDate"
+    label = "Consent Captured Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CaptureSource {
+    apiName = "PartyConsent.CaptureSource"
+    length = 255
+    label = "Consent Captured Source"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "PartyConsent.DataUsePurposeId"
+    relationshipName = "DataUsePurpose"
+    label = "Data Use Purpose ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown DoubleConsentCaptureDate {
+    apiName = "PartyConsent.DoubleConsentCaptureDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown EffectiveFrom {
+    apiName = "PartyConsent.EffectiveFrom"
+    _hidden_value = true
+  }
+  salesforce.Unknown EffectiveTo {
+    apiName = "PartyConsent.EffectiveTo"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "PartyConsent.Name"
+    length = 255
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartyConsent.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PartyId {
+    apiName = "PartyConsent.PartyId"
+    relationshipName = "Party"
+    _required = true
+    label = "Individual ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PartyRoleId {
+    apiName = "PartyConsent.PartyRoleId"
+    relationshipName = "PartyRole"
+    label = "Party Role ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PrivacyConsentStatus {
+    apiName = "PartyConsent.PrivacyConsentStatus"
+    restricted = true
+    _required = true
+    label = "Privacy Consent Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PartyConsent.Id"
+    label = "PartyConsent ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartyConsent.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartyConsent.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartyConsent.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartyConsent.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartyConsent.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartyConsent.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

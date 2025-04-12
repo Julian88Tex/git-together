@@ -1,0 +1,182 @@
+salesforce.Flow Update_Opportunity_Type {
+  fullName = "Update_Opportunity_Type"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "myVariable_waitStartTimeAssignment"
+      label = "myVariable_waitStartTimeAssignment"
+      locationX = 0
+      locationY = 0
+      assignmentItems = [
+        {
+          assignToReference = "myVariable_waitStartTimeVariable"
+          operator = "Assign"
+          value = {
+            elementReference = "$Flow.CurrentDateTime"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "isChangedDecision2_myRule_1_stayclassy_sc_order_id_c"
+      }
+    },
+  ]
+  decisions = [
+    {
+      name = "isChangedDecision2_myRule_1_stayclassy_sc_order_id_c"
+      label = "isChangedDecision2_myRule_1_stayclassy_sc_order_id_c"
+      locationX = 0
+      locationY = 0
+      defaultConnector = {
+        targetReference = "myDecision"
+      }
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "isChangedRule_2_myRule_1_stayclassy_sc_order_id_c"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "myVariable_old"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+            {
+              leftValueReference = "myVariable_old.stayclassy__sc_order_id__c"
+              operator = "NotEqualTo"
+              rightValue = {
+                elementReference = "myVariable_current.stayclassy__sc_order_id__c"
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myDecision"
+          }
+          label = "isChangedRule_2_myRule_1_stayclassy_sc_order_id_c"
+        },
+      ]
+    },
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              processMetadataValues = [
+                {
+                  name = "inputDataType"
+                  value = {
+                    stringValue = "Boolean"
+                  }
+                },
+                {
+                  name = "leftHandSideType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "operatorDataType"
+                  value = {
+                    stringValue = "String"
+                  }
+                },
+                {
+                  name = "rightHandSideType"
+                  value = {
+                    stringValue = "Boolean"
+                  }
+                },
+              ]
+              leftValueReference = "isChangedRule_2_myRule_1_stayclassy_sc_order_id_c"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          label = "Update When It's a Classy Donation"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Update_Opportunity_Type-1_Opportunity"
+  label = "Update Opportunity Type"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Opportunity"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onCreateOnly"
+      }
+    },
+  ]
+  processType = "Workflow"
+  startElementReference = "myVariable_waitStartTimeAssignment"
+  status = "Draft"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Opportunity
+    },
+    {
+      name = "myVariable_waitStartTimeVariable"
+      dataType = "DateTime"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      value = {
+        elementReference = "$Flow.CurrentDateTime"
+      }
+    },
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity.field.stayclassy__sc_order_id__c
+    },
+  ]
+  _alias = "Update Opportunity Type"
+}

@@ -1,0 +1,10 @@
+salesforce.Role CEO {
+  fullName = "CEO"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "CEO"
+  mayForecastManagerShare = false
+  name = "CEO"
+  opportunityAccessLevel = "Edit"
+  _alias = "CEO"
+}

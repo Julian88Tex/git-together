@@ -1,0 +1,5 @@
+salesforce.StandardValueSet SocialPostReviewedStatus {
+  fullName = "SocialPostReviewedStatus"
+  sorted = false
+  _alias = "SocialPostReviewedStatus"
+}

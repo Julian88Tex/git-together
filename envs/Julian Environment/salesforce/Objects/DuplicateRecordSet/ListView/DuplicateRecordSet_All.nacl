@@ -1,0 +1,15 @@
+salesforce.ListView DuplicateRecordSet_All {
+  fullName = "DuplicateRecordSet.All"
+  columns = [
+    salesforce.DuplicateRecordSet.field.Name,
+    salesforce.DuplicateRecordSet.field.LastModifiedDate,
+    "LastModifiedBy",
+    "DuplicateRule",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.DuplicateRecordSet,
+  ]
+  _alias = "All"
+}

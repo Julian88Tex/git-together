@@ -1,0 +1,173 @@
+type salesforce.ForecastingAdjustment {
+  salesforce.Picklist ForecastingItemCategory {
+    apiName = "ForecastingAdjustment.ForecastingItemCategory"
+    restricted = false
+    _required = true
+    label = "Forecasting Item Category"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist ProductFamily {
+    apiName = "ForecastingAdjustment.ProductFamily"
+    restricted = false
+    label = "Product Family"
+    createable = true
+    updateable = false
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  serviceid Id {
+    apiName = "ForecastingAdjustment.Id"
+    label = "ForecastingAdjustment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ForecastingItemId {
+    apiName = "ForecastingAdjustment.ForecastingItemId"
+    _required = true
+    label = "Forecasting Item ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PeriodId {
+    apiName = "ForecastingAdjustment.PeriodId"
+    label = "Period ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date StartDate {
+    apiName = "ForecastingAdjustment.StartDate"
+    _required = true
+    label = "Period Start Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup ForecastingGroupItemId {
+    apiName = "ForecastingAdjustment.ForecastingGroupItemId"
+    relationshipName = "ForecastingGroupItem"
+    label = "Forecasting Group Item ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist ForecastCategoryName {
+    apiName = "ForecastingAdjustment.ForecastCategoryName"
+    restricted = true
+    label = "Forecast Category"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Currency AdjustedAmount {
+    apiName = "ForecastingAdjustment.AdjustedAmount"
+    _required = true
+    label = "Adjusted Amount"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+  }
+  salesforce.Number AdjustedQuantity {
+    apiName = "ForecastingAdjustment.AdjustedQuantity"
+    _required = true
+    label = "Adjusted Quantity"
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ForecastingAdjustment.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsQuantity {
+    apiName = "ForecastingAdjustment.IsQuantity"
+    defaultValue = false
+    label = "Is Quantity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsAmount {
+    apiName = "ForecastingAdjustment.IsAmount"
+    defaultValue = false
+    label = "Is Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ForecastingAdjustment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ForecastingAdjustment.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ForecastingAdjustment.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ForecastingAdjustment.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ForecastingAdjustment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ForecastingTypeId {
+    apiName = "ForecastingAdjustment.ForecastingTypeId"
+    relationshipName = "ForecastingType"
+    _required = true
+    label = "Forecasting Type ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.TextArea AdjustmentNote {
+    apiName = "ForecastingAdjustment.AdjustmentNote"
+    label = "Adjustment Note"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

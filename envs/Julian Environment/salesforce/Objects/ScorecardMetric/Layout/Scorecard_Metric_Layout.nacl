@@ -1,0 +1,67 @@
+salesforce.Layout ScorecardMetric_Scorecard_Metric_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ScorecardMetric.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ScorecardMetric.field.Category
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ScorecardMetric.field.ReportId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ScorecardMetric.field.ScorecardId
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ScorecardMetric.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ScorecardMetric-Scorecard Metric Layout"
+  _parent = [
+    salesforce.ScorecardMetric,
+  ]
+  _alias = "ScorecardMetric-Scorecard Metric Layout"
+}

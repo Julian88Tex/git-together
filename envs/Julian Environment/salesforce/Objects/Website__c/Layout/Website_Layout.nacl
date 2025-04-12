@@ -1,0 +1,78 @@
+salesforce.Layout Website__c_Website_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Website__c.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Website__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Website__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Website__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.JobPosting__c.field.Website__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Website__c-Website Layout"
+  _parent = [
+    salesforce.Website__c,
+  ]
+  _alias = "Website__c-Website Layout"
+}

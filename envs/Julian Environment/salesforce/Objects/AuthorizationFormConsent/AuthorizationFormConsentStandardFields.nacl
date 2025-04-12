@@ -1,0 +1,145 @@
+type salesforce.AuthorizationFormConsent {
+  salesforce.Lookup AuthorizationFormTextId {
+    apiName = "AuthorizationFormConsent.AuthorizationFormTextId"
+    relationshipName = "AuthorizationFormText"
+    label = "Authorization Form Text ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ConsentCapturedDateTime {
+    apiName = "AuthorizationFormConsent.ConsentCapturedDateTime"
+    label = "Consent Captured Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ConsentCapturedSource {
+    apiName = "AuthorizationFormConsent.ConsentCapturedSource"
+    length = 255
+    label = "Consent Captured Source"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist ConsentCapturedSourceType {
+    apiName = "AuthorizationFormConsent.ConsentCapturedSourceType"
+    restricted = true
+    label = "Consent Captured Source Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ConsentGiverId {
+    apiName = "AuthorizationFormConsent.ConsentGiverId"
+    relationshipName = "ConsentGiver"
+    _required = true
+    label = "Consent Giver ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DocumentVersionId {
+    apiName = "AuthorizationFormConsent.DocumentVersionId"
+    relationshipName = "DocumentVersion"
+    label = "ContentVersion ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "AuthorizationFormConsent.Name"
+    length = 255
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AuthorizationFormConsent.OwnerId"
+    relationshipName = "Owner"
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "AuthorizationFormConsent.RelatedRecordId"
+    relationshipName = "RelatedRecord"
+    label = "Related Record ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "AuthorizationFormConsent.Status"
+    restricted = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AuthorizationFormConsent.Id"
+    label = "Authorization Form Consent ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationFormConsent.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationFormConsent.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationFormConsent.CreatedById"
+    relationshipName = "CreatedBy"
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationFormConsent.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationFormConsent.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationFormConsent.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

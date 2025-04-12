@@ -1,0 +1,9 @@
+salesforce.ListView PartnerFundRequest_All_Partner_Fund_Requests {
+  fullName = "PartnerFundRequest.All_Partner_Fund_Requests"
+  filterScope = "Everything"
+  label = "All Partner Fund Requests"
+  _parent = [
+    salesforce.PartnerFundRequest,
+  ]
+  _alias = "All Partner Fund Requests"
+}

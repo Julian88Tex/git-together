@@ -1,0 +1,11 @@
+salesforce.CompactLayout Account_npsp__Account_Compact_Layout {
+  fullName = "Account.npsp__Account_Compact_Layout"
+  fields = [
+    "Name",
+  ]
+  label = "DEPRECATED: Account Compact Layout"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "DEPRECATED: Account Compact Layout (npsp)"
+}

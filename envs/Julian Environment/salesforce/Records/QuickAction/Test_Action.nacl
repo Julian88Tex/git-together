@@ -1,0 +1,49 @@
+salesforce.QuickAction Test_Action {
+  fullName = "Test_Action"
+  label = "Test Action"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "OtherAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Email"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "AccountId"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Title"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  targetObject = salesforce.Contact
+  type = "Create"
+  _alias = "Test Action"
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules PartnerFundAllocation {
+  fullName = "PartnerFundAllocation"
+  _parent = [
+    salesforce.PartnerFundAllocation,
+  ]
+  _alias = "PartnerFundAllocation"
+}

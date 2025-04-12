@@ -1,0 +1,9 @@
+salesforce.CustomTab Animal__c {
+  fullName = "Animal__c"
+  customObject = true
+  motif = "Custom89: Saxophone"
+  _parent = [
+    salesforce.Animal__c,
+  ]
+  _alias = "Animal__c"
+}

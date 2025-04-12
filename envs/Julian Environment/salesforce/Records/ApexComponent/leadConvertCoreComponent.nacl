@@ -1,0 +1,22 @@
+salesforce.ApexComponent leadConvertCoreComponent {
+  apiVersion = 29
+  description = "This custom Component contains the core elements for converting a Lead to an Account, Contact and Opportunity as part of the Lead Convert process"
+  label = "leadConvertCoreComponent"
+  fullName = "leadConvertCoreComponent"
+  content = file("salesforce/Records/ApexComponent/leadConvertCoreComponent.component")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.leadConvertCoreComponentController
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+  _alias = "leadConvertCoreComponent"
+}

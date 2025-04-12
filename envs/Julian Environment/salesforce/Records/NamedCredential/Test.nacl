@@ -1,0 +1,12 @@
+salesforce.NamedCredential Test {
+  fullName = "Test"
+  allowMergeFieldsInBody = false
+  allowMergeFieldsInHeader = false
+  endpoint = "https://sf-mini-hacks.herokuapp.com/api/animals"
+  generateAuthorizationHeader = true
+  label = "Test"
+  principalType = "NamedUser"
+  protocol = "Password"
+  username = "admin"
+  _alias = "Test"
+}

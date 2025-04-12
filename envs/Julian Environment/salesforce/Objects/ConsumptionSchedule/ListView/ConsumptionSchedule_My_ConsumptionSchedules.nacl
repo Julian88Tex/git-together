@@ -1,0 +1,9 @@
+salesforce.ListView ConsumptionSchedule_My_ConsumptionSchedules {
+  fullName = "ConsumptionSchedule.My_ConsumptionSchedules"
+  filterScope = "Mine"
+  label = "My Consumption Schedules"
+  _parent = [
+    salesforce.ConsumptionSchedule,
+  ]
+  _alias = "My Consumption Schedules"
+}

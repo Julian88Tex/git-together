@@ -1,0 +1,284 @@
+salesforce.Layout Quote_Quote_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Quote Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.QuoteNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Quote.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.OpportunityId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.AccountId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.ExpirationDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.IsSyncing
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Description
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Totals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.Subtotal
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.Discount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.TotalPrice
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Tax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.ShippingHandling
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.GrandTotal
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Prepared for"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Email
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.Fax
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.BillingName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.BillingAddress
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.ShippingName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Quote.field.ShippingAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Quote.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Name",
+      "OpportunityId",
+      "ExpirationDate",
+      "Status",
+      "Discount",
+      "GrandTotal",
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Quote.field.ContactId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Quote.field.AccountId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Quote.field.OpportunityId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "QUOTE_LI.PRODUCT2",
+        "QUOTE_LI.UNIT_PRICE",
+        "QUOTE_LI.QUANTITY",
+        "QUOTE_LI.SUBTOTAL",
+        "QUOTE_LI.DISCOUNT",
+        "QUOTE_LI.TOTAL_PRICE",
+        "QUOTE_LI.LIST_PRICE",
+      ]
+      relatedList = "RelatedQuoteLineItemList"
+    },
+    {
+      fields = [
+        "QUOTE_DOC.NAME",
+        "QUOTE_DOC.DISCOUNT",
+        "QUOTE_DOC.GRANDTOTAL",
+        "CreatedBy",
+      ]
+      relatedList = "RelatedQuoteDocumentList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Quote-Quote Layout"
+  _parent = [
+    salesforce.Quote,
+  ]
+  _alias = "Quote-Quote Layout"
+}

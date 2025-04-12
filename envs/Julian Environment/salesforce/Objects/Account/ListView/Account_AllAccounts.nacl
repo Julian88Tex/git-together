@@ -1,0 +1,15 @@
+salesforce.ListView Account_AllAccounts {
+  fullName = "Account.AllAccounts"
+  columns = [
+    "ACCOUNT.NAME",
+    "ACCOUNT.SITE",
+    salesforce.Account.field.npe01__SYSTEM_AccountType__c,
+    "ACCOUNT.CREATED_DATE",
+  ]
+  filterScope = "Everything"
+  label = "All Accounts"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "All Accounts"
+}

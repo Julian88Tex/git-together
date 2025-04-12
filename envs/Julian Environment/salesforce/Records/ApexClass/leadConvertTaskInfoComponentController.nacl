@@ -1,0 +1,18 @@
+salesforce.ApexClass leadConvertTaskInfoComponentController {
+  apiVersion = 29
+  status = "Active"
+  fullName = "leadConvertTaskInfoComponentController"
+  content = file("salesforce/Records/ApexClass/leadConvertTaskInfoComponentController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ComponentControllerBase
+    },
+    {
+      reference = salesforce.ApexClass.instance.leadConvertTaskRemindComponentController
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+  _alias = "leadConvertTaskInfoComponentController"
+}

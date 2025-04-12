@@ -1,0 +1,40 @@
+salesforce.QuickAction New_Household_Account {
+  fullName = "New_Household_Account"
+  label = "New Household"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "BillingAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  targetObject = salesforce.Account
+  targetRecordType = salesforce.RecordType.instance.Account_HH_Account
+  type = "Create"
+  _alias = "New Household"
+}

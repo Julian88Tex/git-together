@@ -1,0 +1,5 @@
+salesforce.InstalledPackage funraise {
+  versionNumber = "2.35"
+  fullName = "funraise"
+  _alias = "funraise"
+}

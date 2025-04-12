@@ -1,0 +1,82 @@
+salesforce.Layout Campsite__c_Campsite_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Campsite__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Campsite__c.field.Description__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Campsite__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Campsite__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Campsite__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.Campsite_Reservation__c.field.Campsite__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Campsite__c-Campsite Layout"
+  _parent = [
+    salesforce.Campsite__c,
+  ]
+  _alias = "Campsite__c-Campsite Layout"
+}

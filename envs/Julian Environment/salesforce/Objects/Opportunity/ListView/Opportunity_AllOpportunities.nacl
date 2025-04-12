@@ -1,0 +1,15 @@
+salesforce.ListView Opportunity_AllOpportunities {
+  fullName = "Opportunity.AllOpportunities"
+  columns = [
+    salesforce.Opportunity.field.stayclassy__Transaction_Type__c,
+    salesforce.Opportunity.field.stayclassy__sc_order_id__c,
+    "OPPORTUNITY.TYPE",
+    "OPPORTUNITY.NAME",
+  ]
+  filterScope = "Everything"
+  label = "All Opportunities"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "All Opportunities"
+}
