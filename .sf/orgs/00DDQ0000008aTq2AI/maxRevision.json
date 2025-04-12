@@ -1,0 +1,66 @@
+{
+    "fileVersion": 0,
+    "serverMaxRevisionCounter": 102,
+    "sourceMembers": {
+        "PermissionSet__sfdc_aiplanner_service_permset": {
+            "memberType": "PermissionSet",
+            "serverRevisionCounter": 52,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "PermissionSet__sfdcInternalInt__sfdc_chatbot": {
+            "memberType": "PermissionSet",
+            "serverRevisionCounter": 54,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "AuthProvider__GoogleWorkspaceAuthProvider": {
+            "memberType": "AuthProvider",
+            "serverRevisionCounter": 51,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "BotVersion__Copilot_for_Salesforce.v1": {
+            "memberType": "BotVersion",
+            "serverRevisionCounter": 47,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "BotVersion__My_First_Agent.v1": {
+            "memberType": "BotVersion",
+            "serverRevisionCounter": 102,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Bot__Copilot_for_Salesforce": {
+            "memberType": "Bot",
+            "serverRevisionCounter": 49,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Bot__My_First_Agent": {
+            "memberType": "Bot",
+            "serverRevisionCounter": 92,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "GenAiPlanner__EmployeeCopilotPlanner": {
+            "memberType": "GenAiPlanner",
+            "serverRevisionCounter": 50,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "GenAiPlanner__My_First_Agent": {
+            "memberType": "GenAiPlanner",
+            "serverRevisionCounter": 100,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "GenAiFunction__CustomKnowledgeAction_1740524918741": {
+            "memberType": "GenAiFunction",
+            "serverRevisionCounter": 101,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        }
+    }
+}
