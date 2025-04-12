@@ -1,7 +1,0 @@
-salesforce.SharingRules IdentityDocument {
-  fullName = "IdentityDocument"
-  _parent = [
-    salesforce.IdentityDocument,
-  ]
-  _alias = "IdentityDocument"
-}

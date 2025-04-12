@@ -1,7 +1,0 @@
-salesforce.SharingRules ServiceContract {
-  fullName = "ServiceContract"
-  _parent = [
-    salesforce.ServiceContract,
-  ]
-  _alias = "ServiceContract"
-}

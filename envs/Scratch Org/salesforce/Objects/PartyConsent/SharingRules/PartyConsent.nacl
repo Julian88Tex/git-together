@@ -1,7 +1,0 @@
-salesforce.SharingRules PartyConsent {
-  fullName = "PartyConsent"
-  _parent = [
-    salesforce.PartyConsent,
-  ]
-  _alias = "PartyConsent"
-}

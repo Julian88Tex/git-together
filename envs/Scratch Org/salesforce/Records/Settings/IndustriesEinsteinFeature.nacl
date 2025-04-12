@@ -1,5 +1,0 @@
-salesforce.IndustriesEinsteinFeatureSettings {
-  documentReaderConfidenceOrgValue = 0
-  fullName = "IndustriesEinsteinFeature"
-  _alias = "IndustriesEinsteinFeature"
-}

@@ -1,7 +1,0 @@
-salesforce.SharingRules CustomerProperty {
-  fullName = "CustomerProperty"
-  _parent = [
-    salesforce.CustomerProperty,
-  ]
-  _alias = "CustomerProperty"
-}

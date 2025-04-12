@@ -1,4 +1,0 @@
-salesforce.AutoResponseRules Case {
-  fullName = "Case"
-  _alias = "Case"
-}

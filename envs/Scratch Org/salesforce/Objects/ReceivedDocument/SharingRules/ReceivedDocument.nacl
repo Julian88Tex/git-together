@@ -1,7 +1,0 @@
-salesforce.SharingRules ReceivedDocument {
-  fullName = "ReceivedDocument"
-  _parent = [
-    salesforce.ReceivedDocument,
-  ]
-  _alias = "ReceivedDocument"
-}

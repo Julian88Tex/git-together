@@ -1,4 +1,0 @@
-salesforce.MeetingsSettings {
-  fullName = "Meetings"
-  _alias = "Meetings"
-}

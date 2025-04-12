@@ -1,7 +1,0 @@
-salesforce.SharingRules ApplicationForm {
-  fullName = "ApplicationForm"
-  _parent = [
-    salesforce.ApplicationForm,
-  ]
-  _alias = "ApplicationForm"
-}

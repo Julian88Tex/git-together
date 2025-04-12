@@ -1,9 +1,0 @@
-salesforce.ListView GroupClass_My_null {
-  fullName = "GroupClass.My_null"
-  filterScope = "Mine"
-  label = "My Group Class"
-  _parent = [
-    salesforce.GroupClass,
-  ]
-  _alias = "My Group Class"
-}

@@ -1,7 +1,0 @@
-salesforce.SharingRules PartyExpense {
-  fullName = "PartyExpense"
-  _parent = [
-    salesforce.PartyExpense,
-  ]
-  _alias = "PartyExpense"
-}

@@ -1,5 +1,0 @@
-salesforce.PicklistSettings {
-  isPicklistApiNameEditDisabled = false
-  fullName = "Picklist"
-  _alias = "Picklist"
-}

@@ -1,9 +1,0 @@
-salesforce.ListView ProducerCommission_All_ProducerCommissions {
-  fullName = "ProducerCommission.All_ProducerCommissions"
-  filterScope = "Everything"
-  label = "All Producer Commissions"
-  _parent = [
-    salesforce.ProducerCommission,
-  ]
-  _alias = "All Producer Commissions"
-}

@@ -1,5 +1,0 @@
-salesforce.CodeBuilderSettings {
-  enableCodeBuilder = false
-  fullName = "CodeBuilder"
-  _alias = "CodeBuilder"
-}

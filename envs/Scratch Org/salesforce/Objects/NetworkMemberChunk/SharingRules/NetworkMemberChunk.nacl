@@ -1,7 +1,0 @@
-salesforce.SharingRules NetworkMemberChunk {
-  fullName = "NetworkMemberChunk"
-  _parent = [
-    salesforce.NetworkMemberChunk,
-  ]
-  _alias = "NetworkMemberChunk"
-}

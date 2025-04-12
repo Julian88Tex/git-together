@@ -1,7 +1,0 @@
-salesforce.SharingRules InsuranceContract {
-  fullName = "InsuranceContract"
-  _parent = [
-    salesforce.InsuranceContract,
-  ]
-  _alias = "InsuranceContract"
-}

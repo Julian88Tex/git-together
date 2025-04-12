@@ -1,5 +1,0 @@
-salesforce.StandardValueSet QuoteStatus {
-  fullName = "QuoteStatus"
-  sorted = false
-  _alias = "QuoteStatus"
-}

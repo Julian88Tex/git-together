@@ -1,5 +1,0 @@
-salesforce.DynamicFormsSettings {
-  enableFormsOnMobile = true
-  fullName = "DynamicForms"
-  _alias = "DynamicForms"
-}

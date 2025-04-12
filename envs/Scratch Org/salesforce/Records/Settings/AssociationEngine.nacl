@@ -1,5 +1,0 @@
-salesforce.AssociationEngineSettings {
-  enableAssociationEngine = false
-  fullName = "AssociationEngine"
-  _alias = "AssociationEngine"
-}

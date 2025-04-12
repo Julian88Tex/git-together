@@ -1,7 +1,0 @@
-salesforce.SharingRules Case {
-  fullName = "Case"
-  _parent = [
-    salesforce.Case,
-  ]
-  _alias = "Case"
-}

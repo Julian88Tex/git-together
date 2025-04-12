@@ -1,7 +1,0 @@
-salesforce.SharingRules Claim {
-  fullName = "Claim"
-  _parent = [
-    salesforce.Claim,
-  ]
-  _alias = "Claim"
-}

@@ -1,7 +1,0 @@
-salesforce.SharingRules SecuritiesHolding {
-  fullName = "SecuritiesHolding"
-  _parent = [
-    salesforce.SecuritiesHolding,
-  ]
-  _alias = "SecuritiesHolding"
-}

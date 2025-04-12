@@ -1,7 +1,0 @@
-salesforce.SharingRules ProducerCommission {
-  fullName = "ProducerCommission"
-  _parent = [
-    salesforce.ProducerCommission,
-  ]
-  _alias = "ProducerCommission"
-}

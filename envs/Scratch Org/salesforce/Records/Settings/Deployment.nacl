@@ -1,5 +1,0 @@
-salesforce.DeploymentSettings {
-  doesSkipAsyncApexValidation = false
-  fullName = "Deployment"
-  _alias = "Deployment"
-}

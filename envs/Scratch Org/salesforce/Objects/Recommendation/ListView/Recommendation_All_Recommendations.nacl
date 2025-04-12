@@ -1,9 +1,0 @@
-salesforce.ListView Recommendation_All_Recommendations {
-  fullName = "Recommendation.All_Recommendations"
-  filterScope = "Everything"
-  label = "All Recommendations"
-  _parent = [
-    salesforce.Recommendation,
-  ]
-  _alias = "All Recommendations"
-}

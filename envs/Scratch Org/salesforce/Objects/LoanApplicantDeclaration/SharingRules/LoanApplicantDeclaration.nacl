@@ -1,7 +1,0 @@
-salesforce.SharingRules LoanApplicantDeclaration {
-  fullName = "LoanApplicantDeclaration"
-  _parent = [
-    salesforce.LoanApplicantDeclaration,
-  ]
-  _alias = "LoanApplicantDeclaration"
-}

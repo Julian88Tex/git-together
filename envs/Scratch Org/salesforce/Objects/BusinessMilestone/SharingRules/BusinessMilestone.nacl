@@ -1,7 +1,0 @@
-salesforce.SharingRules BusinessMilestone {
-  fullName = "BusinessMilestone"
-  _parent = [
-    salesforce.BusinessMilestone,
-  ]
-  _alias = "BusinessMilestone"
-}

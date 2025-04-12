@@ -1,7 +1,0 @@
-salesforce.SharingRules ResidentialLoanApplication {
-  fullName = "ResidentialLoanApplication"
-  _parent = [
-    salesforce.ResidentialLoanApplication,
-  ]
-  _alias = "ResidentialLoanApplication"
-}

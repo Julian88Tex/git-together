@@ -1,9 +1,0 @@
-salesforce.ListView ResidentialLoanApplication_All_ResidentialLoanApplications {
-  fullName = "ResidentialLoanApplication.All_ResidentialLoanApplications"
-  filterScope = "Everything"
-  label = "All Residential Loan Applications"
-  _parent = [
-    salesforce.ResidentialLoanApplication,
-  ]
-  _alias = "All Residential Loan Applications"
-}

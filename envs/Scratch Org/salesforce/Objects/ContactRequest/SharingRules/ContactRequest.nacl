@@ -1,7 +1,0 @@
-salesforce.SharingRules ContactRequest {
-  fullName = "ContactRequest"
-  _parent = [
-    salesforce.ContactRequest,
-  ]
-  _alias = "ContactRequest"
-}

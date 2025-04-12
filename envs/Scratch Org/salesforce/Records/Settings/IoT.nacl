@@ -1,7 +1,0 @@
-salesforce.IoTSettings {
-  enableIoT = false
-  enableIoTInsightsPilot = false
-  enableIoTUsageEmail = false
-  fullName = "IoT"
-  _alias = "IoT"
-}

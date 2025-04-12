@@ -1,5 +1,0 @@
-salesforce.PaymentsManagementEnabledSettings {
-  paymentsManagementEnabled = false
-  fullName = "PaymentsManagementEnabled"
-  _alias = "PaymentsManagementEnabled"
-}

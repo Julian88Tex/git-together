@@ -1,5 +1,0 @@
-salesforce.BranchManagementSettings {
-  associateAccountWithBranch = false
-  fullName = "BranchManagement"
-  _alias = "BranchManagement"
-}

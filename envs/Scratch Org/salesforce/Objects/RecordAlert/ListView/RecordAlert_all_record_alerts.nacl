@@ -1,9 +1,0 @@
-salesforce.ListView RecordAlert_all_record_alerts {
-  fullName = "RecordAlert.all_record_alerts"
-  filterScope = "Everything"
-  label = "All Record Alerts"
-  _parent = [
-    salesforce.RecordAlert,
-  ]
-  _alias = "All Record Alerts"
-}

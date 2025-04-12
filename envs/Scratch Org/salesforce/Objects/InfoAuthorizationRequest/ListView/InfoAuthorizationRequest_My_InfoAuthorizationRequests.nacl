@@ -1,9 +1,0 @@
-salesforce.ListView InfoAuthorizationRequest_My_InfoAuthorizationRequests {
-  fullName = "InfoAuthorizationRequest.My_InfoAuthorizationRequests"
-  filterScope = "Mine"
-  label = "My Info Authorization Requests"
-  _parent = [
-    salesforce.InfoAuthorizationRequest,
-  ]
-  _alias = "My Info Authorization Requests"
-}

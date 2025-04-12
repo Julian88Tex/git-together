@@ -1,9 +1,0 @@
-salesforce.ListView ClaimPaymentSummary_All_ClaimPaymentSummaries {
-  fullName = "ClaimPaymentSummary.All_ClaimPaymentSummaries"
-  filterScope = "Everything"
-  label = "All Claim Payment Summaries"
-  _parent = [
-    salesforce.ClaimPaymentSummary,
-  ]
-  _alias = "All Claim Payment Summaries"
-}

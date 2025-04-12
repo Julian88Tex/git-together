@@ -1,7 +1,0 @@
-salesforce.CleanDataService DataCloudCompanyMatch {
-  fullName = "DataCloudCompanyMatch"
-  description = "Data.com Companies"
-  masterLabel = "Data.com Companies"
-  matchEngine = "CompanyMatchMatchEngine"
-  _alias = "DataCloudCompanyMatch"
-}

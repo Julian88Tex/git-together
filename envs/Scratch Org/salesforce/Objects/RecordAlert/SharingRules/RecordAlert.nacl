@@ -1,7 +1,0 @@
-salesforce.SharingRules RecordAlert {
-  fullName = "RecordAlert"
-  _parent = [
-    salesforce.RecordAlert,
-  ]
-  _alias = "RecordAlert"
-}

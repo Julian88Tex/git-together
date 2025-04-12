@@ -1,9 +1,0 @@
-salesforce.ListView Applicant_All_Applicants {
-  fullName = "Applicant.All_Applicants"
-  filterScope = "Everything"
-  label = "All Applicants"
-  _parent = [
-    salesforce.Applicant,
-  ]
-  _alias = "All Applicants"
-}
