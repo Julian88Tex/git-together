@@ -1,0 +1,12 @@
+salesforce.GoogleAppsSettings {
+  enableGmailButtons = false
+  enableGmailButtonsAndLinks = false
+  enableGmailLinks = false
+  enableGoogleDocs = false
+  enableGoogleDocsTab = false
+  enableGoogleTalk = false
+  googleAppsDomainLinked = false
+  googleAppsDomainValidated = false
+  fullName = "GoogleApps"
+  _alias = "GoogleApps"
+}

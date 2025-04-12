@@ -1,0 +1,149 @@
+salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Contract Line Item Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.LineItemNumber
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.Product2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContractLineItem.field.ServiceContractId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractLineItem.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.StatusIndicator
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractLineItem.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractLineItem.field.EndDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Pricing"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.ListPrice
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContractLineItem.field.UnitPrice
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContractLineItem.field.Quantity
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.Subtotal
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractLineItem.field.Discount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.TotalPrice
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Covered Asset"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractLineItem.field.AssetId
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ContractLineItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContractLineItem-Contract Line Item Layout"
+  _parent = [
+    salesforce.ContractLineItem,
+  ]
+  _alias = "ContractLineItem-Contract Line Item Layout"
+}

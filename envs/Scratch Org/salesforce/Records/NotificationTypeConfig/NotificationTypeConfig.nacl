@@ -1,0 +1,335 @@
+salesforce.NotificationTypeConfig NotificationTypeConfig {
+  fullName = "NotificationTypeConfig"
+  notificationTypeSettings = [
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "action_plan_item_assigned"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "action_plan_item_completed"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "actionablelist_async_save"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "amount_updated"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "approval_request"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "bulk_action_plan_save"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "cdp_data_share_notif_type"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "chatter_comment_on_post"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "chatter_group_mention"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "chatter_mention"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "close_date_reminder"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "close_date_updated"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "conversation_mining_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "deal_won"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "deals_to_watch"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "direct_message"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "eacforfsc_async_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "easy_fts_syncx_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "einstein_agent_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "event_reminder"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "followup_process_notification"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "group_announce"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "group_benefits"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "group_post"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "health_insights_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "high_priority_case"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "insurance_inapp_alert"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "invoice_generation"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "mailapp_alert"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "new_action_plan_created"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "new_child_opportunity"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "new_referral_created"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "next_step_reminder"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "optimizer_scan_results"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "personal_analytic"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "profile_post"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "quote_to_order"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "referral_assigned"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "reply_recommendation_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "stage_reminder"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = false
+        mobileEnabled = false
+      }
+      notificationType = "stage_updated"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "stream_post"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = true
+      }
+      notificationType = "task_delegated_to"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "task_easy_importer"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "task_reminder"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "voice_call_share"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "ya_contract_renewal_notify"
+    },
+  ]
+  _alias = "NotificationTypeConfig"
+}

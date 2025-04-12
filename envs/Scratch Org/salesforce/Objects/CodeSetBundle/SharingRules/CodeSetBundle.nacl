@@ -1,0 +1,7 @@
+salesforce.SharingRules CodeSetBundle {
+  fullName = "CodeSetBundle"
+  _parent = [
+    salesforce.CodeSetBundle,
+  ]
+  _alias = "CodeSetBundle"
+}

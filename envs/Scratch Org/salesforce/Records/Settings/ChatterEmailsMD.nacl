@@ -1,0 +1,9 @@
+salesforce.ChatterEmailsMDSettings {
+  enableChatterDigestEmailsApiOnly = false
+  enableCollaborationEmail = true
+  enableDisplayAppDownloadBadges = true
+  enableEmailReplyToChatter = true
+  enableEmailToChatter = false
+  fullName = "ChatterEmailsMD"
+  _alias = "ChatterEmailsMD"
+}

@@ -1,0 +1,4 @@
+salesforce.ConversationalIntelligenceSettings {
+  fullName = "ConversationalIntelligence"
+  _alias = "ConversationalIntelligence"
+}

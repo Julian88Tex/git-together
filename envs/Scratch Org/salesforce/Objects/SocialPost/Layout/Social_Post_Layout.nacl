@@ -1,0 +1,97 @@
+salesforce.Layout SocialPost_Social_Post_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.ReplyToId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SocialPost.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.Content
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SocialPost.field.Posted
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.ParentId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.Handle
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SocialPost.field.Headline
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.PersonaId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.PostUrl
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.WhoId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SocialPost.field.Provider
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "ReplyToId",
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "Content",
+        "Persona",
+        "Posted",
+        "Parent",
+        "PostUrl",
+      ]
+      relatedList = "InReplyToList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SocialPost-Social Post Layout"
+  _parent = [
+    salesforce.SocialPost,
+  ]
+  _alias = "SocialPost-Social Post Layout"
+}

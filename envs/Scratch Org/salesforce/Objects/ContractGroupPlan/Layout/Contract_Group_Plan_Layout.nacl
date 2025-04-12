@@ -1,0 +1,154 @@
+salesforce.Layout ContractGroupPlan_Contract_Group_Plan_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ContractGroupPlan.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContractGroupPlan.field.ContractId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EffectiveStartDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EffectiveEndDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Enrollment Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EnrollmentStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EnrollmentRatingType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EligibilityCriteria
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EnrollmentEndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.EnrollmentWaitingPeriod
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.ProductNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.UnitPrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.OriginalContractPlanId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.GroupNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.ContractGroupParentPlanId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.PricingStructure
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContractGroupPlan.field.IsOptional
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "NameInsured",
+        "PolicyName",
+        "PremiumAmount",
+        "UniversalPolicyNumber",
+      ]
+      relatedList = "InsurancePolicies"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContractGroupPlan-Contract Group Plan Layout"
+  _parent = [
+    salesforce.ContractGroupPlan,
+  ]
+  _alias = "ContractGroupPlan-Contract Group Plan Layout"
+}

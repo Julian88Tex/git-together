@@ -1,0 +1,78 @@
+salesforce.Layout LoanApplicationTitleHolder_Loan_Application_Title_Holder_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationTitleHolder.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationTitleHolder.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationTitleHolder.field.TitleHolderName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationTitleHolder.field.IsCurrentTitleHolder
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationTitleHolder.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationTitleHolder.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicationTitleHolder-Loan Application Title Holder Layout"
+  _parent = [
+    salesforce.LoanApplicationTitleHolder,
+  ]
+  _alias = "LoanApplicationTitleHolder-Loan Application Title Holder Layout"
+}

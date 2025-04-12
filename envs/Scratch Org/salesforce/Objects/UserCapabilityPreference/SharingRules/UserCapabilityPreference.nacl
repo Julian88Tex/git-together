@@ -1,0 +1,7 @@
+salesforce.SharingRules UserCapabilityPreference {
+  fullName = "UserCapabilityPreference"
+  _parent = [
+    salesforce.UserCapabilityPreference,
+  ]
+  _alias = "UserCapabilityPreference"
+}

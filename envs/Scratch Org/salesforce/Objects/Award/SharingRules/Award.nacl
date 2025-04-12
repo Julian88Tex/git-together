@@ -1,0 +1,7 @@
+salesforce.SharingRules Award {
+  fullName = "Award"
+  _parent = [
+    salesforce.Award,
+  ]
+  _alias = "Award"
+}

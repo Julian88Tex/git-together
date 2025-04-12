@@ -1,0 +1,26 @@
+salesforce.DuplicateRule Contact_Standard_Contact_Duplicate_Rule@vuuu {
+  fullName = "Contact.Standard_Contact_Duplicate_Rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Duplicate Alert"
+  description = "Duplicate rule for contact records."
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = salesforce.Contact
+      matchingRule = "Standard_Contact_Match_Rule_v1_1"
+    },
+  ]
+  isActive = true
+  masterLabel = "Standard Contact Duplicate Rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = "Report"
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact.Standard_Contact_Duplicate_Rule"
+}

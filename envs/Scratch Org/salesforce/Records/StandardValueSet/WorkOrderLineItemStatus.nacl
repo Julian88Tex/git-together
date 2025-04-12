@@ -1,0 +1,50 @@
+salesforce.StandardValueSet WorkOrderLineItemStatus {
+  fullName = "WorkOrderLineItemStatus"
+  groupingStringEnum = "WorkStatusCategory"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "New"
+      default = true
+      label = "New"
+      groupingString = "New"
+    },
+    {
+      fullName = "In Progress"
+      default = false
+      label = "In Progress"
+      groupingString = "InProgress"
+    },
+    {
+      fullName = "On Hold"
+      default = false
+      label = "On Hold"
+      groupingString = "OnHold"
+    },
+    {
+      fullName = "Completed"
+      default = false
+      label = "Completed"
+      groupingString = "Completed"
+    },
+    {
+      fullName = "Closed"
+      default = false
+      label = "Closed"
+      groupingString = "Closed"
+    },
+    {
+      fullName = "Cannot Complete"
+      default = false
+      label = "Cannot Complete"
+      groupingString = "CannotComplete"
+    },
+    {
+      fullName = "Canceled"
+      default = false
+      label = "Canceled"
+      groupingString = "Canceled"
+    },
+  ]
+  _alias = "WorkOrderLineItemStatus"
+}

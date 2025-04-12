@@ -1,0 +1,4 @@
+salesforce.SharingRules ObjectDataImport {
+  fullName = "ObjectDataImport"
+  _alias = "ObjectDataImport"
+}

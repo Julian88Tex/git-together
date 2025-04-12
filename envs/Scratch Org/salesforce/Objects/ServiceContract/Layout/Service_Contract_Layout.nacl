@@ -1,0 +1,194 @@
+salesforce.Layout ServiceContract_Service_Contract_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Service Contract Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.ContractNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceContract.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceContract.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.ContactId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.StatusIndicator
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.EndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.Term
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.SpecialTerms
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.LineItemCount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Totals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.Subtotal
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.Discount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.TotalPrice
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.ShippingHandling
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.Tax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.GrandTotal
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.BillingAddress
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceContract.field.ShippingAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceContract.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "LINEITEM.NAME",
+        "PRODUCT.NAME",
+        "LINEITEM.STARTDATE",
+        "LINEITEM.ENDDATE",
+        "LINEITEM.STATUS",
+        "ASSET.NAME",
+        "LINEITEM.QUANTITY",
+        "LINEITEM.UNIT_PRICE",
+      ]
+      relatedList = "RelatedContractLineItemList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ServiceContract-Service Contract Layout"
+  _parent = [
+    salesforce.ServiceContract,
+  ]
+  _alias = "ServiceContract-Service Contract Layout"
+}

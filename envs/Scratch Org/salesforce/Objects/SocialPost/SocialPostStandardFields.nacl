@@ -1,0 +1,573 @@
+type salesforce.SocialPost {
+  salesforce.Number AnalyzerScore {
+    apiName = "SocialPost.AnalyzerScore"
+    label = "Analyzer Score"
+    scale = 3
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text AssignedTo {
+    apiName = "SocialPost.AssignedTo"
+    label = "Assigned To"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist AttachmentType {
+    apiName = "SocialPost.AttachmentType"
+    label = "Attachment Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url AttachmentUrl {
+    apiName = "SocialPost.AttachmentUrl"
+    label = "Attachment URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Classification {
+    apiName = "SocialPost.Classification"
+    label = "Classification"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.SocialPostClassification
+  }
+  salesforce.Number CommentCount {
+    apiName = "SocialPost.CommentCount"
+    label = "Comment Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Content {
+    apiName = "SocialPost.Content"
+    label = "Message"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DeletedById {
+    apiName = "SocialPost.DeletedById"
+    label = "Deleted By ID"
+    relationshipName = "DeletedBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist EngagementLevel {
+    apiName = "SocialPost.EngagementLevel"
+    label = "Engagement Level"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.SocialPostEngagementLevel
+  }
+  salesforce.Text ExternalPostId {
+    apiName = "SocialPost.ExternalPostId"
+    label = "External Post Id"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Handle {
+    apiName = "SocialPost.Handle"
+    label = "Social Handle"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime HarvestDate {
+    apiName = "SocialPost.HarvestDate"
+    label = "Harvest Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Headline {
+    apiName = "SocialPost.Headline"
+    label = "Headline"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup HiddenById {
+    apiName = "SocialPost.HiddenById"
+    label = "Hidden By ID"
+    relationshipName = "HiddenBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number InboundLinkCount {
+    apiName = "SocialPost.InboundLinkCount"
+    label = "Inbound Link Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsOutbound {
+    apiName = "SocialPost.IsOutbound"
+    label = "Is Outbound"
+    defaultValue = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text KeywordGroupName {
+    apiName = "SocialPost.KeywordGroupName"
+    label = "Keyword Group Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Language {
+    apiName = "SocialPost.Language"
+    label = "Language"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text LikedBy {
+    apiName = "SocialPost.LikedBy"
+    label = "Liked By"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number LikesAndVotes {
+    apiName = "SocialPost.LikesAndVotes"
+    label = "Likes and Votes"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text MediaProvider {
+    apiName = "SocialPost.MediaProvider"
+    label = "Social Studio Media Provider"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text MediaType {
+    apiName = "SocialPost.MediaType"
+    label = "Social Studio Media Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist MessageType {
+    apiName = "SocialPost.MessageType"
+    label = "Message Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "SocialPost.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Notes {
+    apiName = "SocialPost.Notes"
+    label = "Notes"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OutboundSocialAccountId {
+    apiName = "SocialPost.OutboundSocialAccountId"
+    label = "Managed Social Account ID"
+    relationshipName = "OutboundSocialAccount"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "SocialPost.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "SocialPost.ParentId"
+    label = "Parent ID"
+    relationshipName = "Parent"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PersonaId {
+    apiName = "SocialPost.PersonaId"
+    label = "Social Persona ID"
+    relationshipName = "Persona"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text PostPriority {
+    apiName = "SocialPost.PostPriority"
+    label = "Post Priority"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea PostTags {
+    apiName = "SocialPost.PostTags"
+    label = "Post Tags"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url PostUrl {
+    apiName = "SocialPost.PostUrl"
+    label = "Post URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime Posted {
+    apiName = "SocialPost.Posted"
+    label = "Posted Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Provider {
+    apiName = "SocialPost.Provider"
+    label = "Social Network"
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text R6PostId {
+    apiName = "SocialPost.R6PostId"
+    label = "Social Studio Post Id"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text R6SourceId {
+    apiName = "SocialPost.R6SourceId"
+    label = "Social Studio Source Id"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text R6TopicId {
+    apiName = "SocialPost.R6TopicId"
+    label = "Social Studio Topic Id"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Recipient {
+    apiName = "SocialPost.Recipient"
+    label = "Recipient"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text RecipientType {
+    apiName = "SocialPost.RecipientType"
+    label = "Recipient Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Hierarchy ReplyToId {
+    apiName = "SocialPost.ReplyToId"
+    label = "In Reply To ID"
+    relationshipName = "ReplyTo"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text ResponseContextExternalId {
+    apiName = "SocialPost.ResponseContextExternalId"
+    label = "Response Context"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ReviewScale {
+    apiName = "SocialPost.ReviewScale"
+    label = "Review Scale"
+    scale = 2
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ReviewScore {
+    apiName = "SocialPost.ReviewScore"
+    label = "Review Score"
+    scale = 2
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ReviewedStatus {
+    apiName = "SocialPost.ReviewedStatus"
+    label = "Reviewed Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Sentiment {
+    apiName = "SocialPost.Sentiment"
+    label = "Sentiment"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Shares {
+    apiName = "SocialPost.Shares"
+    label = "Shares"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SourceTags {
+    apiName = "SocialPost.SourceTags"
+    label = "Source Tags"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SpamRating {
+    apiName = "SocialPost.SpamRating"
+    label = "Spam Rating"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "SocialPost.Status"
+    label = "Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea StatusMessage {
+    apiName = "SocialPost.StatusMessage"
+    label = "Status Message"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ThreadSize {
+    apiName = "SocialPost.ThreadSize"
+    label = "Thread Size"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text TopicProfileName {
+    apiName = "SocialPost.TopicProfileName"
+    label = "Topic Profile Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist TopicType {
+    apiName = "SocialPost.TopicType"
+    label = "Topic Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text TruncatedContent {
+    apiName = "SocialPost.TruncatedContent"
+    label = "Message Clipping"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number UniqueCommentors {
+    apiName = "SocialPost.UniqueCommentors"
+    label = "Unique Commentors"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ViewCount {
+    apiName = "SocialPost.ViewCount"
+    label = "View Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "SocialPost.WhoId"
+    label = "Who ID"
+    relationshipName = "Who"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "SocialPost.Id"
+    label = "Social Post ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SocialPost.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SocialPost.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SocialPost.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SocialPost.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SocialPost.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SocialPost.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

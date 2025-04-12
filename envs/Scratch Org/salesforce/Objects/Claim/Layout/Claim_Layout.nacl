@@ -1,0 +1,152 @@
+salesforce.Layout Claim_Claim_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Claim.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.ClaimType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.EstimatedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.ActualAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.ApprovedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.Severity
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.FnolChannel
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.IncidentSite
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.FinancialAuthorityStatus
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.PolicyNumberId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.InsuredAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.LossType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.InitiationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.AssessmentDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.FinalizedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Claim.field.ClaimReason
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ParticipantAccount",
+        "ParticipantContact",
+      ]
+      relatedList = "ClaimParticipants"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      fields = [
+        "Name",
+        "Description",
+      ]
+      relatedList = "ClaimItems"
+    },
+    {
+      fields = [
+        "Name",
+        "ActionPlanState",
+        "Owner",
+        "StartDate",
+      ]
+      relatedList = "ActionPlan"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Claim-Claim Layout"
+  _parent = [
+    salesforce.Claim,
+  ]
+  _alias = "Claim-Claim Layout"
+}

@@ -1,0 +1,83 @@
+salesforce.Layout PersonLifeEvent_Person_Life_Event_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PersonLifeEvent.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PersonLifeEvent.field.EventDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PersonLifeEvent.field.PrimaryPersonId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.IsTentative
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.EventLocation
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PersonLifeEvent.field.EventType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.EventDescription
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.RelatedPersonId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.IsExpired
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonLifeEvent.field.ExpirationDescription
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PersonLifeEvent-Person Life Event Layout"
+  _parent = [
+    salesforce.PersonLifeEvent,
+  ]
+  _alias = "PersonLifeEvent-Person Life Event Layout"
+}

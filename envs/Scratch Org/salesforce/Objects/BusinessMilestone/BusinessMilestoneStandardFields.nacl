@@ -1,0 +1,172 @@
+type salesforce.BusinessMilestone {
+  salesforce.DateTime ExpirationDate {
+    apiName = "BusinessMilestone.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea ExpirationDescription {
+    apiName = "BusinessMilestone.ExpirationDescription"
+    label = "Expiration Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsExpired {
+    apiName = "BusinessMilestone.IsExpired"
+    label = "Expired"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsTentative {
+    apiName = "BusinessMilestone.IsTentative"
+    label = "Tentative"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime MilestoneDate {
+    apiName = "BusinessMilestone.MilestoneDate"
+    label = "Milestone Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea MilestoneDescription {
+    apiName = "BusinessMilestone.MilestoneDescription"
+    label = "Milestone Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup MilestoneSiteId {
+    apiName = "BusinessMilestone.MilestoneSiteId"
+    label = "Location ID"
+    relationshipName = "MilestoneSite"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist MilestoneType {
+    apiName = "BusinessMilestone.MilestoneType"
+    label = "Milestone Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "BusinessMilestone.Name"
+    label = "Milestone Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "BusinessMilestone.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail PrimaryAccountId {
+    apiName = "BusinessMilestone.PrimaryAccountId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "PrimaryAccount"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "BusinessMilestone.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "BusinessMilestone.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "BusinessMilestone.Id"
+    label = "Business Milestone ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BusinessMilestone.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BusinessMilestone.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BusinessMilestone.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BusinessMilestone.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BusinessMilestone.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BusinessMilestone.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

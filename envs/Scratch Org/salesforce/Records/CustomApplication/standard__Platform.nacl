@@ -1,0 +1,19 @@
+salesforce.CustomApplication standard__Platform {
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-UserProfile",
+    "standard-CollaborationGroup",
+    "standard-File",
+    "standard-Account",
+    "standard-Contact",
+    "standard-report",
+    "standard-Dashboard",
+  ]
+  fullName = "standard__Platform"
+  _alias = "standard__Platform"
+}

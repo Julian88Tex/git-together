@@ -1,0 +1,15 @@
+salesforce.EmailIntegrationSettings {
+  doesEmailLogAsEmailMessageInOutlook = true
+  doesGmailStayConnectedToSalesforce = true
+  enableContactAndEventSync = false
+  enableContextualEverywhere = true
+  enableEngageForOutlook = false
+  enableExtensionHostUnrestricted = true
+  enableGmailIntegration = true
+  enableOutlookIntegration = false
+  isLayoutCustomizationAllowed = false
+  orgIsSyncingEventsOutbound = false
+  shouldUseTrustedDomainsList = true
+  fullName = "EmailIntegration"
+  _alias = "EmailIntegration"
+}

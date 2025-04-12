@@ -1,0 +1,107 @@
+salesforce.Layout SecuritiesHolding_Securities_Holding_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SecuritiesHolding.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.MarketValue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.Price
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.AssetCategory
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.AssetClass
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.PrimaryOwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.InvestmentStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.Sector
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.Shares
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.GainLoss
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.PurchasePrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.AssetCategoryName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.PercentChange
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.HouseholdId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.LastUpdated
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SecuritiesHolding.field.InvestmentEndDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SecuritiesHolding-Securities Holding Layout"
+  _parent = [
+    salesforce.SecuritiesHolding,
+  ]
+  _alias = "SecuritiesHolding-Securities Holding Layout"
+}

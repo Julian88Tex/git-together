@@ -1,0 +1,134 @@
+type salesforce.QuickTextUsage {
+  serviceid Id {
+    apiName = "QuickTextUsage.Id"
+    label = "Quick Text Usage ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "QuickTextUsage.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "QuickTextUsage.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "QuickTextUsage.Name"
+    label = "Quick Text Usage Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "QuickTextUsage.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "QuickTextUsage.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "QuickTextUsage.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "QuickTextUsage.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "QuickTextUsage.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup QuickTextId {
+    apiName = "QuickTextUsage.QuickTextId"
+    label = "Quick Text ID"
+    _required = true
+    relationshipName = "QuickText"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Channel {
+    apiName = "QuickTextUsage.Channel"
+    label = "Channel"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LaunchSource {
+    apiName = "QuickTextUsage.LaunchSource"
+    label = "Launch Source"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LoggedTime {
+    apiName = "QuickTextUsage.LoggedTime"
+    label = "Logged Time"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "QuickTextUsage.UserId"
+    label = "User ID"
+    relationshipName = "User"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AppContext {
+    apiName = "QuickTextUsage.AppContext"
+    label = "App Context"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

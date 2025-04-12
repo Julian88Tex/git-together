@@ -1,0 +1,17 @@
+salesforce.StandardValueSet OpportunityType {
+  fullName = "OpportunityType"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Existing Business"
+      default = false
+      label = "Existing Business"
+    },
+    {
+      fullName = "New Business"
+      default = false
+      label = "New Business"
+    },
+  ]
+  _alias = "OpportunityType"
+}

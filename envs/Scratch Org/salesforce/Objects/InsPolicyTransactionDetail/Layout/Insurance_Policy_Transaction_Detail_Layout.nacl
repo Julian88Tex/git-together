@@ -1,0 +1,67 @@
+salesforce.Layout InsPolicyTransactionDetail_Insurance_Policy_Transaction_Detail_Layout@bssss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsPolicyTransactionDetail.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsPolicyTransactionDetail.field.ReferenceObjectId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsPolicyTransactionDetail.field.Fee
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsPolicyTransactionDetail.field.Commission
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsPolicyTransactionDetail.field.InsurancePolicyTransactionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsPolicyTransactionDetail.field.Tax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsPolicyTransactionDetail.field.Premium
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsPolicyTransactionDetail-Insurance Policy Transaction Detail Layout"
+  _parent = [
+    salesforce.InsPolicyTransactionDetail,
+  ]
+  _alias = "InsPolicyTransactionDetail-Insurance Policy Transaction Detail Layout"
+}

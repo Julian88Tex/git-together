@@ -1,0 +1,194 @@
+type salesforce.ActionPlan {
+  salesforce.Picklist ActionPlanState {
+    apiName = "ActionPlan.ActionPlanState"
+    label = "Status"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ActionPlanTemplateVersionId {
+    apiName = "ActionPlan.ActionPlanTemplateVersionId"
+    label = "Action Plan Template Version ID"
+    _required = true
+    relationshipName = "ActionPlanTemplateVersion"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Date ActualEndDate {
+    apiName = "ActionPlan.ActualEndDate"
+    label = "Actual End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date ActualStartDate {
+    apiName = "ActionPlan.ActualStartDate"
+    label = "Actual Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "ActionPlan.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsUsingHolidayHours {
+    apiName = "ActionPlan.IsUsingHolidayHours"
+    label = "Skip Nonwork Days"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ActionPlan.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ActionPlan.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ScheduleFrequency {
+    apiName = "ActionPlan.ScheduleFrequency"
+    label = "Schedule Frequency"
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox ShouldAllowOverride {
+    apiName = "ActionPlan.ShouldAllowOverride"
+    label = "Should Allow Override"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date StartDate {
+    apiName = "ActionPlan.StartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist StatusCode {
+    apiName = "ActionPlan.StatusCode"
+    label = "Status Code"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup TargetId {
+    apiName = "ActionPlan.TargetId"
+    label = "Target Record ID"
+    relationshipName = "Target"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ActionPlan.Id"
+    label = "Action Plan ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ActionPlan.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ActionPlan.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ActionPlan.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ActionPlan.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ActionPlan.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ActionPlan.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ActionPlanType {
+    apiName = "ActionPlan.ActionPlanType"
+    label = "Action Plan Type"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup RecurringScheduleId {
+    apiName = "ActionPlan.RecurringScheduleId"
+    label = "Recurrence Schedule ID"
+    relationshipName = "RecurringSchedule"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RecordCreationType {
+    apiName = "ActionPlan.RecordCreationType"
+    label = "Record Creation Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

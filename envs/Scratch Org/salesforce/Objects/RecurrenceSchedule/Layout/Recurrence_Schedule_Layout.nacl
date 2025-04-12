@@ -1,0 +1,47 @@
+salesforce.Layout RecurrenceSchedule_Recurrence_Schedule_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.RecurrenceSchedule.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.RecurrenceSchedule.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "RecurrenceSchedule-Recurrence Schedule Layout"
+  _parent = [
+    salesforce.RecurrenceSchedule,
+  ]
+  _alias = "RecurrenceSchedule-Recurrence Schedule Layout"
+}

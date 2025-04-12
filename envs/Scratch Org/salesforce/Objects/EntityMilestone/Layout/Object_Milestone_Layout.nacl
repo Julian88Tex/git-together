@@ -1,0 +1,84 @@
+salesforce.Layout EntityMilestone_Object_Milestone_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.BusinessHoursId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.ParentEntityId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.MilestoneId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.EntityMilestone.field.CompletionDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.IsViolated
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.IsCompleted
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.StartDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.TargetDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.TargetResponseInMins
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.TimeRemainingInMins
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.EntityMilestone.field.ElapsedTimeInMins
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "BusinessHoursId",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "EntityMilestone-Object Milestone Layout"
+  _parent = [
+    salesforce.EntityMilestone,
+  ]
+  _alias = "EntityMilestone-Object Milestone Layout"
+}

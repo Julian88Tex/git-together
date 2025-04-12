@@ -1,0 +1,9 @@
+salesforce.ListView ContractGroupPlan_All_ContractGroupPlans {
+  fullName = "ContractGroupPlan.All_ContractGroupPlans"
+  filterScope = "Everything"
+  label = "All Contract Group Plans"
+  _parent = [
+    salesforce.ContractGroupPlan,
+  ]
+  _alias = "All Contract Group Plans"
+}

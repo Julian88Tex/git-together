@@ -1,0 +1,17 @@
+salesforce.StandardValueSet CaseType {
+  fullName = "CaseType"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Sample Cases"
+      default = false
+      label = "Sample Cases"
+    },
+    {
+      fullName = "Trial"
+      default = false
+      label = "Trial"
+    },
+  ]
+  _alias = "CaseType"
+}

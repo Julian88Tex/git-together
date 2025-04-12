@@ -1,0 +1,32 @@
+salesforce.StandardValueSet SocialPostClassification {
+  fullName = "SocialPostClassification"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Product Review"
+      default = false
+      label = "Product Review"
+    },
+    {
+      fullName = "Inquiry"
+      default = false
+      label = "Inquiry"
+    },
+    {
+      fullName = "Outreach"
+      default = false
+      label = "Outreach"
+    },
+    {
+      fullName = "Lead"
+      default = false
+      label = "Lead"
+    },
+    {
+      fullName = "Customer Case"
+      default = false
+      label = "Customer Case"
+    },
+  ]
+  _alias = "SocialPostClassification"
+}

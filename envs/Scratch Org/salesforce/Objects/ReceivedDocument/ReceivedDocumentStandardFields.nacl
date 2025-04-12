@@ -1,0 +1,94 @@
+type salesforce.ReceivedDocument {
+  salesforce.Text Name {
+    apiName = "ReceivedDocument.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ReceivedDocument.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ReceivedDocument.Status"
+    inlineHelpText = "The document’s latest processing stage."
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown StatusReason {
+    apiName = "ReceivedDocument.StatusReason"
+    inlineHelpText = "Reason for the status when processing and transforming the document."
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ReceivedDocument.Id"
+    label = "Received Document ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ReceivedDocument.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ReceivedDocument.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ReceivedDocument.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ReceivedDocument.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ReceivedDocument.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ReceivedDocument.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

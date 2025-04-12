@@ -1,0 +1,143 @@
+type salesforce.GroupClassContribution {
+  salesforce.Currency Amount {
+    apiName = "GroupClassContribution.Amount"
+    label = "Amount"
+    scale = 0
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContractGroupPlanId {
+    apiName = "GroupClassContribution.ContractGroupPlanId"
+    label = "Contract Group Plan ID"
+    relationshipName = "ContractGroupPlan"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveEndDate {
+    apiName = "GroupClassContribution.EffectiveEndDate"
+    label = "Effective End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveStartDate {
+    apiName = "GroupClassContribution.EffectiveStartDate"
+    label = "Effective Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist GroupBenefitProductCategory {
+    apiName = "GroupClassContribution.GroupBenefitProductCategory"
+    label = "Group Benefit Product Category"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail GroupClassId {
+    apiName = "GroupClassContribution.GroupClassId"
+    label = "Group Class ID"
+    _required = true
+    relationshipName = "GroupClass"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist MemberType {
+    apiName = "GroupClassContribution.MemberType"
+    label = "Member Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "GroupClassContribution.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent Percentage {
+    apiName = "GroupClassContribution.Percentage"
+    label = "Percentage"
+    scale = 0
+    precision = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "GroupClassContribution.Type"
+    label = "Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "GroupClassContribution.Id"
+    label = "Group Class Contribution ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GroupClassContribution.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GroupClassContribution.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GroupClassContribution.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GroupClassContribution.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GroupClassContribution.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GroupClassContribution.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

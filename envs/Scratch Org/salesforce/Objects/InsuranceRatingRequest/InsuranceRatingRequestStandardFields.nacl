@@ -1,0 +1,133 @@
+type salesforce.InsuranceRatingRequest {
+  salesforce.Lookup AccountId {
+    apiName = "InsuranceRatingRequest.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup AsyncBulkRequestItemId {
+    apiName = "InsuranceRatingRequest.AsyncBulkRequestItemId"
+    label = "Insurance Async Bulk Request Item ID"
+    relationshipName = "AsyncBulkRequestItem"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BatchJobId {
+    apiName = "InsuranceRatingRequest.BatchJobId"
+    label = "Run ID"
+    relationshipName = "BatchJob"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ErrorCode {
+    apiName = "InsuranceRatingRequest.ErrorCode"
+    label = "Error Code"
+    restricted = true
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ErrorMessage {
+    apiName = "InsuranceRatingRequest.ErrorMessage"
+    label = "Error Message"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Input {
+    apiName = "InsuranceRatingRequest.Input"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "InsuranceRatingRequest.Name"
+    label = "Insurance Rating Request Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "InsuranceRatingRequest.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "InsuranceRatingRequest.Status"
+    label = "Status"
+    restricted = true
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InsuranceRatingRequest.Id"
+    label = "Insurance Rating Request ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsuranceRatingRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsuranceRatingRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsuranceRatingRequest.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsuranceRatingRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsuranceRatingRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsuranceRatingRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

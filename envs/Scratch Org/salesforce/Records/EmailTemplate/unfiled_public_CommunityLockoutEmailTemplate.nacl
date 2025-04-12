@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_CommunityLockoutEmailTemplate@zcd {
+  available = true
+  description = "Email a user receives when they try to reset their password, but have been locked out because of too many failed login attempts."
+  encodingKey = "UTF-8"
+  name = "Experience Cloud: User Lockout Email"
+  style = "none"
+  subject = "You've been locked out of {!Community_Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/CommunityLockoutEmailTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/CommunityLockoutEmailTemplate/CommunityLockoutEmailTemplate.email")
+  _alias = "unfiled$public/CommunityLockoutEmailTemplate"
+}

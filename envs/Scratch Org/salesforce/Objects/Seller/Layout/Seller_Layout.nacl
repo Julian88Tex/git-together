@@ -1,0 +1,67 @@
+salesforce.Layout Seller_Seller_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Seller.field.PartyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Seller.field.SellerType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Seller.field.SalesAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Seller.field.ActiveFromDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Seller.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Seller.field.SellerTier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Seller.field.ActiveToDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Seller-Seller Layout"
+  _parent = [
+    salesforce.Seller,
+  ]
+  _alias = "Seller-Seller Layout"
+}

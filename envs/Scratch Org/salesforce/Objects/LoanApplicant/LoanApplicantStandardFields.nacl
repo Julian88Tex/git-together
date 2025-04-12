@@ -1,0 +1,346 @@
+type salesforce.LoanApplicant {
+  salesforce.Text ApplicantExtIdentifier {
+    apiName = "LoanApplicant.ApplicantExtIdentifier"
+    label = "Applicant External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AsianRaceSubType {
+    apiName = "LoanApplicant.AsianRaceSubType"
+    label = "Asian Race"
+    restricted = false
+    visibleLines = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist BorrowerType {
+    apiName = "LoanApplicant.BorrowerType"
+    label = "Borrower Type"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist CitizenshipStatus {
+    apiName = "LoanApplicant.CitizenshipStatus"
+    label = "Citizenship Status"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "LoanApplicant.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number DependentCount {
+    apiName = "LoanApplicant.DependentCount"
+    label = "Number of Dependents"
+    scale = 0
+    precision = 2
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text DependentsAge {
+    apiName = "LoanApplicant.DependentsAge"
+    label = "Dependents' Ages"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist EthnicitySubType {
+    apiName = "LoanApplicant.EthnicitySubType"
+    label = "Ethnicity Origin"
+    restricted = false
+    visibleLines = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist EthnicityType {
+    apiName = "LoanApplicant.EthnicityType"
+    label = "Ethnicity"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist GenderType {
+    apiName = "LoanApplicant.GenderType"
+    label = "Gender"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasMilitaryService {
+    apiName = "LoanApplicant.HasMilitaryService"
+    label = "Military Service"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsActiveMilitary {
+    apiName = "LoanApplicant.IsActiveMilitary"
+    label = "Currently on Active Military Duty"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsJointCredit {
+    apiName = "LoanApplicant.IsJointCredit"
+    label = "Joint Credit"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSurvivingMilitarySpouse {
+    apiName = "LoanApplicant.IsSurvivingMilitarySpouse"
+    label = "Surviving Military Spouse"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail LoanApplicationId {
+    apiName = "LoanApplicant.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    _required = true
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist MaritalStatus {
+    apiName = "LoanApplicant.MaritalStatus"
+    label = "Marital Status"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number MilitaryTourExpirationMonth {
+    apiName = "LoanApplicant.MilitaryTourExpirationMonth"
+    label = "Military Tour Expiration Month"
+    scale = 0
+    precision = 2
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number MilitaryTourExpirationYear {
+    apiName = "LoanApplicant.MilitaryTourExpirationYear"
+    label = "Military Tour Expiration Year"
+    scale = 0
+    precision = 4
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicant.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherAsianRaceSubType {
+    apiName = "LoanApplicant.OtherAsianRaceSubType"
+    label = "Other Asian Race"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherEthnicitySubType {
+    apiName = "LoanApplicant.OtherEthnicitySubType"
+    label = "Other Ethnicity Origin Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherPacIslandSubType {
+    apiName = "LoanApplicant.OtherPacIslandSubType"
+    label = "Other Pacific Islander Race"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LoanApplicant.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PacIslandSubType {
+    apiName = "LoanApplicant.PacIslandSubType"
+    label = "Pacific Islander Race"
+    restricted = false
+    visibleLines = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PreferredLanguage {
+    apiName = "LoanApplicant.PreferredLanguage"
+    label = "Preferred Language for Communication"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RaceType {
+    apiName = "LoanApplicant.RaceType"
+    label = "Race"
+    restricted = false
+    visibleLines = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TribeName {
+    apiName = "LoanApplicant.TribeName"
+    label = "Name of Enrolled or Principal Tribe"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox WasActiveMilitary {
+    apiName = "LoanApplicant.WasActiveMilitary"
+    label = "Past Military Service"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox WasNonActivatedService {
+    apiName = "LoanApplicant.WasNonActivatedService"
+    label = "Non-Activated Reserve or National Guard"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicant.Id"
+    label = "Loan Applicant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicant.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicant.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicant.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

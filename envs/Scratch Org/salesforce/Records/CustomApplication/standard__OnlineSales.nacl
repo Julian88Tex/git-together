@@ -1,0 +1,17 @@
+salesforce.CustomApplication standard__OnlineSales {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Online Sales"
+  navType = "Standard"
+  tabs = [
+    "standard-OnlineSalesHome",
+  ]
+  uiType = "Lightning"
+  fullName = "standard__OnlineSales"
+  _alias = "Online Sales (standard)"
+}

@@ -1,0 +1,6 @@
+salesforce.NotificationsSettings {
+  enableMobileAppPushNotifications = true
+  enableNotifications = true
+  fullName = "Notifications"
+  _alias = "Notifications"
+}

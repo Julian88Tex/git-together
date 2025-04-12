@@ -1,0 +1,9 @@
+salesforce.ListView WorkOrder_All_WorkOrders {
+  fullName = "WorkOrder.All_WorkOrders"
+  filterScope = "Everything"
+  label = "All Work Orders"
+  _parent = [
+    salesforce.WorkOrder,
+  ]
+  _alias = "All Work Orders"
+}

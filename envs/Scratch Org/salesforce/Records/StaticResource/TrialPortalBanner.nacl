@@ -1,0 +1,7 @@
+salesforce.StaticResource TrialPortalBanner {
+  cacheControl = "Private"
+  contentType = "image/png"
+  fullName = "TrialPortalBanner"
+  content = file("salesforce/Records/StaticResource/TrialPortalBanner.png")
+  _alias = "TrialPortalBanner"
+}

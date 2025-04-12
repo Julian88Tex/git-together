@@ -1,0 +1,5 @@
+salesforce.InterestTaggingSettings {
+  enableInterestTagging = false
+  fullName = "InterestTagging"
+  _alias = "InterestTagging"
+}

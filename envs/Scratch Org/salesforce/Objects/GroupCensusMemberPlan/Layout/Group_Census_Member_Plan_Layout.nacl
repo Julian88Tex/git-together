@@ -1,0 +1,48 @@
+salesforce.Layout GroupCensusMemberPlan_Group_Census_Member_Plan_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Records"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMemberPlan.field.ContractGroupPlanId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMemberPlan.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMemberPlan.field.GroupCensusMemberId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "GroupCensusMemberPlan-Group Census Member Plan Layout"
+  _parent = [
+    salesforce.GroupCensusMemberPlan,
+  ]
+  _alias = "GroupCensusMemberPlan-Group Census Member Plan Layout"
+}

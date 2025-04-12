@@ -1,0 +1,9 @@
+salesforce.ListView InsurancePolicySurcharge_All_InsurancePolicySurcharges {
+  fullName = "InsurancePolicySurcharge.All_InsurancePolicySurcharges"
+  filterScope = "Everything"
+  label = "All Insurance Policy Surcharges"
+  _parent = [
+    salesforce.InsurancePolicySurcharge,
+  ]
+  _alias = "All Insurance Policy Surcharges"
+}

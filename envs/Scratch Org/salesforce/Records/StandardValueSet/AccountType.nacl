@@ -1,0 +1,57 @@
+salesforce.StandardValueSet AccountType {
+  fullName = "AccountType"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Analyst"
+      default = false
+      label = "Analyst"
+    },
+    {
+      fullName = "Competitor"
+      default = false
+      label = "Competitor"
+    },
+    {
+      fullName = "Customer"
+      default = false
+      label = "Customer"
+    },
+    {
+      fullName = "Integrator"
+      default = false
+      label = "Integrator"
+    },
+    {
+      fullName = "Investor"
+      default = false
+      label = "Investor"
+    },
+    {
+      fullName = "Partner"
+      default = false
+      label = "Partner"
+    },
+    {
+      fullName = "Press"
+      default = false
+      label = "Press"
+    },
+    {
+      fullName = "Prospect"
+      default = false
+      label = "Prospect"
+    },
+    {
+      fullName = "Reseller"
+      default = false
+      label = "Reseller"
+    },
+    {
+      fullName = "Other"
+      default = false
+      label = "Other"
+    },
+  ]
+  _alias = "AccountType"
+}

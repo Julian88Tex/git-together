@@ -1,0 +1,9 @@
+salesforce.ListView InsuranceContract_My_InsuranceContracts {
+  fullName = "InsuranceContract.My_InsuranceContracts"
+  filterScope = "Mine"
+  label = "My Insurance Contracts"
+  _parent = [
+    salesforce.InsuranceContract,
+  ]
+  _alias = "My Insurance Contracts"
+}

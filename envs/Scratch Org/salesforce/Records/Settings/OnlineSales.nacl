@@ -1,0 +1,5 @@
+salesforce.OnlineSalesSettings {
+  enableSubscriptionAppEnrolled = true
+  fullName = "OnlineSales"
+  _alias = "OnlineSales"
+}

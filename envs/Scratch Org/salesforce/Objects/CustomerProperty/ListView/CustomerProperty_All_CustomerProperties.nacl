@@ -1,0 +1,9 @@
+salesforce.ListView CustomerProperty_All_CustomerProperties {
+  fullName = "CustomerProperty.All_CustomerProperties"
+  filterScope = "Everything"
+  label = "All Customer Properties"
+  _parent = [
+    salesforce.CustomerProperty,
+  ]
+  _alias = "All Customer Properties"
+}

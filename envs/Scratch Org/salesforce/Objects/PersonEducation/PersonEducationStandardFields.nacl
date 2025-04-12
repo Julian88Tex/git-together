@@ -1,0 +1,183 @@
+type salesforce.PersonEducation {
+  salesforce.DateTime CompletionDate {
+    apiName = "PersonEducation.CompletionDate"
+    label = "Completion Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "PersonEducation.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist EducationLevel {
+    apiName = "PersonEducation.EducationLevel"
+    label = "Education Level"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime GraduationDate {
+    apiName = "PersonEducation.GraduationDate"
+    label = "Graduation Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Identifier {
+    apiName = "PersonEducation.Identifier"
+    label = "Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text IdentifierIssuer {
+    apiName = "PersonEducation.IdentifierIssuer"
+    label = "Institution"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup IndividualId {
+    apiName = "PersonEducation.IndividualId"
+    label = "Individual ID"
+    relationshipName = "Individual"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "PersonEducation.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "PersonEducation.Name"
+    label = "Degree"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PersonEducation.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime StartDate {
+    apiName = "PersonEducation.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "PersonEducation.Status"
+    label = "Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "PersonEducation.UserId"
+    label = "User ID"
+    relationshipName = "User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist VerificationStatus {
+    apiName = "PersonEducation.VerificationStatus"
+    label = "Verification Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime VerifiedDate {
+    apiName = "PersonEducation.VerifiedDate"
+    label = "Verified On"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PersonEducation.Id"
+    label = "Person Education ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PersonEducation.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PersonEducation.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PersonEducation.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PersonEducation.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PersonEducation.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PersonEducation.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules RevenueTransactionErrorLog {
+  fullName = "RevenueTransactionErrorLog"
+  _parent = [
+    salesforce.RevenueTransactionErrorLog,
+  ]
+  _alias = "RevenueTransactionErrorLog"
+}

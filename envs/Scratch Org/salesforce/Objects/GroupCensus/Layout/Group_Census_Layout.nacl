@@ -1,0 +1,159 @@
+salesforce.Layout GroupCensus_Group_Census_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensus.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.LeadId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.ExternalIdentifier
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.EffectiveStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.EffectiveEndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensus.field.Status
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Members Summary"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.TotalMembers
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MbrWithoutDependentCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MemberWithOneChildCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MemberWithDependentCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.FullTimeMemberCount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupCensus.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.TotalDependents
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MemberWithSpouseCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MbrWithMoreThan1ChldCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.MemberOptOutCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensus.field.PartTimeMemberCount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupCensus.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Account",
+        "FirstName",
+        "Lastname",
+        "RelationshipToPrimaryMember",
+        "OptOutPlanTypes",
+      ]
+      relatedList = "GroupCensusMembers"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      fields = [
+        "Name",
+        "Contract",
+        "EnrollmentStartDate",
+        "EnrollmentEndDate",
+        "EnrollmentWaitingPeriod",
+      ]
+      relatedList = "Contracts"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "GroupCensus-Group Census Layout"
+  _parent = [
+    salesforce.GroupCensus,
+  ]
+  _alias = "GroupCensus-Group Census Layout"
+}

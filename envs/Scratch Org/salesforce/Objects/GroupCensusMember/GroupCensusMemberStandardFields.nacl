@@ -1,0 +1,318 @@
+type salesforce.GroupCensusMember {
+  salesforce.Lookup AccountId {
+    apiName = "GroupCensusMember.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address Address {
+    apiName = "GroupCensusMember.Address"
+    label = "Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency AnnualEligibleSalary {
+    apiName = "GroupCensusMember.AnnualEligibleSalary"
+    label = "Annual Eligible Salary"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Birthdate {
+    apiName = "GroupCensusMember.Birthdate"
+    label = "Birthdate"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "GroupCensusMember.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number DependentCount {
+    apiName = "GroupCensusMember.DependentCount"
+    label = "Dependent Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email Email {
+    apiName = "GroupCensusMember.Email"
+    label = "Email"
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text FirstName {
+    apiName = "GroupCensusMember.FirstName"
+    label = "First Name"
+    _required = true
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number FullTimeEquivalent {
+    apiName = "GroupCensusMember.FullTimeEquivalent"
+    label = "Full Time Equivalent"
+    scale = 1
+    precision = 2
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Gender {
+    apiName = "GroupCensusMember.Gender"
+    label = "Gender"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail GroupCensusId {
+    apiName = "GroupCensusMember.GroupCensusId"
+    label = "Group Census ID"
+    _required = true
+    relationshipName = "GroupCensus"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup GroupClassId {
+    apiName = "GroupCensusMember.GroupClassId"
+    label = "Group Class ID"
+    relationshipName = "GroupClass"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsOptOutAllPlans {
+    apiName = "GroupCensusMember.IsOptOutAllPlans"
+    label = "Is Opt-out All Plans"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPortalUser {
+    apiName = "GroupCensusMember.IsPortalUser"
+    label = "Is Portal User"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date JoinDate {
+    apiName = "GroupCensusMember.JoinDate"
+    label = "Join Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Lastname {
+    apiName = "GroupCensusMember.Lastname"
+    label = "Last Name"
+    _required = true
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text MemberKey {
+    apiName = "GroupCensusMember.MemberKey"
+    label = "Member Key"
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist MemberType {
+    apiName = "GroupCensusMember.MemberType"
+    label = "Member Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "GroupCensusMember.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist OptOutPlanTypes {
+    apiName = "GroupCensusMember.OptOutPlanTypes"
+    label = "Opt-out Plan Types"
+    restricted = false
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone PhoneNumber {
+    apiName = "GroupCensusMember.PhoneNumber"
+    label = "Phone Number"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date PolicyStartDate {
+    apiName = "GroupCensusMember.PolicyStartDate"
+    label = "Policy Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PrimaryGroupCensusMemberId {
+    apiName = "GroupCensusMember.PrimaryGroupCensusMemberId"
+    label = "Group Census Member ID"
+    relationshipName = "PrimaryGroupCensusMember"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PrimaryMemberCategory {
+    apiName = "GroupCensusMember.PrimaryMemberCategory"
+    label = "Primary Member Category"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text PrimaryMemberSource {
+    apiName = "GroupCensusMember.PrimaryMemberSource"
+    label = "Primary Member Source"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RelationshipToPrimaryMember {
+    apiName = "GroupCensusMember.RelationshipToPrimaryMember"
+    label = "Relationship to Primary Member"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SmokerStatus {
+    apiName = "GroupCensusMember.SmokerStatus"
+    label = "Smoker Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "GroupCensusMember.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "GroupCensusMember.Status"
+    label = "Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "GroupCensusMember.Id"
+    label = "Group Census Member ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "GroupCensusMember.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GroupCensusMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GroupCensusMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GroupCensusMember.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GroupCensusMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GroupCensusMember.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GroupCensusMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

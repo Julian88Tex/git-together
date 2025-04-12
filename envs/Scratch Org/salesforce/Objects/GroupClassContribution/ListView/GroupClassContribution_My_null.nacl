@@ -1,0 +1,9 @@
+salesforce.ListView GroupClassContribution_My_null {
+  fullName = "GroupClassContribution.My_null"
+  filterScope = "Mine"
+  label = "My Group Class Contribution"
+  _parent = [
+    salesforce.GroupClassContribution,
+  ]
+  _alias = "My Group Class Contribution"
+}

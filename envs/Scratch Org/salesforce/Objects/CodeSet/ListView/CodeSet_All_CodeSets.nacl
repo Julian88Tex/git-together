@@ -1,0 +1,9 @@
+salesforce.ListView CodeSet_All_CodeSets {
+  fullName = "CodeSet.All_CodeSets"
+  filterScope = "Everything"
+  label = "All Code Sets"
+  _parent = [
+    salesforce.CodeSet,
+  ]
+  _alias = "All Code Sets"
+}

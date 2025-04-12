@@ -1,0 +1,83 @@
+salesforce.Layout ClaimCoverage_Claim_Coverage_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimCoverage.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.ClaimParticipantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.ClaimItemId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.Status
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ClaimCoverage.field.InternalReserveMode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.InsurancePolicyParticipantId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimCoverage.field.ClaimId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.InsurancePolicyAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.InsurancePolicyCoverageId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.ExpenseReserveAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimCoverage.field.LossReserveAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ClaimCoverage-Claim Coverage Layout"
+  _parent = [
+    salesforce.ClaimCoverage,
+  ]
+  _alias = "ClaimCoverage-Claim Coverage Layout"
+}

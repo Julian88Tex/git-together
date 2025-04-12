@@ -1,0 +1,131 @@
+type salesforce.FlowOrchestrationStepInstance {
+  salesforce.Text Label {
+    apiName = "FlowOrchestrationStepInstance.Label"
+    label = "Label"
+    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OrchestrationInstanceId {
+    apiName = "FlowOrchestrationStepInstance.OrchestrationInstanceId"
+    label = "Orchestration Run ID"
+    _required = true
+    relationshipName = "OrchestrationInstance"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup StageInstanceId {
+    apiName = "FlowOrchestrationStepInstance.StageInstanceId"
+    label = "Orchestration Stage Run ID"
+    _required = true
+    relationshipName = "StageInstance"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FlowOrchestrationStepInstance.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "FlowOrchestrationStepInstance.Id"
+    label = "Orchestration Step Run ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "FlowOrchestrationStepInstance.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FlowOrchestrationStepInstance.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "FlowOrchestrationStepInstance.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FlowOrchestrationStepInstance.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FlowOrchestrationStepInstance.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FlowOrchestrationStepInstance.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "FlowOrchestrationStepInstance.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FlowOrchestrationStepInstance.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist StepType {
+    apiName = "FlowOrchestrationStepInstance.StepType"
+    label = "Step Type"
+    _required = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

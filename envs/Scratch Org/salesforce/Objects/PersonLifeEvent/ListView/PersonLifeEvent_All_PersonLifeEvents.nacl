@@ -1,0 +1,9 @@
+salesforce.ListView PersonLifeEvent_All_PersonLifeEvents {
+  fullName = "PersonLifeEvent.All_PersonLifeEvents"
+  filterScope = "Everything"
+  label = "All Person Life Events"
+  _parent = [
+    salesforce.PersonLifeEvent,
+  ]
+  _alias = "All Person Life Events"
+}

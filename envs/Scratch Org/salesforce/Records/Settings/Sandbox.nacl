@@ -1,0 +1,5 @@
+salesforce.SandboxSettings {
+  disableSandboxExpirationEmails = false
+  fullName = "Sandbox"
+  _alias = "Sandbox"
+}

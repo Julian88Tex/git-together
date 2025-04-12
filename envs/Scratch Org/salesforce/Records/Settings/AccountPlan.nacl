@@ -1,0 +1,5 @@
+salesforce.AccountPlanSettings {
+  enableAccountPlan = false
+  fullName = "AccountPlan"
+  _alias = "AccountPlan"
+}

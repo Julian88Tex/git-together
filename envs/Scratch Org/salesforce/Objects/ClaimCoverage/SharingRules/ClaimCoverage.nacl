@@ -1,0 +1,7 @@
+salesforce.SharingRules ClaimCoverage {
+  fullName = "ClaimCoverage"
+  _parent = [
+    salesforce.ClaimCoverage,
+  ]
+  _alias = "ClaimCoverage"
+}

@@ -1,0 +1,95 @@
+salesforce.Layout InsurancePolicySurcharge_Insurance_Policy_Surcharge_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicySurcharge.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.SurchargeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.ApplicableObjectType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.SourceSystem
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.SourceSystemIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.TermSurchargeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.IsProrationAllowed
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicySurcharge.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.InsurancePolicyAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.InsurancePolicyParticipantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.InsurancePolicyCoverageId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.InsurancePolicyTransactionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicySurcharge.field.IsRefundAllowed
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicySurcharge-Insurance Policy Surcharge Layout"
+  _parent = [
+    salesforce.InsurancePolicySurcharge,
+  ]
+  _alias = "InsurancePolicySurcharge-Insurance Policy Surcharge Layout"
+}

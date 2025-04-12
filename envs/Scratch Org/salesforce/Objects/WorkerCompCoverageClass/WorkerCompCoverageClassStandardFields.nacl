@@ -1,0 +1,136 @@
+type salesforce.WorkerCompCoverageClass {
+  salesforce.Lookup InsurancePolicyCoverageId {
+    apiName = "WorkerCompCoverageClass.InsurancePolicyCoverageId"
+    label = "Insurance Policy Coverage ID"
+    relationshipName = "InsurancePolicyCoverage"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyId {
+    apiName = "WorkerCompCoverageClass.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WorkerCompCoverageClass.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency Premium {
+    apiName = "WorkerCompCoverageClass.Premium"
+    label = "Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalExposure {
+    apiName = "WorkerCompCoverageClass.TotalExposure"
+    label = "Total Exposure"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist WorkerClass {
+    apiName = "WorkerCompCoverageClass.WorkerClass"
+    label = "Worker Class"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number WorkerCount {
+    apiName = "WorkerCompCoverageClass.WorkerCount"
+    label = "Number of Workers"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WorkerLocationId {
+    apiName = "WorkerCompCoverageClass.WorkerLocationId"
+    label = "Associated Location ID"
+    relationshipName = "WorkerLocation"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "WorkerCompCoverageClass.Id"
+    label = "Worker Compensation Coverage Class ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkerCompCoverageClass.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WorkerCompCoverageClass.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkerCompCoverageClass.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkerCompCoverageClass.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkerCompCoverageClass.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkerCompCoverageClass.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkerCompCoverageClass.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

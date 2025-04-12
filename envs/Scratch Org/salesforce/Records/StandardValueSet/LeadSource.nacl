@@ -1,0 +1,62 @@
+salesforce.StandardValueSet LeadSource {
+  fullName = "LeadSource"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Advertisement"
+      default = false
+      label = "Advertisement"
+    },
+    {
+      fullName = "Employee Referral"
+      default = false
+      label = "Employee Referral"
+    },
+    {
+      fullName = "External Referral"
+      default = false
+      label = "External Referral"
+    },
+    {
+      fullName = "Partner"
+      default = false
+      label = "Partner"
+    },
+    {
+      fullName = "Public Relations"
+      default = false
+      label = "Public Relations"
+    },
+    {
+      fullName = "Seminar - Internal"
+      default = false
+      label = "Seminar - Internal"
+    },
+    {
+      fullName = "Seminar - Partner"
+      default = false
+      label = "Seminar - Partner"
+    },
+    {
+      fullName = "Trade Show"
+      default = false
+      label = "Trade Show"
+    },
+    {
+      fullName = "Web"
+      default = false
+      label = "Web"
+    },
+    {
+      fullName = "Word of mouth"
+      default = false
+      label = "Word of mouth"
+    },
+    {
+      fullName = "Other"
+      default = false
+      label = "Other"
+    },
+  ]
+  _alias = "LeadSource"
+}

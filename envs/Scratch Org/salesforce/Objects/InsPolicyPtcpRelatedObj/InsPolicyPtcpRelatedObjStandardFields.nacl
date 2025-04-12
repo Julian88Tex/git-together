@@ -1,0 +1,18 @@
+type salesforce.InsPolicyPtcpRelatedObj {
+  salesforce.MasterDetail InsurancePolicyParticipantId {
+    apiName = "InsPolicyPtcpRelatedObj.InsurancePolicyParticipantId"
+    _hidden_value = true
+  }
+  salesforce.Unknown RelatedRecordIdentifier {
+    apiName = "InsPolicyPtcpRelatedObj.RelatedRecordIdentifier"
+    _hidden_value = true
+  }
+  salesforce.Unknown RelatedRecordObjectName {
+    apiName = "InsPolicyPtcpRelatedObj.RelatedRecordObjectName"
+    _hidden_value = true
+  }
+  salesforce.Unknown UsageType {
+    apiName = "InsPolicyPtcpRelatedObj.UsageType"
+    _hidden_value = true
+  }
+}

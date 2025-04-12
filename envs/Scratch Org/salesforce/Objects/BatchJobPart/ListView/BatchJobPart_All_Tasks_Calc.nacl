@@ -1,0 +1,18 @@
+salesforce.ListView BatchJobPart_All_Tasks_Calc {
+  fullName = "BatchJobPart.All_Tasks_Calc"
+  columns = [
+    salesforce.BatchJobPart.field.Name,
+    salesforce.BatchJobPart.field.StartTime,
+    salesforce.BatchJobPart.field.EndTime,
+    salesforce.BatchJobPart.field.InputRecordCount,
+    salesforce.BatchJobPart.field.OutputRecordCount,
+    salesforce.BatchJobPart.field.FailedRecordCount,
+    salesforce.BatchJobPart.field.Status,
+  ]
+  filterScope = "Everything"
+  label = "All Tasks"
+  _parent = [
+    salesforce.BatchJobPart,
+  ]
+  _alias = "All Tasks"
+}

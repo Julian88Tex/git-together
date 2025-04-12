@@ -1,0 +1,7 @@
+salesforce.SharingRules GroupCensusMemberPlan {
+  fullName = "GroupCensusMemberPlan"
+  _parent = [
+    salesforce.GroupCensusMemberPlan,
+  ]
+  _alias = "GroupCensusMemberPlan"
+}

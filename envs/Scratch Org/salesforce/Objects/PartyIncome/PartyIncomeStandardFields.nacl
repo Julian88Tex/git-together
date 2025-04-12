@@ -1,0 +1,142 @@
+type salesforce.PartyIncome {
+  salesforce.DateTime EndDate {
+    apiName = "PartyIncome.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency IncomeAmount {
+    apiName = "PartyIncome.IncomeAmount"
+    label = "Income Amount"
+    _required = true
+    scale = 1
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist IncomeFrequency {
+    apiName = "PartyIncome.IncomeFrequency"
+    label = "Income Frequency"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist IncomeStatus {
+    apiName = "PartyIncome.IncomeStatus"
+    label = "Income Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist IncomeType {
+    apiName = "PartyIncome.IncomeType"
+    label = "Income Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PartyId {
+    apiName = "PartyIncome.PartyId"
+    label = "Party ID"
+    _required = true
+    relationshipName = "Party"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDate {
+    apiName = "PartyIncome.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "PartyIncome.UsageType"
+    label = "Usage Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PartyIncome.Id"
+    label = "Party Income ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartyIncome.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartyIncome.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "PartyIncome.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartyIncome.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartyIncome.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartyIncome.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartyIncome.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartyIncome.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,142 @@
+type salesforce.PartyExpense {
+  salesforce.DateTime EndDateTime {
+    apiName = "PartyExpense.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PartyId {
+    apiName = "PartyExpense.PartyId"
+    label = "Party ID"
+    _required = true
+    relationshipName = "Party"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RecurrenceInterval {
+    apiName = "PartyExpense.RecurrenceInterval"
+    label = "Recurrence Interval"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "PartyExpense.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "PartyExpense.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalAmount {
+    apiName = "PartyExpense.TotalAmount"
+    label = "Total Amount"
+    _required = true
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "PartyExpense.Type"
+    label = "Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "PartyExpense.UsageType"
+    label = "Usage Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PartyExpense.Id"
+    label = "Party Expense ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartyExpense.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartyExpense.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "PartyExpense.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartyExpense.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartyExpense.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartyExpense.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartyExpense.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartyExpense.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

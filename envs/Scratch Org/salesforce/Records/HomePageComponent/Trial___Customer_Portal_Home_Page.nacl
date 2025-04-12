@@ -1,0 +1,7 @@
+salesforce.HomePageComponent Trial___Customer_Portal_Home_Page@sbssss {
+  fullName = "Trial - Customer Portal Home Page"
+  body = "<iframe src=\"/apex/TrialCustomerPortalHomePage\" id=\"itarget\" frameborder=\"0\" height=\"1100\" width=\"100%\"></iframe>"
+  pageComponentType = "htmlArea"
+  width = "wide"
+  _alias = "Trial - Customer Portal Home Page"
+}

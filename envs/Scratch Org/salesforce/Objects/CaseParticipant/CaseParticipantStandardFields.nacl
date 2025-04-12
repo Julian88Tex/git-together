@@ -1,0 +1,122 @@
+type salesforce.CaseParticipant {
+  salesforce.Picklist AuthorizationProof {
+    apiName = "CaseParticipant.AuthorizationProof"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail CaseId {
+    apiName = "CaseParticipant.CaseId"
+    label = "Case ID"
+    _required = true
+    relationshipName = "Case"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParticipantId {
+    apiName = "CaseParticipant.ParticipantId"
+    label = "Participant ID"
+    _required = true
+    relationshipName = "Participant"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown PreferredCallTimeFrom {
+    apiName = "CaseParticipant.PreferredCallTimeFrom"
+    _hidden_value = true
+  }
+  salesforce.Unknown PreferredCallTimeTo {
+    apiName = "CaseParticipant.PreferredCallTimeTo"
+    _hidden_value = true
+  }
+  salesforce.Picklist PreferredCommunicationMode {
+    apiName = "CaseParticipant.PreferredCommunicationMode"
+    _hidden_value = true
+  }
+  salesforce.Picklist Role {
+    apiName = "CaseParticipant.Role"
+    label = "Role"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "CaseParticipant.Status"
+    label = "Status"
+    _required = true
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "CaseParticipant.Id"
+    label = "Case Participant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CaseParticipant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CaseParticipant.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CaseParticipant.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CaseParticipant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CaseParticipant.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CaseParticipant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CaseParticipant.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

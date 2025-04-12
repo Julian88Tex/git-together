@@ -1,0 +1,14 @@
+salesforce.ListView BatchJobPartFailedRecord_All_Failed_Records {
+  fullName = "BatchJobPartFailedRecord.All_Failed_Records"
+  columns = [
+    salesforce.BatchJobPartFailedRecord.field.Name,
+    salesforce.BatchJobPartFailedRecord.field.Record,
+    salesforce.BatchJobPartFailedRecord.field.ErrorDescription,
+  ]
+  filterScope = "Everything"
+  label = "All Failed Records"
+  _parent = [
+    salesforce.BatchJobPartFailedRecord,
+  ]
+  _alias = "All Failed Records"
+}

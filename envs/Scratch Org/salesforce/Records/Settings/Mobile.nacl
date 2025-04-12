@@ -1,0 +1,11 @@
+salesforce.MobileSettings {
+  dashboardMobile = {
+    enableDashboardIPadApp = true
+  }
+  enableImportContactFromDevice = true
+  enablePopulateNameManuallyInToday = false
+  enableS1EncryptedStoragePref2 = true
+  enableS1OfflinePref = true
+  fullName = "Mobile"
+  _alias = "Mobile"
+}

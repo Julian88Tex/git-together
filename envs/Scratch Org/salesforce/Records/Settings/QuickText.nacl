@@ -1,0 +1,7 @@
+salesforce.QuickTextSettings {
+  hideQuickTextUiInLtng = false
+  lightningQuickTextEnabled = true
+  quickTextsInFolders = false
+  fullName = "QuickText"
+  _alias = "QuickText"
+}

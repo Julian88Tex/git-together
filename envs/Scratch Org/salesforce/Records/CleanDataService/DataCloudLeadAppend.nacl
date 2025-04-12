@@ -1,0 +1,7 @@
+salesforce.CleanDataService DataCloudLeadAppend {
+  fullName = "DataCloudLeadAppend"
+  description = "Data.com Companies for Leads"
+  masterLabel = "Data.com Companies for Leads"
+  matchEngine = "LeadAppendMatchEngine"
+  _alias = "DataCloudLeadAppend"
+}

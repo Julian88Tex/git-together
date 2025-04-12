@@ -1,0 +1,18 @@
+type salesforce.InsPolicyCvrRelatedObj {
+  salesforce.MasterDetail InsurancePolicyCoverageId {
+    apiName = "InsPolicyCvrRelatedObj.InsurancePolicyCoverageId"
+    _hidden_value = true
+  }
+  salesforce.Unknown RelatedRecordIdentifier {
+    apiName = "InsPolicyCvrRelatedObj.RelatedRecordIdentifier"
+    _hidden_value = true
+  }
+  salesforce.Unknown RelatedRecordObjectName {
+    apiName = "InsPolicyCvrRelatedObj.RelatedRecordObjectName"
+    _hidden_value = true
+  }
+  salesforce.Unknown UsageType {
+    apiName = "InsPolicyCvrRelatedObj.UsageType"
+    _hidden_value = true
+  }
+}

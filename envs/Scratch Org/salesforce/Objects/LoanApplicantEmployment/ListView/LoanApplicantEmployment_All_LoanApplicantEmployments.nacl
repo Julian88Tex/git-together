@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicantEmployment_All_LoanApplicantEmployments {
+  fullName = "LoanApplicantEmployment.All_LoanApplicantEmployments"
+  filterScope = "Everything"
+  label = "All Loan Applicant Employments"
+  _parent = [
+    salesforce.LoanApplicantEmployment,
+  ]
+  _alias = "All Loan Applicant Employments"
+}

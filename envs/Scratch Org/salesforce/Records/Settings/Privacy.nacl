@@ -1,0 +1,12 @@
+salesforce.PrivacySettings {
+  authorizationCaptureBrowser = false
+  authorizationCaptureEmail = false
+  authorizationCaptureIp = false
+  authorizationCaptureLocation = false
+  authorizationCustomSharing = false
+  authorizationLockingAndVersioning = false
+  enableConsentEventStream = false
+  enableDefaultMetadataValues = false
+  fullName = "Privacy"
+  _alias = "Privacy"
+}

@@ -1,0 +1,48 @@
+salesforce.Layout ContractGroupPlanGroupClass_Contract_Group_Plan_Group_Class_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ContractGroupPlanGroupClass.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContractGroupPlanGroupClass.field.ContractGroupPlanId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ContractGroupPlanGroupClass.field.GroupClassId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContractGroupPlanGroupClass-Contract Group Plan Group Class Layout"
+  _parent = [
+    salesforce.ContractGroupPlanGroupClass,
+  ]
+  _alias = "ContractGroupPlanGroupClass-Contract Group Plan Group Class Layout"
+}

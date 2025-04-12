@@ -1,0 +1,7 @@
+salesforce.SharingRules LoanApplicationLiability {
+  fullName = "LoanApplicationLiability"
+  _parent = [
+    salesforce.LoanApplicationLiability,
+  ]
+  _alias = "LoanApplicationLiability"
+}

@@ -1,0 +1,189 @@
+type salesforce.DocumentChecklistItem {
+  salesforce.Lookup AccountId {
+    apiName = "DocumentChecklistItem.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup DocumentTypeId {
+    apiName = "DocumentChecklistItem.DocumentTypeId"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Instruction {
+    apiName = "DocumentChecklistItem.Instruction"
+    label = "Instructions"
+    length = 32000
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsAccepted {
+    apiName = "DocumentChecklistItem.IsAccepted"
+    label = "Accepted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsFrozen {
+    apiName = "DocumentChecklistItem.IsFrozen"
+    label = "Frozen"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRequired {
+    apiName = "DocumentChecklistItem.IsRequired"
+    label = "Required"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationId {
+    apiName = "DocumentChecklistItem.LoanApplicationId"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "DocumentChecklistItem.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DocumentChecklistItem.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentRecordId {
+    apiName = "DocumentChecklistItem.ParentRecordId"
+    label = "Parent Record ID"
+    _required = true
+    relationshipName = "ParentRecord"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ReceivedDocumentId {
+    apiName = "DocumentChecklistItem.ReceivedDocumentId"
+    label = "Received Document ID"
+    relationshipName = "ReceivedDocument"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "DocumentChecklistItem.Status"
+    label = "Status"
+    _required = true
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup UploadedById {
+    apiName = "DocumentChecklistItem.UploadedById"
+    label = "User ID"
+    relationshipName = "UploadedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "DocumentChecklistItem.WhoId"
+    label = "Who ID"
+    relationshipName = "Who"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "DocumentChecklistItem.Id"
+    label = "Document Checklist Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DocumentChecklistItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DocumentChecklistItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DocumentChecklistItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DocumentChecklistItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DocumentChecklistItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DocumentChecklistItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea TransformationInfo {
+    apiName = "DocumentChecklistItem.TransformationInfo"
+    label = "Transformation Info"
+    length = 10240
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,67 @@
+salesforce.Layout ActionPlan_Action_Plan_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlan.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlan.field.ActionPlanTemplateVersionId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ActionPlan.field.ShouldAllowOverride
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ActionPlan.field.IsUsingHolidayHours
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlan.field.StartDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlan.field.TargetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ActionPlan.field.ActionPlanState
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlan-Action Plan Layout"
+  _parent = [
+    salesforce.ActionPlan,
+  ]
+  _alias = "ActionPlan-Action Plan Layout"
+}

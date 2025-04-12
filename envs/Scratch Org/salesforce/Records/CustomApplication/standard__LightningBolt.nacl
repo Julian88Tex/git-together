@@ -1,0 +1,17 @@
+salesforce.CustomApplication standard__LightningBolt {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "LightningBolt"
+  navType = "Standard"
+  tabs = [
+    "standard-LightningBoltHome",
+  ]
+  uiType = "Lightning"
+  fullName = "standard__LightningBolt"
+  _alias = "LightningBolt (standard)"
+}

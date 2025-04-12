@@ -1,0 +1,225 @@
+type salesforce.ProducerCommission {
+  salesforce.Currency CommissionAmount {
+    apiName = "ProducerCommission.CommissionAmount"
+    label = "Commission Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency CommissionableAmount {
+    apiName = "ProducerCommission.CommissionableAmount"
+    label = "Commissionable Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyAssetId {
+    apiName = "ProducerCommission.InsurancePolicyAssetId"
+    label = "Insurance Policy Asset ID"
+    relationshipName = "InsurancePolicyAsset"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyCoverageId {
+    apiName = "ProducerCommission.InsurancePolicyCoverageId"
+    label = "Insurance Policy Coverage ID"
+    relationshipName = "InsurancePolicyCoverage"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyId {
+    apiName = "ProducerCommission.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyTransactionId {
+    apiName = "ProducerCommission.InsurancePolicyTransactionId"
+    label = "Insurance Policy Transaction ID"
+    relationshipName = "InsurancePolicyTransaction"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency MaxCommissionAmount {
+    apiName = "ProducerCommission.MaxCommissionAmount"
+    label = "Max Commission Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency MinCommissionAmount {
+    apiName = "ProducerCommission.MinCommissionAmount"
+    label = "Min Commission Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ProducerCommission.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProducerCommission.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentProducerCommissionId {
+    apiName = "ProducerCommission.ParentProducerCommissionId"
+    label = "Producer Commission ID"
+    relationshipName = "ParentProducerCommission"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PaymentDatetime {
+    apiName = "ProducerCommission.PaymentDatetime"
+    label = "Payment Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProcessingProducerId {
+    apiName = "ProducerCommission.ProcessingProducerId"
+    label = "Producer ID"
+    relationshipName = "ProcessingProducer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProducerId {
+    apiName = "ProducerCommission.ProducerId"
+    label = "Producer ID"
+    _required = true
+    relationshipName = "Producer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ProducerProductionCode {
+    apiName = "ProducerCommission.ProducerProductionCode"
+    label = "Producer Production Code"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "ProducerCommission.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "ProducerCommission.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ProducerCommission.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "ProducerCommission.Type"
+    label = "Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ProducerCommission.Id"
+    label = "Producer Commission ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProducerCommission.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProducerCommission.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProducerCommission.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProducerCommission.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProducerCommission.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProducerCommission.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

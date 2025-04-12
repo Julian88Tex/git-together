@@ -1,0 +1,60 @@
+salesforce.Layout ActionPlanTemplateItemValue_Action_Plan_Template_Item_Value_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Action Plan Template Item Value Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "Name"
+            },
+            {
+              behavior = "Edit"
+              field = "ActionPlanTemplateItemId"
+            },
+            {
+              behavior = "Edit"
+              field = "ItemEntityType"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "ItemEntityFieldName"
+            },
+            {
+              behavior = "Required"
+              field = "ValueLiteral"
+            },
+            {
+              behavior = "Required"
+              field = "ValueFormula"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlanTemplateItemValue-Action Plan Template Item Value Layout"
+  _alias = "ActionPlanTemplateItemValue-Action Plan Template Item Value Layout"
+}

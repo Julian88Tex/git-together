@@ -1,0 +1,7 @@
+salesforce.StaticResource scc_tour_images {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  fullName = "scc_tour_images"
+  content = file("salesforce/Records/StaticResource/scc_tour_images.zip")
+  _alias = "scc_tour_images"
+}

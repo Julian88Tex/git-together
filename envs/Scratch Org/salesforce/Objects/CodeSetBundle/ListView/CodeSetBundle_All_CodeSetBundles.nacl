@@ -1,0 +1,9 @@
+salesforce.ListView CodeSetBundle_All_CodeSetBundles {
+  fullName = "CodeSetBundle.All_CodeSetBundles"
+  filterScope = "Everything"
+  label = "All Code Set Bundles"
+  _parent = [
+    salesforce.CodeSetBundle,
+  ]
+  _alias = "All Code Set Bundles"
+}

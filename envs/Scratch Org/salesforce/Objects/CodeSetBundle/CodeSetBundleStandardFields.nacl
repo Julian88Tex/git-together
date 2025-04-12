@@ -1,0 +1,219 @@
+type salesforce.CodeSetBundle {
+  salesforce.Lookup CodeSet10Id {
+    apiName = "CodeSetBundle.CodeSet10Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet10"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet11Id {
+    apiName = "CodeSetBundle.CodeSet11Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet11"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet12Id {
+    apiName = "CodeSetBundle.CodeSet12Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet12"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet13Id {
+    apiName = "CodeSetBundle.CodeSet13Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet13"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet14Id {
+    apiName = "CodeSetBundle.CodeSet14Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet14"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet15Id {
+    apiName = "CodeSetBundle.CodeSet15Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet15"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet1Id {
+    apiName = "CodeSetBundle.CodeSet1Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet1"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet2Id {
+    apiName = "CodeSetBundle.CodeSet2Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet2"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet3Id {
+    apiName = "CodeSetBundle.CodeSet3Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet3"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet4Id {
+    apiName = "CodeSetBundle.CodeSet4Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet4"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet5Id {
+    apiName = "CodeSetBundle.CodeSet5Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet5"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet6Id {
+    apiName = "CodeSetBundle.CodeSet6Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet6"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet7Id {
+    apiName = "CodeSetBundle.CodeSet7Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet7"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet8Id {
+    apiName = "CodeSetBundle.CodeSet8Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet8"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CodeSet9Id {
+    apiName = "CodeSetBundle.CodeSet9Id"
+    label = "Code Set ID"
+    relationshipName = "CodeSet9"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CodeSetBundleKey {
+    apiName = "CodeSetBundle.CodeSetBundleKey"
+    label = "Code Set Bundle Key"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "CodeSetBundle.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CodeSetBundle.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "CodeSetBundle.Type"
+    label = "Type"
+    restricted = false
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  serviceid Id {
+    apiName = "CodeSetBundle.Id"
+    label = "Code Set Bundle ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CodeSetBundle.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CodeSetBundle.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CodeSetBundle.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CodeSetBundle.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CodeSetBundle.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CodeSetBundle.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

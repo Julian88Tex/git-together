@@ -1,0 +1,51 @@
+salesforce.Layout AuthorizedInsuranceLine_Authorized_Insurance_Line_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizedInsuranceLine.field.InsuranceLine
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizedInsuranceLine.field.Country
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizedInsuranceLine.field.LegalEntityId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AuthorizedInsuranceLine-Authorized Insurance Line Layout"
+  _parent = [
+    salesforce.AuthorizedInsuranceLine,
+  ]
+  _alias = "AuthorizedInsuranceLine-Authorized Insurance Line Layout"
+}

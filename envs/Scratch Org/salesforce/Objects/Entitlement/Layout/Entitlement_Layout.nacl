@@ -1,0 +1,150 @@
+salesforce.Layout Entitlement_Entitlement_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Entitlement Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Entitlement.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Entitlement.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.ServiceContractId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.AssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.IsPerIncident
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.CasesPerEntitlement
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Entitlement.field.Status
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Entitlement.field.StatusIndicator
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.EndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.BusinessHoursId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.SlaProcessId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Entitlement.field.RemainingCases
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Entitlement.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Entitlement.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "MT.MILESTONE",
+        "MT.DESCRIPTION",
+        "M.CRITERIA",
+        "M.MINUTES_TO_COMPLETE",
+      ]
+      relatedList = "RelatedMilestoneList"
+    },
+    {
+      fields = [
+        "CASES.CASE_NUMBER",
+        "NAME",
+        "CASES.SUBJECT",
+        "CASES.PRIORITY",
+        "CASES.CREATED_DATE",
+        "CASES.STATUS",
+        "OWNER_NAME",
+      ]
+      relatedList = "RelatedCaseList"
+    },
+    {
+      fields = [
+        "CONTACT.NAME",
+        "CREATEDBY_USER.NAME",
+      ]
+      relatedList = "RelatedEntitlementContactList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Entitlement-Entitlement Layout"
+  _parent = [
+    salesforce.Entitlement,
+  ]
+  _alias = "Entitlement-Entitlement Layout"
+}

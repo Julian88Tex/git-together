@@ -1,0 +1,215 @@
+type salesforce.LoanApplicationLiability {
+  salesforce.Text AccountNumber {
+    apiName = "LoanApplicationLiability.AccountNumber"
+    label = "Account Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountType {
+    apiName = "LoanApplicationLiability.AccountType"
+    label = "Account Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency CreditLimitAmount {
+    apiName = "LoanApplicationLiability.CreditLimitAmount"
+    label = "Credit Limit"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CreditorName {
+    apiName = "LoanApplicationLiability.CreditorName"
+    label = "Creditor Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsJointLiability {
+    apiName = "LoanApplicationLiability.IsJointLiability"
+    label = "Joint Liability"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LiabilityClass {
+    apiName = "LoanApplicationLiability.LiabilityClass"
+    label = "Liability Class"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LiabilityExtIdentifier {
+    apiName = "LoanApplicationLiability.LiabilityExtIdentifier"
+    label = "Loan Application Liability External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationAssetId {
+    apiName = "LoanApplicationLiability.LoanApplicationAssetId"
+    label = "Loan Application Asset ID"
+    relationshipName = "LoanApplicationAsset"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationId {
+    apiName = "LoanApplicationLiability.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LoanType {
+    apiName = "LoanApplicationLiability.LoanType"
+    label = "Real Estate Loan Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyPaymentAmount {
+    apiName = "LoanApplicationLiability.MonthlyPaymentAmount"
+    label = "Monthly Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicationLiability.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist OtherLiabilityType {
+    apiName = "LoanApplicationLiability.OtherLiabilityType"
+    label = "Other Liability or Expense Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LoanApplicationLiability.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox ShouldBePaidInFull {
+    apiName = "LoanApplicationLiability.ShouldBePaidInFull"
+    label = "Paid in Full"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency UnpaidBalanceAmount {
+    apiName = "LoanApplicationLiability.UnpaidBalanceAmount"
+    label = "Unpaid Balance"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicationLiability.Id"
+    label = "Loan Application Liability ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicationLiability.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicationLiability.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicationLiability.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicationLiability.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicationLiability.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicationLiability.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,167 @@
+type salesforce.InfoAuthorizationRequest {
+  salesforce.Picklist CommunicationType {
+    apiName = "InfoAuthorizationRequest.CommunicationType"
+    label = "Communication Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ConsenterId {
+    apiName = "InfoAuthorizationRequest.ConsenterId"
+    label = "Consenter ID"
+    relationshipName = "Consenter"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "InfoAuthorizationRequest.DataUsePurposeId"
+    label = "Data Use Purpose ID"
+    _required = true
+    relationshipName = "DataUsePurpose"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ExpirationDateTime {
+    apiName = "InfoAuthorizationRequest.ExpirationDateTime"
+    label = "Expiration Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Locale {
+    apiName = "InfoAuthorizationRequest.Locale"
+    label = "Locale"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup MultipartyInfoAuthRequestId {
+    apiName = "InfoAuthorizationRequest.MultipartyInfoAuthRequestId"
+    label = "Multiparty Information Authorization Request ID"
+    relationshipName = "MultipartyInfoAuthRequest"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "InfoAuthorizationRequest.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PertainsToId {
+    apiName = "InfoAuthorizationRequest.PertainsToId"
+    label = "Pertains To ID"
+    _required = true
+    relationshipName = "PertainsTo"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime RequestedDateTime {
+    apiName = "InfoAuthorizationRequest.RequestedDateTime"
+    label = "Requested Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RequesterId {
+    apiName = "InfoAuthorizationRequest.RequesterId"
+    label = "Requester ID"
+    relationshipName = "Requester"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ResponseStatus {
+    apiName = "InfoAuthorizationRequest.ResponseStatus"
+    label = "Response Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SourceRecordId {
+    apiName = "InfoAuthorizationRequest.SourceRecordId"
+    label = "Source Record ID"
+    relationshipName = "SourceRecord"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InfoAuthorizationRequest.Id"
+    label = "Info Authorization Request ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "InfoAuthorizationRequest.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InfoAuthorizationRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InfoAuthorizationRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InfoAuthorizationRequest.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InfoAuthorizationRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InfoAuthorizationRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InfoAuthorizationRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

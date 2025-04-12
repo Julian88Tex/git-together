@@ -1,0 +1,49 @@
+salesforce.Layout ActionPlanItemDependency_Action_Plan_Item_Dependency_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlanItemDependency.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlanItemDependency.field.ActionPlanItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlanItemDependency.field.PreviousActionPlanItemId
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlanItemDependency-Action Plan Item Dependency Layout"
+  _parent = [
+    salesforce.ActionPlanItemDependency,
+  ]
+  _alias = "ActionPlanItemDependency-Action Plan Item Dependency Layout"
+}

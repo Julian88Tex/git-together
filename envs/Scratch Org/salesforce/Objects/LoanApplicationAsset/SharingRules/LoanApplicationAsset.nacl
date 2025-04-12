@@ -1,0 +1,7 @@
+salesforce.SharingRules LoanApplicationAsset {
+  fullName = "LoanApplicationAsset"
+  _parent = [
+    salesforce.LoanApplicationAsset,
+  ]
+  _alias = "LoanApplicationAsset"
+}

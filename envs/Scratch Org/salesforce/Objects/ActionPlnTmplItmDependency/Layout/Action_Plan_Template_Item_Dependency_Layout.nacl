@@ -1,0 +1,53 @@
+salesforce.Layout ActionPlnTmplItmDependency_Action_Plan_Template_Item_Dependency_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlnTmplItmDependency.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlnTmplItmDependency.field.TemplateItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlnTmplItmDependency.field.PreviousTemplateItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ActionPlnTmplItmDependency.field.CreationType
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlnTmplItmDependency-Action Plan Template Item Dependency Layout"
+  _parent = [
+    salesforce.ActionPlnTmplItmDependency,
+  ]
+  _alias = "ActionPlnTmplItmDependency-Action Plan Template Item Dependency Layout"
+}

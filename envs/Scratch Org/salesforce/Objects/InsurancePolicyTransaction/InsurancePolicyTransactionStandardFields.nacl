@@ -1,0 +1,182 @@
+type salesforce.InsurancePolicyTransaction {
+  salesforce.Unknown Category {
+    apiName = "InsurancePolicyTransaction.Category"
+    _hidden_value = true
+  }
+  salesforce.Unknown EffectiveFromDate {
+    apiName = "InsurancePolicyTransaction.EffectiveFromDate"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail InsurancePolicyId {
+    apiName = "InsurancePolicyTransaction.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    _required = true
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyVersionId {
+    apiName = "InsurancePolicyTransaction.InsurancePolicyVersionId"
+    label = "Insurance Policy ID"
+    relationshipName = "InsurancePolicyVersion"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "InsurancePolicyTransaction.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ParentTransactionId {
+    apiName = "InsurancePolicyTransaction.ParentTransactionId"
+    label = "Insurance Policy Transaction ID"
+    relationshipName = "ParentTransaction"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown PostedDate {
+    apiName = "InsurancePolicyTransaction.PostedDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "InsurancePolicyTransaction.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary TotalTransactionAmount {
+    apiName = "InsurancePolicyTransaction.TotalTransactionAmount"
+    label = "Total Transaction Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TransactionAmount {
+    apiName = "InsurancePolicyTransaction.TransactionAmount"
+    label = "Transaction Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime TransactionEffectiveDate {
+    apiName = "InsurancePolicyTransaction.TransactionEffectiveDate"
+    label = "Transaction Effective Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TransactionFeeAmount {
+    apiName = "InsurancePolicyTransaction.TransactionFeeAmount"
+    label = "Transaction Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text TransactionNumber {
+    apiName = "InsurancePolicyTransaction.TransactionNumber"
+    label = "Transaction Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime TransactionPostedDate {
+    apiName = "InsurancePolicyTransaction.TransactionPostedDate"
+    label = "Transaction Posted Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TransactionTaxAmount {
+    apiName = "InsurancePolicyTransaction.TransactionTaxAmount"
+    label = "Transaction Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "InsurancePolicyTransaction.Type"
+    label = "Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InsurancePolicyTransaction.Id"
+    label = "Insurance Policy Transaction ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsurancePolicyTransaction.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsurancePolicyTransaction.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsurancePolicyTransaction.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsurancePolicyTransaction.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsurancePolicyTransaction.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsurancePolicyTransaction.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

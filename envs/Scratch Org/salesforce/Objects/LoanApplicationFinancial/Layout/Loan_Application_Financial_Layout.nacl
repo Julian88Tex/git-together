@@ -1,0 +1,226 @@
+salesforce.Layout LoanApplicationFinancial_Loan_Application_Financial_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationFinancial.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationFinancial.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.PurchasePriceAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.RemodelAndRepairsAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.LandAcquiredSeparatelyAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.OutstandingLoanAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.BorrowerClosingCostAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.DiscountPointCostAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.LoanAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.TotalCashDueFromBorrower
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstFirstMortgagePmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.TotalDebtPaidOffAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstSubordinateLienPmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstHomeownersInsPmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstSuppPropertyInsPmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstPropertyTaxesPmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstMortgageInsPmtAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstOtherDuesPaymentAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EstOtherPaymentAmt
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.TotalEstPaymentAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.LoanExclFinMortInsAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.FinancedMortgageInsAmt
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.TotalMortgageLoansAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.CreditFromSeller
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.OtherCredit
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.TotalCredit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.OtherNewMortgageLoanAmt
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.TotalMortgageLoanAndCreditAmt
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.CashFromOrToBorrowerAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HasHoEducation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HoEducationFormat
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HudApprovedProvIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.CounselingAgencyProvName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HoEducationCompletedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.EdCompletedBorrowerName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HasCompletedCounseling
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HousingCounselingFormat
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.HudApprAgencyIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.CounselingAgencyName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.CounselingCompletionDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationFinancial.field.CounselingComplBorrName
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationFinancial.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicationFinancial-Loan Application Financial Layout"
+  _parent = [
+    salesforce.LoanApplicationFinancial,
+  ]
+  _alias = "LoanApplicationFinancial-Loan Application Financial Layout"
+}

@@ -1,0 +1,64 @@
+salesforce.QuickAction Case_SendEmail@v {
+  fullName = "Case.SendEmail"
+  fieldOverrides = [
+    {
+      field = "ToAddress"
+      formula = "Case.ContactEmail"
+    },
+  ]
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ValidatedFromAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "ToAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CcAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "BccAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Subject
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "HtmlBody"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "SendEmail"
+  targetObject = salesforce.EmailMessage
+  targetParentField = "Parent"
+  type = "SendEmail"
+  _parent = [
+    salesforce.Case,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Case.field.ContactEmail
+    },
+  ]
+  _alias = "Case.SendEmail"
+}

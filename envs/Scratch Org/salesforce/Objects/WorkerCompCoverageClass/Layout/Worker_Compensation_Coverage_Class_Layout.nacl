@@ -1,0 +1,67 @@
+salesforce.Layout WorkerCompCoverageClass_Worker_Compensation_Coverage_Class_Layout@bssss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.WorkerLocationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.WorkerCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.Premium
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.InsurancePolicyCoverageId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.WorkerClass
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.TotalExposure
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkerCompCoverageClass.field.InsurancePolicyId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "WorkerCompCoverageClass-Worker Compensation Coverage Class Layout"
+  _parent = [
+    salesforce.WorkerCompCoverageClass,
+  ]
+  _alias = "WorkerCompCoverageClass-Worker Compensation Coverage Class Layout"
+}

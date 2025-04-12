@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicantDeclaration_All_LoanApplicantDeclarations {
+  fullName = "LoanApplicantDeclaration.All_LoanApplicantDeclarations"
+  filterScope = "Everything"
+  label = "All Loan Applicant Declarations"
+  _parent = [
+    salesforce.LoanApplicantDeclaration,
+  ]
+  _alias = "All Loan Applicant Declarations"
+}

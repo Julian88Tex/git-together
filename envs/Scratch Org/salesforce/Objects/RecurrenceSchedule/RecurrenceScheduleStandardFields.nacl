@@ -1,0 +1,166 @@
+type salesforce.RecurrenceSchedule {
+  serviceid Id {
+    apiName = "RecurrenceSchedule.Id"
+    label = "Recurrence Schedule ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "RecurrenceSchedule.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "RecurrenceSchedule.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "RecurrenceSchedule.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "RecurrenceSchedule.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "RecurrenceSchedule.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "RecurrenceSchedule.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "RecurrenceSchedule.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "RecurrenceSchedule.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "RecurrenceSchedule.Status"
+    label = "Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProcessName {
+    apiName = "RecurrenceSchedule.ProcessName"
+    label = "Process Name"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ScheduleFrequency {
+    apiName = "RecurrenceSchedule.ScheduleFrequency"
+    label = "Schedule Frequency"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ScheduleDayValue {
+    apiName = "RecurrenceSchedule.ScheduleDayValue"
+    label = "Schedule Day Value"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDate {
+    apiName = "RecurrenceSchedule.StartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "RecurrenceSchedule.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TotalRecurrencesCount {
+    apiName = "RecurrenceSchedule.TotalRecurrencesCount"
+    label = "Total Recurrences Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number CompletedScheduleCount {
+    apiName = "RecurrenceSchedule.CompletedScheduleCount"
+    label = "Completed Schedule Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime NextScheduleDateTime {
+    apiName = "RecurrenceSchedule.NextScheduleDateTime"
+    label = "Next Schedule Date Time"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ReferenceRecordId {
+    apiName = "RecurrenceSchedule.ReferenceRecordId"
+    label = "ReferenceRecord ID"
+    relationshipName = "ReferenceRecord"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

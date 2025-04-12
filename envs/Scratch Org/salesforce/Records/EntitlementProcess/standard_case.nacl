@@ -1,0 +1,38 @@
+salesforce.EntitlementProcess standard_case@s {
+  fullName = "standard case"
+  SObjectType = salesforce.Case
+  active = true
+  description = "Runs the standard SLA process for Case."
+  entryStartDateField = salesforce.Case.field.CreatedDate
+  exitCriteriaFilterItems = {
+    field = salesforce.Case.field.IsClosed
+    operation = "equals"
+    value = "true"
+  }
+  milestones = [
+    {
+      milestoneName = salesforce.MilestoneType.instance.First_Response_to_Customer@s
+      minutesToComplete = 240
+      timeTriggers = {
+        actions = {
+          name = salesforce.WorkflowFieldUpdate.instance.Case_ChangePriorityToHigh@v
+          type = "FieldUpdate"
+        }
+        timeLength = -60
+        workflowTimeTriggerUnit = "Minutes"
+      }
+      useCriteriaStartTime = false
+    },
+    {
+      milestoneName = salesforce.MilestoneType.instance.Escalate_Case@s
+      minutesToComplete = 1440
+      useCriteriaStartTime = false
+    },
+    {
+      milestoneName = salesforce.MilestoneType.instance.Close_Case@s
+      minutesToComplete = 5760
+      useCriteriaStartTime = false
+    },
+  ]
+  _alias = "standard case"
+}

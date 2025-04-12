@@ -1,0 +1,9 @@
+salesforce.ListView BatchJob_All_Batch_Jobs {
+  fullName = "BatchJob.All_Batch_Jobs"
+  filterScope = "Everything"
+  label = "All Batch Jobs"
+  _parent = [
+    salesforce.BatchJob,
+  ]
+  _alias = "All Batch Jobs"
+}

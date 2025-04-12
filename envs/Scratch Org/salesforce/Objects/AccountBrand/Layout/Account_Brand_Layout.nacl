@@ -1,0 +1,98 @@
+salesforce.Layout AccountBrand_Account_Brand_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Brand Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountBrand.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountBrand.field.AccountId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Company Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountBrand.field.CompanyName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AccountBrand.field.Website
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AccountBrand.field.Address
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AccountBrand.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AccountBrand.field.Email
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Brand Assets"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AccountBrand.field.LogoId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AccountBrand-Account Brand Layout"
+  _parent = [
+    salesforce.AccountBrand,
+  ]
+  _alias = "AccountBrand-Account Brand Layout"
+}

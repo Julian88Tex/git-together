@@ -1,0 +1,75 @@
+salesforce.Layout DataUsePurpose_Data_Use_Purpose_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.DataUsePurpose.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataUsePurpose.field.LegalBasisId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataUsePurpose.field.IsActive
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DataUsePurpose.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataUsePurpose.field.CanDataSubjectOptOut
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataUsePurpose.field.IsReadOnly
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "AuthorizationForm",
+      ]
+      relatedList = "AuthorizationFormDataUseRelatedList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "DataUsePurpose-Data Use Purpose Layout"
+  _parent = [
+    salesforce.DataUsePurpose,
+  ]
+  _alias = "DataUsePurpose-Data Use Purpose Layout"
+}

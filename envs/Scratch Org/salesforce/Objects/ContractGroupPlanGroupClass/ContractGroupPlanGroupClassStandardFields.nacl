@@ -1,0 +1,95 @@
+type salesforce.ContractGroupPlanGroupClass {
+  salesforce.Lookup ContractGroupPlanId {
+    apiName = "ContractGroupPlanGroupClass.ContractGroupPlanId"
+    label = "Contract Group Plan ID"
+    relationshipName = "ContractGroupPlan"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup GroupClassId {
+    apiName = "ContractGroupPlanGroupClass.GroupClassId"
+    label = "Group Class ID"
+    relationshipName = "GroupClass"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ContractGroupPlanGroupClass.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ContractGroupPlanGroupClass.Id"
+    label = "Contract Group Plan Group Class ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ContractGroupPlanGroupClass.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ContractGroupPlanGroupClass.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ContractGroupPlanGroupClass.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ContractGroupPlanGroupClass.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ContractGroupPlanGroupClass.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ContractGroupPlanGroupClass.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ContractGroupPlanGroupClass.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,291 @@
+type salesforce.LoanApplicantEmployment {
+  salesforce.Number CurrentJobAdditionalMonthCount {
+    apiName = "LoanApplicantEmployment.CurrentJobAdditionalMonthCount"
+    label = "Additional Months at Current Job"
+    scale = 0
+    precision = 2
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number CurrentJobYearCount {
+    apiName = "LoanApplicantEmployment.CurrentJobYearCount"
+    label = "Years at Current Job"
+    scale = 0
+    precision = 2
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Address EmployerAddress {
+    apiName = "LoanApplicantEmployment.EmployerAddress"
+    label = "Employer Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EmployerName {
+    apiName = "LoanApplicantEmployment.EmployerName"
+    label = "Employer Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone EmployerPhone {
+    apiName = "LoanApplicantEmployment.EmployerPhone"
+    label = "Employer Phone"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EmploymentExtIdentifier {
+    apiName = "LoanApplicantEmployment.EmploymentExtIdentifier"
+    label = "Loan Applicant Employment External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date EndDate {
+    apiName = "LoanApplicantEmployment.EndDate"
+    label = "End Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsLessThanQuarterShare {
+    apiName = "LoanApplicantEmployment.IsLessThanQuarterShare"
+    label = "Owns Less Than 25%"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRelToTransactionParty {
+    apiName = "LoanApplicantEmployment.IsRelToTransactionParty"
+    label = "Employed by Party to Transaction"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSelfEmployed {
+    apiName = "LoanApplicantEmployment.IsSelfEmployed"
+    label = "Self-Employed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text JobTitle {
+    apiName = "LoanApplicantEmployment.JobTitle"
+    label = "Job Title or Type of Business"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail LoanApplicantId {
+    apiName = "LoanApplicantEmployment.LoanApplicantId"
+    label = "Loan Applicant ID"
+    _required = true
+    relationshipName = "LoanApplicant"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationId {
+    apiName = "LoanApplicantEmployment.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyBaseIncomeAmount {
+    apiName = "LoanApplicantEmployment.MonthlyBaseIncomeAmount"
+    label = "Monthly Base Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyBonusAmount {
+    apiName = "LoanApplicantEmployment.MonthlyBonusAmount"
+    label = "Monthly Bonus"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyCommissionAmount {
+    apiName = "LoanApplicantEmployment.MonthlyCommissionAmount"
+    label = "Monthly Commission"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyIncome {
+    apiName = "LoanApplicantEmployment.MonthlyIncome"
+    label = "Monthly Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyMilitaryEntlAmt {
+    apiName = "LoanApplicantEmployment.MonthlyMilitaryEntlAmt"
+    label = "Monthly Military Entitlement"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyOtherIncomeAmount {
+    apiName = "LoanApplicantEmployment.MonthlyOtherIncomeAmount"
+    label = "Other Monthly Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency MonthlyOvertimeAmount {
+    apiName = "LoanApplicantEmployment.MonthlyOvertimeAmount"
+    label = "Monthly Overtime"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary MonthlyTotalIncomeAmount {
+    apiName = "LoanApplicantEmployment.MonthlyTotalIncomeAmount"
+    label = "Total Monthly Income"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicantEmployment.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LoanApplicantEmployment.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date StartDate {
+    apiName = "LoanApplicantEmployment.StartDate"
+    label = "Start Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicantEmployment.Id"
+    label = "Loan Applicant Employment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicantEmployment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicantEmployment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicantEmployment.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicantEmployment.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicantEmployment.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicantEmployment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

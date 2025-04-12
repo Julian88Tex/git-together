@@ -1,0 +1,9 @@
+salesforce.ListView GroupCensusMemberPlan_My_GroupCensusMemberPlans {
+  fullName = "GroupCensusMemberPlan.My_GroupCensusMemberPlans"
+  filterScope = "Mine"
+  label = "My Group Census Member Plans"
+  _parent = [
+    salesforce.GroupCensusMemberPlan,
+  ]
+  _alias = "My Group Census Member Plans"
+}

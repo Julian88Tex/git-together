@@ -1,0 +1,100 @@
+salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationFormConsent.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.AuthorizationFormTextId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedSourceType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedDateTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.DocumentVersionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.Location
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.Browser
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.Ip
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationFormConsent.field.ConsentGiverId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedSource
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.InfoAuthRequestFormId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.ConsentExpirationDateTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormConsent.field.Status
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AuthorizationFormConsent-Authorization Form Consent Layout"
+  _parent = [
+    salesforce.AuthorizationFormConsent,
+  ]
+  _alias = "AuthorizationFormConsent-Authorization Form Consent Layout"
+}

@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicationTitleHolder_All_LoanApplicationTitleHolders {
+  fullName = "LoanApplicationTitleHolder.All_LoanApplicationTitleHolders"
+  filterScope = "Everything"
+  label = "All Loan Application Title Holders"
+  _parent = [
+    salesforce.LoanApplicationTitleHolder,
+  ]
+  _alias = "All Loan Application Title Holders"
+}

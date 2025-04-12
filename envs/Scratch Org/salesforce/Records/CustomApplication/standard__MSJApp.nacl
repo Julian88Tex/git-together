@@ -1,0 +1,32 @@
+salesforce.CustomApplication standard__MSJApp {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "MSJ App"
+  navType = "Console"
+  tabs = [
+    "standard-JourneyHome",
+    "standard-SalesforceJourney",
+    "standard-JourneyMap",
+  ]
+  uiType = "Lightning"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-JourneyHome"
+      },
+      {
+        tab = "standard-JourneyMap"
+      },
+      {
+        tab = "standard-SalesforceJourney"
+      },
+    ]
+  }
+  fullName = "standard__MSJApp"
+  _alias = "MSJ App (standard)"
+}

@@ -1,0 +1,8 @@
+salesforce.RealTimeEventSettings {
+  realTimeEvents = {
+    entityName = "LogoutEventStream"
+    isEnabled = false
+  }
+  fullName = "RealTimeEvent"
+  _alias = "RealTimeEvent"
+}

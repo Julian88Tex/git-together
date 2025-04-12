@@ -1,0 +1,83 @@
+salesforce.Layout InsuranceProfile_Insurance_Profile_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.InsuranceProfile.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.MajorCitationCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsDrugAbuser
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsGoodDriver
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsAlcoholConsumer
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsAlcoholAbuser
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsuranceProfile.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.MinorCitationCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsHighRiskOccupation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsGoodStudent
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceProfile.field.IsTobaccoConsumer
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsuranceProfile-Insurance Profile Layout"
+  _parent = [
+    salesforce.InsuranceProfile,
+  ]
+  _alias = "InsuranceProfile-Insurance Profile Layout"
+}

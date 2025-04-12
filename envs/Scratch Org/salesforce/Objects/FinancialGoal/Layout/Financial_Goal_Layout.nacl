@@ -1,0 +1,103 @@
+salesforce.Layout FinancialGoal_Financial_Goal_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.Priority
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.StartDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.TargetDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.ActualAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.EstimatedSuccessPercent
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.Category
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.FinancialPlanId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.InitialAmount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoal.field.TargetAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.CompletionDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoal.field.Frequency
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FinancialGoal-Financial Goal Layout"
+  _parent = [
+    salesforce.FinancialGoal,
+  ]
+  _alias = "FinancialGoal-Financial Goal Layout"
+}

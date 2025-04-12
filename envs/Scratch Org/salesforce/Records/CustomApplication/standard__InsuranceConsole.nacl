@@ -1,0 +1,60 @@
+salesforce.CustomApplication standard__InsuranceConsole {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Insurance Agent Console"
+  navType = "Console"
+  tabs = [
+    "standard-home",
+    "standard-InsurancePolicy",
+    "standard-Claim",
+    "standard-CustomerProperty",
+    "standard-Account",
+    "standard-Lead",
+    "standard-Opportunity",
+    "standard-Case",
+    "standard-report",
+    "standard-Dashboard",
+  ]
+  uiType = "Lightning"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-Account"
+      },
+      {
+        tab = "standard-Case"
+      },
+      {
+        tab = "standard-Claim"
+      },
+      {
+        tab = "standard-CustomerProperty"
+      },
+      {
+        tab = "standard-Dashboard"
+      },
+      {
+        tab = "standard-InsurancePolicy"
+      },
+      {
+        tab = "standard-Lead"
+      },
+      {
+        tab = "standard-Opportunity"
+      },
+      {
+        tab = "standard-home"
+      },
+      {
+        tab = "standard-report"
+      },
+    ]
+  }
+  fullName = "standard__InsuranceConsole"
+  _alias = "Insurance Agent Console (standard)"
+}

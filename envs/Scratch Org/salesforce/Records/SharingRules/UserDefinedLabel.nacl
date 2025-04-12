@@ -1,0 +1,4 @@
+salesforce.SharingRules UserDefinedLabel {
+  fullName = "UserDefinedLabel"
+  _alias = "UserDefinedLabel"
+}

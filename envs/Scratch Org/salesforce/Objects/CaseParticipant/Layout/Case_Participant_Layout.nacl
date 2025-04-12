@@ -1,0 +1,88 @@
+salesforce.Layout CaseParticipant_Case_Participant_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "CaseParticipantSection"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseParticipant.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CaseParticipant.field.ParticipantId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CaseParticipant.field.Status
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CaseParticipant.field.CaseId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CaseParticipant.field.Role
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "SystemInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseParticipant.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseParticipant.field.LastModifiedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseParticipant.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CaseParticipant-Case Participant Layout"
+  _parent = [
+    salesforce.CaseParticipant,
+  ]
+  _alias = "CaseParticipant-Case Participant Layout"
+}

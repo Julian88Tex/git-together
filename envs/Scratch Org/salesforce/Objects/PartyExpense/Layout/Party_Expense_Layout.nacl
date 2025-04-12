@@ -1,0 +1,71 @@
+salesforce.Layout PartyExpense_Party_Expense_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PartyExpenseLabel"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PartyExpense.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartyExpense.field.StartDateTime
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartyExpense.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartyExpense.field.PartyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartyExpense.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PartyExpense.field.RecurrenceInterval
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PartyExpense.field.EndDateTime
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PartyExpense.field.TotalAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PartyExpense-Party Expense Layout"
+  _parent = [
+    salesforce.PartyExpense,
+  ]
+  _alias = "PartyExpense-Party Expense Layout"
+}

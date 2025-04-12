@@ -1,0 +1,6 @@
+salesforce.MilestoneType First_Response_to_Customer@s {
+  fullName = "First Response to Customer"
+  description = "Sets a non-recurring milestone for the time agents take to send their first response to customers."
+  recurrenceType = "none"
+  _alias = "First Response to Customer"
+}

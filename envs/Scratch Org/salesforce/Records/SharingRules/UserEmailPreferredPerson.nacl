@@ -1,0 +1,4 @@
+salesforce.SharingRules UserEmailPreferredPerson {
+  fullName = "UserEmailPreferredPerson"
+  _alias = "UserEmailPreferredPerson"
+}

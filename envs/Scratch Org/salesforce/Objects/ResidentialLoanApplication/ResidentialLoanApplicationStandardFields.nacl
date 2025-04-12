@@ -1,0 +1,562 @@
+type salesforce.ResidentialLoanApplication {
+  salesforce.Lookup AccountId {
+    apiName = "ResidentialLoanApplication.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number AmortizationTerm {
+    apiName = "ResidentialLoanApplication.AmortizationTerm"
+    label = "Loan Duration in Months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AmortizationType {
+    apiName = "ResidentialLoanApplication.AmortizationType"
+    label = "Amortization Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ApplicationExtIdentifier {
+    apiName = "ResidentialLoanApplication.ApplicationExtIdentifier"
+    label = "External Application ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number BalloonTermMonths {
+    apiName = "ResidentialLoanApplication.BalloonTermMonths"
+    label = "Balloon Term Months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist EstateHoldType {
+    apiName = "ResidentialLoanApplication.EstateHoldType"
+    label = "Lender's Lien Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasOtherLoanFeature {
+    apiName = "ResidentialLoanApplication.HasOtherLoanFeature"
+    label = "Other Loan Feature"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasPrepaymentPenalty {
+    apiName = "ResidentialLoanApplication.HasPrepaymentPenalty"
+    label = "Penalty for Prepayment"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency ImprovementCost {
+    apiName = "ResidentialLoanApplication.ImprovementCost"
+    label = "Cost of Construction or Improvement"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number InitialBuydownRate {
+    apiName = "ResidentialLoanApplication.InitialBuydownRate"
+    label = "Initial Buydown Rate"
+    scale = 3
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number IntOnlyTermMonthCount {
+    apiName = "ResidentialLoanApplication.IntOnlyTermMonthCount"
+    label = "Interest-Only Term Months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number InterestRate {
+    apiName = "ResidentialLoanApplication.InterestRate"
+    label = "Interest Rate"
+    scale = 3
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsBalloon {
+    apiName = "ResidentialLoanApplication.IsBalloon"
+    label = "Balloon"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsBorrowerCommPropState {
+    apiName = "ResidentialLoanApplication.IsBorrowerCommPropState"
+    label = "Borrower Lives in Community Property State"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsConstructionConversion {
+    apiName = "ResidentialLoanApplication.IsConstructionConversion"
+    label = "Construction-Conversion or Construction-to-Permanent"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsContractConversion {
+    apiName = "ResidentialLoanApplication.IsContractConversion"
+    label = "Conversion of Contract for Deed or Land Contract"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsEnergyRelImprovement {
+    apiName = "ResidentialLoanApplication.IsEnergyRelImprovement"
+    label = "Energy-Related Improvement"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsInterestOnly {
+    apiName = "ResidentialLoanApplication.IsInterestOnly"
+    label = "Interest Only"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsNegativeAmortization {
+    apiName = "ResidentialLoanApplication.IsNegativeAmortization"
+    label = "Allows Negative Amortization"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPropertyCommPropState {
+    apiName = "ResidentialLoanApplication.IsPropertyCommPropState"
+    label = "Property in Community Property State"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRenovation {
+    apiName = "ResidentialLoanApplication.IsRenovation"
+    label = "Renovation"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSingleClosing {
+    apiName = "ResidentialLoanApplication.IsSingleClosing"
+    label = "Single Closing"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSubjectToPriorityLien {
+    apiName = "ResidentialLoanApplication.IsSubjectToPriorityLien"
+    label = "Subject to Priority Lien"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsTempIntRateBuydown {
+    apiName = "ResidentialLoanApplication.IsTempIntRateBuydown"
+    label = "Temporary Interest Rate Buydown"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LeaseHoldExpirationDate {
+    apiName = "ResidentialLoanApplication.LeaseHoldExpirationDate"
+    label = "Leasehold Expiration"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LoanPurpose {
+    apiName = "ResidentialLoanApplication.LoanPurpose"
+    label = "Loan Purpose"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LotAcquiredDate {
+    apiName = "ResidentialLoanApplication.LotAcquiredDate"
+    label = "Date Acquired"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency LotOriginalCost {
+    apiName = "ResidentialLoanApplication.LotOriginalCost"
+    label = "Original Cost"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number MonthsBeforeFirstAdj {
+    apiName = "ResidentialLoanApplication.MonthsBeforeFirstAdj"
+    label = "Initial Period Prior to First Adjustment in months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number MonthsBetweenAdjustments {
+    apiName = "ResidentialLoanApplication.MonthsBetweenAdjustments"
+    label = "Subsequent Adjustment Period in months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist MortgageLienType {
+    apiName = "ResidentialLoanApplication.MortgageLienType"
+    label = "Mortgage Lien Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist MortgageProgramType {
+    apiName = "ResidentialLoanApplication.MortgageProgramType"
+    label = "Mortgage Program Type"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "ResidentialLoanApplication.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist NativeLandTenure {
+    apiName = "ResidentialLoanApplication.NativeLandTenure"
+    label = "Indian Country Land Tenure"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "ResidentialLoanApplication.OpportunityId"
+    label = "Opportunity ID"
+    relationshipName = "Opportunity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherAmortizationType {
+    apiName = "ResidentialLoanApplication.OtherAmortizationType"
+    label = "Other Amortization Type Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherLoanFeature {
+    apiName = "ResidentialLoanApplication.OtherLoanFeature"
+    label = "Other Loan Feature Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherLoanPurpose {
+    apiName = "ResidentialLoanApplication.OtherLoanPurpose"
+    label = "Other Loan Purpose"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherMortgageProgramType {
+    apiName = "ResidentialLoanApplication.OtherMortgageProgramType"
+    label = "Other Mortgage Program Type Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text OtherRefinanceProgType {
+    apiName = "ResidentialLoanApplication.OtherRefinanceProgType"
+    label = "Other Refinance Program Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ResidentialLoanApplication.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number PrepayPenaltyTermMonth {
+    apiName = "ResidentialLoanApplication.PrepayPenaltyTermMonth"
+    label = "Prepayment Penalty Term Months"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ProjectType {
+    apiName = "ResidentialLoanApplication.ProjectType"
+    label = "Project Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RefinanceProgramType {
+    apiName = "ResidentialLoanApplication.RefinanceProgramType"
+    label = "Refinance Program Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RefinanceType {
+    apiName = "ResidentialLoanApplication.RefinanceType"
+    label = "Refinance Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ResidentialLoanApplication.Status"
+    label = "Application Status"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist TitleType {
+    apiName = "ResidentialLoanApplication.TitleType"
+    label = "Title Hold Method"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalFinLiabilityMonthlyAmt {
+    apiName = "ResidentialLoanApplication.TotalFinLiabilityMonthlyAmt"
+    label = "Total Monthly Financial Liabilities"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalFinancialAssetAmount {
+    apiName = "ResidentialLoanApplication.TotalFinancialAssetAmount"
+    label = "Total Financial Assets"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalOtherAssetAmount {
+    apiName = "ResidentialLoanApplication.TotalOtherAssetAmount"
+    label = "Total Other Assets"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalOtherFinLiabilityMonthlyAmt {
+    apiName = "ResidentialLoanApplication.TotalOtherFinLiabilityMonthlyAmt"
+    label = "Total Monthly Other Liabilities"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist TrustTitleType {
+    apiName = "ResidentialLoanApplication.TrustTitleType"
+    label = "Title Held in Trust"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ResidentialLoanApplication.Id"
+    label = "Residential Loan Application ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ResidentialLoanApplication.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ResidentialLoanApplication.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ResidentialLoanApplication.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ResidentialLoanApplication.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ResidentialLoanApplication.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ResidentialLoanApplication.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

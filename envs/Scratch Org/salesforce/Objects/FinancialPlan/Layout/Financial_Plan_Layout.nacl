@@ -1,0 +1,76 @@
+salesforce.Layout FinancialPlan_Financial_Plan_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialPlan.field.AccountId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialPlan.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialPlan.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialPlan.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialPlan.field.StartDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialPlan.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.FinancialPlan.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialPlan.field.EstimatedSuccessPercent
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "AccountId",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FinancialPlan-Financial Plan Layout"
+  _parent = [
+    salesforce.FinancialPlan,
+  ]
+  _alias = "FinancialPlan-Financial Plan Layout"
+}

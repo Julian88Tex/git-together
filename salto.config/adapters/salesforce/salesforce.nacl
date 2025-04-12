@@ -1,0 +1,109 @@
+salesforce {
+  fetch = {
+    metadata = {
+      include = [
+        {
+          metadataType = ".*"
+          namespace = ""
+          name = ".*"
+        },
+      ]
+      exclude = [
+        {
+          metadataType = "Report"
+        },
+        {
+          metadataType = "ReportType"
+        },
+        {
+          metadataType = "ReportFolder"
+        },
+        {
+          metadataType = "Dashboard"
+        },
+        {
+          metadataType = "DashboardFolder"
+        },
+        {
+          metadataType = "Document"
+        },
+        {
+          metadataType = "DocumentFolder"
+        },
+        {
+          metadataType = "SiteDotCom"
+        },
+        {
+          metadataType = "EmailTemplate"
+          name = "Marketo_?Email_?Templates/.*"
+        },
+        {
+          metadataType = "ContentAsset"
+        },
+        {
+          metadataType = "CustomObjectTranslation"
+        },
+        {
+          metadataType = "AnalyticSnapshot"
+        },
+        {
+          metadataType = "WaveDashboard"
+        },
+        {
+          metadataType = "WaveDataflow"
+        },
+        {
+          metadataType = "StandardValueSet"
+          name = "^(AddressCountryCode)|(AddressStateCode)$"
+          namespace = ""
+        },
+        {
+          metadataType = "Layout"
+          name = "CollaborationGroup-Group Layout"
+        },
+        {
+          metadataType = "Layout"
+          name = "CaseInteraction-Case Feed Layout"
+        },
+        {
+          metadataType = "EclairGeoData"
+        },
+        {
+          metadataType = "OmniUiCard|OmniDataTransform|OmniIntegrationProcedure|OmniInteractionAccessConfig|OmniInteractionConfig|OmniScript"
+        },
+        {
+          metadataType = "DiscoveryAIModel"
+        },
+        {
+          metadataType = "Translations"
+        },
+        {
+          metadataType = "ManagedEventSubscription"
+        },
+        {
+          metadataType = "Profile"
+        },
+        {
+          metadataType = "PermissionSet"
+        },
+        {
+          metadataType = "MutingPermissionSet"
+        },
+        {
+          metadataType = "PermissionSetGroup"
+        },
+        {
+          metadataType = "Portal"
+          name = "Customer Portal"
+        },
+        {
+          metadataType = "ConnectedApp"
+          name = "CPQIntegrationUserApp"
+        },
+      ]
+    }
+    fetchAllCustomSettings = false
+    maxInstancesPerType = 5000
+  }
+  maxItemsInRetrieveRequest = 2500
+}

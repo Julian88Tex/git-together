@@ -1,0 +1,9 @@
+salesforce.ListView IdentityDocument_All_IdentityDocuments {
+  fullName = "IdentityDocument.All_IdentityDocuments"
+  filterScope = "Everything"
+  label = "All Identity Documents"
+  _parent = [
+    salesforce.IdentityDocument,
+  ]
+  _alias = "All Identity Documents"
+}

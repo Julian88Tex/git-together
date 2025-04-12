@@ -1,0 +1,9 @@
+salesforce.ListView AuthorizedInsuranceLine_All_AuthorizedInsuranceLines {
+  fullName = "AuthorizedInsuranceLine.All_AuthorizedInsuranceLines"
+  filterScope = "Everything"
+  label = "All Authorized Insurance Lines"
+  _parent = [
+    salesforce.AuthorizedInsuranceLine,
+  ]
+  _alias = "All Authorized Insurance Lines"
+}

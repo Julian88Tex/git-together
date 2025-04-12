@@ -1,0 +1,79 @@
+salesforce.Layout InsurancePolicyAsset_Insurance_Policy_Asset_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.AssetName
+            },
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyAsset.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.CustomerPropertyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.PrimaryPolicyParticipantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.EffectiveFromDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.TermTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.TermFeeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.TermPremiumAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsurancePolicyAsset.field.TotalTermAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyAsset.field.EffectiveToDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicyAsset-Insurance Policy Asset Layout"
+  _parent = [
+    salesforce.InsurancePolicyAsset,
+  ]
+  _alias = "InsurancePolicyAsset-Insurance Policy Asset Layout"
+}

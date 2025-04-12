@@ -1,0 +1,9 @@
+salesforce.ListView GroupCensus_All_GroupCensus {
+  fullName = "GroupCensus.All_GroupCensus"
+  filterScope = "Everything"
+  label = "All Group Census"
+  _parent = [
+    salesforce.GroupCensus,
+  ]
+  _alias = "All Group Census"
+}

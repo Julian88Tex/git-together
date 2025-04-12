@@ -1,0 +1,161 @@
+type salesforce.Award {
+  salesforce.Lookup AccountId {
+    apiName = "Award.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime AwardDate {
+    apiName = "Award.AwardDate"
+    label = "Award Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text AwardedBy {
+    apiName = "Award.AwardedBy"
+    label = "Awarded By"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "Award.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Identifier {
+    apiName = "Award.Identifier"
+    label = "Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Award.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "Award.Name"
+    label = "Award Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Award.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Award.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "Award.UserId"
+    label = "User ID"
+    relationshipName = "User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist VerificationStatus {
+    apiName = "Award.VerificationStatus"
+    label = "Verification Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime VerifiedDate {
+    apiName = "Award.VerifiedDate"
+    label = "Verified On"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Award.Id"
+    label = "Award ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Award.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Award.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Award.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Award.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Award.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Award.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,276 @@
+salesforce.RecordType Account_PersonAccount {
+  fullName = "Account.PersonAccount"
+  active = true
+  label = "PersonAccount"
+  picklistValues = [
+    {
+      picklist = salesforce.Account.field.AccountSource
+      values = [
+        {
+          fullName = "Advertisement"
+          default = false
+        },
+        {
+          fullName = "Employee Referral"
+          default = false
+        },
+        {
+          fullName = "External Referral"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partner"
+          default = false
+        },
+        {
+          fullName = "Public Relations"
+          default = false
+        },
+        {
+          fullName = "Seminar - Internal"
+          default = false
+        },
+        {
+          fullName = "Seminar - Partner"
+          default = false
+        },
+        {
+          fullName = "Trade Show"
+          default = false
+        },
+        {
+          fullName = "Web"
+          default = false
+        },
+        {
+          fullName = "Word of mouth"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Account.field.Industry
+      values = [
+        {
+          fullName = "Agriculture"
+          default = false
+        },
+        {
+          fullName = "Apparel"
+          default = false
+        },
+        {
+          fullName = "Banking"
+          default = false
+        },
+        {
+          fullName = "Biotechnology"
+          default = false
+        },
+        {
+          fullName = "Chemicals"
+          default = false
+        },
+        {
+          fullName = "Communications"
+          default = false
+        },
+        {
+          fullName = "Construction"
+          default = false
+        },
+        {
+          fullName = "Consulting"
+          default = false
+        },
+        {
+          fullName = "Education"
+          default = false
+        },
+        {
+          fullName = "Electronics"
+          default = false
+        },
+        {
+          fullName = "Energy"
+          default = false
+        },
+        {
+          fullName = "Engineering"
+          default = false
+        },
+        {
+          fullName = "Entertainment"
+          default = false
+        },
+        {
+          fullName = "Environmental"
+          default = false
+        },
+        {
+          fullName = "Finance"
+          default = false
+        },
+        {
+          fullName = "Food %26 Beverage"
+          default = false
+        },
+        {
+          fullName = "Government"
+          default = false
+        },
+        {
+          fullName = "Healthcare"
+          default = false
+        },
+        {
+          fullName = "Hospitality"
+          default = false
+        },
+        {
+          fullName = "Insurance"
+          default = false
+        },
+        {
+          fullName = "Machinery"
+          default = false
+        },
+        {
+          fullName = "Manufacturing"
+          default = false
+        },
+        {
+          fullName = "Media"
+          default = false
+        },
+        {
+          fullName = "Not For Profit"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Recreation"
+          default = false
+        },
+        {
+          fullName = "Retail"
+          default = false
+        },
+        {
+          fullName = "Shipping"
+          default = false
+        },
+        {
+          fullName = "Technology"
+          default = false
+        },
+        {
+          fullName = "Telecommunications"
+          default = false
+        },
+        {
+          fullName = "Transportation"
+          default = false
+        },
+        {
+          fullName = "Utilities"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Account.field.Ownership
+      values = [
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Private"
+          default = false
+        },
+        {
+          fullName = "Public"
+          default = false
+        },
+        {
+          fullName = "Subsidiary"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Account.field.Rating
+      values = [
+        {
+          fullName = "Cold"
+          default = false
+        },
+        {
+          fullName = "Hot"
+          default = false
+        },
+        {
+          fullName = "Warm"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Account.field.Type
+      values = [
+        {
+          fullName = "Analyst"
+          default = false
+        },
+        {
+          fullName = "Competitor"
+          default = false
+        },
+        {
+          fullName = "Customer"
+          default = false
+        },
+        {
+          fullName = "Integrator"
+          default = false
+        },
+        {
+          fullName = "Investor"
+          default = false
+        },
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partner"
+          default = false
+        },
+        {
+          fullName = "Press"
+          default = false
+        },
+        {
+          fullName = "Prospect"
+          default = false
+        },
+        {
+          fullName = "Reseller"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "PersonAccount"
+}

@@ -1,0 +1,466 @@
+type salesforce.LoanApplicationFinancial {
+  salesforce.Currency BorrowerClosingCostAmt {
+    apiName = "LoanApplicationFinancial.BorrowerClosingCostAmt"
+    label = "Borrower Closing Costs"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary CashFromOrToBorrowerAmt {
+    apiName = "LoanApplicationFinancial.CashFromOrToBorrowerAmt"
+    label = "Cash To or From Borrower"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CounselingAgencyName {
+    apiName = "LoanApplicationFinancial.CounselingAgencyName"
+    label = "Housing Counseling Provider Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CounselingAgencyProvName {
+    apiName = "LoanApplicationFinancial.CounselingAgencyProvName"
+    label = "Housing Counseling Provider Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text CounselingComplBorrName {
+    apiName = "LoanApplicationFinancial.CounselingComplBorrName"
+    label = "Borrowers Who Completed Counseling"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CounselingCompletionDate {
+    apiName = "LoanApplicationFinancial.CounselingCompletionDate"
+    label = "Housing Counseling Completion Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency CreditFromSeller {
+    apiName = "LoanApplicationFinancial.CreditFromSeller"
+    label = "Closing Costs Paid by Seller"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency DiscountPointCostAmount {
+    apiName = "LoanApplicationFinancial.DiscountPointCostAmount"
+    label = "Cost of Discount Points Purchased by Borrower"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EdCompletedBorrowerName {
+    apiName = "LoanApplicationFinancial.EdCompletedBorrowerName"
+    label = "Borrowers Who Completed Homeownership Education"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstFirstMortgagePmtAmt {
+    apiName = "LoanApplicationFinancial.EstFirstMortgagePmtAmt"
+    label = "Proposed Monthly First Mortgage Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstHomeownersInsPmtAmt {
+    apiName = "LoanApplicationFinancial.EstHomeownersInsPmtAmt"
+    label = "Proposed Monthly Homeowners Insurance Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstMortgageInsPmtAmt {
+    apiName = "LoanApplicationFinancial.EstMortgageInsPmtAmt"
+    label = "Proposed Monthly Mortgage Insurance Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstOtherDuesPaymentAmt {
+    apiName = "LoanApplicationFinancial.EstOtherDuesPaymentAmt"
+    label = "Proposed Monthly Dues Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstOtherPaymentAmt {
+    apiName = "LoanApplicationFinancial.EstOtherPaymentAmt"
+    label = "Proposed Other Monthly Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstPropertyTaxesPmtAmt {
+    apiName = "LoanApplicationFinancial.EstPropertyTaxesPmtAmt"
+    label = "Proposed Monthly Property Tax Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstSubordinateLienPmtAmt {
+    apiName = "LoanApplicationFinancial.EstSubordinateLienPmtAmt"
+    label = "Proposed Monthly Subordinate Liens Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency EstSuppPropertyInsPmtAmt {
+    apiName = "LoanApplicationFinancial.EstSuppPropertyInsPmtAmt"
+    label = "Proposed Monthly Supplemental Property Insurance Payment"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency FinancedMortgageInsAmt {
+    apiName = "LoanApplicationFinancial.FinancedMortgageInsAmt"
+    label = "Total Financed Mortgage Insurance"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text FinancialExtIdentifier {
+    apiName = "LoanApplicationFinancial.FinancialExtIdentifier"
+    label = "Loan Application Financial External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasCompletedCounseling {
+    apiName = "LoanApplicationFinancial.HasCompletedCounseling"
+    label = "Housing Counseling"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasHoEducation {
+    apiName = "LoanApplicationFinancial.HasHoEducation"
+    label = "Homeowner Education"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime HoEducationCompletedDate {
+    apiName = "LoanApplicationFinancial.HoEducationCompletedDate"
+    label = "Homeownership Education Completion Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist HoEducationFormat {
+    apiName = "LoanApplicationFinancial.HoEducationFormat"
+    label = "Homeownership Education Format"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist HousingCounselingFormat {
+    apiName = "LoanApplicationFinancial.HousingCounselingFormat"
+    label = "Housing Counseling Format"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text HudApprAgencyIdentifier {
+    apiName = "LoanApplicationFinancial.HudApprAgencyIdentifier"
+    label = "Housing Counseling Agency ID"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text HudApprovedProvIdentifier {
+    apiName = "LoanApplicationFinancial.HudApprovedProvIdentifier"
+    label = "Housing Counseling Agency ID"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency LandAcquiredSeparatelyAmount {
+    apiName = "LoanApplicationFinancial.LandAcquiredSeparatelyAmount"
+    label = "Cost of Land Acquired Separately"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary LoanAmount {
+    apiName = "LoanApplicationFinancial.LoanAmount"
+    label = "Total Mortgage Loan"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail LoanApplicationId {
+    apiName = "LoanApplicationFinancial.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    _required = true
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency LoanExclFinMortInsAmt {
+    apiName = "LoanApplicationFinancial.LoanExclFinMortInsAmt"
+    label = "Loan Amount Excluding Financed Mortgage Insurance"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicationFinancial.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency OtherCredit {
+    apiName = "LoanApplicationFinancial.OtherCredit"
+    label = "Other Credits"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency OtherNewMortgageLoanAmt {
+    apiName = "LoanApplicationFinancial.OtherNewMortgageLoanAmt"
+    label = "Other New Mortgage Loans"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency OutstandingLoanAmount {
+    apiName = "LoanApplicationFinancial.OutstandingLoanAmount"
+    label = "Total Outstanding Mortgage Amount"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency PurchasePriceAmount {
+    apiName = "LoanApplicationFinancial.PurchasePriceAmount"
+    label = "Purchase Price"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency RemodelAndRepairsAmount {
+    apiName = "LoanApplicationFinancial.RemodelAndRepairsAmount"
+    label = "Cost of Alterations, Improvements, and Repairs"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalCashDueFromBorrower {
+    apiName = "LoanApplicationFinancial.TotalCashDueFromBorrower"
+    label = "Total Due From Borrower"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalCredit {
+    apiName = "LoanApplicationFinancial.TotalCredit"
+    label = "Total Credits"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalDebtPaidOffAmount {
+    apiName = "LoanApplicationFinancial.TotalDebtPaidOffAmount"
+    label = "Total Credit Card and Other Debt Paid Off"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalEstPaymentAmt {
+    apiName = "LoanApplicationFinancial.TotalEstPaymentAmt"
+    label = "Proposed Total Monthly Payment"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalMortgageLoanAndCreditAmt {
+    apiName = "LoanApplicationFinancial.TotalMortgageLoanAndCreditAmt"
+    label = "Total Mortgage Loans and Credits"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalMortgageLoansAmount {
+    apiName = "LoanApplicationFinancial.TotalMortgageLoansAmount"
+    label = "Total Mortgage Loans"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicationFinancial.Id"
+    label = "Loan Application Financial ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicationFinancial.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicationFinancial.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicationFinancial.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicationFinancial.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicationFinancial.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicationFinancial.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

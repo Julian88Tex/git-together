@@ -1,0 +1,152 @@
+type salesforce.InsuranceContract {
+  salesforce.Lookup BrokerageAgencyId {
+    apiName = "InsuranceContract.BrokerageAgencyId"
+    label = "Producer ID"
+    relationshipName = "BrokerageAgency"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BusinessLicenseId {
+    apiName = "InsuranceContract.BusinessLicenseId"
+    label = "Business License ID"
+    relationshipName = "BusinessLicense"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail ContractId {
+    apiName = "InsuranceContract.ContractId"
+    label = "Contract ID"
+    _required = true
+    relationshipName = "Contract"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup EnrollmentCensusId {
+    apiName = "InsuranceContract.EnrollmentCensusId"
+    label = "Group Census ID"
+    relationshipName = "EnrollmentCensus"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EnrollmentEndDate {
+    apiName = "InsuranceContract.EnrollmentEndDate"
+    label = "Enrollment End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EnrollmentStartDate {
+    apiName = "InsuranceContract.EnrollmentStartDate"
+    label = "Enrollment Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number EnrollmentWaitingPeriod {
+    apiName = "InsuranceContract.EnrollmentWaitingPeriod"
+    label = "Enrollment Waiting Period"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "InsuranceContract.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "InsuranceContract.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ProducerId {
+    apiName = "InsuranceContract.ProducerId"
+    label = "Producer ID"
+    relationshipName = "Producer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UnderwriterId {
+    apiName = "InsuranceContract.UnderwriterId"
+    label = "User ID"
+    relationshipName = "Underwriter"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InsuranceContract.Id"
+    label = "Insurance Contract ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsuranceContract.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsuranceContract.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsuranceContract.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsuranceContract.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsuranceContract.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsuranceContract.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

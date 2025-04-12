@@ -1,0 +1,75 @@
+salesforce.Layout DistributorAuthorization_Distributor_Authorization_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.LicenseId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.TerminationCause
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.AuthorizedInsuranceLineId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DistributorAuthorization.field.IsActive
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "DistributorAuthorization-Distributor Authorization Layout"
+  _parent = [
+    salesforce.DistributorAuthorization,
+  ]
+  _alias = "DistributorAuthorization-Distributor Authorization Layout"
+}

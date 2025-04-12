@@ -1,0 +1,187 @@
+type salesforce.LoanApplicationProperty {
+  salesforce.Currency ExpMonthlyRentalIncome {
+    apiName = "LoanApplicationProperty.ExpMonthlyRentalIncome"
+    label = "Expected Monthly Rental Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency ExpNetMonthlyRentalInc {
+    apiName = "LoanApplicationProperty.ExpNetMonthlyRentalInc"
+    label = "Expected Net Monthly Rental Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsManufacturedHome {
+    apiName = "LoanApplicationProperty.IsManufacturedHome"
+    label = "Manufactured Home"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsMixedUseProperty {
+    apiName = "LoanApplicationProperty.IsMixedUseProperty"
+    label = "Mixed-Use Property"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail LoanApplicationId {
+    apiName = "LoanApplicationProperty.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    _required = true
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LoanPurposeType {
+    apiName = "LoanApplicationProperty.LoanPurposeType"
+    label = "Loan Purpose"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicationProperty.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Address PropertyAddress {
+    apiName = "LoanApplicationProperty.PropertyAddress"
+    label = "Property Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PropertyExtIdentifier {
+    apiName = "LoanApplicationProperty.PropertyExtIdentifier"
+    label = "Loan Application Property External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PropertyUseType {
+    apiName = "LoanApplicationProperty.PropertyUseType"
+    label = "Occupancy Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency PropertyValue {
+    apiName = "LoanApplicationProperty.PropertyValue"
+    label = "Property Market Value"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency RequestedLoanAmount {
+    apiName = "LoanApplicationProperty.RequestedLoanAmount"
+    label = "Loan Amount"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number UnitsFinancedCount {
+    apiName = "LoanApplicationProperty.UnitsFinancedCount"
+    label = "Total Units to be Financed"
+    scale = 0
+    precision = 3
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicationProperty.Id"
+    label = "Loan Application Property ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicationProperty.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicationProperty.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicationProperty.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicationProperty.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicationProperty.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicationProperty.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

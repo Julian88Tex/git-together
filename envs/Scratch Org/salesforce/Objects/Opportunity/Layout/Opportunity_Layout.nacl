@@ -1,0 +1,254 @@
+salesforce.Layout Opportunity_Opportunity_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Opportunity Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.CampaignId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.CloseDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.StageName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Probability
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Amount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.LeadSource
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.NextStep
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Other Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.SendEmail
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.AccountId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.OwnerId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      fields = [
+        "ContactName",
+        "Role",
+        "ContactTitle",
+        "IsPrimary",
+        "ContactPhone",
+        "ContactEmail",
+        "ContactAccountName",
+      ]
+      relatedList = "RelatedContactRoleList"
+    },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "PARTNER.ROLE",
+        "PARTNER.PRIMARY",
+        "ACCOUNT.PC_TITLE",
+        "ACCOUNT.PC_EMAIL",
+      ]
+      relatedList = "RelatedPartnerList"
+    },
+    {
+      relatedList = "RelatedCompetitorList"
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ServiceDate",
+        "Description",
+        "ListPrice",
+      ]
+      relatedList = "RelatedLineItemList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedOpportunityHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Opportunity-Opportunity Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity-Opportunity Layout"
+}

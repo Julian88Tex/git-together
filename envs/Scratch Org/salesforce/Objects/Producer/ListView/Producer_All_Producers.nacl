@@ -1,0 +1,9 @@
+salesforce.ListView Producer_All_Producers {
+  fullName = "Producer.All_Producers"
+  filterScope = "Everything"
+  label = "All Producers"
+  _parent = [
+    salesforce.Producer,
+  ]
+  _alias = "All Producers"
+}

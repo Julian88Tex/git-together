@@ -1,0 +1,55 @@
+salesforce.Layout CaseGatewayRequest_Case_Gateway_Request_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CaseGatewayRequest.field.CaseId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CaseGatewayRequest.field.StatusMessage
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CaseGatewayRequest.field.StatusCode
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CaseGatewayRequest.field.IntegrationPayload
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CaseGatewayRequest-Case Gateway Request Layout"
+  _parent = [
+    salesforce.CaseGatewayRequest,
+  ]
+  _alias = "CaseGatewayRequest-Case Gateway Request Layout"
+}

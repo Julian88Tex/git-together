@@ -1,0 +1,7 @@
+salesforce.DevHubSettings {
+  enableDevOpsCenter = false
+  enableDevOpsCenterGA = false
+  enableShapeExportPref = false
+  fullName = "DevHub"
+  _alias = "DevHub"
+}

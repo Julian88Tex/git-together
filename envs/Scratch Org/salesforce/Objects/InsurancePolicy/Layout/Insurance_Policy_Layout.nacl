@@ -1,0 +1,370 @@
+salesforce.Layout InsurancePolicy_Insurance_Policy_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PolicyDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicy.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PolicyName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PolicyType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.UniversalPolicyNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PolicyDescription
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.OriginalPolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PriorPolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ContractGroupPlanId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.EmployeeContribution
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.EffectiveFromDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.OriginalEffectiveToDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicy.field.NameInsuredId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.UnderwritingEntityId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ProductId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PolicyTerm
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PlanTier
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsurancePolicy.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ReferencePolicyNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.EmployerContribution
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PolicyCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.EffectiveToDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.CancellationEffectiveDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PremiumDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.GrossWrittenPremium
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsurancePolicy.field.TotalStandardAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.StandardPremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.StandardTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.StandardFeeAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.TermPremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.TermTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.TermFeeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.TaxesSurcharges
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PaymentDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PaidToDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PremiumFrequency
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PaymentDueDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "RenewalDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.SaleDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.RenewalDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PlannedRenewalDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.PreviousRenewalDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.DateRenewed
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ActualRenewalDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "AdditionalDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.ProducerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicy.field.AuditTerm
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "InitiationDate",
+        "Status",
+        "ClaimReason",
+      ]
+      relatedList = "Claims"
+    },
+    {
+      fields = [
+        "Name",
+        "CoverageName",
+        "Category",
+        "CategoryGroup",
+      ]
+      relatedList = "InsurancePolicyCoverages"
+    },
+    {
+      fields = [
+        "Name",
+        "PrimaryParticipantAccount",
+        "Role",
+        "RelationshipToInsured",
+      ]
+      relatedList = "InsurancePolicyParticipants"
+    },
+    {
+      fields = [
+        "Name",
+        "CustomerProperty",
+      ]
+      relatedList = "InsurancePolicyAssets"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      fields = [
+        "Name",
+        "WorkerClass",
+        "Premium",
+        "WorkerCount",
+      ]
+      relatedList = "WorkerCompCoverageClasses"
+    },
+    {
+      fields = [
+        "Name",
+        "ActionPlanState",
+        "Owner",
+        "StartDate",
+      ]
+      relatedList = "ActionPlan"
+    },
+    {
+      fields = [
+        "Name",
+        "PolicyType",
+        "PremiumAmount",
+        "EffectiveDate",
+        "ExpirationDate",
+      ]
+      relatedList = "ChildInsurancePolicies"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicy-Insurance Policy Layout"
+  _parent = [
+    salesforce.InsurancePolicy,
+  ]
+  _alias = "InsurancePolicy-Insurance Policy Layout"
+}

@@ -1,0 +1,234 @@
+salesforce.Layout Case_Portal_Case_Layout@bss {
+  emailDefault = false
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Case Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CaseNumber
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.AccountId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.ContactId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.ContactPhone
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.ContactEmail
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Status
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Origin
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Priority
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Reason
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Web Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CreatedDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SuppliedEmail
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.ClosedDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SuppliedPhone
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = salesforce.QuickAction.instance.Case_SendEmail@v
+      },
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.ContactId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.AccountId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedCommentsList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      relatedList = "RelatedAttachmentList"
+    },
+  ]
+  relatedObjects = [
+    "ContactId",
+    "AccountId",
+  ]
+  runAssignmentRulesDefault = false
+  showEmailCheckbox = true
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showKnowledgeComponent = false
+  showRunAssignmentRulesCheckbox = true
+  showSubmitAndAttachButton = true
+  summaryLayout = {
+    masterLabel = "00hi0000000iRy3"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Case-Portal Case Layout"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case-Portal Case Layout"
+}

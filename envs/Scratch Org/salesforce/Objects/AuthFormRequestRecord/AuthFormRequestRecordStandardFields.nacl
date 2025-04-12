@@ -1,0 +1,93 @@
+type salesforce.AuthFormRequestRecord {
+  salesforce.Lookup InfoAuthRequestFormId {
+    apiName = "AuthFormRequestRecord.InfoAuthRequestFormId"
+    label = "Info Auth Request Form ID"
+    relationshipName = "InfoAuthRequestForm"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail InfoAuthorizationRequestId {
+    apiName = "AuthFormRequestRecord.InfoAuthorizationRequestId"
+    label = "Info Authorization Request ID"
+    _required = true
+    relationshipName = "InfoAuthorizationRequest"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "AuthFormRequestRecord.RelatedRecordId"
+    label = "Related Record ID"
+    _required = true
+    relationshipName = "RelatedRecord"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AuthFormRequestRecord.Id"
+    label = "Authorizable Form Request Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthFormRequestRecord.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "AuthFormRequestRecord.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthFormRequestRecord.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthFormRequestRecord.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthFormRequestRecord.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthFormRequestRecord.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthFormRequestRecord.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

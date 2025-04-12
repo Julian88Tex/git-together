@@ -1,0 +1,7 @@
+salesforce.SharingRules MultipartyInfoAuthRequest {
+  fullName = "MultipartyInfoAuthRequest"
+  _parent = [
+    salesforce.MultipartyInfoAuthRequest,
+  ]
+  _alias = "MultipartyInfoAuthRequest"
+}

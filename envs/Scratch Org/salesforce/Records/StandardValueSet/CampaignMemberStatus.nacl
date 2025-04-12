@@ -1,0 +1,17 @@
+salesforce.StandardValueSet CampaignMemberStatus {
+  fullName = "CampaignMemberStatus"
+  sorted = true
+  standardValue = [
+    {
+      fullName = "Responded"
+      default = false
+      label = "Responded"
+    },
+    {
+      fullName = "Sent"
+      default = false
+      label = "Sent"
+    },
+  ]
+  _alias = "CampaignMemberStatus"
+}

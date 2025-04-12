@@ -1,0 +1,173 @@
+type salesforce.AuthorizationFormConsent {
+  salesforce.Lookup AuthorizationFormTextId {
+    apiName = "AuthorizationFormConsent.AuthorizationFormTextId"
+    label = "Authorization Form Text ID"
+    relationshipName = "AuthorizationFormText"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Browser {
+    apiName = "AuthorizationFormConsent.Browser"
+    _hidden_value = true
+  }
+  salesforce.DateTime ConsentCapturedDateTime {
+    apiName = "AuthorizationFormConsent.ConsentCapturedDateTime"
+    label = "Consent Captured Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ConsentCapturedSource {
+    apiName = "AuthorizationFormConsent.ConsentCapturedSource"
+    label = "Consent Captured Source"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ConsentCapturedSourceType {
+    apiName = "AuthorizationFormConsent.ConsentCapturedSourceType"
+    label = "Consent Captured Source Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown ConsentExpirationDateTime {
+    apiName = "AuthorizationFormConsent.ConsentExpirationDateTime"
+    _hidden_value = true
+  }
+  salesforce.Lookup ConsentGiverId {
+    apiName = "AuthorizationFormConsent.ConsentGiverId"
+    label = "Consent Giver ID"
+    _required = true
+    relationshipName = "ConsentGiver"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DocumentVersionId {
+    apiName = "AuthorizationFormConsent.DocumentVersionId"
+    label = "ContentVersion ID"
+    relationshipName = "DocumentVersion"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Email {
+    apiName = "AuthorizationFormConsent.Email"
+    _hidden_value = true
+  }
+  salesforce.Lookup InfoAuthRequestFormId {
+    apiName = "AuthorizationFormConsent.InfoAuthRequestFormId"
+    label = "Info Authorization Request Form ID"
+    relationshipName = "InfoAuthRequestForm"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Ip {
+    apiName = "AuthorizationFormConsent.Ip"
+    _hidden_value = true
+  }
+  salesforce.Unknown Location {
+    apiName = "AuthorizationFormConsent.Location"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "AuthorizationFormConsent.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AuthorizationFormConsent.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "AuthorizationFormConsent.RelatedRecordId"
+    label = "Related Record ID"
+    relationshipName = "RelatedRecord"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "AuthorizationFormConsent.Status"
+    label = "Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AuthorizationFormConsent.Id"
+    label = "Authorization Form Consent ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationFormConsent.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationFormConsent.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationFormConsent.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationFormConsent.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationFormConsent.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationFormConsent.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

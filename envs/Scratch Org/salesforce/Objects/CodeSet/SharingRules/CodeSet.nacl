@@ -1,0 +1,7 @@
+salesforce.SharingRules CodeSet {
+  fullName = "CodeSet"
+  _parent = [
+    salesforce.CodeSet,
+  ]
+  _alias = "CodeSet"
+}

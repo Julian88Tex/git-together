@@ -1,0 +1,10 @@
+salesforce.CampaignSettings {
+  aiAttributionTimeframe = 6
+  enableAccountsAsCM = false
+  enableAutoCampInfluenceDisabled = false
+  enableCampaignHistoryTrackEnabled = false
+  enableCampaignInfluence2 = false
+  enableCampaignMemberTWCF = true
+  fullName = "Campaign"
+  _alias = "Campaign"
+}

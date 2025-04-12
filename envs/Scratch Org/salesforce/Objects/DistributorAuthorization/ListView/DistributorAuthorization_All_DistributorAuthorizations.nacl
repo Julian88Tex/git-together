@@ -1,0 +1,9 @@
+salesforce.ListView DistributorAuthorization_All_DistributorAuthorizations {
+  fullName = "DistributorAuthorization.All_DistributorAuthorizations"
+  filterScope = "Everything"
+  label = "All Distributor Authorizations"
+  _parent = [
+    salesforce.DistributorAuthorization,
+  ]
+  _alias = "All Distributor Authorizations"
+}

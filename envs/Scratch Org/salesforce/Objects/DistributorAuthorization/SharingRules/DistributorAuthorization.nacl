@@ -1,0 +1,7 @@
+salesforce.SharingRules DistributorAuthorization {
+  fullName = "DistributorAuthorization"
+  _parent = [
+    salesforce.DistributorAuthorization,
+  ]
+  _alias = "DistributorAuthorization"
+}

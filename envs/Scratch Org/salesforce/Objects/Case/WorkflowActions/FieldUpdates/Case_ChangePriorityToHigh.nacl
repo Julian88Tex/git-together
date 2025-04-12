@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate Case_ChangePriorityToHigh@v {
+  fullName = "Case.ChangePriorityToHigh"
+  field = salesforce.Case.field.Priority
+  literalValue = "High"
+  name = "Changes the case priority to high."
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case.ChangePriorityToHigh"
+}

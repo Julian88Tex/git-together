@@ -1,0 +1,22 @@
+salesforce.LightningPage LightningSales_UtilityBar {
+  description = "The default utility bar for the Sales application."
+  flexiPageRegions = [
+    {
+      itemInstances = {
+        componentInstance = {
+          componentName = "runtime_sales_todo_list:unifiedToDoListAuraWrapper"
+          identifier = "runtime_sales_todo_list_unifiedToDoListAuraWrapper"
+        }
+      }
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Sales App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  fullName = "LightningSales_UtilityBar"
+  _alias = "LightningSales_UtilityBar"
+}

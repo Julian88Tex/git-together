@@ -1,0 +1,283 @@
+type salesforce.GroupCensus {
+  salesforce.Lookup AccountId {
+    apiName = "GroupCensus.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveEndDate {
+    apiName = "GroupCensus.EffectiveEndDate"
+    label = "Effective End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveStartDate {
+    apiName = "GroupCensus.EffectiveStartDate"
+    label = "Effective Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ExternalIdentifier {
+    apiName = "GroupCensus.ExternalIdentifier"
+    label = "External Identifier"
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number FullTimeMemberCount {
+    apiName = "GroupCensus.FullTimeMemberCount"
+    label = "Full Time Member Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup LeadId {
+    apiName = "GroupCensus.LeadId"
+    label = "Lead ID"
+    relationshipName = "Lead"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MbrWithMoreThan1ChldCount {
+    apiName = "GroupCensus.MbrWithMoreThan1ChldCount"
+    label = "Member With More Than One Child Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MbrWithMoreThan2ChldCount {
+    apiName = "GroupCensus.MbrWithMoreThan2ChldCount"
+    label = "Member With More Than Two Children Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MbrWithoutDependentCount {
+    apiName = "GroupCensus.MbrWithoutDependentCount"
+    label = "Member Without Dependent Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MemberOptOutCount {
+    apiName = "GroupCensus.MemberOptOutCount"
+    label = "Member Opt Out Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MemberWithDependentCount {
+    apiName = "GroupCensus.MemberWithDependentCount"
+    label = "Member With Dependent Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MemberWithOneChildCount {
+    apiName = "GroupCensus.MemberWithOneChildCount"
+    label = "Member With One Child Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MemberWithSpouseCount {
+    apiName = "GroupCensus.MemberWithSpouseCount"
+    label = "Member With Spouse Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "GroupCensus.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "GroupCensus.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number PartTimeMemberCount {
+    apiName = "GroupCensus.PartTimeMemberCount"
+    label = "Part Time Member Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemName {
+    apiName = "GroupCensus.SourceSystemName"
+    label = "Source System Name"
+    length = 50
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SourceSystemType {
+    apiName = "GroupCensus.SourceSystemType"
+    label = "Source System Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "GroupCensus.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TotalDependents {
+    apiName = "GroupCensus.TotalDependents"
+    label = "Total Dependents"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TotalMemberPlusDependent {
+    apiName = "GroupCensus.TotalMemberPlusDependent"
+    label = "Total Members Plus Dependents"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TotalMembers {
+    apiName = "GroupCensus.TotalMembers"
+    label = "Total Members"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "GroupCensus.Type"
+    label = "Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "GroupCensus.UsageType"
+    label = "Usage Type"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "GroupCensus.Id"
+    label = "Group Census ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GroupCensus.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GroupCensus.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GroupCensus.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GroupCensus.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GroupCensus.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GroupCensus.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

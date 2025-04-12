@@ -1,0 +1,156 @@
+salesforce.Layout LoanApplicantDeclaration_Loan_Applicant_Declaration_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantDeclaration.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.LoanApplicationId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantDeclaration.field.LoanApplicantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasOutstandingJudgement
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasDeclaredBankruptcy
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsRelatedToSeller
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasUndisclAddlPropApp
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasUndisclAddlCreditApp
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsSubjectToPriorityLien
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsCoSignerUndisclDebt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasDeedSurrender
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasPastShortSale
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsPrimaryResidence
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasOwnershipInterest
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.PriorPropertyUsageType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.PriorPropertyTitleType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasBorrowedMoney
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.BorrowedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsPresentlyDelinquent
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.IsPartyToLawsuit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.HasPropertyForeclosed
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.BankruptcyType
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantDeclaration.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantDeclaration.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantDeclaration.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantDeclaration-Loan Applicant Declaration Layout"
+  _parent = [
+    salesforce.LoanApplicantDeclaration,
+  ]
+  _alias = "LoanApplicantDeclaration-Loan Applicant Declaration Layout"
+}

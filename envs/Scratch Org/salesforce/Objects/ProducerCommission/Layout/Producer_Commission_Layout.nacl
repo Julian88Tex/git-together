@@ -1,0 +1,111 @@
+salesforce.Layout ProducerCommission_Producer_Commission_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ProducerCommission.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ProducerCommission.field.ProducerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.SourceSystem
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.SourceSystemIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.PaymentDatetime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.MaxCommissionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.ProducerProductionCode
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.CommissionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.CommissionableAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.InsurancePolicyAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.InsurancePolicyCoverageId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.InsurancePolicyTransactionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.ParentProducerCommissionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.MinCommissionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProducerCommission.field.ProcessingProducerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ProducerCommission-Producer Commission Layout"
+  _parent = [
+    salesforce.ProducerCommission,
+  ]
+  _alias = "ProducerCommission-Producer Commission Layout"
+}

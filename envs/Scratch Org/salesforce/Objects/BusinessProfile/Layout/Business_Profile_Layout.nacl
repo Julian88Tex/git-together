@@ -1,0 +1,67 @@
+salesforce.Layout BusinessProfile_Business_Profile_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BusinessProfile.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.HasDishonoredPolicies
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.BusinessOperatingName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.BusinessStructure
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.HasUncorrectedSafetyViolations
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.HasSufferedBankruptcy
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessProfile.field.BusinessTaxIdentifier
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "BusinessProfile-Business Profile Layout"
+  _parent = [
+    salesforce.BusinessProfile,
+  ]
+  _alias = "BusinessProfile-Business Profile Layout"
+}

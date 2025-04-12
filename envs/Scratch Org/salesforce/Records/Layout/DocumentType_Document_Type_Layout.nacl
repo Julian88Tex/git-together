@@ -1,0 +1,50 @@
+salesforce.Layout DocumentType_Document_Type_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "MasterLabel"
+            },
+            {
+              behavior = "Required"
+              field = "DeveloperName"
+            },
+            {
+              behavior = "Edit"
+              field = "IsActive"
+            },
+            {
+              behavior = "Edit"
+              field = "Description"
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "DocumentType-Document Type Layout"
+  _alias = "DocumentType-Document Type Layout"
+}

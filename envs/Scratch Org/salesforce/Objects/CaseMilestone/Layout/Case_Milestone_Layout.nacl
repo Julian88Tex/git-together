@@ -1,0 +1,84 @@
+salesforce.Layout CaseMilestone_Case_Milestone_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.BusinessHoursId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CaseMilestone.field.CaseId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.MilestoneId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CaseMilestone.field.CompletionDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.IsViolated
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.IsCompleted
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.StartDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.TargetDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.TargetResponseInMins
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.TimeRemainingInMins
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CaseMilestone.field.ElapsedTimeInMins
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "BusinessHoursId",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CaseMilestone-Case Milestone Layout"
+  _parent = [
+    salesforce.CaseMilestone,
+  ]
+  _alias = "CaseMilestone-Case Milestone Layout"
+}

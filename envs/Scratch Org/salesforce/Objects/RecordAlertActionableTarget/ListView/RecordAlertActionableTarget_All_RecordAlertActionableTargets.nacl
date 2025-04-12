@@ -1,0 +1,9 @@
+salesforce.ListView RecordAlertActionableTarget_All_RecordAlertActionableTargets {
+  fullName = "RecordAlertActionableTarget.All_RecordAlertActionableTargets"
+  filterScope = "Everything"
+  label = "All Record Alert Actionable Target"
+  _parent = [
+    salesforce.RecordAlertActionableTarget,
+  ]
+  _alias = "All Record Alert Actionable Target"
+}

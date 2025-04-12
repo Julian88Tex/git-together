@@ -1,0 +1,144 @@
+salesforce.Layout WorkOrderLineItem_Work_Order_Line_Item_Layout@bssss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrderLineItem.field.LineItemNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrderLineItem.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrderLineItem.field.ParentWorkOrderLineItemId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrderLineItem.field.AssetId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.WorkOrderLineItem.field.WorkOrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrderLineItem.field.OrderId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrderLineItem.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrderLineItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrderLineItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "Name",
+        "Asset",
+      ]
+      relatedList = "ChildWorkOrderLineItems"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "WorkOrderLineItem-Work Order Line Item Layout"
+  _parent = [
+    salesforce.WorkOrderLineItem,
+  ]
+  _alias = "WorkOrderLineItem-Work Order Line Item Layout"
+}

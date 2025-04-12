@@ -1,0 +1,76 @@
+salesforce.Layout ActionPlanTemplate_Action_Plan_Template_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "Name"
+            },
+            {
+              behavior = "Edit"
+              field = "Description"
+            },
+            {
+              behavior = "Required"
+              field = "ActionPlanType"
+            },
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+            {
+              behavior = "Readonly"
+              field = "CreatedDate"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "OwnerId"
+            },
+            {
+              behavior = "Edit"
+              field = "IsAdHocItemCreationEnabled"
+            },
+            {
+              behavior = "Required"
+              field = "TargetEntityType"
+            },
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+            {
+              behavior = "Readonly"
+              field = "LastModifiedDate"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlanTemplate-Action Plan Template Layout"
+  _alias = "ActionPlanTemplate-Action Plan Template Layout"
+}

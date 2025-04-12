@@ -1,0 +1,103 @@
+type salesforce.ClaimTeamMember {
+  salesforce.MasterDetail ClaimId {
+    apiName = "ClaimTeamMember.ClaimId"
+    label = "Claim ID"
+    _required = true
+    relationshipName = "Claim"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "ClaimTeamMember.IsActive"
+    label = "Is Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Role {
+    apiName = "ClaimTeamMember.Role"
+    label = "Role"
+    _required = true
+    restricted = false
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "ClaimTeamMember.UserId"
+    label = "User ID"
+    _required = true
+    relationshipName = "User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ClaimTeamMember.Id"
+    label = "Claim Team Member ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ClaimTeamMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ClaimTeamMember.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ClaimTeamMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ClaimTeamMember.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ClaimTeamMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ClaimTeamMember.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ClaimTeamMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,148 @@
+type salesforce.DistributorAuthorization {
+  salesforce.Lookup AccountId {
+    apiName = "DistributorAuthorization.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup AuthorizedInsuranceLineId {
+    apiName = "DistributorAuthorization.AuthorizedInsuranceLineId"
+    label = "Authorized Insurance Line ID"
+    relationshipName = "AuthorizedInsuranceLine"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "DistributorAuthorization.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveDate {
+    apiName = "DistributorAuthorization.EffectiveDate"
+    label = "Effective Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date ExpirationDate {
+    apiName = "DistributorAuthorization.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "DistributorAuthorization.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup LicenseId {
+    apiName = "DistributorAuthorization.LicenseId"
+    label = "Business License ID"
+    relationshipName = "License"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DistributorAuthorization.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "DistributorAuthorization.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text TerminationCause {
+    apiName = "DistributorAuthorization.TerminationCause"
+    label = "Termination Cause"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "DistributorAuthorization.Id"
+    label = "Distributor Authorization ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DistributorAuthorization.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "DistributorAuthorization.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DistributorAuthorization.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DistributorAuthorization.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DistributorAuthorization.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DistributorAuthorization.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DistributorAuthorization.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

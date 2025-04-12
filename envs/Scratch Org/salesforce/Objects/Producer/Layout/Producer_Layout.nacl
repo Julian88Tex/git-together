@@ -1,0 +1,55 @@
+salesforce.Layout Producer_Producer_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Producer.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Producer.field.AccountId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Producer.field.InternalUserId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Producer.field.ContactId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Producer-Producer Layout"
+  _parent = [
+    salesforce.Producer,
+  ]
+  _alias = "Producer-Producer Layout"
+}

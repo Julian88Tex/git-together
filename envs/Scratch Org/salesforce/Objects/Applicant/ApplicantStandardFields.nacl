@@ -1,0 +1,251 @@
+type salesforce.Applicant {
+  salesforce.Lookup AccountId {
+    apiName = "Applicant.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ApplicationFormId {
+    apiName = "Applicant.ApplicationFormId"
+    label = "Application Form ID"
+    _required = true
+    relationshipName = "ApplicationForm"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date BirthDate {
+    apiName = "Applicant.BirthDate"
+    label = "Birth Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text BusinessEntityName {
+    apiName = "Applicant.BusinessEntityName"
+    label = "Business Entity Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup BusinessEntityPrimCtctId {
+    apiName = "Applicant.BusinessEntityPrimCtctId"
+    label = "Business Entity Primary Contact ID"
+    relationshipName = "BusinessEntityPrimCtct"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist BusinessEntityType {
+    apiName = "Applicant.BusinessEntityType"
+    label = "Business Entity Type"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "Applicant.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Email Email {
+    apiName = "Applicant.Email"
+    label = "Email"
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text FirstName {
+    apiName = "Applicant.FirstName"
+    label = "First Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text LastName {
+    apiName = "Applicant.LastName"
+    label = "Last Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text MiddleName {
+    apiName = "Applicant.MiddleName"
+    label = "Middle Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone Phone {
+    apiName = "Applicant.Phone"
+    label = "Phone"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PhoneType {
+    apiName = "Applicant.PhoneType"
+    label = "Phone Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown Prefix {
+    apiName = "Applicant.Prefix"
+    _hidden_value = true
+  }
+  salesforce.Picklist Role {
+    apiName = "Applicant.Role"
+    label = "Role"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Salutation {
+    apiName = "Applicant.Salutation"
+    label = "Salutation"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Stage {
+    apiName = "Applicant.Stage"
+    label = "Stage"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Suffix {
+    apiName = "Applicant.Suffix"
+    label = "Suffix"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Applicant.Type"
+    label = "Type"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text UniqueReferenceNumber {
+    apiName = "Applicant.UniqueReferenceNumber"
+    label = "Unique Reference Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "Applicant.Id"
+    label = "Applicant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Applicant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "Applicant.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Applicant.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Applicant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Applicant.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Applicant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Applicant.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,4 @@
+salesforce.TrailheadSettings {
+  fullName = "Trailhead"
+  _alias = "Trailhead"
+}

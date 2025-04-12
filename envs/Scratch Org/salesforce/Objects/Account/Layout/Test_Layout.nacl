@@ -1,0 +1,55 @@
+salesforce.Layout Account_Test_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Account.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ParentId
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Name",
+      "ParentId",
+    ]
+  }
+  relatedObjects = [
+    "ParentId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Account-Test Layout"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account-Test Layout"
+}

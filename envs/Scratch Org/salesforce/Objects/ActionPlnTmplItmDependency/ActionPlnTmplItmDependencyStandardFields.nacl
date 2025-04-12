@@ -1,0 +1,97 @@
+type salesforce.ActionPlnTmplItmDependency {
+  serviceid Id {
+    apiName = "ActionPlnTmplItmDependency.Id"
+    label = "Action Plan Template Item Dependency ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ActionPlnTmplItmDependency.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "ActionPlnTmplItmDependency.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ActionPlnTmplItmDependency.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ActionPlnTmplItmDependency.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ActionPlnTmplItmDependency.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ActionPlnTmplItmDependency.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ActionPlnTmplItmDependency.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup TemplateItemId {
+    apiName = "ActionPlnTmplItmDependency.TemplateItemId"
+    label = "Action Plan Template Item ID"
+    _required = true
+    relationshipName = "TemplateItem"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup PreviousTemplateItemId {
+    apiName = "ActionPlnTmplItmDependency.PreviousTemplateItemId"
+    label = "Action Plan Template Item ID"
+    _required = true
+    relationshipName = "PreviousTemplateItem"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CreationType {
+    apiName = "ActionPlnTmplItmDependency.CreationType"
+    label = "Creation Type"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,84 @@
+salesforce.Layout InsuranceContract_Insurance_Contract_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsuranceContract.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.BusinessLicenseId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.EnrollmentStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.EnrollmentWaitingPeriod
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.ProducerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsuranceContract.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsuranceContract.field.ContractId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.BrokerageAgencyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.EnrollmentEndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.EnrollmentCensusId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsuranceContract.field.UnderwriterId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsuranceContract.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsuranceContract-Insurance Contract Layout"
+  _parent = [
+    salesforce.InsuranceContract,
+  ]
+  _alias = "InsuranceContract-Insurance Contract Layout"
+}

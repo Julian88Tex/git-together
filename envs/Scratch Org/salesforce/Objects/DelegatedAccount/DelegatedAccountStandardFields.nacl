@@ -1,0 +1,113 @@
+type salesforce.DelegatedAccount {
+  salesforce.Lookup ManagedById {
+    apiName = "DelegatedAccount.ManagedById"
+    label = "User ID"
+    _required = true
+    relationshipName = "ManagedBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "DelegatedAccount.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DelegatedAccount.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup TargetId {
+    apiName = "DelegatedAccount.TargetId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Target"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "DelegatedAccount.Id"
+    label = "External Managed Account ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DelegatedAccount.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DelegatedAccount.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DelegatedAccount.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DelegatedAccount.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DelegatedAccount.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DelegatedAccount.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox AccessManageUsers {
+    apiName = "DelegatedAccount.AccessManageUsers"
+    label = "Allows user to manage users in delegated accounts"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "DelegatedAccount.ParentId"
+    label = "Account ID"
+    relationshipName = "Parent"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}
