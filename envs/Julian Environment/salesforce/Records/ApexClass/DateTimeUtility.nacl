@@ -1,7 +1,0 @@
-salesforce.ApexClass DateTimeUtility {
-  apiVersion = 29
-  status = "Active"
-  fullName = "DateTimeUtility"
-  content = file("salesforce/Records/ApexClass/DateTimeUtility.cls")
-  _alias = "DateTimeUtility"
-}

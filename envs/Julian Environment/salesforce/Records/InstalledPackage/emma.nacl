@@ -1,5 +1,0 @@
-salesforce.InstalledPackage emma {
-  versionNumber = "3.49"
-  fullName = "emma"
-  _alias = "emma"
-}

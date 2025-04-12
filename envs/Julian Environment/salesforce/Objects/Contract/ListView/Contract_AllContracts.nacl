@@ -1,9 +1,0 @@
-salesforce.ListView Contract_AllContracts {
-  fullName = "Contract.AllContracts"
-  filterScope = "Everything"
-  label = "All Contracts"
-  _parent = [
-    salesforce.Contract,
-  ]
-  _alias = "All Contracts"
-}

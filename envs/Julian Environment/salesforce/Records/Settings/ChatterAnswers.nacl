@@ -1,5 +1,0 @@
-salesforce.ChatterAnswersSettings {
-  fullName = "ChatterAnswers"
-  enableChatterAnswers = false
-  _alias = "ChatterAnswers"
-}

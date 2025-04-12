@@ -1,7 +1,0 @@
-salesforce.SharingRules BusinessBrand {
-  fullName = "BusinessBrand"
-  _parent = [
-    salesforce.BusinessBrand,
-  ]
-  _alias = "BusinessBrand"
-}

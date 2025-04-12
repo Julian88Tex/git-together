@@ -1,7 +1,0 @@
-salesforce.EncryptionKeySettings {
-  fullName = "EncryptionKey"
-  canEncryptTransactionalDatabase = false
-  canManageDataCloudKeys = false
-  canOptOutOfDerivationWithBYOK = false
-  _alias = "EncryptionKey"
-}

@@ -1,4 +1,0 @@
-salesforce.IframeWhiteListUrlSettings IframeWhiteListUrlSettings {
-  fullName = "IframeWhiteListUrlSettings"
-  _alias = "IframeWhiteListUrlSettings"
-}

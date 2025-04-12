@@ -1,6 +1,0 @@
-salesforce.PlatformEventChannelMember ChangeEvents_ContactChangeEvent {
-  fullName = "ChangeEvents_ContactChangeEvent"
-  eventChannel = "ChangeEvents"
-  selectedEntity = "ContactChangeEvent"
-  _alias = "ChangeEvents_ContactChangeEvent"
-}

@@ -1,7 +1,0 @@
-salesforce.ApexClass SiteLoginController {
-  apiVersion = 37
-  status = "Active"
-  fullName = "SiteLoginController"
-  content = file("salesforce/Records/ApexClass/SiteLoginController.cls")
-  _alias = "SiteLoginController"
-}

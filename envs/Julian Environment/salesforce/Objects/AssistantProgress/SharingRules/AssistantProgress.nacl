@@ -1,7 +1,0 @@
-salesforce.SharingRules AssistantProgress {
-  fullName = "AssistantProgress"
-  _parent = [
-    salesforce.AssistantProgress,
-  ]
-  _alias = "AssistantProgress"
-}

@@ -1,8 +1,0 @@
-salesforce.OrderSettings {
-  fullName = "Order"
-  enableNegativeQuantity = false
-  enableOrders = true
-  enableReductionOrders = false
-  enableZeroQuantity = false
-  _alias = "Order"
-}

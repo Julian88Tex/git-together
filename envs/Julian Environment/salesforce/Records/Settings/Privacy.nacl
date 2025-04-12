@@ -1,5 +1,0 @@
-salesforce.PrivacySettings {
-  fullName = "Privacy"
-  enableDefaultMetadataValues = false
-  _alias = "Privacy"
-}

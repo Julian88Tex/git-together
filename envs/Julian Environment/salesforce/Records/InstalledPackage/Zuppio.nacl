@@ -1,5 +1,0 @@
-salesforce.InstalledPackage Zuppio {
-  versionNumber = "1.36"
-  fullName = "Zuppio"
-  _alias = "Zuppio"
-}

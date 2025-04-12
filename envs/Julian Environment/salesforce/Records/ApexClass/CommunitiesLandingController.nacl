@@ -1,7 +1,0 @@
-salesforce.ApexClass CommunitiesLandingController {
-  apiVersion = 37
-  status = "Active"
-  fullName = "CommunitiesLandingController"
-  content = file("salesforce/Records/ApexClass/CommunitiesLandingController.cls")
-  _alias = "CommunitiesLandingController"
-}

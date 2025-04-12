@@ -1,9 +1,0 @@
-salesforce.ListView ActiveScratchOrg_My_Active_Scratch_Orgs {
-  fullName = "ActiveScratchOrg.My_Active_Scratch_Orgs"
-  filterScope = "Mine"
-  label = "My Active Scratch Orgs"
-  _parent = [
-    salesforce.ActiveScratchOrg,
-  ]
-  _alias = "My Active Scratch Orgs"
-}

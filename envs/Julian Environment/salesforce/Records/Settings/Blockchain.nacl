@@ -1,6 +1,0 @@
-salesforce.BlockchainSettings {
-  fullName = "Blockchain"
-  enableBcp = false
-  enableEtpNft = false
-  _alias = "Blockchain"
-}

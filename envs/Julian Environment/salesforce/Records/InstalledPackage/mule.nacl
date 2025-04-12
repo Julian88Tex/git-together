@@ -1,4 +1,0 @@
-salesforce.InstalledPackage mule {
-  fullName = "mule"
-  _alias = "mule"
-}

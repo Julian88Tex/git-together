@@ -1,5 +1,0 @@
-salesforce.StandardValueSet ServiceContractApprovalStatus {
-  fullName = "ServiceContractApprovalStatus"
-  sorted = false
-  _alias = "ServiceContractApprovalStatus"
-}

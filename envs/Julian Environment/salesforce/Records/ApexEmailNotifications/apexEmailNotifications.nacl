@@ -1,4 +1,0 @@
-salesforce.ApexEmailNotifications apexEmailNotifications {
-  fullName = "apexEmailNotifications"
-  _alias = "apexEmailNotifications"
-}

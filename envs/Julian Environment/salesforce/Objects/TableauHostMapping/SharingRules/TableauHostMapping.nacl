@@ -1,7 +1,0 @@
-salesforce.SharingRules TableauHostMapping {
-  fullName = "TableauHostMapping"
-  _parent = [
-    salesforce.TableauHostMapping,
-  ]
-  _alias = "TableauHostMapping"
-}

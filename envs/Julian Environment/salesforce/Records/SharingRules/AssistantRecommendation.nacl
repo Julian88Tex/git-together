@@ -1,4 +1,0 @@
-salesforce.SharingRules AssistantRecommendation {
-  fullName = "AssistantRecommendation"
-  _alias = "AssistantRecommendation"
-}

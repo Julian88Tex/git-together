@@ -1,5 +1,0 @@
-salesforce.QuoteSettings {
-  fullName = "Quote"
-  enableQuote = true
-  _alias = "Quote"
-}

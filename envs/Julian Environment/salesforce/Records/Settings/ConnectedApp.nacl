@@ -1,5 +1,0 @@
-salesforce.ConnectedAppSettings {
-  fullName = "ConnectedApp"
-  enableSkipUserProvisioningWizardWelcomePage = false
-  _alias = "ConnectedApp"
-}

@@ -1,7 +1,0 @@
-salesforce.SharingRules OrgSnapshot {
-  fullName = "OrgSnapshot"
-  _parent = [
-    salesforce.OrgSnapshot,
-  ]
-  _alias = "OrgSnapshot"
-}

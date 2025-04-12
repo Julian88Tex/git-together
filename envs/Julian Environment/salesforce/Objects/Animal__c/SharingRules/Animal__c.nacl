@@ -1,7 +1,0 @@
-salesforce.SharingRules Animal__c {
-  fullName = "Animal__c"
-  _parent = [
-    salesforce.Animal__c,
-  ]
-  _alias = "Animal__c"
-}

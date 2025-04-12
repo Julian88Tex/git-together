@@ -1,5 +1,0 @@
-salesforce.InstalledPackage npe01 {
-  versionNumber = "3.22"
-  fullName = "npe01"
-  _alias = "npe01"
-}

@@ -1,5 +1,0 @@
-salesforce.StandardValueSet OrderType {
-  fullName = "OrderType"
-  sorted = false
-  _alias = "OrderType"
-}

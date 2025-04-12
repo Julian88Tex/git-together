@@ -1,6 +1,0 @@
-salesforce.MailMergeSettings {
-  fullName = "MailMerge"
-  enableExtendedMailMerge = false
-  saveMailMergeDocsAsSalesforceDocs = false
-  _alias = "MailMerge"
-}
