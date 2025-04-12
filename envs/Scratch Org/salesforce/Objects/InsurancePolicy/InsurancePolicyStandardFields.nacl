@@ -1,0 +1,736 @@
+type salesforce.InsurancePolicy {
+  salesforce.Unknown ActualRenewalDate {
+    apiName = "InsurancePolicy.ActualRenewalDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist AuditTerm {
+    apiName = "InsurancePolicy.AuditTerm"
+    label = "Audit Term"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BillingCarrierAccountId {
+    apiName = "InsurancePolicy.BillingCarrierAccountId"
+    label = "Account ID"
+    relationshipName = "BillingCarrierAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CancellationDate {
+    apiName = "InsurancePolicy.CancellationDate"
+    label = "Cancellation Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown CancellationEffectiveDate {
+    apiName = "InsurancePolicy.CancellationEffectiveDate"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea CancellationReason {
+    apiName = "InsurancePolicy.CancellationReason"
+    label = "Cancellation Reason"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CancellationReasonType {
+    apiName = "InsurancePolicy.CancellationReasonType"
+    label = "Cancellation Reason Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency CashSurrenderValue {
+    apiName = "InsurancePolicy.CashSurrenderValue"
+    label = "Cash Surrender Value"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ChangeSubtype {
+    apiName = "InsurancePolicy.ChangeSubtype"
+    label = "Change Subtype"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ChangeType {
+    apiName = "InsurancePolicy.ChangeType"
+    label = "Change Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContractGroupPlanId {
+    apiName = "InsurancePolicy.ContractGroupPlanId"
+    label = "Contract Group Plan ID"
+    relationshipName = "ContractGroupPlan"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency CurrentDueAmount {
+    apiName = "InsurancePolicy.CurrentDueAmount"
+    label = "Current Due Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime DateRenewed {
+    apiName = "InsurancePolicy.DateRenewed"
+    label = "Date Renewed"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Discount {
+    apiName = "InsurancePolicy.Discount"
+    label = "Discount"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveDate {
+    apiName = "InsurancePolicy.EffectiveDate"
+    label = "Effective Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown EffectiveFromDate {
+    apiName = "InsurancePolicy.EffectiveFromDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown EffectiveToDate {
+    apiName = "InsurancePolicy.EffectiveToDate"
+    _hidden_value = true
+  }
+  salesforce.Currency EmployeeContribution {
+    apiName = "InsurancePolicy.EmployeeContribution"
+    label = "Employee Contribution"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency EmployerContribution {
+    apiName = "InsurancePolicy.EmployerContribution"
+    label = "Employer Contribution"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ExpirationDate {
+    apiName = "InsurancePolicy.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime FinalRenewalDate {
+    apiName = "InsurancePolicy.FinalRenewalDate"
+    label = "Final Renewal Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FnolChannel {
+    apiName = "InsurancePolicy.FnolChannel"
+    _hidden_value = true
+  }
+  salesforce.Currency GrossWrittenPremium {
+    apiName = "InsurancePolicy.GrossWrittenPremium"
+    label = "Gross Written Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasAnyAutoCoverage {
+    apiName = "InsurancePolicy.HasAnyAutoCoverage"
+    label = "Has Any Auto coverage"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup IntermediaryAccountId {
+    apiName = "InsurancePolicy.IntermediaryAccountId"
+    label = "Account ID"
+    relationshipName = "IntermediaryAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "InsurancePolicy.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsLoanEligibile {
+    apiName = "InsurancePolicy.IsLoanEligibile"
+    label = "Eligible for loan"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPolicyEditLocked {
+    apiName = "InsurancePolicy.IsPolicyEditLocked"
+    label = "Policy Edit Locked"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsRenewedPolicy {
+    apiName = "InsurancePolicy.IsRenewedPolicy"
+    label = "Renewed Policy"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "InsurancePolicy.Name"
+    label = "Policy Number"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail NameInsuredId {
+    apiName = "InsurancePolicy.NameInsuredId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "NameInsured"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime OriginalEffectiveDate {
+    apiName = "InsurancePolicy.OriginalEffectiveDate"
+    label = "Original Effective Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown OriginalEffectiveFromDate {
+    apiName = "InsurancePolicy.OriginalEffectiveFromDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown OriginalEffectiveToDate {
+    apiName = "InsurancePolicy.OriginalEffectiveToDate"
+    _hidden_value = true
+  }
+  salesforce.DateTime OriginalExpirationDate {
+    apiName = "InsurancePolicy.OriginalExpirationDate"
+    label = "Original Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OriginalPolicyId {
+    apiName = "InsurancePolicy.OriginalPolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "OriginalPolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "InsurancePolicy.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date PaidToDate {
+    apiName = "InsurancePolicy.PaidToDate"
+    label = "Paid To Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ParentPolicyId {
+    apiName = "InsurancePolicy.ParentPolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "ParentPolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency PastDueAmount {
+    apiName = "InsurancePolicy.PastDueAmount"
+    label = "Past Due Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PaymentDueDate {
+    apiName = "InsurancePolicy.PaymentDueDate"
+    label = "Payment Due Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PlanTier {
+    apiName = "InsurancePolicy.PlanTier"
+    label = "Plan Tier"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PlanType {
+    apiName = "InsurancePolicy.PlanType"
+    label = "Plan Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown PlannedRenewalDate {
+    apiName = "InsurancePolicy.PlannedRenewalDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown PolicyCode {
+    apiName = "InsurancePolicy.PolicyCode"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea PolicyDescription {
+    apiName = "InsurancePolicy.PolicyDescription"
+    label = "Policy Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text PolicyName {
+    apiName = "InsurancePolicy.PolicyName"
+    label = "Policy Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PolicyTerm {
+    apiName = "InsurancePolicy.PolicyTerm"
+    label = "Policy Term"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PolicyType {
+    apiName = "InsurancePolicy.PolicyType"
+    label = "Policy Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency PremiumAmount {
+    apiName = "InsurancePolicy.PremiumAmount"
+    label = "Premium Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PremiumCalculationMethod {
+    apiName = "InsurancePolicy.PremiumCalculationMethod"
+    label = "Premium Calculation Method"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PremiumFrequency {
+    apiName = "InsurancePolicy.PremiumFrequency"
+    label = "Premium Frequency"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PremiumPaymentType {
+    apiName = "InsurancePolicy.PremiumPaymentType"
+    label = "Premium Payment Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency PreviousPremium {
+    apiName = "InsurancePolicy.PreviousPremium"
+    label = "Previous Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PreviousRenewalDate {
+    apiName = "InsurancePolicy.PreviousRenewalDate"
+    label = "Previous Renewal Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PriorPolicyId {
+    apiName = "InsurancePolicy.PriorPolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "PriorPolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProducerId {
+    apiName = "InsurancePolicy.ProducerId"
+    label = "Producer ID"
+    relationshipName = "Producer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProductId {
+    apiName = "InsurancePolicy.ProductId"
+    label = "Product ID"
+    relationshipName = "Product"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date RatingDate {
+    apiName = "InsurancePolicy.RatingDate"
+    label = "Rating Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ReferencePolicyNumber {
+    apiName = "InsurancePolicy.ReferencePolicyNumber"
+    label = "Reference Policy Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RenewalChannel {
+    apiName = "InsurancePolicy.RenewalChannel"
+    label = "Renewal Channel"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime RenewalDate {
+    apiName = "InsurancePolicy.RenewalDate"
+    label = "Renewal Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RenewedFromPolicyId {
+    apiName = "InsurancePolicy.RenewedFromPolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "RenewedFromPolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime SaleDate {
+    apiName = "InsurancePolicy.SaleDate"
+    label = "Sale Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address ServicingOffice {
+    apiName = "InsurancePolicy.ServicingOffice"
+    label = "Servicing Office"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SourceOpportunityId {
+    apiName = "InsurancePolicy.SourceOpportunityId"
+    label = "Opportunity ID"
+    relationshipName = "SourceOpportunity"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "InsurancePolicy.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "InsurancePolicy.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardFeeAmount {
+    apiName = "InsurancePolicy.StandardFeeAmount"
+    label = "Standard Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardPremiumAmount {
+    apiName = "InsurancePolicy.StandardPremiumAmount"
+    label = "Standard Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardTaxAmount {
+    apiName = "InsurancePolicy.StandardTaxAmount"
+    label = "Standard Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "InsurancePolicy.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Substatus {
+    apiName = "InsurancePolicy.Substatus"
+    label = "Substatus"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TaxesSurcharges {
+    apiName = "InsurancePolicy.TaxesSurcharges"
+    label = "Taxes and Surcharges"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermFeeAmount {
+    apiName = "InsurancePolicy.TermFeeAmount"
+    label = "Term Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermPremiumAmount {
+    apiName = "InsurancePolicy.TermPremiumAmount"
+    label = "Term Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermTaxAmount {
+    apiName = "InsurancePolicy.TermTaxAmount"
+    label = "Term Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalCommissionAmount {
+    apiName = "InsurancePolicy.TotalCommissionAmount"
+    label = "Total Commission Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary TotalStandardAmount {
+    apiName = "InsurancePolicy.TotalStandardAmount"
+    label = "Total Standard Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalSumInsured {
+    apiName = "InsurancePolicy.TotalSumInsured"
+    label = "Sum Insured"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalTermFeeAmount {
+    apiName = "InsurancePolicy.TotalTermFeeAmount"
+    label = "Total Term Fee Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalTermPremiumAmount {
+    apiName = "InsurancePolicy.TotalTermPremiumAmount"
+    label = "Total Term Premium Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TotalTermTaxAmount {
+    apiName = "InsurancePolicy.TotalTermTaxAmount"
+    label = "Total Term Tax Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UnderwritingEntityId {
+    apiName = "InsurancePolicy.UnderwritingEntityId"
+    label = "Legal Entity ID"
+    relationshipName = "UnderwritingEntity"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text UniversalPolicyNumber {
+    apiName = "InsurancePolicy.UniversalPolicyNumber"
+    label = "Universal Policy Number"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WritingCarrierAccountId {
+    apiName = "InsurancePolicy.WritingCarrierAccountId"
+    label = "Account ID"
+    relationshipName = "WritingCarrierAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InsurancePolicy.Id"
+    label = "Insurance Policy ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsurancePolicy.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsurancePolicy.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsurancePolicy.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsurancePolicy.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsurancePolicy.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsurancePolicy.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules BusinessLicense {
+  fullName = "BusinessLicense"
+  _parent = [
+    salesforce.BusinessLicense,
+  ]
+  _alias = "BusinessLicense"
+}

@@ -1,0 +1,225 @@
+type salesforce.LoanApplicationAsset {
+  salesforce.Text AccountNumber {
+    apiName = "LoanApplicationAsset.AccountNumber"
+    label = "Financial Account Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountType {
+    apiName = "LoanApplicationAsset.AccountType"
+    label = "Account Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AssetClass {
+    apiName = "LoanApplicationAsset.AssetClass"
+    label = "Asset Class"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text AssetExtIdentifier {
+    apiName = "LoanApplicationAsset.AssetExtIdentifier"
+    label = "Loan Application Asset External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AssetType {
+    apiName = "LoanApplicationAsset.AssetType"
+    label = "Asset Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency CashOrMarketValue {
+    apiName = "LoanApplicationAsset.CashOrMarketValue"
+    label = "Cash or Market Value"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist DispositionType {
+    apiName = "LoanApplicationAsset.DispositionType"
+    label = "Real Estate Status"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text FinancialInstitutionName {
+    apiName = "LoanApplicationAsset.FinancialInstitutionName"
+    label = "Financial Institution"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency GrossMonthlyRentalIncome {
+    apiName = "LoanApplicationAsset.GrossMonthlyRentalIncome"
+    label = "Gross Rental Income from Real Estate"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsJointAsset {
+    apiName = "LoanApplicationAsset.IsJointAsset"
+    label = "Joint Asset"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationId {
+    apiName = "LoanApplicationAsset.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicationAsset.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency NetMonthlyRentalIncome {
+    apiName = "LoanApplicationAsset.NetMonthlyRentalIncome"
+    label = "Net Real Estate Rental Income"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LoanApplicationAsset.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency PresentMarketValue {
+    apiName = "LoanApplicationAsset.PresentMarketValue"
+    label = "Real Estate Value"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Address RealEstateAddress {
+    apiName = "LoanApplicationAsset.RealEstateAddress"
+    label = "Real Estate Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency RealEstateMonthlyExpense {
+    apiName = "LoanApplicationAsset.RealEstateMonthlyExpense"
+    label = "Other Monthly Real Estate Expenses"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicationAsset.Id"
+    label = "Loan Application Asset ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicationAsset.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicationAsset.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicationAsset.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicationAsset.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicationAsset.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicationAsset.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

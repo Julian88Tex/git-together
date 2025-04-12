@@ -1,0 +1,17 @@
+salesforce.Territory2Settings {
+  defaultAccountAccessLevel = "Read"
+  defaultCaseAccessLevel = "None"
+  defaultContactAccessLevel = "Edit"
+  defaultOpportunityAccessLevel = "None"
+  enableTerritoryManagement2 = false
+  opportunityFilterSettings = {
+    enableFilter = false
+    runMultiThreaded = false
+    runOnCreate = false
+  }
+  t2ForecastAccessLevel = "Read"
+  tm2BypassRealignAccInsert = false
+  tm2EnableUserAssignmentLog = false
+  fullName = "Territory2"
+  _alias = "Territory2"
+}

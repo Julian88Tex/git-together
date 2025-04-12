@@ -1,0 +1,9 @@
+salesforce.ListView LegalEntity_All_LegalEntities {
+  fullName = "LegalEntity.All_LegalEntities"
+  filterScope = "Everything"
+  label = "All Legal Entities"
+  _parent = [
+    salesforce.LegalEntity,
+  ]
+  _alias = "All Legal Entities"
+}

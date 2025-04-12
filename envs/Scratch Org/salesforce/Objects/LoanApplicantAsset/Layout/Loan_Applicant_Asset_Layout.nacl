@@ -1,0 +1,76 @@
+salesforce.Layout LoanApplicantAsset_Loan_Applicant_Asset_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantAsset.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantAsset.field.LoanApplicantId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantAsset.field.LoanApplicationAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAsset.field.Role
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantAsset.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantAsset.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantAsset-Loan Applicant Asset Layout"
+  _parent = [
+    salesforce.LoanApplicantAsset,
+  ]
+  _alias = "LoanApplicantAsset-Loan Applicant Asset Layout"
+}

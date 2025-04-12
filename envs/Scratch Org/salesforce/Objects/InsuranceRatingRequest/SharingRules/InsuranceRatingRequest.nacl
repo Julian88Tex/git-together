@@ -1,0 +1,7 @@
+salesforce.SharingRules InsuranceRatingRequest {
+  fullName = "InsuranceRatingRequest"
+  _parent = [
+    salesforce.InsuranceRatingRequest,
+  ]
+  _alias = "InsuranceRatingRequest"
+}

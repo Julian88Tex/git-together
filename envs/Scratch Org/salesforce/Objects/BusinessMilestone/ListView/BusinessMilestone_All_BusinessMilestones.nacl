@@ -1,0 +1,9 @@
+salesforce.ListView BusinessMilestone_All_BusinessMilestones {
+  fullName = "BusinessMilestone.All_BusinessMilestones"
+  filterScope = "Everything"
+  label = "All Business Milestones"
+  _parent = [
+    salesforce.BusinessMilestone,
+  ]
+  _alias = "All Business Milestones"
+}

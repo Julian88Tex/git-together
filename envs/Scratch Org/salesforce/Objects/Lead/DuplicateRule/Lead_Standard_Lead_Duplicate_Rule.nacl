@@ -1,0 +1,26 @@
+salesforce.DuplicateRule Lead_Standard_Lead_Duplicate_Rule@vuuu {
+  fullName = "Lead.Standard_Lead_Duplicate_Rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Duplicate Alert"
+  description = "Duplicate rule for lead records."
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = salesforce.Lead
+      matchingRule = "Standard_Lead_Match_Rule_v1_0"
+    },
+  ]
+  isActive = true
+  masterLabel = "Standard Lead Duplicate Rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = "Report"
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.Standard_Lead_Duplicate_Rule"
+}

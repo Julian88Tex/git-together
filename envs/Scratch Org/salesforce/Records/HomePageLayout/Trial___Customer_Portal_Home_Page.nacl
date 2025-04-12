@@ -1,0 +1,13 @@
+salesforce.HomePageLayout Trial___Customer_Portal_Home_Page@sbssss {
+  fullName = "Trial - Customer Portal Home Page"
+  narrowComponents = [
+    "standard-StandardSearch",
+    "standard-CreateNew",
+    "standard-RecentItems",
+    "standard-PortalWelcome",
+  ]
+  wideComponents = [
+    "Trial - Customer Portal Home Page",
+  ]
+  _alias = "Trial - Customer Portal Home Page"
+}

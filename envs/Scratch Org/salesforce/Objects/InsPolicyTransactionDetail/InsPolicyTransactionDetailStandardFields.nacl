@@ -1,0 +1,123 @@
+type salesforce.InsPolicyTransactionDetail {
+  salesforce.Currency Commission {
+    apiName = "InsPolicyTransactionDetail.Commission"
+    label = "Commission"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Fee {
+    apiName = "InsPolicyTransactionDetail.Fee"
+    label = "Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail InsurancePolicyTransactionId {
+    apiName = "InsPolicyTransactionDetail.InsurancePolicyTransactionId"
+    label = "Insurance Policy Transaction ID"
+    _required = true
+    relationshipName = "InsurancePolicyTransaction"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "InsPolicyTransactionDetail.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Premium {
+    apiName = "InsPolicyTransactionDetail.Premium"
+    label = "Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ReferenceObjectId {
+    apiName = "InsPolicyTransactionDetail.ReferenceObjectId"
+    label = "Reference Object ID"
+    relationshipName = "ReferenceObject"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Tax {
+    apiName = "InsPolicyTransactionDetail.Tax"
+    label = "Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InsPolicyTransactionDetail.Id"
+    label = "Insurance Policy Transaction Detail ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsPolicyTransactionDetail.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsPolicyTransactionDetail.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsPolicyTransactionDetail.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsPolicyTransactionDetail.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsPolicyTransactionDetail.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsPolicyTransactionDetail.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

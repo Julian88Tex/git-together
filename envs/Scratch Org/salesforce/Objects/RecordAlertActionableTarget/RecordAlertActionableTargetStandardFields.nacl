@@ -1,0 +1,22 @@
+type salesforce.RecordAlertActionableTarget {
+  salesforce.Unknown Name {
+    apiName = "RecordAlertActionableTarget.Name"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail RecordAlertId {
+    apiName = "RecordAlertActionableTarget.RecordAlertId"
+    _hidden_value = true
+  }
+  salesforce.Unknown TargetObjectName {
+    apiName = "RecordAlertActionableTarget.TargetObjectName"
+    _hidden_value = true
+  }
+  salesforce.Unknown TargetRecordIdentifier {
+    apiName = "RecordAlertActionableTarget.TargetRecordIdentifier"
+    _hidden_value = true
+  }
+  salesforce.Unknown Type {
+    apiName = "RecordAlertActionableTarget.Type"
+    _hidden_value = true
+  }
+}

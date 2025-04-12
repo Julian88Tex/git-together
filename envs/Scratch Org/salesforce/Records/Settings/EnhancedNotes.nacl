@@ -1,0 +1,6 @@
+salesforce.EnhancedNotesSettings {
+  enableEnhancedNotes = false
+  enableTasksOnEnhancedNotes = true
+  fullName = "EnhancedNotes"
+  _alias = "EnhancedNotes"
+}

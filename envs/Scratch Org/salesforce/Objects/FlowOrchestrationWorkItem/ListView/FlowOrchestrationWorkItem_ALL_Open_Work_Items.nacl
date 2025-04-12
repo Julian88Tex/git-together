@@ -1,0 +1,16 @@
+salesforce.ListView FlowOrchestrationWorkItem_ALL_Open_Work_Items {
+  fullName = "FlowOrchestrationWorkItem.ALL_Open_Work_Items"
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "Status"
+      operation = "equals"
+      value = "ASG"
+    },
+  ]
+  label = "All Open Work Items"
+  _parent = [
+    salesforce.FlowOrchestrationWorkItem,
+  ]
+  _alias = "All Open Work Items"
+}

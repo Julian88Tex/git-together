@@ -1,0 +1,26 @@
+salesforce.DuplicateRule Account_Standard_Person_Account_Duplicate_Rule@vuuuu {
+  fullName = "Account.Standard_Person_Account_Duplicate_Rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Use one of these records?"
+  description = "Identify person accounts that duplicate other person accounts."
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = salesforce.PersonAccount
+      matchingRule = "Standard_PersonAccount_Match_Rule_v1_0"
+    },
+  ]
+  isActive = false
+  masterLabel = "Standard Person Account Duplicate Rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = "Report"
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.Standard_Person_Account_Duplicate_Rule"
+}

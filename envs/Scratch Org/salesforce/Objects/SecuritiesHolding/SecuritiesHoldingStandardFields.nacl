@@ -1,0 +1,230 @@
+type salesforce.SecuritiesHolding {
+  salesforce.Picklist AssetCategory {
+    apiName = "SecuritiesHolding.AssetCategory"
+    label = "Asset Category"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist AssetCategoryName {
+    apiName = "SecuritiesHolding.AssetCategoryName"
+    label = "Asset Category Name"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist AssetClass {
+    apiName = "SecuritiesHolding.AssetClass"
+    label = "Asset Class"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency GainLoss {
+    apiName = "SecuritiesHolding.GainLoss"
+    label = "Gain/Loss"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup HouseholdId {
+    apiName = "SecuritiesHolding.HouseholdId"
+    label = "Account ID"
+    relationshipName = "Household"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyId {
+    apiName = "SecuritiesHolding.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date InvestmentEndDate {
+    apiName = "SecuritiesHolding.InvestmentEndDate"
+    label = "Investment End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date InvestmentStartDate {
+    apiName = "SecuritiesHolding.InvestmentStartDate"
+    label = "Investment Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime LastUpdated {
+    apiName = "SecuritiesHolding.LastUpdated"
+    label = "Last Updated"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency MarketValue {
+    apiName = "SecuritiesHolding.MarketValue"
+    label = "Market Value"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "SecuritiesHolding.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "SecuritiesHolding.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Percent PercentChange {
+    apiName = "SecuritiesHolding.PercentChange"
+    label = "Percent Change"
+    scale = 2
+    precision = 16
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Price {
+    apiName = "SecuritiesHolding.Price"
+    label = "Price"
+    scale = 2
+    precision = 12
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PrimaryOwnerId {
+    apiName = "SecuritiesHolding.PrimaryOwnerId"
+    label = "Account ID"
+    relationshipName = "PrimaryOwner"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency PurchasePrice {
+    apiName = "SecuritiesHolding.PurchasePrice"
+    label = "Purchase Price"
+    scale = 2
+    precision = 12
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Sector {
+    apiName = "SecuritiesHolding.Sector"
+    label = "Sector"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Shares {
+    apiName = "SecuritiesHolding.Shares"
+    label = "Shares"
+    scale = 4
+    precision = 14
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "SecuritiesHolding.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "SecuritiesHolding.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "SecuritiesHolding.Id"
+    label = "Securities Holding ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SecuritiesHolding.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SecuritiesHolding.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SecuritiesHolding.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SecuritiesHolding.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SecuritiesHolding.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SecuritiesHolding.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

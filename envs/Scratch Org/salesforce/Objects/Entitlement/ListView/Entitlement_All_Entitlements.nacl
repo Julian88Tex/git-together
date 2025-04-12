@@ -1,0 +1,16 @@
+salesforce.ListView Entitlement_All_Entitlements {
+  fullName = "Entitlement.All_Entitlements"
+  columns = [
+    "ENTITLEMENT.NAME",
+    "ACCOUNT.NAME",
+    "ENTITLEMENT.STARTDATE",
+    "ENTITLEMENT.ENDDATE",
+    "ENTITLEMENT.STATUS",
+  ]
+  filterScope = "Everything"
+  label = "All Entitlements"
+  _parent = [
+    salesforce.Entitlement,
+  ]
+  _alias = "All Entitlements"
+}

@@ -1,0 +1,16 @@
+salesforce.HomePageLayout Dashboard_Home_Page_Default@s {
+  fullName = "Dashboard Home Page Default"
+  narrowComponents = [
+    "standard-StandardSearch",
+    "standard-CreateNew",
+    "standard-RecentItems",
+    "standard-UsefulLinks",
+    "standard-MessagesAndAlerts",
+  ]
+  wideComponents = [
+    "standard-Dashboard",
+    "standard-Tasks",
+    "standard-Calendar",
+  ]
+  _alias = "Dashboard Home Page Default"
+}

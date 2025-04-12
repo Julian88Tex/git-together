@@ -1,0 +1,9 @@
+salesforce.ListView InsuranceProfile_All_InsuranceProfiles {
+  fullName = "InsuranceProfile.All_InsuranceProfiles"
+  filterScope = "Everything"
+  label = "All Insurance Profiles"
+  _parent = [
+    salesforce.InsuranceProfile,
+  ]
+  _alias = "All Insurance Profiles"
+}

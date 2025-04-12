@@ -1,0 +1,127 @@
+salesforce.Layout InsurancePolicyCoverage_Insurance_Policy_Coverage_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.CoverageName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.Category
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.CategoryGroup
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.CategoryCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.CategoryGroupType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.LimitRange
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.LimitAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.LimitDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.InsurancePolicyParticipantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.EffectiveFromDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyCoverage.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.InsurancePolicyAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.LimitPercentage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.DeductibleAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.PremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.TermPremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.TermFeeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.TermTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.ContractGroupPlanId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyCoverage.field.EffectiveToDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicyCoverage-Insurance Policy Coverage Layout"
+  _parent = [
+    salesforce.InsurancePolicyCoverage,
+  ]
+  _alias = "InsurancePolicyCoverage-Insurance Policy Coverage Layout"
+}

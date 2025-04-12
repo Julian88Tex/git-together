@@ -1,0 +1,9 @@
+salesforce.ListView GroupClassContribution_All_null {
+  fullName = "GroupClassContribution.All_null"
+  filterScope = "Everything"
+  label = "All Group Class Contribution"
+  _parent = [
+    salesforce.GroupClassContribution,
+  ]
+  _alias = "All Group Class Contribution"
+}

@@ -1,0 +1,71 @@
+salesforce.Layout IdentityDocument_Identity_Document_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.IdentityDocument.field.RelatedLegalEntityId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.IdentityDocument.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.IdDocumentType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.IssueDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.IssuingAuthority
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.VerifiedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.IdentityDocument.field.VerifiedOn
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "IdentityDocument-Identity Document Layout"
+  _parent = [
+    salesforce.IdentityDocument,
+  ]
+  _alias = "IdentityDocument-Identity Document Layout"
+}

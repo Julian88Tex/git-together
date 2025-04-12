@@ -1,0 +1,117 @@
+salesforce.Layout CodeSet_Code_Set_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CodeSet.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.SourceSystem
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CodeSet.field.Code
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.IsCustomCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.CodeDescription
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.SystemVersion
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.CodeSetType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.EndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSet.field.IsPrimary
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSet.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSet.field.LastModifiedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSet.field.CreatedDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSet.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CodeSet-Code Set Layout"
+  _parent = [
+    salesforce.CodeSet,
+  ]
+  _alias = "CodeSet-Code Set Layout"
+}

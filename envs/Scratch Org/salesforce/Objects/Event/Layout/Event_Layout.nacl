@@ -1,0 +1,187 @@
+salesforce.Layout Event_Event_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Calendar Event Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.IsAllDayEvent
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.StartDateTime
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.EndDateTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.WhatId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.WhoId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.IsPrivate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Other Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.Location
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.ShowAs
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.Phone
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.Email
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Event.field.WhoId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Event.field.WhatId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedEventAttendeeAccept"
+    },
+    {
+      relatedList = "RelatedEventAttendeeNotDecided"
+    },
+    {
+      relatedList = "RelatedEventAttendeeDecline"
+    },
+    {
+      relatedList = "RelatedActivityAttachmentList"
+    },
+  ]
+  relatedObjects = [
+    "WhoId",
+    "WhatId",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Event-Event Layout"
+  _parent = [
+    salesforce.Event,
+  ]
+  _alias = "Event-Event Layout"
+}

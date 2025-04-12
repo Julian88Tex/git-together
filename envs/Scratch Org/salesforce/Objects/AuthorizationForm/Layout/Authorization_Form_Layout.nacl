@@ -1,0 +1,83 @@
+salesforce.Layout AuthorizationForm_Authorization_Form_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationForm.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.EffectiveFromDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.DefaultAuthFormTextId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.AssociatedRegulation
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.RevisionNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.EffectiveToDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.IsSignatureRequired
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationForm.field.ConsentDurationDayCount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Locale",
+      ]
+      relatedList = "AuthorizationFormTextRelatedList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AuthorizationForm-Authorization Form Layout"
+  _parent = [
+    salesforce.AuthorizationForm,
+  ]
+  _alias = "AuthorizationForm-Authorization Form Layout"
+}

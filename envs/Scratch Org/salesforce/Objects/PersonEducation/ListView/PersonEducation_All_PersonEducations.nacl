@@ -1,0 +1,9 @@
+salesforce.ListView PersonEducation_All_PersonEducations {
+  fullName = "PersonEducation.All_PersonEducations"
+  filterScope = "Everything"
+  label = "All Person Education"
+  _parent = [
+    salesforce.PersonEducation,
+  ]
+  _alias = "All Person Education"
+}

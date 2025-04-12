@@ -1,0 +1,88 @@
+salesforce.Layout LoanApplicantIncome_Loan_Applicant_Income_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantIncome.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantIncome.field.LoanApplicationId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantIncome.field.LoanApplicantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantIncome.field.IncomeSourceType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantIncome.field.MonthlyIncomeAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantIncome.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantIncome.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantIncome.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantIncome-Loan Applicant Income Layout"
+  _parent = [
+    salesforce.LoanApplicantIncome,
+  ]
+  _alias = "LoanApplicantIncome-Loan Applicant Income Layout"
+}

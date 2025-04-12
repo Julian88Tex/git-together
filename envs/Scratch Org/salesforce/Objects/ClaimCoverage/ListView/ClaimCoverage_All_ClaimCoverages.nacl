@@ -1,0 +1,9 @@
+salesforce.ListView ClaimCoverage_All_ClaimCoverages {
+  fullName = "ClaimCoverage.All_ClaimCoverages"
+  filterScope = "Everything"
+  label = "All Claim Coverages"
+  _parent = [
+    salesforce.ClaimCoverage,
+  ]
+  _alias = "All Claim Coverages"
+}

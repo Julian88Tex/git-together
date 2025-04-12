@@ -1,0 +1,137 @@
+salesforce.Layout PersonEducation_Person_Education_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Education Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PersonEducation.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.CompletionDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.IdentifierIssuer
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.Identifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.UserId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.IndividualId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.VerifiedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.VerificationStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.EducationLevel
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.GraduationDate
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PersonEducation.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PersonEducation.field.CreatedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PersonEducation.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.PersonEducation.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PersonEducation.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PersonEducation-Person Education Layout"
+  _parent = [
+    salesforce.PersonEducation,
+  ]
+  _alias = "PersonEducation-Person Education Layout"
+}

@@ -1,0 +1,95 @@
+salesforce.Layout InsurancePolicyTransaction_Insurance_Policy_Transaction_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyTransaction.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyTransaction.field.InsurancePolicyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.InsurancePolicyVersionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.ParentTransactionId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.EffectiveFromDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionFeeAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsurancePolicyTransaction.field.TotalTransactionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionEffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.TransactionPostedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyTransaction.field.Category
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicyTransaction-Insurance Policy Transaction Layout"
+  _parent = [
+    salesforce.InsurancePolicyTransaction,
+  ]
+  _alias = "InsurancePolicyTransaction-Insurance Policy Transaction Layout"
+}

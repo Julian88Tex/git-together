@@ -1,0 +1,51 @@
+salesforce.Layout BusinessBrand_Business_Brand_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BusinessBrand.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessBrand.field.ParentId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessBrand.field.OrgId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "BusinessBrand-Business Brand Layout"
+  _parent = [
+    salesforce.BusinessBrand,
+  ]
+  _alias = "BusinessBrand-Business Brand Layout"
+}

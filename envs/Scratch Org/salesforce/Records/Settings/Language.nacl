@@ -1,0 +1,14 @@
+salesforce.LanguageSettings {
+  enableCanadaIcuFormat = true
+  enableDataTranslation = false
+  enableEndUserLanguages = false
+  enableICULocaleDateFormat = true
+  enableLanguageExtensionPackage = false
+  enableLocalNamesForStdObjects = false
+  enableLocaleInsensitiveFiltering = false
+  enablePlatformLanguages = false
+  enableTranslationWorkbench = true
+  useLanguageFallback = false
+  fullName = "Language"
+  _alias = "Language"
+}

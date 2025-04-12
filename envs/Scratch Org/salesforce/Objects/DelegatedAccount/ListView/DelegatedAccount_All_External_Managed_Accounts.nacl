@@ -1,0 +1,9 @@
+salesforce.ListView DelegatedAccount_All_External_Managed_Accounts {
+  fullName = "DelegatedAccount.All_External_Managed_Accounts"
+  filterScope = "Everything"
+  label = "All External Managed Accounts"
+  _parent = [
+    salesforce.DelegatedAccount,
+  ]
+  _alias = "All External Managed Accounts"
+}

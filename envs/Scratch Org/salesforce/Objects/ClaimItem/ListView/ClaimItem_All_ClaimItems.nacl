@@ -1,0 +1,9 @@
+salesforce.ListView ClaimItem_All_ClaimItems {
+  fullName = "ClaimItem.All_ClaimItems"
+  filterScope = "Everything"
+  label = "All Claim Items"
+  _parent = [
+    salesforce.ClaimItem,
+  ]
+  _alias = "All Claim Items"
+}

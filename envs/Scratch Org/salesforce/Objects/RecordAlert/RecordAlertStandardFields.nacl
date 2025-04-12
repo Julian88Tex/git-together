@@ -1,0 +1,172 @@
+type salesforce.RecordAlert {
+  salesforce.Text Description {
+    apiName = "RecordAlert.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveDate {
+    apiName = "RecordAlert.EffectiveDate"
+    label = "Effective Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "RecordAlert.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "RecordAlert.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "RecordAlert.ParentId"
+    label = "Parent Record ID"
+    relationshipName = "Parent"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RecordAlertCategoryId {
+    apiName = "RecordAlert.RecordAlertCategoryId"
+    label = "Record Alert Category ID"
+    relationshipName = "RecordAlertCategory"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Severity {
+    apiName = "RecordAlert.Severity"
+    inlineHelpText = "The severity value defined overwrites the default value defined on the record alert category."
+    label = "Severity"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime SnoozeUntilDate {
+    apiName = "RecordAlert.SnoozeUntilDate"
+    inlineHelpText = "Pause the alert until this date."
+    label = "Snooze Until Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "RecordAlert.SourceSystemIdentifier"
+    label = "Source System ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Subject {
+    apiName = "RecordAlert.Subject"
+    label = "Subject"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ValidUntilDate {
+    apiName = "RecordAlert.ValidUntilDate"
+    label = "Valid Until Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WhatId {
+    apiName = "RecordAlert.WhatId"
+    label = "What Record ID"
+    _required = true
+    relationshipName = "What"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "RecordAlert.Id"
+    label = "Record Alert ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "RecordAlert.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "RecordAlert.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "RecordAlert.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "RecordAlert.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "RecordAlert.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "RecordAlert.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "RecordAlert.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

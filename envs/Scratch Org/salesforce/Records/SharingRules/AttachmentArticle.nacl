@@ -1,0 +1,4 @@
+salesforce.SharingRules AttachmentArticle {
+  fullName = "AttachmentArticle"
+  _alias = "AttachmentArticle"
+}

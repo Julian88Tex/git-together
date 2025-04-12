@@ -1,0 +1,67 @@
+salesforce.Layout ClaimPaymentSummary_Claim_Payment_Summary_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimPaymentSummary.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ClaimPaymentSummary.field.PaymentAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimPaymentSummary.field.PaymentIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimPaymentSummary.field.CancellationDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimPaymentSummary.field.ClaimId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimPaymentSummary.field.PaymentStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimPaymentSummary.field.PaymentDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ClaimPaymentSummary-Claim Payment Summary Layout"
+  _parent = [
+    salesforce.ClaimPaymentSummary,
+  ]
+  _alias = "ClaimPaymentSummary-Claim Payment Summary Layout"
+}

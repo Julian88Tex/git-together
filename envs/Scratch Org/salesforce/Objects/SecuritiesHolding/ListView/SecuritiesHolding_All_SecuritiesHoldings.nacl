@@ -1,0 +1,9 @@
+salesforce.ListView SecuritiesHolding_All_SecuritiesHoldings {
+  fullName = "SecuritiesHolding.All_SecuritiesHoldings"
+  filterScope = "Everything"
+  label = "All Securities Holdings"
+  _parent = [
+    salesforce.SecuritiesHolding,
+  ]
+  _alias = "All Securities Holdings"
+}

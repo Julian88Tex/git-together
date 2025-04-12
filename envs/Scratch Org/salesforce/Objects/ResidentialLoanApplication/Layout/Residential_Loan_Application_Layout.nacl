@@ -1,0 +1,268 @@
+salesforce.Layout ResidentialLoanApplication_Residential_Loan_Application_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ResidentialLoanApplication.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OpportunityId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.MortgageProgramType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OtherMortgageProgramType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OtherAmortizationType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.LoanPurpose
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OtherLoanPurpose
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsBorrowerCommPropState
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsPropertyCommPropState
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsContractConversion
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsRenovation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsConstructionConversion
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsSingleClosing
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.ImprovementCost
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.LotAcquiredDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.LotOriginalCost
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.RefinanceType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.RefinanceProgramType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OtherRefinanceProgType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsEnergyRelImprovement
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsSubjectToPriorityLien
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.ProjectType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.MortgageLienType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.MonthsBeforeFirstAdj
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.MonthsBetweenAdjustments
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsBalloon
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.BalloonTermMonths
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsInterestOnly
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IntOnlyTermMonthCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsNegativeAmortization
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.HasPrepaymentPenalty
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.PrepayPenaltyTermMonth
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.IsTempIntRateBuydown
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.InitialBuydownRate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.HasOtherLoanFeature
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OtherLoanFeature
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.EstateHoldType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.LeaseHoldExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TitleType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TrustTitleType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.NativeLandTenure
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.InterestRate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.AmortizationTerm
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.AmortizationType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TotalFinancialAssetAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TotalOtherAssetAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TotalFinLiabilityMonthlyAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.TotalOtherFinLiabilityMonthlyAmt
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ResidentialLoanApplication.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ResidentialLoanApplication.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ResidentialLoanApplication.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ResidentialLoanApplication-Residential Loan Application Layout"
+  _parent = [
+    salesforce.ResidentialLoanApplication,
+  ]
+  _alias = "ResidentialLoanApplication-Residential Loan Application Layout"
+}

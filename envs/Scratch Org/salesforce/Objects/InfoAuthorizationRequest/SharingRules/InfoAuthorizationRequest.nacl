@@ -1,0 +1,7 @@
+salesforce.SharingRules InfoAuthorizationRequest {
+  fullName = "InfoAuthorizationRequest"
+  _parent = [
+    salesforce.InfoAuthorizationRequest,
+  ]
+  _alias = "InfoAuthorizationRequest"
+}

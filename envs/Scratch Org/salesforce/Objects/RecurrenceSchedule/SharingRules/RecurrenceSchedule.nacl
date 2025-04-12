@@ -1,0 +1,7 @@
+salesforce.SharingRules RecurrenceSchedule {
+  fullName = "RecurrenceSchedule"
+  _parent = [
+    salesforce.RecurrenceSchedule,
+  ]
+  _alias = "RecurrenceSchedule"
+}

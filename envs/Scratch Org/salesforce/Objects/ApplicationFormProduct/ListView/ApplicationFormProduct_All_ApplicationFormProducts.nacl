@@ -1,0 +1,9 @@
+salesforce.ListView ApplicationFormProduct_All_ApplicationFormProducts {
+  fullName = "ApplicationFormProduct.All_ApplicationFormProducts"
+  filterScope = "Everything"
+  label = "All Application Form Products"
+  _parent = [
+    salesforce.ApplicationFormProduct,
+  ]
+  _alias = "All Application Form Products"
+}

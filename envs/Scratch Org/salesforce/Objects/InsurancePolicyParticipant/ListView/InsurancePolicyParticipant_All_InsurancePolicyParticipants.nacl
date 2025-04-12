@@ -1,0 +1,9 @@
+salesforce.ListView InsurancePolicyParticipant_All_InsurancePolicyParticipants {
+  fullName = "InsurancePolicyParticipant.All_InsurancePolicyParticipants"
+  filterScope = "Everything"
+  label = "All Insurance Policy Participants"
+  _parent = [
+    salesforce.InsurancePolicyParticipant,
+  ]
+  _alias = "All Insurance Policy Participants"
+}

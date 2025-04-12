@@ -1,0 +1,55 @@
+salesforce.Layout ClaimTeamMember_Claim_Team_Member_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "ClaimTeamMemberDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimTeamMember.field.ClaimId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimTeamMember.field.IsActive
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ClaimTeamMember.field.Role
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimTeamMember.field.UserId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ClaimTeamMember-Claim Team Member Layout"
+  _parent = [
+    salesforce.ClaimTeamMember,
+  ]
+  _alias = "ClaimTeamMember-Claim Team Member Layout"
+}

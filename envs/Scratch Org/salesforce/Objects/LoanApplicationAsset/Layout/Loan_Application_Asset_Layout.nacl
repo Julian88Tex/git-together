@@ -1,0 +1,128 @@
+salesforce.Layout LoanApplicationAsset_Loan_Application_Asset_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationAsset.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.AssetType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.AccountNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.RealEstateAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.DispositionType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.PresentMarketValue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.GrossMonthlyRentalIncome
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.RealEstateMonthlyExpense
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.NetMonthlyRentalIncome
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.AccountType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.FinancialInstitutionName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.CashOrMarketValue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.IsJointAsset
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.AssetClass
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationAsset.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationAsset.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationAsset.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicationAsset-Loan Application Asset Layout"
+  _parent = [
+    salesforce.LoanApplicationAsset,
+  ]
+  _alias = "LoanApplicationAsset-Loan Application Asset Layout"
+}

@@ -1,0 +1,271 @@
+type salesforce.Order {
+  salesforce.Lookup AccountId {
+    apiName = "Order.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown AccountNumber {
+    apiName = "Order.AccountNumber"
+    _hidden_value = true
+  }
+  salesforce.Lookup ActivatedById {
+    apiName = "Order.ActivatedById"
+    label = "Activated By ID"
+    relationshipName = "ActivatedBy"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ActivatedDate {
+    apiName = "Order.ActivatedDate"
+    label = "Activated Date"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BillToContactId {
+    apiName = "Order.BillToContactId"
+    _hidden_value = true
+  }
+  salesforce.Address BillingAddress {
+    apiName = "Order.BillingAddress"
+    label = "Billing Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CompanyAuthorizedById {
+    apiName = "Order.CompanyAuthorizedById"
+    label = "Company Authorized By ID"
+    relationshipName = "CompanyAuthorizedBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown CompanyAuthorizedDate {
+    apiName = "Order.CompanyAuthorizedDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown ContractEndDate {
+    apiName = "Order.ContractEndDate"
+    _hidden_value = true
+  }
+  salesforce.Lookup ContractId {
+    apiName = "Order.ContractId"
+    label = "Contract ID"
+    relationshipName = "Contract"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown ContractName {
+    apiName = "Order.ContractName"
+    _hidden_value = true
+  }
+  salesforce.Lookup CustomerAuthorizedById {
+    apiName = "Order.CustomerAuthorizedById"
+    label = "Customer Authorized By ID"
+    relationshipName = "CustomerAuthorizedBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown CustomerAuthorizedDate {
+    apiName = "Order.CustomerAuthorizedDate"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Order.Description"
+    label = "Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveDate {
+    apiName = "Order.EffectiveDate"
+    label = "Order Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "Order.EndDate"
+    label = "Order End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsReductionOrder {
+    apiName = "Order.IsReductionOrder"
+    label = "Reduction Order"
+    defaultValue = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Unknown Name {
+    apiName = "Order.Name"
+    _hidden_value = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "Order.OpportunityId"
+    _hidden_value = true
+  }
+  salesforce.Unknown OrderReferenceNumber {
+    apiName = "Order.OrderReferenceNumber"
+    _hidden_value = true
+  }
+  salesforce.Lookup OriginalOrderId {
+    apiName = "Order.OriginalOrderId"
+    label = "Order ID"
+    relationshipName = "OriginalOrder"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Order.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown PoDate {
+    apiName = "Order.PoDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown PoNumber {
+    apiName = "Order.PoNumber"
+    _hidden_value = true
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "Order.Pricebook2Id"
+    label = "Price Book ID"
+    relationshipName = "Pricebook2"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ShipToContactId {
+    apiName = "Order.ShipToContactId"
+    _hidden_value = true
+  }
+  salesforce.Address ShippingAddress {
+    apiName = "Order.ShippingAddress"
+    label = "Shipping Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Order.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.OrderStatus
+  }
+  salesforce.Currency TotalAmount {
+    apiName = "Order.TotalAmount"
+    label = "Order Amount"
+    _required = true
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Order.Type"
+    label = "Order Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Order.Id"
+    label = "Order ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist StatusCode {
+    apiName = "Order.StatusCode"
+    label = "Status Category"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.AutoNumber OrderNumber {
+    apiName = "Order.OrderNumber"
+    label = "Order Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Order.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Order.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Order.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Order.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Order.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Order.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

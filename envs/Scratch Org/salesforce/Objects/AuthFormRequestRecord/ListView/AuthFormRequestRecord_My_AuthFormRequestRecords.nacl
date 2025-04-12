@@ -1,0 +1,9 @@
+salesforce.ListView AuthFormRequestRecord_My_AuthFormRequestRecords {
+  fullName = "AuthFormRequestRecord.My_AuthFormRequestRecords"
+  filterScope = "Mine"
+  label = "My Authorizable Form Request Records"
+  _parent = [
+    salesforce.AuthFormRequestRecord,
+  ]
+  _alias = "My Authorizable Form Request Records"
+}

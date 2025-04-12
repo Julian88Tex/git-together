@@ -1,0 +1,4 @@
+salesforce.SharingRules ConvCoachingRecommendation {
+  fullName = "ConvCoachingRecommendation"
+  _alias = "ConvCoachingRecommendation"
+}

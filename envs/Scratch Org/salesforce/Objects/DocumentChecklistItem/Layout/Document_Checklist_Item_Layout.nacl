@@ -1,0 +1,86 @@
+salesforce.Layout DocumentChecklistItem_Document_Checklist_Item_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.DocumentChecklistItem.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DocumentChecklistItem.field.DocumentTypeId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.DocumentChecklistItem.field.ParentRecordId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DocumentChecklistItem.field.Instruction
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DocumentChecklistItem.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.DocumentChecklistItem.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DocumentChecklistItem.field.WhoId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DocumentChecklistItem.field.IsRequired
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "CreatedDate",
+        "StepStatus",
+        "OriginalActor",
+        "Actor",
+        "Comments",
+      ]
+      relatedList = "RelatedProcessHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "DocumentChecklistItem-Document Checklist Item Layout"
+  _parent = [
+    salesforce.DocumentChecklistItem,
+  ]
+  _alias = "DocumentChecklistItem-Document Checklist Item Layout"
+}

@@ -1,0 +1,138 @@
+type salesforce.ClaimParticipant {
+  salesforce.MasterDetail ClaimId {
+    apiName = "ClaimParticipant.ClaimId"
+    label = "Claim ID"
+    _required = true
+    relationshipName = "Claim"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyParticipantId {
+    apiName = "ClaimParticipant.InsurancePolicyParticipantId"
+    label = "Insurance Policy Participant ID"
+    relationshipName = "InsurancePolicyParticipant"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsInjured {
+    apiName = "ClaimParticipant.IsInjured"
+    label = "Injured"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ParticipantAccountId {
+    apiName = "ClaimParticipant.ParticipantAccountId"
+    label = "Account ID"
+    relationshipName = "ParticipantAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ParticipantContactId {
+    apiName = "ClaimParticipant.ParticipantContactId"
+    label = "Contact ID"
+    relationshipName = "ParticipantContact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Roles {
+    apiName = "ClaimParticipant.Roles"
+    label = "Roles"
+    _required = true
+    restricted = false
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "ClaimParticipant.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "ClaimParticipant.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ClaimParticipant.Id"
+    label = "Claim Participant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ClaimParticipant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ClaimParticipant.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ClaimParticipant.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ClaimParticipant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ClaimParticipant.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ClaimParticipant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ClaimParticipant.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

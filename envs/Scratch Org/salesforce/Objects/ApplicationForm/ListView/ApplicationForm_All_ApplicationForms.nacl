@@ -1,0 +1,9 @@
+salesforce.ListView ApplicationForm_All_ApplicationForms {
+  fullName = "ApplicationForm.All_ApplicationForms"
+  filterScope = "Everything"
+  label = "All Application Forms"
+  _parent = [
+    salesforce.ApplicationForm,
+  ]
+  _alias = "All Application Forms"
+}

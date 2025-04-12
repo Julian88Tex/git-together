@@ -1,0 +1,26 @@
+salesforce.CommunitiesSettings {
+  applyLoginPageTypeToEmbeddedLogin = false
+  blockEmbeddedLoginUnknownURLRedirect = false
+  canModerateAllFeedPosts = false
+  embeddedVisualforcePages = false
+  enableCommunityWorkspaces = true
+  enableCspContactVisibilityPref = false
+  enableCspNotesOnAccConPref = true
+  enableEnablePRM = false
+  enableExternalAccHierPref = false
+  enableGuestPermDisOptOutCruc = false
+  enableGuestSecurityOptOutCruc = false
+  enableGuvSecurityOptOutPref = false
+  enableInviteChatterGuestEnabled = true
+  enableNameFieldsUserPIIEnabled = false
+  enableNetPortalUserReportOpts = false
+  enableNetworksEnabled = true
+  enableOotbProfExtUserOpsEnable = false
+  enablePRMAccRelPref = false
+  enablePowerCustomerCaseStatus = false
+  enablePreventBadgeGuestAccess = true
+  enableRelaxPartnerAccountFieldPref = false
+  enableUnsupportedBrowserModalPref = false
+  fullName = "Communities"
+  _alias = "Communities"
+}

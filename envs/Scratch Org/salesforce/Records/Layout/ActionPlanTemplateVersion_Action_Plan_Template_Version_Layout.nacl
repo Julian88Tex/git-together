@@ -1,0 +1,64 @@
+salesforce.Layout ActionPlanTemplateVersion_Action_Plan_Template_Version_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "Name"
+            },
+            {
+              behavior = "Edit"
+              field = "ActionPlanTemplateId"
+            },
+            {
+              behavior = "Edit"
+              field = "Status"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "ActivationDateTime"
+            },
+            {
+              behavior = "Readonly"
+              field = "InactivationDateTime"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+      ]
+      relatedList = "ActionPlanTemplateItems"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlanTemplateVersion-Action Plan Template Version Layout"
+  _alias = "ActionPlanTemplateVersion-Action Plan Template Version Layout"
+}

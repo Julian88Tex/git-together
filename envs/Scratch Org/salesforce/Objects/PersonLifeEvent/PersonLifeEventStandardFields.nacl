@@ -1,0 +1,180 @@
+type salesforce.PersonLifeEvent {
+  salesforce.DateTime EventDate {
+    apiName = "PersonLifeEvent.EventDate"
+    label = "Event Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea EventDescription {
+    apiName = "PersonLifeEvent.EventDescription"
+    label = "Event Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address EventLocation {
+    apiName = "PersonLifeEvent.EventLocation"
+    label = "Event Location"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist EventType {
+    apiName = "PersonLifeEvent.EventType"
+    label = "Event Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime ExpirationDate {
+    apiName = "PersonLifeEvent.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea ExpirationDescription {
+    apiName = "PersonLifeEvent.ExpirationDescription"
+    label = "Expiration Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsExpired {
+    apiName = "PersonLifeEvent.IsExpired"
+    label = "Expired"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsTentative {
+    apiName = "PersonLifeEvent.IsTentative"
+    label = "Tentative"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "PersonLifeEvent.Name"
+    label = "Event Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PersonLifeEvent.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail PrimaryPersonId {
+    apiName = "PersonLifeEvent.PrimaryPersonId"
+    label = "Contact ID"
+    _required = true
+    relationshipName = "PrimaryPerson"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup RelatedPersonId {
+    apiName = "PersonLifeEvent.RelatedPersonId"
+    label = "Contact ID"
+    relationshipName = "RelatedPerson"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "PersonLifeEvent.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "PersonLifeEvent.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "PersonLifeEvent.Id"
+    label = "Person Life Event ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PersonLifeEvent.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PersonLifeEvent.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PersonLifeEvent.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PersonLifeEvent.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PersonLifeEvent.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PersonLifeEvent.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

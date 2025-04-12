@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicationAsset_All_LoanApplicationAssets {
+  fullName = "LoanApplicationAsset.All_LoanApplicationAssets"
+  filterScope = "Everything"
+  label = "All Loan Application Assets"
+  _parent = [
+    salesforce.LoanApplicationAsset,
+  ]
+  _alias = "All Loan Application Assets"
+}

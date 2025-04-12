@@ -1,0 +1,7 @@
+salesforce.SharingRules ApprovalSubmission {
+  fullName = "ApprovalSubmission"
+  _parent = [
+    salesforce.ApprovalSubmission,
+  ]
+  _alias = "ApprovalSubmission"
+}

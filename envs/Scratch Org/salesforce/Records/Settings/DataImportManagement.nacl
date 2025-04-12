@@ -1,0 +1,5 @@
+salesforce.DataImportManagementSettings {
+  enableEasyImport = true
+  fullName = "DataImportManagement"
+  _alias = "DataImportManagement"
+}

@@ -1,0 +1,176 @@
+salesforce.Layout LoanApplicant_Loan_Applicant_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicant.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicant.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.BorrowerType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.MaritalStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.DependentCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.DependentsAge
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.IsJointCredit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.EthnicityType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.RaceType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.GenderType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.CitizenshipStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.HasMilitaryService
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.IsActiveMilitary
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.MilitaryTourExpirationMonth
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.MilitaryTourExpirationYear
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.WasActiveMilitary
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.WasNonActivatedService
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.IsSurvivingMilitarySpouse
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.PreferredLanguage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.EthnicitySubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.OtherEthnicitySubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.AsianRaceSubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.OtherAsianRaceSubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.PacIslandSubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.OtherPacIslandSubType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.TribeName
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicant.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicant.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicant.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicant-Loan Applicant Layout"
+  _parent = [
+    salesforce.LoanApplicant,
+  ]
+  _alias = "LoanApplicant-Loan Applicant Layout"
+}

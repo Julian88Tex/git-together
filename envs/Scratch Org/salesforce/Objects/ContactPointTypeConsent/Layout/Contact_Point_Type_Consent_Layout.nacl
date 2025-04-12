@@ -1,0 +1,100 @@
+salesforce.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointTypeConsent.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointTypeConsent.field.PartyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.PartyRoleId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.DataUsePurposeId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.EffectiveFrom
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.CaptureSource
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.CaptureDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.EngagementChannelTypeId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.ContactPointType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.BusinessBrandId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointTypeConsent.field.PrivacyConsentStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.EffectiveTo
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.CaptureContactPointType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointTypeConsent.field.DoubleConsentCaptureDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContactPointTypeConsent-Contact Point Type Consent Layout"
+  _parent = [
+    salesforce.ContactPointTypeConsent,
+  ]
+  _alias = "ContactPointTypeConsent-Contact Point Type Consent Layout"
+}

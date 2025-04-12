@@ -1,0 +1,7 @@
+salesforce.SharingRules InsurancePolicyAsset {
+  fullName = "InsurancePolicyAsset"
+  _parent = [
+    salesforce.InsurancePolicyAsset,
+  ]
+  _alias = "InsurancePolicyAsset"
+}

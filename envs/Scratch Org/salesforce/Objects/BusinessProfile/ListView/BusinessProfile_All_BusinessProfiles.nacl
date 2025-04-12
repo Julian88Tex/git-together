@@ -1,0 +1,9 @@
+salesforce.ListView BusinessProfile_All_BusinessProfiles {
+  fullName = "BusinessProfile.All_BusinessProfiles"
+  filterScope = "Everything"
+  label = "All Business Profiles"
+  _parent = [
+    salesforce.BusinessProfile,
+  ]
+  _alias = "All Business Profiles"
+}

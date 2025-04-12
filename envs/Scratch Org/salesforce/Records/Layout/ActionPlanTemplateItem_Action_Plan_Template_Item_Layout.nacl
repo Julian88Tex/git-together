@@ -1,0 +1,56 @@
+salesforce.Layout ActionPlanTemplateItem_Action_Plan_Template_Item_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Action Plan Template Item Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "Name"
+            },
+            {
+              behavior = "Edit"
+              field = "DisplayOrder"
+            },
+            {
+              behavior = "Edit"
+              field = "IsRequired"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "ActionPlanTemplateVersionId"
+            },
+            {
+              behavior = "Required"
+              field = "ItemEntityType"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ActionPlanTemplateItem-Action Plan Template Item Layout"
+  _alias = "ActionPlanTemplateItem-Action Plan Template Item Layout"
+}

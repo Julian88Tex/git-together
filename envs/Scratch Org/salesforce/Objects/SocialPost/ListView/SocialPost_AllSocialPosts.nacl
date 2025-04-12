@@ -1,0 +1,19 @@
+salesforce.ListView SocialPost_AllSocialPosts {
+  fullName = "SocialPost.AllSocialPosts"
+  columns = [
+    salesforce.SocialPost.field.Name,
+    salesforce.SocialPost.field.Content,
+    salesforce.SocialPost.field.Posted,
+    salesforce.SocialPost.field.Provider,
+    "Persona",
+    "Parent",
+    salesforce.SocialPost.field.MessageType,
+    salesforce.SocialPost.field.ReviewedStatus,
+  ]
+  filterScope = "Everything"
+  label = "All social posts"
+  _parent = [
+    salesforce.SocialPost,
+  ]
+  _alias = "All social posts"
+}

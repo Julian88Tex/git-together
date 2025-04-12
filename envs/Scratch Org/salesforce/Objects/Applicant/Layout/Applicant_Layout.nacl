@@ -1,0 +1,129 @@
+salesforce.Layout Applicant_Applicant_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Applicant.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Applicant.field.ApplicationFormId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.FirstName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.MiddleName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Prefix
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.BirthDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.UniqueReferenceNumber
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.LastName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Salutation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Suffix
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Stage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.PhoneType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Applicant.field.Role
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Applicant.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Applicant.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Applicant-Applicant Layout"
+  _parent = [
+    salesforce.Applicant,
+  ]
+  _alias = "Applicant-Applicant Layout"
+}

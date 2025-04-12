@@ -1,0 +1,79 @@
+salesforce.Layout BusinessMilestone_Business_Milestone_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BusinessMilestone.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.BusinessMilestone.field.MilestoneDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.BusinessMilestone.field.PrimaryAccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.IsTentative
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.ExpirationDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BusinessMilestone.field.MilestoneType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.MilestoneDescription
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.MilestoneSiteId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.IsExpired
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessMilestone.field.ExpirationDescription
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "BusinessMilestone-Business Milestone Layout"
+  _parent = [
+    salesforce.BusinessMilestone,
+  ]
+  _alias = "BusinessMilestone-Business Milestone Layout"
+}

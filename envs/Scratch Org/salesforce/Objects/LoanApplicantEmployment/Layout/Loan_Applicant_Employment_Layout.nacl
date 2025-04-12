@@ -1,0 +1,156 @@
+salesforce.Layout LoanApplicantEmployment_Loan_Applicant_Employment_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantEmployment.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.LoanApplicationId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantEmployment.field.LoanApplicantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.EmployerName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.EmployerAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.IsSelfEmployed
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.CurrentJobYearCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.CurrentJobAdditionalMonthCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.JobTitle
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.EmployerPhone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.EndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyIncome
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.IsRelToTransactionParty
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.IsLessThanQuarterShare
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyBaseIncomeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyOvertimeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyBonusAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyCommissionAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyMilitaryEntlAmt
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyOtherIncomeAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantEmployment.field.MonthlyTotalIncomeAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantEmployment.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantEmployment.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantEmployment.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantEmployment-Loan Applicant Employment Layout"
+  _parent = [
+    salesforce.LoanApplicantEmployment,
+  ]
+  _alias = "LoanApplicantEmployment-Loan Applicant Employment Layout"
+}

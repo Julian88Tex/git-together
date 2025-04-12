@@ -1,0 +1,6 @@
+salesforce.Community Q_26A@p {
+  fullName = "Q%26A"
+  active = true
+  showInPortal = true
+  _alias = "Q%26A"
+}

@@ -1,0 +1,101 @@
+salesforce.Layout ApplicationFormProduct_Application_Form_Product_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationFormProduct.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ApplicationFormProduct.field.ApplicationFormId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.OwnershipType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.IsAtmCardRequired
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.Stage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.ProductId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.IsCheckbookRequired
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.HasElectronicStatement
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationFormProduct.field.ApplicantVisibleStatus
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationFormProduct.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationFormProduct.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ApplicationFormProduct-Application Form Product Layout"
+  _parent = [
+    salesforce.ApplicationFormProduct,
+  ]
+  _alias = "ApplicationFormProduct-Application Form Product Layout"
+}

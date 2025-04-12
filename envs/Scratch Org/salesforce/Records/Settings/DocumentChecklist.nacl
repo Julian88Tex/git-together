@@ -1,0 +1,6 @@
+salesforce.DocumentChecklistSettings {
+  dciCustomSharing = false
+  deleteDCIWithFiles = false
+  fullName = "DocumentChecklist"
+  _alias = "DocumentChecklist"
+}

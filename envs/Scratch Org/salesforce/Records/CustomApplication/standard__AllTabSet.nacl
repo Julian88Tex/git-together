@@ -1,0 +1,24 @@
+salesforce.CustomApplication standard__AllTabSet {
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-ContactPointTypeConsent",
+    "standard-DataUsePurpose",
+    "standard-DataUseLegalBasis",
+    "standard-AuthorizationForm",
+    "standard-AuthorizationFormConsent",
+    "standard-AuthorizationFormDataUse",
+    "standard-AuthorizationFormText",
+    "standard-CommSubscription",
+    "standard-EngagementChannelType",
+    "standard-CommSubscriptionChannelType",
+    "standard-CommSubscriptionConsent",
+    "standard-CommSubscriptionTiming",
+    "standard-PartyConsent",
+  ]
+  fullName = "standard__AllTabSet"
+  _alias = "standard__AllTabSet"
+}

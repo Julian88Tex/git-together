@@ -1,0 +1,164 @@
+type salesforce.InsurancePolicySurcharge {
+  salesforce.Picklist ApplicableObjectType {
+    apiName = "InsurancePolicySurcharge.ApplicableObjectType"
+    label = "Surcharged Item"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyAssetId {
+    apiName = "InsurancePolicySurcharge.InsurancePolicyAssetId"
+    label = "Insurance Policy Asset ID"
+    relationshipName = "InsurancePolicyAsset"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyCoverageId {
+    apiName = "InsurancePolicySurcharge.InsurancePolicyCoverageId"
+    label = "Insurance Policy Coverage ID"
+    relationshipName = "InsurancePolicyCoverage"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail InsurancePolicyId {
+    apiName = "InsurancePolicySurcharge.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    _required = true
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyParticipantId {
+    apiName = "InsurancePolicySurcharge.InsurancePolicyParticipantId"
+    label = "Insurance Policy Participant ID"
+    relationshipName = "InsurancePolicyParticipant"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyTransactionId {
+    apiName = "InsurancePolicySurcharge.InsurancePolicyTransactionId"
+    label = "Insurance Policy Transaction ID"
+    relationshipName = "InsurancePolicyTransaction"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown IsProrationAllowed {
+    apiName = "InsurancePolicySurcharge.IsProrationAllowed"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsRefundAllowed {
+    apiName = "InsurancePolicySurcharge.IsRefundAllowed"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "InsurancePolicySurcharge.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "InsurancePolicySurcharge.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "InsurancePolicySurcharge.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SurchargeAmount {
+    apiName = "InsurancePolicySurcharge.SurchargeAmount"
+    label = "Surcharge Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown TermSurchargeAmount {
+    apiName = "InsurancePolicySurcharge.TermSurchargeAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown Type {
+    apiName = "InsurancePolicySurcharge.Type"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "InsurancePolicySurcharge.Id"
+    label = "Insurance Policy Surcharge ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsurancePolicySurcharge.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsurancePolicySurcharge.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsurancePolicySurcharge.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsurancePolicySurcharge.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsurancePolicySurcharge.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsurancePolicySurcharge.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,108 @@
+type salesforce.InfoAuthRequestForm {
+  salesforce.Lookup AuthorizationFormTextId {
+    apiName = "InfoAuthRequestForm.AuthorizationFormTextId"
+    label = "Authorization Form Text ID"
+    _required = true
+    relationshipName = "AuthorizationFormText"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail InfoAuthorizationRequestId {
+    apiName = "InfoAuthRequestForm.InfoAuthorizationRequestId"
+    label = "Info Authorization Request ID"
+    _required = true
+    relationshipName = "InfoAuthorizationRequest"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup LatestAuthFormConsentId {
+    apiName = "InfoAuthRequestForm.LatestAuthFormConsentId"
+    label = "Latest Authorization Form Consent ID"
+    relationshipName = "LatestAuthFormConsent"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime LatestResponseDateTime {
+    apiName = "InfoAuthRequestForm.LatestResponseDateTime"
+    label = "Latest Response Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ResponseStatus {
+    apiName = "InfoAuthRequestForm.ResponseStatus"
+    label = "Response Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "InfoAuthRequestForm.Id"
+    label = "Info Authorization Request Form ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InfoAuthRequestForm.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "InfoAuthRequestForm.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InfoAuthRequestForm.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InfoAuthRequestForm.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InfoAuthRequestForm.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InfoAuthRequestForm.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InfoAuthRequestForm.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

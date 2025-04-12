@@ -1,0 +1,45 @@
+salesforce.Layout FinancialGoalFunding_Financial_Goal_Funding_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoalFunding.field.FinancialGoalId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.FinancialGoalFunding.field.Amount
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FinancialGoalFunding-Financial Goal Funding Layout"
+  _parent = [
+    salesforce.FinancialGoalFunding,
+  ]
+  _alias = "FinancialGoalFunding-Financial Goal Funding Layout"
+}

@@ -1,0 +1,27 @@
+salesforce.StandardValueSet WorkOrderPriority {
+  fullName = "WorkOrderPriority"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Low"
+      default = true
+      label = "Low"
+    },
+    {
+      fullName = "Medium"
+      default = false
+      label = "Medium"
+    },
+    {
+      fullName = "High"
+      default = false
+      label = "High"
+    },
+    {
+      fullName = "Critical"
+      default = false
+      label = "Critical"
+    },
+  ]
+  _alias = "WorkOrderPriority"
+}

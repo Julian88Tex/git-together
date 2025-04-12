@@ -1,0 +1,47 @@
+salesforce.Layout FinancialGoalParty_Financial_Goal_Party_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoalParty.field.FinancialGoalId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.FinancialGoalParty.field.AccountId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FinancialGoalParty-Financial Goal Party Layout"
+  _parent = [
+    salesforce.FinancialGoalParty,
+  ]
+  _alias = "FinancialGoalParty-Financial Goal Party Layout"
+}

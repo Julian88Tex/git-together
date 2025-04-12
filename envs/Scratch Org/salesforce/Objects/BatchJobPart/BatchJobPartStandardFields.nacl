@@ -1,0 +1,184 @@
+type salesforce.BatchJobPart {
+  salesforce.MasterDetail BatchJobId {
+    apiName = "BatchJobPart.BatchJobId"
+    label = "Run ID"
+    _required = true
+    relationshipName = "BatchJob"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime EndTime {
+    apiName = "BatchJobPart.EndTime"
+    label = "End Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ErrorDescription {
+    apiName = "BatchJobPart.ErrorDescription"
+    label = "Error"
+    length = 1333
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown ExternalReference {
+    apiName = "BatchJobPart.ExternalReference"
+    _hidden_value = true
+  }
+  salesforce.Number FailedRecordCount {
+    apiName = "BatchJobPart.FailedRecordCount"
+    label = "Total Failure"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number InputRecordCount {
+    apiName = "BatchJobPart.InputRecordCount"
+    label = "Input Record"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "BatchJobPart.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number OutputRecordCount {
+    apiName = "BatchJobPart.OutputRecordCount"
+    label = "Output Record"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number RetryCount {
+    apiName = "BatchJobPart.RetryCount"
+    label = "Retry Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime StartTime {
+    apiName = "BatchJobPart.StartTime"
+    label = "Start Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "BatchJobPart.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "BatchJobPart.Type"
+    label = "Node"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "BatchJobPart.Id"
+    label = "Batch Job Part ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BatchJobPart.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BatchJobPart.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BatchJobPart.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BatchJobPart.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BatchJobPart.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BatchJobPart.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentBatchJobPartId {
+    apiName = "BatchJobPart.ParentBatchJobPartId"
+    label = "Batch Job Part ID"
+    relationshipName = "ParentBatchJobPart"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

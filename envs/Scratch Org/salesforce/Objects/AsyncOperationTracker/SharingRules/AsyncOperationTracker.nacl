@@ -1,0 +1,7 @@
+salesforce.SharingRules AsyncOperationTracker {
+  fullName = "AsyncOperationTracker"
+  _parent = [
+    salesforce.AsyncOperationTracker,
+  ]
+  _alias = "AsyncOperationTracker"
+}

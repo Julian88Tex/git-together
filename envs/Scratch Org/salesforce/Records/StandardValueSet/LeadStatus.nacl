@@ -1,0 +1,31 @@
+salesforce.StandardValueSet LeadStatus {
+  fullName = "LeadStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Contacted"
+      default = false
+      label = "Contacted"
+      converted = false
+    },
+    {
+      fullName = "Open"
+      default = true
+      label = "Open"
+      converted = false
+    },
+    {
+      fullName = "Qualified"
+      default = false
+      label = "Qualified"
+      converted = true
+    },
+    {
+      fullName = "Unqualified"
+      default = false
+      label = "Unqualified"
+      converted = false
+    },
+  ]
+  _alias = "LeadStatus"
+}

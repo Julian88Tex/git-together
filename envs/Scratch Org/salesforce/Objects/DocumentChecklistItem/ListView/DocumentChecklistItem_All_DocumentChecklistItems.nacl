@@ -1,0 +1,9 @@
+salesforce.ListView DocumentChecklistItem_All_DocumentChecklistItems {
+  fullName = "DocumentChecklistItem.All_DocumentChecklistItems"
+  filterScope = "Everything"
+  label = "All Document Checklist Items"
+  _parent = [
+    salesforce.DocumentChecklistItem,
+  ]
+  _alias = "All Document Checklist Items"
+}

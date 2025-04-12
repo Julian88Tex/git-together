@@ -1,0 +1,9 @@
+salesforce.ListView Award_All_Awards {
+  fullName = "Award.All_Awards"
+  filterScope = "Everything"
+  label = "All Awards"
+  _parent = [
+    salesforce.Award,
+  ]
+  _alias = "All Awards"
+}

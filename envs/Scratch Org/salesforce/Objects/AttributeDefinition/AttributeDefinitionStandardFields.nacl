@@ -1,0 +1,159 @@
+type salesforce.AttributeDefinition {
+  salesforce.Picklist DataType {
+    apiName = "AttributeDefinition.DataType"
+    label = "Data Type"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text DefaultValue {
+    apiName = "AttributeDefinition.DefaultValue"
+    label = "Default Value"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "AttributeDefinition.Description"
+    label = "Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text DeveloperName {
+    apiName = "AttributeDefinition.DeveloperName"
+    inlineHelpText = "Enter a unique name. This name must begin with a letter and use only alphanumeric characters and underscores. It can't include spaces, end with an underscore, or have two consecutive underscores."
+    label = "API Name"
+    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Unknown IsActive {
+    apiName = "AttributeDefinition.IsActive"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsRequired {
+    apiName = "AttributeDefinition.IsRequired"
+    _hidden_value = true
+  }
+  salesforce.Text Label {
+    apiName = "AttributeDefinition.Label"
+    label = "Label"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "AttributeDefinition.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AttributeDefinition.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PicklistId {
+    apiName = "AttributeDefinition.PicklistId"
+    label = "Attribute Picklist ID"
+    relationshipName = "Picklist"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Unknown Scale {
+    apiName = "AttributeDefinition.Scale"
+    _hidden_value = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "AttributeDefinition.SourceSystemIdentifier"
+    label = "Source System ID"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AttributeDefinition.Id"
+    label = "Attribute Definition ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AttributeDefinition.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AttributeDefinition.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AttributeDefinition.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AttributeDefinition.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AttributeDefinition.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AttributeDefinition.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

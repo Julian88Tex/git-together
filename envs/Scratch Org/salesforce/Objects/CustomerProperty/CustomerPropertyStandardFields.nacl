@@ -1,0 +1,521 @@
+type salesforce.CustomerProperty {
+  salesforce.Address Address {
+    apiName = "CustomerProperty.Address"
+    label = "Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number AnnualMileage {
+    apiName = "CustomerProperty.AnnualMileage"
+    label = "Expected Annual Mileage"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup AssetId {
+    apiName = "CustomerProperty.AssetId"
+    label = "Asset ID"
+    relationshipName = "Asset"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number BathroomCount {
+    apiName = "CustomerProperty.BathroomCount"
+    label = "Number of Bathrooms"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number BedroomCount {
+    apiName = "CustomerProperty.BedroomCount"
+    label = "Number of Bedrooms"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text BuiltUpArea {
+    apiName = "CustomerProperty.BuiltUpArea"
+    label = "Built-Up Area"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CeilingType {
+    apiName = "CustomerProperty.CeilingType"
+    label = "Ceiling Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ConstructionClass {
+    apiName = "CustomerProperty.ConstructionClass"
+    label = "Construction Class"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number DaysDrivenTowork {
+    apiName = "CustomerProperty.DaysDrivenTowork"
+    label = "Days Driven to Work (One Way)"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "CustomerProperty.Description"
+    label = "Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DwellingType {
+    apiName = "CustomerProperty.DwellingType"
+    label = "Dwelling Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number EngineDisplacementVolume {
+    apiName = "CustomerProperty.EngineDisplacementVolume"
+    label = "Engine Displacement Volume"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency FactoryPrice {
+    apiName = "CustomerProperty.FactoryPrice"
+    label = "Factory Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency FairMarketValue {
+    apiName = "CustomerProperty.FairMarketValue"
+    label = "Fair Market Value"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FinancingType {
+    apiName = "CustomerProperty.FinancingType"
+    label = "Financing Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number FloorCount {
+    apiName = "CustomerProperty.FloorCount"
+    label = "Number of Floors"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FloorType {
+    apiName = "CustomerProperty.FloorType"
+    label = "Floor Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FoundationType {
+    apiName = "CustomerProperty.FoundationType"
+    label = "Foundation Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FuelType {
+    apiName = "CustomerProperty.FuelType"
+    label = "Fuel Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number GarageSpaceCount {
+    apiName = "CustomerProperty.GarageSpaceCount"
+    label = "Number of Parking Spaces in Garage"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist GarageType {
+    apiName = "CustomerProperty.GarageType"
+    label = "Garage Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number GrossVehicleWeight {
+    apiName = "CustomerProperty.GrossVehicleWeight"
+    label = "Gross Vehicle Weight"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsBasementIncluded {
+    apiName = "CustomerProperty.IsBasementIncluded"
+    label = "Includes Basement"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsChimneyIncluded {
+    apiName = "CustomerProperty.IsChimneyIncluded"
+    label = "Includes Chimney"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPassedSmogCheck {
+    apiName = "CustomerProperty.IsPassedSmogCheck"
+    label = "Passed Smog Check"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsSwimmingPoolIncluded {
+    apiName = "CustomerProperty.IsSwimmingPoolIncluded"
+    label = "Includes Swimming Pool"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number KitchenCount {
+    apiName = "CustomerProperty.KitchenCount"
+    label = "Number of Kitchens"
+    scale = 0
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number LeasePeriod {
+    apiName = "CustomerProperty.LeasePeriod"
+    label = "Lease Period"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text LienHolderName {
+    apiName = "CustomerProperty.LienHolderName"
+    label = "Lien Holder Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text LoadCapacity {
+    apiName = "CustomerProperty.LoadCapacity"
+    label = "Load Capacity"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text LotArea {
+    apiName = "CustomerProperty.LotArea"
+    label = "Lot Area"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Make {
+    apiName = "CustomerProperty.Make"
+    label = "Make"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MakeYear {
+    apiName = "CustomerProperty.MakeYear"
+    label = "Make Year"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number MilesDrivenToWork {
+    apiName = "CustomerProperty.MilesDrivenToWork"
+    label = "Miles Driven to Work (One way)"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ModelName {
+    apiName = "CustomerProperty.ModelName"
+    label = "Model Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number OdometerReading {
+    apiName = "CustomerProperty.OdometerReading"
+    label = "Odometer Reading"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CustomerProperty.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number PassengerSeatCapacity {
+    apiName = "CustomerProperty.PassengerSeatCapacity"
+    label = "Passenger Seat Capacity"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail PrimaryOwnerId {
+    apiName = "CustomerProperty.PrimaryOwnerId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "PrimaryOwner"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PrimaryUse {
+    apiName = "CustomerProperty.PrimaryUse"
+    label = "Primary Use"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date PurchaseDate {
+    apiName = "CustomerProperty.PurchaseDate"
+    label = "Purchase Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency PurchasePrice {
+    apiName = "CustomerProperty.PurchasePrice"
+    label = "Purchase Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text RegistrationNumber {
+    apiName = "CustomerProperty.RegistrationNumber"
+    label = "Registration Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RegistrationType {
+    apiName = "CustomerProperty.RegistrationType"
+    label = "Registration Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RoofType {
+    apiName = "CustomerProperty.RoofType"
+    label = "Roof Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "CustomerProperty.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "CustomerProperty.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist TransmissionType {
+    apiName = "CustomerProperty.TransmissionType"
+    label = "Transmission Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Vin {
+    apiName = "CustomerProperty.Vin"
+    label = "VIN"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number YearBuilt {
+    apiName = "CustomerProperty.YearBuilt"
+    label = "Year Built"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CustomerProperty.Id"
+    label = "Customer Property ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CustomerProperty.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CustomerProperty.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CustomerProperty.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CustomerProperty.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CustomerProperty.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CustomerProperty.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CustomerProperty.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

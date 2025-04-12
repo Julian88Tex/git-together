@@ -1,0 +1,9 @@
+salesforce.ListView MultipartyInfoAuthRequest_My_MultipartyInfoAuthRequests {
+  fullName = "MultipartyInfoAuthRequest.My_MultipartyInfoAuthRequests"
+  filterScope = "Mine"
+  label = "My Multiparty Information Authorization Requests"
+  _parent = [
+    salesforce.MultipartyInfoAuthRequest,
+  ]
+  _alias = "My Multiparty Information Authorization Requests"
+}

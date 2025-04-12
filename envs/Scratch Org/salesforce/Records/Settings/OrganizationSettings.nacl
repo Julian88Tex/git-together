@@ -1,0 +1,30 @@
+salesforce.Organization {
+  Address = {
+    country = "US"
+  }
+  PrimaryContact = "User User"
+  DefaultLocaleSidKey = "en_US"
+  TimeZoneSidKey = "America/Los_Angeles"
+  LanguageLocaleKey = "en_US"
+  ReceivesInfoEmails = true
+  ReceivesAdminInfoEmails = true
+  PreferencesRequireOpportunityProducts = false
+  PreferencesConsentManagementEnabled = true
+  PreferencesAutoSelectIndividualOnMerge = false
+  PreferencesLightningLoginEnabled = true
+  PreferencesOnlyLLPermUserAllowed = false
+  FiscalYearStartMonth = 1
+  UsesStartDateAsFiscalYearName = false
+  DefaultAccountAccess = "Read"
+  DefaultContactAccess = "ControlledByParent"
+  DefaultOpportunityAccess = "None"
+  DefaultLeadAccess = "ReadEditTransfer"
+  DefaultCaseAccess = "None"
+  DefaultCalendarAccess = "HideDetailsInsert"
+  DefaultPricebookAccess = "ReadSelect"
+  DefaultCampaignAccess = "All"
+  UiSkin = "Theme3"
+  SignupCountryIsoCode = "US"
+  NumKnowledgeService = 5
+  IsReadOnly = false
+}

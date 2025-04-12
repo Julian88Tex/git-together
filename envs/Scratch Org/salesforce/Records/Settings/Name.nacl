@@ -1,0 +1,6 @@
+salesforce.NameSettings {
+  enableMiddleName = false
+  enableNameSuffix = false
+  fullName = "Name"
+  _alias = "Name"
+}

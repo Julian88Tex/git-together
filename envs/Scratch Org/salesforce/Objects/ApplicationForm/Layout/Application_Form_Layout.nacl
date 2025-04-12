@@ -1,0 +1,111 @@
+salesforce.Layout ApplicationForm_Application_Form_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationForm.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.OpportunityId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.Stage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.LeadId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.SubmissionDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.BranchUnitId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApplicationForm.field.UsageType
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationForm.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApplicationForm.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "FirstName",
+        "LastName",
+        "Email",
+      ]
+      relatedList = "Applicants"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ApplicationForm-Application Form Layout"
+  _parent = [
+    salesforce.ApplicationForm,
+  ]
+  _alias = "ApplicationForm-Application Form Layout"
+}

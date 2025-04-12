@@ -1,0 +1,97 @@
+salesforce.Layout AuthorizationFormText_Authorization_Form_Text_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.DetailAuthorizationFormText
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationFormText.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.FullAuthorizationFormUrl
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.SummaryAuthFormText
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.ContentDocumentId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.LastActivationDateTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationFormText.field.AuthorizationFormId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AuthorizationFormText.field.Locale
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.AuthorizationFormText.field.IsReadOnly
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "DetailAuthorizationFormText",
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ConsentGiver",
+        "Status",
+      ]
+      relatedList = "AuthorizationFormConsentRelatedList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "AuthorizationFormText-Authorization Form Text Layout"
+  _parent = [
+    salesforce.AuthorizationFormText,
+  ]
+  _alias = "AuthorizationFormText-Authorization Form Text Layout"
+}

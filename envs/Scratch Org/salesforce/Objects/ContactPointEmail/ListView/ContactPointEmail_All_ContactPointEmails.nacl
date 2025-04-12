@@ -1,0 +1,9 @@
+salesforce.ListView ContactPointEmail_All_ContactPointEmails {
+  fullName = "ContactPointEmail.All_ContactPointEmails"
+  filterScope = "Everything"
+  label = "All Contact Point Emails"
+  _parent = [
+    salesforce.ContactPointEmail,
+  ]
+  _alias = "All Contact Point Emails"
+}

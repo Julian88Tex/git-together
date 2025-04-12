@@ -1,0 +1,12 @@
+salesforce.CustomApplication standard__AppLauncher {
+  defaultLandingTab = "standard-AppLauncher"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-AppLauncher",
+  ]
+  fullName = "standard__AppLauncher"
+  _alias = "standard__AppLauncher"
+}

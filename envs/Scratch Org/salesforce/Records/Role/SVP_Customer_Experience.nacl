@@ -1,0 +1,9 @@
+salesforce.Role SVP_Customer_Experience {
+  fullName = "SVP_Customer_Experience"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  name = "SVP Customer Experience"
+  opportunityAccessLevel = "Edit"
+  _alias = "SVP_Customer_Experience"
+}

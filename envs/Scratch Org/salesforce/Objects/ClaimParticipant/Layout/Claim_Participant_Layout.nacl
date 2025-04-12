@@ -1,0 +1,59 @@
+salesforce.Layout ClaimParticipant_Claim_Participant_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "ClaimParticipantDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ClaimParticipant.field.ClaimId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimParticipant.field.ParticipantContactId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ClaimParticipant.field.Roles
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimParticipant.field.ParticipantAccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ClaimParticipant.field.IsInjured
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ClaimParticipant-Claim Participant Layout"
+  _parent = [
+    salesforce.ClaimParticipant,
+  ]
+  _alias = "ClaimParticipant-Claim Participant Layout"
+}

@@ -1,0 +1,196 @@
+type salesforce.BusinessProfile {
+  salesforce.MasterDetail AccountId {
+    apiName = "BusinessProfile.AccountId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown BusinessOperatingName {
+    apiName = "BusinessProfile.BusinessOperatingName"
+    _hidden_value = true
+  }
+  salesforce.Unknown BusinessPartnerCode {
+    apiName = "BusinessProfile.BusinessPartnerCode"
+    _hidden_value = true
+  }
+  salesforce.Unknown BusinessPartnerRegisteredName {
+    apiName = "BusinessProfile.BusinessPartnerRegisteredName"
+    _hidden_value = true
+  }
+  salesforce.Picklist BusinessPartnerType {
+    apiName = "BusinessProfile.BusinessPartnerType"
+    _hidden_value = true
+  }
+  salesforce.Picklist BusinessStructure {
+    apiName = "BusinessProfile.BusinessStructure"
+    _hidden_value = true
+  }
+  salesforce.Unknown BusinessTaxIdentifier {
+    apiName = "BusinessProfile.BusinessTaxIdentifier"
+    _hidden_value = true
+  }
+  salesforce.Number ConsecWorkersCompCoverage {
+    apiName = "BusinessProfile.ConsecWorkersCompCoverage"
+    label = "Consecutive Years of Workers' Compensation Coverage"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number CreditTypesUsed {
+    apiName = "BusinessProfile.CreditTypesUsed"
+    label = "Credit Types Used"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown ExternalReferenceNumber {
+    apiName = "BusinessProfile.ExternalReferenceNumber"
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasDishonoredPolicies {
+    apiName = "BusinessProfile.HasDishonoredPolicies"
+    label = "Dishonored Policies"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasSufferedBankruptcy {
+    apiName = "BusinessProfile.HasSufferedBankruptcy"
+    label = "Suffered Bankruptcy"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasUncorrectedSafetyViolations {
+    apiName = "BusinessProfile.HasUncorrectedSafetyViolations"
+    label = "Uncorrected Safety Violations"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RegionName {
+    apiName = "BusinessProfile.RegionName"
+    _hidden_value = true
+  }
+  salesforce.Picklist ServiceType {
+    apiName = "BusinessProfile.ServiceType"
+    _hidden_value = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "BusinessProfile.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "BusinessProfile.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number WorkersCompClaims {
+    apiName = "BusinessProfile.WorkersCompClaims"
+    label = "Workers' Compensation Claims"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number WorkersCompMedicalClaims {
+    apiName = "BusinessProfile.WorkersCompMedicalClaims"
+    label = "Workers' Compensation Medical Claims"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "BusinessProfile.Id"
+    label = "Business Profile ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BusinessProfile.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "BusinessProfile.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BusinessProfile.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BusinessProfile.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BusinessProfile.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BusinessProfile.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BusinessProfile.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

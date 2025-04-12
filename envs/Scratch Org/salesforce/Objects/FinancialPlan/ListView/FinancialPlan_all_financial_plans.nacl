@@ -1,0 +1,9 @@
+salesforce.ListView FinancialPlan_all_financial_plans {
+  fullName = "FinancialPlan.all_financial_plans"
+  filterScope = "Everything"
+  label = "All Financial Plans"
+  _parent = [
+    salesforce.FinancialPlan,
+  ]
+  _alias = "All Financial Plans"
+}

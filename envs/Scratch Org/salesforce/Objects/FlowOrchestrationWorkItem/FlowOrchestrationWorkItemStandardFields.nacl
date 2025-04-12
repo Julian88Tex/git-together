@@ -1,0 +1,153 @@
+type salesforce.FlowOrchestrationWorkItem {
+  salesforce.Lookup AssigneeId {
+    apiName = "FlowOrchestrationWorkItem.AssigneeId"
+    label = "Assignee ID"
+    _required = true
+    relationshipName = "Assignee"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "FlowOrchestrationWorkItem.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Label {
+    apiName = "FlowOrchestrationWorkItem.Label"
+    label = "Step"
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "FlowOrchestrationWorkItem.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "FlowOrchestrationWorkItem.RelatedRecordId"
+    label = "Context Record ID"
+    relationshipName = "RelatedRecord"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ScreenFlow {
+    apiName = "FlowOrchestrationWorkItem.ScreenFlow"
+    label = "Screen Flow ID"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FlowOrchestrationWorkItem.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup StepInstanceId {
+    apiName = "FlowOrchestrationWorkItem.StepInstanceId"
+    label = "Orchestration Step Run ID"
+    relationshipName = "StepInstance"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "FlowOrchestrationWorkItem.Id"
+    label = "Orchestration Work Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FlowOrchestrationWorkItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "FlowOrchestrationWorkItem.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FlowOrchestrationWorkItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FlowOrchestrationWorkItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FlowOrchestrationWorkItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "FlowOrchestrationWorkItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FlowOrchestrationWorkItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea ScreenFlowInputs {
+    apiName = "FlowOrchestrationWorkItem.ScreenFlowInputs"
+    label = "Screen Flow Inputs"
+    length = 32768
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

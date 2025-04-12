@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicationProperty_All_LoanApplicationProperties {
+  fullName = "LoanApplicationProperty.All_LoanApplicationProperties"
+  filterScope = "Everything"
+  label = "All Loan Application Properties"
+  _parent = [
+    salesforce.LoanApplicationProperty,
+  ]
+  _alias = "All Loan Application Properties"
+}

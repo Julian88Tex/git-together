@@ -1,0 +1,98 @@
+salesforce.Layout LoanApplicantAddress_Loan_Applicant_Address_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantAddress.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.LoanApplicationId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantAddress.field.LoanApplicantId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.ResidencyType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.ResidenceAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.AddressOwnership
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.ResidenceYearCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.ResidenceAdditionalMonthCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantAddress.field.MonthlyRentPayment
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantAddress.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantAddress.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantAddress-Loan Applicant Address Layout"
+  _parent = [
+    salesforce.LoanApplicantAddress,
+  ]
+  _alias = "LoanApplicantAddress-Loan Applicant Address Layout"
+}

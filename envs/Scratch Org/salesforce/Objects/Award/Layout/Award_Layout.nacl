@@ -1,0 +1,81 @@
+salesforce.Layout Award_Award_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Award.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.AwardDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.AwardedBy
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.Identifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.UserId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.VerifiedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Award.field.VerificationStatus
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Award-Award Layout"
+  _parent = [
+    salesforce.Award,
+  ]
+  _alias = "Award-Award Layout"
+}

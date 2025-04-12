@@ -1,0 +1,4 @@
+salesforce.SharingRules ActionPlanTemplate {
+  fullName = "ActionPlanTemplate"
+  _alias = "ActionPlanTemplate"
+}

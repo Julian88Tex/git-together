@@ -1,0 +1,180 @@
+type salesforce.OpportunityLineItem {
+  salesforce.Text Description {
+    apiName = "OpportunityLineItem.Description"
+    label = "Line Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Discount {
+    apiName = "OpportunityLineItem.Discount"
+    _hidden_value = true
+  }
+  salesforce.Currency ListPrice {
+    apiName = "OpportunityLineItem.ListPrice"
+    label = "List Price"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "OpportunityLineItem.Name"
+    label = "Opportunity Product Name"
+    length = 376
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "OpportunityLineItem.OpportunityId"
+    label = "Opportunity ID"
+    _required = true
+    relationshipName = "Opportunity"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "OpportunityLineItem.Product2Id"
+    label = "Product ID"
+    relationshipName = "Product2"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text ProductCode {
+    apiName = "OpportunityLineItem.ProductCode"
+    label = "Product Code"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Quantity {
+    apiName = "OpportunityLineItem.Quantity"
+    label = "Quantity"
+    _required = true
+    scale = 2
+    precision = 12
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date ServiceDate {
+    apiName = "OpportunityLineItem.ServiceDate"
+    label = "Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Subtotal {
+    apiName = "OpportunityLineItem.Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "OpportunityLineItem.TotalPrice"
+    label = "Total Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency UnitPrice {
+    apiName = "OpportunityLineItem.UnitPrice"
+    label = "Sales Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "OpportunityLineItem.Id"
+    label = "Line Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number SortOrder {
+    apiName = "OpportunityLineItem.SortOrder"
+    label = "Sort Order"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "OpportunityLineItem.PricebookEntryId"
+    label = "Price Book Entry ID"
+    relationshipName = "PricebookEntry"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OpportunityLineItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OpportunityLineItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OpportunityLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OpportunityLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OpportunityLineItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OpportunityLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

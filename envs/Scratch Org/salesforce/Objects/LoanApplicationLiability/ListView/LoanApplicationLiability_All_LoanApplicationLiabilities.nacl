@@ -1,0 +1,9 @@
+salesforce.ListView LoanApplicationLiability_All_LoanApplicationLiabilities {
+  fullName = "LoanApplicationLiability.All_LoanApplicationLiabilities"
+  filterScope = "Everything"
+  label = "All Loan Application Liabilities"
+  _parent = [
+    salesforce.LoanApplicationLiability,
+  ]
+  _alias = "All Loan Application Liabilities"
+}

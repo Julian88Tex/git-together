@@ -1,0 +1,4 @@
+salesforce.EscalationRules Case {
+  fullName = "Case"
+  _alias = "Case"
+}

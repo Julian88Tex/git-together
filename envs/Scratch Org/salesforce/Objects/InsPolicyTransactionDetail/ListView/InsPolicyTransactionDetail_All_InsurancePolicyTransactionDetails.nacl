@@ -1,0 +1,9 @@
+salesforce.ListView InsPolicyTransactionDetail_All_InsurancePolicyTransactionDetails {
+  fullName = "InsPolicyTransactionDetail.All_InsurancePolicyTransactionDetails"
+  filterScope = "Everything"
+  label = "All Insurance Policy Transaction Details"
+  _parent = [
+    salesforce.InsPolicyTransactionDetail,
+  ]
+  _alias = "All Insurance Policy Transaction Details"
+}

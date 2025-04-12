@@ -1,0 +1,134 @@
+type salesforce.IdentityDocument {
+  salesforce.Date ExpirationDate {
+    apiName = "IdentityDocument.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist IdDocumentType {
+    apiName = "IdentityDocument.IdDocumentType"
+    label = "Document Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date IssueDate {
+    apiName = "IdentityDocument.IssueDate"
+    label = "Issue Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text IssuingAuthority {
+    apiName = "IdentityDocument.IssuingAuthority"
+    label = "Issuing Authority/Country"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "IdentityDocument.Name"
+    label = "Document Number"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RelatedLegalEntityId {
+    apiName = "IdentityDocument.RelatedLegalEntityId"
+    label = "Related Legal Entity ID"
+    _required = true
+    relationshipName = "RelatedLegalEntity"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup VerifiedById {
+    apiName = "IdentityDocument.VerifiedById"
+    label = "User ID"
+    relationshipName = "VerifiedBy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime VerifiedOn {
+    apiName = "IdentityDocument.VerifiedOn"
+    label = "Verified On"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "IdentityDocument.Id"
+    label = "Identity Document ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "IdentityDocument.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "IdentityDocument.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "IdentityDocument.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "IdentityDocument.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "IdentityDocument.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "IdentityDocument.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "IdentityDocument.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

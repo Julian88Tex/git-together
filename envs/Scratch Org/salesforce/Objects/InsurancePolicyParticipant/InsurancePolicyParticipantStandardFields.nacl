@@ -1,0 +1,302 @@
+type salesforce.InsurancePolicyParticipant {
+  salesforce.Percent BeneficiarySharePercentage {
+    apiName = "InsurancePolicyParticipant.BeneficiarySharePercentage"
+    label = "Beneficiary Share Percentage"
+    scale = 0
+    precision = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveDate {
+    apiName = "InsurancePolicyParticipant.EffectiveDate"
+    label = "Effective Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown EffectiveFromDate {
+    apiName = "InsurancePolicyParticipant.EffectiveFromDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown EffectiveToDate {
+    apiName = "InsurancePolicyParticipant.EffectiveToDate"
+    _hidden_value = true
+  }
+  salesforce.DateTime ExpirationDate {
+    apiName = "InsurancePolicyParticipant.ExpirationDate"
+    label = "Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail InsurancePolicyId {
+    apiName = "InsurancePolicyParticipant.InsurancePolicyId"
+    label = "Insurance Policy ID"
+    _required = true
+    relationshipName = "InsurancePolicy"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActiveParticipant {
+    apiName = "InsurancePolicyParticipant.IsActiveParticipant"
+    label = "Active Participant"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsMinorBeneficiary {
+    apiName = "InsurancePolicyParticipant.IsMinorBeneficiary"
+    label = "Minor Beneficiary"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPolicyholder {
+    apiName = "InsurancePolicyParticipant.IsPolicyholder"
+    label = "Policy holder"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LegalGuardianId {
+    apiName = "InsurancePolicyParticipant.LegalGuardianId"
+    label = "Account ID"
+    relationshipName = "LegalGuardian"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ParticipantCode {
+    apiName = "InsurancePolicyParticipant.ParticipantCode"
+    label = "Participant Code"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown ParticipantName {
+    apiName = "InsurancePolicyParticipant.ParticipantName"
+    _hidden_value = true
+  }
+  salesforce.Lookup PrimaryParticipantAccountId {
+    apiName = "InsurancePolicyParticipant.PrimaryParticipantAccountId"
+    label = "Account ID"
+    relationshipName = "PrimaryParticipantAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PrimaryParticipantContactId {
+    apiName = "InsurancePolicyParticipant.PrimaryParticipantContactId"
+    label = "Contact ID"
+    relationshipName = "PrimaryParticipantContact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProductId {
+    apiName = "InsurancePolicyParticipant.ProductId"
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedInsPolicyParticipantId {
+    apiName = "InsurancePolicyParticipant.RelatedInsPolicyParticipantId"
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedParticipantAccountId {
+    apiName = "InsurancePolicyParticipant.RelatedParticipantAccountId"
+    label = "Account ID"
+    relationshipName = "RelatedParticipantAccount"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RelatedParticipantContactId {
+    apiName = "InsurancePolicyParticipant.RelatedParticipantContactId"
+    label = "Contact ID"
+    relationshipName = "RelatedParticipantContact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RelationshipToInsured {
+    apiName = "InsurancePolicyParticipant.RelationshipToInsured"
+    label = "Relationship to Insured"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Role {
+    apiName = "InsurancePolicyParticipant.Role"
+    label = "Role"
+    _required = true
+    restricted = false
+    visibleLines = 0
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "InsurancePolicyParticipant.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "InsurancePolicyParticipant.SourceSystemIdentifier"
+    label = "Source System ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardFeeAmount {
+    apiName = "InsurancePolicyParticipant.StandardFeeAmount"
+    label = "Standard Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardPremiumAmount {
+    apiName = "InsurancePolicyParticipant.StandardPremiumAmount"
+    label = "Standard Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency StandardTaxAmount {
+    apiName = "InsurancePolicyParticipant.StandardTaxAmount"
+    label = "Standard Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermFeeAmount {
+    apiName = "InsurancePolicyParticipant.TermFeeAmount"
+    label = "Term Fee"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermPremiumAmount {
+    apiName = "InsurancePolicyParticipant.TermPremiumAmount"
+    label = "Term Premium"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TermTaxAmount {
+    apiName = "InsurancePolicyParticipant.TermTaxAmount"
+    label = "Term Tax"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary TotalStandardAmount {
+    apiName = "InsurancePolicyParticipant.TotalStandardAmount"
+    label = "Total Standard Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalTermAmount {
+    apiName = "InsurancePolicyParticipant.TotalTermAmount"
+    label = "Total Term Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "InsurancePolicyParticipant.Id"
+    label = "Insurance Policy Participant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsurancePolicyParticipant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "InsurancePolicyParticipant.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsurancePolicyParticipant.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsurancePolicyParticipant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsurancePolicyParticipant.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsurancePolicyParticipant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsurancePolicyParticipant.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,88 @@
+type salesforce.ActionPlanItemDependency {
+  serviceid Id {
+    apiName = "ActionPlanItemDependency.Id"
+    label = "Action Plan Item Dependency ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ActionPlanItemDependency.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "ActionPlanItemDependency.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ActionPlanItemDependency.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ActionPlanItemDependency.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ActionPlanItemDependency.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ActionPlanItemDependency.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ActionPlanItemDependency.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ActionPlanItemId {
+    apiName = "ActionPlanItemDependency.ActionPlanItemId"
+    label = "Action Plan Item ID"
+    _required = true
+    relationshipName = "ActionPlanItem"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup PreviousActionPlanItemId {
+    apiName = "ActionPlanItemDependency.PreviousActionPlanItemId"
+    label = "Action Plan Item ID"
+    _required = true
+    relationshipName = "PreviousActionPlanItem"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

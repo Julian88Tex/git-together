@@ -1,0 +1,55 @@
+salesforce.Layout Customer_Customer_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Customer.field.PartyId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Customer.field.CustomerStatusType
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Customer.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Customer.field.TotalLifeTimeValue
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Customer-Customer Layout"
+  _parent = [
+    salesforce.Customer,
+  ]
+  _alias = "Customer-Customer Layout"
+}

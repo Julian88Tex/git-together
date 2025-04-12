@@ -1,0 +1,97 @@
+salesforce.Layout CodeSetBundle_Code_Set_Bundle_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "CodeSet Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CodeSetBundle.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet4Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet6Id
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet1Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet3Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CodeSetBundle.field.CodeSet5Id
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSetBundle.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.CodeSetBundle.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CodeSetBundle-Code Set Bundle Layout"
+  _parent = [
+    salesforce.CodeSetBundle,
+  ]
+  _alias = "CodeSetBundle-Code Set Bundle Layout"
+}

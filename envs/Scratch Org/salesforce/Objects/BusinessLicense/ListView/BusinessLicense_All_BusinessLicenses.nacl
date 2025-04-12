@@ -1,0 +1,9 @@
+salesforce.ListView BusinessLicense_All_BusinessLicenses {
+  fullName = "BusinessLicense.All_BusinessLicenses"
+  filterScope = "Everything"
+  label = "All Business Licenses"
+  _parent = [
+    salesforce.BusinessLicense,
+  ]
+  _alias = "All Business Licenses"
+}

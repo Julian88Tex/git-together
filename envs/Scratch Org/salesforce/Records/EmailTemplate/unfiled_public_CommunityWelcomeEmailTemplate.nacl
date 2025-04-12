@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_CommunityWelcomeEmailTemplate@zcd {
+  available = true
+  description = "Notification that user has been added to a site."
+  encodingKey = "UTF-8"
+  name = "Experience Cloud: New Member Welcome Email"
+  style = "none"
+  subject = "Welcome to {!Community_Name}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/CommunityWelcomeEmailTemplate"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/CommunityWelcomeEmailTemplate/CommunityWelcomeEmailTemplate.email")
+  _alias = "unfiled$public/CommunityWelcomeEmailTemplate"
+}

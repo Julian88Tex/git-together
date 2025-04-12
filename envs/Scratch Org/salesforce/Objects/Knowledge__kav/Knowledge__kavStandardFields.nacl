@@ -1,0 +1,383 @@
+type salesforce.Knowledge__kav {
+  serviceid Id {
+    apiName = "Knowledge__kav.Id"
+    label = "Knowledge Article Version ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup KnowledgeArticleId {
+    apiName = "Knowledge__kav.KnowledgeArticleId"
+    label = "Knowledge Article ID"
+    _required = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Knowledge__kav.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Knowledge__kav.IsDeleted"
+    label = "Is Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ValidationStatus {
+    apiName = "Knowledge__kav.ValidationStatus"
+    label = "Validation Status"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PublishStatus {
+    apiName = "Knowledge__kav.PublishStatus"
+    label = "Publication Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number VersionNumber {
+    apiName = "Knowledge__kav.VersionNumber"
+    label = "Version Number"
+    _required = true
+    scale = 0
+    precision = 6
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsLatestVersion {
+    apiName = "Knowledge__kav.IsLatestVersion"
+    label = "Is Latest Version"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsVisibleInApp {
+    apiName = "Knowledge__kav.IsVisibleInApp"
+    label = "Visible In Internal App"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsVisibleInPkb {
+    apiName = "Knowledge__kav.IsVisibleInPkb"
+    label = "Visible In Public Knowledge Base"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsVisibleInCsp {
+    apiName = "Knowledge__kav.IsVisibleInCsp"
+    label = "Visible to Customer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsVisibleInPrm {
+    apiName = "Knowledge__kav.IsVisibleInPrm"
+    label = "Visible to Partner"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Knowledge__kav.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Knowledge__kav.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Knowledge__kav.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Knowledge__kav.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Knowledge__kav.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Language {
+    apiName = "Knowledge__kav.Language"
+    label = "Language"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "Knowledge__kav.Title"
+    label = "Title"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text UrlName {
+    apiName = "Knowledge__kav.UrlName"
+    label = "URL Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ArchivedDate {
+    apiName = "Knowledge__kav.ArchivedDate"
+    label = "Archived Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ArchivedById {
+    apiName = "Knowledge__kav.ArchivedById"
+    label = "User ID"
+    relationshipName = "ArchivedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Summary {
+    apiName = "Knowledge__kav.Summary"
+    label = "Summary"
+    length = 1000
+    inlineHelpText = "Briefly describe the article. The summary is used in search results to help users find relevant articles. You can improve the accuracy of search results by including phrases that your customers use to describe this issue or topic."
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime NextReviewDate {
+    apiName = "Knowledge__kav.NextReviewDate"
+    label = "Next Review Date"
+    inlineHelpText = "Determine when the knowledge article must next be reviewed for accuracy."
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text LargeLanguageModel {
+    apiName = "Knowledge__kav.LargeLanguageModel"
+    label = "Large Language Model"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ArticleNumber {
+    apiName = "Knowledge__kav.ArticleNumber"
+    label = "Article Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime FirstPublishedDate {
+    apiName = "Knowledge__kav.FirstPublishedDate"
+    label = "First Published Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastPublishedDate {
+    apiName = "Knowledge__kav.LastPublishedDate"
+    label = "Last Published Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ArticleArchivedById {
+    apiName = "Knowledge__kav.ArticleArchivedById"
+    label = "User ID"
+    relationshipName = "ArticleArchivedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime ArticleArchivedDate {
+    apiName = "Knowledge__kav.ArticleArchivedDate"
+    label = "Article Archived Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number ArticleCaseAttachCount {
+    apiName = "Knowledge__kav.ArticleCaseAttachCount"
+    label = "Article Case Association Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ArticleCreatedById {
+    apiName = "Knowledge__kav.ArticleCreatedById"
+    label = "User ID"
+    relationshipName = "ArticleCreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime ArticleCreatedDate {
+    apiName = "Knowledge__kav.ArticleCreatedDate"
+    label = "Article Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ArticleMasterLanguage {
+    apiName = "Knowledge__kav.ArticleMasterLanguage"
+    label = "Article Primary Language"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number ArticleTotalViewCount {
+    apiName = "Knowledge__kav.ArticleTotalViewCount"
+    label = "Article Total View Count"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SourceId {
+    apiName = "Knowledge__kav.SourceId"
+    label = "Source"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ArticleType {
+    apiName = "Knowledge__kav.ArticleType"
+    label = "Article Type"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AssignedToId {
+    apiName = "Knowledge__kav.AssignedToId"
+    label = "Assigned To"
+    relationshipName = "AssignedTo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AssignedById {
+    apiName = "Knowledge__kav.AssignedById"
+    label = "User ID"
+    relationshipName = "AssignedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime AssignmentDate {
+    apiName = "Knowledge__kav.AssignmentDate"
+    label = "Assignment Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime AssignmentDueDate {
+    apiName = "Knowledge__kav.AssignmentDueDate"
+    label = "Assignment Due Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea AssignmentNote {
+    apiName = "Knowledge__kav.AssignmentNote"
+    label = "Assignment Note"
+    length = 1000
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text MigratedToFromArticleVersion {
+    apiName = "Knowledge__kav.MigratedToFromArticleVersion"
+    label = "Mapping info between old Article Version and migrated Article Version"
+    length = 15
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

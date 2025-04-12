@@ -1,0 +1,9 @@
+salesforce.ListView WorkerCompCoverageClass_All_WorkerCompCoverageClasses {
+  fullName = "WorkerCompCoverageClass.All_WorkerCompCoverageClasses"
+  filterScope = "Everything"
+  label = "All Worker Compensation Coverage Classes"
+  _parent = [
+    salesforce.WorkerCompCoverageClass,
+  ]
+  _alias = "All Worker Compensation Coverage Classes"
+}

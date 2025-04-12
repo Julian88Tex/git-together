@@ -1,0 +1,206 @@
+type salesforce.FinancialGoal {
+  salesforce.Currency ActualAmount {
+    apiName = "FinancialGoal.ActualAmount"
+    label = "Actual Amount"
+    scale = 0
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Category {
+    apiName = "FinancialGoal.Category"
+    label = "Category"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date CompletionDate {
+    apiName = "FinancialGoal.CompletionDate"
+    label = "Completion Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "FinancialGoal.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent EstimatedSuccessPercent {
+    apiName = "FinancialGoal.EstimatedSuccessPercent"
+    label = "Estimated Success Percent"
+    scale = 0
+    precision = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup FinancialPlanId {
+    apiName = "FinancialGoal.FinancialPlanId"
+    label = "Financial Plan ID"
+    relationshipName = "FinancialPlan"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Frequency {
+    apiName = "FinancialGoal.Frequency"
+    label = "Withdrawal Frequency"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency InitialAmount {
+    apiName = "FinancialGoal.InitialAmount"
+    label = "Initial Amount"
+    scale = 0
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "FinancialGoal.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "FinancialGoal.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Priority {
+    apiName = "FinancialGoal.Priority"
+    label = "Priority"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "FinancialGoal.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date StartDate {
+    apiName = "FinancialGoal.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FinancialGoal.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency TargetAmount {
+    apiName = "FinancialGoal.TargetAmount"
+    label = "Target Amount"
+    scale = 0
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date TargetDate {
+    apiName = "FinancialGoal.TargetDate"
+    label = "Target Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "FinancialGoal.Type"
+    label = "Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "FinancialGoal.Id"
+    label = "Financial Goal ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FinancialGoal.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FinancialGoal.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FinancialGoal.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FinancialGoal.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "FinancialGoal.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FinancialGoal.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

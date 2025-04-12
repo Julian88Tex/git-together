@@ -1,0 +1,40 @@
+salesforce.Layout CaseClose_Close_Case_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Case Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Status
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Reason
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Comments
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+  ]
+  runAssignmentRulesDefault = false
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showSolutionSection = true
+  showSubmitAndAttachButton = false
+  fullName = "CaseClose-Close Case Layout"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "CaseClose-Close Case Layout"
+}

@@ -1,0 +1,6 @@
+salesforce.CurrencySettings {
+  enableMultiCurrency = false
+  isMultiCurrencyActivationAllowed = false
+  fullName = "Currency"
+  _alias = "Currency"
+}

@@ -1,0 +1,120 @@
+type salesforce.InsuranceAsyncBulkRequestItem {
+  salesforce.LongTextArea AdditionalInformation {
+    apiName = "InsuranceAsyncBulkRequestItem.AdditionalInformation"
+    label = "Additional Information"
+    length = 131072
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup BatchJobId {
+    apiName = "InsuranceAsyncBulkRequestItem.BatchJobId"
+    label = "Run ID"
+    relationshipName = "BatchJob"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail InsuranceAsyncBulkRequestId {
+    apiName = "InsuranceAsyncBulkRequestItem.InsuranceAsyncBulkRequestId"
+    label = "Insurance Async Bulk Request ID"
+    _required = true
+    relationshipName = "InsuranceAsyncBulkRequest"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "InsuranceAsyncBulkRequestItem.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number SequenceNumber {
+    apiName = "InsuranceAsyncBulkRequestItem.SequenceNumber"
+    label = "Sequence Number"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "InsuranceAsyncBulkRequestItem.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "InsuranceAsyncBulkRequestItem.Id"
+    label = "Insurance Async Bulk Request Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "InsuranceAsyncBulkRequestItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "InsuranceAsyncBulkRequestItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "InsuranceAsyncBulkRequestItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "InsuranceAsyncBulkRequestItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "InsuranceAsyncBulkRequestItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "InsuranceAsyncBulkRequestItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

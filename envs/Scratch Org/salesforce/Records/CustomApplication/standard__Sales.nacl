@@ -1,0 +1,21 @@
+salesforce.CustomApplication standard__Sales {
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Contact",
+    "standard-Account",
+    "standard-Lead",
+    "standard-Opportunity",
+    "standard-Forecasting3",
+    "standard-report",
+    "standard-Dashboard",
+    "standard-Chatter",
+    "standard-File",
+    "standard-Product2",
+  ]
+  fullName = "standard__Sales"
+  _alias = "standard__Sales"
+}

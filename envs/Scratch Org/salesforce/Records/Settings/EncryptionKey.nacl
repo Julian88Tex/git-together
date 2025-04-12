@@ -1,0 +1,4 @@
+salesforce.EncryptionKeySettings {
+  fullName = "EncryptionKey"
+  _alias = "EncryptionKey"
+}

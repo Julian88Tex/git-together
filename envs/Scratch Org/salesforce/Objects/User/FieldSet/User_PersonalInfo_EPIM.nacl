@@ -1,0 +1,161 @@
+salesforce.FieldSet User_PersonalInfo_EPIM {
+  fullName = "User.PersonalInfo_EPIM"
+  description = "Fieldset for User Field Masking"
+  displayedFields = [
+    {
+      field = salesforce.User.field.CompanyName
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Department
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "State"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Phone
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.BadgeText
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "Longitude"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.SenderEmail
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "Latitude"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "City"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Fax
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "PostalCode"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "Street"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.SenderName
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Email
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Extension
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "Country"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Title
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "FirstName"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.EmployeeNumber
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Name
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "GeocodeAccuracy"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Division
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Signature
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = "LastName"
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.FederationIdentifier
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.AboutMe
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Alias
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.Username
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.MobilePhone
+      isFieldManaged = true
+      isRequired = false
+    },
+    {
+      field = salesforce.User.field.ManagerId
+      isFieldManaged = true
+      isRequired = false
+    },
+  ]
+  label = "PersonalInfo_EPIM"
+  _parent = [
+    salesforce.User,
+  ]
+  _alias = "PersonalInfo_EPIM"
+}

@@ -1,0 +1,76 @@
+salesforce.Layout LoanApplicantLiability_Loan_Applicant_Liability_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantLiability.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantLiability.field.LoanApplicantId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicantLiability.field.LoanApplicationLiabilityId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicantLiability.field.Role
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantLiability.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicantLiability.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicantLiability-Loan Applicant Liability Layout"
+  _parent = [
+    salesforce.LoanApplicantLiability,
+  ]
+  _alias = "LoanApplicantLiability-Loan Applicant Liability Layout"
+}

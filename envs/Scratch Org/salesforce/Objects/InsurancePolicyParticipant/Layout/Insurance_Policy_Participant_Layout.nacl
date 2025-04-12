@@ -1,0 +1,107 @@
+salesforce.Layout InsurancePolicyParticipant_Insurance_Policy_Participant_Layout@bsss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PolicyParticipantMasterDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyParticipant.field.InsurancePolicyId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.InsurancePolicyParticipant.field.Role
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.RelationshipToInsured
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.BeneficiarySharePercentage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.ExpirationDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.IsActiveParticipant
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.TermFeeAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.EffectiveToDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.PrimaryParticipantAccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.PrimaryParticipantContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.LegalGuardianId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.IsMinorBeneficiary
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.InsurancePolicyParticipant.field.TotalTermAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.TermPremiumAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.TermTaxAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.InsurancePolicyParticipant.field.EffectiveFromDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "InsurancePolicyParticipant-Insurance Policy Participant Layout"
+  _parent = [
+    salesforce.InsurancePolicyParticipant,
+  ]
+  _alias = "InsurancePolicyParticipant-Insurance Policy Participant Layout"
+}

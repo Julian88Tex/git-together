@@ -1,0 +1,386 @@
+type salesforce.Claim {
+  salesforce.Lookup AccountId {
+    apiName = "Claim.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency ActualAmount {
+    apiName = "Claim.ActualAmount"
+    label = "Actual Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency ApprovedAmount {
+    apiName = "Claim.ApprovedAmount"
+    label = "Approved Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime AssessmentDate {
+    apiName = "Claim.AssessmentDate"
+    label = "Assessment Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CaseId {
+    apiName = "Claim.CaseId"
+    label = "Case ID"
+    relationshipName = "Case"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ClaimReason {
+    apiName = "Claim.ClaimReason"
+    label = "Claim Reason"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ClaimReasonType {
+    apiName = "Claim.ClaimReasonType"
+    label = "Claim Reason Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ClaimType {
+    apiName = "Claim.ClaimType"
+    label = "Claim Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency EstimatedAmount {
+    apiName = "Claim.EstimatedAmount"
+    label = "Estimated Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime FinalizedDate {
+    apiName = "Claim.FinalizedDate"
+    label = "Finalized Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FinancialAuthorityStatus {
+    apiName = "Claim.FinancialAuthorityStatus"
+    label = "Financial Authority Status"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist FnolChannel {
+    apiName = "Claim.FnolChannel"
+    label = "FNOL Channel"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address IncidentSite {
+    apiName = "Claim.IncidentSite"
+    label = "Incident Site"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime InitiationDate {
+    apiName = "Claim.InitiationDate"
+    label = "Initiation Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsuredAssetId {
+    apiName = "Claim.InsuredAssetId"
+    label = "Insurance Policy Asset ID"
+    relationshipName = "InsuredAsset"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsAuthoritiesNotified {
+    apiName = "Claim.IsAuthoritiesNotified"
+    label = "Authorities Notified"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "Claim.IsClosed"
+    label = "Closed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDrivable {
+    apiName = "Claim.IsDrivable"
+    label = "Drivable"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsInhabitable {
+    apiName = "Claim.IsInhabitable"
+    label = "Inhabitable"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime LossDate {
+    apiName = "Claim.LossDate"
+    label = "Loss Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist LossType {
+    apiName = "Claim.LossType"
+    label = "Loss Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "Claim.Name"
+    label = "Claim Number"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Claim.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PolicyNumberId {
+    apiName = "Claim.PolicyNumberId"
+    label = "Insurance Policy ID"
+    relationshipName = "PolicyNumber"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RenewalChannel {
+    apiName = "Claim.RenewalChannel"
+    label = "Renewal Channel"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text RepairShop {
+    apiName = "Claim.RepairShop"
+    label = "Repair Shop"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea RepairShopLocation {
+    apiName = "Claim.RepairShopLocation"
+    label = "Repair Shop Location"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ReportDate {
+    apiName = "Claim.ReportDate"
+    label = "Report Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ReportNumber {
+    apiName = "Claim.ReportNumber"
+    label = "Report Number"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ReportingAuthority {
+    apiName = "Claim.ReportingAuthority"
+    label = "Reporting Authority"
+    length = 100
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Severity {
+    apiName = "Claim.Severity"
+    label = "Severity"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.Lookup SourceId {
+    apiName = "Claim.SourceId"
+    label = "Source ID"
+    relationshipName = "Source"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystem {
+    apiName = "Claim.SourceSystem"
+    label = "Source System"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SourceSystemIdentifier {
+    apiName = "Claim.SourceSystemIdentifier"
+    label = "Source System Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Claim.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Summary {
+    apiName = "Claim.Summary"
+    label = "Summary"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "Claim.UsageType"
+    label = "Usage Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime VisitDate {
+    apiName = "Claim.VisitDate"
+    label = "Visit Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea VisitSite {
+    apiName = "Claim.VisitSite"
+    label = "Visit Site"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Claim.Id"
+    label = "Claim ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Claim.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Claim.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Claim.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Claim.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Claim.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Claim.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

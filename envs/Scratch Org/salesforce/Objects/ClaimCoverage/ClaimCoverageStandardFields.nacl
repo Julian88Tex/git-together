@@ -1,0 +1,171 @@
+type salesforce.ClaimCoverage {
+  salesforce.MasterDetail ClaimId {
+    apiName = "ClaimCoverage.ClaimId"
+    label = "Claim ID"
+    _required = true
+    relationshipName = "Claim"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ClaimItemId {
+    apiName = "ClaimCoverage.ClaimItemId"
+    label = "Claim Item ID"
+    relationshipName = "ClaimItem"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ClaimParticipantId {
+    apiName = "ClaimCoverage.ClaimParticipantId"
+    label = "Claim Participant ID"
+    relationshipName = "ClaimParticipant"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ClaimCoverage.Description"
+    label = "Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency ExpenseReserveAmount {
+    apiName = "ClaimCoverage.ExpenseReserveAmount"
+    label = "Expense Reserve Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyAssetId {
+    apiName = "ClaimCoverage.InsurancePolicyAssetId"
+    label = "Insurance Policy Asset ID"
+    relationshipName = "InsurancePolicyAsset"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyCoverageId {
+    apiName = "ClaimCoverage.InsurancePolicyCoverageId"
+    label = "Insurance Policy Coverage ID"
+    relationshipName = "InsurancePolicyCoverage"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup InsurancePolicyParticipantId {
+    apiName = "ClaimCoverage.InsurancePolicyParticipantId"
+    label = "Insurance Policy Participant ID"
+    relationshipName = "InsurancePolicyParticipant"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist InternalReserveMode {
+    apiName = "ClaimCoverage.InternalReserveMode"
+    label = "Internal Reserve Mode"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency LossReserveAmount {
+    apiName = "ClaimCoverage.LossReserveAmount"
+    label = "Loss Reserve Amount"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ClaimCoverage.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ClaimCoverage.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ClaimCoverage.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ClaimCoverage.Id"
+    label = "Claim Coverage ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ClaimCoverage.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ClaimCoverage.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ClaimCoverage.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ClaimCoverage.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ClaimCoverage.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ClaimCoverage.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules PersonEducation {
+  fullName = "PersonEducation"
+  _parent = [
+    salesforce.PersonEducation,
+  ]
+  _alias = "PersonEducation"
+}

@@ -1,0 +1,15 @@
+salesforce.ListView ActionPlan_My_ActionPlans {
+  fullName = "ActionPlan.My_ActionPlans"
+  columns = [
+    salesforce.ActionPlan.field.Name,
+    salesforce.ActionPlan.field.ActionPlanState,
+    "Target",
+    salesforce.ActionPlan.field.StartDate,
+  ]
+  filterScope = "Mine"
+  label = "My Action Plans"
+  _parent = [
+    salesforce.ActionPlan,
+  ]
+  _alias = "My Action Plans"
+}

@@ -1,0 +1,12 @@
+salesforce.SharingSet Trial_Portal_Users {
+  fullName = "Trial_Portal_Users"
+  accessMappings = {
+    accessLevel = "Edit"
+    object = "Case"
+    objectField = "Account"
+    userField = "Account"
+  }
+  name = "Trial Portal Users"
+  profiles = "trial customer portal user"
+  _alias = "Trial_Portal_Users"
+}

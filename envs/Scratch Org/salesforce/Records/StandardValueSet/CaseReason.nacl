@@ -1,0 +1,37 @@
+salesforce.StandardValueSet CaseReason {
+  fullName = "CaseReason"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "User didn't attend training"
+      default = false
+      label = "User didn't attend training"
+      cssExposed = false
+    },
+    {
+      fullName = "Complex functionality"
+      default = false
+      label = "Complex functionality"
+      cssExposed = false
+    },
+    {
+      fullName = "Existing problem"
+      default = false
+      label = "Existing problem"
+      cssExposed = false
+    },
+    {
+      fullName = "Instructions not clear"
+      default = false
+      label = "Instructions not clear"
+      cssExposed = false
+    },
+    {
+      fullName = "New problem"
+      default = false
+      label = "New problem"
+      cssExposed = false
+    },
+  ]
+  _alias = "CaseReason"
+}

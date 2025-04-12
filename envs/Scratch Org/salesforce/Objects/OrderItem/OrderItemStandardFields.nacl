@@ -1,0 +1,183 @@
+type salesforce.OrderItem {
+  salesforce.Number AvailableQuantity {
+    apiName = "OrderItem.AvailableQuantity"
+    label = "Available Quantity"
+    scale = 2
+    precision = 18
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Description {
+    apiName = "OrderItem.Description"
+    label = "Line Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "OrderItem.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency ListPrice {
+    apiName = "OrderItem.ListPrice"
+    label = "List Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItem.OrderId"
+    label = "Order ID"
+    _required = true
+    relationshipName = "Order"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup OriginalOrderItemId {
+    apiName = "OrderItem.OriginalOrderItemId"
+    label = "Original Order Item ID"
+    relationshipName = "OriginalOrderItem"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "OrderItem.Product2Id"
+    label = "Product ID"
+    relationshipName = "Product2"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Unknown ProductCode {
+    apiName = "OrderItem.ProductCode"
+    _hidden_value = true
+  }
+  salesforce.Number Quantity {
+    apiName = "OrderItem.Quantity"
+    label = "Quantity"
+    _required = true
+    scale = 2
+    precision = 18
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date ServiceDate {
+    apiName = "OrderItem.ServiceDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown SubscriptionTerm {
+    apiName = "OrderItem.SubscriptionTerm"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "OrderItem.TotalPrice"
+    label = "Total Price"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency UnitPrice {
+    apiName = "OrderItem.UnitPrice"
+    label = "Unit Price"
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "OrderItem.Id"
+    label = "Order Product ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "OrderItem.PricebookEntryId"
+    label = "Price Book Entry ID"
+    _required = true
+    relationshipName = "PricebookEntry"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber OrderItemNumber {
+    apiName = "OrderItem.OrderItemNumber"
+    label = "Order Product Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

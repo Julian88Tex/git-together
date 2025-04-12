@@ -1,0 +1,283 @@
+type salesforce.LoanApplicantDeclaration {
+  salesforce.Picklist BankruptcyType {
+    apiName = "LoanApplicantDeclaration.BankruptcyType"
+    label = "Bankruptcy Type"
+    restricted = false
+    visibleLines = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency BorrowedAmount {
+    apiName = "LoanApplicantDeclaration.BorrowedAmount"
+    label = "Amount Borrowed"
+    scale = 2
+    precision = 18
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text DeclarationExtIdentifier {
+    apiName = "LoanApplicantDeclaration.DeclarationExtIdentifier"
+    label = "Loan Applicant Declaration External ID"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasBorrowedMoney {
+    apiName = "LoanApplicantDeclaration.HasBorrowedMoney"
+    label = "Borrowing Money"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasDeclaredBankruptcy {
+    apiName = "LoanApplicantDeclaration.HasDeclaredBankruptcy"
+    label = "Declared Bankruptcy"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasDeedSurrender {
+    apiName = "LoanApplicantDeclaration.HasDeedSurrender"
+    label = "Surrendered Deed in Lieu of Foreclosure"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasOutstandingJudgement {
+    apiName = "LoanApplicantDeclaration.HasOutstandingJudgement"
+    label = "Outstanding Judgements"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasOwnershipInterest {
+    apiName = "LoanApplicantDeclaration.HasOwnershipInterest"
+    label = "Ownership Interest"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasPastShortSale {
+    apiName = "LoanApplicantDeclaration.HasPastShortSale"
+    label = "Short Sale"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasPropertyForeclosed {
+    apiName = "LoanApplicantDeclaration.HasPropertyForeclosed"
+    label = "Foreclosed Property"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasUndisclAddlCreditApp {
+    apiName = "LoanApplicantDeclaration.HasUndisclAddlCreditApp"
+    label = "Undisclosed New Credit"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasUndisclAddlPropApp {
+    apiName = "LoanApplicantDeclaration.HasUndisclAddlPropApp"
+    label = "Undisclosed Loan on Other Property"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsCoSignerUndisclDebt {
+    apiName = "LoanApplicantDeclaration.IsCoSignerUndisclDebt"
+    label = "Co-Signer or Guarantor on Undisclosed Loan or Debt"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPartyToLawsuit {
+    apiName = "LoanApplicantDeclaration.IsPartyToLawsuit"
+    label = "Party to Lawsuit"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPresentlyDelinquent {
+    apiName = "LoanApplicantDeclaration.IsPresentlyDelinquent"
+    label = "Delinquent or in Default on Debt"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPrimaryResidence {
+    apiName = "LoanApplicantDeclaration.IsPrimaryResidence"
+    label = "Primary Residence"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRelatedToSeller {
+    apiName = "LoanApplicantDeclaration.IsRelatedToSeller"
+    label = "Relationship or Affiliation with Seller"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSubjectToPriorityLien {
+    apiName = "LoanApplicantDeclaration.IsSubjectToPriorityLien"
+    label = "Property Subject to Priority Clean Energy Lien"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail LoanApplicantId {
+    apiName = "LoanApplicantDeclaration.LoanApplicantId"
+    label = "Loan Applicant ID"
+    _required = true
+    relationshipName = "LoanApplicant"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LoanApplicationId {
+    apiName = "LoanApplicantDeclaration.LoanApplicationId"
+    label = "Residential Loan Application ID"
+    relationshipName = "LoanApplication"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LoanApplicantDeclaration.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LoanApplicantDeclaration.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PriorPropertyTitleType {
+    apiName = "LoanApplicantDeclaration.PriorPropertyTitleType"
+    label = "Prior Ownership Title Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PriorPropertyUsageType {
+    apiName = "LoanApplicantDeclaration.PriorPropertyUsageType"
+    label = "Prior Ownership Type"
+    restricted = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LoanApplicantDeclaration.Id"
+    label = "Loan Applicant Declaration ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LoanApplicantDeclaration.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LoanApplicantDeclaration.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LoanApplicantDeclaration.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LoanApplicantDeclaration.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LoanApplicantDeclaration.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LoanApplicantDeclaration.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,231 @@
+type salesforce.BusinessLicense {
+  salesforce.Lookup AccountId {
+    apiName = "BusinessLicense.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "BusinessLicense.ContactId"
+    label = "Contact ID"
+    relationshipName = "Contact"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Identifier {
+    apiName = "BusinessLicense.Identifier"
+    label = "Identifier"
+    length = 255
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "BusinessLicense.IsActive"
+    label = "Is Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Issuer {
+    apiName = "BusinessLicense.Issuer"
+    label = "Issuer"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text JurisdictionCountry {
+    apiName = "BusinessLicense.JurisdictionCountry"
+    label = "Jurisdiction Country"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text JurisdictionOther {
+    apiName = "BusinessLicense.JurisdictionOther"
+    label = "Jurisdiction Other"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text JurisdictionState {
+    apiName = "BusinessLicense.JurisdictionState"
+    label = "Jurisdiction State"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist JurisdictionType {
+    apiName = "BusinessLicense.JurisdictionType"
+    label = "Jurisdiction Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist LicenseClass {
+    apiName = "BusinessLicense.LicenseClass"
+    inlineHelpText = "Specifies the types of licenses that an organization wants to track."
+    label = "License Class"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist LineOfAuthority {
+    apiName = "BusinessLicense.LineOfAuthority"
+    label = "Line Of Authority"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "BusinessLicense.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "BusinessLicense.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime PeriodEnd {
+    apiName = "BusinessLicense.PeriodEnd"
+    label = "Period End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PeriodStart {
+    apiName = "BusinessLicense.PeriodStart"
+    label = "Period Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ResidenceStatus {
+    apiName = "BusinessLicense.ResidenceStatus"
+    label = "Residence Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "BusinessLicense.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "BusinessLicense.UserId"
+    label = "User ID"
+    relationshipName = "User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist VerificationStatus {
+    apiName = "BusinessLicense.VerificationStatus"
+    label = "Verification Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date VerifiedDate {
+    apiName = "BusinessLicense.VerifiedDate"
+    label = "Verified On"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "BusinessLicense.Id"
+    label = "Business License ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BusinessLicense.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BusinessLicense.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BusinessLicense.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BusinessLicense.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BusinessLicense.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BusinessLicense.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

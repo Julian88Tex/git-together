@@ -1,0 +1,9 @@
+salesforce.ListView ClaimTeamMember_All_ClaimTeamMembers {
+  fullName = "ClaimTeamMember.All_ClaimTeamMembers"
+  filterScope = "Everything"
+  label = "All Claim Team Members"
+  _parent = [
+    salesforce.ClaimTeamMember,
+  ]
+  _alias = "All Claim Team Members"
+}

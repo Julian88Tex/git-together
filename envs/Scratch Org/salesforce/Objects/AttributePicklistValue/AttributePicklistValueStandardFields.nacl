@@ -1,0 +1,121 @@
+type salesforce.AttributePicklistValue {
+  salesforce.Unknown Abbreviation {
+    apiName = "AttributePicklistValue.Abbreviation"
+    _hidden_value = true
+  }
+  salesforce.Text Code {
+    apiName = "AttributePicklistValue.Code"
+    label = "Code"
+    _required = true
+    length = 80
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown DisplayValue {
+    apiName = "AttributePicklistValue.DisplayValue"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsDefault {
+    apiName = "AttributePicklistValue.IsDefault"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "AttributePicklistValue.Name"
+    label = "Name"
+    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail PicklistId {
+    apiName = "AttributePicklistValue.PicklistId"
+    label = "Attribute Picklist ID"
+    _required = true
+    relationshipName = "Picklist"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Unknown Sequence {
+    apiName = "AttributePicklistValue.Sequence"
+    _hidden_value = true
+  }
+  salesforce.Unknown Status {
+    apiName = "AttributePicklistValue.Status"
+    _hidden_value = true
+  }
+  salesforce.Text Value {
+    apiName = "AttributePicklistValue.Value"
+    label = "Value"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AttributePicklistValue.Id"
+    label = "Attribute Picklist Value ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AttributePicklistValue.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AttributePicklistValue.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AttributePicklistValue.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AttributePicklistValue.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AttributePicklistValue.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AttributePicklistValue.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,6 @@
+salesforce.MilestoneType Close_Case@s {
+  fullName = "Close Case"
+  description = "Sets a sequential recurring milestone for closing a case."
+  recurrenceType = "recursChained"
+  _alias = "Close Case"
+}

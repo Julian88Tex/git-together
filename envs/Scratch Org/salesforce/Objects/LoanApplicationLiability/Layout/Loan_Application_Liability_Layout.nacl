@@ -1,0 +1,124 @@
+salesforce.Layout LoanApplicationLiability_Loan_Application_Liability_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationLiability.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationLiability.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.LoanApplicationAssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.AccountType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.LoanType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.OtherLiabilityType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.CreditorName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.AccountNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.MonthlyPaymentAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.UnpaidBalanceAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.ShouldBePaidInFull
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.IsJointLiability
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.CreditLimitAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.LiabilityClass
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationLiability.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationLiability.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationLiability.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicationLiability-Loan Application Liability Layout"
+  _parent = [
+    salesforce.LoanApplicationLiability,
+  ]
+  _alias = "LoanApplicationLiability-Loan Application Liability Layout"
+}

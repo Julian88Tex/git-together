@@ -1,0 +1,7 @@
+salesforce.SharingRules AttributePicklist {
+  fullName = "AttributePicklist"
+  _parent = [
+    salesforce.AttributePicklist,
+  ]
+  _alias = "AttributePicklist"
+}

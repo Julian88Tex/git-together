@@ -1,0 +1,4 @@
+salesforce.MatchingRules PersonAccount {
+  fullName = "PersonAccount"
+  _alias = "PersonAccount"
+}

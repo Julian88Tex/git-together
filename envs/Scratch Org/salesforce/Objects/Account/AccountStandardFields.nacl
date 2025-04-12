@@ -1,0 +1,464 @@
+type salesforce.Account {
+  salesforce.Unknown AccountNumber {
+    apiName = "Account.AccountNumber"
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountSource {
+    apiName = "Account.AccountSource"
+    label = "Account Source"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Currency AnnualRevenue {
+    apiName = "Account.AnnualRevenue"
+    label = "Annual Revenue"
+    scale = 0
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address BillingAddress {
+    apiName = "Account.BillingAddress"
+    label = "Billing Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Account.Description"
+    label = "Account Description"
+    length = 32000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone Fax {
+    apiName = "Account.Fax"
+    label = "Account Fax"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Industry {
+    apiName = "Account.Industry"
+    label = "Industry"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Industry
+  }
+  salesforce.Checkbox IsCustomerPortal {
+    apiName = "Account.IsCustomerPortal"
+    label = "Customer Portal Account"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Jigsaw {
+    apiName = "Account.Jigsaw"
+    label = "Data.com Key"
+    length = 20
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Name Name {
+    apiName = "Account.Name"
+    label = "Account Name"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number NumberOfEmployees {
+    apiName = "Account.NumberOfEmployees"
+    label = "Employees"
+    scale = 0
+    precision = 8
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Account.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Ownership {
+    apiName = "Account.Ownership"
+    _hidden_value = true
+  }
+  salesforce.Hierarchy ParentId {
+    apiName = "Account.ParentId"
+    label = "Parent Account ID"
+    relationshipName = "Parent"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text PersonAssistantName {
+    apiName = "Account.PersonAssistantName"
+    label = "Assistant"
+    length = 40
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone PersonAssistantPhone {
+    apiName = "Account.PersonAssistantPhone"
+    label = "Asst. Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date PersonBirthdate {
+    apiName = "Account.PersonBirthdate"
+    label = "Birthdate"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text PersonDepartment {
+    apiName = "Account.PersonDepartment"
+    label = "Department"
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox PersonDoNotCall {
+    apiName = "Account.PersonDoNotCall"
+    label = "Do Not Call"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Email PersonEmail {
+    apiName = "Account.PersonEmail"
+    label = "Email"
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PersonGenderIdentity {
+    apiName = "Account.PersonGenderIdentity"
+    _hidden_value = true
+  }
+  salesforce.Checkbox PersonHasOptedOutOfEmail {
+    apiName = "Account.PersonHasOptedOutOfEmail"
+    label = "Email Opt Out"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox PersonHasOptedOutOfFax {
+    apiName = "Account.PersonHasOptedOutOfFax"
+    label = "Fax Opt Out"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone PersonHomePhone {
+    apiName = "Account.PersonHomePhone"
+    label = "Home Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PersonIndividualId {
+    apiName = "Account.PersonIndividualId"
+    label = "Individual ID"
+    relationshipName = "PersonIndividual"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PersonLastCURequestDate {
+    apiName = "Account.PersonLastCURequestDate"
+    label = "Last Stay-in-Touch Request Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime PersonLastCUUpdateDate {
+    apiName = "Account.PersonLastCUUpdateDate"
+    label = "Last Stay-in-Touch Save Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PersonLeadSource {
+    apiName = "Account.PersonLeadSource"
+    label = "Lead Source"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Address PersonMailingAddress {
+    apiName = "Account.PersonMailingAddress"
+    label = "Mailing Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone PersonMobilePhone {
+    apiName = "Account.PersonMobilePhone"
+    label = "Mobile"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address PersonOtherAddress {
+    apiName = "Account.PersonOtherAddress"
+    label = "Other Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone PersonOtherPhone {
+    apiName = "Account.PersonOtherPhone"
+    label = "Other Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PersonPronouns {
+    apiName = "Account.PersonPronouns"
+    _hidden_value = true
+  }
+  salesforce.Text PersonTitle {
+    apiName = "Account.PersonTitle"
+    label = "Title"
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone Phone {
+    apiName = "Account.Phone"
+    label = "Account Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Rating {
+    apiName = "Account.Rating"
+    _hidden_value = true
+  }
+  salesforce.Address ShippingAddress {
+    apiName = "Account.ShippingAddress"
+    label = "Shipping Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown Sic {
+    apiName = "Account.Sic"
+    _hidden_value = true
+  }
+  salesforce.Text SicDesc {
+    apiName = "Account.SicDesc"
+    label = "SIC Description"
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Site {
+    apiName = "Account.Site"
+    _hidden_value = true
+  }
+  salesforce.Unknown TickerSymbol {
+    apiName = "Account.TickerSymbol"
+    _hidden_value = true
+  }
+  salesforce.Unknown Tier {
+    apiName = "Account.Tier"
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Account.Type"
+    label = "Account Type"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.AccountType
+  }
+  salesforce.Url Website {
+    apiName = "Account.Website"
+    label = "Website"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Account.Id"
+    label = "Account ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Account.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Account.MasterRecordId"
+    label = "Master Record ID"
+    relationshipName = "MasterRecord"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RecordTypeId {
+    apiName = "Account.RecordTypeId"
+    label = "Record Type ID"
+    relationshipName = "RecordType"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "Account.PhotoUrl"
+    label = "Photo URL"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Account.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Account.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Account.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Account.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Account.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Account.LastActivityDate"
+    label = "Last Activity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PersonContactId {
+    apiName = "Account.PersonContactId"
+    label = "Contact ID"
+    relationshipName = "PersonContact"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPersonAccount {
+    apiName = "Account.IsPersonAccount"
+    label = "Is Person Account"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PersonEmailBouncedReason {
+    apiName = "Account.PersonEmailBouncedReason"
+    label = "Email Bounced Reason"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime PersonEmailBouncedDate {
+    apiName = "Account.PersonEmailBouncedDate"
+    label = "Email Bounced Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text JigsawCompanyId {
+    apiName = "Account.JigsawCompanyId"
+    label = "Jigsaw Company ID"
+    length = 20
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

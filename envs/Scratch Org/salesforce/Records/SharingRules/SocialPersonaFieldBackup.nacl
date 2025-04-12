@@ -1,0 +1,4 @@
+salesforce.SharingRules SocialPersonaFieldBackup {
+  fullName = "SocialPersonaFieldBackup"
+  _alias = "SocialPersonaFieldBackup"
+}

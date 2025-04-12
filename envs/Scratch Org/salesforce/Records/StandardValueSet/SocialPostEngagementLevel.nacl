@@ -1,0 +1,27 @@
+salesforce.StandardValueSet SocialPostEngagementLevel {
+  fullName = "SocialPostEngagementLevel"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Resolved"
+      default = false
+      label = "Resolved"
+    },
+    {
+      fullName = "Submitted"
+      default = false
+      label = "Submitted"
+    },
+    {
+      fullName = "Reviewed"
+      default = false
+      label = "Reviewed"
+    },
+    {
+      fullName = "Commented"
+      default = false
+      label = "Commented"
+    },
+  ]
+  _alias = "SocialPostEngagementLevel"
+}

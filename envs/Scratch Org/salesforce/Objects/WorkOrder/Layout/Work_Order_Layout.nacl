@@ -1,0 +1,187 @@
+salesforce.Layout WorkOrder_Work_Order_Layout@bss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrder.field.WorkOrderNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.ParentWorkOrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.CaseId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.ServiceContractId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.Priority
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.AssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.EntitlementId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkOrder.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrder.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkOrder.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "WorkOrderNumber",
+      "Subject",
+      "AccountId",
+      "Priority",
+      "Status",
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Asset",
+      ]
+      relatedList = "WorkOrderLineItems"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "Name",
+        "Subject",
+        "Account",
+        "Priority",
+        "Status",
+      ]
+      relatedList = "ChildWorkOrders"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "WorkOrder-Work Order Layout"
+  _parent = [
+    salesforce.WorkOrder,
+  ]
+  _alias = "WorkOrder-Work Order Layout"
+}

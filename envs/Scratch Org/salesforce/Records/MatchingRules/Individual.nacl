@@ -1,0 +1,4 @@
+salesforce.MatchingRules Individual {
+  fullName = "Individual"
+  _alias = "Individual"
+}

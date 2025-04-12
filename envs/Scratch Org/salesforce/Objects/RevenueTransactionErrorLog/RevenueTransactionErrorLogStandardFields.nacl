@@ -1,0 +1,112 @@
+type salesforce.RevenueTransactionErrorLog {
+  serviceid Id {
+    apiName = "RevenueTransactionErrorLog.Id"
+    label = "Revenue Transaction Error Log ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "RevenueTransactionErrorLog.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "RevenueTransactionErrorLog.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ErrorLogNumber {
+    apiName = "RevenueTransactionErrorLog.ErrorLogNumber"
+    label = "Error Log Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "RevenueTransactionErrorLog.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "RevenueTransactionErrorLog.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "RevenueTransactionErrorLog.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "RevenueTransactionErrorLog.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "RevenueTransactionErrorLog.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PrimaryRecordId {
+    apiName = "RevenueTransactionErrorLog.PrimaryRecordId"
+    label = "Primary Record ID"
+    relationshipName = "PrimaryRecord"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea ErrorMessage {
+    apiName = "RevenueTransactionErrorLog.ErrorMessage"
+    label = "Error Message"
+    length = 2000
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PrimaryRecord2Id {
+    apiName = "RevenueTransactionErrorLog.PrimaryRecord2Id"
+    label = "Primary Record 2 ID"
+    relationshipName = "PrimaryRecord2"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AsyncOperationTrackerId {
+    apiName = "RevenueTransactionErrorLog.AsyncOperationTrackerId"
+    label = "Revenue Async Operation ID"
+    relationshipName = "AsyncOperationTracker"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

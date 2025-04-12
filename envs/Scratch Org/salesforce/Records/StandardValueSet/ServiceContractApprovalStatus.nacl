@@ -1,0 +1,22 @@
+salesforce.StandardValueSet ServiceContractApprovalStatus {
+  fullName = "ServiceContractApprovalStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Draft"
+      default = true
+      label = "Draft"
+    },
+    {
+      fullName = "In Approval Process"
+      default = false
+      label = "In Approval Process"
+    },
+    {
+      fullName = "Activated"
+      default = false
+      label = "Activated"
+    },
+  ]
+  _alias = "ServiceContractApprovalStatus"
+}

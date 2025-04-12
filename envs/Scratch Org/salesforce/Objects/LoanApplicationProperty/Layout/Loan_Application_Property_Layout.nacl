@@ -1,0 +1,110 @@
+salesforce.Layout LoanApplicationProperty_Loan_Application_Property_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationProperty.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.LoanApplicationProperty.field.LoanApplicationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.PropertyAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.UnitsFinancedCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.LoanPurposeType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.PropertyUseType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.RequestedLoanAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.PropertyValue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.IsMixedUseProperty
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.IsManufacturedHome
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.ExpMonthlyRentalIncome
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.LoanApplicationProperty.field.ExpNetMonthlyRentalInc
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationProperty.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.LoanApplicationProperty.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "LoanApplicationProperty-Loan Application Property Layout"
+  _parent = [
+    salesforce.LoanApplicationProperty,
+  ]
+  _alias = "LoanApplicationProperty-Loan Application Property Layout"
+}

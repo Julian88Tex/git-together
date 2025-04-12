@@ -1,0 +1,182 @@
+salesforce.Layout GroupCensusMember_Group_Census_Member_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.GroupClassId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.ContactId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMember.field.GroupCensusId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.Status
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Personal Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMember.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMember.field.FirstName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.Gender
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.JoinDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.FullTimeEquivalent
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.PhoneNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.Birthdate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.Email
+            },
+            {
+              behavior = "Required"
+              field = salesforce.GroupCensusMember.field.Lastname
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.SmokerStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.PolicyStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.Address
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.AnnualEligibleSalary
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Other Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.RelationshipToPrimaryMember
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.IsOptOutAllPlans
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.IsPortalUser
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.MemberType
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupCensusMember.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.PrimaryMemberCategory
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.OptOutPlanTypes
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.DependentCount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupCensusMember.field.PrimaryGroupCensusMemberId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupCensusMember.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "GroupCensusMember-Group Census Member Layout"
+  _parent = [
+    salesforce.GroupCensusMember,
+  ]
+  _alias = "GroupCensusMember-Group Census Member Layout"
+}

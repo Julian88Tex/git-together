@@ -1,0 +1,9 @@
+salesforce.ListView GroupClass_All_null {
+  fullName = "GroupClass.All_null"
+  filterScope = "Everything"
+  label = "All Group Class"
+  _parent = [
+    salesforce.GroupClass,
+  ]
+  _alias = "All Group Class"
+}

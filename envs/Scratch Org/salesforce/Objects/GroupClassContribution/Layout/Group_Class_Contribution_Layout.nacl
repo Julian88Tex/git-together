@@ -1,0 +1,84 @@
+salesforce.Layout GroupClassContribution_Group_Class_Contribution_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupClassContribution.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.EffectiveStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.Amount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.GroupBenefitProductCategory
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupClassContribution.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.GroupClassContribution.field.GroupClassId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.EffectiveEndDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.MemberType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.Percentage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.GroupClassContribution.field.ContractGroupPlanId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.GroupClassContribution.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "GroupClassContribution-Group Class Contribution Layout"
+  _parent = [
+    salesforce.GroupClassContribution,
+  ]
+  _alias = "GroupClassContribution-Group Class Contribution Layout"
+}

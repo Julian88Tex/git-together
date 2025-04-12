@@ -1,0 +1,9 @@
+salesforce.ListView FinancialGoal_all_financial_goals {
+  fullName = "FinancialGoal.all_financial_goals"
+  filterScope = "Everything"
+  label = "All Financial Goals"
+  _parent = [
+    salesforce.FinancialGoal,
+  ]
+  _alias = "All Financial Goals"
+}

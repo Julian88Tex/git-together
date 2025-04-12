@@ -1,0 +1,9 @@
+salesforce.ListView CaseGatewayRequest_All_CaseGatewayRequests {
+  fullName = "CaseGatewayRequest.All_CaseGatewayRequests"
+  filterScope = "Everything"
+  label = "All Case Gateway Requests"
+  _parent = [
+    salesforce.CaseGatewayRequest,
+  ]
+  _alias = "All Case Gateway Requests"
+}

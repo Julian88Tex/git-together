@@ -1,0 +1,7 @@
+salesforce.SharingRules CommSubscriptionConsent {
+  fullName = "CommSubscriptionConsent"
+  _parent = [
+    salesforce.CommSubscriptionConsent,
+  ]
+  _alias = "CommSubscriptionConsent"
+}

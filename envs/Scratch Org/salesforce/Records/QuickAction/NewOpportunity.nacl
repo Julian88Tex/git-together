@@ -1,0 +1,44 @@
+salesforce.QuickAction NewOpportunity {
+  fullName = "NewOpportunity"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "AccountId"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CloseDate"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "StageName"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Amount"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = salesforce.Opportunity
+  type = "Create"
+  _alias = "NewOpportunity"
+}

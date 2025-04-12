@@ -1,0 +1,22 @@
+salesforce.LightningPage DataGovernanceConsole_UtilityBar {
+  description = "The default utility bar for the Policy Center application."
+  flexiPageRegions = [
+    {
+      itemInstances = {
+        componentInstance = {
+          componentName = "notes:utilityBarNoteList"
+          identifier = "notes_utilityBarNoteList"
+        }
+      }
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Policy Center App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  fullName = "DataGovernanceConsole_UtilityBar"
+  _alias = "DataGovernanceConsole_UtilityBar"
+}

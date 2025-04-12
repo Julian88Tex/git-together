@@ -1,0 +1,16 @@
+salesforce.ListView ServiceContract_All_ServiceContracts {
+  fullName = "ServiceContract.All_ServiceContracts"
+  columns = [
+    "CONTRACT.NAME",
+    "CONTRACT.APPROVALSTATUS",
+    "CONTRACT.STARTDATE",
+    "CONTRACT.ENDDATE",
+    "CONTRACT.STATUS",
+  ]
+  filterScope = "Everything"
+  label = "All Service Contracts"
+  _parent = [
+    salesforce.ServiceContract,
+  ]
+  _alias = "All Service Contracts"
+}

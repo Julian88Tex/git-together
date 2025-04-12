@@ -1,0 +1,107 @@
+salesforce.Layout BusinessLicense_Business_License_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BusinessLicense.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.PeriodStart
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.PeriodEnd
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.Issuer
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.Identifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.UserId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.VerifiedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.JurisdictionType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.VerificationStatus
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.JurisdictionState
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.JurisdictionCountry
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.JurisdictionOther
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BusinessLicense.field.LicenseClass
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "BusinessLicense-Business License Layout"
+  _parent = [
+    salesforce.BusinessLicense,
+  ]
+  _alias = "BusinessLicense-Business License Layout"
+}
