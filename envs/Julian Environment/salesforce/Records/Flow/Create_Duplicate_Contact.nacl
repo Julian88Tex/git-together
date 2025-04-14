@@ -1,0 +1,98 @@
+salesforce.Flow Create_Duplicate_Contact {
+  fullName = "Create_Duplicate_Contact"
+  apiVersion = 57
+  description = "Creates a Contact and then creates a duplicate Contact with 'test 2' in the name"
+  interviewLabel = "Create Duplicate Contact {!$Flow.CurrentDateTime}"
+  label = "Create Duplicate Contact"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  recordCreates = [
+    {
+      name = "Create_Duplicate_Contact"
+      label = "Create Duplicate Contact"
+      locationX = 176
+      locationY = 398
+      inputAssignments = [
+        {
+          field = "FirstName"
+          value = {
+            elementReference = "FirstName"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            stringValue = "{!LastName} test 2"
+          }
+        },
+      ]
+      object = salesforce.Contact
+      storeOutputAutomatically = true
+    },
+    {
+      name = "Create_Original_Contact"
+      label = "Create Original Contact"
+      locationX = 176
+      locationY = 278
+      inputAssignments = [
+        {
+          field = "FirstName"
+          value = {
+            elementReference = "FirstName"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            elementReference = "LastName"
+          }
+        },
+      ]
+      object = salesforce.Contact
+      storeOutputAutomatically = true
+    },
+  ]
+  screens = {
+    name = "Get_Contact_Details"
+    label = "Get Contact Details"
+    locationX = 176
+    locationY = 158
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    fields = [
+      {
+        name = "FirstName"
+        dataType = "String"
+        fieldText = "First Name"
+        fieldType = "InputField"
+        isRequired = true
+      },
+      {
+        name = "LastName"
+        dataType = "String"
+        fieldText = "Last Name"
+        fieldType = "InputField"
+        isRequired = true
+      },
+    ]
+    showFooter = true
+    showHeader = true
+  }
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Get_Contact_Details"
+    }
+  }
+  status = "Active"
+  _alias = "Create Duplicate Contact"
+}

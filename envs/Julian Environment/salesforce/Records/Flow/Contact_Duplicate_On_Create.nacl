@@ -1,0 +1,54 @@
+salesforce.Flow Contact_Duplicate_On_Create {
+  fullName = "Contact_Duplicate_On_Create"
+  apiVersion = 57
+  description = "When a Contact is created, creates a duplicate Contact with 'test 2' added to the last name"
+  interviewLabel = "Contact Duplicate On Create {!$Flow.CurrentDateTime}"
+  label = "Contact Duplicate On Create"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordCreates = [
+    {
+      name = "Create_Duplicate_Contact"
+      label = "Create Duplicate Contact"
+      locationX = 176
+      locationY = 188
+      inputAssignments = [
+        {
+          field = "FirstName"
+          value = {
+            elementReference = "$Record.FirstName"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            stringValue = "{!$Record.LastName} test 2"
+          }
+        },
+      ]
+      object = salesforce.Contact
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Create_Duplicate_Contact"
+    }
+    object = salesforce.Contact
+    recordTriggerType = "Create"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Active"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact Duplicate On Create"
+}

@@ -1,0 +1,36 @@
+salesforce.Flow Contact_Duplication_Flow {
+  fullName = "Contact_Duplication_Flow"
+  apiVersion = 57
+  description = "Flow to handle contact duplication checks"
+  interviewLabel = "Contact Duplication Flow {!$Flow.CurrentDateTime}"
+  label = "Contact Duplication Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  screens = {
+    name = "Initial_Screen"
+    label = "Initial Screen"
+    locationX = 176
+    locationY = 158
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    showFooter = true
+    showHeader = true
+  }
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Initial_Screen"
+    }
+  }
+  status = "Active"
+  _alias = "Contact Duplication Flow"
+}

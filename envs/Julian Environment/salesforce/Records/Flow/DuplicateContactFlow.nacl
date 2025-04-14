@@ -1,0 +1,73 @@
+salesforce.Flow DuplicateContactFlow {
+  fullName = "DuplicateContactFlow"
+  apiVersion = 57
+  description = "Creates a duplicate Contact record with modified fields"
+  formulas = [
+    {
+      name = "FormulaLastName"
+      dataType = "String"
+      expression = "{!$Record.LastName} & \" Test 2\""
+    },
+  ]
+  interviewLabel = "Duplicate Contact Flow {!$Flow.CurrentDateTime}"
+  label = "Duplicate Contact Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlow"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordCreates = [
+    {
+      name = "Create_Duplicate_Contact"
+      label = "Create Duplicate Contact"
+      locationX = 176
+      locationY = 158
+      inputAssignments = [
+        {
+          field = salesforce.Contact.field.Email
+          value = {
+            elementReference = salesforce.Contact.field.Email
+          }
+        },
+        {
+          field = "FirstName"
+          value = {
+            elementReference = "$Record.FirstName"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            elementReference = "FormulaLastName"
+          }
+        },
+        {
+          field = salesforce.Contact.field.Phone
+          value = {
+            elementReference = salesforce.Contact.field.Phone
+          }
+        },
+      ]
+      object = salesforce.Contact
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Create_Duplicate_Contact"
+    }
+    object = salesforce.Contact
+    recordTriggerType = "Create"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Active"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Duplicate Contact Flow"
+}
