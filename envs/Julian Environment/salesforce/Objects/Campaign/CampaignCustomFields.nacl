@@ -8,9 +8,6 @@ type salesforce.Campaign {
     ]
     relationshipLabel = "Campaigns"
     relationshipName = "Campaigns"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup Classy_Team__c {
     apiName = "Campaign.Classy_Team__c"
@@ -21,9 +18,6 @@ type salesforce.Campaign {
     ]
     relationshipLabel = "Campaigns (Campaign_Team)"
     relationshipName = "Campaigns1"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist DB_Campaign_Tactic__c {
     apiName = "Campaign.DB_Campaign_Tactic__c"
@@ -98,9 +92,6 @@ type salesforce.Campaign {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary GW_Volunteers__Number_of_Volunteers__c {
     apiName = "Campaign.GW_Volunteers__Number_of_Volunteers__c"
@@ -112,9 +103,6 @@ type salesforce.Campaign {
     summaryOperation = "sum"
     precision = 5
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary GW_Volunteers__Volunteer_Completed_Hours__c {
@@ -127,9 +115,6 @@ type salesforce.Campaign {
     summaryOperation = "sum"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary GW_Volunteers__Volunteer_Jobs__c {
@@ -140,9 +125,6 @@ type salesforce.Campaign {
     summaryOperation = "count"
     precision = 18
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary GW_Volunteers__Volunteer_Shifts__c {
@@ -154,9 +136,6 @@ type salesforce.Campaign {
     summaryOperation = "sum"
     precision = 18
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist GW_Volunteers__Volunteer_Website_Time_Zone__c {
@@ -608,9 +587,6 @@ type salesforce.Campaign {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary GW_Volunteers__Volunteers_Still_Needed__c {
     apiName = "Campaign.GW_Volunteers__Volunteers_Still_Needed__c"
@@ -621,9 +597,6 @@ type salesforce.Campaign {
     summaryOperation = "sum"
     precision = 18
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text funraise__fr_ID__c {
@@ -669,9 +642,6 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     label = "Average Gift"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -706,9 +676,6 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency stayclassy__Commitment__c {
     apiName = "Campaign.stayclassy__Commitment__c"
@@ -717,18 +684,12 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     label = "Commitment"
     precision = 10
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Url stayclassy__Event_Image_URL__c {
     apiName = "Campaign.stayclassy__Event_Image_URL__c"
     deprecated = false
     description = "For top-level events, this is the URL to the main event image"
     label = "Event Image URL"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__Fundraiser_Alias__c {
     apiName = "Campaign.stayclassy__Fundraiser_Alias__c"
@@ -738,10 +699,7 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     label = "Fundraiser Alias"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__address1__c {
     apiName = "Campaign.stayclassy__address1__c"
@@ -750,10 +708,7 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     label = "Address"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__address2__c {
     apiName = "Campaign.stayclassy__address2__c"
@@ -762,10 +717,7 @@ HierarchyAmountWonOpportunities / HierarchyNumberOfWonOpportunities,
     label = "Address 2"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.FormulaText stayclassy__campaign_url__c {
     apiName = "Campaign.stayclassy__campaign_url__c"
@@ -781,10 +733,7 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     formulaTreatBlanksAs = "BlankAsZero"
     label = "Campaign URL"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -802,10 +751,7 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "City"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__country__c {
     apiName = "Campaign.stayclassy__country__c"
@@ -814,10 +760,7 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "Country"
     length = 50
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.FormulaPercent stayclassy__percent_goal_reached__c {
     apiName = "Campaign.stayclassy__percent_goal_reached__c"
@@ -827,9 +770,6 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "% of Goal Reached"
     precision = 18
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -848,9 +788,6 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     precision = 12
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup stayclassy__sf_contact_id__c {
     apiName = "Campaign.stayclassy__sf_contact_id__c"
@@ -863,9 +800,6 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     ]
     relationshipLabel = "Campaigns"
     relationshipName = "Campaigns"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup stayclassy__sf_designation_id__c {
     apiName = "Campaign.stayclassy__sf_designation_id__c"
@@ -878,9 +812,6 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     ]
     relationshipLabel = "Campaigns"
     relationshipName = "Campaigns"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__state__c {
     apiName = "Campaign.stayclassy__state__c"
@@ -889,10 +820,7 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "State"
     length = 50
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__venue_name__c {
     apiName = "Campaign.stayclassy__venue_name__c"
@@ -901,10 +829,7 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "Name of the Venue"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__zip__c {
     apiName = "Campaign.stayclassy__zip__c"
@@ -913,9 +838,6 @@ IF(ISPICKVAL(stayclassy__Classy_Campaign_Type__c, "Team"), "https://www.classy.o
     label = "Postal Code"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
 }

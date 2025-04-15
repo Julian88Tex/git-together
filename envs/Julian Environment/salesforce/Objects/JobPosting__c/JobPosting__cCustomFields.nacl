@@ -11,9 +11,6 @@ type salesforce.JobPosting__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.MasterDetail Website__c {
     apiName = "JobPosting__c.Website__c"
@@ -27,8 +24,5 @@ type salesforce.JobPosting__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
 }

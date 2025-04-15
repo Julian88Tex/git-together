@@ -22,8 +22,5 @@ type salesforce.Project__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -8,17 +8,11 @@ type salesforce.ChatterActivity {
   salesforce.Lookup NetworkId {
     apiName = "ChatterActivity.NetworkId"
     label = "Network ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "ChatterActivity.ParentId"
     label = "Parent ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Number PostCount {
@@ -26,11 +20,8 @@ type salesforce.ChatterActivity {
     _required = true
     label = "Post Count"
     precision = 9
-    createable = false
-    updateable = false
     scale = 0
     unique = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Number CommentCount {
@@ -38,11 +29,8 @@ type salesforce.ChatterActivity {
     _required = true
     label = "Comment Count"
     precision = 9
-    createable = false
-    updateable = false
     scale = 0
     unique = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Number CommentReceivedCount {
@@ -50,11 +38,8 @@ type salesforce.ChatterActivity {
     _required = true
     label = "Comment Received Count"
     precision = 9
-    createable = false
-    updateable = false
     scale = 0
     unique = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Number LikeReceivedCount {
@@ -62,11 +47,8 @@ type salesforce.ChatterActivity {
     _required = true
     label = "Like Received Count"
     precision = 9
-    createable = false
-    updateable = false
     scale = 0
     unique = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Number InfluenceRawRank {
@@ -74,19 +56,13 @@ type salesforce.ChatterActivity {
     _required = true
     label = "Influence Raw Rank"
     precision = 9
-    createable = false
-    updateable = false
     scale = 0
     unique = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ChatterActivity.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

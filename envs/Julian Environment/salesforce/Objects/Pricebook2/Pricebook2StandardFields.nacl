@@ -3,27 +3,18 @@ type salesforce.Pricebook2 {
     apiName = "Pricebook2.Description"
     length = 255
     label = "Description"
-    createable = true
-    updateable = true
     unique = false
     caseSensitive = false
-    queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "Pricebook2.IsActive"
     defaultValue = false
     label = "Active"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox IsStandard {
     apiName = "Pricebook2.IsStandard"
     defaultValue = false
     label = "Is Standard Price Book"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -31,11 +22,8 @@ type salesforce.Pricebook2 {
     length = 255
     _required = true
     label = "Price Book Name"
-    createable = true
-    updateable = true
     unique = false
     caseSensitive = false
-    queryable = true
   }
   serviceid Id {
     apiName = "Pricebook2.Id"
@@ -47,60 +35,39 @@ type salesforce.Pricebook2 {
     apiName = "Pricebook2.IsDeleted"
     defaultValue = false
     label = "Deleted"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Pricebook2.CreatedDate"
     label = "Created Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Pricebook2.CreatedById"
     relationshipName = "CreatedBy"
     label = "Created By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Pricebook2.LastModifiedDate"
     label = "Last Modified Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Pricebook2.LastModifiedById"
     relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Pricebook2.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "Pricebook2.IsArchived"
     defaultValue = false
     label = "Archived"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

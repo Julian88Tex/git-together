@@ -29,8 +29,5 @@ type salesforce.Candidate__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -31,9 +31,6 @@ type salesforce.User {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Email Q9__ElementsEmail__c {
     apiName = "User.Q9__ElementsEmail__c"
@@ -41,9 +38,6 @@ type salesforce.User {
     externalId = false
     label = "Elements Email"
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text Q9__ElementsId__c {
     apiName = "User.Q9__ElementsId__c"
@@ -53,9 +47,6 @@ type salesforce.User {
     label = "Elements Id"
     length = 80
     unique = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Email Q9__Federation_Email__c {
     apiName = "User.Q9__Federation_Email__c"
@@ -86,18 +77,12 @@ type salesforce.User {
     deprecated = false
     description = "Indicates that the user has access to Elements."
     label = "Elements User"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox pi__Can_View_Not_Assigned_Prospects__c {
     apiName = "User.pi__Can_View_Not_Assigned_Prospects__c"
     defaultValue = false
     deprecated = false
     label = "Can View Not Assigned Prospects"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.EncryptedText pi__Pardot_Api_Key__c {
     apiName = "User.pi__Pardot_Api_Key__c"
@@ -106,9 +91,6 @@ type salesforce.User {
     length = 100
     maskChar = "X"
     maskType = "all"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__Pardot_Api_Version__c {
     apiName = "User.pi__Pardot_Api_Version__c"
@@ -117,10 +99,7 @@ type salesforce.User {
     label = "Account Engagement Api Version"
     length = 1
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.EncryptedText pi__Pardot_User_Id__c {
     apiName = "User.pi__Pardot_User_Id__c"
@@ -129,9 +108,6 @@ type salesforce.User {
     length = 100
     maskChar = "X"
     maskType = "all"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.EncryptedText pi__Pardot_User_Key__c {
     apiName = "User.pi__Pardot_User_Key__c"
@@ -140,9 +116,6 @@ type salesforce.User {
     length = 100
     maskChar = "X"
     maskType = "all"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__Pardot_User_Role__c {
     apiName = "User.pi__Pardot_User_Role__c"
@@ -151,10 +124,7 @@ type salesforce.User {
     label = "Account Engagement User Role"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text zkmulti__EncryptedFedExEndUserKey__c {
     apiName = "User.zkmulti__EncryptedFedExEndUserKey__c"

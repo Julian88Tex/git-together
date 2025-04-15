@@ -2,16 +2,10 @@ type salesforce.OrgSnapshot {
   salesforce.TextArea Description {
     apiName = "OrgSnapshot.Description"
     label = "Description"
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Date ExpirationDate {
     apiName = "OrgSnapshot.ExpirationDate"
     label = "Expiration Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text ProviderSnapshotVersion {
@@ -19,11 +13,8 @@ type salesforce.OrgSnapshot {
     length = 20
     _required = true
     label = "Snapshot Version"
-    createable = false
-    updateable = false
     unique = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text SnapshotName {
@@ -31,30 +22,21 @@ type salesforce.OrgSnapshot {
     length = 15
     _required = true
     label = "Org Snapshot Name"
-    createable = true
-    updateable = true
     unique = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text SourceOrg {
     apiName = "OrgSnapshot.SourceOrg"
     length = 18
     _required = true
     label = "Source Org"
-    createable = true
-    updateable = false
     unique = false
     caseSensitive = false
-    queryable = true
   }
   salesforce.Picklist Status {
     apiName = "OrgSnapshot.Status"
     restricted = true
     label = "Org Snapshot Request Status"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   serviceid Id {
@@ -67,100 +49,67 @@ type salesforce.OrgSnapshot {
     apiName = "OrgSnapshot.OwnerId"
     relationshipName = "Owner"
     label = "Owner ID"
-    createable = true
-    updateable = true
-    queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrgSnapshot.IsDeleted"
     defaultValue = false
     label = "Deleted"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "OrgSnapshot.CreatedDate"
     label = "Created Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OrgSnapshot.CreatedById"
     relationshipName = "CreatedBy"
     label = "Created By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OrgSnapshot.LastModifiedDate"
     label = "Last Modified Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrgSnapshot.LastModifiedById"
     relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OrgSnapshot.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Content {
     apiName = "OrgSnapshot.Content"
     restricted = true
     label = "Export content"
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist Provider {
     apiName = "OrgSnapshot.Provider"
     restricted = true
     _required = true
     label = "Snapshot Provider"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text ProviderSnapshot {
     apiName = "OrgSnapshot.ProviderSnapshot"
     length = 20
     label = "Snapshot Provider Reference"
-    createable = false
-    updateable = false
     unique = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text Error {
     apiName = "OrgSnapshot.Error"
     length = 240
     label = "Error"
-    createable = false
-    updateable = false
     unique = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
   }
 }

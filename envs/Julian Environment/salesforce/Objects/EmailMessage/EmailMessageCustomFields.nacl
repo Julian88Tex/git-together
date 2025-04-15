@@ -7,9 +7,6 @@ type salesforce.EmailMessage {
     label = "Funraise Email ID"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
 }

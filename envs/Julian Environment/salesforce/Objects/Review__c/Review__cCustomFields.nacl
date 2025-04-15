@@ -11,8 +11,5 @@ type salesforce.Review__c {
     reparentableMasterDetail = true
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

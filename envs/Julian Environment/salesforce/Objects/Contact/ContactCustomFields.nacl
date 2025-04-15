@@ -4,9 +4,6 @@ type salesforce.Contact {
     displayLocationInDecimal = true
     label = "Astro Location"
     scale = 7
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Custom_Email_Opt_Out__c {
@@ -36,9 +33,6 @@ type salesforce.Contact {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary GW_Volunteers__First_Volunteer_Date__c {
     apiName = "Contact.GW_Volunteers__First_Volunteer_Date__c"
@@ -55,9 +49,6 @@ type salesforce.Contact {
     ]
     summaryForeignKey = "GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Contact__c"
     summaryOperation = "min"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary GW_Volunteers__Last_Volunteer_Date__c {
@@ -75,9 +66,6 @@ type salesforce.Contact {
     ]
     summaryForeignKey = "GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Contact__c"
     summaryOperation = "max"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.FormulaNumber GW_Volunteers__Unique_Volunteer_Count__c {
@@ -90,9 +78,6 @@ type salesforce.Contact {
     precision = 18
     scale = 0
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox GW_Volunteers__Volunteer_Auto_Reminder_Email_Opt_Out__c {
@@ -101,9 +86,6 @@ type salesforce.Contact {
     deprecated = false
     inlineHelpText = "Check if this Contact does not want to receive automatic reminder emails about their upcoming shifts.  Used in the \"Volunteer Hours Reminder Email\" workflow rule."
     label = "Volunteer Auto-Reminder Email Opt Out"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MultiselectPicklist GW_Volunteers__Volunteer_Availability__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Availability__c"
@@ -139,9 +121,6 @@ type salesforce.Contact {
     sorted = false
     restricted = false
     visibleLines = 8
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary GW_Volunteers__Volunteer_Hours__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Hours__c"
@@ -160,9 +139,6 @@ type salesforce.Contact {
     summaryOperation = "sum"
     precision = 7
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Date GW_Volunteers__Volunteer_Last_Web_Signup_Date__c {
@@ -170,9 +146,6 @@ type salesforce.Contact {
     deprecated = false
     inlineHelpText = "The date of the most recent volunteer signup from the web.  Used to trigger workflow for notifications and thank you emails."
     label = "Volunteer Last Web Signup Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea GW_Volunteers__Volunteer_Manager_Notes__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Manager_Notes__c"
@@ -181,9 +154,6 @@ type salesforce.Contact {
     label = "Volunteer Manager Notes"
     length = 32000
     visibleLines = 5
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea GW_Volunteers__Volunteer_Notes__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Notes__c"
@@ -192,9 +162,6 @@ type salesforce.Contact {
     label = "Volunteer Notes"
     length = 32000
     visibleLines = 5
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text GW_Volunteers__Volunteer_Organization__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Organization__c"
@@ -204,10 +171,7 @@ type salesforce.Contact {
     label = "Volunteer Organization"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.MultiselectPicklist GW_Volunteers__Volunteer_Skills__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Skills__c"
@@ -249,9 +213,6 @@ type salesforce.Contact {
     sorted = false
     restricted = false
     visibleLines = 8
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist GW_Volunteers__Volunteer_Status__c {
     apiName = "Contact.GW_Volunteers__Volunteer_Status__c"
@@ -281,9 +242,6 @@ type salesforce.Contact {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text Languages__c {
     apiName = "Contact.Languages__c"
@@ -291,10 +249,7 @@ type salesforce.Contact {
     label = "Languages"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Picklist Level__c {
     apiName = "Contact.Level__c"
@@ -318,9 +273,6 @@ type salesforce.Contact {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox emma__Bounced__c {
     apiName = "Contact.emma__Bounced__c"
@@ -328,9 +280,6 @@ type salesforce.Contact {
     deprecated = false
     inlineHelpText = "Indicates that there was a problem sending mail to this contact."
     label = "Error?"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text emma__Emma_Member_ID__c {
     apiName = "Contact.emma__Emma_Member_ID__c"
@@ -340,18 +289,12 @@ type salesforce.Contact {
     label = "Emma Member ID"
     length = 40
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime emma__Last_Synced_Date__c {
     apiName = "Contact.emma__Last_Synced_Date__c"
     deprecated = false
     label = "Emma Last Synced Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text emma__Sync_Message__c {
     apiName = "Contact.emma__Sync_Message__c"
@@ -360,10 +303,7 @@ type salesforce.Contact {
     label = "Emma Sync Message"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Picklist emma__Sync_Status__c {
     apiName = "Contact.emma__Sync_Status__c"
@@ -388,9 +328,6 @@ type salesforce.Contact {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number emma__Test_Field__c {
     apiName = "Contact.emma__Test_Field__c"
@@ -400,9 +337,6 @@ type salesforce.Contact {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text funraise__fr_ID__c {
     apiName = "Contact.funraise__fr_ID__c"
@@ -412,9 +346,6 @@ type salesforce.Contact {
     label = "Funraise ID"
     length = 255
     unique = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date insights__Deceased_Date__c {
     apiName = "Contact.insights__Deceased_Date__c"
@@ -478,9 +409,6 @@ type salesforce.Contact {
     inlineHelpText = "Alternate Email is an optional fourth email: Not personal, preferred, or work email."
     label = "Alternate Email"
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Email npe01__HomeEmail__c {
     apiName = "Contact.npe01__HomeEmail__c"
@@ -490,9 +418,6 @@ type salesforce.Contact {
     inlineHelpText = "See Preferred Email field."
     label = "Personal Email"
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText npe01__Home_Address__c {
     apiName = "Contact.npe01__Home_Address__c"
@@ -522,10 +447,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Home"),
     inlineHelpText = "Formula: Uses primary address type field to determine Home Address from Mailing or Other address."
     label = "Home Address"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -548,9 +470,6 @@ null
 '''
     inlineHelpText = "WARNING - This field may not accurately reflect the donation history. Please use the Last Gift Date field instead."
     label = "DEPRECATED - Last Transaction Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -585,9 +504,6 @@ null
     label = "Lifetime Transaction Total"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -617,10 +533,7 @@ null
     inlineHelpText = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
     label = "Organization Type"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -665,10 +578,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     inlineHelpText = "Formula: If the Primary Address Type is Other, the Mailing Address.  If the Secondary Address Type is Other, the Other Address."
     label = "Other Address"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -709,9 +619,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__Preferred_Email__c {
     apiName = "Contact.npe01__Preferred_Email__c"
@@ -738,9 +645,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__Primary_Address_Type__c {
     apiName = "Contact.npe01__Primary_Address_Type__c"
@@ -767,9 +671,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npe01__Private__c {
     apiName = "Contact.npe01__Private__c"
@@ -778,9 +679,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "Excludes this Contact from any Individual Account processing. If you leave the Account field blank, it will remain blank."
     inlineHelpText = "Excludes this Contact from One to One or Bucket account processing."
     label = "Private"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__Secondary_Address_Type__c {
     apiName = "Contact.npe01__Secondary_Address_Type__c"
@@ -807,9 +705,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__SystemAccountProcessor__c {
     apiName = "Contact.npe01__SystemAccountProcessor__c"
@@ -831,9 +726,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npe01__SystemIsIndividual__c {
     apiName = "Contact.npe01__SystemIsIndividual__c"
@@ -842,9 +734,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "Deprecated field.  Do not use."
     inlineHelpText = "This field is no longer used and should not be referenced. It has been replaced by Type_of_Account__c"
     label = "_SYSTEM: IsIndividual - DEPRECATED"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText npe01__Type_of_Account__c {
     apiName = "Contact.npe01__Type_of_Account__c"
@@ -856,10 +745,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     inlineHelpText = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
     label = "Type of Account"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -881,9 +767,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     inlineHelpText = "See Preferred Email field."
     label = "Work Email"
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Phone npe01__WorkPhone__c {
     apiName = "Contact.npe01__WorkPhone__c"
@@ -891,9 +774,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     description = "See 'Preferred Phone' field."
     inlineHelpText = "See 'Preferred Phone' field."
     label = "Work Phone"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText npe01__Work_Address__c {
     apiName = "Contact.npe01__Work_Address__c"
@@ -923,10 +803,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     inlineHelpText = "Formula: If the Primary Address Type is Work, the Mailing Address.  If the Secondary Address Type is Work, the Other Address."
     label = "Work Address"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -945,9 +822,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     label = "Average Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Best_Gift_Year_Total__c {
     apiName = "Contact.npo02__Best_Gift_Year_Total__c"
@@ -955,9 +829,6 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     label = "Best Gift Year Total"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npo02__Best_Gift_Year__c {
     apiName = "Contact.npo02__Best_Gift_Year__c"
@@ -966,19 +837,13 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     label = "Best Gift Year"
     length = 4
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Date npo02__FirstCloseDate__c {
     apiName = "Contact.npo02__FirstCloseDate__c"
     deprecated = false
     description = "Do not update, updated by automatic process."
     label = "First Gift Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText npo02__Formula_HouseholdMailingAddress__c {
     apiName = "Contact.npo02__Formula_HouseholdMailingAddress__c"
@@ -997,10 +862,7 @@ npo02__Household__r.npo02__Formula_MailingAddress__c)
     formulaTreatBlanksAs = "BlankAsZero"
     label = "Household Mailing Address"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1030,10 +892,7 @@ npo02__Household__r.npo02__HouseholdPhone__c)
     formulaTreatBlanksAs = "BlankAsZero"
     label = "Household Phone"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1061,9 +920,6 @@ npo02__Household__r.npo02__HouseholdPhone__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup npo02__Household__c {
     apiName = "Contact.npo02__Household__c"
@@ -1075,9 +931,6 @@ npo02__Household__r.npo02__HouseholdPhone__c)
     ]
     relationshipLabel = "Household Members"
     relationshipName = "Contacts"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__LargestAmount__c {
     apiName = "Contact.npo02__LargestAmount__c"
@@ -1087,9 +940,6 @@ npo02__Household__r.npo02__HouseholdPhone__c)
     label = "Largest Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaDate npo02__LastCloseDateHH__c {
     apiName = "Contact.npo02__LastCloseDateHH__c"
@@ -1101,9 +951,6 @@ Account.npo02__LastCloseDate__c,
 npo02__Household__r.npo02__LastCloseDate__c)
 '''
     label = "Last Household Gift Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1128,9 +975,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     deprecated = false
     description = "System field: do not change. Updated by automatic processes. Do not edit."
     label = "Last Gift Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__LastMembershipAmount__c {
     apiName = "Contact.npo02__LastMembershipAmount__c"
@@ -1140,18 +984,12 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Last Membership Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__LastMembershipDate__c {
     apiName = "Contact.npo02__LastMembershipDate__c"
     deprecated = false
     description = "Do not update, updated by automatic process."
     label = "Last Membership Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npo02__LastMembershipLevel__c {
     apiName = "Contact.npo02__LastMembershipLevel__c"
@@ -1161,10 +999,7 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Last Membership Level"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text npo02__LastMembershipOrigin__c {
     apiName = "Contact.npo02__LastMembershipOrigin__c"
@@ -1174,10 +1009,7 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Last Membership Origin"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Currency npo02__LastOppAmount__c {
     apiName = "Contact.npo02__LastOppAmount__c"
@@ -1187,27 +1019,18 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Last Gift Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__MembershipEndDate__c {
     apiName = "Contact.npo02__MembershipEndDate__c"
     deprecated = false
     description = "Do not change. Updated by automatic processes."
     label = "Membership End Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__MembershipJoinDate__c {
     apiName = "Contact.npo02__MembershipJoinDate__c"
     deprecated = false
     description = "Do not change. Updated by automatic processes."
     label = "Membership Join Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MultiselectPicklist npo02__Naming_Exclusions__c {
     apiName = "Contact.npo02__Naming_Exclusions__c"
@@ -1235,9 +1058,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     sorted = false
     restricted = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__NumberOfClosedOpps__c {
     apiName = "Contact.npo02__NumberOfClosedOpps__c"
@@ -1249,9 +1069,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__NumberOfMembershipOpps__c {
     apiName = "Contact.npo02__NumberOfMembershipOpps__c"
@@ -1263,9 +1080,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmount2YearsAgo__c {
     apiName = "Contact.npo02__OppAmount2YearsAgo__c"
@@ -1275,9 +1089,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Total Gifts Two Years Ago"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmountLastNDays__c {
     apiName = "Contact.npo02__OppAmountLastNDays__c"
@@ -1287,9 +1098,6 @@ npo02__Household__r.npo02__LastCloseDate__c)
     label = "Total Gifts Last N Days"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency npo02__OppAmountLastYearHH__c {
     apiName = "Contact.npo02__OppAmountLastYearHH__c"
@@ -1304,9 +1112,6 @@ npo02__Household__r.npo02__OppAmountLastYear__c)
     label = "Total Household Gifts Last Year"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1334,9 +1139,6 @@ npo02__Household__r.npo02__OppAmountLastYear__c)
     label = "Total Gifts Last Year"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency npo02__OppAmountThisYearHH__c {
     apiName = "Contact.npo02__OppAmountThisYearHH__c"
@@ -1351,9 +1153,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Total Household Gifts This Year"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1381,9 +1180,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Total Gifts This Year"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosed2YearsAgo__c {
     apiName = "Contact.npo02__OppsClosed2YearsAgo__c"
@@ -1395,9 +1191,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedLastNDays__c {
     apiName = "Contact.npo02__OppsClosedLastNDays__c"
@@ -1409,9 +1202,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedLastYear__c {
     apiName = "Contact.npo02__OppsClosedLastYear__c"
@@ -1423,9 +1213,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedThisYear__c {
     apiName = "Contact.npo02__OppsClosedThisYear__c"
@@ -1437,9 +1224,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__SmallestAmount__c {
     apiName = "Contact.npo02__SmallestAmount__c"
@@ -1449,9 +1233,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Smallest Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Soft_Credit_Last_Year__c {
     apiName = "Contact.npo02__Soft_Credit_Last_Year__c"
@@ -1460,9 +1241,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Soft Credit Last Year"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Soft_Credit_This_Year__c {
     apiName = "Contact.npo02__Soft_Credit_This_Year__c"
@@ -1471,9 +1249,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Soft Credit This Year"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Soft_Credit_Total__c {
     apiName = "Contact.npo02__Soft_Credit_Total__c"
@@ -1482,9 +1257,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Soft Credit Total"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Soft_Credit_Two_Years_Ago__c {
     apiName = "Contact.npo02__Soft_Credit_Two_Years_Ago__c"
@@ -1493,9 +1265,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Soft Credit Two Years Ago"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npo02__SystemHouseholdProcessor__c {
     apiName = "Contact.npo02__SystemHouseholdProcessor__c"
@@ -1521,9 +1290,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__TotalMembershipOppAmount__c {
     apiName = "Contact.npo02__TotalMembershipOppAmount__c"
@@ -1533,9 +1299,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Total Membership Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__TotalOppAmount__c {
     apiName = "Contact.npo02__TotalOppAmount__c"
@@ -1545,9 +1308,6 @@ npo02__Household__r.npo02__OppAmountThisYear__c)
     label = "Total Gifts"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency npo02__Total_Household_Gifts__c {
     apiName = "Contact.npo02__Total_Household_Gifts__c"
@@ -1562,9 +1322,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     label = "Total Household Gifts"
     precision = 18
     scale = 2
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1594,10 +1351,7 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     inlineHelpText = "If this address requires verification, click the Verify Address button at the top of the Address page. Consult the Help documentation in the Power of Us Hub for more information."
     label = "Address Verification Status"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1617,9 +1371,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     ]
     relationshipLabel = "Contacts"
     relationshipName = "Contacts"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup npsp__Current_Address__c {
     apiName = "Contact.npsp__Current_Address__c"
@@ -1645,9 +1396,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     ]
     relationshipLabel = "Contacts (Current Address)"
     relationshipName = "Contacts1"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__CustomizableRollups_UseSkewMode__c {
     apiName = "Contact.npsp__CustomizableRollups_UseSkewMode__c"
@@ -1665,9 +1413,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "Indicates the Contact is deceased. When selected, NPSP excludes this Contact from Household Naming (unless this Contact is the only one in the Household) and from standard email and phone lists."
     inlineHelpText = "When selected, this option marks the contact as deceased, and excludes them from household naming, emails, and phone calls."
     label = "Deceased"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__Do_Not_Contact__c {
     apiName = "Contact.npsp__Do_Not_Contact__c"
@@ -1676,9 +1421,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "Indicates the Contact does not want your organization to call or email. Use this field to filter out Contacts in email and phone lists. When selected, NPSP excludes this Contact from Opportunity Acknowledgements."
     inlineHelpText = "When selected, this option excludes the contact from emails and phone calls."
     label = "Do Not Contact"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__Exclude_from_Household_Formal_Greeting__c {
     apiName = "Contact.npsp__Exclude_from_Household_Formal_Greeting__c"
@@ -1687,9 +1429,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "When selected, NPSP excludes this Contact from the Household Formal Greeting (set in NPSP Settings | People | Households)."
     inlineHelpText = "Checking this box will exclude this contact from the Household Formal Greeting."
     label = "Exclude from Household Formal Greeting"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__Exclude_from_Household_Informal_Greeting__c {
     apiName = "Contact.npsp__Exclude_from_Household_Informal_Greeting__c"
@@ -1698,9 +1437,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "When selected, NPSP excludes this Contact from the Household Informal Greeting (set in NPSP Settings | People | Households)."
     inlineHelpText = "Checking this box will exclude this contact from the Household Informal Greeting."
     label = "Exclude from Household Informal Greeting"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__Exclude_from_Household_Name__c {
     apiName = "Contact.npsp__Exclude_from_Household_Name__c"
@@ -1709,9 +1445,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "When selected, NPSP excludes this Contact from the Household Name (set in NPSP Settings | People | Households)."
     inlineHelpText = "Checking this box will exclude this contact from the Household Name."
     label = "Exclude from Household Name"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npsp__First_Soft_Credit_Amount__c {
     apiName = "Contact.npsp__First_Soft_Credit_Amount__c"
@@ -1740,10 +1473,7 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     inlineHelpText = "holds the ID of the current household, whether it is a Household Account, or a Household Object."
     label = "HHId"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1868,9 +1598,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     ]
     relationshipLabel = "Do Not Use.  Use Organization Affiliations."
     relationshipName = "PrimaryAffiliatedContacts"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox npsp__Primary_Contact__c {
     apiName = "Contact.npsp__Primary_Contact__c"
@@ -1879,9 +1606,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     formula = "Account.npe01__One2OneContact__c = Id"
     inlineHelpText = "This is is checked if the user is the Primary Contact on their Account.  The Primary Contact can be edited on the Account."
     label = "Primary Contact"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1907,9 +1631,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     label = "Soft Credit Last N Days"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npsp__Sustainer__c {
     apiName = "Contact.npsp__Sustainer__c"
@@ -1953,9 +1674,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     description = "When selected, NPSP will not sync this Contact's address with the Household Default or Seasonal Address. Use this to maintain a separate Mailing Address for this particular Contact."
     inlineHelpText = "If checked, the Contact's Current Address lookup overrides the Household's default Address or seasonal Address."
     label = "Address Override"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox pi__Needs_Score_Synced__c {
     apiName = "Contact.pi__Needs_Score_Synced__c"
@@ -1963,9 +1681,6 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     deprecated = false
     description = "This field is no longer used."
     label = "Needs Score Synced"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__Pardot_Last_Scored_At__c {
     apiName = "Contact.pi__Pardot_Last_Scored_At__c"
@@ -1976,9 +1691,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
             Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview
 '''
     label = "Account Engagement Last Scored At"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__campaign__c {
     apiName = "Contact.pi__campaign__c"
@@ -1988,10 +1700,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Campaign"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.LongTextArea pi__comments__c {
     apiName = "Contact.pi__comments__c"
@@ -1999,18 +1708,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Comments"
     length = 32000
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__conversion_date__c {
     apiName = "Contact.pi__conversion_date__c"
     deprecated = false
     description = "The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect."
     label = "Account Engagement Conversion Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__conversion_object_name__c {
     apiName = "Contact.pi__conversion_object_name__c"
@@ -2020,10 +1723,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Conversion Object Name"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__conversion_object_type__c {
     apiName = "Contact.pi__conversion_object_type__c"
@@ -2033,27 +1733,18 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Conversion Object Type"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime pi__created_date__c {
     apiName = "Contact.pi__created_date__c"
     deprecated = false
     description = "The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date."
     label = "Account Engagement Created Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__first_activity__c {
     apiName = "Contact.pi__first_activity__c"
     deprecated = false
     label = "Account Engagement First Activity"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__first_search_term__c {
     apiName = "Contact.pi__first_search_term__c"
@@ -2063,10 +1754,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer Query"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__first_search_type__c {
     apiName = "Contact.pi__first_search_type__c"
@@ -2076,10 +1764,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer Type"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.LongTextArea pi__first_touch_url__c {
     apiName = "Contact.pi__first_touch_url__c"
@@ -2088,9 +1773,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer"
     length = 65000
     visibleLines = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__grade__c {
     apiName = "Contact.pi__grade__c"
@@ -2100,18 +1782,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Grade"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime pi__last_activity__c {
     apiName = "Contact.pi__last_activity__c"
     deprecated = false
     label = "Account Engagement Last Activity"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea pi__notes__c {
     apiName = "Contact.pi__notes__c"
@@ -2119,9 +1795,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Notes"
     length = 32000
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox pi__pardot_hard_bounced__c {
     apiName = "Contact.pi__pardot_hard_bounced__c"
@@ -2129,9 +1802,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     deprecated = false
     description = "Boolean that determines whether contact hard bounced."
     label = "Account Engagement Hard Bounced"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number pi__score__c {
     apiName = "Contact.pi__score__c"
@@ -2142,18 +1812,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Url pi__url__c {
     apiName = "Contact.pi__url__c"
     deprecated = false
     description = "This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com."
     label = "Account Engagement URL"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__utm_campaign__c {
     apiName = "Contact.pi__utm_campaign__c"
@@ -2162,10 +1826,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Campaign"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_content__c {
     apiName = "Contact.pi__utm_content__c"
@@ -2174,10 +1835,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Content"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_medium__c {
     apiName = "Contact.pi__utm_medium__c"
@@ -2186,10 +1844,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Medium"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_source__c {
     apiName = "Contact.pi__utm_source__c"
@@ -2198,10 +1853,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Source"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_term__c {
     apiName = "Contact.pi__utm_term__c"
@@ -2210,10 +1862,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Term"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__Address_Type__c {
     apiName = "Contact.stayclassy__Address_Type__c"
@@ -2222,10 +1871,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Address Type"
     length = 30
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Currency stayclassy__Amount_Donated_in_Last_X_Days__c {
     apiName = "Contact.stayclassy__Amount_Donated_in_Last_X_Days__c"
@@ -2235,9 +1881,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Amount Donated in Last X Days"
     precision = 12
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency stayclassy__Amount_Recurring_Donations__c {
     apiName = "Contact.stayclassy__Amount_Recurring_Donations__c"
@@ -2246,9 +1889,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Amount of Recurring Donations"
     precision = 12
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__Best_Time_to_Contact__c {
     apiName = "Contact.stayclassy__Best_Time_to_Contact__c"
@@ -2257,18 +1897,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Best Time to Contact"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Url stayclassy__Blog__c {
     apiName = "Contact.stayclassy__Blog__c"
     deprecated = false
     label = "Blog"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number stayclassy__Classy_Fundraising_Page_Total__c {
     apiName = "Contact.stayclassy__Classy_Fundraising_Page_Total__c"
@@ -2279,9 +1913,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 3
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__Company__c {
     apiName = "Contact.stayclassy__Company__c"
@@ -2290,19 +1921,13 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Company/Organization"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime stayclassy__Data_Refreshed_At__c {
     apiName = "Contact.stayclassy__Data_Refreshed_At__c"
     deprecated = false
     description = "Indicates the last time the Classy Engagement data was updated"
     label = "Last Update"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist stayclassy__Gender__c {
     apiName = "Contact.stayclassy__Gender__c"
@@ -2322,9 +1947,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__Middle_Name__c {
     apiName = "Contact.stayclassy__Middle_Name__c"
@@ -2333,10 +1955,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Middle Name"
     length = 50
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Number stayclassy__Number_of_Donations_in_Last_X_Days__c {
     apiName = "Contact.stayclassy__Number_of_Donations_in_Last_X_Days__c"
@@ -2348,9 +1967,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 4
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number stayclassy__Number_of_Recurring_Donations__c {
     apiName = "Contact.stayclassy__Number_of_Recurring_Donations__c"
@@ -2361,9 +1977,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 4
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text stayclassy__Shirt_Size__c {
     apiName = "Contact.stayclassy__Shirt_Size__c"
@@ -2372,10 +1985,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Shirt Size"
     length = 25
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text stayclassy__Suffix__c {
     apiName = "Contact.stayclassy__Suffix__c"
@@ -2384,10 +1994,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Suffix"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Email stayclassy__TEST_Email__c {
     apiName = "Contact.stayclassy__TEST_Email__c"
@@ -2395,26 +2002,17 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     externalId = false
     label = "TEST Email"
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox stayclassy__Text_Opt_In__c {
     apiName = "Contact.stayclassy__Text_Opt_In__c"
     defaultValue = false
     deprecated = false
     label = "Text Opt In"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Url stayclassy__Website__c {
     apiName = "Contact.stayclassy__Website__c"
     deprecated = false
     label = "Website"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency stayclassy__amount_of_last_donation__c {
     apiName = "Contact.stayclassy__amount_of_last_donation__c"
@@ -2423,9 +2021,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Amount of Last Donation"
     precision = 12
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaNumber stayclassy__average_donation__c {
     apiName = "Contact.stayclassy__average_donation__c"
@@ -2437,9 +2032,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 18
     scale = 2
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -2455,9 +2047,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     deprecated = false
     description = "Date of the last donation by this contact"
     label = "Date of Last Donation"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox stayclassy__opt_in__c {
     apiName = "Contact.stayclassy__opt_in__c"
@@ -2465,9 +2054,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     deprecated = false
     description = "Indicates whether a contact has indicated they have opted in to receiving communications."
     label = "Classy Opt In"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number stayclassy__sc_member_id__c {
     apiName = "Contact.stayclassy__sc_member_id__c"
@@ -2478,9 +2064,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 10
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency stayclassy__sc_total_donated__c {
     apiName = "Contact.stayclassy__sc_total_donated__c"
@@ -2489,9 +2072,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Total Donated"
     precision = 12
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number stayclassy__sc_total_donations__c {
     apiName = "Contact.stayclassy__sc_total_donations__c"
@@ -2502,9 +2082,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 5
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency stayclassy__sc_total_fundraising__c {
     apiName = "Contact.stayclassy__sc_total_fundraising__c"
@@ -2513,8 +2090,5 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Total Fundraised"
     precision = 12
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

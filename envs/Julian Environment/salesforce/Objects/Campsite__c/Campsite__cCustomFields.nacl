@@ -5,8 +5,5 @@ type salesforce.Campsite__c {
     length = 32768
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

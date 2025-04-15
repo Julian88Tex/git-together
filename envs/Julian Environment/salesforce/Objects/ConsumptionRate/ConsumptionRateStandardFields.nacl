@@ -5,17 +5,11 @@ type salesforce.ConsumptionRate {
     relationshipName = "ConsumptionSchedule"
     _required = true
     label = "Consumption Schedule ID"
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionRate.Description"
     length = 32000
     label = "Description"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number LowerBound {
     apiName = "ConsumptionRate.LowerBound"
@@ -23,18 +17,12 @@ type salesforce.ConsumptionRate {
     _required = true
     label = "Lower Bound"
     precision = 9
-    createable = true
-    updateable = true
     scale = 0
     unique = false
-    queryable = true
   }
   salesforce.AutoNumber Name {
     apiName = "ConsumptionRate.Name"
     label = "Consumption Rate Name"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Currency Price {
@@ -42,11 +30,8 @@ type salesforce.ConsumptionRate {
     inlineHelpText = "The price for usage that falls within this consumption rate's bounds."
     _required = true
     label = "Price"
-    createable = true
-    updateable = true
     scale = 2
     precision = 13
-    queryable = true
   }
   salesforce.Picklist PricingMethod {
     apiName = "ConsumptionRate.PricingMethod"
@@ -54,9 +39,6 @@ type salesforce.ConsumptionRate {
     restricted = true
     _required = true
     label = "Pricing Method"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number ProcessingOrder {
     apiName = "ConsumptionRate.ProcessingOrder"
@@ -64,22 +46,16 @@ type salesforce.ConsumptionRate {
     _required = true
     label = "Processing Order"
     precision = 9
-    createable = true
-    updateable = true
     scale = 0
     unique = false
-    queryable = true
   }
   salesforce.Number UpperBound {
     apiName = "ConsumptionRate.UpperBound"
     inlineHelpText = "The highest quantity of usage for this consumption rate."
     label = "Upper Bound"
     precision = 9
-    createable = true
-    updateable = true
     scale = 0
     unique = false
-    queryable = true
   }
   serviceid Id {
     apiName = "ConsumptionRate.Id"
@@ -91,51 +67,33 @@ type salesforce.ConsumptionRate {
     apiName = "ConsumptionRate.IsDeleted"
     defaultValue = false
     label = "Deleted"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ConsumptionRate.CreatedDate"
     label = "Created Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ConsumptionRate.CreatedById"
     relationshipName = "CreatedBy"
     label = "Created By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ConsumptionRate.LastModifiedDate"
     label = "Last Modified Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ConsumptionRate.LastModifiedById"
     relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ConsumptionRate.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

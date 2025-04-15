@@ -5,10 +5,7 @@ type salesforce.Lead {
     label = "Current Generator(s)"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.FormulaDate DB_Created_Date_without_Time__c {
     apiName = "Lead.DB_Created_Date_without_Time__c"
@@ -16,9 +13,6 @@ type salesforce.Lead {
     formula = "CreatedDate"
     formulaTreatBlanksAs = "BlankAsZero"
     label = "DB Created Date without Time"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -36,9 +30,6 @@ type salesforce.Lead {
     precision = 18
     scale = 0
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -80,9 +71,6 @@ type salesforce.Lead {
     sorted = false
     restricted = false
     visibleLines = 8
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea GW_Volunteers__Volunteer_Notes__c {
     apiName = "Lead.GW_Volunteers__Volunteer_Notes__c"
@@ -90,9 +78,6 @@ type salesforce.Lead {
     label = "Volunteer Notes"
     length = 32000
     visibleLines = 5
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MultiselectPicklist GW_Volunteers__Volunteer_Skills__c {
     apiName = "Lead.GW_Volunteers__Volunteer_Skills__c"
@@ -134,9 +119,6 @@ type salesforce.Lead {
     sorted = false
     restricted = false
     visibleLines = 8
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist GW_Volunteers__Volunteer_Status__c {
     apiName = "Lead.GW_Volunteers__Volunteer_Status__c"
@@ -151,9 +133,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number NumberofLocations__c {
     apiName = "Lead.NumberofLocations__c"
@@ -162,9 +141,6 @@ type salesforce.Lead {
     precision = 3
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist Primary__c {
     apiName = "Lead.Primary__c"
@@ -183,9 +159,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist ProductInterest__c {
     apiName = "Lead.ProductInterest__c"
@@ -209,9 +182,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SICCode__c {
     apiName = "Lead.SICCode__c"
@@ -219,19 +189,13 @@ type salesforce.Lead {
     label = "SIC Code"
     length = 15
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Checkbox emma__Bounced__c {
     apiName = "Lead.emma__Bounced__c"
     defaultValue = false
     deprecated = false
     label = "Error?"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text emma__Emma_Member_ID__c {
     apiName = "Lead.emma__Emma_Member_ID__c"
@@ -241,18 +205,12 @@ type salesforce.Lead {
     label = "Emma Member ID"
     length = 40
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime emma__Last_Synced_Date__c {
     apiName = "Lead.emma__Last_Synced_Date__c"
     deprecated = false
     label = "Emma Last Synced Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text emma__Sync_Message__c {
     apiName = "Lead.emma__Sync_Message__c"
@@ -261,10 +219,7 @@ type salesforce.Lead {
     label = "Emma Sync Message"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Picklist emma__Sync_Status__c {
     apiName = "Lead.emma__Sync_Status__c"
@@ -289,9 +244,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__Preferred_Email__c {
     apiName = "Lead.npe01__Preferred_Email__c"
@@ -316,9 +268,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npe01__Preferred_Phone__c {
     apiName = "Lead.npe01__Preferred_Phone__c"
@@ -348,9 +297,6 @@ type salesforce.Lead {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup npsp__Batch__c {
     apiName = "Lead.npsp__Batch__c"
@@ -363,9 +309,6 @@ type salesforce.Lead {
     ]
     relationshipLabel = "Leads"
     relationshipName = "Leads"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npsp__CompanyCity__c {
     apiName = "Lead.npsp__CompanyCity__c"
@@ -374,10 +317,7 @@ type salesforce.Lead {
     label = "Company City"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text npsp__CompanyCountry__c {
     apiName = "Lead.npsp__CompanyCountry__c"
@@ -386,10 +326,7 @@ type salesforce.Lead {
     label = "Company Country"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text npsp__CompanyPostalCode__c {
     apiName = "Lead.npsp__CompanyPostalCode__c"
@@ -398,10 +335,7 @@ type salesforce.Lead {
     label = "Company Zip/Postal Code"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text npsp__CompanyState__c {
     apiName = "Lead.npsp__CompanyState__c"
@@ -410,18 +344,12 @@ type salesforce.Lead {
     label = "Company State/Province"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.TextArea npsp__CompanyStreet__c {
     apiName = "Lead.npsp__CompanyStreet__c"
     deprecated = false
     label = "Company Street"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox pi__Needs_Score_Synced__c {
     apiName = "Lead.pi__Needs_Score_Synced__c"
@@ -429,9 +357,6 @@ type salesforce.Lead {
     deprecated = false
     description = "This field is no longer used."
     label = "Needs Score Synced"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__Pardot_Last_Scored_At__c {
     apiName = "Lead.pi__Pardot_Last_Scored_At__c"
@@ -442,9 +367,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
             Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview
 '''
     label = "Account Engagement Last Scored At"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__campaign__c {
     apiName = "Lead.pi__campaign__c"
@@ -454,10 +376,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Campaign"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.LongTextArea pi__comments__c {
     apiName = "Lead.pi__comments__c"
@@ -465,18 +384,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Comments"
     length = 32000
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__conversion_date__c {
     apiName = "Lead.pi__conversion_date__c"
     deprecated = false
     description = "The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect."
     label = "Account Engagement Conversion Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__conversion_object_name__c {
     apiName = "Lead.pi__conversion_object_name__c"
@@ -486,10 +399,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Conversion Object Name"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__conversion_object_type__c {
     apiName = "Lead.pi__conversion_object_type__c"
@@ -499,27 +409,18 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Conversion Object Type"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime pi__created_date__c {
     apiName = "Lead.pi__created_date__c"
     deprecated = false
     description = "The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date."
     label = "Account Engagement Created Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime pi__first_activity__c {
     apiName = "Lead.pi__first_activity__c"
     deprecated = false
     label = "Account Engagement First Activity"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__first_search_term__c {
     apiName = "Lead.pi__first_search_term__c"
@@ -529,10 +430,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer Query"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__first_search_type__c {
     apiName = "Lead.pi__first_search_type__c"
@@ -542,10 +440,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer Type"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.LongTextArea pi__first_touch_url__c {
     apiName = "Lead.pi__first_touch_url__c"
@@ -554,9 +449,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement First Referrer"
     length = 65000
     visibleLines = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__grade__c {
     apiName = "Lead.pi__grade__c"
@@ -566,18 +458,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Grade"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.DateTime pi__last_activity__c {
     apiName = "Lead.pi__last_activity__c"
     deprecated = false
     label = "Account Engagement Last Activity"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea pi__notes__c {
     apiName = "Lead.pi__notes__c"
@@ -585,9 +471,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Account Engagement Notes"
     length = 32000
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox pi__pardot_hard_bounced__c {
     apiName = "Lead.pi__pardot_hard_bounced__c"
@@ -595,9 +478,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     deprecated = false
     description = "Boolean that determines whether lead hard bounced."
     label = "Account Engagement Hard Bounced"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number pi__score__c {
     apiName = "Lead.pi__score__c"
@@ -608,18 +488,12 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Url pi__url__c {
     apiName = "Lead.pi__url__c"
     deprecated = false
     description = "This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com."
     label = "Account Engagement URL"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text pi__utm_campaign__c {
     apiName = "Lead.pi__utm_campaign__c"
@@ -628,10 +502,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Campaign"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_content__c {
     apiName = "Lead.pi__utm_content__c"
@@ -640,10 +511,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Content"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_medium__c {
     apiName = "Lead.pi__utm_medium__c"
@@ -652,10 +520,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Medium"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_source__c {
     apiName = "Lead.pi__utm_source__c"
@@ -664,10 +529,7 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Source"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text pi__utm_term__c {
     apiName = "Lead.pi__utm_term__c"
@@ -676,9 +538,6 @@ Used for Account Engagement Scoring Categories. Indicates the last time a Scorin
     label = "Google Analytics Term"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
 }

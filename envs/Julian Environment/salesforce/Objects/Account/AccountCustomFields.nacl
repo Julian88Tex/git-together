@@ -16,9 +16,6 @@ type salesforce.Account {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist CustomerPriority__c {
     apiName = "Account.CustomerPriority__c"
@@ -42,9 +39,6 @@ type salesforce.Account {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number NumberofLocations__c {
     apiName = "Account.NumberofLocations__c"
@@ -53,9 +47,6 @@ type salesforce.Account {
     precision = 3
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary Potential_Value__c {
     apiName = "Account.Potential_Value__c"
@@ -63,17 +54,11 @@ type salesforce.Account {
     summarizedField = "Opportunity.ExpectedRevenue"
     summaryForeignKey = "Opportunity.AccountId"
     summaryOperation = "sum"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Date SLAExpirationDate__c {
     apiName = "Account.SLAExpirationDate__c"
     label = "SLA Expiration Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SLASerialNumber__c {
     apiName = "Account.SLASerialNumber__c"
@@ -81,10 +66,7 @@ type salesforce.Account {
     label = "SLA Serial Number"
     length = 10
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Picklist SLA__c {
     apiName = "Account.SLA__c"
@@ -113,9 +95,6 @@ type salesforce.Account {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist UpsellOpportunity__c {
     apiName = "Account.UpsellOpportunity__c"
@@ -139,9 +118,6 @@ type salesforce.Account {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary npe01__FirstDonationDate__c {
     apiName = "Account.npe01__FirstDonationDate__c"
@@ -164,9 +140,6 @@ type salesforce.Account {
     ]
     summaryForeignKey = "Opportunity.AccountId"
     summaryOperation = "min"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary npe01__LastDonationDate__c {
@@ -190,9 +163,6 @@ type salesforce.Account {
     ]
     summaryForeignKey = "Opportunity.AccountId"
     summaryOperation = "max"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary npe01__LifetimeDonationHistory_Amount__c {
@@ -211,9 +181,6 @@ type salesforce.Account {
     ]
     summaryForeignKey = "Opportunity.AccountId"
     summaryOperation = "sum"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary npe01__LifetimeDonationHistory_Number__c {
@@ -238,9 +205,6 @@ type salesforce.Account {
     summaryOperation = "count"
     precision = 18
     scale = 0
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup npe01__One2OneContact__c {
@@ -255,9 +219,6 @@ type salesforce.Account {
     ]
     relationshipLabel = "Account"
     relationshipName = "Organizations"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npe01__SYSTEMIsIndividual__c {
     apiName = "Account.npe01__SYSTEMIsIndividual__c"
@@ -266,9 +227,6 @@ type salesforce.Account {
     description = "Hidden system field: do not change.  Updated by automatic processes."
     inlineHelpText = "Indicates whether or not this Account is special for Contacts (Household, One-to-One, Individual) vs a normal Account."
     label = "_SYSTEM: IsIndividual"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npe01__SYSTEM_AccountType__c {
     apiName = "Account.npe01__SYSTEM_AccountType__c"
@@ -279,10 +237,7 @@ type salesforce.Account {
     label = "_SYSTEM: AccountType"
     length = 100
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Currency npo02__AverageAmount__c {
     apiName = "Account.npo02__AverageAmount__c"
@@ -292,9 +247,6 @@ type salesforce.Account {
     label = "Average Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__Best_Gift_Year_Total__c {
     apiName = "Account.npo02__Best_Gift_Year_Total__c"
@@ -302,9 +254,6 @@ type salesforce.Account {
     label = "Best Gift Year Total"
     precision = 18
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npo02__Best_Gift_Year__c {
     apiName = "Account.npo02__Best_Gift_Year__c"
@@ -313,45 +262,30 @@ type salesforce.Account {
     label = "Best Gift Year"
     length = 4
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Date npo02__FirstCloseDate__c {
     apiName = "Account.npo02__FirstCloseDate__c"
     deprecated = false
     description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
     label = "First Gift Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea npo02__Formal_Greeting__c {
     apiName = "Account.npo02__Formal_Greeting__c"
     deprecated = false
     inlineHelpText = "For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically."
     label = "Formal Greeting"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Phone npo02__HouseholdPhone__c {
     apiName = "Account.npo02__HouseholdPhone__c"
     deprecated = false
     label = "Household Phone"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea npo02__Informal_Greeting__c {
     apiName = "Account.npo02__Informal_Greeting__c"
     deprecated = false
     inlineHelpText = "For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically."
     label = "Informal Greeting"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__LargestAmount__c {
     apiName = "Account.npo02__LargestAmount__c"
@@ -361,18 +295,12 @@ type salesforce.Account {
     label = "Largest Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__LastCloseDate__c {
     apiName = "Account.npo02__LastCloseDate__c"
     deprecated = false
     description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
     label = "Last Gift Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__LastMembershipAmount__c {
     apiName = "Account.npo02__LastMembershipAmount__c"
@@ -382,18 +310,12 @@ type salesforce.Account {
     label = "Last Membership Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__LastMembershipDate__c {
     apiName = "Account.npo02__LastMembershipDate__c"
     deprecated = false
     description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
     label = "Last Membership Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npo02__LastMembershipLevel__c {
     apiName = "Account.npo02__LastMembershipLevel__c"
@@ -403,10 +325,7 @@ type salesforce.Account {
     label = "Last Membership Level"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Text npo02__LastMembershipOrigin__c {
     apiName = "Account.npo02__LastMembershipOrigin__c"
@@ -416,10 +335,7 @@ type salesforce.Account {
     label = "Last Membership Origin"
     length = 255
     unique = false
-    createable = true
-    updateable = true
     caseSensitive = false
-    queryable = true
   }
   salesforce.Currency npo02__LastOppAmount__c {
     apiName = "Account.npo02__LastOppAmount__c"
@@ -429,27 +345,18 @@ type salesforce.Account {
     label = "Last Gift Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__MembershipEndDate__c {
     apiName = "Account.npo02__MembershipEndDate__c"
     deprecated = false
     description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
     label = "Membership End Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date npo02__MembershipJoinDate__c {
     apiName = "Account.npo02__MembershipJoinDate__c"
     deprecated = false
     description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
     label = "Membership Join Date"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__NumberOfClosedOpps__c {
     apiName = "Account.npo02__NumberOfClosedOpps__c"
@@ -461,9 +368,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__NumberOfMembershipOpps__c {
     apiName = "Account.npo02__NumberOfMembershipOpps__c"
@@ -475,9 +379,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmount2YearsAgo__c {
     apiName = "Account.npo02__OppAmount2YearsAgo__c"
@@ -487,9 +388,6 @@ type salesforce.Account {
     label = "Total Gifts Two Years Ago"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmountLastNDays__c {
     apiName = "Account.npo02__OppAmountLastNDays__c"
@@ -499,9 +397,6 @@ type salesforce.Account {
     label = "Total Gifts Last N Days"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmountLastYear__c {
     apiName = "Account.npo02__OppAmountLastYear__c"
@@ -511,9 +406,6 @@ type salesforce.Account {
     label = "Total Gifts Last Year"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__OppAmountThisYear__c {
     apiName = "Account.npo02__OppAmountThisYear__c"
@@ -523,9 +415,6 @@ type salesforce.Account {
     label = "Total Gifts This Year"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosed2YearsAgo__c {
     apiName = "Account.npo02__OppsClosed2YearsAgo__c"
@@ -537,9 +426,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedLastNDays__c {
     apiName = "Account.npo02__OppsClosedLastNDays__c"
@@ -551,9 +437,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedLastYear__c {
     apiName = "Account.npo02__OppsClosedLastYear__c"
@@ -565,9 +448,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number npo02__OppsClosedThisYear__c {
     apiName = "Account.npo02__OppsClosedThisYear__c"
@@ -579,9 +459,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MultiselectPicklist npo02__SYSTEM_CUSTOM_NAMING__c {
     apiName = "Account.npo02__SYSTEM_CUSTOM_NAMING__c"
@@ -608,9 +485,6 @@ type salesforce.Account {
     sorted = false
     restricted = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__SmallestAmount__c {
     apiName = "Account.npo02__SmallestAmount__c"
@@ -620,9 +494,6 @@ type salesforce.Account {
     label = "Smallest Gift"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__TotalMembershipOppAmount__c {
     apiName = "Account.npo02__TotalMembershipOppAmount__c"
@@ -632,9 +503,6 @@ type salesforce.Account {
     label = "Total Membership Amount"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency npo02__TotalOppAmount__c {
     apiName = "Account.npo02__TotalOppAmount__c"
@@ -644,9 +512,6 @@ type salesforce.Account {
     label = "Total Gifts"
     precision = 16
     scale = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__All_Members_Deceased__c {
     apiName = "Account.npsp__All_Members_Deceased__c"
@@ -668,9 +533,6 @@ type salesforce.Account {
     ]
     relationshipLabel = "Accounts"
     relationshipName = "Accounts"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__CustomizableRollups_UseSkewMode__c {
     apiName = "Account.npsp__CustomizableRollups_UseSkewMode__c"
@@ -727,9 +589,6 @@ type salesforce.Account {
     sorted = false
     restricted = false
     visibleLines = 4
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox npsp__Grantmaker__c {
     apiName = "Account.npsp__Grantmaker__c"
@@ -738,9 +597,6 @@ type salesforce.Account {
     description = "Indicates that this organization is a grantmaking organization."
     inlineHelpText = "Indicates that this organization is a grant making organization. Can apply to foundations, government agencies, corporations, etc."
     label = "Grantmaker"
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text npsp__Matching_Gift_Administrator_Name__c {
     apiName = "Account.npsp__Matching_Gift_Administrator_Name__c"
@@ -861,9 +717,6 @@ type salesforce.Account {
     precision = 18
     scale = 0
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -887,10 +740,7 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     inlineHelpText = "Formula: Current, expired, or grace period.  Default grace period set in Household Settings."
     label = "Membership Status"
     unique = false
-    createable = false
-    updateable = false
     caseSensitive = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -908,9 +758,6 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     precision = 10
     scale = 0
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist npsp__Sustainer__c {
     apiName = "Account.npsp__Sustainer__c"
