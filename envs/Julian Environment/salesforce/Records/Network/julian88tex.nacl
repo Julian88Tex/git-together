@@ -2,7 +2,7 @@ salesforce.Network julian88tex {
   fullName = "julian88tex"
   allowInternalUserLogin = false
   allowMembersToFlag = false
-  changePasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityChangePasswordEmailTemplate@zcd
+  changePasswordTemplate = "unfiled$public/CommunityChangePasswordEmailTemplate"
   communityRoles = {
   }
   disableReputationRecordConversations = false
