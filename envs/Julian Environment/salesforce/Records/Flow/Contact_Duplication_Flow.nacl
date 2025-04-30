@@ -31,6 +31,6 @@ salesforce.Flow Contact_Duplication_Flow {
       targetReference = "Initial_Screen"
     }
   }
-  status = "Active"
+  status = "Obsolete"
   _alias = "Contact Duplication Flow"
 }

@@ -93,6 +93,6 @@ salesforce.Flow Create_Duplicate_Contact {
       targetReference = "Get_Contact_Details"
     }
   }
-  status = "Active"
+  status = "Obsolete"
   _alias = "Create Duplicate Contact"
 }

@@ -1,31 +1,25 @@
-salesforce.Flow DuplicateContactFlow {
-  fullName = "DuplicateContactFlow"
-  apiVersion = 57
-  description = "Creates a duplicate Contact record with modified fields"
-  formulas = [
-    {
-      name = "FormulaLastName"
-      dataType = "String"
-      expression = "{!$Record.LastName} & \" Test 2\""
-    },
-  ]
-  interviewLabel = "Duplicate Contact Flow {!$Flow.CurrentDateTime}"
-  label = "Duplicate Contact Flow"
+salesforce.Flow Contact_Name_Switch_Creation {
+  fullName = "Contact_Name_Switch_Creation"
+  apiVersion = 58
+  description = "Creates a duplicate contact with first and last names switched whenever a new contact is created"
+  environments = "Default"
+  interviewLabel = "Contact Name Switch Creation {!$Flow.CurrentDateTime}"
+  label = "Contact Name Switch Creation"
   processMetadataValues = [
     {
       name = "BuilderType"
       value = {
-        stringValue = "LightningFlow"
+        stringValue = "LightningFlowBuilder"
       }
     },
   ]
   processType = "AutoLaunchedFlow"
   recordCreates = [
     {
-      name = "Create_Duplicate_Contact"
-      label = "Create Duplicate Contact"
+      name = "Create_Switched_Name_Contact"
+      label = "Create Switched Name Contact"
       locationX = 176
-      locationY = 158
+      locationY = 335
       inputAssignments = [
         {
           field = salesforce.Contact.field.Email
@@ -36,13 +30,13 @@ salesforce.Flow DuplicateContactFlow {
         {
           field = "FirstName"
           value = {
-            elementReference = "$Record.FirstName"
+            elementReference = "$Record.LastName"
           }
         },
         {
           field = "LastName"
           value = {
-            elementReference = "FormulaLastName"
+            elementReference = "$Record.FirstName"
           }
         },
         {
@@ -53,13 +47,14 @@ salesforce.Flow DuplicateContactFlow {
         },
       ]
       object = salesforce.Contact
+      storeOutputAutomatically = true
     },
   ]
   start = {
     locationX = 50
-    locationY = 50
+    locationY = 0
     connector = {
-      targetReference = "Create_Duplicate_Contact"
+      targetReference = "Create_Switched_Name_Contact"
     }
     object = salesforce.Contact
     recordTriggerType = "Create"
@@ -69,5 +64,5 @@ salesforce.Flow DuplicateContactFlow {
   _parent = [
     salesforce.Contact,
   ]
-  _alias = "Duplicate Contact Flow"
+  _alias = "Contact Name Switch Creation"
 }

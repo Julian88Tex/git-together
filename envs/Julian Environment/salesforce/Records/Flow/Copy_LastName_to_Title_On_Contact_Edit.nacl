@@ -39,7 +39,7 @@ salesforce.Flow Copy_LastName_to_Title_On_Contact_Edit {
     recordTriggerType = "CreateAndUpdate"
     triggerType = "RecordAfterSave"
   }
-  status = "Active"
+  status = "Obsolete"
   _parent = [
     salesforce.Contact,
   ]

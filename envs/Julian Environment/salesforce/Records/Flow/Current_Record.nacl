@@ -114,7 +114,7 @@ salesforce.Flow Current_Record {
       targetReference = "varRelatedContacts"
     }
   }
-  status = "Active"
+  status = "Obsolete"
   variables = [
     {
       name = "RecordId"

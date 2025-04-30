@@ -46,7 +46,7 @@ salesforce.Flow Contact_Duplicate_On_Create {
     recordTriggerType = "Create"
     triggerType = "RecordAfterSave"
   }
-  status = "Active"
+  status = "Obsolete"
   _parent = [
     salesforce.Contact,
   ]

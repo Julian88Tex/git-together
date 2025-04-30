@@ -1,21 +1,22 @@
-salesforce.Flow DuplicateContactFlow {
-  fullName = "DuplicateContactFlow"
-  apiVersion = 57
-  description = "Creates a duplicate Contact record with modified fields"
+salesforce.Flow Contact_Duplicate_Creation {
+  fullName = "Contact_Duplicate_Creation"
+  apiVersion = 58
+  description = "Creates a duplicate contact with \"2\" added to the last name whenever a new contact is created"
+  environments = "Default"
   formulas = [
     {
-      name = "FormulaLastName"
+      name = "DuplicateLastName"
       dataType = "String"
-      expression = "{!$Record.LastName} & \" Test 2\""
+      expression = "{!$Record.LastName} & '2'"
     },
   ]
-  interviewLabel = "Duplicate Contact Flow {!$Flow.CurrentDateTime}"
-  label = "Duplicate Contact Flow"
+  interviewLabel = "Contact Duplicate Creation {!$Flow.CurrentDateTime}"
+  label = "Contact Duplicate Creation"
   processMetadataValues = [
     {
       name = "BuilderType"
       value = {
-        stringValue = "LightningFlow"
+        stringValue = "LightningFlowBuilder"
       }
     },
   ]
@@ -25,7 +26,7 @@ salesforce.Flow DuplicateContactFlow {
       name = "Create_Duplicate_Contact"
       label = "Create Duplicate Contact"
       locationX = 176
-      locationY = 158
+      locationY = 335
       inputAssignments = [
         {
           field = salesforce.Contact.field.Email
@@ -42,7 +43,7 @@ salesforce.Flow DuplicateContactFlow {
         {
           field = "LastName"
           value = {
-            elementReference = "FormulaLastName"
+            elementReference = "DuplicateLastName"
           }
         },
         {
@@ -53,11 +54,12 @@ salesforce.Flow DuplicateContactFlow {
         },
       ]
       object = salesforce.Contact
+      storeOutputAutomatically = true
     },
   ]
   start = {
     locationX = 50
-    locationY = 50
+    locationY = 0
     connector = {
       targetReference = "Create_Duplicate_Contact"
     }
@@ -69,5 +71,5 @@ salesforce.Flow DuplicateContactFlow {
   _parent = [
     salesforce.Contact,
   ]
-  _alias = "Duplicate Contact Flow"
+  _alias = "Contact Duplicate Creation"
 }
