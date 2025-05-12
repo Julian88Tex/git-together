@@ -5,7 +5,9 @@ salesforce.SharingRules Project__c {
       accessLevel = "Read"
       label = "Training Share"
       sharedTo = {
-        role = salesforce.Role.instance.Training_Coordinator
+        role = [
+          salesforce.Role.instance.Training_Coordinator,
+        ]
       }
       criteriaItems = {
         field = salesforce.Project__c.field.Priority__c
