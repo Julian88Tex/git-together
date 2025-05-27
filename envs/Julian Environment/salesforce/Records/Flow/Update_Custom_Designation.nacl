@@ -1,6 +1,7 @@
 salesforce.Flow Update_Custom_Designation {
   fullName = "Update_Custom_Designation"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

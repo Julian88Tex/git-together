@@ -7,7 +7,6 @@ type salesforce.User {
   salesforce.Address Address {
     apiName = "User.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Text Alias {
     apiName = "User.Alias"
@@ -127,7 +126,6 @@ type salesforce.User {
   }
   salesforce.Unknown IsSystemControlled {
     apiName = "User.IsSystemControlled"
-    _hidden_value = true
   }
   salesforce.Number JigsawImportLimitOverride {
     apiName = "User.JigsawImportLimitOverride"
@@ -161,7 +159,6 @@ type salesforce.User {
     apiName = "User.Name"
     _required = true
     label = "Full Name"
-    _hidden_value = true
   }
   salesforce.Phone Phone {
     apiName = "User.Phone"
@@ -249,7 +246,6 @@ type salesforce.User {
   }
   salesforce.Unknown UserSubtype {
     apiName = "User.UserSubtype"
-    _hidden_value = true
   }
   salesforce.Text Username {
     apiName = "User.Username"
@@ -261,7 +257,6 @@ type salesforce.User {
   }
   salesforce.Lookup WorkspaceId {
     apiName = "User.WorkspaceId"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "User.Id"
@@ -287,23 +282,19 @@ type salesforce.User {
     label = "User Photo badge text overlay"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist UserType {
     apiName = "User.UserType"
     restricted = true
     label = "User Type"
-    _hidden_value = true
   }
   salesforce.DateTime LastLoginDate {
     apiName = "User.LastLoginDate"
     label = "Last Login"
-    _hidden_value = true
   }
   salesforce.DateTime LastPasswordChangeDate {
     apiName = "User.LastPasswordChangeDate"
     label = "Last Password Change or Reset"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "User.CreatedDate"
@@ -335,7 +326,6 @@ type salesforce.User {
   salesforce.DateTime PasswordExpirationDate {
     apiName = "User.PasswordExpirationDate"
     label = "Password Expiration Date"
-    _hidden_value = true
   }
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
@@ -343,22 +333,18 @@ type salesforce.User {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Date SuAccessExpirationDate {
     apiName = "User.SuAccessExpirationDate"
     label = "SU Access Expiration Date"
-    _hidden_value = true
   }
   salesforce.DateTime OfflineTrialExpirationDate {
     apiName = "User.OfflineTrialExpirationDate"
     label = "Offline Edition Trial Expiration Date"
-    _hidden_value = true
   }
   salesforce.DateTime OfflinePdaTrialExpirationDate {
     apiName = "User.OfflinePdaTrialExpirationDate"
     label = "Sales Anywhere Trial Expiration Date"
-    _hidden_value = true
   }
   salesforce.Checkbox UserPermissionsMarketingUser {
     apiName = "User.UserPermissionsMarketingUser"
@@ -760,17 +746,25 @@ type salesforce.User {
     apiName = "User.UserPreferencesShowForecastingRoundedAmounts"
     label = "ShowForecastingRoundedAmounts"
   }
+  salesforce.Checkbox HasUserVerifiedPhone {
+    apiName = "User.HasUserVerifiedPhone"
+    label = "User Verified Mobile Number"
+    defaultValue = false
+  }
+  salesforce.Checkbox HasUserVerifiedEmail {
+    apiName = "User.HasUserVerifiedEmail"
+    label = "User Verified Email"
+    defaultValue = false
+  }
   salesforce.Checkbox IsPartner {
     apiName = "User.IsPartner"
     defaultValue = false
     label = "Is Partner"
-    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "User.AccountId"
     relationshipName = "Account"
     label = "Account ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsPortalEnabled {
     apiName = "User.IsPortalEnabled"
@@ -780,18 +774,15 @@ type salesforce.User {
   salesforce.Url FullPhotoUrl {
     apiName = "User.FullPhotoUrl"
     label = "Url for full-sized Photo"
-    _hidden_value = true
   }
   salesforce.Url SmallPhotoUrl {
     apiName = "User.SmallPhotoUrl"
     label = "Photo"
-    _hidden_value = true
   }
   salesforce.Checkbox IsExtIndicatorVisible {
     apiName = "User.IsExtIndicatorVisible"
     defaultValue = false
     label = "Show external indicator"
-    _hidden_value = true
   }
   salesforce.Text OutOfOfficeMessage {
     apiName = "User.OutOfOfficeMessage"
@@ -799,32 +790,26 @@ type salesforce.User {
     label = "Out of office message"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Url MediumPhotoUrl {
     apiName = "User.MediumPhotoUrl"
     label = "Url for medium profile photo"
-    _hidden_value = true
   }
   salesforce.Url BannerPhotoUrl {
     apiName = "User.BannerPhotoUrl"
     label = "Url for banner photo"
-    _hidden_value = true
   }
   salesforce.Url SmallBannerPhotoUrl {
     apiName = "User.SmallBannerPhotoUrl"
     label = "Url for IOS banner photo"
-    _hidden_value = true
   }
   salesforce.Url MediumBannerPhotoUrl {
     apiName = "User.MediumBannerPhotoUrl"
     label = "Url for Android banner photo"
-    _hidden_value = true
   }
   salesforce.Checkbox IsProfilePhotoActive {
     apiName = "User.IsProfilePhotoActive"
     defaultValue = false
     label = "Has Profile Photo"
-    _hidden_value = true
   }
 }

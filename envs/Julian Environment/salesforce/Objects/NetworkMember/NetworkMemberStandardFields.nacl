@@ -26,14 +26,12 @@ type salesforce.NetworkMember {
     relationshipName = "Network"
     _required = true
     label = "Network ID"
-    _hidden_value = true
   }
   salesforce.Lookup MemberId {
     apiName = "NetworkMember.MemberId"
     relationshipName = "Member"
     _required = true
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.Picklist DigestFrequency {
     apiName = "NetworkMember.DigestFrequency"
@@ -130,6 +128,5 @@ type salesforce.NetworkMember {
   salesforce.Date LastChatterActivityDate {
     apiName = "NetworkMember.LastChatterActivityDate"
     label = "Last Chatter Activity Date"
-    _hidden_value = true
   }
 }

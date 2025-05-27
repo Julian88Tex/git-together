@@ -6,7 +6,6 @@ type salesforce.NamespaceRegistry {
     label = "Namespace Prefix"
     unique = true
     caseSensitive = false
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "NamespaceRegistry.Id"
@@ -58,6 +57,5 @@ type salesforce.NamespaceRegistry {
     label = "Namespace Org ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

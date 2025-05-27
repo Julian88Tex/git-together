@@ -65,7 +65,6 @@ type salesforce.FeedItem {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Number LikeCount {
     apiName = "FeedItem.LikeCount"
@@ -74,7 +73,6 @@ type salesforce.FeedItem {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Text Title {
     apiName = "FeedItem.Title"
@@ -106,7 +104,6 @@ type salesforce.FeedItem {
     relationshipName = "InsertedBy"
     _required = true
     label = "InsertedBy ID"
-    _hidden_value = true
   }
   salesforce.Picklist NetworkScope {
     apiName = "FeedItem.NetworkScope"
@@ -122,37 +119,31 @@ type salesforce.FeedItem {
     apiName = "FeedItem.BestCommentId"
     relationshipName = "BestComment"
     label = "Best Comment ID"
-    _hidden_value = true
   }
   salesforce.Checkbox HasContent {
     apiName = "FeedItem.HasContent"
     defaultValue = false
     label = "Has Content"
-    _hidden_value = true
   }
   salesforce.Checkbox HasLink {
     apiName = "FeedItem.HasLink"
     defaultValue = false
     label = "Has Link"
-    _hidden_value = true
   }
   salesforce.Checkbox HasFeedEntity {
     apiName = "FeedItem.HasFeedEntity"
     defaultValue = false
     label = "Has Feed Entity Attachment"
-    _hidden_value = true
   }
   salesforce.Checkbox HasVerifiedComment {
     apiName = "FeedItem.HasVerifiedComment"
     defaultValue = false
     label = "Has Verified Comment"
-    _hidden_value = true
   }
   salesforce.Checkbox IsClosed {
     apiName = "FeedItem.IsClosed"
     defaultValue = false
     label = "Is Closed"
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "FeedItem.Status"

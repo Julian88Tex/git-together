@@ -57,9 +57,9 @@ type salesforce.AnalyticsUserAttrFuncTkn {
   }
   apiName = "AnalyticsUserAttrFuncTkn"
   metadataType = "CustomObject"
-  label = "AnalyticsUserAttrFuncTkn"
+  label = "Analytics User Attribute Function Token"
   description = ""
   enableFeeds = false
   externalSharingModel = "Read"
-  _alias = "AnalyticsUserAttrFuncTkn"
+  _alias = "Analytics User Attribute Function Token"
 }

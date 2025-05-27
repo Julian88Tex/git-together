@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Duplicate_On_Create {
   fullName = "Contact_Duplicate_On_Create"
   apiVersion = 57
+  areMetricsLoggedToDataCloud = false
   description = "When a Contact is created, creates a duplicate Contact with 'test 2' added to the last name"
   interviewLabel = "Contact Duplicate On Create {!$Flow.CurrentDateTime}"
   label = "Contact Duplicate On Create"

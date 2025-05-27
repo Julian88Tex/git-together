@@ -2,25 +2,32 @@ salesforce.StandardValueSet ContractStatus {
   fullName = "ContractStatus"
   groupingStringEnum = "ContractStatusCode"
   sorted = false
-  standardValue = [
-    {
-      fullName = "In Approval Process"
-      default = false
-      label = "In Approval Process"
-      groupingString = "InApproval"
-    },
-    {
-      fullName = "Activated"
-      default = false
-      label = "Activated"
-      groupingString = "Activated"
-    },
-    {
-      fullName = "Draft"
-      default = false
-      label = "Draft"
-      groupingString = "Draft"
-    },
-  ]
+  standardValue = {
+    values = {
+      In_Approval_Process@s = {
+        fullName = "In Approval Process"
+        default = false
+        label = "In Approval Process"
+        groupingString = "InApproval"
+      }
+      Activated = {
+        fullName = "Activated"
+        default = false
+        label = "Activated"
+        groupingString = "Activated"
+      }
+      Draft = {
+        fullName = "Draft"
+        default = false
+        label = "Draft"
+        groupingString = "Draft"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.ContractStatus.standardValue.values.In_Approval_Process@s,
+      salesforce.StandardValueSet.instance.ContractStatus.standardValue.values.Activated,
+      salesforce.StandardValueSet.instance.ContractStatus.standardValue.values.Draft,
+    ]
+  }
   _alias = "ContractStatus"
 }

@@ -3,7 +3,6 @@ type salesforce.PartnerFundClaim {
     apiName = "PartnerFundClaim.AllocationId"
     relationshipName = "Allocation"
     label = "Partner Fund Allocation ID"
-    _hidden_value = true
   }
   salesforce.Currency Amount {
     apiName = "PartnerFundClaim.Amount"
@@ -16,13 +15,11 @@ type salesforce.PartnerFundClaim {
     apiName = "PartnerFundClaim.BudgetId"
     relationshipName = "Budget"
     label = "Partner Marketing Budget ID"
-    _hidden_value = true
   }
   salesforce.Lookup ChannelPartnerId {
     apiName = "PartnerFundClaim.ChannelPartnerId"
     relationshipName = "ChannelPartner"
     label = "Channel Partner ID"
-    _hidden_value = true
   }
   salesforce.TextArea Description {
     apiName = "PartnerFundClaim.Description"

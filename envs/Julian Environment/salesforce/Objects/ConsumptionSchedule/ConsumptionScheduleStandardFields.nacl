@@ -45,7 +45,6 @@ type salesforce.ConsumptionSchedule {
     apiName = "ConsumptionSchedule.NumberOfRates"
     label = "Number of Consumption Rates"
     precision = 9
-    _hidden_value = true
   }
   salesforce.Picklist RatingMethod {
     apiName = "ConsumptionSchedule.RatingMethod"

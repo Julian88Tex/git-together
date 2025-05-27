@@ -8,55 +8,55 @@ salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
       picklist = salesforce.Campaign.field.DB_Campaign_Tactic__c
       values = [
         {
-          fullName = "Direct Mail"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Direct_Mail@s.fullName
           default = false
         },
         {
-          fullName = "Email"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Email.fullName
           default = false
         },
         {
-          fullName = "Employment Seminars"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Employment_Seminars@s.fullName
           default = false
         },
         {
-          fullName = "Internal Website"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Internal_Website@s.fullName
           default = false
         },
         {
-          fullName = "Lunches"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Lunches.fullName
           default = false
         },
         {
-          fullName = "Online Banners%2FAds"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Online_Banners_Ads@sd.fullName
           default = false
         },
         {
-          fullName = "Other"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Other.fullName
           default = false
         },
         {
-          fullName = "Partners"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Partners.fullName
           default = false
         },
         {
-          fullName = "Print Advertisement"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Print_Advertisement@s.fullName
           default = false
         },
         {
-          fullName = "Public Relations"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Public_Relations@s.fullName
           default = false
         },
         {
-          fullName = "Referral Program"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Referral_Program@s.fullName
           default = false
         },
         {
-          fullName = "Sales Call Down"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Sales_Call_Down@s.fullName
           default = false
         },
         {
-          fullName = "Webinars"
+          fullName = salesforce.Campaign.field.DB_Campaign_Tactic__c.valueSet.values.Webinars.fullName
           default = false
         },
       ]
@@ -65,355 +65,355 @@ salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
       picklist = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c
       values = [
         {
-          fullName = "Africa%2FAlgiers"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Algiers@d.fullName
           default = false
         },
         {
-          fullName = "Africa%2FCairo"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Cairo@d.fullName
           default = false
         },
         {
-          fullName = "Africa%2FJohannesburg"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Johannesburg@d.fullName
           default = false
         },
         {
-          fullName = "Africa%2FNairobi"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Africa_Nairobi@d.fullName
           default = false
         },
         {
-          fullName = "America%2FAnchorage"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Anchorage@d.fullName
           default = false
         },
         {
-          fullName = "America%2FBogota"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Bogota@d.fullName
           default = false
         },
         {
-          fullName = "America%2FBuenos_Aires"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Buenos_Aires@du.fullName
           default = false
         },
         {
-          fullName = "America%2FCaracas"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Caracas@d.fullName
           default = false
         },
         {
-          fullName = "America%2FChicago"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Chicago@d.fullName
           default = false
         },
         {
-          fullName = "America%2FDenver"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Denver@d.fullName
           default = false
         },
         {
-          fullName = "America%2FEl_Salvador"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_El_Salvador@du.fullName
           default = false
         },
         {
-          fullName = "America%2FHalifax"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Halifax@d.fullName
           default = false
         },
         {
-          fullName = "America%2FIndianapolis"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Indianapolis@d.fullName
           default = false
         },
         {
-          fullName = "America%2FLima"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Lima@d.fullName
           default = false
         },
         {
-          fullName = "America%2FLos_Angeles"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Los_Angeles@du.fullName
           default = false
         },
         {
-          fullName = "America%2FMexico_City"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Mexico_City@du.fullName
           default = false
         },
         {
-          fullName = "America%2FNew_York"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_New_York@du.fullName
           default = false
         },
         {
-          fullName = "America%2FPanama"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Panama@d.fullName
           default = false
         },
         {
-          fullName = "America%2FPhoenix"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Phoenix@d.fullName
           default = false
         },
         {
-          fullName = "America%2FPuerto_Rico"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Puerto_Rico@du.fullName
           default = false
         },
         {
-          fullName = "America%2FSantiago"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Santiago@d.fullName
           default = false
         },
         {
-          fullName = "America%2FSao_Paulo"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Sao_Paulo@du.fullName
           default = false
         },
         {
-          fullName = "America%2FSt_Johns"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_St_Johns@du.fullName
           default = false
         },
         {
-          fullName = "America%2FTijuana"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.America_Tijuana@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FBaghdad"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Baghdad@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FBangkok"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Bangkok@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FCalcutta"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Calcutta@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FColombo"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Colombo@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FDacca"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Dacca@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FDubai"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Dubai@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FHong_Kong"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Hong_Kong@du.fullName
           default = false
         },
         {
-          fullName = "Asia%2FJakarta"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Jakarta@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FJerusalem"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Jerusalem@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKabul"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kabul@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKamchatka"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kamchatka@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKarachi"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Karachi@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKatmandu"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Katmandu@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKuala_Lumpur"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kuala_Lumpur@du.fullName
           default = false
         },
         {
-          fullName = "Asia%2FKuwait"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Kuwait@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FManila"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Manila@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FRangoon"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Rangoon@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FRiyadh"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Riyadh@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FSaigon"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Saigon@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FSeoul"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Seoul@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FShanghai"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Shanghai@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FSingapore"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Singapore@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FTaipei"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Taipei@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FTashkent"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tashkent@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FTbilisi"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tbilisi@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FTehran"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tehran@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FTokyo"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Tokyo@d.fullName
           default = false
         },
         {
-          fullName = "Asia%2FYekaterinburg"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Asia_Yekaterinburg@d.fullName
           default = false
         },
         {
-          fullName = "Atlantic%2FBermuda"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_Bermuda@d.fullName
           default = false
         },
         {
-          fullName = "Atlantic%2FCape_Verde"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_Cape_Verde@du.fullName
           default = false
         },
         {
-          fullName = "Atlantic%2FSouth_Georgia"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Atlantic_South_Georgia@du.fullName
           default = false
         },
         {
-          fullName = "Australia%2FAdelaide"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Adelaide@d.fullName
           default = false
         },
         {
-          fullName = "Australia%2FBrisbane"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Brisbane@d.fullName
           default = false
         },
         {
-          fullName = "Australia%2FDarwin"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Darwin@d.fullName
           default = false
         },
         {
-          fullName = "Australia%2FLord_Howe"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Lord_Howe@du.fullName
           default = false
         },
         {
-          fullName = "Australia%2FPerth"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Perth@d.fullName
           default = false
         },
         {
-          fullName = "Australia%2FSydney"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Australia_Sydney@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FAmsterdam"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Amsterdam@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FAthens"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Athens@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FBerlin"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Berlin@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FBrussels"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Brussels@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FBucharest"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Bucharest@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FDublin"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Dublin@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FHelsinki"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Helsinki@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FIstanbul"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Istanbul@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FLisbon"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Lisbon@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FLondon"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_London@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FMinsk"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Minsk@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FMoscow"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Moscow@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FParis"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Paris@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FPrague"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Prague@d.fullName
           default = false
         },
         {
-          fullName = "Europe%2FRome"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Europe_Rome@d.fullName
           default = false
         },
         {
-          fullName = "GMT"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.GMT.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FAuckland"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Auckland@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FChatham"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Chatham@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FEnderbury"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Enderbury@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FFiji"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Fiji@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FGuadalcanal"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Guadalcanal@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FHonolulu"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Honolulu@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FKiritimati"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Kiritimati@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FNiue"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Niue@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FNorfolk"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Norfolk@d.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FPago_Pago"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Pago_Pago@du.fullName
           default = false
         },
         {
-          fullName = "Pacific%2FTongatapu"
+          fullName = salesforce.Campaign.field.GW_Volunteers__Volunteer_Website_Time_Zone__c.valueSet.values.Pacific_Tongatapu@d.fullName
           default = false
         },
       ]
@@ -422,19 +422,19 @@ salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
       picklist = salesforce.Campaign.field.Status
       values = [
         {
-          fullName = "Aborted"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Aborted.fullName
           default = false
         },
         {
-          fullName = "Completed"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Completed.fullName
           default = false
         },
         {
-          fullName = "In Progress"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.In_Progress@s.fullName
           default = false
         },
         {
-          fullName = "Planned"
+          fullName = salesforce.StandardValueSet.instance.CampaignStatus.standardValue.values.Planned.fullName
           default = true
         },
       ]
@@ -443,51 +443,51 @@ salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
       picklist = salesforce.Campaign.field.Type
       values = [
         {
-          fullName = "Advertisement"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Advertisement.fullName
           default = false
         },
         {
-          fullName = "Banner Ads"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Banner_Ads@s.fullName
           default = false
         },
         {
-          fullName = "Conference"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Conference.fullName
           default = true
         },
         {
-          fullName = "Direct Mail"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Direct_Mail@s.fullName
           default = false
         },
         {
-          fullName = "Email"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Email.fullName
           default = false
         },
         {
-          fullName = "Other"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Other.fullName
           default = false
         },
         {
-          fullName = "Partners"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Partners.fullName
           default = false
         },
         {
-          fullName = "Public Relations"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Public_Relations@s.fullName
           default = false
         },
         {
-          fullName = "Referral Program"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Referral_Program@s.fullName
           default = false
         },
         {
-          fullName = "Telemarketing"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Telemarketing.fullName
           default = false
         },
         {
-          fullName = "Trade Show"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Trade_Show@s.fullName
           default = false
         },
         {
-          fullName = "Webinar"
+          fullName = salesforce.StandardValueSet.instance.CampaignType.standardValue.values.Webinar.fullName
           default = false
         },
       ]
@@ -496,15 +496,15 @@ salesforce.RecordType Campaign_GW_Volunteers__Volunteers_Campaign {
       picklist = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c
       values = [
         {
-          fullName = "Campaign"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Campaign.fullName
           default = false
         },
         {
-          fullName = "Fundraiser"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Fundraiser.fullName
           default = false
         },
         {
-          fullName = "Team"
+          fullName = salesforce.Campaign.field.stayclassy__Classy_Campaign_Type__c.valueSet.values.Team.fullName
           default = false
         },
       ]

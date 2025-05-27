@@ -1,6 +1,7 @@
 salesforce.Flow DuplicateContactFlow {
   fullName = "DuplicateContactFlow"
   apiVersion = 57
+  areMetricsLoggedToDataCloud = false
   description = "Creates a duplicate Contact record with modified fields"
   formulas = [
     {

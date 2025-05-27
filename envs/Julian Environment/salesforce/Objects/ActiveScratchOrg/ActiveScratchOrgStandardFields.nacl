@@ -8,18 +8,15 @@ type salesforce.ActiveScratchOrg {
     apiName = "ActiveScratchOrg.Edition"
     restricted = true
     label = "Edition"
-    _hidden_value = true
   }
   salesforce.Date ExpirationDate {
     apiName = "ActiveScratchOrg.ExpirationDate"
     label = "Expiration Date"
-    _hidden_value = true
   }
   salesforce.LongTextArea Features {
     apiName = "ActiveScratchOrg.Features"
     length = 10000
     label = "Features"
-    _hidden_value = true
   }
   salesforce.Lookup Id {
     apiName = "ActiveScratchOrg.Id"
@@ -29,7 +26,6 @@ type salesforce.ActiveScratchOrg {
   salesforce.Date LastLoginDate {
     apiName = "ActiveScratchOrg.LastLoginDate"
     label = "Last Login Date"
-    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ActiveScratchOrg.Name"
@@ -42,7 +38,6 @@ type salesforce.ActiveScratchOrg {
     label = "Namespace"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text OrgName {
     apiName = "ActiveScratchOrg.OrgName"
@@ -50,7 +45,6 @@ type salesforce.ActiveScratchOrg {
     label = "Org Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text ScratchOrg {
     apiName = "ActiveScratchOrg.ScratchOrg"
@@ -59,7 +53,6 @@ type salesforce.ActiveScratchOrg {
     label = "Scratch Org ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup ScratchOrgInfoId {
     apiName = "ActiveScratchOrg.ScratchOrgInfoId"
@@ -70,7 +63,6 @@ type salesforce.ActiveScratchOrg {
     apiName = "ActiveScratchOrg.SignupEmail"
     label = "Email"
     unique = false
-    _hidden_value = true
   }
   salesforce.Text SignupInstance {
     apiName = "ActiveScratchOrg.SignupInstance"
@@ -78,7 +70,6 @@ type salesforce.ActiveScratchOrg {
     label = "Instance"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number SignupTrialDays {
     apiName = "ActiveScratchOrg.SignupTrialDays"
@@ -86,7 +77,6 @@ type salesforce.ActiveScratchOrg {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Text SignupUsername {
     apiName = "ActiveScratchOrg.SignupUsername"
@@ -94,7 +84,6 @@ type salesforce.ActiveScratchOrg {
     label = "Username"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Snapshot {
     apiName = "ActiveScratchOrg.Snapshot"
@@ -102,7 +91,6 @@ type salesforce.ActiveScratchOrg {
     label = "Snapshot"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ActiveScratchOrg.OwnerId"
@@ -147,6 +135,5 @@ type salesforce.ActiveScratchOrg {
     apiName = "ActiveScratchOrg.HasSampleData"
     defaultValue = false
     label = "Has Sample Data"
-    _hidden_value = true
   }
 }

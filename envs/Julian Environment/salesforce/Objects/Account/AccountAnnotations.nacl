@@ -201,6 +201,20 @@ type salesforce.Account {
       type = "Default"
     },
     {
+      actionName = "ResumeBilling"
+      type = "Default"
+    },
+    {
+      actionName = "ResumeBilling"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "ResumeBilling"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "SaveEdit"
       type = "Default"
     },
@@ -225,6 +239,20 @@ type salesforce.Account {
     },
     {
       actionName = "SmsHighlightAction"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SuspendBilling"
+      type = "Default"
+    },
+    {
+      actionName = "SuspendBilling"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SuspendBilling"
       formFactor = "Small"
       type = "Default"
     },

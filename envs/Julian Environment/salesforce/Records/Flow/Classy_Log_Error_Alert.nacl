@@ -28,6 +28,7 @@ salesforce.Flow Classy_Log_Error_Alert {
     },
   ]
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

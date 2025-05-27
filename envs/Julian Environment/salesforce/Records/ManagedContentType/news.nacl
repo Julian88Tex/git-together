@@ -2,6 +2,7 @@ salesforce.ManagedContentType news {
   fullName = "news"
   description = "A basic article format with rich text and image support."
   developerName = "news"
+  isMetadataContent = false
   managedContentNodeTypes = [
     {
       isLocalizable = true

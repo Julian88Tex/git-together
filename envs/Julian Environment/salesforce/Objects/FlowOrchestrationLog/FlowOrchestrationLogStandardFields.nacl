@@ -5,7 +5,6 @@ type salesforce.FlowOrchestrationLog {
     label = "Completed By"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Assignee {
     apiName = "FlowOrchestrationLog.Assignee"
@@ -13,13 +12,11 @@ type salesforce.FlowOrchestrationLog {
     label = "Assigned To"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist AssigneeType {
     apiName = "FlowOrchestrationLog.AssigneeType"
     restricted = true
     label = "Assignment Type"
-    _hidden_value = true
   }
   salesforce.Text Comments {
     apiName = "FlowOrchestrationLog.Comments"
@@ -27,7 +24,6 @@ type salesforce.FlowOrchestrationLog {
     label = "Comments"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Context {
     apiName = "FlowOrchestrationLog.Context"
@@ -35,26 +31,22 @@ type salesforce.FlowOrchestrationLog {
     label = "Context Record"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Unknown Duration {
     apiName = "FlowOrchestrationLog.Duration"
     label = "Duration (seconds)"
-    _hidden_value = true
   }
   salesforce.Picklist Kind {
     apiName = "FlowOrchestrationLog.Kind"
     restricted = true
     _required = true
     label = "Milestone"
-    _hidden_value = true
   }
   salesforce.MasterDetail OrchestrationInstanceId {
     apiName = "FlowOrchestrationLog.OrchestrationInstanceId"
     relationshipName = "OrchestrationInstance"
     _required = true
     label = "Orchestration Run ID"
-    _hidden_value = true
   }
   salesforce.Text OrchestrationName {
     apiName = "FlowOrchestrationLog.OrchestrationName"
@@ -63,7 +55,6 @@ type salesforce.FlowOrchestrationLog {
     label = "Orchestration Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number OrchestrationVersion {
     apiName = "FlowOrchestrationLog.OrchestrationVersion"
@@ -72,7 +63,6 @@ type salesforce.FlowOrchestrationLog {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Text StageName {
     apiName = "FlowOrchestrationLog.StageName"
@@ -80,7 +70,6 @@ type salesforce.FlowOrchestrationLog {
     label = "Stage"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text StepName {
     apiName = "FlowOrchestrationLog.StepName"
@@ -88,13 +77,11 @@ type salesforce.FlowOrchestrationLog {
     label = "Step"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.DateTime Timestamp {
     apiName = "FlowOrchestrationLog.Timestamp"
     _required = true
     label = "Timestamp"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "FlowOrchestrationLog.Id"

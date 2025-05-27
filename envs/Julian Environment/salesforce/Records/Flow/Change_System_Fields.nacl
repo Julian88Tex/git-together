@@ -1,6 +1,7 @@
 salesforce.Flow Change_System_Fields {
   fullName = "Change_System_Fields"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

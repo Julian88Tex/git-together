@@ -14,13 +14,11 @@ type salesforce.Case {
   salesforce.Lookup BusinessHoursId {
     apiName = "Case.BusinessHoursId"
     trackTrending = false
-    _hidden_value = true
   }
   salesforce.DateTime ClosedDate {
     apiName = "Case.ClosedDate"
     trackTrending = false
     label = "Closed Date"
-    _hidden_value = true
   }
   salesforce.LongTextArea Comments {
     apiName = "Case.Comments"
@@ -33,13 +31,11 @@ type salesforce.Case {
     trackTrending = false
     label = "Contact Email"
     unique = false
-    _hidden_value = true
   }
   salesforce.Phone ContactFax {
     apiName = "Case.ContactFax"
     trackTrending = false
     label = "Contact Fax"
-    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "Case.ContactId"
@@ -51,13 +47,11 @@ type salesforce.Case {
     apiName = "Case.ContactMobile"
     trackTrending = false
     label = "Contact Mobile"
-    _hidden_value = true
   }
   salesforce.Phone ContactPhone {
     apiName = "Case.ContactPhone"
     trackTrending = false
     label = "Contact Phone"
-    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "Case.Description"
@@ -68,7 +62,6 @@ type salesforce.Case {
   salesforce.Unknown IsClosedOnCreate {
     apiName = "Case.IsClosedOnCreate"
     trackTrending = false
-    _hidden_value = true
   }
   salesforce.Checkbox IsEscalated {
     apiName = "Case.IsEscalated"
@@ -178,7 +171,6 @@ type salesforce.Case {
     apiName = "Case.MasterRecordId"
     relationshipName = "MasterRecord"
     label = "Master Record ID"
-    _hidden_value = true
   }
   salesforce.AutoNumber CaseNumber {
     apiName = "Case.CaseNumber"
@@ -189,7 +181,6 @@ type salesforce.Case {
     apiName = "Case.IsClosed"
     defaultValue = false
     label = "Closed"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Case.CreatedDate"

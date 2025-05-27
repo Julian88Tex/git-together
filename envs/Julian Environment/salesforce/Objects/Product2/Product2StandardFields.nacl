@@ -100,6 +100,5 @@ type salesforce.Product2 {
     apiName = "Product2.IsArchived"
     defaultValue = false
     label = "Archived"
-    _hidden_value = true
   }
 }

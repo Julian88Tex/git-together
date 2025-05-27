@@ -6,7 +6,6 @@ type salesforce.Order {
   }
   salesforce.Unknown AccountNumber {
     apiName = "Order.AccountNumber"
-    _hidden_value = true
   }
   salesforce.Lookup ActivatedById {
     apiName = "Order.ActivatedById"
@@ -25,7 +24,6 @@ type salesforce.Order {
   salesforce.Address BillingAddress {
     apiName = "Order.BillingAddress"
     label = "Billing Address"
-    _hidden_value = true
   }
   salesforce.Lookup CompanyAuthorizedById {
     apiName = "Order.CompanyAuthorizedById"
@@ -38,7 +36,6 @@ type salesforce.Order {
   }
   salesforce.Unknown ContractEndDate {
     apiName = "Order.ContractEndDate"
-    _hidden_value = true
   }
   salesforce.Lookup ContractId {
     apiName = "Order.ContractId"
@@ -47,7 +44,6 @@ type salesforce.Order {
   }
   salesforce.Unknown ContractName {
     apiName = "Order.ContractName"
-    _hidden_value = true
   }
   salesforce.Lookup CustomerAuthorizedById {
     apiName = "Order.CustomerAuthorizedById"
@@ -87,7 +83,6 @@ type salesforce.Order {
   }
   salesforce.Lookup OpportunityId {
     apiName = "Order.OpportunityId"
-    _hidden_value = true
   }
   salesforce.Text OrderReferenceNumber {
     apiName = "Order.OrderReferenceNumber"
@@ -125,7 +120,6 @@ type salesforce.Order {
   }
   salesforce.Lookup QuoteId {
     apiName = "Order.QuoteId"
-    _hidden_value = true
   }
   salesforce.Lookup ShipToContactId {
     apiName = "Order.ShipToContactId"
@@ -135,7 +129,6 @@ type salesforce.Order {
   salesforce.Address ShippingAddress {
     apiName = "Order.ShippingAddress"
     label = "Shipping Address"
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "Order.Status"
@@ -150,7 +143,6 @@ type salesforce.Order {
     label = "Order Amount"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Picklist Type {
     apiName = "Order.Type"

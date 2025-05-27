@@ -14,7 +14,6 @@ type salesforce.ForecastingQuota {
   salesforce.Lookup PeriodId {
     apiName = "ForecastingQuota.PeriodId"
     label = "Period ID"
-    _hidden_value = true
   }
   salesforce.Date StartDate {
     apiName = "ForecastingQuota.StartDate"
@@ -51,13 +50,11 @@ type salesforce.ForecastingQuota {
     apiName = "ForecastingQuota.IsQuantity"
     defaultValue = false
     label = "Is Quantity"
-    _hidden_value = true
   }
   salesforce.Checkbox IsAmount {
     apiName = "ForecastingQuota.IsAmount"
     defaultValue = false
     label = "Is Amount"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingQuota.CreatedDate"

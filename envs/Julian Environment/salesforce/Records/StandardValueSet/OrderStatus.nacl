@@ -2,19 +2,25 @@ salesforce.StandardValueSet OrderStatus {
   fullName = "OrderStatus"
   groupingStringEnum = "OrderStatusCode"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Draft"
-      default = false
-      label = "Draft"
-      groupingString = "Draft"
-    },
-    {
-      fullName = "Activated"
-      default = false
-      label = "Activated"
-      groupingString = "Activated"
-    },
-  ]
+  standardValue = {
+    values = {
+      Draft = {
+        fullName = "Draft"
+        default = false
+        label = "Draft"
+        groupingString = "Draft"
+      }
+      Activated = {
+        fullName = "Activated"
+        default = false
+        label = "Activated"
+        groupingString = "Activated"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.OrderStatus.standardValue.values.Draft,
+      salesforce.StandardValueSet.instance.OrderStatus.standardValue.values.Activated,
+    ]
+  }
   _alias = "OrderStatus"
 }

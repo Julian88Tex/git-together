@@ -65,6 +65,7 @@ The Test_Delay_Process-1 invocable process failed to start because a valid value
     },
   ]
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   decisions = [
     {
       name = "invocableContextCheckDecision"

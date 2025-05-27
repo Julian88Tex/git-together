@@ -2,7 +2,6 @@ type salesforce.Lead {
   salesforce.Address Address {
     apiName = "Lead.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Currency AnnualRevenue {
     apiName = "Lead.AnnualRevenue"
@@ -12,7 +11,6 @@ type salesforce.Lead {
   }
   salesforce.Lookup CampaignId {
     apiName = "Lead.CampaignId"
-    _hidden_value = true
   }
   salesforce.Picklist CleanStatus {
     apiName = "Lead.CleanStatus"
@@ -46,7 +44,6 @@ type salesforce.Lead {
   }
   salesforce.Unknown DoNotCall {
     apiName = "Lead.DoNotCall"
-    _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "Lead.Email"
@@ -59,11 +56,9 @@ type salesforce.Lead {
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Lead.HasOptedOutOfEmail"
-    _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Lead.HasOptedOutOfFax"
-    _hidden_value = true
   }
   salesforce.Lookup IndividualId {
     apiName = "Lead.IndividualId"
@@ -85,7 +80,6 @@ type salesforce.Lead {
   }
   salesforce.Unknown LastTransferDate {
     apiName = "Lead.LastTransferDate"
-    _hidden_value = true
   }
   salesforce.Picklist LeadSource {
     apiName = "Lead.LeadSource"
@@ -101,7 +95,6 @@ type salesforce.Lead {
     apiName = "Lead.Name"
     _required = true
     label = "Full Name"
-    _hidden_value = true
   }
   salesforce.Number NumberOfEmployees {
     apiName = "Lead.NumberOfEmployees"
@@ -118,7 +111,6 @@ type salesforce.Lead {
   }
   salesforce.Lookup PartnerAccountId {
     apiName = "Lead.PartnerAccountId"
-    _hidden_value = true
   }
   salesforce.Phone Phone {
     apiName = "Lead.Phone"
@@ -164,12 +156,10 @@ type salesforce.Lead {
     apiName = "Lead.MasterRecordId"
     relationshipName = "MasterRecord"
     label = "Master Record ID"
-    _hidden_value = true
   }
   salesforce.Url PhotoUrl {
     apiName = "Lead.PhotoUrl"
     label = "Photo URL"
-    _hidden_value = true
   }
   salesforce.Checkbox IsConverted {
     apiName = "Lead.IsConverted"
@@ -179,25 +169,21 @@ type salesforce.Lead {
   salesforce.Date ConvertedDate {
     apiName = "Lead.ConvertedDate"
     label = "Converted Date"
-    _hidden_value = true
   }
   salesforce.Lookup ConvertedAccountId {
     apiName = "Lead.ConvertedAccountId"
     relationshipName = "ConvertedAccount"
     label = "Converted Account ID"
-    _hidden_value = true
   }
   salesforce.Lookup ConvertedContactId {
     apiName = "Lead.ConvertedContactId"
     relationshipName = "ConvertedContact"
     label = "Converted Contact ID"
-    _hidden_value = true
   }
   salesforce.Lookup ConvertedOpportunityId {
     apiName = "Lead.ConvertedOpportunityId"
     relationshipName = "ConvertedOpportunity"
     label = "Converted Opportunity ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsUnreadByOwner {
     apiName = "Lead.IsUnreadByOwner"
@@ -242,7 +228,6 @@ type salesforce.Lead {
     label = "Jigsaw Contact ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text EmailBouncedReason {
     apiName = "Lead.EmailBouncedReason"

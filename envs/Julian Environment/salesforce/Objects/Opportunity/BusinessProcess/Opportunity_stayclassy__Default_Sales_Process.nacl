@@ -4,43 +4,43 @@ salesforce.BusinessProcess Opportunity_stayclassy__Default_Sales_Process@uuuss {
   isActive = true
   values = [
     {
-      fullName = "Closed Lost"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Closed_Lost@s.fullName
       default = false
     },
     {
-      fullName = "Closed Won"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Closed_Won@s.fullName
       default = false
     },
     {
-      fullName = "Id%2E Decision Makers"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Id__Decision_Makers@vss.fullName
       default = false
     },
     {
-      fullName = "Needs Analysis"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Needs_Analysis@s.fullName
       default = false
     },
     {
-      fullName = "Negotiation%2FReview"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Negotiation_Review@d.fullName
       default = false
     },
     {
-      fullName = "Perception Analysis"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Perception_Analysis@s.fullName
       default = false
     },
     {
-      fullName = "Proposal%2FPrice Quote"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Proposal_Price_Quote@ds.fullName
       default = false
     },
     {
-      fullName = "Prospecting"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Prospecting.fullName
       default = false
     },
     {
-      fullName = "Qualification"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Qualification.fullName
       default = false
     },
     {
-      fullName = "Value Proposition"
+      fullName = salesforce.StandardValueSet.instance.OpportunityStage.standardValue.values.Value_Proposition@s.fullName
       default = false
     },
   ]

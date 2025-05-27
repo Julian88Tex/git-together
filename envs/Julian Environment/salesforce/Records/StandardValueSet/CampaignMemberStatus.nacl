@@ -1,72 +1,89 @@
 salesforce.StandardValueSet CampaignMemberStatus {
   fullName = "CampaignMemberStatus"
   sorted = true
-  standardValue = [
-    {
-      fullName = "Canceled"
-      default = false
-      label = "Canceled"
-    },
-    {
-      fullName = "Completed"
-      default = false
-      label = "Completed"
-    },
-    {
-      fullName = "Confirmed"
-      default = false
-      label = "Confirmed"
-    },
-    {
-      fullName = "Donor"
-      default = false
-      label = "Donor"
-    },
-    {
-      fullName = "Fundraiser"
-      default = false
-      label = "Fundraiser"
-    },
-    {
-      fullName = "No-Show"
-      default = false
-      label = "No-Show"
-    },
-    {
-      fullName = "Planned"
-      default = false
-      label = "Planned"
-    },
-    {
-      fullName = "Prospect"
-      default = false
-      label = "Prospect"
-    },
-    {
-      fullName = "Received"
-      default = false
-      label = "Received"
-    },
-    {
-      fullName = "Responded"
-      default = false
-      label = "Responded"
-    },
-    {
-      fullName = "Sent"
-      default = false
-      label = "Sent"
-    },
-    {
-      fullName = "Team Captain"
-      default = false
-      label = "Team Captain"
-    },
-    {
-      fullName = "Team Member"
-      default = false
-      label = "Team Member"
-    },
-  ]
+  standardValue = {
+    values = {
+      Canceled = {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+      }
+      Completed = {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+      }
+      Confirmed = {
+        fullName = "Confirmed"
+        default = false
+        label = "Confirmed"
+      }
+      Donor = {
+        fullName = "Donor"
+        default = false
+        label = "Donor"
+      }
+      Fundraiser = {
+        fullName = "Fundraiser"
+        default = false
+        label = "Fundraiser"
+      }
+      No_Show@b = {
+        fullName = "No-Show"
+        default = false
+        label = "No-Show"
+      }
+      Planned = {
+        fullName = "Planned"
+        default = false
+        label = "Planned"
+      }
+      Prospect = {
+        fullName = "Prospect"
+        default = false
+        label = "Prospect"
+      }
+      Received = {
+        fullName = "Received"
+        default = false
+        label = "Received"
+      }
+      Responded = {
+        fullName = "Responded"
+        default = false
+        label = "Responded"
+      }
+      Sent = {
+        fullName = "Sent"
+        default = false
+        label = "Sent"
+      }
+      Team_Captain@s = {
+        fullName = "Team Captain"
+        default = false
+        label = "Team Captain"
+      }
+      Team_Member@s = {
+        fullName = "Team Member"
+        default = false
+        label = "Team Member"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Canceled,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Completed,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Confirmed,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Donor,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Fundraiser,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.No_Show@b,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Planned,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Prospect,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Received,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Responded,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Sent,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Team_Captain@s,
+      salesforce.StandardValueSet.instance.CampaignMemberStatus.standardValue.values.Team_Member@s,
+    ]
+  }
   _alias = "CampaignMemberStatus"
 }

@@ -24,7 +24,6 @@ type salesforce.AccountContactRelation {
     apiName = "AccountContactRelation.IsDirect"
     defaultValue = false
     label = "Direct"
-    _hidden_value = true
   }
   salesforce.Picklist Roles {
     apiName = "AccountContactRelation.Roles"

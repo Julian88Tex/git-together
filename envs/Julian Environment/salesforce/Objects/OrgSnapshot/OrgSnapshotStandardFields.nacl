@@ -6,7 +6,6 @@ type salesforce.OrgSnapshot {
   salesforce.Date ExpirationDate {
     apiName = "OrgSnapshot.ExpirationDate"
     label = "Expiration Date"
-    _hidden_value = true
   }
   salesforce.Text ProviderSnapshotVersion {
     apiName = "OrgSnapshot.ProviderSnapshotVersion"
@@ -15,7 +14,6 @@ type salesforce.OrgSnapshot {
     label = "Snapshot Version"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text SnapshotName {
     apiName = "OrgSnapshot.SnapshotName"
@@ -37,7 +35,6 @@ type salesforce.OrgSnapshot {
     apiName = "OrgSnapshot.Status"
     restricted = true
     label = "Org Snapshot Request Status"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "OrgSnapshot.Id"
@@ -94,7 +91,6 @@ type salesforce.OrgSnapshot {
     restricted = true
     _required = true
     label = "Snapshot Provider"
-    _hidden_value = true
   }
   salesforce.Text ProviderSnapshot {
     apiName = "OrgSnapshot.ProviderSnapshot"
@@ -102,7 +98,6 @@ type salesforce.OrgSnapshot {
     label = "Snapshot Provider Reference"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Error {
     apiName = "OrgSnapshot.Error"
@@ -110,6 +105,5 @@ type salesforce.OrgSnapshot {
     label = "Error"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

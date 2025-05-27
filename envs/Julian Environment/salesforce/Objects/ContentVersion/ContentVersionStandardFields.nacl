@@ -5,7 +5,6 @@ type salesforce.ContentVersion {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "ContentVersion.Description"
@@ -18,7 +17,6 @@ type salesforce.ContentVersion {
     label = "File Extension"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text FileType {
     apiName = "ContentVersion.FileType"
@@ -27,7 +25,6 @@ type salesforce.ContentVersion {
     label = "File Type"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Checkbox IsAssetEnabled {
     apiName = "ContentVersion.IsAssetEnabled"
@@ -36,7 +33,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Unknown Language {
     apiName = "ContentVersion.Language"
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContentVersion.OwnerId"
@@ -84,7 +80,6 @@ type salesforce.ContentVersion {
   salesforce.Checkbox IsLatest {
     apiName = "ContentVersion.IsLatest"
     label = "Is Latest"
-    _hidden_value = true
   }
   salesforce.Url ContentUrl {
     apiName = "ContentVersion.ContentUrl"
@@ -101,7 +96,6 @@ type salesforce.ContentVersion {
     label = "Version Number"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text ReasonForChange {
     apiName = "ContentVersion.ReasonForChange"
@@ -123,7 +117,6 @@ type salesforce.ContentVersion {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContentVersion.IsDeleted"
@@ -139,7 +132,6 @@ type salesforce.ContentVersion {
     apiName = "ContentVersion.ContentModifiedById"
     relationshipName = "ContentModifiedBy"
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.Number PositiveRatingCount {
     apiName = "ContentVersion.PositiveRatingCount"
@@ -147,7 +139,6 @@ type salesforce.ContentVersion {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Number NegativeRatingCount {
     apiName = "ContentVersion.NegativeRatingCount"
@@ -155,7 +146,6 @@ type salesforce.ContentVersion {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Number FeaturedContentBoost {
     apiName = "ContentVersion.FeaturedContentBoost"
@@ -163,12 +153,10 @@ type salesforce.ContentVersion {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Date FeaturedContentDate {
     apiName = "ContentVersion.FeaturedContentDate"
     label = "Featured Content Date"
-    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ContentVersion.CreatedById"
@@ -202,7 +190,6 @@ type salesforce.ContentVersion {
     restricted = true
     _required = true
     label = "Publish Status"
-    _hidden_value = true
   }
   salesforce.Text VersionData {
     apiName = "ContentVersion.VersionData"
@@ -238,7 +225,6 @@ type salesforce.ContentVersion {
     label = "Text Preview"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text ExternalDocumentInfo1 {
     apiName = "ContentVersion.ExternalDocumentInfo1"
@@ -265,7 +251,6 @@ type salesforce.ContentVersion {
     label = "Checksum"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Checkbox IsMajorVersion {
     apiName = "ContentVersion.IsMajorVersion"
@@ -278,6 +263,5 @@ type salesforce.ContentVersion {
     label = "Version Data URL"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

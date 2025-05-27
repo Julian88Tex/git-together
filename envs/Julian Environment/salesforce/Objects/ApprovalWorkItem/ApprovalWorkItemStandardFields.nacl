@@ -5,38 +5,32 @@ type salesforce.ApprovalWorkItem {
     label = "Approval Condition Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.MasterDetail ApprovalSubmissionId {
     apiName = "ApprovalWorkItem.ApprovalSubmissionId"
     relationshipName = "ApprovalSubmission"
     _required = true
     label = "Approval Submission ID"
-    _hidden_value = true
   }
   salesforce.Lookup AssignedToId {
     apiName = "ApprovalWorkItem.AssignedToId"
     relationshipName = "AssignedTo"
     label = "Assigned To ID"
-    _hidden_value = true
   }
   salesforce.Html Comments {
     apiName = "ApprovalWorkItem.Comments"
     length = 32000
     label = "Comments"
-    _hidden_value = true
   }
   salesforce.Lookup FlowOrchestrationWorkItemId {
     apiName = "ApprovalWorkItem.FlowOrchestrationWorkItemId"
     relationshipName = "FlowOrchestrationWorkItem"
     label = "Orchestration Work Item ID"
-    _hidden_value = true
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "ApprovalWorkItem.RelatedRecordId"
     relationshipName = "RelatedRecord"
     label = "Related Record ID"
-    _hidden_value = true
   }
   salesforce.Text RelatedRecordObjectName {
     apiName = "ApprovalWorkItem.RelatedRecordObjectName"
@@ -44,25 +38,21 @@ type salesforce.ApprovalWorkItem {
     label = "Related Record Object Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup ReviewedById {
     apiName = "ApprovalWorkItem.ReviewedById"
     relationshipName = "ReviewedBy"
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.DateTime ReviewedDate {
     apiName = "ApprovalWorkItem.ReviewedDate"
     label = "Reviewed Date"
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "ApprovalWorkItem.Status"
     restricted = true
     _required = true
     label = "Status"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "ApprovalWorkItem.Id"

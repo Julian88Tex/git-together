@@ -1,6 +1,7 @@
 salesforce.Flow Test4 {
   fullName = "Test4"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myUniquelyDummyAssignment"

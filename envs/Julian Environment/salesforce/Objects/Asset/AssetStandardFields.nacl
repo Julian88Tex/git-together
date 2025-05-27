@@ -7,23 +7,18 @@ type salesforce.Asset {
   salesforce.Address Address {
     apiName = "Asset.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Unknown AssetLevel {
     apiName = "Asset.AssetLevel"
-    _hidden_value = true
   }
   salesforce.Lookup AssetProvidedById {
     apiName = "Asset.AssetProvidedById"
-    _hidden_value = true
   }
   salesforce.Lookup AssetServicedById {
     apiName = "Asset.AssetServicedById"
-    _hidden_value = true
   }
   salesforce.Picklist ConsequenceOfFailure {
     apiName = "Asset.ConsequenceOfFailure"
-    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "Asset.ContactId"
@@ -37,12 +32,10 @@ type salesforce.Asset {
   }
   salesforce.Picklist DigitalAssetStatus {
     apiName = "Asset.DigitalAssetStatus"
-    _hidden_value = true
   }
   salesforce.Unknown ExternalIdentifier {
     apiName = "Asset.ExternalIdentifier"
     inlineHelpText = "ID of matching record in an external system."
-    _hidden_value = true
   }
   salesforce.Date InstallDate {
     apiName = "Asset.InstallDate"
@@ -55,12 +48,10 @@ type salesforce.Asset {
   }
   salesforce.Unknown IsInternal {
     apiName = "Asset.IsInternal"
-    _hidden_value = true
   }
   salesforce.Unknown ManufactureDate {
     apiName = "Asset.ManufactureDate"
     inlineHelpText = "Date when the asset was manufactured."
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Asset.Name"
@@ -94,15 +85,12 @@ type salesforce.Asset {
   }
   salesforce.Unknown ProductCode {
     apiName = "Asset.ProductCode"
-    _hidden_value = true
   }
   salesforce.Unknown ProductDescription {
     apiName = "Asset.ProductDescription"
-    _hidden_value = true
   }
   salesforce.Picklist ProductFamily {
     apiName = "Asset.ProductFamily"
-    _hidden_value = true
   }
   salesforce.Date PurchaseDate {
     apiName = "Asset.PurchaseDate"
@@ -119,7 +107,6 @@ type salesforce.Asset {
     apiName = "Asset.RootAssetId"
     relationshipName = "RootAsset"
     label = "Root Asset ID"
-    _hidden_value = true
   }
   salesforce.Text SerialNumber {
     apiName = "Asset.SerialNumber"
@@ -137,7 +124,6 @@ type salesforce.Asset {
   salesforce.Picklist StatusReason {
     apiName = "Asset.StatusReason"
     inlineHelpText = "Explanation of the device status."
-    _hidden_value = true
   }
   salesforce.Text StockKeepingUnit {
     apiName = "Asset.StockKeepingUnit"
@@ -145,7 +131,6 @@ type salesforce.Asset {
     label = "Product SKU"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Date UsageEndDate {
     apiName = "Asset.UsageEndDate"
@@ -154,7 +139,6 @@ type salesforce.Asset {
   salesforce.Unknown Uuid {
     apiName = "Asset.Uuid"
     inlineHelpText = "Unique string identifying the asset."
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "Asset.Id"

@@ -8,42 +8,49 @@ type salesforce.Property__c {
     scale = 2
     trackTrending = false
     unique = false
-    _hidden_value = true
   }
   salesforce.Picklist Property_Type__c {
     apiName = "Property__c.Property_Type__c"
     label = "Property Type"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Single Family Home"
-        default = false
-        label = "Single Family Home"
-      },
-      {
-        fullName = "Condo"
-        default = false
-        label = "Condo"
-      },
-      {
-        fullName = "Townhouse"
-        default = false
-        label = "Townhouse"
-      },
-      {
-        fullName = "Multi-Family"
-        default = false
-        label = "Multi-Family"
-      },
-      {
-        fullName = "Land"
-        default = false
-        label = "Land"
-      },
-    ]
+    valueSet = {
+      values = {
+        Single_Family_Home@s = {
+          fullName = "Single Family Home"
+          default = false
+          label = "Single Family Home"
+        }
+        Condo = {
+          fullName = "Condo"
+          default = false
+          label = "Condo"
+        }
+        Townhouse = {
+          fullName = "Townhouse"
+          default = false
+          label = "Townhouse"
+        }
+        Multi_Family@b = {
+          fullName = "Multi-Family"
+          default = false
+          label = "Multi-Family"
+        }
+        Land = {
+          fullName = "Land"
+          default = false
+          label = "Land"
+        }
+      }
+      order = [
+        salesforce.Property__c.field.Property_Type__c.valueSet.values.Single_Family_Home@s,
+        salesforce.Property__c.field.Property_Type__c.valueSet.values.Condo,
+        salesforce.Property__c.field.Property_Type__c.valueSet.values.Townhouse,
+        salesforce.Property__c.field.Property_Type__c.valueSet.values.Multi_Family@b,
+        salesforce.Property__c.field.Property_Type__c.valueSet.values.Land,
+      ]
+    }
     sorted = false
     restricted = true
-    _hidden_value = true
   }
   salesforce.Number Square_Footage__c {
     apiName = "Property__c.Square_Footage__c"
@@ -53,36 +60,42 @@ type salesforce.Property__c {
     scale = 0
     trackTrending = false
     unique = false
-    _hidden_value = true
   }
   salesforce.Picklist Status__c {
     apiName = "Property__c.Status__c"
     label = "Status"
     trackTrending = false
-    valueSet = [
-      {
-        fullName = "Available"
-        default = false
-        label = "Available"
-      },
-      {
-        fullName = "Under Contract"
-        default = false
-        label = "Under Contract"
-      },
-      {
-        fullName = "Sold"
-        default = false
-        label = "Sold"
-      },
-      {
-        fullName = "Off Market"
-        default = false
-        label = "Off Market"
-      },
-    ]
+    valueSet = {
+      values = {
+        Available = {
+          fullName = "Available"
+          default = false
+          label = "Available"
+        }
+        Under_Contract@s = {
+          fullName = "Under Contract"
+          default = false
+          label = "Under Contract"
+        }
+        Sold = {
+          fullName = "Sold"
+          default = false
+          label = "Sold"
+        }
+        Off_Market@s = {
+          fullName = "Off Market"
+          default = false
+          label = "Off Market"
+        }
+      }
+      order = [
+        salesforce.Property__c.field.Status__c.valueSet.values.Available,
+        salesforce.Property__c.field.Status__c.valueSet.values.Under_Contract@s,
+        salesforce.Property__c.field.Status__c.valueSet.values.Sold,
+        salesforce.Property__c.field.Status__c.valueSet.values.Off_Market@s,
+      ]
+    }
     sorted = false
     restricted = true
-    _hidden_value = true
   }
 }

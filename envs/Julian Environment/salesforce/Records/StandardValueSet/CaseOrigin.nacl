@@ -1,22 +1,29 @@
 salesforce.StandardValueSet CaseOrigin {
   fullName = "CaseOrigin"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Phone"
-      default = false
-      label = "Phone"
-    },
-    {
-      fullName = "Email"
-      default = false
-      label = "Email"
-    },
-    {
-      fullName = "Web"
-      default = false
-      label = "Web"
-    },
-  ]
+  standardValue = {
+    values = {
+      Phone = {
+        fullName = "Phone"
+        default = false
+        label = "Phone"
+      }
+      Email = {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      }
+      Web = {
+        fullName = "Web"
+        default = false
+        label = "Web"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.CaseOrigin.standardValue.values.Phone,
+      salesforce.StandardValueSet.instance.CaseOrigin.standardValue.values.Email,
+      salesforce.StandardValueSet.instance.CaseOrigin.standardValue.values.Web,
+    ]
+  }
   _alias = "CaseOrigin"
 }

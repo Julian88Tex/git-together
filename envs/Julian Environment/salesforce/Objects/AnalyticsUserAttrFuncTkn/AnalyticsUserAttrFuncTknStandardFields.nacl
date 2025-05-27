@@ -1,0 +1,88 @@
+type salesforce.AnalyticsUserAttrFuncTkn {
+  serviceid Id {
+    apiName = "AnalyticsUserAttrFuncTkn.Id"
+    label = "UAF Claim Definition Id"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AnalyticsUserAttrFuncTkn.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AnalyticsUserAttrFuncTkn.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "AnalyticsUserAttrFuncTkn.Name"
+    label = "Analytics User Attribute Function Token Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AnalyticsUserAttrFuncTkn.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AnalyticsUserAttrFuncTkn.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AnalyticsUserAttrFuncTkn.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AnalyticsUserAttrFuncTkn.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AnalyticsUserAttrFuncTkn.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text DefinitionName {
+    apiName = "AnalyticsUserAttrFuncTkn.DefinitionName"
+    label = "UAF Definition Name"
+    _required = true
+    length = 120
+    unique = true
+    caseSensitive = false
+  }
+  salesforce.Text TokenKey {
+    apiName = "AnalyticsUserAttrFuncTkn.TokenKey"
+    label = "UAF Attribute Name"
+    _required = true
+    length = 120
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist TargetObject {
+    apiName = "AnalyticsUserAttrFuncTkn.TargetObject"
+    label = "UAF Target Object"
+    _required = true
+    restricted = true
+  }
+  salesforce.Text TargetObjectField {
+    apiName = "AnalyticsUserAttrFuncTkn.TargetObjectField"
+    label = "UAF Target Object Field"
+    _required = true
+    length = 120
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist ViewerTgtObjRelDesc {
+    apiName = "AnalyticsUserAttrFuncTkn.ViewerTgtObjRelDesc"
+    label = "UAF Viewer Target Object Relation Description"
+    _required = true
+    restricted = true
+  }
+}

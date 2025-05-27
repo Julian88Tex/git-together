@@ -1,25 +1,32 @@
 salesforce.StandardValueSet TaskPriority {
   fullName = "TaskPriority"
   sorted = false
-  standardValue = [
-    {
-      fullName = "High"
-      default = false
-      label = "High"
-      highPriority = true
-    },
-    {
-      fullName = "Normal"
-      default = true
-      label = "Normal"
-      highPriority = false
-    },
-    {
-      fullName = "Low"
-      default = false
-      label = "Low"
-      highPriority = false
-    },
-  ]
+  standardValue = {
+    values = {
+      High = {
+        fullName = "High"
+        default = false
+        label = "High"
+        highPriority = true
+      }
+      Normal = {
+        fullName = "Normal"
+        default = true
+        label = "Normal"
+        highPriority = false
+      }
+      Low = {
+        fullName = "Low"
+        default = false
+        label = "Low"
+        highPriority = false
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.TaskPriority.standardValue.values.High,
+      salesforce.StandardValueSet.instance.TaskPriority.standardValue.values.Normal,
+      salesforce.StandardValueSet.instance.TaskPriority.standardValue.values.Low,
+    ]
+  }
   _alias = "TaskPriority"
 }

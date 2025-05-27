@@ -28,7 +28,6 @@ type salesforce.TopicAssignment {
     label = "Record Key Prefix"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text EntityType {
     apiName = "TopicAssignment.EntityType"
@@ -36,7 +35,6 @@ type salesforce.TopicAssignment {
     label = "Object Type"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "TopicAssignment.CreatedDate"

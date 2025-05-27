@@ -1,6 +1,7 @@
 salesforce.Flow Current_Record {
   fullName = "Current_Record"
   apiVersion = 61
+  areMetricsLoggedToDataCloud = false
   environments = "Default"
   interviewLabel = "Current Record {!$Flow.CurrentDateTime}"
   label = "Current Record"

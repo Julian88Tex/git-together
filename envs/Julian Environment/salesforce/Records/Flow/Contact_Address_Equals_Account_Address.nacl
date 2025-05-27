@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Address_Equals_Account_Address {
   fullName = "Contact_Address_Equals_Account_Address"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

@@ -17,7 +17,6 @@ type salesforce.AssetRelationship {
   }
   salesforce.Picklist RelationshipType {
     apiName = "AssetRelationship.RelationshipType"
-    _hidden_value = true
   }
   salesforce.DateTime ToDate {
     apiName = "AssetRelationship.ToDate"

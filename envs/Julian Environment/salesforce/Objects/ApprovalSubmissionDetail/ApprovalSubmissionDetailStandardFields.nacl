@@ -4,7 +4,6 @@ type salesforce.ApprovalSubmissionDetail {
     restricted = true
     _required = true
     label = "Action Channel Name"
-    _hidden_value = true
   }
   salesforce.Text ActionContext {
     apiName = "ApprovalSubmissionDetail.ActionContext"
@@ -12,46 +11,39 @@ type salesforce.ApprovalSubmissionDetail {
     label = "Action Context"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist ActionName {
     apiName = "ApprovalSubmissionDetail.ActionName"
     restricted = true
     _required = true
     label = "Action Name"
-    _hidden_value = true
   }
   salesforce.Lookup ActionPerformedById {
     apiName = "ApprovalSubmissionDetail.ActionPerformedById"
     relationshipName = "ActionPerformedBy"
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.Picklist ActionPerformerRole {
     apiName = "ApprovalSubmissionDetail.ActionPerformerRole"
     restricted = true
     _required = true
     label = "Action Performer Role"
-    _hidden_value = true
   }
   salesforce.MasterDetail ApprovalSubmissionId {
     apiName = "ApprovalSubmissionDetail.ApprovalSubmissionId"
     relationshipName = "ApprovalSubmission"
     _required = true
     label = "Approval Submission ID"
-    _hidden_value = true
   }
   salesforce.Lookup ApprovalWorkItemId {
     apiName = "ApprovalSubmissionDetail.ApprovalWorkItemId"
     relationshipName = "ApprovalWorkItem"
     label = "Approval Work Item ID"
-    _hidden_value = true
   }
   salesforce.Html Comments {
     apiName = "ApprovalSubmissionDetail.Comments"
     length = 32000
     label = "Comments"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "ApprovalSubmissionDetail.Id"

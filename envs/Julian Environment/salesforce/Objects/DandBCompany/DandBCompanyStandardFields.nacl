@@ -666,11 +666,9 @@ type salesforce.DandBCompany {
   salesforce.Address Address {
     apiName = "DandBCompany.Address"
     label = "Primary Address"
-    _hidden_value = true
   }
   salesforce.Address MailingAddress {
     apiName = "DandBCompany.MailingAddress"
     label = "Mailing Address"
-    _hidden_value = true
   }
 }

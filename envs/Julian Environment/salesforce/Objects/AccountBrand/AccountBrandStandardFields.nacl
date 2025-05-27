@@ -86,11 +86,9 @@ type salesforce.AccountBrand {
   salesforce.Address Address {
     apiName = "AccountBrand.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Url LogoUrl {
     apiName = "AccountBrand.LogoUrl"
     label = "Logo URL"
-    _hidden_value = true
   }
 }

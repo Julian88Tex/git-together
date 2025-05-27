@@ -1,25 +1,32 @@
 salesforce.StandardValueSet SolutionStatus {
   fullName = "SolutionStatus"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Draft"
-      default = true
-      label = "Draft"
-      reviewed = false
-    },
-    {
-      fullName = "Reviewed"
-      default = false
-      label = "Reviewed"
-      reviewed = true
-    },
-    {
-      fullName = "Duplicate"
-      default = false
-      label = "Duplicate"
-      reviewed = false
-    },
-  ]
+  standardValue = {
+    values = {
+      Draft = {
+        fullName = "Draft"
+        default = true
+        label = "Draft"
+        reviewed = false
+      }
+      Reviewed = {
+        fullName = "Reviewed"
+        default = false
+        label = "Reviewed"
+        reviewed = true
+      }
+      Duplicate = {
+        fullName = "Duplicate"
+        default = false
+        label = "Duplicate"
+        reviewed = false
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.SolutionStatus.standardValue.values.Draft,
+      salesforce.StandardValueSet.instance.SolutionStatus.standardValue.values.Reviewed,
+      salesforce.StandardValueSet.instance.SolutionStatus.standardValue.values.Duplicate,
+    ]
+  }
   _alias = "SolutionStatus"
 }

@@ -24,7 +24,6 @@ type salesforce.MacroUsage {
     label = "Macro Usage Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "MacroUsage.CreatedDate"
@@ -58,7 +57,6 @@ type salesforce.MacroUsage {
     relationshipName = "Macro"
     _required = true
     label = "Macro ID"
-    _hidden_value = true
   }
   salesforce.Text ContextRecord {
     apiName = "MacroUsage.ContextRecord"
@@ -66,7 +64,6 @@ type salesforce.MacroUsage {
     label = "Context Record"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number ExecutedInstructionCount {
     apiName = "MacroUsage.ExecutedInstructionCount"
@@ -74,7 +71,6 @@ type salesforce.MacroUsage {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Number InstructionCount {
     apiName = "MacroUsage.InstructionCount"
@@ -82,30 +78,25 @@ type salesforce.MacroUsage {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.DateTime ExecutionEndTime {
     apiName = "MacroUsage.ExecutionEndTime"
     label = "Execution End Time"
-    _hidden_value = true
   }
   salesforce.Lookup UserId {
     apiName = "MacroUsage.UserId"
     relationshipName = "User"
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsFromBulk {
     apiName = "MacroUsage.IsFromBulk"
     defaultValue = false
     label = "From Bulk Execution"
-    _hidden_value = true
   }
   salesforce.Picklist AppContext {
     apiName = "MacroUsage.AppContext"
     restricted = true
     label = "App Context"
-    _hidden_value = true
   }
   salesforce.Number ConditionCount {
     apiName = "MacroUsage.ConditionCount"
@@ -113,13 +104,11 @@ type salesforce.MacroUsage {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Picklist ExecutionState {
     apiName = "MacroUsage.ExecutionState"
     restricted = true
     label = "Execution State"
-    _hidden_value = true
   }
   salesforce.Number DurationInMs {
     apiName = "MacroUsage.DurationInMs"
@@ -127,12 +116,10 @@ type salesforce.MacroUsage {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Picklist FailureReason {
     apiName = "MacroUsage.FailureReason"
     restricted = true
     label = "Failure Reason"
-    _hidden_value = true
   }
 }

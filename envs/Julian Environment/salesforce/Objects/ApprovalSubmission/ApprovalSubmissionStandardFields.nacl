@@ -3,17 +3,11 @@ type salesforce.ApprovalSubmission {
     apiName = "ApprovalSubmission.Comments"
     length = 32000
     label = "Comments"
-    _hidden_value = true
-  }
-  salesforce.Unknown DoesSendApprovalEmail {
-    apiName = "ApprovalSubmission.DoesSendApprovalEmail"
-    _hidden_value = true
   }
   salesforce.Lookup FlowOrchestrationInstanceId {
     apiName = "ApprovalSubmission.FlowOrchestrationInstanceId"
     relationshipName = "FlowOrchestrationInstance"
     label = "Orchestration Run ID"
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ApprovalSubmission.OwnerId"
@@ -25,7 +19,6 @@ type salesforce.ApprovalSubmission {
     apiName = "ApprovalSubmission.RelatedRecordId"
     relationshipName = "RelatedRecord"
     label = "Related Record ID"
-    _hidden_value = true
   }
   salesforce.Text RelatedRecordObjectName {
     apiName = "ApprovalSubmission.RelatedRecordObjectName"
@@ -33,20 +26,17 @@ type salesforce.ApprovalSubmission {
     label = "Related Record Object Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "ApprovalSubmission.Status"
     restricted = true
     _required = true
     label = "Status"
-    _hidden_value = true
   }
   salesforce.Lookup SubmittedById {
     apiName = "ApprovalSubmission.SubmittedById"
     relationshipName = "SubmittedBy"
     label = "User ID"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "ApprovalSubmission.Id"
@@ -91,5 +81,10 @@ type salesforce.ApprovalSubmission {
     apiName = "ApprovalSubmission.SystemModstamp"
     label = "System Modstamp"
     _hidden_value = true
+  }
+  salesforce.Checkbox DoesSendApprovalEmail {
+    apiName = "ApprovalSubmission.DoesSendApprovalEmail"
+    label = "Send Approval Email"
+    defaultValue = false
   }
 }

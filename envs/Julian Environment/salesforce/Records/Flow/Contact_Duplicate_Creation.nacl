@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Duplicate_Creation {
   fullName = "Contact_Duplicate_Creation"
   apiVersion = 58
+  areMetricsLoggedToDataCloud = false
   description = "Creates a duplicate contact with \"2\" added to the last name whenever a new contact is created"
   environments = "Default"
   formulas = [

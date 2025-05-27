@@ -33,7 +33,6 @@ type salesforce.Recommendation {
     apiName = "Recommendation.IsActionActive"
     defaultValue = false
     label = "Is Action Active"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Recommendation.Name"

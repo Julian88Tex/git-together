@@ -1,6 +1,7 @@
 salesforce.Flow New_Customer_Flow {
   fullName = "New_Customer_Flow"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   environments = "Default"
   interviewLabel = "New Customer Flow {!$Flow.CurrentDateTime}"
   label = "New Customer Flow"

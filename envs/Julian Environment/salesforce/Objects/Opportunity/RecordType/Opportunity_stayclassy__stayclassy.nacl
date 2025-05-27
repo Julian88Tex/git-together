@@ -9,15 +9,15 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.Class__c
       values = [
         {
-          fullName = "A"
+          fullName = salesforce.Opportunity.field.Class__c.valueSet.values.A.fullName
           default = false
         },
         {
-          fullName = "B"
+          fullName = salesforce.Opportunity.field.Class__c.valueSet.values.B.fullName
           default = false
         },
         {
-          fullName = "C"
+          fullName = salesforce.Opportunity.field.Class__c.valueSet.values.C.fullName
           default = false
         },
       ]
@@ -26,15 +26,15 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.DeliveryInstallationStatus__c
       values = [
         {
-          fullName = "Completed"
+          fullName = salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.Completed.fullName
           default = false
         },
         {
-          fullName = "In progress"
+          fullName = salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.In_progress@s.fullName
           default = false
         },
         {
-          fullName = "Yet to begin"
+          fullName = salesforce.Opportunity.field.DeliveryInstallationStatus__c.valueSet.values.Yet_to_begin@s.fullName
           default = false
         },
       ]
@@ -43,15 +43,15 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.Donor_Level__c
       values = [
         {
-          fullName = "Green"
+          fullName = salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Green.fullName
           default = false
         },
         {
-          fullName = "Red"
+          fullName = salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Red.fullName
           default = false
         },
         {
-          fullName = "Yellow"
+          fullName = salesforce.Opportunity.field.Donor_Level__c.valueSet.values.Yellow.fullName
           default = false
         },
       ]
@@ -85,23 +85,23 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.LeadSource
       values = [
         {
-          fullName = "Other"
+          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Other.fullName
           default = false
         },
         {
-          fullName = "Partner Referral"
+          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Partner_Referral@s.fullName
           default = false
         },
         {
-          fullName = "Phone Inquiry"
+          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Phone_Inquiry@s.fullName
           default = false
         },
         {
-          fullName = "Purchased List"
+          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Purchased_List@s.fullName
           default = false
         },
         {
-          fullName = "Web"
+          fullName = salesforce.StandardValueSet.instance.LeadSource.standardValue.values.Web.fullName
           default = false
         },
       ]
@@ -110,11 +110,11 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.My_Custom_Designation__c
       values = [
         {
-          fullName = "Restricted"
+          fullName = salesforce.Opportunity.field.My_Custom_Designation__c.valueSet.values.Restricted.fullName
           default = false
         },
         {
-          fullName = "Unrestricted"
+          fullName = salesforce.Opportunity.field.My_Custom_Designation__c.valueSet.values.Unrestricted.fullName
           default = false
         },
       ]
@@ -123,11 +123,11 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.Region_Map__c
       values = [
         {
-          fullName = "Northwest"
+          fullName = salesforce.Opportunity.field.Region_Map__c.valueSet.values.Northwest.fullName
           default = false
         },
         {
-          fullName = "Southwest"
+          fullName = salesforce.Opportunity.field.Region_Map__c.valueSet.values.Southwest.fullName
           default = false
         },
       ]
@@ -136,19 +136,19 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.Test_Picklist__c
       values = [
         {
-          fullName = "test"
+          fullName = salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test.fullName
           default = false
         },
         {
-          fullName = "test1"
+          fullName = salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test1.fullName
           default = false
         },
         {
-          fullName = "test2"
+          fullName = salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test2.fullName
           default = false
         },
         {
-          fullName = "test3"
+          fullName = salesforce.Opportunity.field.Test_Picklist__c.valueSet.values.test3.fullName
           default = false
         },
       ]
@@ -157,19 +157,19 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.Type
       values = [
         {
-          fullName = "Existing Customer - Downgrade"
+          fullName = salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Downgrade@ssbs.fullName
           default = false
         },
         {
-          fullName = "Existing Customer - Replacement"
+          fullName = salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Replacement@ssbs.fullName
           default = false
         },
         {
-          fullName = "Existing Customer - Upgrade"
+          fullName = salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.Existing_Customer___Upgrade@ssbs.fullName
           default = false
         },
         {
-          fullName = "New Customer"
+          fullName = salesforce.StandardValueSet.instance.OpportunityType.standardValue.values.New_Customer@s.fullName
           default = false
         },
       ]
@@ -178,11 +178,11 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c
       values = [
         {
-          fullName = "Notified"
+          fullName = salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c.valueSet.values.Notified.fullName
           default = false
         },
         {
-          fullName = "To Be Notified"
+          fullName = salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c.valueSet.values.To_Be_Notified@s.fullName
           default = false
         },
       ]
@@ -191,15 +191,15 @@ salesforce.RecordType Opportunity_stayclassy__stayclassy {
       picklist = salesforce.Opportunity.field.stayclassy__Transaction_Type__c
       values = [
         {
-          fullName = "Donation"
+          fullName = salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Donation.fullName
           default = false
         },
         {
-          fullName = "Registration"
+          fullName = salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Registration.fullName
           default = false
         },
         {
-          fullName = "Ticket"
+          fullName = salesforce.Opportunity.field.stayclassy__Transaction_Type__c.valueSet.values.Ticket.fullName
           default = false
         },
       ]

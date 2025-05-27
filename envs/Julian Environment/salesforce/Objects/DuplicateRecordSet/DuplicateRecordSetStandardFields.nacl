@@ -8,7 +8,6 @@ type salesforce.DuplicateRecordSet {
     apiName = "DuplicateRecordSet.RecordCount"
     label = "Record Count"
     precision = 9
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "DuplicateRecordSet.Id"

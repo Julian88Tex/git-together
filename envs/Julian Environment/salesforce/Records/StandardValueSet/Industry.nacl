@@ -1,167 +1,203 @@
 salesforce.StandardValueSet Industry {
   fullName = "Industry"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Agriculture"
-      default = false
-      label = "Agriculture"
-    },
-    {
-      fullName = "Apparel"
-      default = false
-      label = "Apparel"
-    },
-    {
-      fullName = "Banking"
-      default = false
-      label = "Banking"
-    },
-    {
-      fullName = "Biotechnology"
-      default = false
-      label = "Biotechnology"
-    },
-    {
-      fullName = "Chemicals"
-      default = false
-      label = "Chemicals"
-    },
-    {
-      fullName = "Communications"
-      default = false
-      label = "Communications"
-    },
-    {
-      fullName = "Construction"
-      default = false
-      label = "Construction"
-    },
-    {
-      fullName = "Consulting"
-      default = false
-      label = "Consulting"
-    },
-    {
-      fullName = "Education"
-      default = false
-      label = "Education"
-    },
-    {
-      fullName = "Electronics"
-      default = false
-      label = "Electronics"
-    },
-    {
-      fullName = "Energy"
-      default = false
-      label = "Energy"
-    },
-    {
-      fullName = "Engineering"
-      default = false
-      label = "Engineering"
-    },
-    {
-      fullName = "Entertainment"
-      default = false
-      label = "Entertainment"
-    },
-    {
-      fullName = "Environmental"
-      default = false
-      label = "Environmental"
-    },
-    {
-      fullName = "Finance"
-      default = false
-      label = "Finance"
-    },
-    {
-      fullName = "Food & Beverage"
-      default = false
-      label = "Food & Beverage"
-    },
-    {
-      fullName = "Government"
-      default = false
-      label = "Government"
-    },
-    {
-      fullName = "Healthcare"
-      default = false
-      label = "Healthcare"
-    },
-    {
-      fullName = "Hospitality"
-      default = false
-      label = "Hospitality"
-    },
-    {
-      fullName = "Insurance"
-      default = false
-      label = "Insurance"
-    },
-    {
-      fullName = "Machinery"
-      default = false
-      label = "Machinery"
-    },
-    {
-      fullName = "Manufacturing"
-      default = false
-      label = "Manufacturing"
-    },
-    {
-      fullName = "Media"
-      default = false
-      label = "Media"
-    },
-    {
-      fullName = "Not For Profit"
-      default = false
-      label = "Not For Profit"
-    },
-    {
-      fullName = "Recreation"
-      default = false
-      label = "Recreation"
-    },
-    {
-      fullName = "Retail"
-      default = false
-      label = "Retail"
-    },
-    {
-      fullName = "Shipping"
-      default = false
-      label = "Shipping"
-    },
-    {
-      fullName = "Technology"
-      default = false
-      label = "Technology"
-    },
-    {
-      fullName = "Telecommunications"
-      default = false
-      label = "Telecommunications"
-    },
-    {
-      fullName = "Transportation"
-      default = false
-      label = "Transportation"
-    },
-    {
-      fullName = "Utilities"
-      default = false
-      label = "Utilities"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-  ]
+  standardValue = {
+    values = {
+      Agriculture = {
+        fullName = "Agriculture"
+        default = false
+        label = "Agriculture"
+      }
+      Apparel = {
+        fullName = "Apparel"
+        default = false
+        label = "Apparel"
+      }
+      Banking = {
+        fullName = "Banking"
+        default = false
+        label = "Banking"
+      }
+      Biotechnology = {
+        fullName = "Biotechnology"
+        default = false
+        label = "Biotechnology"
+      }
+      Chemicals = {
+        fullName = "Chemicals"
+        default = false
+        label = "Chemicals"
+      }
+      Communications = {
+        fullName = "Communications"
+        default = false
+        label = "Communications"
+      }
+      Construction = {
+        fullName = "Construction"
+        default = false
+        label = "Construction"
+      }
+      Consulting = {
+        fullName = "Consulting"
+        default = false
+        label = "Consulting"
+      }
+      Education = {
+        fullName = "Education"
+        default = false
+        label = "Education"
+      }
+      Electronics = {
+        fullName = "Electronics"
+        default = false
+        label = "Electronics"
+      }
+      Energy = {
+        fullName = "Energy"
+        default = false
+        label = "Energy"
+      }
+      Engineering = {
+        fullName = "Engineering"
+        default = false
+        label = "Engineering"
+      }
+      Entertainment = {
+        fullName = "Entertainment"
+        default = false
+        label = "Entertainment"
+      }
+      Environmental = {
+        fullName = "Environmental"
+        default = false
+        label = "Environmental"
+      }
+      Finance = {
+        fullName = "Finance"
+        default = false
+        label = "Finance"
+      }
+      Food___Beverage@ses = {
+        fullName = "Food & Beverage"
+        default = false
+        label = "Food & Beverage"
+      }
+      Government = {
+        fullName = "Government"
+        default = false
+        label = "Government"
+      }
+      Healthcare = {
+        fullName = "Healthcare"
+        default = false
+        label = "Healthcare"
+      }
+      Hospitality = {
+        fullName = "Hospitality"
+        default = false
+        label = "Hospitality"
+      }
+      Insurance = {
+        fullName = "Insurance"
+        default = false
+        label = "Insurance"
+      }
+      Machinery = {
+        fullName = "Machinery"
+        default = false
+        label = "Machinery"
+      }
+      Manufacturing = {
+        fullName = "Manufacturing"
+        default = false
+        label = "Manufacturing"
+      }
+      Media = {
+        fullName = "Media"
+        default = false
+        label = "Media"
+      }
+      Not_For_Profit@s = {
+        fullName = "Not For Profit"
+        default = false
+        label = "Not For Profit"
+      }
+      Recreation = {
+        fullName = "Recreation"
+        default = false
+        label = "Recreation"
+      }
+      Retail = {
+        fullName = "Retail"
+        default = false
+        label = "Retail"
+      }
+      Shipping = {
+        fullName = "Shipping"
+        default = false
+        label = "Shipping"
+      }
+      Technology = {
+        fullName = "Technology"
+        default = false
+        label = "Technology"
+      }
+      Telecommunications = {
+        fullName = "Telecommunications"
+        default = false
+        label = "Telecommunications"
+      }
+      Transportation = {
+        fullName = "Transportation"
+        default = false
+        label = "Transportation"
+      }
+      Utilities = {
+        fullName = "Utilities"
+        default = false
+        label = "Utilities"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Agriculture,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Apparel,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Banking,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Biotechnology,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Chemicals,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Communications,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Construction,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Consulting,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Education,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Electronics,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Energy,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Engineering,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Entertainment,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Environmental,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Finance,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Food___Beverage@ses,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Government,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Healthcare,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Hospitality,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Insurance,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Machinery,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Manufacturing,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Media,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Not_For_Profit@s,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Recreation,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Retail,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Shipping,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Technology,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Telecommunications,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Transportation,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Utilities,
+      salesforce.StandardValueSet.instance.Industry.standardValue.values.Other,
+    ]
+  }
   _alias = "Industry"
 }

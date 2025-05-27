@@ -2,6 +2,7 @@ salesforce.ManagedContentType cms_image {
   fullName = "cms_image"
   description = "Add media files, such as PNG or JPEG, or link to a URL."
   developerName = "cms_image"
+  isMetadataContent = false
   managedContentNodeTypes = [
     {
       helpText = "Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it."

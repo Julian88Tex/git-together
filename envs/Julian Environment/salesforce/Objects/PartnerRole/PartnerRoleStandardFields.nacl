@@ -4,7 +4,6 @@ type salesforce.PartnerRole {
     restricted = false
     label = "Reverse Role"
     valueSetName = salesforce.StandardValueSet.instance.PartnerRole
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "PartnerRole.Id"
@@ -18,7 +17,6 @@ type salesforce.PartnerRole {
     label = "Master Label"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text ApiName {
     apiName = "PartnerRole.ApiName"
@@ -27,7 +25,6 @@ type salesforce.PartnerRole {
     label = "Api Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number SortOrder {
     apiName = "PartnerRole.SortOrder"
@@ -35,7 +32,6 @@ type salesforce.PartnerRole {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "PartnerRole.CreatedById"

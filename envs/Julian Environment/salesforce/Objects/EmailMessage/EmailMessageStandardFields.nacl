@@ -38,7 +38,6 @@ type salesforce.EmailMessage {
     apiName = "EmailMessage.HasAttachment"
     defaultValue = false
     label = "Has Attachment"
-    _hidden_value = true
   }
   salesforce.LongTextArea Headers {
     apiName = "EmailMessage.Headers"
@@ -62,7 +61,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Unknown IsPrivateDraft {
     apiName = "EmailMessage.IsPrivateDraft"
-    _hidden_value = true
   }
   salesforce.DateTime LastOpenedDate {
     apiName = "EmailMessage.LastOpenedDate"
@@ -74,7 +72,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Unknown MessageSize {
     apiName = "EmailMessage.MessageSize"
-    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "EmailMessage.ParentId"
@@ -160,7 +157,6 @@ type salesforce.EmailMessage {
     label = "Email Message Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "EmailMessage.IsDeleted"
@@ -219,7 +215,6 @@ type salesforce.EmailMessage {
     apiName = "EmailMessage.IsOpened"
     defaultValue = false
     label = "Opened?"
-    _hidden_value = true
   }
   salesforce.Checkbox IsBounced {
     apiName = "EmailMessage.IsBounced"

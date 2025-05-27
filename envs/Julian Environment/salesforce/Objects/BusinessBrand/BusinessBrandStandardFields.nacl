@@ -9,7 +9,6 @@ type salesforce.BusinessBrand {
   }
   salesforce.Unknown OrgId {
     apiName = "BusinessBrand.OrgId"
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "BusinessBrand.OwnerId"
@@ -19,7 +18,6 @@ type salesforce.BusinessBrand {
   }
   salesforce.Lookup ParentId {
     apiName = "BusinessBrand.ParentId"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "BusinessBrand.Id"

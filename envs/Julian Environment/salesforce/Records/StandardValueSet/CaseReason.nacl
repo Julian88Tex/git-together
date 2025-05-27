@@ -1,49 +1,60 @@
 salesforce.StandardValueSet CaseReason {
   fullName = "CaseReason"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Installation"
-      default = false
-      label = "Installation"
-      cssExposed = false
-    },
-    {
-      fullName = "Equipment Complexity"
-      default = false
-      label = "Equipment Complexity"
-      cssExposed = false
-    },
-    {
-      fullName = "Performance"
-      default = false
-      label = "Performance"
-      cssExposed = false
-    },
-    {
-      fullName = "Breakdown"
-      default = false
-      label = "Breakdown"
-      cssExposed = false
-    },
-    {
-      fullName = "Equipment Design"
-      default = false
-      label = "Equipment Design"
-      cssExposed = false
-    },
-    {
-      fullName = "Feedback"
-      default = false
-      label = "Feedback"
-      cssExposed = false
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-      cssExposed = false
-    },
-  ]
+  standardValue = {
+    values = {
+      Installation = {
+        fullName = "Installation"
+        default = false
+        label = "Installation"
+        cssExposed = false
+      }
+      Equipment_Complexity@s = {
+        fullName = "Equipment Complexity"
+        default = false
+        label = "Equipment Complexity"
+        cssExposed = false
+      }
+      Performance = {
+        fullName = "Performance"
+        default = false
+        label = "Performance"
+        cssExposed = false
+      }
+      Breakdown = {
+        fullName = "Breakdown"
+        default = false
+        label = "Breakdown"
+        cssExposed = false
+      }
+      Equipment_Design@s = {
+        fullName = "Equipment Design"
+        default = false
+        label = "Equipment Design"
+        cssExposed = false
+      }
+      Feedback = {
+        fullName = "Feedback"
+        default = false
+        label = "Feedback"
+        cssExposed = false
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+        cssExposed = false
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Installation,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Equipment_Complexity@s,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Performance,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Breakdown,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Equipment_Design@s,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Feedback,
+      salesforce.StandardValueSet.instance.CaseReason.standardValue.values.Other,
+    ]
+  }
   _alias = "CaseReason"
 }

@@ -7,7 +7,6 @@ type salesforce.Activity {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "DB Activity Type"
     unique = false
-    _hidden_value = true
   }
   salesforce.Text Primary_Resource__c {
     apiName = "Activity.Primary_Resource__c"
@@ -16,7 +15,6 @@ type salesforce.Activity {
     label = "Primary Resource"
     length = 255
     unique = false
-    _hidden_value = true
   }
   salesforce.Text funraise__fr_Task_ID__c {
     apiName = "Activity.funraise__fr_Task_ID__c"
@@ -26,7 +24,6 @@ type salesforce.Activity {
     label = "Funraise Task ID"
     length = 255
     unique = true
-    _hidden_value = true
   }
   salesforce.Lookup npsp__Engagement_Plan_Task__c {
     apiName = "Activity.npsp__Engagement_Plan_Task__c"
@@ -38,7 +35,6 @@ type salesforce.Activity {
     ]
     relationshipLabel = "Tasks"
     relationshipName = "Tasks"
-    _hidden_value = true
   }
   salesforce.Lookup npsp__Engagement_Plan__c {
     apiName = "Activity.npsp__Engagement_Plan__c"
@@ -50,6 +46,5 @@ type salesforce.Activity {
     ]
     relationshipLabel = "Tasks"
     relationshipName = "Tasks"
-    _hidden_value = true
   }
 }

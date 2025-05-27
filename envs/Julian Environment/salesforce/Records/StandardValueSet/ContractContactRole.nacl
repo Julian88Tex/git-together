@@ -1,52 +1,65 @@
 salesforce.StandardValueSet ContractContactRole {
   fullName = "ContractContactRole"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Business User"
-      default = false
-      label = "Business User"
-    },
-    {
-      fullName = "Decision Maker"
-      default = false
-      label = "Decision Maker"
-    },
-    {
-      fullName = "Economic Buyer"
-      default = false
-      label = "Economic Buyer"
-    },
-    {
-      fullName = "Economic Decision Maker"
-      default = false
-      label = "Economic Decision Maker"
-    },
-    {
-      fullName = "Evaluator"
-      default = false
-      label = "Evaluator"
-    },
-    {
-      fullName = "Executive Sponsor"
-      default = false
-      label = "Executive Sponsor"
-    },
-    {
-      fullName = "Influencer"
-      default = false
-      label = "Influencer"
-    },
-    {
-      fullName = "Technical Buyer"
-      default = false
-      label = "Technical Buyer"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-  ]
+  standardValue = {
+    values = {
+      Business_User@s = {
+        fullName = "Business User"
+        default = false
+        label = "Business User"
+      }
+      Decision_Maker@s = {
+        fullName = "Decision Maker"
+        default = false
+        label = "Decision Maker"
+      }
+      Economic_Buyer@s = {
+        fullName = "Economic Buyer"
+        default = false
+        label = "Economic Buyer"
+      }
+      Economic_Decision_Maker@s = {
+        fullName = "Economic Decision Maker"
+        default = false
+        label = "Economic Decision Maker"
+      }
+      Evaluator = {
+        fullName = "Evaluator"
+        default = false
+        label = "Evaluator"
+      }
+      Executive_Sponsor@s = {
+        fullName = "Executive Sponsor"
+        default = false
+        label = "Executive Sponsor"
+      }
+      Influencer = {
+        fullName = "Influencer"
+        default = false
+        label = "Influencer"
+      }
+      Technical_Buyer@s = {
+        fullName = "Technical Buyer"
+        default = false
+        label = "Technical Buyer"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Business_User@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Decision_Maker@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Economic_Buyer@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Economic_Decision_Maker@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Evaluator,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Executive_Sponsor@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Influencer,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Technical_Buyer@s,
+      salesforce.StandardValueSet.instance.ContractContactRole.standardValue.values.Other,
+    ]
+  }
   _alias = "ContractContactRole"
 }

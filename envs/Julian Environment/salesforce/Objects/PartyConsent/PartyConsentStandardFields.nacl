@@ -33,15 +33,12 @@ type salesforce.PartyConsent {
   }
   salesforce.Unknown DoubleConsentCaptureDate {
     apiName = "PartyConsent.DoubleConsentCaptureDate"
-    _hidden_value = true
   }
   salesforce.Unknown EffectiveFrom {
     apiName = "PartyConsent.EffectiveFrom"
-    _hidden_value = true
   }
   salesforce.Unknown EffectiveTo {
     apiName = "PartyConsent.EffectiveTo"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "PartyConsent.Name"

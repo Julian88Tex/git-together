@@ -1,7 +1,6 @@
 type salesforce.Customer {
   salesforce.Unknown CustomerStatusType {
     apiName = "Customer.CustomerStatusType"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Customer.Name"
@@ -24,7 +23,6 @@ type salesforce.Customer {
   }
   salesforce.Unknown TotalLifeTimeValue {
     apiName = "Customer.TotalLifeTimeValue"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "Customer.Id"

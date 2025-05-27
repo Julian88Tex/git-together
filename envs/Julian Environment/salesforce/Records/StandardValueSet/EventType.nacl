@@ -1,27 +1,35 @@
 salesforce.StandardValueSet EventType {
   fullName = "EventType"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Email"
-      default = false
-      label = "Email"
-    },
-    {
-      fullName = "Meeting"
-      default = false
-      label = "Meeting"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-    {
-      fullName = "Call"
-      default = false
-      label = "Call"
-    },
-  ]
+  standardValue = {
+    values = {
+      Email = {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      }
+      Meeting = {
+        fullName = "Meeting"
+        default = false
+        label = "Meeting"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+      Call = {
+        fullName = "Call"
+        default = false
+        label = "Call"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.EventType.standardValue.values.Email,
+      salesforce.StandardValueSet.instance.EventType.standardValue.values.Meeting,
+      salesforce.StandardValueSet.instance.EventType.standardValue.values.Other,
+      salesforce.StandardValueSet.instance.EventType.standardValue.values.Call,
+    ]
+  }
   _alias = "EventType"
 }

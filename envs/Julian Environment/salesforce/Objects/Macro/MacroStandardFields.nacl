@@ -8,13 +8,11 @@ type salesforce.Macro {
     apiName = "Macro.IsAlohaSupported"
     defaultValue = false
     label = "Supports Classic"
-    _hidden_value = true
   }
   salesforce.Checkbox IsLightningSupported {
     apiName = "Macro.IsLightningSupported"
     defaultValue = false
     label = "Supports Lightning"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Macro.Name"

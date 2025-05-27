@@ -1,6 +1,7 @@
 salesforce.Flow Messing_Around {
   fullName = "Messing_Around"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

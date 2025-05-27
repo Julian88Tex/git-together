@@ -21,12 +21,10 @@ type salesforce.ForecastingAdjustment {
     apiName = "ForecastingAdjustment.ForecastingItemId"
     _required = true
     label = "Forecasting Item ID"
-    _hidden_value = true
   }
   salesforce.Lookup PeriodId {
     apiName = "ForecastingAdjustment.PeriodId"
     label = "Period ID"
-    _hidden_value = true
   }
   salesforce.Date StartDate {
     apiName = "ForecastingAdjustment.StartDate"
@@ -68,13 +66,11 @@ type salesforce.ForecastingAdjustment {
     apiName = "ForecastingAdjustment.IsQuantity"
     defaultValue = false
     label = "Is Quantity"
-    _hidden_value = true
   }
   salesforce.Checkbox IsAmount {
     apiName = "ForecastingAdjustment.IsAmount"
     defaultValue = false
     label = "Is Amount"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingAdjustment.CreatedDate"

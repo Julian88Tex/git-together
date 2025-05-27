@@ -3,12 +3,10 @@ type salesforce.Quote {
     apiName = "Quote.AccountId"
     relationshipName = "Account"
     label = "Account ID"
-    _hidden_value = true
   }
   salesforce.Address AdditionalAddress {
     apiName = "Quote.AdditionalAddress"
     label = "Additional To"
-    _hidden_value = true
   }
   salesforce.Text AdditionalName {
     apiName = "Quote.AdditionalName"
@@ -20,7 +18,6 @@ type salesforce.Quote {
   salesforce.Address BillingAddress {
     apiName = "Quote.BillingAddress"
     label = "Bill To"
-    _hidden_value = true
   }
   salesforce.Text BillingName {
     apiName = "Quote.BillingName"
@@ -49,7 +46,6 @@ type salesforce.Quote {
     label = "Discount"
     scale = 2
     precision = 5
-    _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "Quote.Email"
@@ -69,19 +65,16 @@ type salesforce.Quote {
     label = "Grand Total"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Checkbox IsSyncing {
     apiName = "Quote.IsSyncing"
     defaultValue = false
     label = "Syncing"
-    _hidden_value = true
   }
   salesforce.Summary LineItemCount {
     apiName = "Quote.LineItemCount"
     label = "Line Items"
     precision = 9
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Quote.Name"
@@ -110,7 +103,6 @@ type salesforce.Quote {
   salesforce.Address QuoteToAddress {
     apiName = "Quote.QuoteToAddress"
     label = "Quote To"
-    _hidden_value = true
   }
   salesforce.Text QuoteToName {
     apiName = "Quote.QuoteToName"
@@ -122,7 +114,6 @@ type salesforce.Quote {
   salesforce.Address ShippingAddress {
     apiName = "Quote.ShippingAddress"
     label = "Ship To"
-    _hidden_value = true
   }
   salesforce.Currency ShippingHandling {
     apiName = "Quote.ShippingHandling"
@@ -146,7 +137,6 @@ type salesforce.Quote {
   salesforce.Summary Subtotal {
     apiName = "Quote.Subtotal"
     label = "Subtotal"
-    _hidden_value = true
   }
   salesforce.Currency Tax {
     apiName = "Quote.Tax"
@@ -157,7 +147,6 @@ type salesforce.Quote {
   salesforce.Summary TotalPrice {
     apiName = "Quote.TotalPrice"
     label = "Total Price"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "Quote.Id"

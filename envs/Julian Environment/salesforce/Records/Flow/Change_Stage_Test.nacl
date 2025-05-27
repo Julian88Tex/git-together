@@ -1,6 +1,7 @@
 salesforce.Flow Change_Stage_Test {
   fullName = "Change_Stage_Test"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

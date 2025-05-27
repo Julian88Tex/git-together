@@ -12,7 +12,6 @@ type salesforce.AuthorizationFormText {
   }
   salesforce.Unknown DetailAuthorizationFormText {
     apiName = "AuthorizationFormText.DetailAuthorizationFormText"
-    _hidden_value = true
   }
   salesforce.Text FullAuthorizationFormUrl {
     apiName = "AuthorizationFormText.FullAuthorizationFormUrl"

@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Duplication_Flow {
   fullName = "Contact_Duplication_Flow"
   apiVersion = 57
+  areMetricsLoggedToDataCloud = false
   description = "Flow to handle contact duplication checks"
   interviewLabel = "Contact Duplication Flow {!$Flow.CurrentDateTime}"
   label = "Contact Duplication Flow"

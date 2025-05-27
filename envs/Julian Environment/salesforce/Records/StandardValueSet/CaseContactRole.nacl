@@ -1,27 +1,35 @@
 salesforce.StandardValueSet CaseContactRole {
   fullName = "CaseContactRole"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Technical Contact"
-      default = false
-      label = "Technical Contact"
-    },
-    {
-      fullName = "Business Contact"
-      default = false
-      label = "Business Contact"
-    },
-    {
-      fullName = "Decision Maker"
-      default = false
-      label = "Decision Maker"
-    },
-    {
-      fullName = "Other"
-      default = false
-      label = "Other"
-    },
-  ]
+  standardValue = {
+    values = {
+      Technical_Contact@s = {
+        fullName = "Technical Contact"
+        default = false
+        label = "Technical Contact"
+      }
+      Business_Contact@s = {
+        fullName = "Business Contact"
+        default = false
+        label = "Business Contact"
+      }
+      Decision_Maker@s = {
+        fullName = "Decision Maker"
+        default = false
+        label = "Decision Maker"
+      }
+      Other = {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.CaseContactRole.standardValue.values.Technical_Contact@s,
+      salesforce.StandardValueSet.instance.CaseContactRole.standardValue.values.Business_Contact@s,
+      salesforce.StandardValueSet.instance.CaseContactRole.standardValue.values.Decision_Maker@s,
+      salesforce.StandardValueSet.instance.CaseContactRole.standardValue.values.Other,
+    ]
+  }
   _alias = "CaseContactRole"
 }

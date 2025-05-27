@@ -3,7 +3,6 @@ type salesforce.ReportAnomalyEventStore {
     apiName = "ReportAnomalyEventStore.EventDate"
     _required = true
     label = "Event Date"
-    _hidden_value = true
   }
   salesforce.Text EventIdentifier {
     apiName = "ReportAnomalyEventStore.EventIdentifier"
@@ -12,7 +11,6 @@ type salesforce.ReportAnomalyEventStore {
     label = "Event ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Report {
     apiName = "ReportAnomalyEventStore.Report"
@@ -20,7 +18,6 @@ type salesforce.ReportAnomalyEventStore {
     label = "Report ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number Score {
     apiName = "ReportAnomalyEventStore.Score"
@@ -28,13 +25,11 @@ type salesforce.ReportAnomalyEventStore {
     precision = 12
     scale = 6
     unique = false
-    _hidden_value = true
   }
   salesforce.LongTextArea SecurityEventData {
     apiName = "ReportAnomalyEventStore.SecurityEventData"
     length = 10000
     label = "Event Data"
-    _hidden_value = true
   }
   salesforce.Text SourceIp {
     apiName = "ReportAnomalyEventStore.SourceIp"
@@ -42,19 +37,16 @@ type salesforce.ReportAnomalyEventStore {
     label = "Source IP Address"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.LongTextArea Summary {
     apiName = "ReportAnomalyEventStore.Summary"
     length = 1000
     label = "Summary"
-    _hidden_value = true
   }
   salesforce.Lookup UserId {
     apiName = "ReportAnomalyEventStore.UserId"
     relationshipName = "User"
     label = "User ID"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "ReportAnomalyEventStore.Id"
@@ -88,7 +80,6 @@ type salesforce.ReportAnomalyEventStore {
     label = "Username"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text SessionKey {
     apiName = "ReportAnomalyEventStore.SessionKey"
@@ -96,7 +87,6 @@ type salesforce.ReportAnomalyEventStore {
     label = "Session Key"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text LoginKey {
     apiName = "ReportAnomalyEventStore.LoginKey"
@@ -104,19 +94,16 @@ type salesforce.ReportAnomalyEventStore {
     label = "Login Key"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup PolicyId {
     apiName = "ReportAnomalyEventStore.PolicyId"
     relationshipName = "Policy"
     label = "Transaction Security Policy ID"
-    _hidden_value = true
   }
   salesforce.Picklist PolicyOutcome {
     apiName = "ReportAnomalyEventStore.PolicyOutcome"
     restricted = true
     label = "Policy Outcome"
-    _hidden_value = true
   }
   salesforce.Number EvaluationTime {
     apiName = "ReportAnomalyEventStore.EvaluationTime"
@@ -124,6 +111,5 @@ type salesforce.ReportAnomalyEventStore {
     precision = 18
     scale = 0
     unique = false
-    _hidden_value = true
   }
 }

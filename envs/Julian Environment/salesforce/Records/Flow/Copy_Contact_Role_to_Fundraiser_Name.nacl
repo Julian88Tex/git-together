@@ -1,6 +1,7 @@
 salesforce.Flow Copy_Contact_Role_to_Fundraiser_Name {
   fullName = "Copy_Contact_Role_to_Fundraiser_Name"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

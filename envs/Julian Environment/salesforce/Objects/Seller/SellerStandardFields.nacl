@@ -1,11 +1,9 @@
 type salesforce.Seller {
   salesforce.Unknown ActiveFromDate {
     apiName = "Seller.ActiveFromDate"
-    _hidden_value = true
   }
   salesforce.Unknown ActiveToDate {
     apiName = "Seller.ActiveToDate"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Seller.Name"
@@ -28,15 +26,12 @@ type salesforce.Seller {
   }
   salesforce.Unknown SalesAmount {
     apiName = "Seller.SalesAmount"
-    _hidden_value = true
   }
   salesforce.Unknown SellerTier {
     apiName = "Seller.SellerTier"
-    _hidden_value = true
   }
   salesforce.Unknown SellerType {
     apiName = "Seller.SellerType"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "Seller.Id"

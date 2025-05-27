@@ -1,6 +1,7 @@
 salesforce.Flow Website_Fund_Update {
   fullName = "Website_Fund_Update"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

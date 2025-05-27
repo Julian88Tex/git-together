@@ -1,6 +1,7 @@
 salesforce.Flow Map_Region {
   fullName = "Map_Region"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

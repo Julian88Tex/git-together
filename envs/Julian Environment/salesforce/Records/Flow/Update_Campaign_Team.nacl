@@ -1,6 +1,7 @@
 salesforce.Flow Update_Campaign_Team {
   fullName = "Update_Campaign_Team"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

@@ -19,7 +19,6 @@ type salesforce.CollaborationGroup {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "CollaborationGroup.OwnerId"
@@ -68,23 +67,19 @@ type salesforce.CollaborationGroup {
   salesforce.Url FullPhotoUrl {
     apiName = "CollaborationGroup.FullPhotoUrl"
     label = "Url for full-sized Photo"
-    _hidden_value = true
   }
   salesforce.Url MediumPhotoUrl {
     apiName = "CollaborationGroup.MediumPhotoUrl"
     label = "Url for medium profile photo"
-    _hidden_value = true
   }
   salesforce.Url SmallPhotoUrl {
     apiName = "CollaborationGroup.SmallPhotoUrl"
     label = "Photo"
-    _hidden_value = true
   }
   salesforce.DateTime LastFeedModifiedDate {
     apiName = "CollaborationGroup.LastFeedModifiedDate"
     _required = true
     label = "Last Feed Modified Date"
-    _hidden_value = true
   }
   salesforce.Text InformationTitle {
     apiName = "CollaborationGroup.InformationTitle"
@@ -102,7 +97,6 @@ type salesforce.CollaborationGroup {
     apiName = "CollaborationGroup.HasPrivateFieldsAccess"
     defaultValue = false
     label = "Has Private Fields Access"
-    _hidden_value = true
   }
   salesforce.Checkbox CanHaveGuests {
     apiName = "CollaborationGroup.CanHaveGuests"
@@ -133,12 +127,10 @@ type salesforce.CollaborationGroup {
     apiName = "CollaborationGroup.GroupEmail"
     label = "Group Email"
     unique = false
-    _hidden_value = true
   }
   salesforce.Url BannerPhotoUrl {
     apiName = "CollaborationGroup.BannerPhotoUrl"
     label = "Banner Photo Url"
-    _hidden_value = true
   }
   salesforce.Checkbox IsBroadcast {
     apiName = "CollaborationGroup.IsBroadcast"

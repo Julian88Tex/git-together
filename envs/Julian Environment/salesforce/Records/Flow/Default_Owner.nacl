@@ -1,6 +1,7 @@
 salesforce.Flow Default_Owner {
   fullName = "Default_Owner"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

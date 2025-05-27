@@ -17,7 +17,6 @@ type salesforce.OpportunityLineItem {
     label = "List Price"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "OpportunityLineItem.Name"
@@ -25,7 +24,6 @@ type salesforce.OpportunityLineItem {
     label = "Opportunity Product Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityLineItem.OpportunityId"
@@ -44,7 +42,6 @@ type salesforce.OpportunityLineItem {
     label = "Product Code"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "OpportunityLineItem.Quantity"
@@ -63,7 +60,6 @@ type salesforce.OpportunityLineItem {
     label = "Subtotal"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalPrice {
     apiName = "OpportunityLineItem.TotalPrice"

@@ -1,12 +1,17 @@
 salesforce.StandardValueSet Product2Family {
   fullName = "Product2Family"
   sorted = false
-  standardValue = [
-    {
-      fullName = "None"
-      default = false
-      label = "None"
-    },
-  ]
+  standardValue = {
+    values = {
+      None = {
+        fullName = "None"
+        default = false
+        label = "None"
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.Product2Family.standardValue.values.None,
+    ]
+  }
   _alias = "Product2Family"
 }

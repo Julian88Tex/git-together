@@ -1,7 +1,7 @@
 salesforce.CustomSite julian88tex {
   fullName = "julian88tex"
   active = true
-  allowGuestPaymentsApi = "false"
+  allowGuestPaymentsApi = false
   allowHomePage = false
   allowStandardAnswersPages = false
   allowStandardIdeasPages = false

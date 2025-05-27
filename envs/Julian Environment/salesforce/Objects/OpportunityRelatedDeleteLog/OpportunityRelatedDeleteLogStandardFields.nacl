@@ -48,7 +48,6 @@ type salesforce.OpportunityRelatedDeleteLog {
     relationshipName = "Opportunity"
     _required = true
     label = "Opportunity ID"
-    _hidden_value = true
   }
   salesforce.Text Parent {
     apiName = "OpportunityRelatedDeleteLog.Parent"
@@ -56,28 +55,23 @@ type salesforce.OpportunityRelatedDeleteLog {
     label = "Parent"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist FieldName {
     apiName = "OpportunityRelatedDeleteLog.FieldName"
     restricted = true
     label = "Field Name"
-    _hidden_value = true
   }
   salesforce.Picklist DataType {
     apiName = "OpportunityRelatedDeleteLog.DataType"
     restricted = true
     label = "Data Type"
-    _hidden_value = true
   }
   salesforce.Picklist SobjectType {
     apiName = "OpportunityRelatedDeleteLog.SobjectType"
     label = "SobjectType"
-    _hidden_value = true
   }
   salesforce.AnyType Value {
     apiName = "OpportunityRelatedDeleteLog.Value"
     label = "Value"
-    _hidden_value = true
   }
 }

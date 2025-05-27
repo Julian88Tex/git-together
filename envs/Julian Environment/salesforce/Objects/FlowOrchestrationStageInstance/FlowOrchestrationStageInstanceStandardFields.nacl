@@ -6,21 +6,18 @@ type salesforce.FlowOrchestrationStageInstance {
     label = "Label"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup OrchestrationInstanceId {
     apiName = "FlowOrchestrationStageInstance.OrchestrationInstanceId"
     relationshipName = "OrchestrationInstance"
     _required = true
     label = "Orchestration Run ID"
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "FlowOrchestrationStageInstance.Status"
     restricted = true
     _required = true
     label = "Status"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "FlowOrchestrationStageInstance.Id"
@@ -47,7 +44,6 @@ type salesforce.FlowOrchestrationStageInstance {
     label = "Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "FlowOrchestrationStageInstance.CreatedDate"
@@ -83,6 +79,5 @@ type salesforce.FlowOrchestrationStageInstance {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
 }

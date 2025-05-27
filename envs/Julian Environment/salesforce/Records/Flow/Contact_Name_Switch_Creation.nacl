@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Name_Switch_Creation {
   fullName = "Contact_Name_Switch_Creation"
   apiVersion = 58
+  areMetricsLoggedToDataCloud = false
   description = "Creates a duplicate contact with first and last names switched whenever a new contact is created"
   environments = "Default"
   interviewLabel = "Contact Name Switch Creation {!$Flow.CurrentDateTime}"

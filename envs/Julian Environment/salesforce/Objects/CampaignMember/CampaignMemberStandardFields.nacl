@@ -11,7 +11,6 @@ type salesforce.CampaignMember {
     label = "City"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text CompanyOrAccount {
     apiName = "CampaignMember.CompanyOrAccount"
@@ -19,7 +18,6 @@ type salesforce.CampaignMember {
     label = "Company (Account)"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "CampaignMember.ContactId"
@@ -32,30 +30,25 @@ type salesforce.CampaignMember {
     label = "Country"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "CampaignMember.Description"
     length = 32000
     label = "Description"
-    _hidden_value = true
   }
   salesforce.Checkbox DoNotCall {
     apiName = "CampaignMember.DoNotCall"
     defaultValue = false
     label = "Do Not Call"
-    _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "CampaignMember.Email"
     label = "Email"
     unique = false
-    _hidden_value = true
   }
   salesforce.Phone Fax {
     apiName = "CampaignMember.Fax"
     label = "Fax"
-    _hidden_value = true
   }
   salesforce.Text FirstName {
     apiName = "CampaignMember.FirstName"
@@ -63,30 +56,25 @@ type salesforce.CampaignMember {
     label = "First Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Date FirstRespondedDate {
     apiName = "CampaignMember.FirstRespondedDate"
     label = "First Responded Date"
-    _hidden_value = true
   }
   salesforce.Checkbox HasOptedOutOfEmail {
     apiName = "CampaignMember.HasOptedOutOfEmail"
     defaultValue = false
     label = "Email Opt Out"
-    _hidden_value = true
   }
   salesforce.Checkbox HasOptedOutOfFax {
     apiName = "CampaignMember.HasOptedOutOfFax"
     defaultValue = false
     label = "Fax Opt Out"
-    _hidden_value = true
   }
   salesforce.Checkbox HasResponded {
     apiName = "CampaignMember.HasResponded"
     defaultValue = false
     label = "Responded"
-    _hidden_value = true
   }
   salesforce.Text LastName {
     apiName = "CampaignMember.LastName"
@@ -94,7 +82,6 @@ type salesforce.CampaignMember {
     label = "Last Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup LeadId {
     apiName = "CampaignMember.LeadId"
@@ -106,17 +93,14 @@ type salesforce.CampaignMember {
     restricted = false
     label = "Lead Source"
     valueSetName = salesforce.StandardValueSet.instance.LeadSource
-    _hidden_value = true
   }
   salesforce.Phone MobilePhone {
     apiName = "CampaignMember.MobilePhone"
     label = "Mobile"
-    _hidden_value = true
   }
   salesforce.Phone Phone {
     apiName = "CampaignMember.Phone"
     label = "Phone"
-    _hidden_value = true
   }
   salesforce.Text PostalCode {
     apiName = "CampaignMember.PostalCode"
@@ -124,14 +108,12 @@ type salesforce.CampaignMember {
     label = "Zip/Postal Code"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist Salutation {
     apiName = "CampaignMember.Salutation"
     restricted = false
     label = "Salutation"
     valueSetName = salesforce.StandardValueSet.instance.Salutation
-    _hidden_value = true
   }
   salesforce.Text State {
     apiName = "CampaignMember.State"
@@ -139,7 +121,6 @@ type salesforce.CampaignMember {
     label = "State/Province"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "CampaignMember.Status"
@@ -153,7 +134,6 @@ type salesforce.CampaignMember {
     label = "Street"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text Title {
     apiName = "CampaignMember.Title"
@@ -161,7 +141,6 @@ type salesforce.CampaignMember {
     label = "Title"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "CampaignMember.Id"
@@ -216,17 +195,14 @@ type salesforce.CampaignMember {
     label = "Type"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup LeadOrContactId {
     apiName = "CampaignMember.LeadOrContactId"
     label = "Related Record ID"
-    _hidden_value = true
   }
   salesforce.Lookup LeadOrContactOwnerId {
     apiName = "CampaignMember.LeadOrContactOwnerId"
     relationshipName = "LeadOrContactOwner"
     label = "Related Record Owner ID"
-    _hidden_value = true
   }
 }

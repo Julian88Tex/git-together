@@ -32,7 +32,6 @@ type salesforce.PartnerMarketingBudget {
   }
   salesforce.Hierarchy ParentMdfBudgetId {
     apiName = "PartnerMarketingBudget.ParentMdfBudgetId"
-    _hidden_value = true
   }
   salesforce.Date StartDate {
     apiName = "PartnerMarketingBudget.StartDate"
@@ -51,28 +50,24 @@ type salesforce.PartnerMarketingBudget {
     label = "Total Allocated Amount"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalApprovedFcs {
     apiName = "PartnerMarketingBudget.TotalApprovedFcs"
     label = "Total Approved Fund Claims"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalApprovedFrs {
     apiName = "PartnerMarketingBudget.TotalApprovedFrs"
     label = "Total Approved Fund Requests"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalReimbursedFcs {
     apiName = "PartnerMarketingBudget.TotalReimbursedFcs"
     label = "Total Reimbursed Fund Claims"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Picklist Type {
     apiName = "PartnerMarketingBudget.Type"

@@ -1,6 +1,7 @@
 salesforce.Flow Remove_Account_for_Opportunity {
   fullName = "Remove_Account_for_Opportunity"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

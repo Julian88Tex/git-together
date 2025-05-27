@@ -44,7 +44,6 @@ type salesforce.ContactPointTypeConsent {
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "ContactPointTypeConsent.EngagementChannelTypeId"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "ContactPointTypeConsent.Name"

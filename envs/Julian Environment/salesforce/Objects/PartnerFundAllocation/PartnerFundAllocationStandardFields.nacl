@@ -40,21 +40,18 @@ type salesforce.PartnerFundAllocation {
     label = "Total Approved Fund Claims"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalApprovedFrs {
     apiName = "PartnerFundAllocation.TotalApprovedFrs"
     label = "Total Approved Fund Requests"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalReimbursedFcs {
     apiName = "PartnerFundAllocation.TotalReimbursedFcs"
     label = "Total Reimbursed Fund Claims"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "PartnerFundAllocation.Id"

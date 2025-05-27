@@ -51,24 +51,20 @@ type salesforce.ContactCleanInfo {
     relationshipName = "Contact"
     _required = true
     label = "Contact ID"
-    _hidden_value = true
   }
   salesforce.DateTime LastMatchedDate {
     apiName = "ContactCleanInfo.LastMatchedDate"
     _required = true
     label = "Last Matched Date"
-    _hidden_value = true
   }
   salesforce.DateTime LastStatusChangedDate {
     apiName = "ContactCleanInfo.LastStatusChangedDate"
     label = "Last Status Changed Date"
-    _hidden_value = true
   }
   salesforce.Lookup LastStatusChangedById {
     apiName = "ContactCleanInfo.LastStatusChangedById"
     relationshipName = "LastStatusChangedBy"
     label = "User ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsInactive {
     apiName = "ContactCleanInfo.IsInactive"
@@ -81,7 +77,6 @@ type salesforce.ContactCleanInfo {
     label = "First Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Text LastName {
     apiName = "ContactCleanInfo.LastName"
@@ -89,23 +84,19 @@ type salesforce.ContactCleanInfo {
     label = "Last Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "ContactCleanInfo.Email"
     label = "Email"
     unique = false
-    _hidden_value = true
   }
   salesforce.Phone Phone {
     apiName = "ContactCleanInfo.Phone"
     label = "Phone"
-    _hidden_value = true
   }
   salesforce.Address Address {
     apiName = "ContactCleanInfo.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Text Title {
     apiName = "ContactCleanInfo.Title"
@@ -113,13 +104,11 @@ type salesforce.ContactCleanInfo {
     label = "Title"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Picklist ContactStatusDataDotCom {
     apiName = "ContactCleanInfo.ContactStatusDataDotCom"
     restricted = true
     label = "Contact Status per Data.com"
-    _hidden_value = true
   }
   salesforce.Checkbox IsReviewedName {
     apiName = "ContactCleanInfo.IsReviewedName"
@@ -144,72 +133,58 @@ type salesforce.ContactCleanInfo {
   salesforce.Checkbox IsDifferentFirstName {
     apiName = "ContactCleanInfo.IsDifferentFirstName"
     label = "First Name is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentLastName {
     apiName = "ContactCleanInfo.IsDifferentLastName"
     label = "Last Name is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentEmail {
     apiName = "ContactCleanInfo.IsDifferentEmail"
     label = "Email is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentPhone {
     apiName = "ContactCleanInfo.IsDifferentPhone"
     label = "Phone is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentStreet {
     apiName = "ContactCleanInfo.IsDifferentStreet"
     label = "Street is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentCity {
     apiName = "ContactCleanInfo.IsDifferentCity"
     label = "City is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentState {
     apiName = "ContactCleanInfo.IsDifferentState"
     label = "State is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentPostalCode {
     apiName = "ContactCleanInfo.IsDifferentPostalCode"
     label = "ZIP is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentCountry {
     apiName = "ContactCleanInfo.IsDifferentCountry"
     label = "Country is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentTitle {
     apiName = "ContactCleanInfo.IsDifferentTitle"
     label = "Title is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentStateCode {
     apiName = "ContactCleanInfo.IsDifferentStateCode"
     label = "State Code is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDifferentCountryCode {
     apiName = "ContactCleanInfo.IsDifferentCountryCode"
     label = "Country Code is Different"
-    _hidden_value = true
   }
   salesforce.Checkbox CleanedByJob {
     apiName = "ContactCleanInfo.CleanedByJob"
     label = "Cleaned by Job"
-    _hidden_value = true
   }
   salesforce.Checkbox CleanedByUser {
     apiName = "ContactCleanInfo.CleanedByUser"
     label = "Cleaned by User"
-    _hidden_value = true
   }
   salesforce.Checkbox IsFlaggedWrongName {
     apiName = "ContactCleanInfo.IsFlaggedWrongName"
@@ -237,6 +212,5 @@ type salesforce.ContactCleanInfo {
     label = "Data.com ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

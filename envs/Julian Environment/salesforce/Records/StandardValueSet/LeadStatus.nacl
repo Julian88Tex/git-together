@@ -1,31 +1,39 @@
 salesforce.StandardValueSet LeadStatus {
   fullName = "LeadStatus"
   sorted = false
-  standardValue = [
-    {
-      fullName = "Open - Not Contacted"
-      default = true
-      label = "Open - Not Contacted"
-      converted = false
-    },
-    {
-      fullName = "Working - Contacted"
-      default = false
-      label = "Working - Contacted"
-      converted = false
-    },
-    {
-      fullName = "Closed - Converted"
-      default = false
-      label = "Closed - Converted"
-      converted = true
-    },
-    {
-      fullName = "Closed - Not Converted"
-      default = false
-      label = "Closed - Not Converted"
-      converted = false
-    },
-  ]
+  standardValue = {
+    values = {
+      Open___Not_Contacted@sbss = {
+        fullName = "Open - Not Contacted"
+        default = true
+        label = "Open - Not Contacted"
+        converted = false
+      }
+      Working___Contacted@sbs = {
+        fullName = "Working - Contacted"
+        default = false
+        label = "Working - Contacted"
+        converted = false
+      }
+      Closed___Converted@sbs = {
+        fullName = "Closed - Converted"
+        default = false
+        label = "Closed - Converted"
+        converted = true
+      }
+      Closed___Not_Converted@sbss = {
+        fullName = "Closed - Not Converted"
+        default = false
+        label = "Closed - Not Converted"
+        converted = false
+      }
+    }
+    order = [
+      salesforce.StandardValueSet.instance.LeadStatus.standardValue.values.Open___Not_Contacted@sbss,
+      salesforce.StandardValueSet.instance.LeadStatus.standardValue.values.Working___Contacted@sbs,
+      salesforce.StandardValueSet.instance.LeadStatus.standardValue.values.Closed___Converted@sbs,
+      salesforce.StandardValueSet.instance.LeadStatus.standardValue.values.Closed___Not_Converted@sbss,
+    ]
+  }
   _alias = "LeadStatus"
 }

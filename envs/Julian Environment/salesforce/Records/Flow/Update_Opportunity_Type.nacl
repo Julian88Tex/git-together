@@ -1,6 +1,7 @@
 salesforce.Flow Update_Opportunity_Type {
   fullName = "Update_Opportunity_Type"
   apiVersion = 49
+  areMetricsLoggedToDataCloud = false
   assignments = [
     {
       name = "myVariable_waitStartTimeAssignment"

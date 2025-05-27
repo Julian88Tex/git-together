@@ -43,7 +43,6 @@ type salesforce.Contact {
   }
   salesforce.Unknown DoNotCall {
     apiName = "Contact.DoNotCall"
-    _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "Contact.Email"
@@ -61,7 +60,6 @@ type salesforce.Contact {
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Contact.HasOptedOutOfFax"
-    _hidden_value = true
   }
   salesforce.Phone HomePhone {
     apiName = "Contact.HomePhone"
@@ -82,12 +80,10 @@ type salesforce.Contact {
   salesforce.DateTime LastCURequestDate {
     apiName = "Contact.LastCURequestDate"
     label = "Last Stay-in-Touch Request Date"
-    _hidden_value = true
   }
   salesforce.DateTime LastCUUpdateDate {
     apiName = "Contact.LastCUUpdateDate"
     label = "Last Stay-in-Touch Save Date"
-    _hidden_value = true
   }
   salesforce.Picklist LeadSource {
     apiName = "Contact.LeadSource"
@@ -98,7 +94,6 @@ type salesforce.Contact {
   salesforce.Address MailingAddress {
     apiName = "Contact.MailingAddress"
     label = "Mailing Address"
-    _hidden_value = true
   }
   salesforce.Phone MobilePhone {
     apiName = "Contact.MobilePhone"
@@ -108,12 +103,10 @@ type salesforce.Contact {
     apiName = "Contact.Name"
     _required = true
     label = "Full Name"
-    _hidden_value = true
   }
   salesforce.Address OtherAddress {
     apiName = "Contact.OtherAddress"
     label = "Other Address"
-    _hidden_value = true
   }
   salesforce.Phone OtherPhone {
     apiName = "Contact.OtherPhone"
@@ -157,7 +150,6 @@ type salesforce.Contact {
     apiName = "Contact.MasterRecordId"
     relationshipName = "MasterRecord"
     label = "Master Record ID"
-    _hidden_value = true
   }
   salesforce.Lookup RecordTypeId {
     apiName = "Contact.RecordTypeId"
@@ -212,12 +204,10 @@ type salesforce.Contact {
     apiName = "Contact.IsEmailBounced"
     defaultValue = false
     label = "Is Email Bounced"
-    _hidden_value = true
   }
   salesforce.Url PhotoUrl {
     apiName = "Contact.PhotoUrl"
     label = "Photo URL"
-    _hidden_value = true
   }
   salesforce.Text JigsawContactId {
     apiName = "Contact.JigsawContactId"
@@ -225,6 +215,5 @@ type salesforce.Contact {
     label = "Jigsaw Contact ID"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

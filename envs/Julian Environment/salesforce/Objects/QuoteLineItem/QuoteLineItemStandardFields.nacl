@@ -22,7 +22,6 @@ type salesforce.QuoteLineItem {
     label = "List Price"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Lookup Product2Id {
     apiName = "QuoteLineItem.Product2Id"
@@ -32,7 +31,6 @@ type salesforce.QuoteLineItem {
   }
   salesforce.Unknown ProductCode {
     apiName = "QuoteLineItem.ProductCode"
-    _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "QuoteLineItem.Quantity"
@@ -57,14 +55,12 @@ type salesforce.QuoteLineItem {
     label = "Subtotal "
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency TotalPrice {
     apiName = "QuoteLineItem.TotalPrice"
     label = "Total Price"
     scale = 2
     precision = 18
-    _hidden_value = true
   }
   salesforce.Currency UnitPrice {
     apiName = "QuoteLineItem.UnitPrice"

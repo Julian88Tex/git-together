@@ -1,6 +1,7 @@
 salesforce.Flow Contact_Description_Update {
   fullName = "Contact_Description_Update"
   apiVersion = 58
+  areMetricsLoggedToDataCloud = false
   description = "Automatically fills in the Contact's Description field with \"Hello World\" when a new Contact is created"
   environments = "Default"
   interviewLabel = "Contact Description Update {!$Flow.CurrentDateTime}"

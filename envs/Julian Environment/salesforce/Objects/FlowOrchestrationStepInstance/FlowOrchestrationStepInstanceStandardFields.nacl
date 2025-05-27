@@ -6,28 +6,24 @@ type salesforce.FlowOrchestrationStepInstance {
     label = "Label"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.Lookup OrchestrationInstanceId {
     apiName = "FlowOrchestrationStepInstance.OrchestrationInstanceId"
     relationshipName = "OrchestrationInstance"
     _required = true
     label = "Orchestration Run ID"
-    _hidden_value = true
   }
   salesforce.Lookup StageInstanceId {
     apiName = "FlowOrchestrationStepInstance.StageInstanceId"
     relationshipName = "StageInstance"
     _required = true
     label = "Orchestration Stage Run ID"
-    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "FlowOrchestrationStepInstance.Status"
     restricted = true
     _required = true
     label = "Status"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "FlowOrchestrationStepInstance.Id"
@@ -54,7 +50,6 @@ type salesforce.FlowOrchestrationStepInstance {
     label = "Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "FlowOrchestrationStepInstance.CreatedDate"
@@ -87,6 +82,10 @@ type salesforce.FlowOrchestrationStepInstance {
     apiName = "FlowOrchestrationStepInstance.StepType"
     _required = true
     label = "Step Type"
-    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "FlowOrchestrationStepInstance.Description"
+    label = "Description"
+    length = 32000
   }
 }

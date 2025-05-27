@@ -9,7 +9,6 @@ type salesforce.Event {
   }
   salesforce.Unknown Attendees {
     apiName = "Event.Attendees"
-    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "Event.Description"
@@ -25,7 +24,6 @@ type salesforce.Event {
   }
   salesforce.Unknown Email {
     apiName = "Event.Email"
-    _hidden_value = true
   }
   salesforce.DateTime EndDateTime {
     apiName = "Event.EndDateTime"
@@ -50,7 +48,6 @@ type salesforce.Event {
     apiName = "Event.IsRecurrence2"
     defaultValue = false
     label = "Repeat"
-    _hidden_value = true
   }
   salesforce.Checkbox IsReminderSet {
     apiName = "Event.IsReminderSet"
@@ -59,7 +56,6 @@ type salesforce.Event {
   }
   salesforce.Unknown IsVisibleInSelfService {
     apiName = "Event.IsVisibleInSelfService"
-    _hidden_value = true
   }
   salesforce.Text Location {
     apiName = "Event.Location"
@@ -76,7 +72,6 @@ type salesforce.Event {
   }
   salesforce.Unknown Phone {
     apiName = "Event.Phone"
-    _hidden_value = true
   }
   salesforce.Picklist ShowAs {
     apiName = "Event.ShowAs"
@@ -95,7 +90,6 @@ type salesforce.Event {
   }
   salesforce.Picklist Type {
     apiName = "Event.Type"
-    _hidden_value = true
   }
   salesforce.Lookup WhatId {
     apiName = "Event.WhatId"
@@ -116,13 +110,11 @@ type salesforce.Event {
   salesforce.Date EndDate {
     apiName = "Event.EndDate"
     label = "End Date"
-    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Event.AccountId"
     relationshipName = "Account"
     label = "Account ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Event.IsDeleted"
@@ -134,19 +126,16 @@ type salesforce.Event {
     apiName = "Event.IsChild"
     defaultValue = false
     label = "Is Child"
-    _hidden_value = true
   }
   salesforce.Checkbox IsGroupEvent {
     apiName = "Event.IsGroupEvent"
     defaultValue = false
     label = "Is Group Event"
-    _hidden_value = true
   }
   salesforce.Picklist GroupEventType {
     apiName = "Event.GroupEventType"
     restricted = true
     label = "Group Event Type"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Event.CreatedDate"
@@ -179,12 +168,10 @@ type salesforce.Event {
     apiName = "Event.IsArchived"
     defaultValue = false
     label = "Archived"
-    _hidden_value = true
   }
   salesforce.Lookup RecurrenceActivityId {
     apiName = "Event.RecurrenceActivityId"
     label = "Recurrence Activity ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsRecurrence {
     apiName = "Event.IsRecurrence"
@@ -248,7 +235,6 @@ type salesforce.Event {
     apiName = "Event.IsRecurrence2Exclusion"
     defaultValue = false
     label = "Historical Event, Not Following Recurrence"
-    _hidden_value = true
   }
   salesforce.LongTextArea Recurrence2PatternText {
     apiName = "Event.Recurrence2PatternText"
@@ -259,18 +245,15 @@ type salesforce.Event {
     apiName = "Event.Recurrence2PatternVersion"
     restricted = true
     label = "Pattern Version"
-    _hidden_value = true
   }
   salesforce.Checkbox IsRecurrence2Exception {
     apiName = "Event.IsRecurrence2Exception"
     defaultValue = false
     label = "Is Exception"
-    _hidden_value = true
   }
   salesforce.DateTime Recurrence2PatternStartDate {
     apiName = "Event.Recurrence2PatternStartDate"
     label = "Recurrence Pattern Start Date"
-    _hidden_value = true
   }
   salesforce.Text Recurrence2PatternTimeZone {
     apiName = "Event.Recurrence2PatternTimeZone"
@@ -278,6 +261,5 @@ type salesforce.Event {
     label = "Recurrence Pattern Time Zone Reference"
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

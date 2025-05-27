@@ -1,6 +1,7 @@
 salesforce.Flow Create_Duplicate_Contact {
   fullName = "Create_Duplicate_Contact"
   apiVersion = 57
+  areMetricsLoggedToDataCloud = false
   description = "Creates a Contact and then creates a duplicate Contact with 'test 2' in the name"
   interviewLabel = "Create Duplicate Contact {!$Flow.CurrentDateTime}"
   label = "Create Duplicate Contact"

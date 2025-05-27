@@ -72,6 +72,5 @@ type salesforce.DelegatedAccount {
     apiName = "DelegatedAccount.ParentId"
     relationshipName = "Parent"
     label = "Account ID"
-    _hidden_value = true
   }
 }

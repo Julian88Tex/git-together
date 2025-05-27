@@ -32,7 +32,6 @@ type salesforce.Task {
   salesforce.DateTime CompletedDateTime {
     apiName = "Task.CompletedDateTime"
     label = "Completed Date/Time"
-    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "Task.Description"
@@ -41,7 +40,6 @@ type salesforce.Task {
   }
   salesforce.Unknown Email {
     apiName = "Task.Email"
-    _hidden_value = true
   }
   salesforce.Checkbox IsRecurrence {
     apiName = "Task.IsRecurrence"
@@ -55,7 +53,6 @@ type salesforce.Task {
   }
   salesforce.Unknown IsVisibleInSelfService {
     apiName = "Task.IsVisibleInSelfService"
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Task.OwnerId"
@@ -65,7 +62,6 @@ type salesforce.Task {
   }
   salesforce.Unknown Phone {
     apiName = "Task.Phone"
-    _hidden_value = true
   }
   salesforce.Picklist Priority {
     apiName = "Task.Priority"
@@ -106,7 +102,6 @@ type salesforce.Task {
   }
   salesforce.Picklist Type {
     apiName = "Task.Type"
-    _hidden_value = true
   }
   salesforce.Lookup WhatId {
     apiName = "Task.WhatId"
@@ -128,7 +123,6 @@ type salesforce.Task {
     apiName = "Task.IsHighPriority"
     defaultValue = false
     label = "High Priority"
-    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Task.IsDeleted"
@@ -140,13 +134,11 @@ type salesforce.Task {
     apiName = "Task.AccountId"
     relationshipName = "Account"
     label = "Account ID"
-    _hidden_value = true
   }
   salesforce.Checkbox IsClosed {
     apiName = "Task.IsClosed"
     defaultValue = false
     label = "Closed"
-    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Task.CreatedDate"
@@ -179,7 +171,6 @@ type salesforce.Task {
     apiName = "Task.IsArchived"
     defaultValue = false
     label = "Archived"
-    _hidden_value = true
   }
   salesforce.DateTime ReminderDateTime {
     apiName = "Task.ReminderDateTime"
@@ -188,7 +179,6 @@ type salesforce.Task {
   salesforce.Lookup RecurrenceActivityId {
     apiName = "Task.RecurrenceActivityId"
     label = "Recurrence Activity ID"
-    _hidden_value = true
   }
   salesforce.Date RecurrenceStartDateOnly {
     apiName = "Task.RecurrenceStartDateOnly"

@@ -15,7 +15,6 @@ type salesforce.Pricebook2 {
     apiName = "Pricebook2.IsStandard"
     defaultValue = false
     label = "Is Standard Price Book"
-    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Pricebook2.Name"
@@ -68,6 +67,5 @@ type salesforce.Pricebook2 {
     apiName = "Pricebook2.IsArchived"
     defaultValue = false
     label = "Archived"
-    _hidden_value = true
   }
 }

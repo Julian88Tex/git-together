@@ -55,7 +55,6 @@ type salesforce.ForecastingOwnerAdjustment {
     relationshipName = "ForecastingItem"
     _required = true
     label = "Forecasting Item ID"
-    _hidden_value = true
   }
   salesforce.Currency OwnerAdjustedAmount {
     apiName = "ForecastingOwnerAdjustment.OwnerAdjustedAmount"
@@ -78,7 +77,6 @@ type salesforce.ForecastingOwnerAdjustment {
     apiName = "ForecastingOwnerAdjustment.PeriodId"
     relationshipName = "Period"
     label = "Period ID"
-    _hidden_value = true
   }
   salesforce.Lookup ForecastOwnerId {
     apiName = "ForecastingOwnerAdjustment.ForecastOwnerId"
@@ -103,13 +101,11 @@ type salesforce.ForecastingOwnerAdjustment {
     apiName = "ForecastingOwnerAdjustment.IsQuantity"
     defaultValue = false
     label = "Is Quantity"
-    _hidden_value = true
   }
   salesforce.Checkbox IsAmount {
     apiName = "ForecastingOwnerAdjustment.IsAmount"
     defaultValue = false
     label = "Is Amount"
-    _hidden_value = true
   }
   salesforce.Lookup ForecastingTypeId {
     apiName = "ForecastingOwnerAdjustment.ForecastingTypeId"
