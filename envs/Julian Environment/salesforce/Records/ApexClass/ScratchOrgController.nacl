@@ -1,0 +1,12 @@
+salesforce.ApexClass ScratchOrgController {
+  apiVersion = 58
+  status = "Active"
+  fullName = "ScratchOrgController"
+  content = file("salesforce/Records/ApexClass/ScratchOrgController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ScratchOrgInfo
+    },
+  ]
+  _alias = "ScratchOrgController"
+}

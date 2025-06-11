@@ -1,0 +1,171 @@
+<template>
+    <lightning-card title="Scratch Org Manager" icon-name="custom:custom63">
+        
+        <!-- Create New Scratch Org Section -->
+        <div slot="actions">
+            <lightning-button 
+                label="Create Scratch Org" 
+                variant="brand"
+                onclick={handleCreateScratchOrg}
+                disabled={isCreateDisabled}>
+            </lightning-button>
+        </div>
+        
+        <div class="slds-card__body slds-card__body_inner">
+            
+            <!-- Creation Form -->
+            <lightning-layout multiple-rows>
+                
+                <!-- Alias Input -->
+                <lightning-layout-item size="12" medium-device-size="6">
+                    <lightning-input 
+                        label="Scratch Org Alias" 
+                        value={alias}
+                        onchange={handleAliasChange}
+                        placeholder="my-scratch-org"
+                        required>
+                    </lightning-input>
+                </lightning-layout-item>
+                
+                <!-- Duration Selection -->
+                <lightning-layout-item size="12" medium-device-size="6">
+                    <lightning-combobox
+                        label="Duration"
+                        value={durationDays}
+                        options={durationOptions}
+                        onchange={handleDurationChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                
+                <!-- Configuration Selection -->
+                <lightning-layout-item size="12">
+                    <lightning-combobox
+                        label="Configuration Template"
+                        value={selectedConfig}
+                        options={configOptions}
+                        onchange={handleConfigChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                
+                <!-- Custom Configuration -->
+                <template if:true={showCustomConfig}>
+                    <lightning-layout-item size="12">
+                        <lightning-textarea
+                            label="Custom Configuration (JSON)"
+                            value={customConfig}
+                            onchange={handleCustomConfigChange}
+                            placeholder="Enter JSON configuration"
+                            rows="5">
+                        </lightning-textarea>
+                    </lightning-layout-item>
+                </template>
+                
+            </lightning-layout>
+            
+            <!-- Loading Spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-is-relative slds-m-top_medium">
+                    <lightning-spinner 
+                        alternative-text="Creating scratch org..." 
+                        size="medium">
+                    </lightning-spinner>
+                </div>
+            </template>
+            
+        </div>
+    </lightning-card>
+    
+    <!-- Existing Scratch Orgs Section -->
+    <lightning-card title="Active Scratch Orgs" icon-name="standard:environment_hub" class="slds-m-top_large">
+        
+        <div class="slds-card__body slds-card__body_inner">
+            
+            <!-- Error Message -->
+            <template if:true={hasError}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                    <span class="slds-assistive-text">Error</span>
+                    <h2>{error}</h2>
+                </div>
+            </template>
+            
+            <!-- Scratch Orgs Data Table -->
+            <template if:false={hasError}>
+                <template if:true={scratchOrgs.length}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={scratchOrgs}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                </template>
+                
+                <!-- No Scratch Orgs Message -->
+                <template if:false={scratchOrgs.length}>
+                    <div class="slds-text-align_center slds-m-vertical_large">
+                        <lightning-icon 
+                            icon-name="custom:custom63" 
+                            size="large" 
+                            class="slds-m-bottom_small">
+                        </lightning-icon>
+                        <h3 class="slds-text-heading_medium">No active scratch orgs found</h3>
+                        <p class="slds-text-color_weak">Create your first scratch org using the form above, then wait for it to become active.</p>
+                    </div>
+                </template>
+            </template>
+            
+        </div>
+    </lightning-card>
+    
+    <!-- CLI Command Modal -->
+    <template if:true={showCommandModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" 
+                            title="Close" onclick={closeCommandModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                    </button>
+                    <h2 class="slds-text-heading_medium slds-hyphenate">🚀 CLI Authentication Command</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="slds-m-bottom_small">
+                        <strong>Scratch Org:</strong> {currentOrgName}
+                    </p>
+                    <p class="slds-m-bottom_medium">
+                        Copy this command and run it in your terminal:
+                    </p>
+                    
+                    <div class="slds-form-element">
+                        <textarea 
+                            class="slds-textarea command-text" 
+                            readonly 
+                            rows="3"
+                            value={currentCommand}>
+                        </textarea>
+                    </div>
+                    
+                    <div class="slds-m-top_medium">
+                        <p class="slds-text-body_small slds-text-color_weak">
+                            📝 Steps: 1) Copy command above → 2) Open terminal → 3) Paste & run → 4) Start coding!
+                        </p>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button 
+                        variant="brand" 
+                        label="📋 Copy Command" 
+                        onclick={handleCopyCommand}>
+                    </lightning-button>
+                    <lightning-button 
+                        variant="neutral" 
+                        label="Close" 
+                        onclick={closeCommandModal}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    
+</template>

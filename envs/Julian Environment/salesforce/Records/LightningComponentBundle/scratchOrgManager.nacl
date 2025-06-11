@@ -1,0 +1,30 @@
+salesforce.LightningComponentBundle scratchOrgManager {
+  apiVersion = 58
+  isExposed = true
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__RecordPage",
+      "lightning__HomePage",
+    ]
+  }
+  fullName = "scratchOrgManager"
+  lwcResources = {
+    lwcResource = {
+      scratchOrgManager_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/scratchOrgManager/scratchOrgManager.js")
+        filePath = "lwc/scratchOrgManager/scratchOrgManager.js"
+      }
+      scratchOrgManager_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/scratchOrgManager/scratchOrgManager.html")
+        filePath = "lwc/scratchOrgManager/scratchOrgManager.html"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ScratchOrgController
+    },
+  ]
+  _alias = "scratchOrgManager"
+}
