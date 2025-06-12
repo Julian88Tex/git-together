@@ -88,7 +88,18 @@
                 </div>
             </template>
             
-            <!-- Scratch Orgs Data Table -->
+                            <!-- Test Button for Debugging -->
+                <template if:true={scratchOrgs.length}>
+                    <div class="slds-m-bottom_medium">
+                        <lightning-button 
+                            label="🔧 Test: Get CLI Command for First Org" 
+                            variant="neutral"
+                            onclick={handleTestCliCommand}>
+                        </lightning-button>
+                    </div>
+                </template>
+                
+                <!-- Scratch Orgs Data Table -->
             <template if:false={hasError}>
                 <template if:true={scratchOrgs.length}>
                     <lightning-datatable
@@ -132,22 +143,40 @@
                     <p class="slds-m-bottom_small">
                         <strong>Scratch Org:</strong> {currentOrgName}
                     </p>
-                    <p class="slds-m-bottom_medium">
-                        Copy this command and run it in your terminal:
-                    </p>
                     
                     <div class="slds-form-element">
-                        <textarea 
-                            class="slds-textarea command-text" 
-                            readonly 
-                            rows="3"
-                            value={currentCommand}>
-                        </textarea>
+                        <label class="slds-form-element__label">🔑 CLI Authentication Command:</label>
+                        <div class="slds-form-element__control">
+                            <textarea 
+                                class="slds-textarea command-text" 
+                                readonly 
+                                rows="2"
+                                value={currentCommand}
+                                placeholder="Loading command...">
+                            </textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element slds-m-top_small">
+                        <label class="slds-form-element__label">🌐 Web Login Credentials:</label>
+                        <div class="slds-form-element__control">
+                            <textarea 
+                                class="slds-textarea" 
+                                readonly 
+                                rows="1"
+                                value={passwordCommand}
+                                placeholder="Password being generated...">
+                            </textarea>
+                        </div>
                     </div>
                     
                     <div class="slds-m-top_medium">
                         <p class="slds-text-body_small slds-text-color_weak">
-                            📝 Steps: 1) Copy command above → 2) Open terminal → 3) Paste & run → 4) Start coding!
+                            📝 <strong>Instructions:</strong><br/>
+                            {displayCommand}
+                        </p>
+                        <p class="slds-text-body_small slds-text-color_weak slds-m-top_small">
+                            💡 <strong>Quick browser access:</strong> After CLI auth, run: <code>sf org open --target-org {currentOrgName}</code>
                         </p>
                     </div>
                 </div>

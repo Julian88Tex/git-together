@@ -4,7 +4,8 @@ import { refreshApex } from '@salesforce/apex';
 import createScratchOrg from '@salesforce/apex/ScratchOrgController.createScratchOrg';
 import getScratchOrgs from '@salesforce/apex/ScratchOrgController.getScratchOrgs';
 import deleteScratchOrg from '@salesforce/apex/ScratchOrgController.deleteScratchOrg';
-import getCliAuthCommand from '@salesforce/apex/ScratchOrgController.getCliAuthCommand';
+import getFreshCliCommand from '@salesforce/apex/ScratchOrgController.getFreshCliCommand';
+import getStoredCredentials from '@salesforce/apex/ScratchOrgController.getStoredCredentials';
 import getConfigOptions from '@salesforce/apex/ScratchOrgController.getConfigOptions';
 
 export default class ScratchOrgManager extends LightningElement {
@@ -14,18 +15,18 @@ export default class ScratchOrgManager extends LightningElement {
     @track customConfig = '';
     @track isLoading = false;
     @track showCustomConfig = false;
-    @track showCommandModal = false;
-    @track currentCommand = '';
-    @track currentOrgName = '';
     
-    // Data properties
     scratchOrgsResult;
     configOptions = [];
     
-    // Wire methods
     @wire(getScratchOrgs)
     wiredScratchOrgs(result) {
         this.scratchOrgsResult = result;
+        if (result.data) {
+            console.log('Scratch orgs data:', JSON.stringify(result.data, null, 2));
+        } else if (result.error) {
+            console.error('Error loading scratch orgs:', result.error);
+        }
     }
     
     @wire(getConfigOptions)
@@ -40,7 +41,6 @@ export default class ScratchOrgManager extends LightningElement {
         }
     }
     
-    // Getters
     get scratchOrgs() {
         return this.scratchOrgsResult?.data || [];
     }
@@ -76,23 +76,15 @@ export default class ScratchOrgManager extends LightningElement {
                 wrapText: true
             },
             { 
+                label: 'Username', 
+                fieldName: 'Username', 
+                type: 'text',
+                wrapText: true
+            },
+            { 
                 label: 'Edition', 
                 fieldName: 'Edition', 
                 type: 'text'
-            },
-            { 
-                label: 'Login URL', 
-                fieldName: 'LoginUrl', 
-                type: 'url',
-                typeAttributes: {
-                    label: 'Open Org',
-                    target: '_blank'
-                }
-            },
-            { 
-                label: 'Duration (Days)', 
-                fieldName: 'DurationDays', 
-                type: 'number'
             },
             { 
                 label: 'Created', 
@@ -106,22 +98,11 @@ export default class ScratchOrgManager extends LightningElement {
                     minute: '2-digit'
                 }
             },
-            { 
-                label: 'Expires', 
-                fieldName: 'ExpirationDate', 
-                type: 'date',
-                typeAttributes: {
-                    year: 'numeric',
-                    month: 'short',
-                    day: '2-digit'
-                }
-            },
             {
                 type: 'action',
                 typeAttributes: {
                     rowActions: [
-                        { label: '📋 Get CLI Auth Command', name: 'cli_auth' },
-                        { label: '🔗 Copy Login URL', name: 'copy_url' },
+                        { label: '🔑 Get Real Password Steps', name: 'get_cli_command' },
                         { label: '🗑️ Delete', name: 'delete' }
                     ]
                 }
@@ -129,7 +110,6 @@ export default class ScratchOrgManager extends LightningElement {
         ];
     }
     
-    // Event handlers
     handleAliasChange(event) {
         this.alias = event.target.value;
     }
@@ -160,7 +140,6 @@ export default class ScratchOrgManager extends LightningElement {
             
             if (this.showCustomConfig) {
                 configJson = this.customConfig;
-                // Validate JSON if custom config is provided
                 if (configJson.trim()) {
                     try {
                         JSON.parse(configJson);
@@ -169,7 +148,6 @@ export default class ScratchOrgManager extends LightningElement {
                     }
                 }
             } else {
-                // Get predefined config
                 const selectedOption = this.configOptions.find(opt => opt.value === this.selectedConfig);
                 if (selectedOption) {
                     configJson = selectedOption.config;
@@ -185,7 +163,6 @@ export default class ScratchOrgManager extends LightningElement {
             this.showToast('Success', `Scratch org "${this.alias}" created successfully!`, 'success');
             this.resetForm();
             
-            // Refresh the scratch orgs list
             return refreshApex(this.scratchOrgsResult);
             
         } catch (error) {
@@ -197,6 +174,7 @@ export default class ScratchOrgManager extends LightningElement {
     }
     
     async handleRowAction(event) {
+        console.log('handleRowAction called');
         const actionName = event.detail.action.name;
         const row = event.detail.row;
         
@@ -210,81 +188,40 @@ export default class ScratchOrgManager extends LightningElement {
                     this.showToast('Error', error.body?.message || error.message, 'error');
                 }
             }
-        } else if (actionName === 'cli_auth') {
+        } else if (actionName === 'get_cli_command') {
             try {
-                const authInfo = await getCliAuthCommand({ scratchOrgId: row.Id });
-                this.currentCommand = authInfo.accessTokenCommand || 'Auth info not available yet';
-                this.currentOrgName = row.OrgName;
-                this.showCommandModal = true;
+                this.showToast('Info', 'Getting CLI instructions for real password...', 'info');
                 
-                // Show comprehensive auth info
-                this.showCliAuthInfo(authInfo);
+                const cliCommand = await getFreshCliCommand({ scratchOrgId: row.Id });
+                
+                if (cliCommand) {
+                    this.showCliCommandPopup(cliCommand, row.OrgName);
+                    this.showToast('Success', 'CLI instructions ready!', 'success');
+                } else {
+                    this.showToast('Warning', 'No CLI instructions returned.', 'warning');
+                }
+                
             } catch (error) {
+                console.error('Error getting CLI instructions:', error);
                 this.showToast('Error', error.body?.message || error.message, 'error');
             }
-        } else if (actionName === 'copy_url') {
-            if (row.LoginUrl && navigator.clipboard) {
-                navigator.clipboard.writeText(row.LoginUrl);
-                this.showToast('Success', 'Login URL copied to clipboard!', 'success');
-            } else {
-                this.showToast('Error', 'Unable to copy URL to clipboard', 'error');
-            }
         }
     }
     
-    closeCommandModal() {
-        this.showCommandModal = false;
-        this.currentCommand = '';
-        this.currentOrgName = '';
-    }
-    
-    handleCopyCommand() {
-        // Try to copy to clipboard
+    showCliCommandPopup(command, orgName) {
         if (navigator.clipboard) {
-            navigator.clipboard.writeText(this.currentCommand).then(() => {
-                this.showToast('Success', 'Command copied to clipboard!', 'success');
-            }).catch(() => {
-                this.showToast('Info', 'Please select and copy the text manually', 'info');
+            navigator.clipboard.writeText(command).then(() => {
+                console.log('Command copied to clipboard');
+            }).catch(err => {
+                console.log('Could not copy to clipboard:', err);
             });
-        } else {
-            // Fallback: select the text
-            const textarea = this.template.querySelector('.command-text');
-            if (textarea) {
-                textarea.select();
-                this.showToast('Info', 'Command selected - press Ctrl+C to copy', 'info');
-            }
-        }
-    }
-    
-    showCliAuthInfo(authInfo) {
-        let message = `🚀 CLI Authentication Options for ${authInfo.orgName}\n\n`;
-        
-        if (authInfo.accessTokenCommand) {
-            message += `🟢 RECOMMENDED (SF CLI v2):\n${authInfo.accessTokenCommand}\n\n`;
         }
         
-        if (authInfo.legacyCommand) {
-            message += `🟡 LEGACY (SFDX CLI):\n${authInfo.legacyCommand}\n\n`;
-        }
+        let message = `🚀 Real Password Instructions for ${orgName}\n\n`;
+        message += `${command}\n\n`;
+        message += `✅ Instructions copied to clipboard!`;
         
-        if (authInfo.loginUrl) {
-            message += `🌐 BROWSER LOGIN:\n${authInfo.loginUrl}\n\n`;
-        }
-        
-        message += `📝 Steps:\n`;
-        message += `1. Copy one of the commands above\n`;
-        message += `2. Open your terminal\n`;
-        message += `3. Paste and run the command\n`;
-        message += `4. Start developing!\n\n`;
-        message += `💡 If first command fails, try the legacy version`;
-        
-        // Try to copy the recommended command
-        if (authInfo.accessTokenCommand && navigator.clipboard) {
-            navigator.clipboard.writeText(authInfo.accessTokenCommand);
-            message += `\n\n✅ Recommended command copied to clipboard!`;
-        }
-        
-        alert(message);
+        prompt('Copy these instructions (Ctrl+C):', command);
     }
     
     resetForm() {
