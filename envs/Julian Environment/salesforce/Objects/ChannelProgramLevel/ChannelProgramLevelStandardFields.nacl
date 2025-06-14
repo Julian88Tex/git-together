@@ -1,4 +1,9 @@
 type salesforce.ChannelProgramLevel {
+  salesforce.Html BenefitsInformation {
+    apiName = "ChannelProgramLevel.BenefitsInformation"
+    label = "Benefits Information"
+    length = 2000
+  }
   salesforce.TextArea Description {
     apiName = "ChannelProgramLevel.Description"
     label = "Description"

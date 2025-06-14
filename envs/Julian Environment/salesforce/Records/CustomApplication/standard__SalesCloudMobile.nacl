@@ -1,0 +1,32 @@
+salesforce.CustomApplication standard__SalesCloudMobile {
+  formFactors = [
+    "Small",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Sales Cloud Mobile"
+  navType = "Standard"
+  tabs = [
+    "standard-MobileHome",
+    "standard-home",
+    "standard-Contact",
+    "standard-Opportunity",
+    "standard-Account",
+    "standard-Lead",
+    "standard-Campaign",
+    "standard-Task",
+    "standard-Event",
+    "standard-report",
+    "standard-Dashboard",
+    "standard-Case",
+    "standard-Feed",
+    "standard-CollaborationGroup",
+    "standard-File",
+    "standard-ContentNote",
+  ]
+  uiType = "Lightning"
+  fullName = "standard__SalesCloudMobile"
+  _alias = "Sales Cloud Mobile (standard)"
+}

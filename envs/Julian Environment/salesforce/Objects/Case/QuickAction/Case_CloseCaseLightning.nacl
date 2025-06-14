@@ -1,0 +1,31 @@
+salesforce.QuickAction Case_CloseCaseLightning@v {
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Status
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Reason
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "CloseCase"
+  type = "Update"
+  fullName = "Case.CloseCaseLightning"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case.CloseCaseLightning"
+}

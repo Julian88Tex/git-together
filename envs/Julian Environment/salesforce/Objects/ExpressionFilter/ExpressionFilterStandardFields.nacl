@@ -1,7 +1,7 @@
 type salesforce.ExpressionFilter {
   serviceid Id {
     apiName = "ExpressionFilter.Id"
-    label = "ExpressionFilter ID"
+    label = "Expression Filter ID"
     queryable = true
     _hidden_value = true
   }
@@ -13,7 +13,7 @@ type salesforce.ExpressionFilter {
   }
   salesforce.AutoNumber Name {
     apiName = "ExpressionFilter.Name"
-    label = "ExpressionFilter Name"
+    label = "Expression Filter Name"
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {

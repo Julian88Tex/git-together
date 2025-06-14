@@ -339,6 +339,7 @@ type salesforce.Account {
       "CORE.USERS.ALIAS",
       "ACCOUNT.TYPE",
       "ACCOUNT.PHONE1",
+      "ACCOUNT.PHONE2",
       "npo02__HouseholdPhone__c",
       "npsp__Matching_Gift_Phone__c",
     ]

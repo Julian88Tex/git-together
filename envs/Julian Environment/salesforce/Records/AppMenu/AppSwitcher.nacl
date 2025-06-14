@@ -210,6 +210,10 @@ salesforce.AppMenu AppSwitcher {
       type = "CustomApplication"
     },
     {
+      name = salesforce.CustomApplication.instance.standard__SalesCloudMobile
+      type = "CustomApplication"
+    },
+    {
       name = salesforce.CustomApplication.instance.standard__Approvals
       type = "CustomApplication"
     },

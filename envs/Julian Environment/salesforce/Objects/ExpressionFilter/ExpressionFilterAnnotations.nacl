@@ -57,9 +57,9 @@ type salesforce.ExpressionFilter {
   }
   apiName = "ExpressionFilter"
   metadataType = "CustomObject"
-  label = "ExpressionFilter"
+  label = "Expression Filter"
   description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
-  _alias = "ExpressionFilter"
+  _alias = "Expression Filter"
 }

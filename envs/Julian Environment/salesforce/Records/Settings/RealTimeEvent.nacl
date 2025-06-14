@@ -11,7 +11,7 @@ salesforce.RealTimeEventSettings {
     },
     {
       entityName = "ApiAnomalyEventStore"
-      isEnabled = false
+      isEnabled = true
     },
     {
       entityName = "ApiAnomalyEvent"
@@ -31,7 +31,7 @@ salesforce.RealTimeEventSettings {
     },
     {
       entityName = "CredentialStuffingEventStore"
-      isEnabled = false
+      isEnabled = true
     },
     {
       entityName = "CredentialStuffingEvent"
@@ -47,10 +47,18 @@ salesforce.RealTimeEventSettings {
     },
     {
       entityName = "GuestUserAnomalyEventStore"
-      isEnabled = false
+      isEnabled = true
     },
     {
       entityName = "GuestUserAnomalyEvent"
+      isEnabled = false
+    },
+    {
+      entityName = "LoginAnomalyEventStore"
+      isEnabled = true
+    },
+    {
+      entityName = "LoginAnomalyEvent"
       isEnabled = false
     },
     {
@@ -119,7 +127,7 @@ salesforce.RealTimeEventSettings {
     },
     {
       entityName = "ReportAnomalyEventStore"
-      isEnabled = false
+      isEnabled = true
     },
     {
       entityName = "ReportAnomalyEvent"
@@ -127,7 +135,7 @@ salesforce.RealTimeEventSettings {
     },
     {
       entityName = "SessionHijackingEventStore"
-      isEnabled = false
+      isEnabled = true
     },
     {
       entityName = "SessionHijackingEvent"

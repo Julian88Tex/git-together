@@ -18,6 +18,9 @@ type salesforce.FlowOrchestrationInstance {
     _required = true
     label = "Status"
   }
+  salesforce.Unknown TriggeringRecordType {
+    apiName = "FlowOrchestrationInstance.TriggeringRecordType"
+  }
   serviceid Id {
     apiName = "FlowOrchestrationInstance.Id"
     label = "Orchestration Run ID"

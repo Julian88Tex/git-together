@@ -12,6 +12,7 @@ salesforce.Network julian88tex {
   enableApexCDNCaching = true
   enableCustomVFErrorPageOverrides = false
   enableDirectMessages = false
+  enableExpFriendlyUrlsAsDefault = false
   enableExperienceBundleBasedSnaOverrideEnabled = true
   enableGuestChatter = false
   enableGuestFileAccess = false

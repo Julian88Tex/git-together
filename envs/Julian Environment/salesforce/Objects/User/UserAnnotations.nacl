@@ -270,6 +270,7 @@ type salesforce.User {
       "CORE.USER_ROLE.NAME",
       "CORE.USERS.PHONE",
       "CORE.USERS.EXTENSION",
+      "CORE.USERS.FAX",
       "CORE.USERS.CELL",
     ]
     searchResultsAdditionalFields = [

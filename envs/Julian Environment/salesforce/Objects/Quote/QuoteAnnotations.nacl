@@ -243,6 +243,7 @@ type salesforce.Quote {
       "QUOTE.SUBTOTAL",
       "QUOTE.TOTALPRICE",
       "QUOTE.PHONE",
+      "QUOTE.FAX",
     ]
     searchResultsAdditionalFields = [
       "QUOTE.NAME",

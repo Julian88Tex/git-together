@@ -332,6 +332,7 @@ type salesforce.Lead {
       "LEAD.COMPANY",
       "LEAD.PHONE",
       "LEAD.MOBILE_PHONE",
+      "LEAD.FAX",
     ]
     searchResultsAdditionalFields = [
       "FULL_NAME",
