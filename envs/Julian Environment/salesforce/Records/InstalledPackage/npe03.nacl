@@ -1,5 +1,5 @@
 salesforce.InstalledPackage npe03 {
-  versionNumber = "3.25"
+  versionNumber = "3.26"
   fullName = "npe03"
   _alias = "npe03"
 }

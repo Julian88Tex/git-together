@@ -66,23 +66,23 @@ salesforce.RecordType Contact_Test {
       picklist = salesforce.Contact.field.Name
       values = [
         {
-          fullName = "Dr%2E"
+          fullName = "Dr."
           default = false
         },
         {
-          fullName = "Mr%2E"
+          fullName = "Mr."
           default = false
         },
         {
-          fullName = "Mrs%2E"
+          fullName = "Mrs."
           default = false
         },
         {
-          fullName = "Ms%2E"
+          fullName = "Ms."
           default = false
         },
         {
-          fullName = "Prof%2E"
+          fullName = "Prof."
           default = false
         },
       ]
