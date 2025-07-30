@@ -1,0 +1,101 @@
+salesforce.Flow RenewalOpportunityFlow_7p9dc3 {
+  fullName = "RenewalOpportunityFlow_7p9dc3"
+  apiVersion = 61
+  areMetricsLoggedToDataCloud = false
+  formulas = [
+    {
+      name = "Frm_RenewalCloseDate"
+      dataType = "Date"
+      expression = "ADDMONTHS(TODAY(), 12)"
+    },
+    {
+      name = "Frm_RenewalOppName"
+      dataType = "String"
+      expression = "\"Renewal - \" & $Record.Name"
+    },
+  ]
+  interviewLabel = "Renewal Opportunity Flow {!$Flow.CurrentDateTime}"
+  label = "Renewal Opportunity Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordCreates = [
+    {
+      name = "Create_RenewalOpportunity"
+      label = "Create Renewal Opportunity"
+      inputAssignments = [
+        {
+          field = salesforce.Opportunity.field.AccountId
+          value = {
+            elementReference = salesforce.Opportunity.field.AccountId
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.CloseDate
+          value = {
+            elementReference = "Frm_RenewalCloseDate"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.Name
+          value = {
+            elementReference = "Frm_RenewalOppName"
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.OwnerId
+          value = {
+            elementReference = salesforce.Opportunity.field.OwnerId
+          }
+        },
+        {
+          field = salesforce.Opportunity.field.StageName
+          value = {
+            stringValue = "Prospecting"
+          }
+        },
+      ]
+      object = salesforce.Opportunity
+    },
+  ]
+  start = {
+    connector = {
+      targetReference = "Create_RenewalOpportunity"
+    }
+    doesRequireRecordChangedToMeetCriteria = true
+    filterLogic = "and"
+    filters = {
+      field = salesforce.Opportunity.field.StageName
+      operator = "EqualTo"
+      value = {
+        stringValue = "Closed Won"
+      }
+    }
+    object = salesforce.Opportunity
+    recordTriggerType = "Update"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Draft"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Renewal Opportunity Flow"
+}
